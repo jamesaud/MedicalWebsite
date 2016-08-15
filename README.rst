@@ -88,4 +88,6 @@ See detailed `cookiecutter-django Docker documentation`_.
 
 .. _`cookiecutter-django Docker documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-docker.html
 
+More help: https://realpython.com/blog/python/development-and-deployment-of-cookiecutter-django-via-docker/
+
 

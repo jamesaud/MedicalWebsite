@@ -1,5 +1,7 @@
 version: '2'
 
+#Instructions: https://realpython.com/blog/python/development-and-deployment-of-cookiecutter-django-via-docker/
+
 volumes:
   postgres_data: {}
   postgres_backup: {}
