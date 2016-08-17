@@ -1,1 +1,217 @@
 {% extends "base.html" %}
+{% load staticfiles %}
+{% load static %}
+
+{% block more-css %}
+        <!-- CSS Implementing Plugins -->
+        <link rel="stylesheet" href="static/plugins/animate.css">
+        <link rel="stylesheet" href="static/plugins/line-icons/line-icons.css">
+        <link rel="stylesheet" href="static/plugins/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/plugins/flexslider/flexslider.css">
+        <link rel="stylesheet" href="static/plugins/bxslider/jquery.bxslider.css">
+        <link rel="stylesheet" href="static/plugins/fancybox/source/jquery.fancybox.css">
+        <link rel="stylesheet" href="static/plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
+        <!--[if lt IE 9]><link rel="stylesheet" href="static/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+
+        <!-- CSS Pages Style -->
+        <link rel="stylesheet" href="static/css/pages/page_one.css">
+{% endblock more-css %}
+
+
+{% block modal %}
+{% get_static_prefix as STATIC_PREFIX %}
+		<!--=== Slider ===-->
+		<div class="tp-banner-container">
+			<div class="tp-banner">
+				<ul>
+					<!-- SLIDE -->
+					<li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Title 1">
+						<!-- MAIN IMAGE -->
+						<img src="static/unity/img/sliders/1.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+
+						<div class="tp-caption revolution-ch1 sft start"
+						data-x="center"
+						data-hoffset="0"
+						data-y="100"
+						data-speed="1500"
+						data-start="500"
+						data-easing="Back.easeInOut"
+						data-endeasing="Power1.easeIn"
+						data-endspeed="300">
+						Introducing Unify Template
+						</div>
+
+						<!-- LAYER -->
+						<div class="tp-caption revolution-ch2 sft"
+						data-x="center"
+						data-hoffset="0"
+						data-y="190"
+						data-speed="1400"
+						data-start="2000"
+						data-easing="Power4.easeOut"
+						data-endspeed="300"
+						data-endeasing="Power1.easeIn"
+						data-captionhidden="off"
+						style="z-index: 6">
+						We are creative technology company providing <br/>
+						key digital services on web and mobile.
+						</div>
+
+						<!-- LAYER -->
+						<div class="tp-caption sft"
+						data-x="center"
+						data-hoffset="0"
+						data-y="310"
+						data-speed="1600"
+						data-start="2800"
+						data-easing="Power4.easeOut"
+						data-endspeed="300"
+						data-endeasing="Power1.easeIn"
+						data-captionhidden="off"
+						style="z-index: 6">
+						<a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
+						<a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Our Work</a>
+						</div>
+					</li>
+					<!-- END SLIDE -->
+
+					<!-- SLIDE -->
+					<li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Title 2">
+						<!-- MAIN IMAGE -->
+						<img src="static/unity/img/sliders/2.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+
+						<div class="tp-caption revolution-ch1 sft start"
+						data-x="center"
+						data-hoffset="0"
+						data-y="100"
+						data-speed="1500"
+						data-start="500"
+						data-easing="Back.easeInOut"
+						data-endeasing="Power1.easeIn"
+						data-endspeed="300">
+						Includes 300+ Template Pages
+						</div>
+
+						<!-- LAYER -->
+						<div class="tp-caption revolution-ch2 sft"
+						data-x="center"
+						data-hoffset="0"
+						data-y="190"
+						data-speed="1400"
+						data-start="2000"
+						data-easing="Power4.easeOut"
+						data-endspeed="300"
+						data-endeasing="Power1.easeIn"
+						data-captionhidden="off"
+						style="z-index: 6">
+						We are creative technology company providing <br/>
+						key digital services on web and mobile.
+						</div>
+
+						<!-- LAYER -->
+						<div class="tp-caption sft"
+						data-x="center"
+						data-hoffset="0"
+						data-y="310"
+						data-speed="1600"
+						data-start="2800"
+						data-easing="Power4.easeOut"
+						data-endspeed="300"
+						data-endeasing="Power1.easeIn"
+						data-captionhidden="off"
+						style="z-index: 6">
+						<a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
+						<a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Our Work</a>
+						</div>
+					</li>
+					<!-- END SLIDE -->
+
+					<!-- SLIDE -->
+					<li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Title 3">
+						<!-- MAIN IMAGE -->
+						<img src="static/unity/img/sliders/3.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+
+						<div class="tp-caption revolution-ch1 sft start"
+						data-x="center"
+						data-hoffset="0"
+						data-y="100"
+						data-speed="1500"
+						data-start="500"
+						data-easing="Back.easeInOut"
+						data-endeasing="Power1.easeIn"
+						data-endspeed="300">
+						Over 25000+ Satisfied Users
+						</div>
+
+						<!-- LAYER -->
+						<div class="tp-caption revolution-ch2 sft"
+						data-x="center"
+						data-hoffset="0"
+						data-y="190"
+						data-speed="1400"
+						data-start="2000"
+						data-easing="Power4.easeOut"
+						data-endspeed="300"
+						data-endeasing="Power1.easeIn"
+						data-captionhidden="off"
+						style="z-index: 6">
+						We are creative technology company providing <br/>
+						key digital services on web and mobile.
+						</div>
+
+						<!-- LAYER -->
+						<div class="tp-caption sft"
+						data-x="center"
+						data-hoffset="0"
+						data-y="310"
+						data-speed="1600"
+						data-start="2800"
+						data-easing="Power4.easeOut"
+						data-endspeed="300"
+						data-endeasing="Power1.easeIn"
+						data-captionhidden="off"
+						style="z-index: 6">
+						<a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
+						<a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Our Work</a>
+						</div>
+					</li>
+					<!-- END SLIDE -->
+				</ul>
+				<div class="tp-bannertimer tp-bottom"></div>
+			</div>
+		</div>
+		<!--=== End Slider ===-->
+
+		<!--=== Call To Action ===-->
+		<div class="call-action-v1 bg-color-light">
+			<div class="container">
+				<div class="call-action-v1-box">
+					<div class="call-action-v1-in">
+						<p>Unify creative technology company providing key digital services and focused on helping our clients to build a successful business on web and mobile.</p>
+					</div>
+					<div class="call-action-v1-in inner-btn page-scroll">
+						<a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-dark btn-u-block">View Our Portfolio</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--=== End Call To Action ===-->
+{% endblock modal %}
+
+{% block more-javascript %}
+    <!-- JS Page Level -->
+	<script type="text/javascript" src="static/js/app.js"></script>
+	<script type="text/javascript" src="static/js/plugins/fancy-box.js"></script>
+	<script type="text/javascript" src="static/js/plugins/style-switcher.js"></script>
+	<script type="text/javascript" src="static/js/plugins/revolution-slider.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			App.init();
+			FancyBox.initFancybox();
+			StyleSwitcher.initStyleSwitcher();
+			RevolutionSlider.initRSfullWidth();
+		});
+	</script>
+{% endblock more-javascript %}
+
+

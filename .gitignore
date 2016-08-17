@@ -71,3 +71,4 @@ medweb/media/
 # Hitch directory
 tests/.hitch
 
+medweb/static/

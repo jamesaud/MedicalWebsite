@@ -1,38 +1,23 @@
-/* These styles are generated from project.scss. */
+.navbar {
+    margin: 0;
 
-.alert-debug {
-  color: black;
-  background-color: white;
-  border-color: #d6e9c6;
 }
 
-.alert-error {
-  color: #b94a48;
-  background-color: #f2dede;
-  border-color: #eed3d7;
+.navbar-nav > li{
+  padding-right:20px;
 }
 
-/* This is a fix for the bootstrap4 alpha release */
-@media (max-width: 47.9em) {
-  .navbar-nav .nav-item {
-    float: none;
-    width: 100%;
-    display: inline-block;
-  }
-
-  .navbar-nav .nav-item + .nav-item {
-    margin-left: 0;
-  }
-
-  .nav.navbar-nav.pull-xs-right {
-    float: none !important;
-  }
+.navbar a {
+    color: blue;
 }
 
-/* Display django-debug-toolbar.
-   See https://github.com/django-debug-toolbar/django-debug-toolbar/issues/742
-   and https://github.com/pydanny/cookiecutter-django/issues/317
-*/
-[hidden][style="display: block;"] {
-  display: block !important;
+.navbar-brand{
+  padding-right: 40px;
+}
+
+
+
+.nav a{
+    color: white ;
+    font-size: 1.4em ;
 }

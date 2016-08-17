@@ -1,0 +1,14 @@
+1. The nav bar is done. Get the horizontal slideshow completed.
+
+2. Left/right split of words and picture, let the background handle the diagonal line
+
+3. Right/left split words picture
+
+4. Contact form, with recapcha
+
+5. Dynamic dropdown, with boostrap toggable tabs!
+
+
+
+
+
