@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "../../app/medweb/static/css/home.css",
+	"sources": [
+		"../../app/medweb/static/css/home.scss"
+	],
+	"mappings": "AAAA,AAAA,YAAY,CAAA,EACV,gBAAgB,EAAC,IAAK,GAIvB;;AALD,AAGE,YAHU,CAGV,CAAC,CAAA,EACC,gBAAgB,EAAC,KAAM,GAAE",
+	"names": []
+}

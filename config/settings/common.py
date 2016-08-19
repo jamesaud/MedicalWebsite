@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 from __future__ import absolute_import, unicode_literals
 
 import environ
+import os
 
 ROOT_DIR = environ.Path(__file__) - 3  # (medweb/config/settings/common.py - 3 = medweb/)
 APPS_DIR = ROOT_DIR.path('medweb')
@@ -39,6 +40,7 @@ THIRD_PARTY_APPS = (
     'allauth',  # registration
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
+    'sass_processor',
 )
 
 # Apps specific for this project go here.
@@ -170,7 +172,12 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 # STATIC FILE CONFIGURATION
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-root
+
 STATIC_ROOT = str(ROOT_DIR('staticfiles'))
+#if settings.DEBUG:
+STATIC_ROOT = str(ROOT_DIR('medweb/static/staticfiles'))  # So the sass compiler can workj in developement
+
+
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
 STATIC_URL = '/static/'
@@ -184,6 +191,7 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'sass_processor.finders.CssFinder',
 )
 
 # MEDIA CONFIGURATION
@@ -236,3 +244,6 @@ ADMIN_URL = r'^admin/'
 
 
 # Your common stuff: Below this line define 3rd party library settings
+
+SASS_PRECISION = 8
+SASS_OUTPUT_STYLE = 'compact'

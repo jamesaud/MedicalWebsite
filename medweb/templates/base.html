@@ -4,12 +4,12 @@
 <html lang="en">
     <head>
         <title>Synergy+ Software</title>
-
         <!-- Meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
+        {% block more-head %} {% endblock more-head %}
     </head>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -23,25 +23,25 @@
 
         <!-- Web Fonts -->
         <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
-
+        
         <!-- CSS Global Compulsory -->
-        <link rel="stylesheet" href="static/plugins/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/style.css">
 
         <!-- CSS Header and Footer -->
-        <link rel="stylesheet" href="static/css/headers/header-default.css">
-        <link rel="stylesheet" href="static/css/footers/footer-v1.css">
+        <link rel="stylesheet" href="/static/css/headers/header-default.css">
+        <link rel="stylesheet" href="/static/css/footers/footer-v1.css">
 
 
         <!-- CSS Theme -->
-        <link rel="stylesheet" href="static/css/theme-colors/default.css" id="style_color">
-        <link rel="stylesheet" href="static/css/theme-skins/dark.css">
+        <link rel="stylesheet" href="/static/css/theme-colors/default.css" id="style_color">
+        <link rel="stylesheet" href="/static/css/theme-skins/dark.css">
 
         <!-- CSS Customization -->
-        <link rel="stylesheet" href="static/css/custom.css">
+        <link rel="stylesheet" href="/static/css/custom.css">
 
          <!-- My CSS -->
-        <link rel="stylesheet" href="static/css/project.css">
+        <link rel="stylesheet" href="/static/css/project.css">
 
     {% endblock css %}
 
@@ -57,15 +57,13 @@
 		<!--=== Header ===-->
 
         <header>
-
-           <div class="navbar navbar-inverse navbar-top">
+           <div class="navbar navbar-top" role='navigation'>
               <div class="container">
                 <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="fa fa-bars"></span>
+				</button>
                   <a class="navbar-brand" href="#"><img src="{% static 'img/logo1-default.png' %}" alt="Logo"></a>
                 </div>
 
@@ -75,12 +73,12 @@
                     <li><a href="#about">Solutions</a></li>
                     <li><a href="#contact">Demo</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact">About</a></li>
                   </ul>
                 </div><!--/.nav-collapse -->
 
               </div>
             </div>
+     
 
 
 	   </header>
@@ -97,7 +95,7 @@
 					<div class="row">
 						<!-- About -->
 						<div class="col-md-3 md-margin-bottom-40">
-							<a href="index.html"><img id="logo-footer" class="footer-logo" src="static/img/logo2-default.png" alt=""></a>
+							<a href="index.html"><img id="logo-footer" class="footer-logo" src="/static/img/logo2-default.png" alt=""></a>
 							<p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
 							<p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
 						</div><!--/col-md-3-->
@@ -290,23 +288,22 @@
 	<!--=== End Style Switcher ===-->
 
 	<!-- JS Global Compulsory -->
-	<script type="text/javascript" src="static/plugins/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="static/plugins/jquery/jquery-migrate.min.js"></script>
-	<script type="text/javascript" src="static/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/static/plugins/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/plugins/jquery/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
 	<!-- JS Implementing Plugins -->
-	<script type="text/javascript" src="static/plugins/back-to-top.js"></script>
-	<script type="text/javascript" src="static/plugins/smoothScroll.js"></script>
-	<script type="text/javascript" src="static/plugins/flexslider/jquery.flexslider-min.js"></script>
-	<script type="text/javascript" src="static/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
-	<script type="text/javascript" src="static/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-	<script type="text/javascript" src="static/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
+	<script type="text/javascript" src="/static/plugins/smoothScroll.js"></script>
+	<script type="text/javascript" src="/static/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="/static/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="/static/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 	<!-- JS Customization -->
-	<script type="text/javascript" src="static/js/custom.js"></script>
+	<script type="text/javascript" src="/static/js/custom.js"></script>
 
 	<!--[if lt IE 9]>
-	<script src="static/plugins/respond.js"></script>
-	<script src="static/plugins/html5shiv.js"></script>
-	<script src="static/plugins/placeholder-IE-fixes.js"></script>
+	<script src="/static/plugins/respond.js"></script>
+	<script src="/static/plugins/html5shiv.js"></script>
+	<script src="/static/plugins/placeholder-IE-fixes.js"></script>
 	<![endif]-->
 
     {% block more-javascript %}{% endblock more-javascript %}

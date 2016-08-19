@@ -4,17 +4,23 @@
 
 {% block more-css %}
         <!-- CSS Implementing Plugins -->
-        <link rel="stylesheet" href="static/plugins/animate.css">
-        <link rel="stylesheet" href="static/plugins/line-icons/line-icons.css">
-        <link rel="stylesheet" href="static/plugins/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="static/plugins/flexslider/flexslider.css">
-        <link rel="stylesheet" href="static/plugins/bxslider/jquery.bxslider.css">
-        <link rel="stylesheet" href="static/plugins/fancybox/source/jquery.fancybox.css">
-        <link rel="stylesheet" href="static/plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
-        <!--[if lt IE 9]><link rel="stylesheet" href="static/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+        <link rel="stylesheet" href="/static/plugins/animate.css">
+        <link rel="stylesheet" href="/static/plugins/line-icons/line-icons.css">
+        <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/plugins/fancybox/source/jquery.fancybox.css">
+        <link rel="stylesheet" href="/static/plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
+        <!--[if lt IE 9]><link rel="stylesheet" href="/static/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
 
         <!-- CSS Pages Style -->
-        <link rel="stylesheet" href="static/css/pages/page_one.css">
+        <link rel="stylesheet" href="/static/css/pages/page_one.css">
+
+        <!-- sass -->
+        {% load sass_tags %}
+
+        <link href="{% sass_src 'css/home.scss' %}" rel="stylesheet" type="text/css" />
+        <!-- for local dev only -->
+        <link href="{% static '/staticfiles/css/home.scss' %}" rel="stylesheet" type="text/css" />
+
 {% endblock more-css %}
 
 
@@ -28,7 +34,7 @@
       <!-- SLIDE -->
       <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Title 1">
         <!-- MAIN IMAGE -->
-        <img src="static/img/sliders/1.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+        <img src="/static/img/sliders/1.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
         <div class="tp-caption revolution-ch1 sft start"
         data-x="center"
@@ -78,7 +84,7 @@
       <!-- SLIDE -->
       <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Title 2">
         <!-- MAIN IMAGE -->
-        <img src="static/img/sliders/2.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+        <img src="/static/img/sliders/2.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
         <div class="tp-caption revolution-ch1 sft start"
         data-x="center"
@@ -128,7 +134,7 @@
       <!-- SLIDE -->
       <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Title 3">
         <!-- MAIN IMAGE -->
-        <img src="static/img/sliders/3.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+        <img src="/static/img/sliders/3.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
         <div class="tp-caption revolution-ch1 sft start"
         data-x="center"
@@ -193,13 +199,13 @@
         </div>
         <div class='col-md-4'>
           <div class="call-action-v1-in inner-btn page-scroll">
-              <a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-dark btn-u-block" type="button" data-toggle="collapse" data-target="#call-now" aria-expanded="false" aria-controls="collapseExample">Call Now</a>
+              <a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-dark btn-u-block" type="button" data-toggle="collapse" data-target="#call-now" aria-expanded="false" aria-controls="call-now">Call Now</a>
               &nbsp;&nbsp;&nbsp;
-              <a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-dark btn-u-block" type="button" data-toggle="collapse" data-target="#contact" aria-expanded="false" aria-controls="collapseExample">Contact</a>
+              <a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-dark btn-u-block" type="button" data-toggle="modal" data-target="#gridSystemModal">Contact</a>
           </div>
 
-          <!-- DROP DOWN ELEMENTS FOR THE BUTTONS -->
-          <div class="collapse" id="call-now">
+          <!-- DROP DOWN ELEMENTS FOR THE BUTTON -->
+          <div class="collapse m-b-0 p-b-0" id="call-now">
             <br/>
             <div class="card card-block panel panel-primary text-center">
               <div class="panel-heading">8:00am - 8:00pm, Monday to Saturday EST</div>
@@ -207,13 +213,40 @@
               <p></p>
             </div>
           </div>
-          <div class="collapse" id="contact">
-            <br/>
-            <div class="card card-block panel panel-primary text-center">
-              <div class="panel-body"><p>812-777-7777</p></div>
-              <p></p>
+
+      
+      <!-- POPOUT FOR THE BUTTON -->
+        <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridModalLabel">Contact Form</h4>
+              </div>
+              <div class="modal-body">
+                  <form action="">
+                          <div class="form-group required">
+                              <div class='control-label'></div><input type="text" class="form-control" id="fname" placeholder="Name">
+                          </div>
+
+                          <div class="form-group required">
+                              <div class='control-label'></div><input type="text" class="form-control" id="email" placeholder="Email">
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" id="phone" placeholder="Phone">
+                          </div>
+                          <div class="form-group required">
+                              <div class='control-label'></div><textarea class="form-control" rows="4" id="comment" placeholder="Message"></textarea>
+                          </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Contact Us</button>
+              </div>
             </div>
           </div>
+        </div>
 
         </div>
       </div>
@@ -222,8 +255,44 @@
 </div>
 <!--=== End Call To Action ===-->
 
+<!--=== Content Part 1===-->
+<div class="one-page">
+  <div class="one-page-inner one-default">
+    <div class="container content text-center main-points">
+      <div class="row">
+          <h1>Technology built specifically for small to medium sized practices</h1>
+      </div>
+        
+      <br/><br/>
+        
+      <div class='row'>
+        <div class='col-md-4 main-points-block'>
+            <i id='icon-cloud' class="fa fa-cloud fa-4x" aria-hidden="true" ></i>
+            <h3 class='main-points-header'><strong>Cloud & On-site</strong></h3>
+            <p>Your data is securely stored on the cloud in case anything goes wrong, otherwise everything is accessible in-house.</p>
+        </div>
+
+        <div class='col-md-4 main-points-block'>
+            <i id='icon-heartbeat' class="fa fa-heartbeat fa-4x" aria-hidden="true" ></i>
+            <h3 class='main-points-header'><strong>Innovative Software</strong></h3>
+            <p>See more patients, help more lives. Our software provides features like Dictation and automatic code lookups to help you work faster.</p>
+        </div>
+          
+        <div class='col-md-4 main-points-block'>
+            <i id='icon-shopping-bag' class="fa fa-shopping-bag fa-4x" aria-hidden="true" ></i>
+            <h3><strong>Revenue Cycle Management</strong></h3>
+            <p>As a physician you will keep more from our autodeposit system.</p>
+        </div>    
+      </div>
+        
+    </div>
+  </div>
+</div>
+
+<hr/>
 <!--=== Content Part ===-->
 <div class="one-page">
+    
   <div class="one-page-inner one-default">
     <div class="container content">
       <div class="row">
@@ -232,14 +301,14 @@
           <p>Work faster and do more.  Your small to medium sized clinic will be seeing 15% more patients within 30 days of trying Synergy+ EHR Software.</p>
           <br/>
           <h4>Designed <strong>by</strong> doctors <strong>for</strong> doctors:</h4>
-            It's okay, we know; existing products from top vendors such as Cerner and Epic are <strong><em>difficult</em></strong>. It takes weeks to learn, is unintuitive, and
+           <p> It's okay, we know; existing products from top vendors such as Cerner and Epic are <strong><em>difficult</em></strong>. It takes weeks to learn, is unintuitive, and
             often leaves you wondering if it's really worth it.
           </p>
           <p> Synergy+ is first in the world to provide a comprehensive solution that works out of the box.
             Don't waste time learning software, let Syngery+ software work for you. Within one hour of training, you will feel comforatable using our software.</p>
         </div>
         <div class="col-md-6">
-          <img src="static/img/main/img12.jpg" class="img-responsive margin-bottom-10" alt="">
+          <img src="{% static 'images/doctor.jpg' %}" class="img-responsive margin-bottom-10" alt="">
         </div>
       </div>
     </div>
@@ -249,14 +318,13 @@
     <div class="container content">
       <div class="row">
         <div class="col-md-6">
-          <img src="static/img/main/img3.jpg" class="margin-bottom-10 img-responsive" alt="">
+          <img src="{% static 'images/doctor-ipad.jpg' %}" class="margin-bottom-10 img-responsive" alt="">
         </div>
         <div class="col-md-6">
           <h2>Truly Innovative EHR Software</h2>
-          <p>BREIF SUMMARY OF FEATURES.</p>
+          <p>SYNERGY+ vs COMPETITORS</p>
           <br/>
           <a class="btn-u btn-u-red one-page-btn"><i class="fa fa-bell"></i> Solutions</a>
-
         </div>
       </div>
     </div>
@@ -264,71 +332,74 @@
 
 
 
+    <!--  style="background: url('{% static 'images/dark-blue.jpg' %}')" -->
   <div class="one-page-inner one-default">
     <div class="container content">
-
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Hundreds of Satisfied Customers</h2>
-          <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque cupiditate non provident, similique sunt in culpa qui officia ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat.</p><br>
-
-
-        </div>
-        <div class="col-md-6">
-          <img src="static/img/main/img6.jpg" class="img-responsive margin-bottom-10" alt="">
-        </div>
-
-      </div>
-
-  </div>
-
-  <div class="container content">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="static/img/main/img6.jpg" class="img-responsive margin-bottom-10" alt="">
-        </div>
-        <div class="col-md-6">
-          <h2>See for yourself</h2>
-          <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque cupiditate non provident, similique sunt in culpa qui officia ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat.</p><br>
-
-          <div class="row margin-bottom-10">
-            <div class="col-md-3">
-              <a href="static/img/main/img12.jpg" title="Project #1" data-rel="gallery" class="fancybox">
-                <img class="img-responsive" src="static/img/main/img12.jpg" alt="">
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="static/img/main/img13.jpg" title="Project #2" data-rel="gallery" class="fancybox">
-                <img class="img-responsive" src="static/img/main/img13.jpg" alt="">
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="static/img/main/img15.jpg" title="Project #3" data-rel="gallery" class="fancybox">
-                <img class="img-responsive" src="static/img/main/img15.jpg" alt="">
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="static/img/main/img16.jpg" title="Project #4" data-rel="gallery" class="fancybox">
-                <img class="img-responsive" src="static/img/main/img16.jpg" alt="">
-              </a>
-            </div>
+          <div class="row headline-center section-circles">
+              <h1>Hundreds of Satisfied Customers</h1>     
+              
+              <div class="row pie-progress-charts">
+                   <div id="canvas">
+                       <div class='col-md-4'>
+                           <h3><strong>Customer Retention Rate</strong></h3>
+                           <div class="circle" id="circles-blue"></div>
+                       </div>
+                       <div class='col-md-4'>
+                           <h3><strong>Increase of Patients Seen Per Day</strong></h3>
+                           <div class="circle" id="circles-red"></div>
+                       </div>
+                       <div class='col-md-4'>
+                           <h3><strong>Average Revenue Increase</strong></h3>
+                           <div class="circle" id="circles-yellow"></div>
+                       </div>
+                   </div>    
+               </div>  
+              
           </div>
-          <br/>
+      </div>
+    </div>
+    
+
+  <div class="one-page-inner one-red">
+    <div class="container content">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>At vero eos et accusamus et iusto odio dignissimos</h2>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus..</p>
+          <p>Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat.</p>
+          <a class="btn-u btn-u-green one-page-btn"><i class="fa fa-comments-o"></i> libero adipiscing</a>
+        </div>
+        <div class="col-md-6">
+          <img src="/static/img/main/img21.jpg" class="img-responsive margin-bottom-10" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+    
+   <div class="one-page-inner one-default">
+    <div class="container content">
+      <div class="row">
+        <div class="col-md-6">
+            <iframe width='500' height='294' src="https://www.youtube.com/embed/sYNDXrLu57k?&theme=dark&autohide=2&showinfo=0&rel=0"frameborder="0"></iframe>
+        </div>
+        <div class="col-md-6">
+          <h2>Try for Free</h2>
+          <p>Watch the video to take a virtual tour of the Synergy+ Software Solutions.</p>
+          <p>Like what you see? Schedule a demo to get hands on with the software and a personal walkthrough with one of our highly skilled Synergy+ Coaches.</p><br>
+    
         <a class="btn-u btn-u-blue one-page-btn"> Demo Now</a>
         </div>
       </div>
-
+      
       <hr>
 
       <div class="row content-boxes-v2">
         <div class="col-md-4 md-margin-bottom-30">
           <h3 class="heading-sm">
-            <i class="icon-custom rounded-x icon-sm icon-bg-u fa fa-lightbulb-o"></i>
+            <i class="icon-custom rounded-x icon-sm icon-bg-yellow fa fa-lightbulb-o"></i>
             <span>Support</span>
           </h3>
-          <p>With 24/7 support, we've always got your back.</p>
+          <p>With 24/7 phone and chat support, we've always got your back.</p>
         </div>
         <div class="col-md-4 md-margin-bottom-30">
           <h3 class="heading-sm">
@@ -348,24 +419,6 @@
 
     </div>
   </div>
-
-  <div class="one-page-inner one-red">
-    <div class="container content">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>At vero eos et accusamus et iusto odio dignissimos</h2>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus..</p>
-          <p>Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat.</p>
-          <a class="btn-u btn-u-green one-page-btn"><i class="fa fa-comments-o"></i> libero adipiscing</a>
-        </div>
-        <div class="col-md-6">
-          <img src="static/img/main/img21.jpg" class="img-responsive margin-bottom-10" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-
-
 </div><!--/one-page-->
 <!-- End Content Part -->
 
@@ -373,10 +426,10 @@
 
 {% block more-javascript %}
     <!-- JS Page Level -->
-	<script type="text/javascript" src="static/js/app.js"></script>
-	<script type="text/javascript" src="static/js/plugins/fancy-box.js"></script>
-	<script type="text/javascript" src="static/js/plugins/style-switcher.js"></script>
-	<script type="text/javascript" src="static/js/plugins/revolution-slider.js"></script>
+	<script type="text/javascript" src="/static/js/app.js"></script>
+	<script type="text/javascript" src="/static/js/plugins/fancy-box.js"></script>
+	<script type="text/javascript" src="/static/js/plugins/style-switcher.js"></script>
+	<script type="text/javascript" src="/static/js/plugins/revolution-slider.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			App.init();
@@ -385,4 +438,42 @@
 			RevolutionSlider.initRSfullWidth();
 		});
 	</script>
+
+<!-- Circles -->
+ <script type="text/javascript" src="{% static 'plugins/circles-master/circles.js' %}"></script>
+
+  <script>
+        Circles.create({
+            id:         'circles-blue',
+            percentage: 100,
+            radius:     60,
+            width:      10,
+            number:   	100,
+            text:       '%',
+            colors:     ['#BEE3F7', '#45AEEA']
+        });
+</script>
+  <script>
+        Circles.create({
+            id:         'circles-yellow',
+            percentage: 34,
+            radius:     60,
+            width:      10,
+            number:   	34,
+            text:       '%',
+            colors:     ['#FCE6A4', '#EFB917']
+        });
+</script>
+  <script>
+        Circles.create({
+            id:         'circles-red',
+            percentage: 19,
+            radius:     60,
+            width:      10,
+            number:   	19,
+            text:       '%',
+            colors:     ['#F4BCBF', '#D43A43']
+        });
+</script>
+
 {% endblock more-javascript %}

@@ -9,6 +9,8 @@ RUN pip install -r /requirements/production.txt \
     && groupadd -r django \
     && useradd -r -g django django
 
+RUN pip install libsass django-compressor django-sass-processor
+
 COPY . /app
 RUN chown -R django /app
 

@@ -3,7 +3,7 @@
 
 }
 
-.navbar-nav > li{
+/*.navbar-nav > li{
   padding-right:20px;
 }
 
@@ -20,4 +20,17 @@
 .nav a{
     color: white ;
     font-size: 1.4em ;
+}
+*/
+
+
+.nav a{
+    font-size: 1.2em ;
+}
+
+.form-group.required .control-label:before{
+   color: red;
+   content: "*";
+   position: absolute;
+   margin-left: 2px;
 }
