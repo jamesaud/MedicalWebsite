@@ -1,5 +1,27 @@
-.main-points { background-color: blue; }
+.main-points { text-align: center; padding-bottom: 0; padding-top: 20px; }
 
-.main-points p { background-color: green; }
+.main-points .main-points-block { padding-left: 40px; padding-right: 40px; }
+
+.main-points .main-points-block p { text-align: center; }
+
+.main-points i { padding-bottom: 15px; }
+
+.section-circles { text-align: center; }
+
+.section-circles h1 { padding-bottom: 40px; }
+
+.section-circles h3 { padding-bottom: 25px; }
+
+.content-services .container { width: 1400px; }
+
+.content-services .nav li { float: left; width: 180px; /*Fixes the width of all elements*/ padding: 2px; }
+
+.content-services .nav ul { display: inline-block; text-align: center; }
+
+#icon-heartbeat { color: #CC0000; text-shadow: 3px 3px 3px #ccc; }
+
+#icon-shopping-bag { color: #D9AD0C; text-shadow: 3px 3px 3px #ccc; }
+
+#icon-cloud { color: #0A1CCC; text-shadow: 3px 3px 3px #ccc; }
 
 /*# sourceMappingURL=../../../../static/css/home.css.map */
