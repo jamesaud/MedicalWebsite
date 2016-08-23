@@ -29,7 +29,7 @@
 	padding-top: 10px;
 	font-size: 11px;
 }
-.pricing-head h3 span, 
+.pricing-head h3 span,
 .pricing-head h4 span {
 	display:block;
 	margin-top:5px;
@@ -64,7 +64,7 @@
 	font-style:normal;
 	position:relative;
 }
-	
+
 /*Pricing Content*/
 
 .pricing-content  {
@@ -106,7 +106,7 @@
 /*Pricing Extra*/
 
  .bg-color {
-	background-color: #f9f9f9;	
+	background-color: #f9f9f9;
 }
 .no-space-pricing {
 	padding: 0 15px;
@@ -129,7 +129,7 @@
     top: 13px;
     left: -49px;
     background: rgba(231, 76, 60, 1);
-    transform: rotate(45deg);   
+    transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -139,7 +139,7 @@
     top: 9px;
     right: -48px;
    	background: rgba(116, 197, 44, 1);
-    transform: rotate(-45deg);   
+    transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
@@ -149,7 +149,7 @@
 
 /*Pricing Table medium-dark Version
 ------------------------------------*/
-.price-active, 
+.price-active,
 .pricing-medium-dark .pricing:hover {
 	margin-top: 0 ;
 }
@@ -161,7 +161,7 @@
 	color: #fff;
 	text-shadow: none;
 	background: #717984;
-	border-bottom: 2px solid #eee ; 
+	border-bottom: 2px solid #eee ;
 }
 .pricing-medium-dark .pricing .rating {
 	text-align: center;
@@ -171,7 +171,7 @@
 	border-bottom: none;
 }
 .pricing-medium-dark .rating li i {
-	padding-top: 0;	
+	padding-top: 0;
 	margin: 7px 0;
 	font-size: 20px;
 }
@@ -181,7 +181,7 @@
 }
 
 .pricing-medium-dark .pricing-content li {
-	border-color: #eee; 
+	border-color: #eee;
 }
 
 .pricing-medium-dark .pricing-footer {
@@ -232,13 +232,13 @@
 
 
 /* Devices (Desktop Mode) */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
 	 .sticker-right {
 		top: 10px;
 	    left: -58px;
 	    font-size: 10px;
 	    padding: 3px;
-	}	
+	}
 	 .sticker-left {
 		top: 10px;
 	    right: -58px;
@@ -247,8 +247,8 @@
 	}
 }
 
-/* Medium Devices (Desktops, 992px and less) */
-@media (max-width: 991px) {
+/* Medium Devices (Desktops, 769px and less) */
+@media (max-width: 768px) {
 	/*Pricing Page*/
 	.price-active,
 	.pricing:hover {
@@ -263,12 +263,12 @@
 		padding: 5px 0;
 		font-size: 70px;
 	}
-	.pricing-mega-v3 .pricing h4, 
-	.pricing-mega-v3 .pricing h3, 	
+	.pricing-mega-v3 .pricing h4,
+	.pricing-mega-v3 .pricing h3,
 	.pricing-mega-v3 .pricing-content {
 		border-right: 1px solid #eee;
-	}	
-	
+	}
+
 	.pricing-mega-v3 .block h5 {
 		text-align: center;
 		visibility: visible;

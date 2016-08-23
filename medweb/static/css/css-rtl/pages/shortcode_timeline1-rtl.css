@@ -164,7 +164,7 @@
 }
 
 .timeline-v1 > li.timeline-inverted{
-	float: left; 
+	float: left;
 	clear: left;
 	margin-bottom: 40px;
 }
@@ -177,7 +177,7 @@
   	right: -12px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 769px) {
 	.timeline-v1 > li > .timeline-panel:before {
 		top: 31px;
 		left: -11px;
@@ -261,9 +261,9 @@
         right: -11px;
         left: auto;
     }
-    
+
 	.timeline-v1 > li.timeline-inverted{
-		float: right; 
+		float: right;
 		clear: right;
 		margin-top: 30px;
 		margin-bottom: 30px;

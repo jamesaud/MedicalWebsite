@@ -29,7 +29,7 @@ body {
 	font-size: 25px;
 	padding-bottom: 40px;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.error-v4 h1 {
 		font-size: 150px;
 	}

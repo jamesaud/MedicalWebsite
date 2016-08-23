@@ -1,5 +1,5 @@
 
-	
+
 /*Pricing Page v8
 ------------------------------------*/
 .pricing-table-v8 .no-space-pricing [class^="col-"],
@@ -94,7 +94,7 @@
 
 .pricing-table-v8.service-block-u {
     background-color: #72c02c !important;
-} 
+}
 
 .pricing-table-v8.service-block-dark-red .service-block{
 	background: #b61332
@@ -176,19 +176,19 @@
 
 /* Devices (Large Screen Mode, 1200px more) */
 @media (min-width: 1200px) {
-	
+
 
 }
 
-/* Devices (Desktop Mode, 992px and 1200px) */
-@media (min-width: 992px) and (max-width: 1200px) {
-	
+/* Devices (Desktop Mode, 769px and 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+
 
 }
 
-/* Devices (Tablet Mode, 768px and 991px) */
-@media (min-width: 767px) and (max-width: 991px) {
-	
+/* Devices (Tablet Mode, 768px and 768px) */
+@media (min-width: 767px) and (max-width: 768px) {
+
 
 }
 

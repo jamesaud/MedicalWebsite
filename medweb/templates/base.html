@@ -23,7 +23,8 @@
 
         <!-- Web Fonts -->
         <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
-        
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    
         <!-- CSS Global Compulsory -->
         <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="/static/css/style.css">
@@ -122,7 +123,7 @@
 
 			<!-- Navbar -->
 			<div class="navbar mega-menu" role="navigation">
-				<div class="container header-container">
+				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="res-container">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -139,32 +140,36 @@
                                 </a>
                             </div>
        
+                
                             
-                      <div class='col-md-10 header-slogan collapse navbar-collapse navbar-responsive-collapse col-sm-3 col-xs-12'>
-                            <h5>The only healthcare system in the world that <strong>guarantees independent doctors net income gains of 25-100%.</strong></h5>
-                            <hr>
                               <div class="collapse navbar-collapse navbar-responsive-collapse">
-                                <div class="res-container col-xs-12">
+                                <div class='col-md-10 header-slogan'>
+                                <h5><a href=''>The only healthcare company in the world <strong>guaranteeing independent doctors net income gains of 25-100%.</strong></a></h5>
+                                </div>
+                                <hr/>
+                                <div class="res-container">
                                <!--/end responsive container-->
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
-
-
-                                    <ul class="nav navbar-nav">
-
-                                        <!-- Home -->
-                                         <li class="active"><a href="#">Home</a></li>
-                                        <li><a href="#about">Solutions</a></li>
-                                        <li><a href="#contact">Demo</a></li>
-                                        <li><a href="#contact">Contact</a></li>
-                                    </ul></div></div></div></div></div></div></div></div>
+                                    <ul class="nav navbar-nav navbar-left">
+                                            <!-- Home -->
+                                             <li class="active"><a href="#">Home</a></li>
+                                            <li><a href="#about">Solutions</a></li>
+                                            <li><a href="#contact">Demo</a></li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-rights">
+                                        
+                                            <li><a href="#contact">Contact</a></li>
+                                            <li><a href=''>Call Now</a></li>
+                                    </ul>
+                                </div></div></div></div></div></div></div>
         
 
 		<!--=== End Header ===-->
-
+    <div class='content-main'>
     {% block modal %}
     {% endblock modal %}
-
+    </div>
     {% block footer %}
 		<!--=== Footer Version 1 ===-->
 		<div class="footer-v1">
@@ -387,9 +392,4 @@
     {% block more-javascript %}{% endblock more-javascript %}
 
 </body>
-</html>
-
-
-
-  </body>
 </html>

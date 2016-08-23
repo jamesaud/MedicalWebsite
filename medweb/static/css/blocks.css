@@ -487,7 +487,7 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 769px) {
   .breadcrumbs-v3.breadcrumbs-lg {
     padding: 100px 0;
   }
@@ -908,7 +908,7 @@
   border-right: 1px solid #eee;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 769px) {
   .service-block-v5 .service-border {
 		border-left: none;
 		border-right: none;
@@ -1116,7 +1116,7 @@
 	margin-right: 5px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 769px) {
 	.funny-boxes .funny-boxes-img li {
 		display: inline-block;
 	}
@@ -1848,7 +1848,7 @@
 }
 
 /*Team Info Media Queries*/
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   /*Team Arrows*/
   .team-v7 .team-arrow-left:before,
   .team-v7 .team-arrow-right:before {
@@ -1906,7 +1906,7 @@
   text-align: right;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 769px) {
   .call-action-v1 .call-action-v1-in,
   .call-action-v1 .call-action-v1-in.inner-btn {
     display: block;
@@ -1946,13 +1946,13 @@
 	[10. Portfolio Box]
 ----------------------------------------------------*/
 /*Portfolio Box*/
-@media (min-width: 991px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .portfolio-box {
     margin-bottom: 60px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 769px) {
   .portfolio-box {
     margin-bottom: 0;
   }
@@ -2545,7 +2545,7 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 769px) {
   .parallax-counter-v2 .counters {
     margin-bottom: 0 !important;
   }
@@ -2709,13 +2709,13 @@
   position: absolute;
 }
 
-@media (min-width: 991px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .flat-bg-block-v1 img.img-over {
     top: -18px;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .flat-bg-block-v1 img.img-over {
     position: static;
   }
@@ -3596,7 +3596,7 @@
   -moz-animation: infiniteBackground 65s linear infinite;
   animation: infiniteBackground 65s linear infinite;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 769px) {
   .interactive-slider-v2.intro-promo-img {
     -webkit-animation: none;
     -moz-animation: none;
@@ -5987,7 +5987,7 @@
 	margin-right: 15px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 769px) {
 	.content-boxes-v2,
 	.content-boxes-v2 .text-justify {
 		text-align: center;
@@ -6343,7 +6343,7 @@
 	margin-right: 5px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 769px) {
 	.purchase {
 		text-align: center;
 	}
@@ -7156,7 +7156,7 @@ ul.labels-demo li {
 	border-left: solid 1px #eee;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.badge-sidebar {
 		border-left: none;
 	}

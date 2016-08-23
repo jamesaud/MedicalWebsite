@@ -345,7 +345,7 @@ h3.title-v3-xs {
 	/*padding: 0 150px;*/
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.headline-center p {
 		padding: 0 50px;
 	}
@@ -2308,7 +2308,7 @@ img.image-md {
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 769px) {
 	.md-margin-bottom-10 {
 		margin-bottom: 10px;
 	}

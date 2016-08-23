@@ -1,6 +1,6 @@
 .sliding-panel {
 	position: fixed;
-	z-index: 999999;	
+	z-index: 999999;
 	width: 260px;
 	height: 100%;
 	top: 0;
@@ -28,11 +28,11 @@
 	font-size: 14px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.sliding-panel .sliding-navigation a,
 	.sliding-panel .sliding-navigation a:link,
-	.sliding-panel .sliding-navigation a:focus, 
-	.sliding-panel .sliding-navigation a:hover, 
+	.sliding-panel .sliding-navigation a:focus,
+	.sliding-panel .sliding-navigation a:hover,
 	.sliding-panel .sliding-navigation a:active {
 		text-decoration: none;
 		color: #fff;
@@ -44,7 +44,7 @@
 .sliding-panel h4 {
 	color: #fff !important;
 	padding: 0 10px !important;
-	font-weight: 200 !important;	
+	font-weight: 200 !important;
 }
 @media (max-width: 640px) {
 	.sliding-panel h4 {
@@ -75,7 +75,7 @@
 	padding: 0 0 20px;
 }
 .sliding-panel .one-social-icons a {
-  color: #77808b;  
+  color: #77808b;
 }
 .sliding-panel-flag-left .one-social-icons a,
 .sliding-panel-flag-left-push .one-social-icons a {
@@ -95,7 +95,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  text-indent: 100%;  
+  text-indent: 100%;
   white-space: nowrap;
   opacity: 0.3;
 }

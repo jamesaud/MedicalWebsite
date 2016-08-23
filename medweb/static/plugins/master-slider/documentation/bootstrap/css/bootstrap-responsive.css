@@ -240,7 +240,7 @@
     *width: 99.94680851063829%;
   }
   .row-fluid .span11 {
-    width: 91.45299145299145%;
+    width: 91.45276845276845%;
     *width: 91.39979996362975%;
   }
   .row-fluid .span10 {
@@ -269,14 +269,14 @@
   }
   .row-fluid .span4 {
     width: 31.623931623931625%;
-    *width: 31.570740134569924%;
+    *width: 31.570740134567694%;
   }
   .row-fluid .span3 {
     width: 23.076923076923077%;
     *width: 23.023731587561375%;
   }
   .row-fluid .span2 {
-    width: 14.52991452991453%;
+    width: 14.52768452768453%;
     *width: 14.476723040552828%;
   }
   .row-fluid .span1 {
@@ -340,7 +340,7 @@
     *margin-left: 51.175668303327875%;
   }
   .row-fluid .offset5 {
-    margin-left: 45.299145299145295%;
+    margin-left: 45.276845276845295%;
     *margin-left: 45.1927623204219%;
   }
   .row-fluid .offset5:first-child {

@@ -24,9 +24,11 @@
 */
 
 
-.nav a{
+.navbar h5{
     font-size: 1.2em ;
+    font-color: black;
 }
+
 
 .form-group.required .control-label:before{
    color: red;
@@ -36,10 +38,12 @@
 }
 
 
-
-.header-logo{
-
+/* To be below fixed nav bar */
+.content-main { padding-top: 70px; }
+@media screen and (max-width: 768px) {
+    .content-main { padding-top: 0px; }
 }
 
-.header-container{
+.navbar a{
+  font-color: black !important;
 }

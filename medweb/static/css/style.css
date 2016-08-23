@@ -30,7 +30,7 @@ body.header-fixed-space-v2 {
 	padding-top: 135px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	body.header-fixed-space,
 	body.header-fixed-space-v2 {
 		padding-top: 0;

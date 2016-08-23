@@ -31,7 +31,7 @@
 	padding-top: 10px;
 	font-size: 11px;
 }
-.pricing-head h3 span, 
+.pricing-head h3 span,
 .pricing-head h4 span {
 	display:block;
 	margin-top:5px;
@@ -66,7 +66,7 @@
 	font-style:normal;
 	position:relative;
 }
-	
+
 /*Pricing Content*/
 
 .pricing-content  {
@@ -108,7 +108,7 @@
 /*Pricing Extra*/
 
  .bg-color {
-	background-color: #f9f9f9;	
+	background-color: #f9f9f9;
 }
 .no-space-pricing {
 	padding: 0 15px;
@@ -131,7 +131,7 @@
     top: 13px;
     right: -49px;
     background: rgba(231, 76, 60, 1);
-    transform: rotate(45deg);   
+    transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -141,7 +141,7 @@
     top: 9px;
     left: -48px;
    	background: rgba(116, 197, 44, 1);
-    transform: rotate(-45deg);   
+    transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
@@ -149,13 +149,13 @@
 }
 
 /* Devices (Desktop Mode) */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
 	 .sticker-right {
 		top: 10px;
 	    right: -58px;
 	    font-size: 10px;
 	    padding: 3px;
-	}	
+	}
 	 .sticker-left {
 		top: 10px;
 	    left: -58px;
@@ -164,8 +164,8 @@
 	}
 }
 
-/* Medium Devices (Desktops, 992px and less) */
-@media (max-width: 991px) {
+/* Medium Devices (Desktops, 769px and less) */
+@media (max-width: 768px) {
 	/*Pricing Page*/
 	.price-active,
 	.pricing:hover {

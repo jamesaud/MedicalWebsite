@@ -33,13 +33,13 @@
 	margin-top: 10px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 769px) {
 	.footer-v3 .copyright,
 	.footer-v3 .copyright p,
 	.footer-v3 .copyright ul {
 		text-align: left;
 	}
-	
+
 	.footer-v3 .copyright .social-icons.pull-right {
 		float: inherit !important;
 	}

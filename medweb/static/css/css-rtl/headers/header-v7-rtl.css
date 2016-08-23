@@ -26,14 +26,14 @@
 
 /*Containers
 ------------------------------------*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 768px) {
     .header-v7 .menu-container {
         padding-right: 0 !important;
         padding-left: 0 !important;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     .header-v7 .menu-container:before,
     .header-v7 .menu-container:after {
         content: " ";
@@ -72,7 +72,7 @@
 }
 
 .header-v7 .navbar-toggle,
-.header-v7 .navbar-toggle:hover, 
+.header-v7 .navbar-toggle:hover,
 .header-v7 .navbar-toggle:focus {
     background: inherit;
 }
@@ -134,10 +134,10 @@
 
 /*Dropdown Menu
 ------------------------------------*/
-.header-v7 .dropdown-menu li a { 
-    color: #666; 
-    font-size: 14px; 
-    font-weight: 400; 
+.header-v7 .dropdown-menu li a {
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
     padding: 4px 10px;
 }
 
@@ -256,13 +256,13 @@
         max-height: none;
         margin: 0 20px 25px;
     }
-    
+
     .header-v7 .navbar-collapse.collapse {
         width: auto !important;
         display: block !important;
         overflow: visible !important;
     }
-    
+
     .header-v7 .navbar-collapse.in {
         overflow-x: visible;
     }
@@ -292,9 +292,9 @@
 
     .header-v7 .navbar-default .navbar-nav > li > a,
     .header-v7 .navbar-default .navbar-nav > li > a:hover,
-    .header-v7 .navbar-default .navbar-nav > li > a:focus, 
-    .header-v7 .navbar-default .navbar-nav > .active > a, 
-    .header-v7 .navbar-default .navbar-nav > .active > a:hover, 
+    .header-v7 .navbar-default .navbar-nav > li > a:focus,
+    .header-v7 .navbar-default .navbar-nav > .active > a,
+    .header-v7 .navbar-default .navbar-nav > .active > a:hover,
     .header-v7 .navbar-default .navbar-nav > .active > a:focus {
         background: none;
     }
@@ -308,7 +308,7 @@
     }
 
     /*Dropdown Menu*/
-    .header-v7 .dropdown-menu { 
+    .header-v7 .dropdown-menu {
         top: 100%;
         right: auto;
         width: 100%;
@@ -319,7 +319,7 @@
         box-shadow: none;
         position: static;
         padding: 0 10px 0 0;
-    }    
+    }
 
     .header-v7 .dropdown-menu > li > a {
         color: #555;

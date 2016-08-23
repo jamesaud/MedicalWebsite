@@ -26,14 +26,14 @@
 
 /*Containers
 ------------------------------------*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 768px) {
     .header-v7 .menu-container {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     .header-v7 .menu-container:before,
     .header-v7 .menu-container:after {
         content: " ";

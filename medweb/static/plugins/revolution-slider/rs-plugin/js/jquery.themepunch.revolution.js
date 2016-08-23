@@ -474,7 +474,7 @@
 										versionIncrement = parseFloat(version[2] || '0');
 
 									if (versionTop==1 && versionMinor < 7) {
-										container.html('<div style="text-align:center; padding:40px 0px; font-size:20px; color:#992222;"> The Current Version of jQuery:'+version+' <br>Please update your jQuery Version to min. 1.7 in Case you wish to use the Revolution Slider Plugin</div>');
+										container.html('<div style="text-align:center; padding:40px 0px; font-size:20px; color:#769222;"> The Current Version of jQuery:'+version+' <br>Please update your jQuery Version to min. 1.7 in Case you wish to use the Revolution Slider Plugin</div>');
 									}
 
 									if (versionTop>1) opt.ie=false;
@@ -3931,7 +3931,7 @@
 												apptxt = apptxt + '<source src="'+videoogv+'" type="video/ogg" />';
 												apptxt = apptxt + '</video>';
 											nextcaption.append(apptxt);*/
-											
+
 											if (nextcaption.data('videoposter')!=undefined)
 												if (nextcaption.data('videoposter') != undefined) apptxt = apptxt + 'poster="'+nextcaption.data('videoposter')+'">';
 												if (videowebm!=undefined && get_browser().toLowerCase()=="firefox") apptxt = apptxt + '<source src="'+videowebm+'" type="video/webm" />';

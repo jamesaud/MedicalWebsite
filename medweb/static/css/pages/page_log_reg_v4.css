@@ -148,7 +148,7 @@ body {
 	margin: 0;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	.login-block,
 	.reg-block {
 		min-width: 400px;
@@ -185,7 +185,7 @@ body {
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.form-block {
 		padding: 70px 40px;
 	}

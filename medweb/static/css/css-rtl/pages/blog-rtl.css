@@ -18,7 +18,7 @@
 	text-decoration: none;
 }
 
-.blog .blog-img { 
+.blog .blog-img {
 	margin: 20px 0;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .blog-item .media h4.media-heading span {
-	top: 3px; 
+	top: 3px;
 	left: 0;
 	color: #777;
 	font-size: 12px;
@@ -105,8 +105,8 @@
 	color: #777;
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (max-width: 992px) {
+/* Medium devices (desktops, 769px and up) */
+@media (max-width: 769px) {
 	.blog-medium img {
 		margin-bottom: 20px;
 	}

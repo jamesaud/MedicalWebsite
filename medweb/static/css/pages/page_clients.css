@@ -4,7 +4,7 @@
 	margin-top: 10px;
 	margin-bottom: 50px;
 	padding-bottom: 30px;
-	border-bottom: solid 1px #eee; 
+	border-bottom: solid 1px #eee;
 }
 
 .clients-page ul {
@@ -22,7 +22,7 @@
 
 .clients-page img {
 	padding: 4px;
-	margin: 5px 0; 
+	margin: 5px 0;
 	border: solid 1px #eee;
 	background: #fafafa;
 }
@@ -31,7 +31,7 @@
 	border-color: #bbb;
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 769px) {
 	.clients-page {
 		text-align: center;
 	}
@@ -41,13 +41,13 @@
 }
 
 /*
-.clients-page { 
+.clients-page {
 	overflow: hidden;
 }
-.clients-page p { 
+.clients-page p {
 	overflow: auto;
 }
-.clients-page p a { 
+.clients-page p a {
 	overflow: auto;
 	text-decoration: underline;
 }
@@ -55,7 +55,7 @@
 	display: block;
 	position: relative;
 }
-.clients-page img { 
+.clients-page img {
 	float: left;
 	width: 120px;
 	height: 120px;
@@ -68,7 +68,7 @@
 }
 .clients-page a:hover img.img-colorful,
 .clients-page:hover img.img-colorful {
-	top: 0; 
+	top: 0;
 	left: 0;
 	display: block;
 	position: absolute;

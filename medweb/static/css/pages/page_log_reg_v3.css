@@ -271,7 +271,7 @@ body {
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 769px) {
 	.header-v6 {
 		background: #fff;
 	}

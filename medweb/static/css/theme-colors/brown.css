@@ -63,8 +63,8 @@ a.read-more:hover {
   color: #9c8061;
 }
 
-/* Design for max-width: 991px */
-@media (max-width: 991px) {
+/* Design for max-width: 768px */
+@media (max-width: 768px) {
 	.header .navbar-nav > .active > a,
 	.header .navbar-nav > .active > a:hover,
 	.header .navbar-nav > .active > a:focus {
@@ -115,8 +115,8 @@ a.read-more:hover {
   background:  #81674b !important;
 }
 
-/* Design for max-width: 991px */
-@media (max-width: 991px) {
+/* Design for max-width: 768px */
+@media (max-width: 768px) {
 	.header-v1 .navbar-default .navbar-nav > li:hover > a {
   	border-color:  #eee;
 	}
@@ -150,8 +150,8 @@ a.read-more:hover {
   background:  #81674b !important;
 }
 
-/* Design for max-width: 991px */
-@media (max-width: 991px) {
+/* Design for max-width: 768px */
+@media (max-width: 768px) {
 	.header-v2 .navbar-default .navbar-nav > .active > a,
 	.header-v2 .navbar-default .navbar-nav > .active > a:hover,
 	.header-v2 .navbar-default .navbar-nav > .active > a:focus {
@@ -190,8 +190,8 @@ a.read-more:hover {
   color: #9c8061;
 }
 
-/* Design for max-width: 991px */
-@media (max-width: 991px) {
+/* Design for max-width: 768px */
+@media (max-width: 768px) {
 
 	.header-v3 .navbar-default .navbar-nav > .active > a,
 	.header-v3 .navbar-default .navbar-nav > .active > a:hover,
@@ -233,8 +233,8 @@ a.read-more:hover {
   color: #9c8061;
 }
 
-/* Design for max-width: 991px */
-@media (max-width: 991px) {
+/* Design for max-width: 768px */
+@media (max-width: 768px) {
 	.header-v4 .navbar-default .navbar-nav > li:hover > a {
   border-color:  #eee;
 	}
@@ -254,7 +254,7 @@ a.read-more:hover {
 /* Headers v5
 ------------------------------------*/
 /*bug fixed v1.9*/
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	.header-v5 .navbar-default .navbar-nav > li > a:hover,
 	.header-v5 .navbar-default .navbar-nav > .active > a {
 	  border-top: 2px solid #9c8061;
@@ -297,8 +297,8 @@ a.read-more:hover {
 }
 
 /*bug fixed v1.9*/
-@media (max-width: 991px) {
-    /*Responsive code for max-width: 991px*/
+@media (max-width: 768px) {
+    /*Responsive code for max-width: 768px*/
 	.header-v5 .navbar-default .navbar-nav > .active > a,
     .header-v5 .navbar-default .navbar-nav > .active > a:hover,
     .header-v5 .navbar-default .navbar-nav > .active > a:focus {
@@ -335,7 +335,7 @@ a.read-more:hover {
 }
 
 /* Media Queries */
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	/* Navbar Nav */
 	.header-v6 .navbar-nav > .active > a,
 	.header-v6 .navbar-nav > .active > a:hover,
@@ -376,7 +376,7 @@ a.read-more:hover {
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	/* Default Style */
 	.header-fixed .header-v6.header-fixed-shrink .navbar-nav .active > a,
 	.header-fixed .header-v6.header-fixed-shrink .navbar-nav li > a:hover {

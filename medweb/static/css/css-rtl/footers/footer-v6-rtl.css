@@ -176,10 +176,10 @@
 	color: #bbb;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 769px) {
 	.footer-v6 .copyright .terms-menu,
 	.footer-v6 .copyright .dark-social.pull-right {
 		text-align: center;
 		float: none !important;
-	}	
+	}
 }

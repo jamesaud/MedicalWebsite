@@ -17,7 +17,7 @@
 
 /*Scrollbar*/
 .mCustomScrollbar {
-	height: 320px; 
+	height: 320px;
 }
 
 /*Panel Title Box*/
@@ -218,11 +218,11 @@
 	display: block;
 }
 
-.profile .table > thead > tr > th, 
-.profile .table > tbody > tr > th, 
-.profile .table > tfoot > tr > th, 
-.profile .table > thead > tr > td, 
-.profile .table > tbody > tr > td, 
+.profile .table > thead > tr > th,
+.profile .table > tbody > tr > th,
+.profile .table > tfoot > tr > th,
+.profile .table > thead > tr > td,
+.profile .table > tbody > tr > td,
 .profile .table > tfoot > tr > td {
 	padding: 11px;
 }
@@ -426,23 +426,23 @@
 }
 
 .alert-blocks-pending {
-	background: #fffdcc; 
+	background: #fffdcc;
 }
 
 .alert-blocks-success {
-	background: #e1febc; 
+	background: #e1febc;
 }
 
 .alert-blocks-pending {
-	background: #fffdcc; 
+	background: #fffdcc;
 }
 
 .alert-blocks-error {
-	background: #fee0e0; 
+	background: #fee0e0;
 }
 
 .alert-blocks-info {
-	background: #e0f3fe; 
+	background: #e0f3fe;
 }
 
 .alert-blocks.alert-dismissable {
@@ -796,7 +796,7 @@
 	}
 }
 
-@media screen (min-width: 768px) and (max-width: 992px) {
+@media screen (min-width: 768px) and (max-width: 769px) {
 	.profile .timeline-v2 > li .cbp_tmlabel:after {
 		border-bottom-color: #fff;
 		border-right-color: transparent;
@@ -829,8 +829,8 @@
 }
 
 @media (max-width: 768px) {
-	.profile .tab-v1 .nav-tabs { 
-	  	border-bottom: none;   
+	.profile .tab-v1 .nav-tabs {
+	  	border-bottom: none;
 	}
 }
 

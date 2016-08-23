@@ -102,14 +102,14 @@ Blue:        	#3498db    rgba(52,152,219, 1);
 Orange:      	#e67e22    rgba(230,126,34, 1);
 Red:         	#e74c3c	   rgba(231,76,60, 1);
 Grey:        	#bdc3c7	   rgba(189,195,199, 1);
-Purple:      	#9b6bcc	   rgba(155,107,204, 1);	
+Purple:      	#9b6bcc	   rgba(155,107,204, 1);
 Aqua:        	#27d7e7    rgba(39,215,231, 1);
 Brown:       	#9c8061    rgba(156,128,97, 1);
 Dark Blue:   	#4765a0    rgba(71,101,160, 1);
 Light Green: 	#79d5b3    rgba(121,213,179, 1);
 */
 
-	
+
 /*Pricing Page v4
 ------------------------------------*/
 
@@ -505,16 +505,16 @@ Light Green: 	#79d5b3    rgba(121,213,179, 1);
 
 /* Devices (Large Screen Mode, 1200px more) */
 @media (min-width: 1200px) {
-	
+
 	.pricing-table-v4 .active {
 		-webkit-transform: scale(1.09);
 		-moz-transform: scale(1.09);
-	} 
+	}
 }
 
-/* Devices (Desktop Mode, 992px and 1200px) */
-@media (min-width: 992px) and (max-width: 1200px) {
-	
+/* Devices (Desktop Mode, 769px and 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+
 	.pricing-table-v4 .active {
 		-webkit-transform: scale(1.05);
 		-moz-transform: scale(1.05);
@@ -534,9 +534,9 @@ Light Green: 	#79d5b3    rgba(121,213,179, 1);
 	}
 }
 
-/* Devices (Tablet Mode, 768px and 991px) */
-@media (min-width: 767px) and (max-width: 991px) {
-	
+/* Devices (Tablet Mode, 768px and 768px) */
+@media (min-width: 767px) and (max-width: 768px) {
+
 	.no-space-pricing [class^="col-"],
 	.no-space-pricing [class*=" col-"] {
 		padding: 5px;
@@ -549,7 +549,7 @@ Light Green: 	#79d5b3    rgba(121,213,179, 1);
 	.pricing-table-v4 .active {
 		-webkit-transform: scale(1.03);
 		-moz-transform: scale(1.03);
-	} 
+	}
 
 	.pricing-rounded {
     	margin: 17px 0 55px;
@@ -568,12 +568,12 @@ Light Green: 	#79d5b3    rgba(121,213,179, 1);
 /* Medium Devices (Phone Mode, 768px and less) */
 @media (max-width: 767px) {
 	/*Pricing Page*/
-	
+
 	.no-space-pricing [class^="col-"],
 	.no-space-pricing [class*=" col-"] {
 		padding: 10px;
 	}
-	
+
 	.pricing-table-v4 .pricing-v4-head h4 {
 		font-size: 14px;
 		font-weight: bold;

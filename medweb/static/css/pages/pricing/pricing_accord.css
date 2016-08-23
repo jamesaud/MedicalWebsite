@@ -26,7 +26,7 @@
 	padding-top: 10px;
 	font-size: 11px;
 }
-.pricing-head h3 span, 
+.pricing-head h3 span,
 .pricing-head h4 span {
 	display:block;
 	margin-top:5px;
@@ -61,7 +61,7 @@
 	font-style:normal;
 	position:relative;
 }
-	
+
 /*Pricing Content*/
 
 .pricing-content  {
@@ -103,7 +103,7 @@
 /*Pricing Extra*/
 
  .bg-color {
-	background-color: #f9f9f9;	
+	background-color: #f9f9f9;
 }
  .easy-bg-v2 {
     top: 13px;
@@ -118,7 +118,7 @@
     text-align: center;
     letter-spacing: 2px;
     background: rgba(231, 76, 60, 1);
-    transform: rotate(45deg);   
+    transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -127,7 +127,7 @@
 
 
 
-/*Pricing Table accord-inner Version 
+/*Pricing Table accord-inner Version
 ------------------------------------*/
 
 .pricing-accord-inner [class^="col-"],
@@ -135,7 +135,7 @@
 	padding: 0px;
 }
 
-.pricing-accord .price-active, 
+.pricing-accord .price-active,
 .pricing-accord .pricing-accord-inner .pricing:hover {
 	margin-top: 0 ;
 }
@@ -148,7 +148,7 @@
 	text-shadow: none;
 	font-weight: normal !important;
 	border-bottom: 1px solid #ddd ;
-	border-top: 1px solid #ddd; 
+	border-top: 1px solid #ddd;
 	background: url("../../img/breadcrumbs.png")
 	repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
 }
@@ -159,7 +159,7 @@
 .pricing-accord-inner .rating li i {
 	color: #888;
 	margin: 7px 0;
-	padding-top: 0;	
+	padding-top: 0;
 	font-size: 20px;
 }
 .pricing-accord-inner li {
@@ -183,7 +183,7 @@
 	padding: 5px;
 	font-size: 60px;
 	text-shadow: none;
-	margin: -2px 0 0px; 
+	margin: -2px 0 0px;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 	font-weight: normal !important;
@@ -211,7 +211,7 @@
 .pricing-accord-inner .pricing:hover h4,
 .pricing-accord-inner .pricing:hover h3,
 .pricing-accord-inner .pricing:hover p,
-.pricing-accord-inner .pricing:hover li, 
+.pricing-accord-inner .pricing:hover li,
 .pricing-accord-inner .pricing:hover li i {
 	color: #717984;
 }
@@ -273,7 +273,7 @@ color: red;
 .pricing-accord .btn-group .btn {
 	color: #888;
 	border-radius: 30px !important;
-	margin: 15px 2px 0 ; 
+	margin: 15px 2px 0 ;
 	border: 1px solid #eee;
 
 }
@@ -309,7 +309,7 @@ h2 {
 	.no-space-pricing [class^="col-"],
 	.no-space-pricing [class*=" col-"] {
 		padding: 0;
-	}	
+	}
 	.pricing-mega [class^="col-"],
 	.pricing-mega [class*=" col-"] {
 		padding: 0px;
@@ -337,8 +337,8 @@ h2 {
 
 
 
-/* Medium Devices (Desktops, 992px and less) */
-@media (max-width: 992px) {
+/* Medium Devices (Desktops, 769px and less) */
+@media (max-width: 769px) {
 	/*Pricing Page*/
 	.price-active,
 	.pricing:hover {
@@ -349,11 +349,11 @@ h2 {
 		padding: 5px 0;
 		font-size: 70px;
 	}
-	.pricing-mega-3 .pricing h4, 
-	.pricing-mega-3 .pricing h3, 	
+	.pricing-mega-3 .pricing h4,
+	.pricing-mega-3 .pricing h3,
 	.pricing-mega-3 .pricing-content {
 		border-left: 1px solid #eee;
-	}	
+	}
 	.pricing-mega-3 [class^="col-"],
 	.pricing-mega-3 [class*=" col-"] {
 		padding: 10px;

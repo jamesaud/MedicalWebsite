@@ -29,7 +29,7 @@
 	padding-top: 10px;
 	font-size: 11px;
 }
-.pricing-bg-colored .pricing-head h3 span, 
+.pricing-bg-colored .pricing-head h3 span,
 .pricing-bg-colored .pricing-head h4 span {
 	display:block;
 	margin-top:5px;
@@ -45,7 +45,7 @@
 	border-radius:3px 3px 0 0;
 	text-shadow:0 1px 0 #32a20f;
 }
-	
+
 /*Pricing Content*/
 
 .pricing-bg-colored .pricing-content  {
@@ -86,7 +86,7 @@
 
 /*Pricing Extra*/
 .pricing-bg-colored .bg-color {
-	background-color: #f9f9f9;	
+	background-color: #f9f9f9;
 }
 .pricing-bg-colored .no-space-pricing {
 	padding: 0 15px;
@@ -108,7 +108,7 @@
     top: 13px;
     right: -49px;
     background: rgba(231, 76, 60, 1);
-    transform: rotate(45deg);   
+    transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -118,16 +118,16 @@
     top: 9px;
     left: -48px;
    	background: rgba(116, 197, 44, 1);
-    transform: rotate(-45deg);   
+    transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
 }
 
-/*Pricing Table Colored Background Version 
+/*Pricing Table Colored Background Version
 ------------------------------------*/
-.price-active, 
+.price-active,
 .pricing-bg-colored	.pricing:hover {
 	margin-top: 0;
 }
@@ -137,17 +137,17 @@
 .pricing-bg-colored .pricing {
 	border: 1px solid #EEEEEE;
 }
-.pricing-bg-colored .pricing:hover {	
-	background: #74C52C; 
+.pricing-bg-colored .pricing:hover {
+	background: #74C52C;
 }
 .pricing-bg-colored .pricing:hover li,
-.pricing-bg-colored .pricing:hover li i, 
+.pricing-bg-colored .pricing:hover li i,
 .pricing-bg-colored .pricing:hover .pricing-head p {
-	color: #fff; 
+	color: #fff;
 }
 .pricing-bg-colored .pricing-head i {
 	color: #74C52C;
-	padding-top: 20px;	
+	padding-top: 20px;
 	margin-top: 10px 0px;
 }
 .pricing-bg-colored .pricing-head p {
@@ -195,13 +195,13 @@
 
 
 /* Devices (Desktop Mode) */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
 	 .sticker-right {
 		top: 10px;
 	    right: -58px;
 	    font-size: 10px;
 	    padding: 3px;
-	}	
+	}
 	 .sticker-left {
 		top: 10px;
 	    left: -58px;
@@ -210,8 +210,8 @@
 	}
 }
 
-/* Medium Devices (Desktops, 992px and less) */
-@media (max-width: 991px) {
+/* Medium Devices (Desktops, 769px and less) */
+@media (max-width: 768px) {
 	/*Pricing Page*/
 	.price-active,
 	.pricing:hover {

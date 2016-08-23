@@ -16,7 +16,7 @@ body.header-fixed-space-default {
 	padding-top: 81px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	body.header-fixed-space-default {
 		padding-top: 0;
 	}
@@ -34,7 +34,7 @@ body.header-fixed-space-default {
 	position: relative;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.header .topbar {
 		margin-bottom: 20px;
 	}
@@ -157,7 +157,7 @@ body.header-fixed-space-default {
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.header > .container {
 		margin-bottom: 0;
 	}
@@ -191,7 +191,7 @@ body.header-fixed-space-default {
 	border-color: #5fb611;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.header .navbar-toggle {
 		margin-right: 0;
 	}
@@ -219,7 +219,7 @@ body.header-fixed-space-default {
 }
 
 /*Navbar Collapse*/
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   	.header .navbar-collapse,
 	.header .navbar-collapse .container {
 		padding-left: 0;
@@ -239,7 +239,7 @@ body.header-fixed-space-default {
 	color: #72c02c;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	.header .navbar-nav {
 		float: right;
 	}
@@ -250,8 +250,8 @@ body.header-fixed-space-default {
 ----------------------------------------------------*/
 
 /*Responsive Navbar*/
-@media (max-width: 991px) {
-	/*Responsive code for max-width: 991px*/
+@media (max-width: 768px) {
+	/*Responsive code for max-width: 768px*/
     .header .navbar-header {
         float: none;
     }
@@ -347,7 +347,7 @@ body.header-fixed-space-default {
 		padding-bottom: 0;
 	}
 
-	/*Design for max-width: 991px*/
+	/*Design for max-width: 768px*/
 	.header .navbar-nav > li > a {
 		font-size: 14px;
 		padding: 9px 10px;
@@ -379,7 +379,7 @@ body.header-fixed-space-default {
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	/*Navbar Collapse*/
 	.header .navbar-collapse {
 		padding: 0;
@@ -505,7 +505,7 @@ body.header-fixed-space-default {
     font-family: FontAwesome;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   	.header .dropdown-submenu > a:after {
       	content: " ";
   	}
@@ -533,7 +533,7 @@ body.header-fixed-space-default {
    	display: block;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.header .dropdown-submenu > .dropdown-menu {
 		display: block;
 		margin-left: 15px;
@@ -584,7 +584,7 @@ body.header-fixed-space-default {
 	border-bottom: solid 2px #aaa;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	.header .nav > li > .search {
 		bottom: -2px;
 		position: relative;
@@ -612,7 +612,7 @@ body.header-fixed-space-default {
 	margin: 0;
 }
 
-@media (min-width: 767px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 768px) {
 	.header .navbar-toggle {
 		margin-right: 0;
 	}
@@ -622,7 +622,7 @@ body.header-fixed-space-default {
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.header .nav > li > .search {
 		color: #999;
 		width: 35px;
@@ -713,7 +713,7 @@ body.header-fixed-space-default {
   	overflow: hidden;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	/*Mega Menu for Two Columns*/
 	.header .mega-menu .mega-menu-content.content-two-col {
 	    min-width: 596px;
@@ -739,7 +739,7 @@ body.header-fixed-space-default {
 }
 
 /*Equal Height Lists*/
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	.header .mega-menu .equal-height {
 	    display: -webkit-flex;
 	    display: -ms-flexbox;
@@ -762,14 +762,14 @@ body.header-fixed-space-default {
 }
 
 /*Space for only Big Resolution*/
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	.header .mega-menu .big-screen-space {
 		margin-bottom: 20px;
 	}
 }
 
 /*Mega Menu Content*/
-@media (min-width: 992px) {
+@media (min-width: 769px) {
     .header .mega-menu .equal-height-in {
         padding: 20px 0;
         border-left: 1px solid #eee;
@@ -823,7 +823,7 @@ body.header-fixed-space-default {
 }
 
 /*Equal Hight List Style*/
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     /*Equal Height List Style*/
     .header .mega-menu .equal-height-list h3 {
 		color: #555;
@@ -903,7 +903,7 @@ body.header-fixed-space-default {
 	background: inherit;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.header.header-dark .navbar-nav > li a {
 		border-bottom-color: #666;
 	}
@@ -940,7 +940,7 @@ body.header-fixed-space-default {
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	.header.header-dark .navbar-nav > li > a:hover,
 	.header.header-dark .navbar-nav > .active > a {
 		color: #72c02c !important;
@@ -984,7 +984,7 @@ body.header-fixed-space-default {
 	color: #eee;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	.header.header-dark .mega-menu .equal-height-list li a {
 		color: #bbb;
 		border-bottom-color: #666;
@@ -1000,7 +1000,7 @@ body.header-fixed-space-default {
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	.header.header-dark .mega-menu .equal-height-in {
 		border-left-color: #666;
 	}
@@ -1034,7 +1034,7 @@ body.header-fixed-space-default {
 	transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 	/*Header*/
 	.header-fixed .header.header-sticky,
 	.header-fixed .header.header-fixed-shrink {
@@ -1042,7 +1042,7 @@ body.header-fixed-space-default {
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	.header-fixed .header.header-fixed-shrink {
 		margin-top: -35px;
 	}

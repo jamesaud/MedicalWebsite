@@ -76,7 +76,7 @@ a:focus {
 	padding: 0 16px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
 	.coming-soon-v3-right {
 		padding: 190px 0 0;
 	}

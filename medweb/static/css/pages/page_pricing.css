@@ -30,7 +30,7 @@
 	padding-top: 10px;
 	font-size: 11px;
 }
-.pricing-head h3 span, 
+.pricing-head h3 span,
 .pricing-head h4 span {
 	display:block;
 	margin-top:5px;
@@ -65,7 +65,7 @@
 	font-style:normal;
 	position:relative;
 }
-	
+
 /*Pricing Content*/
 
 .pricing-content  {
@@ -107,7 +107,7 @@
 /*Pricing Extra*/
 
  .bg-color {
-	background-color: #f9f9f9;	
+	background-color: #f9f9f9;
 }
 .no-space-pricing {
 	padding: 0 15px;
@@ -130,7 +130,7 @@
     top: 13px;
     right: -49px;
     background: rgba(231, 76, 60, 1);
-    transform: rotate(45deg);   
+    transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -140,7 +140,7 @@
     top: 9px;
     left: -48px;
    	background: rgba(116, 197, 44, 1);
-    transform: rotate(-45deg);   
+    transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
@@ -149,7 +149,7 @@
 
 /*Pricing Table Colored Background Version
 ------------------------------------*/
-.price-active, 
+.price-active,
 .pricing-bg-colored	.pricing:hover {
 	margin-top: 0;
 }
@@ -159,17 +159,17 @@
 .pricing-bg-colored .pricing {
 	border: 1px solid #EEEEEE;
 }
-.pricing-bg-colored .pricing:hover {	
-	background: #74C52C; 
+.pricing-bg-colored .pricing:hover {
+	background: #74C52C;
 }
 .pricing-bg-colored .pricing:hover li,
-.pricing-bg-colored .pricing:hover li i, 
+.pricing-bg-colored .pricing:hover li i,
 .pricing-bg-colored .pricing:hover .pricing-head p {
-	color: #fff; 
+	color: #fff;
 }
 .pricing-bg-colored .pricing-head i {
 	color: #74C52C;
-	padding-top: 20px;	
+	padding-top: 20px;
 	margin-top: 10px 0px;
 }
 .pricing-bg-colored .pricing-head p {
@@ -219,7 +219,7 @@
 
 /*Pricing Table Rounded Version
 ------------------------------------*/
-.price-active, 
+.price-active,
 .pricing-rounded .pricing:hover {
 	margin-top: 0;
 }
@@ -232,13 +232,13 @@
 	letter-spacing: 1px;
 	border: 1px solid #fff;
 	background-color:rgba(255, 255, 255, 0.1);
-}	
+}
 .pricing-rounded .easy-bg-v2 i {
 	padding-left: 3px;
 }
 .pricing-rounded h3 {
 	padding-bottom: 80px;
-	padding-top: 15px; 
+	padding-top: 15px;
 }
 .pricing-rounded h4 {
 	width: 140px;
@@ -266,7 +266,7 @@
 .pricing-rounded .pricing-content span i {
 	font-size: 13px;
 }
-/*Pricing Zoom  
+/*Pricing Zoom
 ------------------------------------*/
 
 .pricing-zoom .pricing:hover {
@@ -288,9 +288,9 @@
 	transition:color 0.5s ease-in-out;
 }
 
-/*Pricing Table Light Version 
+/*Pricing Table Light Version
 ------------------------------------*/
-.price-active, 
+.price-active,
 .pricing-light .pricing:hover {
 	margin-top: 0 ;
 	border-color: #717984;
@@ -316,7 +316,7 @@
 .pricing-light .rating li i {
 	color: #888;
 	margin: 7px 0;
-	padding-top: 0;	
+	padding-top: 0;
 	font-size: 20px;
 }
 .pricing-light li {
@@ -332,7 +332,7 @@
 	padding: 5px;
 	font-size: 70px;
 	text-shadow: none;
-	margin: -2px 0 0px; 
+	margin: -2px 0 0px;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 	font-weight: normal !important;
@@ -359,7 +359,7 @@
 .pricing-light .pricing:hover h4,
 .pricing-light .pricing:hover h3,
 .pricing-light .pricing:hover p,
-.pricing-light .pricing:hover li, 
+.pricing-light .pricing:hover li,
 .pricing-light .pricing:hover li i {
 	color: #717984;
 }
@@ -370,7 +370,7 @@
 
 /*Pricing Meduim Light
 ------------------------------------*/
-.price-active, 
+.price-active,
 .pricing-medium-light .pricing:hover {
 	z-index:8;
 	margin-top: 0 !important;
@@ -384,7 +384,7 @@
 	color: #717984;
 	text-shadow: none;
 	font-weight: normal !important;
-	border-bottom: 2px solid #eee !important; 
+	border-bottom: 2px solid #eee !important;
 	background: #fff;
 }
 .pricing-medium-light .pricing-content > li {
@@ -402,7 +402,7 @@
 }
 .pricing-medium-light .rating li i {
 	margin: 7px 0;
-	padding-top: 0;	
+	padding-top: 0;
 	font-size: 20px;
 }
 .pricing-medium-light .pricing-content span {
@@ -459,7 +459,7 @@ background-color: #717984!important;
 
 /*Pricing Table medium-dark Version
 ------------------------------------*/
-.price-active, 
+.price-active,
 .pricing-medium-dark .pricing:hover {
 	margin-top: 0 ;
 }
@@ -471,7 +471,7 @@ background-color: #717984!important;
 	color: #fff;
 	text-shadow: none;
 	background: #717984;
-	border-bottom: 2px solid #eee ; 
+	border-bottom: 2px solid #eee ;
 }
 .pricing-medium-dark .pricing .rating {
 	text-align: center;
@@ -481,7 +481,7 @@ background-color: #717984!important;
 	border-bottom: none;
 }
 .pricing-medium-dark .rating li i {
-	padding-top: 0;	
+	padding-top: 0;
 	margin: 7px 0;
 	font-size: 20px;
 }
@@ -491,7 +491,7 @@ background-color: #717984!important;
 }
 
 .pricing-medium-dark .pricing-content li {
-	border-color: #eee; 
+	border-color: #eee;
 }
 
 .pricing-medium-dark .pricing-footer {
@@ -542,7 +542,7 @@ background-color: #717984!important;
 
 /*Pricing Table Dark
 ------------------------------------*/
-.price-active, 
+.price-active,
 .pricing-dark .pricing:hover {
 	z-index:8;
 	margin-top: 0 !important;
@@ -566,7 +566,7 @@ background-color: #717984!important;
 }
 .pricing-dark .rating li i {
 	margin: 7px 0;
-	padding-top: 0;	
+	padding-top: 0;
 	font-size: 20px;
 }
 .pricing-dark li {
@@ -576,12 +576,12 @@ background-color: #717984!important;
 	color: #717984;
 	text-shadow: none;
 	font-weight: normal !important;
-	border-bottom: 2px solid #eee !important; 
+	border-bottom: 2px solid #eee !important;
 	background: #fff;
 }
 
 .pricing-dark .pricing-content li {
-	border-color: #fff;	
+	border-color: #fff;
 }
 
 .pricing-dark .pricing-content span {
@@ -665,7 +665,7 @@ background-color: #717984!important;
 .pricing-mega-v1 .pricing-head h4 span,
 .pricing-mega-v1 .pricing-content li span,
 .padding-mega-v1 .pricing-head .price span {
-	display: block; 
+	display: block;
 	padding: 10px 0px 0px;
 }
 .pricing-mega-v1 .pricing-head .price {
@@ -674,11 +674,11 @@ background-color: #717984!important;
 	padding-bottom: 0px;
 	background-color: #fff;
 }
-.pricing-mega-v1 .pricing-head h3, 
+.pricing-mega-v1 .pricing-head h3,
 .pricing-mega-v1 .pricing-head h4 {
 	font-style: normal;
 	font-weight: normal !important;
-} 
+}
 .pricing-mega-v1 .hidden-area {
 	margin-top: 75px;
 }
@@ -692,7 +692,7 @@ background-color: #717984!important;
 }
 .pricing-mega-v1 .hidden-area:hover .pricing-head h4 {
 	color: #888;
-}  
+}
 .pricing-mega-v1 .block .pricing-content  li i {
 	font-size: 13px;
 }
@@ -702,11 +702,11 @@ background-color: #717984!important;
 .pricing-mega-v1 .pricing-content li {
 	padding: 10px;
 	font-size: 12px;
-	font-style: normal; 
+	font-style: normal;
 	min-height: 41px;
 }
 .pricing-mega-v1 .pricing-content li i {
-	color: #72C02C; 
+	color: #72C02C;
 }
 .pricing-mega-v1 .btn-group .dropdown-menu  {
 	width: 100%;
@@ -718,11 +718,11 @@ background-color: #717984!important;
 .pricing-mega-v1 .btn-group .dropdown-menu  li a{
 	color: #fff;
 }
-.pricing-mega-v1 .btn-group .dropdown-menu  li a:hover { 
+.pricing-mega-v1 .btn-group .dropdown-menu  li a:hover {
 	background: #5fb611
 }
 
-/*Pricing Table Mega v2 
+/*Pricing Table Mega v2
 ------------------------------------*/
 
 .pricing-mega-v2 .price-active,
@@ -756,7 +756,7 @@ background-color: #717984!important;
 .pricing-mega-v2 .pricing-head h4 span,
 .pricing-mega-v2 .pricing-content li span,
 .padding-mega-v2 .pricing-head .price span {
-	display: block; 
+	display: block;
 	padding: 10px 0px 0px;
 }
 .pricing-mega-v2 .pricing-head .price {
@@ -765,7 +765,7 @@ background-color: #717984!important;
 	padding-bottom: 0px;
 	background-color: #fff;
 }
-.pricing-mega-v2 .pricing-head h3, 
+.pricing-mega-v2 .pricing-head h3,
 .pricing-mega-v2 .pricing-head h4 {
 	font-style: normal;
 	font-weight: normal !important;
@@ -783,10 +783,10 @@ background-color: #717984!important;
 }
 .pricing-mega-v2 .hidden-area:hover .pricing-head h4 {
 	color: #888;
-}  
+}
 .pricing-mega-v2 .hidden-area li:hover  i{
 	color: #74C52C;
-} 
+}
 
 .pricing-mega-v2 .block li {
 	text-align: center;
@@ -805,17 +805,17 @@ background-color: #717984!important;
 	font-size: 12px;
 }
 .pricing-mega-v2 .pricing-content li i {
-	color: #888; 
+	color: #888;
 }
 .pricing-mega-v2 .bg-color {
-	background-color: #f9f9f9;	
+	background-color: #f9f9f9;
 }
 .pricing-mega-v2 .block:hover .bg-color {
 	background: #74C52C;
 }
 .pricing-mega-v2 .block:hover h3,
-.pricing-mega-v2 .block:hover h4, 
-.pricing-mega-v2 .block:hover li, 
+.pricing-mega-v2 .block:hover h4,
+.pricing-mega-v2 .block:hover li,
 .pricing-mega-v2 .block:hover li i,
 .pricing-mega-v2 .block:hover h4 i {
 	color: #fff !important;
@@ -874,7 +874,7 @@ background-color: #717984!important;
 .pricing-mega-v3 .pricing-head h4 span,
 .pricing-mega-v3 .pricing-content li span,
 .padding-mega-v3 .pricing-head .price span {
-	display: block; 
+	display: block;
 	padding: 15px 0px 0px;
 }
 .pricing-mega-v3 .hidden-area .pricing-content:nth-child(2) {
@@ -883,11 +883,11 @@ background-color: #717984!important;
 .pricing-mega-v3 .hidden-area .pricing-head h4 {
 	font-size: 28px;
 	padding: 34px 0 34px 15px;
-	border-left: 1px solid #eee; 
+	border-left: 1px solid #eee;
 }
 .pricing-mega-v3 .hidden-area:hover .pricing-head h4 {
 	color: #888;
-}  
+}
 .pricing-mega-v3 .hidden-area .pricing-content {
 	border-left: 1px solid #eee;
 }
@@ -926,7 +926,7 @@ background-color: #717984!important;
 .pricing-mega-v3 .btn-group .dropdown-menu li a {
 	color: #fff;
 }
-.pricing-mega-v3 .btn-group .dropdown-menu li a:hover { 
+.pricing-mega-v3 .btn-group .dropdown-menu li a:hover {
 	background: #5fb611;
 }
 .pricing-mega-v3 .btn-group-justified {
@@ -934,13 +934,13 @@ background-color: #717984!important;
 }
 
 /* Devices (Desktop Mode) */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
 	 .sticker-right {
 		top: 10px;
 	    right: -58px;
 	    padding: 3px;
 	    font-size: 10px;
-	}	
+	}
 	 .sticker-left {
 		top: 10px;
 	    left: -58px;
@@ -949,8 +949,8 @@ background-color: #717984!important;
 	}
 }
 
-/* Medium Devices (Desktops, 992px and less) */
-@media (max-width: 991px) {
+/* Medium Devices (Desktops, 769px and less) */
+@media (max-width: 768px) {
 	/*Pricing Page*/
 	.price-active,
 	.pricing:hover {
@@ -965,12 +965,12 @@ background-color: #717984!important;
 		padding: 5px 0;
 		font-size: 70px;
 	}
-	.pricing-mega-v3 .pricing h4, 
-	.pricing-mega-v3 .pricing h3, 	
+	.pricing-mega-v3 .pricing h4,
+	.pricing-mega-v3 .pricing h3,
 	.pricing-mega-v3 .pricing-content {
 		border-left: 1px solid #eee;
-	}	
-	
+	}
+
 	.pricing-mega-v3 .block h5 {
 		text-align: center;
 		visibility: visible;
