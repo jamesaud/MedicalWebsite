@@ -175,7 +175,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 STATIC_ROOT = str(ROOT_DIR('staticfiles'))
 #if settings.DEBUG:
-#STATIC_ROOT = str(ROOT_DIR('medweb/static/staticfiles'))  # So the sass compiler can workj in developement
+STATIC_ROOT = str(ROOT_DIR('medweb/static/staticfiles'))  # So the sass compiler can workj in developement
 
 
 

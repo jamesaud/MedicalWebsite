@@ -23,7 +23,6 @@
 
         <!-- Web Fonts -->
         <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
-        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     
         <!-- CSS Global Compulsory -->
         <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
@@ -50,8 +49,11 @@
         <link rel="stylesheet" href="/static/css/custom.css">
 
          <!-- My CSS -->
-        <link rel="stylesheet" href="/static/css/project.css">
-
+        {% load sass_tags %}
+        <link rel="stylesheet" href="{% sass_src 'css/project.scss' %}">
+        <!-- for dev only -->
+         <link href="{% static 'staticfiles/css/project.css' %}" rel="stylesheet" type="text/css" />
+        
     {% endblock css %}
 
     {% block more-css %}{% endblock more-css %}
@@ -144,23 +146,20 @@
                             
                               <div class="collapse navbar-collapse navbar-responsive-collapse">
                                 <div class='col-md-10 header-slogan'>
-                                <h5><a href=''>The only healthcare company in the world <strong>guaranteeing independent doctors net income gains of 25-100%.</strong></a></h5>
+                                <h5><a href=''>The only healthcare company in the world <strong>guaranteeing independent doctors net income gains of 25-100%</strong></a></h5>
                                 </div>
                                 <hr/>
                                 <div class="res-container">
                                <!--/end responsive container-->
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <ul class="nav navbar-nav navbar-left">
+                                    <ul class="nav navbar-nav">
                                             <!-- Home -->
-                                             <li class="active"><a href="#">Home</a></li>
+                                            <li class="active"><a href="#">Home</a></li>
                                             <li><a href="#about">Solutions</a></li>
                                             <li><a href="#contact">Demo</a></li>
-                                    </ul>
-                                    <ul class="nav navbar-nav navbar-rights">
-                                        
                                             <li><a href="#contact">Contact</a></li>
-                                            <li><a href=''>Call Now</a></li>
+                                        <li><a href=''>Call Now</a></li>
                                     </ul>
                                 </div></div></div></div></div></div></div>
         
