@@ -13,10 +13,11 @@
 
         <!-- CSS Pages Style -->
         <link rel="stylesheet" href="/static/css/pages/page_one.css">
+        <link rel="stylesheet" href="/static/css/pages/page_search.css"><!-- for the purchase now boxes -->
 
         <!-- sass -->
         {% load sass_tags %}
-
+    
         <link href="{% sass_src 'css/home.scss' %}" rel="stylesheet" type="text/css" />
         <!-- for local dev only -->
         <link href="{% static '/staticfiles/css/home.scss' %}" rel="stylesheet" type="text/css" />
@@ -274,8 +275,8 @@
           
         <div class='col-md-4 main-points-block'>
             <i id='icon-shopping-bag' class="fa fa-shopping-bag fa-4x" aria-hidden="true" ></i>
-            <h3 class='main-points-header'><strong>Revenue Cycle Management</strong></h3>
-            <p>As a physician you will keep more from our advanced autodeposit system.</p>
+            <h3 class='main-points-header'><strong>Value Based Care</strong></h3>
+            <p>Our value based services allow physicians to deliver <strong>Value Based Care</strong>. And you will keep more from our advanced autodeposit system.</p>
         </div>    
       </div>
         
@@ -421,14 +422,9 @@
  
     
   <!-- SERVICES -->
-    <div class='content-services'>
+  <div class='content-services'>
   <div class="one-page-inner one-default">
     <div class="container content main-points">
-        
-      <div class='row text-center'>
-        <h1>7 Key Components Included</h1>
-          <!-- REMOVE BR FOR PADDING-->
-      </div>
         
       <div class="row">
         <ul class="nav nav-tabs nav-justified">
@@ -536,7 +532,67 @@
       </div>
     </div>
   </div>
+
+  <div class="one-page-inner one-default section-purchase">
+    <div class="container content">
+        <h1>Choose the plan that works best for you</h1>
+        <div class='row service-blocks'>
+            <div class="col-md-6 col-sm-6 md-margin-bottom-40">
+                    <div class="service-block service-block-default">
+                        <div class='color-top-1'>  </div>
+                        <div class='service-block-content'>
+                            <i class="icon-lg rounded-x icon-line icon-trophy"></i>
+                            <h2 class="heading-sm">Plan 1</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine usce dapibus elit nondapibus</p>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>Analysis &amp; Consulting</li>
+                                <li>Email Marketing</li>
+                                <li>App &amp; Icon Design</li>
+                                <li>Responsive Web Desgin</li>
+                                <li>Social Networking</li>
+                                <li>Documentation</li>
+                            </ul>
+                            <a href="#" class="btn-u btn-large">Purchase Now</a>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-6 md-margin-bottom-40">
+                    <div class="service-block service-block-default">
+                        <div class='color-top-2'>  </div>
+                        <div class='service-block-content'>
+                            <i class="icon-lg rounded-x icon-line icon-trophy"></i>
+                            <h2 class="heading-sm">Plan 2</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine usce dapibus elit nondapibus</p>
+                        </div>
+                        <hr>
+                        <div class='service-block-content'>
+                            <ul class="list-unstyled">
+                                <li>Analysis &amp; Consulting</li>
+                                <li>Email Marketing</li>
+                                <li>App &amp; Icon Design</li>
+                                <li>Responsive Web Desgin</li>
+                                <li>Social Networking</li>
+                                <li>Documentation</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-u btn-large">Purchase Now</a>
+                    </div>
+            </div>
+            
+                
+          </div>
+        </div>
+    </div>  
+
+
+
+
+
 </div><!--/one-page-->
+
+
 <!-- End Content Part -->
 
 {% endblock modal %}
