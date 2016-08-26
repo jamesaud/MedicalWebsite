@@ -58,10 +58,12 @@
   left: -1%;  /* prevent line on the right where background doesn't cover image */
   padding: 5%;
   box-sizing: border-box;
-  background-color: rgba(0, 128, 128, 0.8);
+  background-color: rgba(0, 128, 128, 1);
   font-weight: 300;
   transition: transform .2s ease-out, opacity .3s ease-out;
 }
+
+
 
 .hex h1 {
   bottom: 50%;
@@ -70,6 +72,7 @@
   z-index: 1;
   transform: translateY(-100%) translatez(-1px);
 }
+
 
 .hex h1:after {
   content: '';
@@ -88,10 +91,31 @@
 }
 
 
+.hex .no-effect{
+    transform: translateY(0%);
+    background: None;
+}
+
+.hex h1.no-effect, .hex p.no-effect{
+    color: black;
+}
+
+.hex h1.no-effect:after{
+    border-bottom: 1px solid black;
+}
+
+
+
 /*** HOVER EFFECT  **********************************************************************/
 
 .hexIn:hover h1, .hexIn:focus h1, .hexIn:hover p, .hexIn:focus p {
   transform: translateY(0%) translatez(-1px);
+  color: white;
+}
+
+.hexIn:hover .no-effect, .hexIn:focus .no-effect{
+  transform: translateY(0%) translatez(-1px);
+  color: black;
 }
 
 
