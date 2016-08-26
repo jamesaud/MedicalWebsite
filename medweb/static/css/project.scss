@@ -1,0 +1,73 @@
+@import 'variables';
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+
+.header-slogan a{
+        color: black ;
+        font-size: 1.2em;
+    }
+
+
+.header-v8 {
+    .navbar{
+        margin: 0;
+        li{
+            a{
+                color: black !important;
+                font-family: $font-primary;
+              }
+            
+            .tiny-text{
+                        font-size: 10px !important;             
+                    }
+            
+            a:hover, a:active, a:focus{
+                color: $primary-color !important;
+                }  
+            
+        
+        }}}
+
+.header-v8 .navbar-nav > .active > a,
+.header-v8 .navbar-nav > .active > a:hover,
+.header-v8 .navbar-nav > .active > a:focus {
+	color: $primary-color !important;
+}
+
+.form-group.required .control-label:before{
+   color: red;
+   content: "*";
+   position: absolute;
+   margin-left: 2px;
+}
+
+
+.title{
+    h1 {
+        font-size: 40px !important;
+        color: white !important;
+    }
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+
+hr.no-margin{
+    margin: 0px !important;
+}
+
+
+/* To be below fixed nav bar */
+.content-main { padding-top: 80px; }
+@media screen and (max-width: 768px) {
+    .content-main { padding-top: 0px; }
+}
+
+

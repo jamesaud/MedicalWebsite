@@ -72,3 +72,4 @@ medweb/media/
 tests/.hitch
 
 medweb/static/*
+!medweb/static/css/
