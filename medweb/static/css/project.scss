@@ -19,6 +19,9 @@
             a{
                 color: black !important;
                 font-family: $font-primary;
+                
+                /*padding: 0 !important;*/
+                line-height: 50px !important;
               }
             
             .tiny-text{
@@ -65,9 +68,18 @@ hr.no-margin{
 
 
 /* To be below fixed nav bar */
-.content-main { padding-top: 80px; }
+.content-main { padding-top: 32px; }
+
 @media screen and (max-width: 768px) {
     .content-main { padding-top: 0px; }
 }
 
 
+.no-padding-b{
+    padding-bottom: 0px !important;
+}
+
+.navbar-brand{
+    padding: 10px;
+    text-align: center !important;
+}

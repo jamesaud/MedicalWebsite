@@ -73,3 +73,4 @@ tests/.hitch
 
 medweb/static/*
 !medweb/static/css/
+!medweb/static/images/
