@@ -20,8 +20,10 @@
         {% load sass_tags %}
     
         <link href="{% sass_src 'css/home.scss' %}" rel="stylesheet" type="text/css" />
+        <link href="{% sass_src 'css/charts.scss' %}" rel="stylesheet" type="text/css" />
         <!-- for local dev only -->
         <link href="{% static '/staticfiles/css/home.scss' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static '/staticfiles/css/charts.scss' %}" rel="stylesheet" type="text/css" />
 
 {% endblock more-css %}
 
@@ -36,7 +38,7 @@
       <!-- SLIDE -->
       <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Synergy+">
         <!-- MAIN IMAGE -->
-        <img src="/static/images/doctor-ipad.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+        <img src="/static/images/doctor-ipad.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="center" data-bgrepeat="no-repeat">
 
         <div class="tp-caption revolution-ch1 sft start"
         data-x="center"
@@ -82,10 +84,10 @@
             <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
           </div>
         
-          <div class="tp-caption sft"
+        <div class="tp-caption sft"
         data-x="center"
-        data-hoffset="-400"
-        data-y="450"
+        data-hoffset="-300"
+        data-y="380"
         data-speed="2300"
         data-start="3500"
         data-easing="Power4.easeOut"
@@ -94,15 +96,15 @@
         data-captionhidden="off"
         style="z-index: 6">
         <br>
-        <p class="tp-subtitle box">Unmatched world-wide, <em><strong>guaranteeing
- independent <br> doctors net income gains of 25-100%</strong></em></p>
+        <!--<p class="tp-subtitle tp-subtitle-1 box">Unmatched world-wide, <em><strong>guaranteeing
+ independent <br> doctors net income gains of 25-100%</strong></em></p>-->
                      
 
         </div>
         <div class="tp-caption sft"
         data-x="center"
-        data-hoffset="400"
-        data-y="450"
+        data-hoffset="300"
+        data-y="380"
         data-speed="2300"
         data-start="4000"
         data-easing="Power4.easeOut"
@@ -111,10 +113,11 @@
         data-captionhidden="off"
         style="z-index: 6">
         <br>
-        <p class="tp-subtitle">
+        <!--
+        <p class="tp-subtitle tp-subtitle-2">
          Empowering Doctors to <em><strong>practice medicine their way <br>
-            while delivering value based care.</strong> </em></p>
-        </div>       
+            while delivering value based care</strong> </em></p>
+        </div>       -->
 
       </li>
       <!-- END SLIDE -->
@@ -315,7 +318,7 @@
         <div class='col-md-4 main-points-block'>
             <i class="fa fa-commenting fa-4x icon icon-col-2" aria-hidden="true" ></i>
             <h3 class='main-points-header'><strong>Patient Engagement</strong></h3>
-            <p><strong>96% of patients have EHRs</strong> vs 77% nationwide. Every step of the process patients, staff, and doctors save time &amp; money and patients get healthier as a result.</p>
+            <p><strong>96% of patients have EHRs</strong> vs 77% nationwide. Every step of the process saves time &amp; money. Patients are healthier and happily comply with doctors and staff.</p>
         </div>
 
         <div class='col-md-4 main-points-block'>
@@ -334,7 +337,7 @@
       <div class='row section-highlights-block-2'>
         <div class='col-md-4 main-points-block'>
             <i class="fa fa-money fa-4x icon icon-col-4" aria-hidden="true" ></i>
-            <h3 class='main-points-header'>(not just) <strong>RCM</strong></h3>
+            <h3 class='main-points-header'><span id='not-just'>(not just)</span> <strong>RCM</strong></h3>
             <p><strong>We guarantee net income gains of 25-100%</strong> and offer cash flow optimization.</p>
         </div>
 
@@ -347,7 +350,7 @@
         <div class='col-md-4 main-points-block'>
             <i class="fa fa-heartbeat fa-4x icon icon-col-3" aria-hidden="true" ></i>
             <h3 class='main-points-header'><strong>PHM</strong></h3>
-            <p>An <strong>advanced triage process</strong> diagnoses severity of the patient. Interactive technology motivates the patient to participate in preventative care and health management.</p>
+            <p>Population health management services are rolling out tentatively in 2017.</p>
         </div>    
       </div>
      </div>

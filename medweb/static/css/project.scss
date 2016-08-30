@@ -83,3 +83,11 @@ hr.no-margin{
     padding: 10px;
     text-align: center !important;
 }
+
+#call-now{
+    font-weight: 400;
+    color: $third-color !important;
+    #tiny{
+        font-size: 10px;
+    }
+}

@@ -39,6 +39,9 @@ p {
 }
 
 .section-highlights{
+    #not-just{
+        font-weight: 400 !important;
+    }
     margin-bottom: 40px !important;
     padding-top: 0px !important;
     text-align: center;
@@ -217,8 +220,6 @@ p {
 }
 
 
-.box { @include transparentBackgroundColor(.3, $primary-color); }
-
 .tp-banner {
     h1,h2,h3,h4,h5,h6 {
         color: #fff;
@@ -229,7 +230,6 @@ p {
     h2{
         font-size: 22px;
     }
-    height: 600px !important;
     .tp-subtitle{
          @include transparentBackgroundColor(.3, $primary-color);
         color: white !important;
@@ -239,6 +239,11 @@ p {
         padding-bottom: 5px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .tp-subtitle-1{
+        float:left;
+    }
+    .tp-subtitle-2{
     }
 }
 
