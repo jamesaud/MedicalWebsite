@@ -84,6 +84,11 @@ p {
     }
 }
 
+.section-graphs{
+    align-content: center;
+    text-align: center;
+}
+
 
 .section-benefits{
     .main-points{   
@@ -187,22 +192,23 @@ p {
      font-size:  1.3em;
      font-weight: 600;   
     }
+    p{
+        font-weight: 500 ;
+    }
     #hex-1{background: $primary-color;}
     #hex-2{background: $second-color;}
     #hex-3{background: $third-color;}
     #hex-4{
         background-color: lightgrey;
         h1{
-            font-size: 1.6em;
-            padding-bottom: 0px;
-        }
+           }
         h1:after{
             border-bottom: 0px solid black !important;
         }
     }
-    #hex-5{background: $fourth-color;}
-    #hex-6{background: $fifth-color;}
-    #hex-7{background: $sixth-color;}
+    #hex-5{background: $fifth-color;}
+    #hex-6{background: $sixth-color;}
+    #hex-7{background: $fourth-color;}
     
 }
 
