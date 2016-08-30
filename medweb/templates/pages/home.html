@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="/static/css/pages/page_search.css"><!-- for the purchase now boxes -->
         <link rel="stylesheet" href="/static/css/hex.css"><!-- for the hexes -->
 
+        <link rel="stylesheet" href="/static/css/pages/shortcode_timeline1.css"><!-- for the timeline -->
+
         <!-- sass -->
         {% load sass_tags %}
     
@@ -82,7 +84,7 @@
         style="z-index: 6">
         <br>
             <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
-          </div>
+        </div>
         
         <div class="tp-caption sft"
         data-x="center"
@@ -316,19 +318,19 @@
     <div class='main-points'>
       <div class='row section-highlights-block-1'>
         <div class='col-md-4 main-points-block'>
-            <i class="fa fa-commenting fa-4x icon icon-col-1" aria-hidden="true" ></i>
+            <i class="fa fa-commenting fa-4x icon col-1" aria-hidden="true" ></i>
             <h3 class='main-points-header'><strong>Patient Engagement</strong></h3>
             <p><strong>96% of patients have EHRs</strong> vs 77% nationwide. Every step of the process saves time &amp; money. Patients are healthier and happily comply with doctors and staff.</p>
         </div>
 
         <div class='col-md-4 main-points-block'>
-            <i class="fa fa-life-ring fa-4x icon icon-col-2" aria-hidden="true" ></i>
+            <i class="fa fa-life-ring fa-4x icon col-2" aria-hidden="true" ></i>
             <h3 class='main-points-header'><strong>Data Security &amp; Regulations</strong></h3>
             <p>All data is <strong>Cloud secured</strong> and simultaneously <strong>accessible on-site</strong>. You'll meet government regulations or we'll make them a non-issue.</p>
         </div>
           
         <div class='col-md-4 main-points-block'>
-            <i class="fa fa-line-chart fa-4x icon icon-col-5" aria-hidden="true" ></i>
+            <i class="fa fa-line-chart fa-4x icon col-5" aria-hidden="true" ></i>
             <h3 class='main-points-header'><strong>EHR</strong></h3>
             <p>Software is installed and employees are <strong>trained in 1 day</strong>! Our powerful yet intuitive software enables doctors to see <strong>25-40% more patients</strong> and <strong>reduces expenses 25-35%</strong>.</p>
         </div>    
@@ -336,19 +338,19 @@
         
       <div class='row section-highlights-block-2'>
         <div class='col-md-4 main-points-block'>
-            <i class="fa fa-money fa-4x icon icon-col-4" aria-hidden="true" ></i>
+            <i class="fa fa-money fa-4x icon col-4" aria-hidden="true" ></i>
             <h3 class='main-points-header'><span id='not-just'>(not just)</span> <strong>RCM</strong></h3>
             <p><strong>We guarantee net income gains of 25-100%</strong> and offer cash flow optimization.</p>
         </div>
 
         <div class='col-md-4 main-points-block'>
-            <i class="fa fa-bar-chart fa-4x icon icon-col-6" aria-hidden="true" ></i>
+            <i class="fa fa-bar-chart fa-4x icon col-6" aria-hidden="true" ></i>
             <h3 class='main-points-header'><strong>Data Analytics</strong></h3>
             <p>Comprehensive analytics solutions currently in alpha testing. ETA 2017.</p>
         </div>
           
         <div class='col-md-4 main-points-block'>
-            <i class="fa fa-heartbeat fa-4x icon icon-col-3" aria-hidden="true" ></i>
+            <i class="fa fa-heartbeat fa-4x icon col-3" aria-hidden="true" ></i>
             <h3 class='main-points-header'><strong>PHM</strong></h3>
             <p>Population health management services are rolling out tentatively in 2017.</p>
         </div>    
@@ -492,13 +494,12 @@
  
     
   <!-- SERVICES -->
-  <div class=''>
   <div class="one-page-inner one-default section-services container">
             <div class='hexwrapper'>
                <ul id="hexGrid">
                   <li class="hex">
                         
-                    <a id='hex-1' class="hexIn" href="#">
+                    <a id='hex-1' class="hexIn modal-lg" href=".bs-example-modal-lg" data-toggle="modal"> 
                         <!-- Listed twice for popin! Overlays the same content for the effect-->
                       <h1 class='no-effect'>Patient Engagement</h1>
                       <p class='no-effect'>Start here</p>
@@ -559,7 +560,114 @@
             </ul>
         </div>
     </div>
-  </div>
+      
+      <div class="modal fade bs-example-modal-lg section-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                        
+                    <ul class="timeline-v1">
+						<li class="timeline">
+							<div class="timeline-badge primary"><i id='dot-1' class="dot-1 glyphicon glyphicon-record invert"></i></div>
+							<div class="timeline-panel bg-col-1">
+								<a data-toggle='tab' href='#PE' id='selector-1'>
+                                    <div class="timeline-body text-justify">
+                                    <p>Patient Engagement</p>
+								    </div>
+                                </a>
+							</div>
+						 </li>
+                        <li class="timeline">
+							<div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
+							<div class="timeline-panel  bg-col-2">
+								<a href=''>
+                                    <div class="timeline-body text-justify">
+                                        <p>Data Security &amp; Regulations</p>
+                                    </div>
+                                </a>
+							</div>
+						 </li>
+                        <li class="timeline">
+							<div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-body text-justify">
+                                    <p class='one-liner'>EHR</p>
+								</div>
+							</div>
+						 </li>
+                        <li class="timeline">
+							<div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-body text-justify">
+                                    <p>Revenue Cycle Management</p>
+								</div>
+							</div>
+						 </li>
+                        <li class="timeline">
+							<div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-body text-justify">
+                                    <p class='one-liner'>Data Analytics</p>
+								</div>
+							</div>
+						 </li>
+                        <li class="timeline">
+							<div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-body text-justify">
+                                    <p>Population Health Management</p>
+								</div>
+							</div>
+						 </li>
+                        <li class="timeline">
+							<div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-body text-justify">
+                                    <p>Synergy+ Add-On Services</p>
+								</div>
+							</div>
+						 </li>
+						<li class="clearfix" style="float: none;"></li>
+					</ul>  
+                  </div> <!-- /col-md -->
+
+                  <div class='col-md-9 col-sm-3 col-xs-3'>
+                        <div class="tab-content">
+                          <div id="PE" class="tab-pane fade in active">
+                            <h3>HOME</h3>
+                            <p>Some content.</p>
+                          </div>
+                          <div id="menu1" class="tab-pane fade">
+                            <h3>Menu 1</h3>
+                            <p>Some content in menu 1.</p>
+                          </div>
+                          <div id="menu2" class="tab-pane fade">
+                            <h3>Menu 2</h3>
+                            <p>Some content in menu 2.</p>
+                          </div>
+                        </div>
+                  </div>
+                    
+                 </div> <!-- ./row -->        
+                
+                </div><!-- /.modalbody-->
+                
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div><!-- /.modal-content -->
+              
+            </div>
+          
+          </div><!--- /.modal -->
+      
 <hr>    
     
 <!--=== Content Part ===-->
@@ -719,6 +827,14 @@
             text:       '%',
             colors:     ['#F4BCBF', '#D43A43']
         });
+</script>
+
+<!-- CHANGE TIMELINE DOT COLOR ON CLICK -->
+<script>
+$("#selector-1").click(function(){
+    console.log('foo');
+    $("#selector-1").css("background", "red !important");
+});
 </script>
 
 {% endblock more-javascript %}

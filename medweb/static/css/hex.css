@@ -109,7 +109,7 @@
 
 /*** HOVER EFFECT  **********************************************************************/
 
-.hexIn:hover h1, .hexIn:focus h1, .hexIn:hover p, .hexIn:focus p {
+.hexIn:hover h1, .hexIn:hover p {
   transform: translateY(0%) translatez(-1px);
   color: white;
 }

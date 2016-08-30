@@ -190,7 +190,7 @@ p {
     
     h1{
      font-size:  1.3em;
-     font-weight: 600;   
+     font-weight: 500;   
     }
     p{
         font-weight: 500 ;
@@ -209,8 +209,10 @@ p {
     #hex-5{background: $fifth-color;}
     #hex-6{background: $sixth-color;}
     #hex-7{background: $fourth-color;}
-    
 }
+
+
+
 
 .section-mission{
     background: gray;
@@ -279,32 +281,142 @@ p {
 }
 
 
-.icon-col-1 {
+.col-1 {
     color: $primary-color;
 }
 
-.icon-col-2 {
+.col-2 {
     color: $second-color;
 }
 
-.icon-col-3 {
+.col-3 {
     color: $third-color;
 }
 
 
-.icon-col-4 {
+.col-4 {
     color: $fourth-color;
 }
 
 
-.icon-col-5 {
+.col-5 {
     color: $fifth-color;
 }
 
-.icon-col-6 {
+.col-6 {
     color: $sixth-color;
 }
 
+.bg-col-1 {
+    background: $primary-color;
+}
+
+.bg-col-2 {
+    background: $second-color;
+}
+
+.bg-col-3 {
+    background: $third-color;
+}
+
+
+.bg-col-4 {
+    background: $fourth-color;
+}
+
+
+.bg-col-5 {
+    background: $fifth-color;
+}
+
+.bg-col-6 {
+    background: $sixth-color;
+}
+
+/* MODAL SETTINGS */
+.modal-dialog{
+    width: 70% !important;
+    min-width: 860px;
+    max-width: 1100px;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-dialog {
+        min-width: 420px;
+        margin-left: 15%;
+    }
+}
+
+.section-modal{
+    .col-md-3{
+        width: 210px;
+    }
+    p{
+        color: black;
+    }
+    
+    .tab-content{
+        padding-left: 20px;
+    }
+    
+    /*TIMELINE OVERRIDES */
+    .timeline-v1:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: #eee;
+        left: 186px;
+        margin-left: -1.5px;
+    }
+
+    .timeline-v1{
+        padding-bottom: 0px;
+
+        a{
+            text-decoration: none;
+        }
+        i{
+            left: 6px;
+        }
+         li {
+            margin-bottom: 40px;
+            margin-top: 0;
+            position: relative;
+            width: 180px;
+            float: left;
+            clear: left;
+        }
+
+        li:nth-child(2){
+            margin-top: 0px;
+        }
+
+         p {
+            margin:0px;
+            text-align: center;
+            display: block;
+            vertical-align: middle;
+            padding: 10px;
+            min-height: 70px;
+        }
+
+        p.one-liner{
+            line-height: 50px;
+        }
+
+
+        .timeline-body{
+            padding: 5px ;
+        }
+
+        .clearfix{
+            height: 1px !important;
+            margin: 1px !important;
+        }
+    }
+}
 
 
 
