@@ -1,7 +1,5 @@
 @import 'variables';
 
-
-
 p {
     font-size: $font-size-four !important;
 }
@@ -199,7 +197,7 @@ p {
     #hex-2{background: $second-color;}
     #hex-3{background: $third-color;}
     #hex-4{
-        background-color: lightgrey;
+        background-color: $seventh-color;
         h1{
            }
         h1:after{
@@ -239,7 +237,7 @@ p {
         font-size: 22px;
     }
     .tp-subtitle{
-         @include transparentBackgroundColor(.3, $primary-color);
+        @include transparentBackgroundColor(.3, $primary-color);
         color: white !important;
         font-size: $font-size-five !important;
         line-height: 25px !important;
@@ -333,6 +331,10 @@ p {
     background: $sixth-color;
 }
 
+.bg-col-7 {
+    background: $seventh-color;
+}
+
 /* MODAL SETTINGS */
 .modal-dialog{
     width: 70% !important;
@@ -376,9 +378,12 @@ p {
 
         a{
             text-decoration: none;
+            color: inherit !important;
         }
         i{
             left: 6px;
+            pointer-events: none !important;
+            cursor: default !important;
         }
          li {
             margin-bottom: 40px;
@@ -388,7 +393,12 @@ p {
             float: left;
             clear: left;
         }
-
+        
+        li:active{
+            i{
+                color:black;
+            }
+        }
         li:nth-child(2){
             margin-top: 0px;
         }
@@ -400,6 +410,7 @@ p {
             vertical-align: middle;
             padding: 10px;
             min-height: 70px;
+             font-weight: 500;
         }
 
         p.one-liner{
@@ -411,6 +422,7 @@ p {
             padding: 5px ;
         }
 
+
         .clearfix{
             height: 1px !important;
             margin: 1px !important;
@@ -418,7 +430,14 @@ p {
     }
 }
 
+/* Dot classes called with jquery to change timeline dot scolor */
+.dot-color{
+    color: $fourth-color;
+}
 
+.dot-remove-color{
+    color: transparent;
+}
 
 #icon-user {
     color: $primary-color;

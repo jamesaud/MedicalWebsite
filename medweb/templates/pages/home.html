@@ -499,7 +499,7 @@
                <ul id="hexGrid">
                   <li class="hex">
                         
-                    <a id='hex-1' class="hexIn modal-lg" href=".bs-example-modal-lg" data-toggle="modal"> 
+                    <a id='hex-1' class="hexIn selector-1" href=".bs-example-modal-lg" data-toggle="modal"> 
                         <!-- Listed twice for popin! Overlays the same content for the effect-->
                       <h1 class='no-effect'>Patient Engagement</h1>
                       <p class='no-effect'>Start here</p>
@@ -508,7 +508,7 @@
                     </a>
                   </li>
                   <li class="hex">
-                    <a id='hex-2'  class="hexIn" href="#">
+                    <a id='hex-2'  class="hexIn selector-2" href=".bs-example-modal-lg" data-toggle="modal">
                       <h1 class='no-effect'>Data Security & Regulations</h1>
                       <p class='no-effect'>Protect Patients</p>
                       <h1>Data Security & Regulations</h1>
@@ -517,7 +517,7 @@
                   </li>
 
                  <li class="hex">
-                    <a id='hex-3' class="hexIn" href="#">
+                    <a id='hex-3' class="hexIn selector-3" href=".bs-example-modal-lg" data-toggle="modal">
                       <h1 class='no-effect'>Population Health Management</h1>
                       <h1>Population Health Management</h1>
                       <p class='no-effect'>Healthier Communities</p>
@@ -525,7 +525,7 @@
                     </a>
                   </li>
                     <li class="hex">
-                    <a id='hex-4' class="hexIn" href="#">
+                    <a id='hex-4' class="hexIn selector-4" href=".bs-example-modal-lg" data-toggle="modal">
                       <h1 class='no-effect'>Synergy+ Add-On Services</h1>
                       <h1>Synergy+ Add-On Services</h1>
                       <p class='no-effect'>Learn more about Synergy+ add-ons</p>
@@ -533,7 +533,7 @@
                     </a>
                   </li>
                   <li class="hex">
-                    <a id='hex-5' class="hexIn" href="#">
+                    <a id='hex-5' class="hexIn selector-5" href=".bs-example-modal-lg" data-toggle="modal">
                       <h1 class='no-effect'>EHR</h1>
                       <h1>EHR</h1>
                       <p class='no-effect'>Cloud Secured</p>
@@ -541,7 +541,7 @@
                     </a>
                   </li>
                  <li class="hex">
-                    <a id='hex-6' class="hexIn" href="#">
+                    <a id='hex-6' class="hexIn selector-6" href=".bs-example-modal-lg" data-toggle="modal">
                       <h1 class='no-effect'>Data Analytics</h1>
                       <h1>Data Analytics</h1>
                       <p class='no-effect'>Patient Data Insights</p>
@@ -549,7 +549,7 @@
                     </a>
                   </li>
                 <li class="hex">
-                    <a id='hex-7'  class="hexIn" href="#">
+                    <a id='hex-7'  class="hexIn selector-7" href=".bs-example-modal-lg" data-toggle="modal">
                       <h1 class='no-effect'>Revenue Cycle Management</h1>
                       <p class='no-effect'>Minimum 25% Revenue Gains</p>
                       <h1>Revenue Cycle Management</h1>
@@ -574,19 +574,23 @@
                         
                     <ul class="timeline-v1">
 						<li class="timeline">
-							<div class="timeline-badge primary"><i id='dot-1' class="dot-1 glyphicon glyphicon-record invert"></i></div>
+                            <div class="timeline-badge primary">
+                                <a class='selector-1' data-toggle='tab' href='#PE' ><i id='dot-1' class="glyphicon glyphicon-record invert "></i></a>
+                            </div>
 							<div class="timeline-panel bg-col-1">
-								<a data-toggle='tab' href='#PE' id='selector-1'>
+								<a class='selector-1' data-toggle='tab' href='#PE'>
                                     <div class="timeline-body text-justify">
-                                    <p>Patient Engagement</p>
+                                        <p>Patient Engagement</p>
 								    </div>
                                 </a>
 							</div>
 						 </li>
                         <li class="timeline">
-							<div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
-							<div class="timeline-panel  bg-col-2">
-								<a href=''>
+							<div class="timeline-badge primary">
+                                <a class='selector-2' data-toggle='tab' href='#PE' ><i id='dot-2' class=" glyphicon glyphicon-record invert"></i></a>
+                            </div>
+							<div class="timeline-panel bg-col-2">
+								<a class='selector-2' data-toggle='tab' href='#PE'>
                                     <div class="timeline-body text-justify">
                                         <p>Data Security &amp; Regulations</p>
                                     </div>
@@ -594,43 +598,63 @@
 							</div>
 						 </li>
                         <li class="timeline">
-							<div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-body text-justify">
-                                    <p class='one-liner'>EHR</p>
-								</div>
+							<div class="timeline-badge primary">
+                                <a class='selector-3' data-toggle='tab' href='#PE' ><i id='dot-3' class=" glyphicon glyphicon-record invert"></i></a>
+                            </div>
+							<div class="timeline-panel bg-col-5">
+                                <a class='selector-3' data-toggle='tab' href='#PE'>
+                                    <div class="timeline-body text-justify">
+                                        <p class='one-liner'>EHR</p>
+                                    </div>
+                                </a>
 							</div>
 						 </li>
                         <li class="timeline">
-							<div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-body text-justify">
-                                    <p>Revenue Cycle Management</p>
-								</div>
+							<div class="timeline-badge primary">
+                                <a class='selector-4' data-toggle='tab' href='#PE' ><i id='dot-4' class=" glyphicon glyphicon-record invert"></i></a>
+                            </div>
+							<div class="timeline-panel bg-col-4">
+                                <a class='selector-4' data-toggle='tab' href='#PE'>
+                                    <div class="timeline-body text-justify">
+                                        <p>Revenue Cycle Management</p>
+                                    </div>
+                                </a>
 							</div>
 						 </li>
                         <li class="timeline">
-							<div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-body text-justify">
-                                    <p class='one-liner'>Data Analytics</p>
-								</div>
+							<div class="timeline-badge primary">
+                                <a class='selector-5' data-toggle='tab' href='#PE' ><i id='dot-5' class=" glyphicon glyphicon-record invert"></i></a>
+                            </div>
+							<div class="timeline-panel bg-col-6">
+                                <a class='selector-5' data-toggle='tab' href='#PE'>
+                                    <div class="timeline-body text-justify">
+                                        <p class='one-liner'>Data Analytics</p>
+                                    </div>
+                                </a>
 							</div>
 						 </li>
                         <li class="timeline">
-							<div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-body text-justify">
-                                    <p>Population Health Management</p>
-								</div>
+							<div class="timeline-badge primary">
+                                <a class='selector-6' data-toggle='tab' href='#PE' ><i id='dot-6' class=" glyphicon glyphicon-record invert"></i></a>
+                            </div>
+							<div class="timeline-panel bg-col-3">
+                                <a class='selector-6' data-toggle='tab' href='#PE'>
+                                    <div class="timeline-body text-justify">
+                                        <p>Population Health Management</p>
+                                    </div>
+                                </a>
 							</div>
 						 </li>
                         <li class="timeline">
-							<div class="timeline-badge primary"><i class="glyphicon glyphicon-record invert"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-body text-justify">
-                                    <p>Synergy+ Add-On Services</p>
-								</div>
+				            <div class="timeline-badge primary">
+                                <a class='selector-7' data-toggle='tab' href='#PE' ><i id='dot-7' class=" glyphicon glyphicon-record invert"></i></a>
+                            </div>
+							<div class="timeline-panel bg-col-7">
+                                <a class='selector-7' data-toggle='tab' href='#PE'>
+								    <div class="timeline-body text-justify">
+                                        <p>Synergy+ Add-On Services</p>
+								    </div>
+                                </a>
 							</div>
 						 </li>
 						<li class="clearfix" style="float: none;"></li>
@@ -831,10 +855,62 @@
 
 <!-- CHANGE TIMELINE DOT COLOR ON CLICK -->
 <script>
-$("#selector-1").click(function(){
-    console.log('foo');
-    $("#selector-1").css("background", "red !important");
-});
+//String replace function
+    
+var last_selector = $('.selector-7'); //Last dot selector
+var last_dot = $('#dot-7')
+
+function myFunction($selectorID, $dotID){
+    var str_selector = $selectorID['selector'];
+    $selectorID.click(function(){
+        $dotID.addClass("dot-color");
+        cycleDot(last_selector, last_dot, str_selector.charAt(str_selector.length - 1))
+    });
+}
+    
+function cycleDot($selectorID, $dotID, $stop_num){
+    var str_selector = $selectorID['selector'];
+    var last_char_selector = str_selector.charAt(str_selector.length - 1);
+    var str_dot = $dotID['selector'];
+    var last_char_dot = str_dot.charAt(str_dot.length - 1);
+    
+    //Calculate the next ids to get
+    var str = str_selector.split('');
+    str[str_selector.length - 1] = String(parseInt(last_char_selector) - 1);
+    str = str.join('');
+    var str_d = str_dot.split('');
+    str_d[str_dot.length - 1] = String(parseInt(last_char_dot) - 1);
+    str_d = str_d.join('');
+    var next_selector = str;
+    var next_dot = str_d;
+    
+    if (last_char_dot == 0){
+        return;
+    }
+    
+    else if(last_char_dot == $stop_num){
+        cycleDot($(next_selector), $(next_dot), $stop_num);
+    }
+    
+    else if(last_char_dot < $stop_num){
+        $dotID.addClass("dot-color");
+        cycleDot($(next_selector), $(next_dot), $stop_num);
+    }
+    
+    else{
+       
+        $dotID.removeClass("dot-color");
+        cycleDot($(next_selector), $(next_dot), $stop_num);
+    }
+}
+    
+myFunction($('.selector-1'), $('#dot-1'));
+myFunction($('.selector-2'), $('#dot-2'));
+myFunction($('.selector-3'), $('#dot-3'));
+myFunction($('.selector-4'), $('#dot-4'));
+myFunction($('.selector-5'), $('#dot-5'));
+myFunction($('.selector-6'), $('#dot-6'));
+myFunction($('.selector-7'), $('#dot-7'));
 </script>
 
 {% endblock more-javascript %}
