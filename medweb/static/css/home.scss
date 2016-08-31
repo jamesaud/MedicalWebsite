@@ -265,14 +265,6 @@ p {
     }
 }
 
-.tab-content{
-    h3{
-        color: black !important;
-        text-align: center;
-    }
-}
-
-
 
 .icon{
     text-shadow: 3px 3px 3px #ccc;
@@ -338,8 +330,8 @@ p {
 /* MODAL SETTINGS */
 .modal-dialog{
     width: 70% !important;
-    min-width: 860px;
-    max-width: 1100px;
+    min-width: 950px;
+    max-width: 1150px;
 }
 
 @media screen and (max-width: 768px) {
@@ -350,16 +342,42 @@ p {
 }
 
 .section-modal{
-    .col-md-3{
-        width: 210px;
+    
+    .col-md-9.lg{
     }
+    
+    .timeline_width{
+        width: 210px !important;
+    }
+    
     p{
         color: black;
     }
     
+    .modal-header{
+        padding-bottom: 0;
+        h5{
+            text-align: left;
+        }
+        #modal_logo{
+            text-align: center;
+            width:100%; /* you can use % */
+            height: auto;
+        }
+        button{
+        }
+    }
+    
     .tab-content{
         padding-left: 20px;
-    }
+        padding-right: 10px;
+        color: black;
+        img.tab_image{ /* Shrink the image proportionally */
+                width:100%; /* you can use % */
+                height:auto;
+            }
+        }
+
     
     /*TIMELINE OVERRIDES */
     .timeline-v1:before {
@@ -374,6 +392,7 @@ p {
     }
 
     .timeline-v1{
+        
         padding-bottom: 0px;
 
         a{
@@ -385,6 +404,7 @@ p {
             pointer-events: none !important;
             cursor: default !important;
         }
+        
          li {
             margin-bottom: 40px;
             margin-top: 0;
@@ -430,14 +450,11 @@ p {
     }
 }
 
-/* Dot classes called with jquery to change timeline dot scolor */
+/* Dot class called with jquery to change timeline dot scolor */
 .dot-color{
     color: $fourth-color;
 }
 
-.dot-remove-color{
-    color: transparent;
-}
 
 #icon-user {
     color: $primary-color;

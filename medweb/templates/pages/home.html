@@ -565,12 +565,23 @@
           <div class="modal-dialog" role="document">
 
             <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modal-header container-fluid">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class='row'>
+                      <div class='timeline_width col-md-3'>
+                        <a href="index.html">
+                            <img id='modal_logo' src="{% static 'images/logo.png' %}" alt="Logo">
+                        </a>
+                      </div>
+                      <div class='col-md-9'>
+                        <h5>The only company <strong>guaranteeing independent doctors net income gains of 25-100%</strong></h5>
+                      </div>
+                </div>
               </div>
+                
               <div class="modal-body">
                 <div class="row">
-                  <div class="col-md-3 col-sm-12 col-xs-12">
+                  <div class=" timeline_width col-md-3 col-sm-12 col-xs-12">
                         
                     <ul class="timeline-v1">
 						<li class="timeline">
@@ -661,12 +672,29 @@
 					</ul>  
                   </div> <!-- /col-md -->
 
-                  <div class='col-md-9 col-sm-3 col-xs-3'>
+                  <div class='col-md-9 lg col-sm-12 col-xs-12'>
                         <div class="tab-content">
+                            
                           <div id="PE" class="tab-pane fade in active">
-                            <h3>HOME</h3>
-                            <p>Some content.</p>
+                              <div class='row'>
+                                <div class='col-md-7'>
+                                    <img class='tab_image' src="{% static 'images/engagement.jpg' %}">
+                                </div>
+                                  <div class='col-md-5'>
+                                    <h3>PATIENT ENGAGEMENT</h3>
+                                    <p>Combined with Synergy+ Net Income Optimization + RCM services, Patient Engagement results in adding more value based care.
+                                    </p>
+                                      <p>We work side-by-side with all
+                                          employees or train your personnel to strengthen your PE department. *                                   
+                                      </p>
+                                      <span class='star_text'>
+                                        *Depending on group size and service objectives
+                                          </span>
+                                  </div>
+                              </div>
                           </div>
+                            
+                            
                           <div id="menu1" class="tab-pane fade">
                             <h3>Menu 1</h3>
                             <p>Some content in menu 1.</p>
