@@ -15,7 +15,10 @@ WORKDIR /app
 ENTRYPOINT ["/entrypoint.sh"]
 
 #ADDED BY ME - NEED TO FORMAT BETTER
-RUN apt-get update && apt-get install -y nodejs
+RUN apt-get update \
+    && apt-get install -y nodejs \
+    && apt-get install -y npm
+
 RUN pip install libsass django-compressor django-sass-processor
 
 #gem install SASS

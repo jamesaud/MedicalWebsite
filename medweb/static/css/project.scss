@@ -92,8 +92,8 @@ hr.no-margin{
 
 #call-now{
     font-weight: 400;
-    /*color: $third-color !important;*/
-    color: black;
+   /* color: black; */
+    color: $third-color !important;
     #tiny{
         font-size: 10px;
     }
