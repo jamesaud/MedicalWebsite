@@ -7,8 +7,7 @@
 
 
 .header-slogan a{
-        color: black ;
-        font-size: 1.2em;
+        color: $fourth-color ;
     }
 
 
@@ -93,7 +92,8 @@ hr.no-margin{
 
 #call-now{
     font-weight: 400;
-    color: $third-color !important;
+    /*color: $third-color !important;*/
+    color: black;
     #tiny{
         font-size: 10px;
     }
