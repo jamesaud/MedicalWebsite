@@ -26,7 +26,8 @@
         <!-- for local dev only -->
         <link href="{% static '/staticfiles/css/home.scss' %}" rel="stylesheet" type="text/css" />
         <link href="{% static '/staticfiles/css/charts.scss' %}" rel="stylesheet" type="text/css" />
-
+        
+        <div id='home'></div><!-- guarantees home nav lights up at the top of the pages -->
 {% endblock more-css %}
 
 
@@ -40,7 +41,7 @@
       <!-- SLIDE -->
       <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Synergy+">
         <!-- MAIN IMAGE -->
-        <img src="/static/images/doctor-ipad.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="center" data-bgrepeat="no-repeat">
+        <img     src="/static/images/doctor-ipad.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="center" data-bgrepeat="no-repeat">
 
         <div class="tp-caption revolution-ch1 sft start"
         data-x="center"
@@ -83,7 +84,7 @@
         data-captionhidden="off"
         style="z-index: 6">
         <br>
-            <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
+            <a id='learn-more' href="#section-all-content" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
         </div>
         
         <div class="tp-caption sft"
@@ -115,6 +116,7 @@
         data-captionhidden="off"
         style="z-index: 6">
         <br>
+        </div>
         <!--
         <p class="tp-subtitle tp-subtitle-2">
          Empowering Doctors to <em><strong>practice medicine their way <br>
@@ -307,8 +309,7 @@
               </div>
             </div>
  --> 
-    
-    
+    <div id='section-all-content'></div><!-- scrolling from 'learn more' button-->
      <div class='one-page-inner one-default section-highlights container'>
          <div class="container content ">
               <div class="row text-center">
@@ -340,7 +341,7 @@
         <div class='col-md-4 main-points-block'>
             <i class="fa fa-money fa-4x icon col-4" aria-hidden="true" ></i>
             <h3 class='main-points-header'><span id='not-just'>(not just)</span> <strong>RCM</strong></h3>
-            <p><strong>We guarantee net income gains of 25-100%</strong> and offer cash flow optimization.</p>
+            <p><strong>We guarantee net income gains of 25-100%</strong> and optimize cash flow optimization.</p>
         </div>
 
         <div class='col-md-4 main-points-block'>
@@ -368,7 +369,6 @@
     </div>
   </div>
 
-
   <!-- INSIGHTS: BENEFITS -->
     
     <!-- Synergy+ benefits everyone -->
@@ -392,7 +392,7 @@
             <div class='main-points-block-title'>
                 <i id='icon-user' class="fa fa-user fa-4x" aria-hidden="true"></i>
                 <h3 class='main-points-header'>Group Owners</h3>
-                <h4 class='col-1'>earn 25%-100% more</h4>
+                <h4 class='col-1'>earn 25-100% more</h4>
             </div>
             <ul>
                 <li>Motivate employees with our <strong>Bonus Incentive Retention</strong></li>
@@ -498,6 +498,7 @@
     
   <!-- SERVICES -->
   <div class="one-page-inner one-default section-services container">
+      <h2 id='click-here'>Click Here ---></h2>
             <div class='hexwrapper'>
                <ul id="hexGrid">
                   <li class="hex">
@@ -842,13 +843,13 @@
       <div class="row">
         <div class="col-md-6">
           <h1>Empowering Doctors</h1>
-          <p>Work faster and do more.  Your small to medium sized clinic will be seeing 15% more patients within 30 days of trying Synergy+ Value Based Software.</p>
+          <h5>Work faster and do more.  Your clinic will be seeing (at minimum) 15% more patients within 30 days of trying Synergy+ Value Based Software.</h5>
           <br/>
-          <h1>Designed <strong>for</strong> doctors<strong> by</strong> clinical doctors and top business executives and IT developers</h1>
-           <p> <em>It's okay, we know; existing products from the vast majority of technology and services have reduced productivity by 30% and delayed patient appointments leading to an increase to cost of care</em>.
-          </p>
-          <p> Synergy+ is first in the world to provide a comprehensive solution that works out of the box.
-            Don't waste time learning software, let Synergy+ software work for you.</p>
+            <h1>Designed <strong>by</strong> doctors<strong> for</strong> doctors</h1> 
+            <h5><strong> <em>It's okay, we know;</em></strong> existing products from the vast majority of services have reduced productivity by as much as 30%, leading to an increased cost of care.
+          </h5>
+          <h5> Top doctors, IT specialists and business analysts worked together to design Novoclincal software and Synergy+ services. Synergy+ is first in the world to provide a comprehensive solution that works out of the box.</h5>
+            <h5>Don't waste time learning software, let Synergy+ software work for you.</h5>
         </div>
         <div class="col-md-6">
           <img src="{% static 'images/doctor.jpg' %}" class="img-responsive margin-bottom-10" alt="">
@@ -888,8 +889,8 @@
                         <div class='color-top-1'>  </div>
                         <div class='service-block-content'>
                             <i class="icon-lg rounded-x icon-line icon-trophy"></i>
-                            <h2 class="heading-sm">Plan 1</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine usce dapibus elit nondapibus</p>
+                            <h2 class="heading-sm">Sustainable Business</h2>
+                            <p>For those who want to...</p>
                             <hr>
                             <ul class="list-unstyled">
                                 <li>Analysis &amp; Consulting</li>
@@ -909,8 +910,8 @@
                         <div class='color-top-2'>  </div>
                         <div class='service-block-content'>
                             <i class="icon-lg rounded-x icon-line icon-trophy"></i>
-                            <h2 class="heading-sm">Plan 2</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus id elit mi egetine usce dapibus elit nondapibus</p>
+                            <h2 class="heading-sm">Exponential Growth</h2>
+                            <p>For those who want to ...</p>
                         </div>
                         <hr>
                         <div class='service-block-content'>
@@ -1038,7 +1039,7 @@ var waypoint = new Waypoint({
       draw_filled_circles();
       this.destroy()
   },
-  offset: 225
+  offset: 310
 })
 </script>
 
@@ -1108,30 +1109,71 @@ $( "#t-tab-1" ).trigger( "click" ); //Selects patient engagement by default
 </script>
 
 
-<!-- WAYPOINTS -->
+
+<!-- ADD WAYPOINTS TO NAVBAR ON SCROLL -->
 <script>
-$('#insights').waypoint(function() {
-  console.log("WAYPOINT REACHED");
-});
+//Remove active class from all other nav_ids
+function remove_nav_active(nav_id_to_keep, all_navs){
+    for (i=0; i < all_navs.length; i++){
+        nav_id = all_navs[i];
+        if (nav_id == nav_id_to_keep){
+            continue;
+        }
+        else{
+            $(nav_id).removeClass('active');
+        }
+    }
+};
+    
+function add_nav_waypoint(waypoint_id, nav_id){ //string with hash
+    var waypoint = new Waypoint({
+      element: $(waypoint_id),
+      handler: function(){
+          $(nav_id).addClass('active');
+          remove_nav_active(nav_id, ['#nav-home', '#nav-insights', '#nav-solutions', '#nav-demo']);
+      },
+      offset: 116 // one pixel before the scroll on click in the navbar, so that it changes correctly
+    });
+};
+
+
+//all nav ids for adding active class or removing active class
+var all_nav_ids = ['#nav-home', '#nav-insights', '#nav-solutions', '#nav-demo'];
+
+//Add waypoints listeners that add and remove active class from navbar for each section
+add_nav_waypoint('#home','#nav-home');
+add_nav_waypoint('#solutions','#nav-solutions');
+add_nav_waypoint('#insights','#nav-insights');
+add_nav_waypoint('#demo','#nav-demo');
+
 </script>
+
 
 <!-- NAVBAR SMOOTH SCROLL -->
 <script>
 var offset_up = 115; // fixed navbar height blocks the view, move up certain amount of pixels to offset it.
+    
 $('.navbar-nav li a').bind('click', function(e) {
     e.preventDefault();
-  
     var hashTag = this.hash;
   	var top = 0;
-  
  	if ($(hashTag).offset()) {
     	top = $(hashTag).offset().top
   	}
-  	
 	$('html, body').animate({scrollTop:top - offset_up}, 'slow');                                                         
 
 });
 
+$('#learn-more').bind('click', function(e) {
+    e.preventDefault();
+    var hashTag = this.hash;
+  	var top = 0;
+ 	if ($(hashTag).offset()) {
+    	top = $(hashTag).offset().top
+  	}
+	$('html, body').animate({scrollTop:top - offset_up}, 'slow');                                                         
+
+});
 </script>
 
 

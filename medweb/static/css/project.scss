@@ -15,10 +15,9 @@
     .navbar{
         margin: 0;
         li{
-            a{
+            h5{
                 color: black !important;
                 font-family: $font-primary;
-                
                 /*padding: 0 !important;*/
                 line-height: 50px !important;
               }
@@ -27,12 +26,36 @@
                         font-size: 10px !important;             
                     }
             
-            a:hover, a:active, a:focus{
+            
+            a{
+                font-weight: 500;
+            }
+            a:hover, a:active{
                 color: $primary-color !important;
                 }  
-            
-        
-        }}}
+        }
+    
+    }
+    h5{
+        /*Prevents a glitch where the text shrinks and goes to new line for half a second when resizing*/
+        white-space: nowrap;
+        overflow: hidden;
+        font-size:  1.1em;
+    }
+    
+    /* Set back to defaults */
+    @media screen and (max-width: 768px){
+        h5{
+            white-space: initial;
+            overflow: auto;
+        }
+    }
+}
+
+/*Shrink the header text when scrolling down */
+.header-v8.header-fixed-shrink h5 {
+    font-size: 1.0em;
+	}
 
 .header-v8 .navbar-nav > .active > a,
 .header-v8 .navbar-nav > .active > a:hover,
@@ -88,6 +111,12 @@ hr.no-margin{
     font-size: $font-size-mini;
 }
 
+/*.sidebar {
+     position: fixed;
+     width: 200px;
+     height: 400px;
+     background: #000;
+ }*/ 
 
 
 #call-now{

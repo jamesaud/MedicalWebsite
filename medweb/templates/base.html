@@ -26,8 +26,8 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300,200,100,900' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-
-
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    
         <!-- CSS Global Compulsory -->
         <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="/static/css/style.css">
@@ -110,18 +110,20 @@
                                     <div class=''>
                                     <ul class="nav navbar-nav">
                                             <!-- Home -->
-                                            <li class="active"><a href="#">Home</a></li>
-                                            <li><a href='#insights'>Insights</a></li>
-                                            <li><a href="#solutions">Solutions</a></li>
-                                            <li><a href="#demo">Demo</a></li>
-                                            <li><a href="#contact">Contact</a></li>
-                                            <li><a href="#" id='call-now'>call 812-360-9245 </a></li>
+                                            <li id='nav-home' class='active'><a href="#">Home</a></li>
+                                            <li id='nav-insights'><a href='#insights'>Insights</a></li>
+                                            <li id='nav-solutions'><a href="#solutions">Solutions</a></li>
+                                            <li id='nav-demo'><a href="#demo">Demo</a></li>
+                                            <li id='nav-contact'><a href="#contact">Contact</a></li>
+                                            <li id='nav-call-now'><a href="#" id='call-now'>call 812-360-9245 </a></li>
                                     </ul>
                                   </div>
                                   </div></div></div></div></div></div>
 
             </div>
+        <div class='sidebar'>
         
+        </div>
 
 		<!--=== End Header ===-->
     <div class='content-main'>
@@ -215,9 +217,6 @@
     <!-- Waypoints plugin -->
     <script src="{% static 'css/plugins/waypoints4.0/lib/jquery.waypoints.min.js' %}"></script>
         
-    
-    
-
     {% block more-javascript %}{% endblock more-javascript %}
 
 </body>

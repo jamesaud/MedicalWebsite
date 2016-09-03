@@ -435,7 +435,7 @@ p {
         }
         
          li {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             margin-top: 0;
             position: relative;
             width: 180px;
@@ -521,9 +521,13 @@ p {
     text-shadow: 3px 3px 3px #ccc;
 }
 
-
 #icon-heart-o {
     color: $third-color;
     text-shadow: 3px 3px 3px #ccc;
 }
 
+#click-here{
+    font-family: $font-fun;
+    font-size: $font-size-two;
+    letter-spacing: 2px;
+}
