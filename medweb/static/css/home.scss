@@ -145,6 +145,10 @@ p {
         padding-bottom: 50px;
     }
     
+    h2{
+        color: black !important;
+    }
+    
     .color-top-1, .color-top-2{
         height: 20px;
     }
@@ -221,9 +225,7 @@ p {
 	background: $primary-color;
 }
 
-@mixin transparentBackgroundColor($alpha,$color) {
-  background-color: rgba(red($color), green($color), blue($color), $alpha);
-}
+
 
 
 .tp-banner {
@@ -266,9 +268,6 @@ p {
 }
 
 
-.icon{
-    text-shadow: 3px 3px 3px #ccc;
-}
 
 
 .col-1 {
@@ -327,32 +326,6 @@ p {
     background: $seventh-color;
 }
 
-/* MODAL SETTINGS */
-.modal-dialog{
-    width: 70% !important;
-    min-width: 980px;
-    max-width: 980px;
-}
-
-/*overwrite*/
-.modal-footer{
-    padding: 0;
-    border-top: 0px solid white;
-    background: transparent;
-    height: 0px;
-    button{        
-        position: absolute;
-        right: 12px;
-        bottom: 17px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .modal-dialog {
-        min-width: 420px;
-        margin-left: 15%;
-    }
-}
 
 .section-modal{
     
@@ -369,6 +342,32 @@ p {
         color: black;
     }
     
+    /* MODAL SETTINGS */
+    .modal-dialog{
+        width: 70% !important;
+        min-width: 980px;
+        max-width: 980px;
+    }
+
+    /*overwrite*/
+    .modal-footer{
+        padding: 0;
+        border-top: 0px solid white;
+        background: transparent;
+        height: 0px;
+        button{        
+            position: absolute;
+            right: 12px;
+            bottom: 17px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .modal-dialog {
+            min-width: 420px;
+            margin-left: 15%;
+        }
+    }
     .modal-header{
         padding-bottom: 0;
         h5{
@@ -530,4 +529,14 @@ p {
     font-family: $font-fun;
     font-size: $font-size-two;
     letter-spacing: 2px;
+    position: absolute;
 }
+
+@media screen and (min-width: 769px){
+    #click-here{
+    margin-left: 30px;
+        margin-top: 23px;
+    }
+}
+
+

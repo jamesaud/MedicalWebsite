@@ -115,16 +115,54 @@
                                             <li id='nav-solutions'><a href="#solutions">Solutions</a></li>
                                             <li id='nav-demo'><a href="#demo">Demo</a></li>
                                             <li id='nav-contact'><a href="#contact">Contact</a></li>
-                                            <li id='nav-call-now'><a href="#" id='call-now'>call 812-360-9245 </a></li>
+                                            <li id='nav-call-now'><a href="#" >call 812-360-9245</a></li>
                                     </ul>
                                   </div>
                                   </div></div></div></div></div></div>
 
             </div>
         <div class='sidebar'>
-        
+            
+            <ul>
+                <li id='sidebar-phone' ><a href='#'><i class="fa fa-phone fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>812-360-9245</span></h5></a></li>
+                <li id='sidebar-contact'>  <a href='' data-toggle="modal" data-target="#gridSystemModal"><i class="fa fa-envelope-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Contact</span></h5></a></li>
+                <li id='sidebar-live-chat' ><a href='#'> <i class="fa fa-comments-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Live Chat</span></h5></a></li>
+            </ul>
         </div>
+        
+        <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="gridModalLabel">Contact Form</h4>
+                      </div>
+                      <div class="modal-body">
+                          <form action="">
+                                  <div class="form-group required">
+                                      <div class='control-label'></div><input type="text" class="form-control" id="fname" placeholder="Name">
+                                  </div>
 
+                                  <div class="form-group required">
+                                      <div class='control-label'></div><input type="text" class="form-control" id="email" placeholder="Email">
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="text" class="form-control" id="phone" placeholder="Phone">
+                                  </div>
+                                  <div class="form-group required">
+                                      <div class='control-label'></div><textarea class="form-control" rows="4" id="comment" placeholder="Message"></textarea>
+                                  </div>
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Contact Us</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        
 		<!--=== End Header ===-->
     <div class='content-main'>
     {% block modal %}

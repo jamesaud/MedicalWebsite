@@ -111,19 +111,103 @@ hr.no-margin{
     font-size: $font-size-mini;
 }
 
-/*.sidebar {
-     position: fixed;
-     width: 200px;
-     height: 400px;
-     background: #000;
- }*/ 
 
-
-#call-now{
-    font-weight: 400;
+#nav-call-now{
+    a{
+    font-weight: 600;
    /* color: black; */
-    color: $third-color !important;
+    color: $third-color !important;}
     #tiny{
         font-size: 10px;
     }
+}
+
+.sidebar {
+    position: fixed;
+    float:left;
+    margin-top: 10%;
+    @include transparentBackgroundColor(.9, #FFFFFF);
+    z-index: 500;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 48px;
+    -webkit-transition: width .3s; /* Safari */
+    transition: width .3s;
+    border-top: solid 1px #333;
+    border-right: solid 1px #333;
+    border-bottom: solid 1px #333;
+    box-shadow: 1px 1px 1px #333;
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style-type:none;
+        
+        li{ 
+            padding: 0;
+            padding-bottom: 10px;
+            overflow: visible;
+            white-space: nowrap;
+            i{
+                margin-right: 10px;
+                width: 25px;
+                color: $primary-color;
+            }
+  
+            
+            h5{
+                display: inline;
+            }
+            a{
+                text-decoration: none;
+                display: block;
+            }
+        }
+        
+        
+        #sidebar-phone{
+            h5{color: $third-color;}
+        }
+        #sidebar-contact{}
+        #sidebar-live-chat{}
+        
+        
+        .sidebar-content{
+            display: none;
+            line-height: 20px;
+            overflow: visible;
+            white-space: nowrap;
+        }
+        
+        
+        li:last-child{
+            padding-bottom: 0;
+        }
+        
+        li:hover{
+            h5{color:black;}
+
+            i{
+                color: black;
+            }
+        }
+        
+        #sidebar-phone:hover{
+            h5{color: red !important;}
+            }
+    }
+}
+
+ .sidebar:hover{
+            width: 150px;
+            .sidebar-content{
+                display: inline;
+            }
+    }
+
+
+
+.icon{
+    text-shadow: 3px 3px 3px #ccc;
 }

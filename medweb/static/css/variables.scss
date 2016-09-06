@@ -22,4 +22,8 @@ $seventh-color: lightgrey;
     src: url(https://fonts.googleapis.com/css?family=Vollkorn);
 }
 
+@mixin transparentBackgroundColor($alpha,$color) {
+  background-color: rgba(red($color), green($color), blue($color), $alpha);
+}
+
 
