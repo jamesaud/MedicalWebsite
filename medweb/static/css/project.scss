@@ -10,6 +10,25 @@
         color: $fourth-color ;
     }
 
+.header-slogan-mobile{
+    display: none;
+    h5{display: none;}
+}
+@media screen and (max-width: 768px){
+    .header-slogan{
+        display: none;
+        h5{display: none;}
+    }
+    .header-slogan-mobile{
+        display: inline;
+        h5{
+            display: inline;
+            margin: 10px;
+        }
+}
+
+}
+
 
 .header-v8 {
     .navbar{
@@ -34,7 +53,34 @@
                 color: $primary-color !important;
                 }  
         }
-    
+ 
+        #nav-call-now{
+            a{
+            font-weight: 600;
+            }
+            #tiny{
+                font-size: 10px;
+            }
+        }
+        .nav-li-extra{
+            a{
+                font-size: $font-size-mini !important;
+                color: $third-color;
+            }
+            a:hover{
+                color: red !important;
+            }
+            a:link{
+                color: $third-color;
+            }
+        }
+        
+        .mynav1{
+            li:first-child{
+                margin-left: 0px;
+            }
+        }
+        
     }
     h5{
         /*Prevents a glitch where the text shrinks and goes to new line for half a second when resizing*/
@@ -82,8 +128,6 @@
     font-weight: bold;
 }
 
-
-
 hr.no-margin{
     margin: 0px !important;
 }
@@ -112,15 +156,7 @@ hr.no-margin{
 }
 
 
-#nav-call-now{
-    a{
-    font-weight: 600;
-   /* color: black; */
-    color: $third-color !important;}
-    #tiny{
-        font-size: 10px;
-    }
-}
+
 
 .sidebar {
     position: fixed;
@@ -199,8 +235,14 @@ hr.no-margin{
     }
 }
 
+@media screen and (max-width: 768px){
+    .sidebar{
+        display:none;
+    }
+}
+
  .sidebar:hover{
-            width: 150px;
+            width: 200px;
             .sidebar-content{
                 display: inline;
             }
@@ -211,3 +253,18 @@ hr.no-margin{
 .icon{
     text-shadow: 3px 3px 3px #ccc;
 }
+
+
+#call-now-info{
+    z-index: 500;
+    position: absolute;
+}
+
+.call-now-wrapper{
+    ul{
+    }
+    li{
+        float: right;
+    }
+}
+

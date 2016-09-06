@@ -11,7 +11,7 @@ p {
  padding-top: 30px;
     
  h1{
-     padding-bottom: 40px;
+     padding-bottom: 20px;
      text-align: center;
      color: black !important; 
     }
@@ -118,8 +118,8 @@ p {
                 display:inline-block;
                 zoom:1;
                 *display:inline;
-                padding-left: 10%;
-                padding-right: 8%;
+                padding-left: 16%;
+                padding-right: 6%;
                 li {
                     line-height: 30px;
                     font-size: $font-size-four;
@@ -343,10 +343,12 @@ p {
     }
     
     /* MODAL SETTINGS */
-    .modal-dialog{
+    @media screen and (min-width: 769px){
+        .modal-dialog{
         width: 70% !important;
         min-width: 980px;
         max-width: 980px;
+    }
     }
 
     /*overwrite*/
@@ -527,9 +529,10 @@ p {
 
 #click-here{
     font-family: $font-fun;
-    font-size: $font-size-two;
+    font-size: $font-size-one;
     letter-spacing: 2px;
     position: absolute;
+    padding-top: 100px;
 }
 
 @media screen and (min-width: 769px){
