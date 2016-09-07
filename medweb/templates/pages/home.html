@@ -841,9 +841,18 @@
     </div>
   </div>
 
-  <div class="one-page-inner one-default section-purchase">
+    
+    
+<!--== PLANS & PRICING ==-->
+    
+    
+  <div id='plans' class="one-page-inner one-default section-purchase">
     <div class="container content">
-        <h1>Choose the plan that works best for you</h1>
+        <div class="row title">
+            <h1>Plans &amp; Pricing</h1>
+            
+        <h2>Choose the plan that fits your practice</h2>
+        </div>
         <div class='row service-blocks'>
             <div class="col-md-6 col-sm-6 md-margin-bottom-40">
                     <div class="service-block service-block-default">
@@ -1085,12 +1094,13 @@ function remove_nav_active(nav_id_to_keep, all_navs){
     }
 };
     
+var all_nav_ids =  ['#nav-home', '#nav-insights', '#nav-solutions', '#nav-demo', '#nav-plans']
 function add_nav_waypoint(waypoint_id, nav_id){ //string with hash
     var waypoint = new Waypoint({
       element: $(waypoint_id),
       handler: function(){
           $(nav_id).addClass('active');
-          remove_nav_active(nav_id, ['#nav-home', '#nav-insights', '#nav-solutions', '#nav-demo']);
+          remove_nav_active(nav_id, all_nav_ids);
       },
       offset: 116 // one pixel before the scroll on click in the navbar, so that it changes correctly
     });
@@ -1098,13 +1108,12 @@ function add_nav_waypoint(waypoint_id, nav_id){ //string with hash
 
 
 //all nav ids for adding active class or removing active class
-var all_nav_ids = ['#nav-home', '#nav-insights', '#nav-solutions', '#nav-demo'];
-
 //Add waypoints listeners that add and remove active class from navbar for each section
 add_nav_waypoint('#home','#nav-home');
 add_nav_waypoint('#solutions','#nav-solutions');
 add_nav_waypoint('#insights','#nav-insights');
 add_nav_waypoint('#demo','#nav-demo');
+add_nav_waypoint('#plans','#nav-plans');
 
 </script>
 
@@ -1146,13 +1155,18 @@ var hex_ids = ['#hex-1', '#hex-2', '#hex-3', '#hex-4', '#hex-5', '#hex-6', '#hex
  // List -> null
 function hex_handler(hex_id, tab_id){
         $(hex_id).click(function(){
-            console.log('clicking ' + tab_id);
             $(tab_id).trigger('click');
         })}
 
 
      
 hex_handler('#hex-1', '#t-tab-1');
+hex_handler('#hex-2', '#t-tab-2');
+hex_handler('#hex-3', '#t-tab-6');
+hex_handler('#hex-4', '#t-tab-7');
+hex_handler('#hex-5', '#t-tab-3');
+hex_handler('#hex-6', '#t-tab-5');
+hex_handler('#hex-7', '#t-tab-4');
 
 </script>
 {% endblock more-javascript %}

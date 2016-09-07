@@ -139,14 +139,18 @@ p {
 
 .section-purchase{
     background: #3E4747 !important;
-    h1{
-        color: white !important;
-        text-align: center;
-        padding-bottom: 50px;
-    }
+    text-align: center;
     
-    h2{
-        color: black !important;
+    .title{
+        margin-bottom: 50px;
+        
+        h2{
+            color: white !important;
+        }
+        h1{
+            color: white !important;
+            padding-bottom: 20px;
+        }
     }
     
     .color-top-1, .color-top-2{
@@ -219,6 +223,8 @@ p {
 .section-mission{
     background: gray;
 }
+
+
 
 
 .bg-blue {
