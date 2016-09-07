@@ -114,6 +114,8 @@ p {
             }
             
             ul {
+                list-style: none;
+                list-style-position: outside;
                 display:-moz-inline-stack;
                 display:inline-block;
                 zoom:1;
@@ -123,6 +125,12 @@ p {
                 li {
                     line-height: 30px;
                     font-size: $font-size-four;
+                }
+                li:before{
+                    content: '✔';   
+                    margin-left: -1em;
+                    margin-right: .200em;
+                    color: green;
                 }
             }
             
