@@ -17,6 +17,8 @@ For example, if my docker machine ip was 256.34.23.12, the url would be:
 
 256.34.23.12:8000
 
+==============================
+
 medical website
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
