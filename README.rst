@@ -1,6 +1,26 @@
 Medical Website
 ==============================
 
+INSTRUCTIONS TO SET UP AND VIEW LOCALLY (Must have docker and docker-compose installed):
+
+> git clone https://github.com/jamesaud/MedicalWebsite
+
+> cd MedicalWebsite
+
+> docker-compose -f dev.yml build
+
+> docker-compose -f dev.yml up
+
+Find your docker machine ip address (> docker-machine ip) if running docker machine, otherwise use your local computer's ip.
+
+Visit port 8000 in your browser.
+
+For example, if my docker machine ip was 256.34.23.12, the url would be:
+
+256.34.23.12:8000
+
+==============================
+
 medical website
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
