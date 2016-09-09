@@ -7,9 +7,11 @@ INSTRUCTIONS TO SET UP AND VIEW LOCALLY (Must have docker and docker-compose ins
 
 > cd MedicalWebsite
 
+> docker-compose -f dev.yml build
+
 > docker-compose -f dev.yml up
 
-Find your ip address (> docker-machine ip).
+Find your docker machine ip address (> docker-machine ip) if running docker machine, otherwise use your local computer's ip.
 
 Visit port 8000 in your browser.
 
