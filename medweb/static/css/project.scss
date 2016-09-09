@@ -38,7 +38,7 @@
                 color: black !important;
                 font-family: $font-primary;
                 /*padding: 0 !important;*/
-                line-height: 50px !important;
+                line-height: 50px;
               }
             
             .tiny-text{
@@ -56,7 +56,6 @@
  
         #nav-call-now{
             a{
-            font-weight: 600;
             }
             #tiny{
                 font-size: 10px;
@@ -71,7 +70,7 @@
                 color: red !important;
             }
             a:link{
-                color: $third-color;
+                color: black;
             }
         }
         
@@ -82,11 +81,16 @@
         }
         
     }
-    h5{
+
+    
+    h5{ //for the header by the logo
         /*Prevents a glitch where the text shrinks and goes to new line for half a second when resizing*/
-        white-space: nowrap;
-        overflow: hidden;
+        padding-top: 18px;
         font-size:  1.1em;
+        line-height: 23px !important;
+        a:hover{ 
+            text-decoration: none;
+        }
     }
     
     /* Set back to defaults */
@@ -101,6 +105,15 @@
 /*Shrink the header text when scrolling down */
 .header-v8.header-fixed-shrink h5 {
     font-size: 1.0em;
+    padding-top: 10px !important;
+    line-height: 19px !important;
+	}
+
+	/*Navbar Brand*/
+header-fixed .header-v8.header-fixed-shrink .navbar-brand {
+		height: 65px;
+		max-height: 65px;
+		line-height: 36px;
 	}
 
 .header-v8 .navbar-nav > .active > a,
@@ -242,7 +255,7 @@ hr.no-margin{
 }
 
  .sidebar:hover{
-            width: 200px;
+            width: 150px;
             .sidebar-content{
                 display: inline;
             }
@@ -266,5 +279,9 @@ hr.no-margin{
     li{
         float: right;
     }
+}
+
+#topcontrol:hover{
+    background: $primary-color !important;
 }
 

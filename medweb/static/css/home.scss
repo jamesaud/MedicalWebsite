@@ -40,17 +40,16 @@ p {
     #not-just{
         font-weight: 400 !important;
     }
-    margin-bottom: 40px !important;
     padding-top: 0px !important;
     text-align: center;
     
     h1{color:black !important;}
     .section-highlights-block-1{
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
     
     .section-highlights-block-2{
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
 
     
@@ -89,14 +88,19 @@ p {
 
 
 .section-benefits{
+    .sb-benefits{
+        margin-bottom: 0px;
+    }
+    
+    .sb-title{
+        margin-bottom: 40px;
+    }
     .main-points{   
-        .low-padding{
-            padding-bottom: 10px !important;
-        }
         .main-points-block{
             padding-left: 5px;
             padding-right: 5px;
-            padding-bottom: 0px;
+            padding-bottom: 30px;
+            
             
             h3{
             text-align: center;
@@ -125,6 +129,7 @@ p {
                 li {
                     line-height: 30px;
                     font-size: $font-size-four;
+                    margin-bottom: 3px;
                 }
                 li:before{
                     content: '✔';   
@@ -170,6 +175,10 @@ p {
     
     .color-top-2{
         background: $third-color;
+    }
+    
+    .heading-sm{
+        color: black !important;
     }
     
     .service-blocks {
@@ -227,10 +236,20 @@ p {
 
 
 
-
-.section-mission{
-    background: gray;
+.section-demo{
+    table{
+        
+        th,td{
+            border: 1px dotted black;  
+            width: 300px;
+        }
+        th{
+            text-align: center;
+        }
+        text-align: center;
+    }
 }
+
 
 
 
@@ -253,14 +272,21 @@ p {
         font-size: 22px;
     }
     .tp-subtitle{
-        @include transparentBackgroundColor(.3, $primary-color);
+        @include transparentBackgroundColor(.7, $primary-color);
         color: white !important;
         font-size: $font-size-five !important;
-        line-height: 25px !important;
+        line-height: 2px !important;
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 10px;
         padding-right: 10px;
+        margin-bottom: 10px;
+        display: inline;
+        text-align: center;
+    }
+    
+    .tp-sub-span{
+        text-align: center;
     }
     .tp-subtitle-1{
         float:left;
@@ -339,6 +365,7 @@ p {
 .bg-col-7 {
     background: $seventh-color;
 }
+
 
 
 .section-modal{
