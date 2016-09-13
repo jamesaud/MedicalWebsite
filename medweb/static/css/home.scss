@@ -49,7 +49,7 @@ p {
     }
     
     .section-highlights-block-2{
-        margin-bottom: 0px;
+        margin-bottom: 55px;
     }
 
     
@@ -282,7 +282,7 @@ p {
         font-size: 22px;
     }
     .tp-subtitle{
-        @include transparentBackgroundColor(.7, $primary-color);
+        @include transparentBackgroundColor(.3, $primary-color);
         color: white !important;
         font-size: $font-size-five !important;
         line-height: 2px !important;
@@ -522,6 +522,9 @@ p {
             line-height: 50px;
         }
 
+        p{
+            font-weight: 400;
+        }
 
         .timeline-body{
             padding: 5px ;
