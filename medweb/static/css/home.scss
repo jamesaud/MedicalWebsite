@@ -44,14 +44,25 @@ p {
     text-align: center;
     
     h1{color:black !important;}
+
     .section-highlights-block-1{
+        margin-top: 50px;
         margin-bottom: 60px;
+
     }
     
     .section-highlights-block-2{
-        margin-bottom: 55px;
+        margin-top: 55px;
+        margin-bottom: 10px;
     }
 
+    .section-highlights-title-1{
+        padding-top: 10px;
+    }
+    
+    .section-highlights-title-2{
+        padding-top: 5px ;
+    }
     
     .main-points{
         .main-points-block{
@@ -70,6 +81,59 @@ p {
     h1{
         padding-top: 30px;
     }
+    
+    
+    
+    .circle-text{
+        text-align: center;
+        top: 20px;
+        color:  #111;
+        font-size:  25px !important;
+        z-index: 100;
+        font-weight: bold;
+    }
+    
+    
+    %fa-my{
+          margin-right: 20px;
+          margin-bottom: 20px;
+          height: 90px;
+          width: 90px;
+          line-height: 84px;
+          display: inline-block;
+          border-radius: 60px;
+          -moz-box-shadow:    10px #ccc;
+          -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+          box-shadow:         0px 0px 0px 5px #333;
+    }
+    
+
+    
+    @mixin border($color) {
+        border: 3px dotted  $color;
+        @include transparentBackgroundColor(.3, $color);
+    }
+    
+    @mixin fa-my-generator($class, $color){
+        .#{$class}{
+            @extend %fa-my; 
+            @include border($color);
+        }
+        .#{$class}:hover{
+               @include transparentBackgroundColor(1, $color);
+            
+        }
+    }
+    
+@include fa-my-generator(fa-my-1, $primary-color);
+@include fa-my-generator(fa-my-2, $second-color);
+@include fa-my-generator(fa-my-3, $third-color);
+@include fa-my-generator(fa-my-4, $fourth-color);
+@include fa-my-generator(fa-my-5, $fifth-color);
+@include fa-my-generator(fa-my-6, $sixth-color);
+
+    
+    
 }
 
 .section-circles{

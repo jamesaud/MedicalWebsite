@@ -316,72 +316,76 @@
 -->
     
 <div class='one-page-inner one-default section-highlights container'>
-     <div class="container content ">
-          <div class="row text-center">
-                  <h1>Technology built specifically for independent practices</h1>
+    <div class='row section-highlights-block-1'>
+
+        <div class='main-points col-md-8'>
+          <div class='row '>
+            <div class='col-md-6 main-points-block'>
+                <h4>Industry in Distress</h4>
+                <p><strong>It's no secret;</strong> productivity is down 30% with existing solutions and 86% of Americans are inflicted with chronic disease, the costliest healthcare obstacle to overcome.</p>
+            </div>
+
+            <div class='col-md-6 main-points-block'>
+                <h4>We offer what no competitor dares</h4>
+                  <p> Within 6 months of trying Synergy+ you'll see <strong>25-100% net income gains</strong>, or we cover the difference. Call now and sign our NDA to see our proprietary, all-inclusive services.</p>
+                </div> 
+            </div>
+        </div>
+        
+        <div class="container content col-md-4">
+              <div class=" text-center">
+                      <h1 class='section-highlights-title-1'>Technology built specifically for independent practices</h1>
+             </div>
          </div>
-     </div>
-    <div class='main-points'>
-      <div class='row section-highlights-block-1'>
-        <div class='col-md-4 main-points-block'>
-            <i class="fa fa-battery-quarter fa-4x icon col-3" aria-hidden="true" ></i>
-            <h3 class='main-points-header'><strong>Industry in Distress</strong></h3>
-            <p><strong>It's no secret;</strong> productivity is down 30% with existing solutions and 86% of Americans are inflicted with chronic disease, the costliest healthcare obstacle to overcome.</p>
-        </div>
-
-        <div class='col-md-4 main-points-block'>
-            <i class="fa fa-life-ring fa-4x icon col-2" aria-hidden="true" ></i>
-            <h3 class='main-points-header'><strong>Take Back Your Practice</strong></h3>
-            <p>Our proprietary advanced technology and services <strong>save 40% more time</strong> every step of the healthcare process. You'll earn more while patients get healthier.</p>
-        </div>
-          
-        <div class='col-md-4 main-points-block'>
-            <i class="fa fa-money fa-4x icon col-4" aria-hidden="true" ></i>
-            <h3 class='main-points-header'><strong>Net Income Guarantee</strong></h3>
-            <p><em>We offer what no competitor dares</em>;<br> 
-               Within 6 months of trying Synergy+ your practice will see <strong>25-100% net income gains</strong>, or we cover the cost.</p>
-            </div> 
-        </div>
-
-      </div>
+        
+    </div> <!-- /row -->
         
     <hr>
     
-      <div class='row'>
+      <div class='row section-highlights-block-2'>
         <div class="container content col-md-4">
               <div class="text-center">
-                      <h1>All-Inclusive Technology with Proprietary Services</h1>
+                      <h1 class='no-padding-b section-highlights-title-2'>All-Inclusive Technology with Proprietary Services</h1>
              </div>
          </div>
+          
          <div class='container content col-md-8'>
-            <div class="fa-stack fa-3x">
-              <i class="fa circle-icon fa-circle fa-stack-2x "></i>
-              <i class="fa fa-lock col-2 fa-stack-1x"></i>
-            </div>  
-           <div class="fa-stack fa-3x">
-              <i class="fa circle-icon fa-circle fa-stack-2x "></i>
-              <i class="fa fa-lock col-2 fa-stack-1x"></i>
-            </div>  
-           <div class="fa-stack fa-3x">
-              <i class="fa circle-icon fa-circle fa-stack-2x "></i>
-              <i class="fa fa-lock col-2 fa-stack-1x"></i>
-            </div>  
-           <div class="fa-stack fa-3x">
-              <i class="fa circle-icon fa-circle fa-stack-2x "></i>
-              <i class="fa fa-lock col-2 fa-stack-1x"></i>
-            </div>  
-           <div class="fa-stack fa-3x">
-              <i class="fa circle-icon fa-circle fa-stack-2x "></i>
-              <i class="fa fa-lock col-2 fa-stack-1x"></i>
-            </div>  
-           <div class="fa-stack fa-3x">
-              <i class="fa circle-icon fa-circle fa-stack-2x "></i>
-              <i class="fa fa-lock col-2 fa-stack-1x"></i>
-            </div> 
+
+                <span >
+                   <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Patient Engagement" 
+                      data-content= "96% of Synergy+ patients have EHRs vs 77% nationwide. Patients are healthier and happy to comply with doctors and staff.">
+                       <i class="fa  circle-text fa-my-1">PE</i></a>
+                </span>
+
+            
+                <span >
+                   <i class="fa  circle-text fa-my-2">DS</i>
+                </span>
+            
+            
+                <span >
+                   <i class="fa  circle-text fa-my-3">EHR</i>
+                </span>
+            
+            
+                <span >
+                   <i class="fa circle-text fa-my-4">RCM</i>
+                </span>
+            
+            
+                <span >
+                   <i class="fa  circle-text fa-my-5">DA</i>
+                </span>
+            
+            
+                <span >
+                   <i class="fa  circle-text fa-my-6">PHM</i>
+                </span>  
+         </div>
+          
         </div>
       </div>
         
-     </div>
     
 <!--=== INSIGHTS===-->
   <div id='insights' class="bg-blue">
@@ -1255,5 +1259,11 @@ hex_handler('#hex-5', '#t-tab-3');
 hex_handler('#hex-6', '#t-tab-5');
 hex_handler('#hex-7', '#t-tab-4');
 
+</script>
+
+<script>
+                $(document).ready(function(){
+                    $('[data-toggle="popover"]').popover(); 
+                });
 </script>
 {% endblock more-javascript %}
