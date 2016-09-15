@@ -7,7 +7,7 @@
 
 
 .header-slogan a{
-        color: $fourth-color ;
+        color: $primary-color;
     
     }
 
@@ -79,6 +79,12 @@
             li:first-child{
                 margin-left: 0px;
             }
+        }
+        
+        
+        .navbar-brand{
+            padding: 10px;
+            text-align: center !important;
         }
         
     }
@@ -160,11 +166,6 @@ hr.no-margin{
     padding-bottom: 0px !important;
 }
 
-
-.navbar-brand{
-    padding: 10px;
-    text-align: center !important;
-}
 
 
 .star_text{
@@ -283,6 +284,22 @@ hr.no-margin{
     li{
         float: right;
     }
+}
+
+
+
+.btn-u-red{
+    border-color: $third-color;
+    @include transparentBackgroundColor(.85, $third-color, !important);
+}
+
+.btn-u-red:hover{
+    background: $third-color !important;
+}
+
+.no-break{
+    white-space: nowrap;
+    overflow: visible;
 }
 
 #topcontrol:hover{

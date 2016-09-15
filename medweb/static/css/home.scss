@@ -453,10 +453,6 @@ p {
         padding-right: 0;
     }
     
-    p{
-        color: black;
-    }
-    
     /* MODAL SETTINGS */
     @media screen and (min-width: 769px){
         .modal-dialog{
@@ -477,6 +473,7 @@ p {
             right: 12px;
             bottom: 17px;
         }
+    }       
     }
 
     @media screen and (max-width: 768px) {
@@ -511,6 +508,25 @@ p {
         }
     }
     
+    //Generates the title colors for each tab
+    @mixin generateTabClassColor($class, $color){
+        ##{$class}{
+            
+                h3{
+                    color: $color !important;
+                }
+            
+        }
+    }
+    
+    @include generateTabClassColor(PE, $primary-color);
+    @include generateTabClassColor(DS, $second-color);
+    @include generateTabClassColor(EHR, $fifth-color);
+    @include generateTabClassColor(RCM, $fourth-color);
+    @include generateTabClassColor(DA, $sixth-color);
+    @include generateTabClassColor(PHM, $third-color);
+    @include generateTabClassColor(ADD, $seventh-color);
+
     .tab-content{
         padding-left: 20px;
         padding-right: 10px;
@@ -519,6 +535,22 @@ p {
                 width:100%; /* you can use % */
                 height:auto;
             }
+        hr{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            }
+        
+        p{
+            color: #555;
+        }
+        
+        .tab-content-main-message{
+            p{font-style: italic;}
+            h3{
+                font-weight: bold;
+            }
+        }
+        
         }
 
     
@@ -588,6 +620,7 @@ p {
 
         p{
             font-weight: 400;
+            color: black;
         }
 
         .timeline-body{
@@ -619,13 +652,11 @@ p {
         }
     }
     
-}
 
 /* Dot class called with jquery to change timeline dot scolor */
 .dot-color{
     color: $fourth-color;
 }
-
 
 #icon-user {
     color: $primary-color;
@@ -653,11 +684,22 @@ p {
     padding-top: 100px;
 }
 
+#call-now{
+    right: 40px !important;
+    h5{
+        color: #333;
+    }
+}
+
 @media screen and (min-width: 769px){
     #click-here{
     margin-left: 30px;
         margin-top: 23px;
     }
 }
-
+@media screen and (max-width: 768px){
+    #click-here{
+        display: none;
+    }
+}
 
