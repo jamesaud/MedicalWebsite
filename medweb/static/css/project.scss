@@ -41,11 +41,7 @@
                 /*padding: 0 !important;*/
                 line-height: 50px;
               }
-            
-            .tiny-text{
-                        font-size: 10px !important;             
-                    }
-            
+        
             
             a{
                 font-weight: 500;
@@ -287,7 +283,6 @@ hr.no-margin{
 }
 
 
-
 .btn-u-red{
     border-color: $third-color;
     @include transparentBackgroundColor(.85, $third-color, !important);
@@ -306,3 +301,9 @@ hr.no-margin{
     background: $primary-color !important;
 }
 
+.tiny-text{
+            font-size: 10px !important;             
+        }
+            
+.blog-topbar{
+}

@@ -128,10 +128,10 @@ p {
     
 @include fa-my-generator(fa-my-1, $primary-color);
 @include fa-my-generator(fa-my-2, $second-color);
-@include fa-my-generator(fa-my-3, $third-color);
+@include fa-my-generator(fa-my-3, $fifth-color);
 @include fa-my-generator(fa-my-4, $fourth-color);
-@include fa-my-generator(fa-my-5, $fifth-color);
-@include fa-my-generator(fa-my-6, $sixth-color);
+@include fa-my-generator(fa-my-5, $sixth-color);
+@include fa-my-generator(fa-my-6, $third-color);
 
     
     
@@ -542,6 +542,7 @@ p {
         
         p{
             color: #555;
+            text-align: justify;
         }
         
         .tab-content-main-message{
@@ -703,3 +704,6 @@ p {
     }
 }
 
+
+#EHR{
+}
