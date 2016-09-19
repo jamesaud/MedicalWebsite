@@ -66,7 +66,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 
-<body class="header-fixed header-fixed-space-v2">
+<body class="header-fixed ">
 	<div class="wrapper">
 		<!--=== Header v8 ===-->
         
@@ -75,64 +75,12 @@
 		<div class="header-v8 header-sticky">
             
 			<!-- Topbar blog -->
-            <div class="blog-topbar">
-				<div class="topbar-search-block">
-					<div class="container">
-						<form action="">
-							<input type="text" class="form-control" placeholder="Search">
-							<div class="search-close"><i class="icon-close"></i></div>
-						</form>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-8 col-xs-8">
-							<div class="topbar-time">Friday, Mar 13th 2015</div>
-							<div class="topbar-toggler"><span class="fa fa-angle-down"></span></div>
-							<ul class="topbar-list topbar-menu">
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">Forums</a></li>
-								<li>
-									<a href="javascript:void(0);">Dropdown</a>
-									<ul class="topbar-dropdown">
-										<li><a href="#">Dropdown</a></li>
-										<li><a href="#">Dropdown</a></li>
-										<li class="topbar-submenu">
-											<a href="javascript:void(0);">Submenu</a>
-											<ul class="topbar-submenu-in">
-												<li><a href="#">Submenu</a></li>
-												<li><a href="#">Submenu</a></li>
-												<li class="topbar-submenu">
-													<a href="javascript:void(0);">Submenu</a>
-													<ul class="topbar-submenu-in">
-														<li><a href="#">Submenu</a></li>
-														<li><a href="#">Submenu</a></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li class="cd-log_reg hidden-sm hidden-md hidden-lg"><strong><a class="cd-signin" href="javascript:void(0);">Login</a></strong></li>
-								<li class="cd-log_reg hidden-sm hidden-md hidden-lg"><strong><a class="cd-signup" href="javascript:void(0);">Register</a></strong></li>
-							</ul>
-						</div>
-						<div class="col-sm-4 col-xs-4 clearfix">
-							<i class="fa fa-search search-btn pull-right"></i>
-							<ul class="topbar-list topbar-log_reg pull-right visible-sm-block visible-md-block visible-lg-block">
-								<li class="cd-log_reg home"><a class="cd-signin" href="javascript:void(0);">Login</a></li>
-								<li class="cd-log_reg"><a class="cd-signup" href="javascript:void(0);">Register</a></li>
-							</ul>
-						</div>
-					</div><!--/end row-->
-				</div><!--/end container-->
-			</div>
+            
 			<!-- End Topbar blog -->
 
 			<!-- Navbar -->
 			<div class="navbar mega-menu" role="navigation">
-				<div class="container">
+				<div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="res-container">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -143,42 +91,49 @@
 						</button>
                         
                         <div class='row nav-top'>
-                            <div class="navbar-brand col-md-3">
-                                <a href="index.html">
-                                    <img src="{% static 'images/logo.png' %}" alt="Logo">
-                                </a>
-                            </div>
+                            
        
-                            <div class=' header-slogan collapse navbar-collapse navbar-responsive-collapse'>
-                                <h5><a href=''>We are the first all-inclusive service provider for independent doctors.<br> <strong>We&nbsp;guarantee&nbsp;net&nbsp;income&nbsp;gains of 25-100%</strong>; Doctors practice medicine their way, patients get healthier. </a></h5>
+                            <div class='pull-right'>
+                                <ul class='mynav1 nav navbar-nav  col-sm-12 col-xs-12'>      
+                                            <li class='nav-li-extra' id='nav-contact'><a href="##" onClick="return false;"  data-toggle="modal" data-target="#gridSystemModal">Contact</a></li>
+                                            <li class='nav-li-extra' id='nav-call-now'><a href="##" onClick="return false;" data-toggle="collapse" data-target="#call-now-info"><i class='fa fa-phone'></i> +1 (812) 360-9245</a>
+                                            </li>    
+                                </ul>
                             </div>
+                            
+                            
                         </div>
                         
                         <hr/>
                         
                         <div>
-                              <div class="collapse navbar-collapse navbar-responsive-collapse row">
+                              <div class="collapse navbar-collapse navbar-responsive-collapse row mynav">
                             <!-- Toggles the mobile display of the header-slogan banner -->        
                             <div class='header-slogan-mobile'>
                                 <h5><a href=''><span>We are the first all-inclusive service provider for independent doctors,  with optimized reimbursements including value based care.</span> <strong>We guarantee net income gains of 25-100%</strong>; doctors practice medicine their way, patients get healthier. </a></h5>
                             </div>
-                                  
-                                <div class="res-container">
+                                
+                                <div class="navbar-brand col-md-2">
+                                    <a class='' href="index.html">
+                                        <img src="{% static 'images/logo.png' %}" alt="Logo">
+                                    </a>
+                                </div>
+                                  <div class='col-md-4 header-slogan'>
+                                    <h5><a href=''><strong>We guarantee independent doctors net income gains of 25-100%</strong></a>
+                                        <br>
+                                        <a href=''>We are the first all-inclusive service provider for independent doctors.</a>
+                                      </h5>
+                                  </div>
+                                <div class=" ">
                                <!--/end responsive container-->
-
                             <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <ul class="nav navbar-nav">
+                                    <ul class="nav navbar-nav nav-links">
                                             <!-- Home -->
                                             <li id='nav-home' class='active'><a href="#">Home</a></li>
                                             <li id='nav-insights'><a href='#insights'>Insights</a></li>
                                             <li id='nav-solutions'><a href="#solutions">Solutions</a></li>
                                             <li id='nav-demo'><a href="#demo">Demo</a></li>
                                             <li id='nav-plans'><a href="#plans">Plans &amp; Pricing</a></li>
-                                    </ul>
-                                    <ul class='mynav1 nav navbar-nav col-md-4 col-sm-12 col-xs-12 pull-left'>      
-                                            <li class='nav-li-extra' id='nav-contact'><a href="##" onClick="return false;"  data-toggle="modal" data-target="#gridSystemModal">Contact</a></li>
-                                            <li class='nav-li-extra' id='nav-call-now'><a href="##" onClick="return false;" data-toggle="collapse" data-target="#call-now-info">call 812-360-9245</a>
-                                            </li>    
                                     </ul>
                                 </div>
                             </div></div></div></div></div>

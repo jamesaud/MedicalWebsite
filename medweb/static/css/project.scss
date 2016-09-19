@@ -6,11 +6,17 @@
 }
 
 
-.header-slogan a{
+.header-slogan{
+    overflow: visible;
+    white-space: nowrap;
+    top: -5px !important;
+    display: inline-block;
+    a{
+        overflow: visible;
+    white-space: nowrap;
         color: $primary-color;
-    
     }
-
+}
 .header-slogan-mobile{
     display: none;
     h5{display: none;}
@@ -30,16 +36,27 @@
 
 }
 
+.mynav{
+    max-width: 1300px;
+    align-content: center;
+    margin: 0 auto;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
 
 .header-v8 {
     .navbar{
-        margin: 0;
+        
+        .nav-links{
+        }
+        ul{
+        }
         li{
             h5{
                 color: black !important;
                 font-family: $font-primary;
                 /*padding: 0 !important;*/
-                line-height: 50px;
               }
         
             
@@ -58,29 +75,42 @@
                 font-size: 10px;
             }
         }
-        .nav-li-extra{
+    
+        .mynav1{
+            ul{bottom: 50px !important;}
+            ul,li, a{
+                vertical-align: center;
+                height: 30px !important;   
+                line-height: 30px;
+            }
             a{
                 font-size: $font-size-mini !important;
                 color: $third-color;
+                
             }
             a:hover{
                 color: red !important;
             }
             a:link{
-                color: black;
+                color: #777;
             }
-        }
-        
-        .mynav1{
             li:first-child{
                 margin-left: 0px;
             }
+            li{
+                a{
+                padding-bottom: 0px !important;
+                padding-top: 0px !important;
+                }}
+          
         }
         
         
         .navbar-brand{
-            padding: 10px;
+            padding: 6px;
             text-align: center !important;
+            height: 65px;
+            line-height: 70px;
         }
         
     }
@@ -88,13 +118,15 @@
     
     h5{ //for the header by the logo
         /*Prevents a glitch where the text shrinks and goes to new line for half a second when resizing*/
-        padding-top: 18px;
-        font-size:  1.1em;
-        line-height: 23px !important;
-        
+        padding-top: 22px;
+        font-size:  .8em;
+        line-height: 20px !important;
+        display: inline-block;
+        margin-bottom: 0 !important;
         a:hover{ 
             text-decoration: none;
         }
+        
     }
     
     /* Set back to defaults */
@@ -108,16 +140,16 @@
 
 /*Shrink the header text when scrolling down */
 .header-v8.header-fixed-shrink h5 {
-    font-size: 1.0em;
+    font-size: .7em;
     padding-top: 10px !important;
     line-height: 19px !important;
 	}
 
 	/*Navbar Brand*/
-header-fixed .header-v8.header-fixed-shrink .navbar-brand {
-		height: 65px;
-		max-height: 65px;
-		line-height: 36px;
+header-fixed .header-v8.header-fixed-shrink .navbar-brand img{
+		height: 25px !important;
+		max-height: 25px;
+		line-height: 26px;
 	}
 
 .header-v8 .navbar-nav > .active > a,
@@ -151,7 +183,7 @@ hr.no-margin{
 
 
 /* To be below fixed nav bar */
-.content-main { padding-top: 32px; }
+.content-main { margin-top: 112px; }
 
 @media screen and (max-width: 768px) {
     .content-main { padding-top: 0px; }
