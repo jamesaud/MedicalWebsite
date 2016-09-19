@@ -119,7 +119,7 @@
     h5{ //for the header by the logo
         /*Prevents a glitch where the text shrinks and goes to new line for half a second when resizing*/
         padding-top: 22px;
-        font-size:  .8em;
+        font-size:  .9em;
         line-height: 20px !important;
         display: inline-block;
         margin-bottom: 0 !important;
@@ -140,7 +140,7 @@
 
 /*Shrink the header text when scrolling down */
 .header-v8.header-fixed-shrink h5 {
-    font-size: .7em;
+    font-size: .8em;
     padding-top: 10px !important;
     line-height: 19px !important;
 	}
