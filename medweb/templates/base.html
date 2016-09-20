@@ -92,7 +92,7 @@
                         
                         <div class='row nav-top'>
                             <div class='pull-right'>
-                                <ul class='mynav1 nav navbar-nav  col-sm-12 col-xs-12'>      
+                                <ul class='mynav1 hide-mobile nav navbar-nav'>      
                                             <li class='nav-li-extra' id='nav-contact'><a href="##" onClick="return false;"  data-toggle="modal" data-target="#gridSystemModal">Contact</a></li>
                                             <li class='nav-li-extra' id='nav-call-now'><a href="##" onClick="return false;" data-toggle="collapse" data-target="#call-now-info"><i class='fa fa-phone'></i> +1 (812) 360-9245</a>
                                             </li>    
@@ -105,24 +105,29 @@
                         <hr/>
                         
                         <div>
-                              <div class="collapse navbar-collapse navbar-responsive-collapse row mynav">
+                              <div class=" row mynav">
                             <!-- Toggles the mobile display of the header-slogan banner -->        
-                            <div class='header-slogan-mobile'>
-                                <h5><a href=''>We are the first all-inclusive service provider for independent doctors,  with optimized reimbursements including value based care. <strong>We guarantee net income gains of 25-100%</strong>; doctors practice medicine their way, patients get healthier. </a></h5>
-                            </div>
-                                
-                                <div class="navbar-brand col-md-2">
+                           
+                          <div class='logo-wrapper'>
+                                <div class='col-md-6'>
+                                <div class="navbar-brand">
                                     <a class='' href="index.html">
                                         <img src="{% static 'images/logo.png' %}" alt="Logo">
                                     </a>
                                 </div>
-                                  <div class='col-md-4 header-slogan'>
-                                    <h5><a href=''><strong>We guarantee independent doctors net income gains of 25-100%</strong></a>
+                                </div>
+                              </div>
+                              <div class='col-md-4 header-slogan hide-mobile'>
+                                    <h5><a href=''><strong>We guarantee independent doctors net income gains of 25-100%.</strong></a>
                                         <br>
                                         <a href=''>We are the first all-inclusive service provider for independent doctors.</a>
                                       </h5>
                                   </div>
-                                <div class=" ">
+                                <div class="collapse navbar-collapse navbar-responsive-collapse ">
+                                <div class='header-slogan-mobile'>
+                                <h5><a href=''><strong>We guarantee independent doctors net income gains of 25-100%.</strong> We are the first all-inclusive service provider for independent doctors. Doctors practice medicine their way, patients get healthier. </a></h5>
+                            </div>
+                                
                                <!--/end responsive container-->
                             <!-- Collect the nav links, forms, and other content for toggling -->
                                     <ul class="nav navbar-nav nav-links">
@@ -132,6 +137,13 @@
                                             <li id='nav-solutions'><a href="#solutions">Solutions</a></li>
                                             <li id='nav-demo'><a href="#demo">Demo</a></li>
                                             <li id='nav-plans'><a href="#plans">Plans &amp; Pricing</a></li>
+                                            <ul class='show-mobile nav navbar-nav nav-links'>
+                                                
+                                                <li ><a href="##" onClick="return false;"  data-toggle="modal" data-target="#gridSystemModal">Contact</a></li>
+                                                <li><a href="##" onClick="return false;" data-toggle="collapse" data-target="#call-now-info"><i class='fa fa-phone'></i> +1 (812) 360-9245</a>
+                                                </li>  
+                                            </ul>
+                                            
                                     </ul>
                                 </div>
                             </div></div></div></div></div>

@@ -922,14 +922,13 @@
 
 	/*Navbar Brand*/
 	.header-fixed .header-v8.header-fixed-shrink .navbar-brand {
-		height: 55px;
-		max-height: 55px;
-		line-height: 36px;
+		height: 60px;
+		max-height: 60px;
+		line-height: 43px;
 	}
 
 
 	.header-fixed .header-v8.header-fixed-shrink h5{
-	  padding-top: 12px !important;
     line-height: 16px !important;
 	}
 
