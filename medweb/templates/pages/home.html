@@ -23,9 +23,12 @@
     
         <link href="{% sass_src 'css/home.scss' %}" rel="stylesheet" type="text/css" />
         <link href="{% sass_src 'css/charts.scss' %}" rel="stylesheet" type="text/css" />
+        <link href="{% sass_src 'css/graphs.scss' %}" rel="stylesheet" type="text/css" />
+
         <!-- for local dev only -->
-        <link href="{% static '/staticfiles/css/home.scss' %}" rel="stylesheet" type="text/css" />
-        <link href="{% static '/staticfiles/css/charts.scss' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static '/staticfiles/css/home.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static '/staticfiles/css/graphs.css' %}" rel="stylesheet" type="text/css" />
+
         
         <div id='home'></div><!-- guarantees home nav lights up at the top of the pages -->
 {% endblock more-css %}
@@ -299,7 +302,6 @@
           
 <!-- circles animation waypoint -->    
 <div id='way-circles'></div>    
-
 
   <div class="one-page-inner one-default section-circles">
       
@@ -1058,17 +1060,138 @@
     
   <!-- Demo now -->
     
-    <div class="one-page-inner one-default">
+    <div class="one-page-inner one-default section-demo">
             <div class="container content main-points sb-title">
               <div class="row text-center">
                   <h1 class='main-points-title'> Call
  Now To Receive Your Written Net Income Guarantee</h1>
-                      <h2>See our Industry Comparative Analysis, you’ll always get more for less with Synergy +</h2>
-
+                  
+                      <h2>See our Industry Comparative Analysis, you’ll always get more for less with Synergy+</h2>
               </div>
             </div>
+        
+        
+        <div class='container content '>
+            <div class='graph'>
+                <table id="q-graph">
+                <caption></caption>
+                <thead>
+                <tr>
+                <th></th>
+                <th class="sent">Synergy+</th>
+                <th id='industry-avg' class="paid">Industry Avg</th>
+                <th><a  id='info-circle' href='#'  data-toggle="tooltip" title="See Full Analysis"><i class='fa fa-2x fa-info-circle' ></i></a></th>
+                </tr>
+                </thead>
+                <tbody>
+             
+                <tr class="qtr" id="q1">
+                <th scope="row">Training Time</th>
+                <td class="sent bar" style="height: 30px;"><p>1 Day</p></td>
+                <td class="paid bar" style="height: 210px;"><p>21 Days</p></td>
+                </tr>
+                    
+                <tr class="qtr" id="q2">
+                <th scope="row">Income Gains</th>
+                <td class="sent bar" style="height: 98px;"><p>32%</p></td>
+                <td class="paid bar" style="height: 10px;"><p></p></td>
+                </tr>
+                    
+                <tr class="qtr" id="q3">
+                <th scope="row">Services</th>
+                <td class="sent bar" style="height: 255px;"><p>85%</p></td>
+                <td class="paid bar" style="height: 150px;"><p>50%</p></td>
+                </tr>
+                    
+                 <tr class="qtr" id="q4">
+                <th scope="row">Satisfaction</th>
+                <td class="sent bar" style="height: 288px;"><p>97%</p></td>
+                <td class="paid bar" style="height: 104px;"><p>34%</p></td>
+                </tr>
+                
+                <tr class="qtr" id="q5">
+                <th scope="row">Net Income Guarantee</th>
+                <td class="sent bar" style="height: 292px;"><p>100%</p></td>
+                <td class="paid bar" style="height: 2px;"><p></p></td>
+                </tr>
+       
+    
+                </tbody>
+                </table>
+                <div id='tick-wrapper'>
+                    <div id="ticks">
+                     <div class="tick" style="height: 59px;"><p>100%</p></div>
+                    <div class="tick" style="height: 59px;"><p>80%</p></div>
+                    <div class="tick" style="height: 59px;"><p>60%</p></div>
+                    <div class="tick" style="height: 59px;"><p>40%</p></div>
+                    <div class="tick" style="height: 59px;"><p>20%</p></div>
+                    </div>
+                </div>
+            </div>
+</div>
+    
+<hr>
+        
+        <div class="container content">
+			<div class=" headline-center margin-bottom-60">
+				<h2> With a 100% retention rate, our customers are always satisfied</h2>
+			</div>
+            
+            
+			<!-- Testimonials Wrap -->
+			<div class="testimonials-v6 testimonials-wrap">
+				<div class="row margin-bottom-50">
+					<div class="col-md-6 md-margin-bottom-50">
+						<div class="testimonials-info rounded-bottom bg-color-light">
+							<img class="rounded-x" src="assets/img/testimonials/img5.jpg" alt="">
+							<div class="testimonials-desc">
+								<p>Synergy+, man what a great company they are.  I now see 40% more patients!</p>
+								<strong>Evan Bohringer</strong>
+								<span>Orthopedic Surgeon</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="testimonials-info rounded-bottom bg-color-light">
+							<img class="rounded-x" src="assets/img/testimonials/img6.jpg" alt="">
+							<div class="testimonials-desc">
+								<p>Synergy+, man what a great company they are.  I now see 40% more patients!</p>
+								<strong>Sara Lisbon</strong>
+								<span>Group Owner, 40 staff</span>
+							</div>
+						</div>
+					</div>
+				</div><!--/end row-->
+
+				<div class="row margin-bottom-20">
+					<div class="col-md-6 md-margin-bottom-50">
+						<div class="testimonials-info rounded-bottom bg-color-light">
+							<img class="rounded-x" src="assets/img/testimonials/img3.jpg" alt="">
+							<div class="testimonials-desc">
+								<p>Synergy+, man what a great company they are. I now see 40% more patients!</p>
+								<strong>Alice Williams</strong>
+								<span>General Physician</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="testimonials-info rounded-bottom bg-color-light">
+							<img class="rounded-x" src="assets/img/testimonials/img2.jpg" alt="">
+							<div class="testimonials-desc">
+								<p>Synergy+, what a great company they are. I now see 40% more patients!</p>
+								<strong>Jane Wearne</strong>
+								<span>Clinic Owner, 20 staff</span>
+							</div>
+						</div>
+					</div>
+				</div><!--/end row-->
+			</div>
+			<!-- End Testimonials Wrap -->
+		</div><!--/end container-->
+
             
         <!-- ID section-demo to scroll to from main button -->
+        <!--
             <div class="container content section-demo">
               <div class="row">
                 <div class="col-md-12 center-block table-responsive">
@@ -1096,7 +1219,7 @@
               </div>
                 </div>
             </div>
-        
+        -->
             <div id='trigger-demo'></div>
     </div>
     
@@ -1451,5 +1574,8 @@ hex_handler('#hex-7', '#t-tab-4');
                 $(document).ready(function(){
                     $('[data-toggle="popover"]').popover(); 
                 });
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
 </script>
 {% endblock more-javascript %}

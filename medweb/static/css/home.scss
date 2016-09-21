@@ -148,10 +148,7 @@ p {
     }
 }
 
-.section-graphs{
-    align-content: center;
-    text-align: center;
-}
+
 
 
 .section-benefits{
@@ -301,32 +298,11 @@ p {
 }
 
 
-
 .section-demo{
-    table{
-        margin: 0 auto !important;
-        float: none !important;
-        th,td{
-            border: 1px dotted black;  
-            width: 200px;
-        }
-        th{
-            font-size: $font-size-four;
-            text-align: center;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            padding-right: 40px;
-            padding-left: 40px;
-        }
-        td{
-            padding-top:30px;
-            padding-bottom: 30px;
-        }
-        text-align: center;
+    .sb-title{
+        margin-bottom: 0px;
     }
 }
-
-
 
 
 
