@@ -7,25 +7,29 @@
 
 .nav-top{
     margin-right: 2%;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 
 .logo-wrapper{
     position: absolute;
     top: -6px;
-    margin-left: 20px;
+    margin-left: 0px;
     
     padding-left: 60px;
     padding-right: 50px;
     background: white !important;
     
     .navbar-brand{
+        position: absolute;
             width: 250px; 
             padding: 6px;
+            left: -20px;
             text-align: center !important;
             height: 65px;
             line-height: 70px;
-            top: 0px
+            top: -10px
         }
     
 }
@@ -34,13 +38,16 @@
         width: 210px;
 		max-height: 60px;
 		line-height: 43px;
+        margin-left: 10px;
+       top: 0px;
 	}
 
 .header-slogan{
         overflow: visible;
         white-space: nowrap;
         top: 0px !important;
-        left: 0px;
+        padding-bottom: 5px;
+        left: 33%;
         display: inline-block;
         background: transparent;
         a{
@@ -52,6 +59,23 @@
         .col-md-6{
             height: 0;
         }
+    
+        h5{ //for the header by the logo
+        /*Prevents a glitch where the text shrinks and goes to new line for half a second when resizing*/
+        padding-top: 1px;
+        font-size:  .95em;
+        span{
+              font-size: 1.05em;  
+            }
+        line-height: 20px !important;
+        display: inline-block;
+        margin-bottom: 0 !important;
+        a:hover{ 
+            text-decoration: none;
+        }
+        
+    }
+    
     }
 
 .header-slogan-mobile{
@@ -79,7 +103,10 @@
     .logo-wrapper{
     .header-slogan{
         display: none;
-        h5{display: none;}
+        h5{
+            font-weight: bold;
+            display: none;
+        }
     }
     }
     .header-slogan-mobile{
@@ -169,19 +196,6 @@
     }
 
     
-    h5{ //for the header by the logo
-        /*Prevents a glitch where the text shrinks and goes to new line for half a second when resizing*/
-        padding-top: 22px;
-        font-size:  .9em;
-        line-height: 20px !important;
-        display: inline-block;
-        margin-bottom: 0 !important;
-        a:hover{ 
-            text-decoration: none;
-        }
-        
-    }
-    
     /* Set back to defaults */
     @media screen and (max-width: 768px){
         h5{
@@ -194,7 +208,6 @@
 /*Shrink the header text when scrolling down */
 .header-v8.header-fixed-shrink h5 {
     font-size: .8em;
-    padding-top: 10px !important;
     line-height: 19px !important;
 	}
 
