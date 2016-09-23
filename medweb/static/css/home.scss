@@ -11,7 +11,7 @@ p {
  padding-top: 30px;
     
  h1{
-     padding-bottom: 20px;
+     padding-bottom: 10px;
      text-align: center;
      color: black !important; 
     }
@@ -37,29 +37,32 @@ p {
 }
 
 .section-highlights{
+    
+    margin-top: 0px;
+    padding-top: 15px !important;
+    text-align: center;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    
     #not-just{
         font-weight: 400 !important;
     }
-    padding-top: 0px !important;
-    text-align: center;
-    
-    h1{color:black !important;}
+    h1{
+        color:black !important;
+        padding-top: 30px;
+    }
     h4{
         color: black !important;
         font-weight: bold;
     }
     .section-highlights-block-1{
-        margin-bottom: 20px;
-
+        margin-bottom: 30px;
     }
     
     .section-highlights-block-2{
-        margin-top: 55px;
-        margin-bottom: 10px;
     }
 
-    .section-highlights-title-1{
-        padding-top: 10px;
+    .section-highlights-title{
     }
     
     .section-highlights-title-2{
@@ -67,21 +70,17 @@ p {
     }
     
     .main-points{
+        .main-points-title{
+            //padding-bottom: 0px !important;
+        }
         .main-points-block{
-            padding-left: 40px;
-            padding-right: 40px;
-            i {
-                padding-bottom: 15px;
-            }
+          
+            
         }
     }
     
     h3 {
         color: black !important;
-    }
-    
-    h1{
-        padding-top: 30px;
     }
     
     
@@ -98,7 +97,8 @@ p {
     
     
     %fa-my{
-          margin-right: 20px;
+          margin-left: 12px;
+          margin-right: 12px;
           margin-bottom: 20px;
           height: 90px;
           width: 90px;
@@ -141,25 +141,95 @@ p {
 
 .section-circles{
     align-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     
-    h3 {
+    h2 {
         padding-bottom: 25px;
+    }
+    
+    .main-points-header{
+        margin-bottom: 20px;
     }
 }
 
 
+.section-insights{
+    text-align: center;
+    padding-top: 40px !important;
+    text-align: center;
+    padding-bottom: 60px !important;
+    
+    #not-just{
+        font-weight: 400 !important;
+    }
+    h1{
+        color:black !important;
+    }
+    h4{
+        color: black !important;
+        font-weight: bold;
+    }
+    .section-insights-block-1{
+        margin-bottom: 40px;
+    }
+    
+    .section-insights-block-2{
+    }
 
+    .section-insights-title{
+    }
+    
+    .section-insights-title-2{
+        padding-top: 5px ;
+    }
+    
+    .si-title{
+        margin-bottom: 20px;
+    }
+    
+    .main-points{
+        .main-points-title{
+            //padding-bottom: 0px !important;
+        }
+        .main-points-block{
+            i {
+                padding-bottom: 15px;
+            }
+        }
+    }
+    
+    h3 {
+        color: black !important;
+    }
+    
+    h5{
+    }
+}
+
+.section-faq{
+    background: white;
+    h2{
+        color: #333;
+    }
+    .headline{
+        margin-top: 0px;
+        border-bottom: none;
+        margin-bottom: 15px ;
+        h2{margin-bottom: 0px;}
+    }
+}
 
 .section-benefits{
+    margin-bottom: 25px;
     .sb-benefits{
         margin-bottom: 0px;
     }
     
     .sb-title{
-        margin-bottom: 10px;
+        padding-bottom: 30px;
     }
     .main-points{   
+        padding-top: 0;
         .main-points-block{
             padding-left: 5px;
             padding-right: 5px;
@@ -177,7 +247,7 @@ p {
             .main-points-block-title{
                 text-align: center;
                 padding-bottom: 5px;
-                h3{color: black !important;}
+                h3{}
             }
             
             ul {
@@ -187,8 +257,8 @@ p {
                 display:inline-block;
                 zoom:1;
                 *display:inline;
-                padding-left: 16%;
-                padding-right: 6%;
+                padding-left: 14%;
+                padding-right: 4%;
                 li {
                     line-height: 30px;
                     font-size: $font-size-four;

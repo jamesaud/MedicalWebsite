@@ -936,9 +936,10 @@
   }
 
 	/*Navbar Nav*/
-	.header-fixed .header-v8.header-fixed-shrink .navbar-nav > li > a {
+	.header-fixed .header-v8.header-fixed-shrink .nav-links > li > a {
 	  padding-top: 0;
 	  padding-bottom: 0px;
+	  line-height: 45px;
 	}
 
 
@@ -953,7 +954,8 @@
 	.header-fixed .header-v8.header-fixed-shrink .navbar-brand,
 	.header-fixed .header-v8.header-fixed-shrink h5,
 	.header-fixed .header-v8.header-fixed-shrink h5 .navbar-nav > li > a,
-	.header-fixed .header-v8.header-fixed-shrink .nav-top{
+	.header-fixed .header-v8.header-fixed-shrink .nav-top,
+	.header-fixed .header-v8.header-fixed-shrink .nav-links > li > a{
 		-webkit-transition: all 0.3s cubic-bezier(0.5, 1, 0.7, 1);
 	  	transition: all 0.3s cubic-bezier(0.5, 1, 0.7, 1);
 	}
