@@ -29,7 +29,7 @@
             text-align: center !important;
             height: 65px;
             line-height: 70px;
-            top: -10px
+            top: -3px
         }
     
 }
@@ -38,7 +38,7 @@
         width: 210px;
 		max-height: 60px;
 		line-height: 43px;
-        margin-left: 10px;
+        padding-top: 10px;
         top: 0px;
 	}
 
@@ -82,7 +82,10 @@
     display: none;
     h5{
         display: none;
-        a{ color: $primary-color;}
+        a{ 
+            text-decoration: none;
+            color: $primary-color;
+        }
        
     }
 }
@@ -111,7 +114,7 @@
     }
     .header-slogan-mobile{
         display: inline;
-     
+        
         h5{
             display: inline;
             margin: 10px;
@@ -206,13 +209,16 @@
         
         
     }
-
-    
+  
     /* Set back to defaults */
     @media screen and (max-width: 768px){
-        h5{
-            white-space: initial;
-            overflow: auto;
+        .nav-links-wrapper{
+            left: 0% !important;
+            text-align: left !important;
+        }
+        .nav-links{
+            left: 0% !important;
+            width: 200%;
         }
     }
 }

@@ -4,6 +4,10 @@ p {
     font-size: $font-size-four !important;
 }
 
+a:hover{
+    color: $primary-color;
+}
+
 
 .main-points{
 
@@ -35,6 +39,8 @@ p {
     }
 
 }
+
+
 
 .section-highlights{
     
@@ -157,7 +163,7 @@ p {
     text-align: center;
     padding-top: 40px !important;
     text-align: center;
-    padding-bottom: 60px !important;
+    padding-bottom: 75px !important;
     
     #not-just{
         font-weight: 400 !important;
@@ -170,7 +176,7 @@ p {
         font-weight: bold;
     }
     .section-insights-block-1{
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
     
     .section-insights-block-2{
@@ -184,7 +190,7 @@ p {
     }
     
     .si-title{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
     .main-points{
@@ -216,6 +222,9 @@ p {
         border-bottom: none;
         margin-bottom: 15px ;
         h2{margin-bottom: 0px;}
+    }
+    a:hover{
+        text-decoration: none;
     }
 }
 
@@ -276,14 +285,9 @@ p {
     }
 }
 
-.section-motivation{
-    h1 {
-         color: black !important;
-    }
-}
 
 
-.section-purchase{
+.section-plans{
     background: #3E4747 !important;
     text-align: center;
     
@@ -315,19 +319,17 @@ p {
     }
     
     .service-blocks {
-        padding-left: 60px;
-        padding-right: 60px;
         padding-top: 0px;
+        text-align: center;
+        
     }
     .service-block{
-        margin-right:40px;
-        margin-left:40px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        max-width: 415px;
         .service-block-content{
             padding-left: 40px;
             padding-right: 40px;
-        }
-        :hover{
-            
         }
     }
     .service-block-default{
@@ -343,9 +345,9 @@ p {
 
 
 .section-services{
-    
+    margin-bottom: 60px !important;
     h1{
-     font-size:  1.3em;
+     font-size:  1.15em;
      font-weight: 500;   
     }
     p{
@@ -370,7 +372,11 @@ p {
 
 .section-demo{
     .sb-title{
-        margin-bottom: 0px;
+        margin-bottom: 30px;
+    }
+    
+    h1{
+        color: black !important;
     }
 }
 
@@ -388,7 +394,7 @@ p {
         color: #fff;
     }
     h1{
-        font-size: 40px;
+        font-size: 44px;
     }
     h2{
         font-size: 22px;
@@ -507,7 +513,7 @@ p {
         width: 70% !important;
         min-width: 980px;
         max-width: 980px;
-    }
+        }
     }
 
     /*overwrite*/
