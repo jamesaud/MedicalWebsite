@@ -214,8 +214,26 @@ a:hover{
 
 .section-faq{
     background: white;
+    
+    .panel-body{
+        color: #444;
+        h5, p{
+            color: #444 !important
+        }
+    }
+    
+    i{
+        color: $primary-color !important;
+    }
+    
+    .nav-wrapper{  
+        margin: 0 auto;
+        max-width: $max-width;
+    }
+    
     h2{
         color: #333;
+        border-color: $primary-color !important;
     }
     .headline{
         margin-top: 0px;
@@ -291,6 +309,10 @@ a:hover{
     background: #3E4747 !important;
     text-align: center;
     
+    h4{
+        color: black !important;
+    }
+    
     .title{
         margin-bottom: 50px;
         
@@ -316,6 +338,7 @@ a:hover{
     
     .heading-sm{
         color: black !important;
+        margin-bottom: 10px;
     }
     
     .service-blocks {

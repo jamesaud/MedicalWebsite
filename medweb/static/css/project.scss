@@ -7,7 +7,7 @@
 
 .nav-top{
     margin-right: 2%;
-    max-width: 1300px;
+    max-width: $max-width;
     margin: 0 auto;
 }
 
@@ -55,6 +55,10 @@
             white-space: nowrap;
             color: #444;
         }
+    
+    a:hover {
+         color: inherit;
+    }
 
         .col-md-6{
             height: 0;
@@ -109,6 +113,9 @@
         h5{
             font-weight: bold;
             display: none;
+        }
+        a:hover{
+           
         }
     }
     }

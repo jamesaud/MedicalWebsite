@@ -17,6 +17,10 @@
         <link rel="stylesheet" href="/static/css/hex.css"><!-- for the hexes -->
 
         <link rel="stylesheet" href="/static/css/pages/shortcode_timeline1.css"><!-- for the timeline -->
+        <link rel="stylesheet" href="/static/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+
+        <!-- CSS Page Style -->
+        <link rel="stylesheet" href="/static/css/pages/portfolio-v2.css">
 
         <!-- sass -->
         {% load sass_tags %}
@@ -204,7 +208,7 @@
          <div class=' col-md-12'>
                 <span>
                       <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Patient Engagement" 
-                      data-content= "Of clinics using Synergy+, 97% of patients have EHRs vs 77% nationwide. Patients are healthier and happy to comply with doctors and staff." class="fa circle-text fa-my-1">PE</a>
+                      data-content= "Clinics using Synergy+ have 97% of patients with EHRs vs 77% nationwide. Patients are healthier and happy to comply with doctors and staff." class="fa circle-text fa-my-1">PE</a>
                 </span>
 
             
@@ -363,22 +367,22 @@ delivers the first all-inclusive system for independent doctors; you have to see
 
         <div class='col-md-4 main-points-block'>
             <i class="fa fa-life-ring fa-4x icon col-2" aria-hidden="true" ></i>
-            <h3 class='main-points-header'><strong>Advanced Technology</strong></h3>
-            <h5>Our EHR and RCM automates every step of the process saving you time and money.</h5>
+            <h3 class='main-points-header'><strong>All-Inclusive Provider</strong></h3>
+            <h5>Our advanced technology automates every step of the process, saving 7-10 minutes per patient visit.</h5>
         </div>
           
         <div class='col-md-4 main-points-block'>
             <i class="fa fa-line-chart fa-4x icon col-5" aria-hidden="true" ></i>
             <h3 class='main-points-header'><strong>Proprietary Services</strong></h3>
-            <h5>We help you find you doctors, real-estate, and more with our specialized services.</h5>
+            <h5>We help you find doctors, real-estate, and more with our specialized services.</h5>
         </div>    
       </div>
         
       <div class='row section-insights-block-2'>
         <div class='col-md-4 main-points-block'>
             <i class="fa fa-money fa-4x icon col-4" aria-hidden="true" ></i>
-            <h3 class='main-points-header'>All-Inclusive Provider</h3>
-            <h5>By providing six key service components, we empower your practice to deliver better care.</h5>
+            <h3 class='main-points-header'>Simplicity</h3>
+            <h5>Install in 1 day and train online in minutes. Cloud based software that's always accessible offline.</h5>
         </div>
 
         <div class='col-md-4 main-points-block'>
@@ -444,7 +448,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                <ul id="hexGrid">
                   <li class="hex">
                         
-                    <a id='hex-1' class="hexIn selector-1" href=".bs-example-modal-lg" data-toggle="modal"> 
+                    <a id='hex-1' class="hexIn selector-1" href=".hex-modal" data-toggle="modal"> 
                         <!-- Listed twice for popin! Overlays the same content for the effect-->
                       <h1 class='no-effect'>Patient Engagement</h1>
                       <p class='no-effect'>It all starts here</p>
@@ -453,7 +457,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                     </a>
                   </li>
                   <li class="hex">
-                    <a id='hex-2'  class="hexIn selector-2" href=".bs-example-modal-lg" data-toggle="modal">
+                    <a id='hex-2'  class="hexIn selector-2" href=".hex-modal" data-toggle="modal">
                       <h1 class='no-effect'>Data Security & Regulations</h1>
                       <p class='no-effect'>Protect Patients</p>
                       <h1>Data Security & Regulations</h1>
@@ -462,7 +466,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                   </li>
 
                  <li class="hex">
-                    <a id='hex-3' class="hexIn selector-3" href=".bs-example-modal-lg" data-toggle="modal">
+                    <a id='hex-3' class="hexIn selector-3" href=".hex-modal" data-toggle="modal">
                       <h1 class='no-effect'>Population Health Management</h1>
                       <h1>Population Health Management</h1>
                       <p class='no-effect'>Healthier Communities</p>
@@ -470,7 +474,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                     </a>
                   </li>
                     <li class="hex">
-                    <a id='hex-4' class="hexIn selector-4" href=".bs-example-modal-lg" data-toggle="modal">
+                    <a id='hex-4' class="hexIn selector-4" href=".hex-modal" data-toggle="modal">
                       <h1 class='no-effect'>Synergy+ Services</h1>
                       <h1>Synergy+ Services</h1>
                       <p class='no-effect'>Learn more about Synergy+</p>
@@ -478,7 +482,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                     </a>
                   </li>
                   <li class="hex">
-                    <a id='hex-5' class="hexIn selector-5" href=".bs-example-modal-lg" data-toggle="modal">
+                    <a id='hex-5' class="hexIn selector-5" href=".hex-modal" data-toggle="modal">
                       <h1 class='no-effect'>EHR</h1>
                       <h1>EHR</h1>
                       <p class='no-effect'>Cloud Secured</p>
@@ -486,7 +490,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                     </a>
                   </li>
                  <li class="hex">
-                    <a id='hex-6' class="hexIn selector-6" href=".bs-example-modal-lg" data-toggle="modal">
+                    <a id='hex-6' class="hexIn selector-6" href=".hex-modal" data-toggle="modal">
                       <h1 class='no-effect'>Data Analytics</h1>
                       <h1>Data Analytics</h1>
                       <p class='no-effect'>Patient Data Insights</p>
@@ -494,7 +498,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                     </a>
                   </li>
                 <li class="hex">
-                    <a id='hex-7'  class="hexIn selector-7" href=".bs-example-modal-lg" data-toggle="modal">
+                    <a id='hex-7'  class="hexIn selector-7" href=".hex-modal" data-toggle="modal">
                       <h1 class='no-effect'>Revenue Cycle Management</h1>
                       <p class='no-effect'>Minimum 25% Revenue Gains</p>
                       <h1>Revenue Cycle Management</h1>
@@ -509,7 +513,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
     </div>
     
     <div class='section-modal'>
-      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal fade hex-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
           <div class="modal-dialog" role="document">
 
             <div class="modal-content">
@@ -1201,7 +1205,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
 						<div class="testimonials-info rounded-bottom bg-color-light">
 							<img class="rounded-x" src="{% static 'images/img6.jpg' %}" alt="">
 							<div class="testimonials-desc">
-								<p>Because of Synergy+, I've relocated from a hospital to a small college town where I run my own small clinic - I've never been happier!</p>
+								<p>Because of Synergy+, I've relocated from a hospital to a college town where I run my own small clinic - I've never been happier!</p>
 								<strong>Sara Lisbon</strong>
 								<span>Group Owner | 40 staff</span>
 							</div>
@@ -1303,7 +1307,8 @@ delivers the first all-inclusive system for independent doctors; you have to see
             <h1>Designed <span class='col-1'>by</span> doctors<span class='col-1'> for</span> doctors</h1> 
             <h5><strong> <em>It's okay, we know;</em></strong> existing products from the vast majority of services have reduced productivity by as much as 30%, leading to an increased cost of care.
           </h5>
-          <h5> Top doctors, IT specialists and business analysts worked together to design Novoclincal software and Synergy+ services. Synergy+ is first in the world to provide a comprehensive solution that works out of the box.</h5>
+          <h5> Top doctors, IT specialists and business analysts with over 180 years in healthcare worked together to design our proprietary technology and services. Synergy+ is first in the world to provide a comprehensive solution that works out of the box.
+          </h5>
             <h5>Don't waste time learning software, let Synergy+ software work for you.</h5>
         </div>
         <div class="col-md-6">
@@ -1323,7 +1328,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
             <div class='col-md-6'>
                 <h1>Seeing is Believing</h1>
                 <h3>Watch the video now to see Synergy+ in action</h3>
-                <div style='position: absolute; top: 150px;'class='bottom-align-text'>
+                <div style='position: absolute; top: 110px;'class='bottom-align-text'>
                     <h5>*Investors 
                         <br>
                         &nbsp;&nbsp;-This is a preliminary video. Production quality is affected by our limited budget.
@@ -1347,7 +1352,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
     <div class="container content">
         <div class="row title">
             <h1>Plans &amp; Pricing</h1>
-            
+        
         <h2>Choose the plan that fits your practice</h2>
         </div>
         <div class='row service-blocks'>
@@ -1356,10 +1361,15 @@ delivers the first all-inclusive system for independent doctors; you have to see
                     <div class="service-block service-block-default">
                         <div class='color-top-1'>  </div>
                         <div class='service-block-content'>
-                            <i class="icon-lg rounded-x icon-line icon-trophy"></i>
-                            <h2 class="heading-sm">Sustainable Business</h2>
-                            <h4>Simple practice and lifestyle</h4>
-                            <hr>
+                            <div class='service-block-title'>
+                                <i class="icon-lg rounded-x icon-line icon-trophy"></i>
+                                <h2 class="heading-sm">Sustainable Practice</h2>
+                                <h4>Simple Business and Lifestyle</h4>
+                                <hr>
+                                    <h3>$$$ per Month</h3>
+
+                                <hr>
+                            </div>
                             <ul class="list-unstyled">
                                 <li>Analysis &amp; Consulting</li>
                                 <li>Email Marketing</li>
@@ -1368,7 +1378,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                                 <li>Social Networking</li>
                                 <li>Documentation</li>
                             </ul>
-                            <a href="#" class="btn-u btn-large">Purchase Now</a>
+                            <a href="#" class="btn-u btn-large" onClick='return false;'>Purchase Now</a>
                         </div>
                     </div>
             </div>
@@ -1376,13 +1386,17 @@ delivers the first all-inclusive system for independent doctors; you have to see
             <div class=" col-md-5 col-sm-6">
                     <div class="service-block service-block-default">
                         <div class='color-top-2'>  </div>
-                        <div class='service-block-content'>
-                            <i class="icon-lg rounded-x icon-line icon-trophy"></i>
-                            <h2 class="heading-sm">Exponential Growth</h2>
-                            <h4>Growth and market domination</h4>
+                        <div class='service-block-title'>
+                            <div class='service-block-content'>
+                                <i class="icon-lg rounded-x icon-line icon-trophy"></i>
+                                <h2 class="heading-sm">Exponential Growth</h2>
+                                <h4>Growth and Market Domination</h4>
+                            </div>
                         </div>
+                        
+                         <hr>
+                                <h3>$$$ per Month + 3%</h3>
                         <hr>
-                        <div class='service-block-content'>
                             <ul class="list-unstyled">
                                 <li>Analysis &amp; Consulting</li>
                                 <li>Email Marketing</li>
@@ -1391,8 +1405,8 @@ delivers the first all-inclusive system for independent doctors; you have to see
                                 <li>Social Networking</li>
                                 <li>Documentation</li>
                             </ul>
-                        </div>
-                        <a href="#" class="btn-u btn-large">Purchase Now</a>
+                        
+                        <a href="#" class="btn-u btn-large" onClick='return false;'>Purchase Now</a>
                     </div>
             </div>
             
@@ -1414,12 +1428,15 @@ delivers the first all-inclusive system for independent doctors; you have to see
     
     
 <div class='section-faq' >
-        <ul class="nav nav-tabs" style="background: url({% static 'images/breadcrumbs.png'%}) repeat;">
+    <div style="background: url({% static 'images/breadcrumbs.png'%}) repeat;">
+    <div class='nav-wrapper'>
+        <ul class="nav nav-tabs" >
           <li class='active'><a data-toggle="tab" href="#faqs">FAQs</a></li>
           <li><a data-toggle="tab" href="#resources">Resources</a></li>
           <li><a data-toggle="tab" href="#articles">Articles</a></li>
         </ul>
-
+    </div>
+    </div>
     	<!--<div class="breadcrumbs">
 			<div class="container">
 				<h1 class="pull-left">FAQs</h1>
@@ -1443,13 +1460,14 @@ delivers the first all-inclusive system for independent doctors; you have to see
 							<div class="panel-heading">
 								<h4 class="panel-title">
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-										1. Put a bird on it squid single-origin coffee nulla?
+										 Why are all-inclusive services becoming mandatory?
 									</a>
 								</h4>
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse">
 								<div class="panel-body">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    <p>It is becoming mandatory to utilize all services to optimize Patient Engagement, and reimbursements.</p>
+                                    Population health management is essential for Value Based Care (VBC). VBC is soon to account for up to 30% of all patients, and Private Pay will be 80% of VBC by 2020.
 								</div>
 							</div>
 						</div>
@@ -1569,9 +1587,9 @@ delivers the first all-inclusive system for independent doctors; you have to see
 					<!-- Contacts -->
 					<div class="headline"><h2>Contact</h2></div>
 					<ul class="list-unstyled who margin-bottom-20">
-						<li><a href="#"><i class="fa fa-home"></i>5B Avenue, Bloomington, Indiana<br> 47408 US</a></li>
-						<li><a href="#"><i class="fa fa-envelope"></i>services@synergyplus.com</a></li>
-						<li><a href="#"><i class="fa fa-phone"></i>+1 (812) 360 9245</a></li>
+						<li><a href="" onClick='return false;'><i class="fa fa-home"></i>5B Synergy Avenue,  47408 <br>Bloomington, Indiana US</a></li>
+						<li><a href="" onClick='return false;'><i class="fa fa-envelope"></i>services@synergyplus.com</a></li>
+						<li><a href="" onClick='return false;'><i class="fa fa-phone"></i>+1 (812) 360 9245</a></li>
 					</ul>
 					<!-- End Contacts -->
 
@@ -1590,10 +1608,134 @@ delivers the first all-inclusive system for independent doctors; you have to see
 				</div><!--/col-md-3-->
 			</div><!--/row-->
     
-      <div id="resources" class="tab-pane fade">
-        <h3>Menu 1</h3>
-        <p>Some content in menu 1.</p>
+      <div id="resources" class="tab-pane fade"> 
+          		<div class="breadcrumbs">
+			<div class="container">
+				<h1 class="pull-left">Portfolio Text Blocks</h1>
+				<ul class="pull-right breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="">Portfolio</a></li>
+					<li class="active">Portfolio Text Blocks</li>
+				</ul>
+			</div><!--/container-->
+		</div><!--/breadcrumbs-->
+		<!--=== End Breadcrumbs ===-->
+
+		<!--=== Content Part ===-->
+		<div class="container content">
+			<!-- Portfolio Sorting Blocks -->
+			<div class="sorting-block">
+				<div class="content-xs">
+					<ul class="sorting-nav sorting-nav-v1 text-center">
+						<li class="filter" data-filter="all">All</li>
+						<li class="filter" data-filter="category_1">UI Design</li>
+						<li class="filter" data-filter="category_2">Wordpress</li>
+						<li class="filter" data-filter="category_3">HTML5/CSS3</li>
+						<li class="filter" data-filter="category_4">Bootstrap 3</li>
+					</ul>
+				</div>
+                <ul>
+                </ul>
+				<ul class="row sorting-grid">
+					<li class="col-md-3 col-sm-6 col-xs-12 mix category_1 category_3" data-cat="1">
+						<a href="#">
+							<img class="img-responsive" src="/static/images/img2.jpg" alt="">
+							<span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+						</a>
+					</li>
+					<li class="col-md-3 col-sm-6 col-xs-12 mix category_3 category_1" data-cat="3">
+						<a href="#">
+							<img class="img-responsive" src="assets/img/main/img12.jpg" alt="">
+							<span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+						</a>
+					</li>
+					<li class="col-md-3 col-sm-6 col-xs-12 mix category_2 category_1" data-cat="2">
+						<a href="#">
+							<img class="img-responsive" src="assets/img/main/img13.jpg" alt="">
+							<span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+						</a>
+					</li>
+					<li class="col-md-3 col-sm-6 col-xs-12 mix category_3 category_4" data-cat="3">
+						<a href="#">
+							<img class="img-responsive" src="assets/img/main/img3.jpg" alt="">
+							<span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+						</a>
+					</li>
+					<li class="col-md-3 col-sm-6 col-xs-12 mix category_2 category_1 category_4" data-cat="2">
+						<a href="#">
+							<img class="img-responsive" src="assets/img/main/img2.jpg" alt="">
+							<span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+						</a>
+					</li>
+					<li class="col-md-3 col-sm-6 col-xs-12 mix category_4" data-cat="1">
+						<a href="#">
+							<img class="img-responsive" src="assets/img/main/img6.jpg" alt="">
+							<span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+						</a>
+					</li>
+					<li class="col-md-3 col-sm-6 col-xs-12 mix category_2 category_3  category_4" data-cat="2">
+						<a href="#">
+							<img class="img-responsive" src="assets/img/main/img8.jpg" alt="">
+							<span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+						</a>
+					</li>
+					<li class="col-md-3 col-sm-6 col-xs-12 mix category_1 category_2 category_3" data-cat="1">
+						<a href="#">
+							<img class="img-responsive" src="assets/img/main/img1.jpg" alt="">
+							<span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+						</a>
+					</li>
+					<li class="col-md-3 col-sm-6 col-xs-12 mix category_4 category_2" data-cat="1">
+						<a href="#">
+							<img class="img-responsive" src="assets/img/main/img11.jpg" alt="">
+							<span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+						</a>
+					</li>
+					<li class="col-md-3 col-sm-6 col-xs-12 mix category_3 category_2" data-cat="3">
+						<a href="#">
+							<img class="img-responsive" src="assets/img/main/img12.jpg" alt="">
+							<span class="sorting-cover">
+								<span>Happy New Year</span>
+								<p>Anim pariatur cliche reprehenderit</p>
+							</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="clearfix"></div>
+			</div>
+			<!-- End Portfolio Sorting Blocks -->
+		</div>
       </div>
+    
+    
       <div id="articles" class="tab-pane fade">
         <h3>Menu 2</h3>
         <p>Some content in menu 2.</p>
@@ -1608,12 +1750,6 @@ delivers the first all-inclusive system for independent doctors; you have to see
 
 			<!-- Other Questions -->
 					
-		<!--=== End Content Part ===-->
-
-
-
-
-
 
 </div><!--/one-page-->
 
