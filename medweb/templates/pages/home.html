@@ -1356,8 +1356,34 @@ delivers the first all-inclusive system for independent doctors; you have to see
         <h2>Choose the plan that fits your practice</h2>
         </div>
         <div class='row service-blocks'>
-            <div class='col-md-1'></div>
-            <div class="col-md-5 col-sm-6">
+            
+            <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">
+                        <div class='color-top-0'>  </div>
+                        <div class='service-block-content'>
+                            <div class='service-block-title'>
+                                <i class="icon-lg rounded-x icon-line icon-trophy"></i>
+                                <h2 class="heading-sm">EHR Optimization</h2>
+                                <h4> Cash Based Practices</h4>
+                                <hr>
+                                    <h3>$$$ per Month</h3>
+
+                                <hr>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li>Analysis &amp; Consulting</li>
+                                <li>Email Marketing</li>
+                                <li>App &amp; Icon Design</li>
+                                <li>Responsive Web Desgin</li>
+                                <li>Social Networking</li>
+                                <li>Documentation</li>
+                            </ul>
+                            <a href="#" class="btn-u btn-large" onClick='return false;'>Purchase Now</a>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
                     <div class="service-block service-block-default">
                         <div class='color-top-1'>  </div>
                         <div class='service-block-content'>
@@ -1383,7 +1409,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                     </div>
             </div>
             
-            <div class=" col-md-5 col-sm-6">
+            <div class=" col-md-4 col-sm-6">
                     <div class="service-block service-block-default">
                         <div class='color-top-2'>  </div>
                         <div class='service-block-title'>
@@ -1407,33 +1433,31 @@ delivers the first all-inclusive system for independent doctors; you have to see
                             </ul>
                         
                         <a href="#" class="btn-u btn-large" onClick='return false;'>Purchase Now</a>
+                        
+                      <div id='trigger-plans'></div>
                     </div>
-            </div>
-            
-            <div class='col-md-1'></div>
                 
+            </div>
+                  
           </div>
         
+      <div id='resource'></div>
         </div>
-      
-      
-        <div id='trigger-plans'></div>
       
     </div>  
 
     
-    
-    
     <!------------ -->
     
-    
 <div class='section-faq' >
+    
+    
     <div style="background: url({% static 'images/breadcrumbs.png'%}) repeat;">
     <div class='nav-wrapper'>
         <ul class="nav nav-tabs" >
           <li class='active'><a data-toggle="tab" href="#faqs">FAQs</a></li>
-          <li><a data-toggle="tab" href="#resources">Resources</a></li>
-          <li><a data-toggle="tab" href="#articles">Articles</a></li>
+          <li><a id='test' data-toggle="tab" href="#resources">Resources</a></li>
+          <!--<li><a data-toggle="tab" href="#articles">Articles</a></li>-->
         </ul>
     </div>
     </div>
@@ -1453,6 +1477,9 @@ delivers the first all-inclusive system for independent doctors; you have to see
 <div class="tab-content">
     <div id="faqs" class="tab-pane fade in active">
 		<div class="container content ">
+            <div class='row'>
+            <h1>&nbsp;&nbsp;&nbsp;Frequently Asked Questions</h1>
+            </div>
 			<div class="row">
 				<div class="col-md-9">
 					<div class="panel-group acc-v1 margin-bottom-40" id="accordion">
@@ -1609,120 +1636,110 @@ delivers the first all-inclusive system for independent doctors; you have to see
 			</div><!--/row-->
     
       <div id="resources" class="tab-pane fade"> 
-          		<div class="breadcrumbs">
-			<div class="container">
-				<h1 class="pull-left">Portfolio Text Blocks</h1>
-				<ul class="pull-right breadcrumb">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="">Portfolio</a></li>
-					<li class="active">Portfolio Text Blocks</li>
-				</ul>
-			</div><!--/container-->
-		</div><!--/breadcrumbs-->
+        <!--/breadcrumbs-->
 		<!--=== End Breadcrumbs ===-->
 
 		<!--=== Content Part ===-->
-		<div class="container content">
+		<div class="faq-resources">
 			<!-- Portfolio Sorting Blocks -->
 			<div class="sorting-block">
-				<div class="content-xs">
-					<ul class="sorting-nav sorting-nav-v1 text-center">
-						<li class="filter" data-filter="all">All</li>
-						<li class="filter" data-filter="category_1">UI Design</li>
-						<li class="filter" data-filter="category_2">Wordpress</li>
-						<li class="filter" data-filter="category_3">HTML5/CSS3</li>
-						<li class="filter" data-filter="category_4">Bootstrap 3</li>
+				<div class="container">
+					<ul class="sorting-nav sorting-nav-v1">
+                        <!-- Category_1 is what is loaded by default. Change the mixitup.min.js js file to load a different default -->
+						<!--<li class="filter" data-filter="all">All</li>-->
+						<li class="filter" data-filter="category_1">Practice Resources</li>
+						<li class="filter" data-filter="category_2">Industry Studies</li>
+						<li class="filter" data-filter="category_3">Synergy+ Studies</li>
+						<li class="filter" data-filter="category_4">Future Predictions</li>
 					</ul>
 				</div>
-                <ul>
-                </ul>
 				<ul class="row sorting-grid">
 					<li class="col-md-3 col-sm-6 col-xs-12 mix category_1 category_3" data-cat="1">
 						<a href="#">
-							<img class="img-responsive" src="/static/images/img2.jpg" alt="">
+							<img class="img-responsive" src="/static/images/doctor.jpg" alt="">
 							<span class="sorting-cover">
-								<span>Happy New Year</span>
+								<span>Article 1</span>
 								<p>Anim pariatur cliche reprehenderit</p>
 							</span>
 						</a>
 					</li>
 					<li class="col-md-3 col-sm-6 col-xs-12 mix category_3 category_1" data-cat="3">
 						<a href="#">
-							<img class="img-responsive" src="assets/img/main/img12.jpg" alt="">
+							<img class="img-responsive" src="/static/images/doctor.jpg" alt="">
 							<span class="sorting-cover">
-								<span>Happy New Year</span>
+								<span>Article 2</span>
 								<p>Anim pariatur cliche reprehenderit</p>
 							</span>
 						</a>
 					</li>
 					<li class="col-md-3 col-sm-6 col-xs-12 mix category_2 category_1" data-cat="2">
 						<a href="#">
-							<img class="img-responsive" src="assets/img/main/img13.jpg" alt="">
+							<img class="img-responsive" src="/static/images/doctor.jpg" alt="">
 							<span class="sorting-cover">
-								<span>Happy New Year</span>
+								<span>Article 3</span>
 								<p>Anim pariatur cliche reprehenderit</p>
 							</span>
 						</a>
 					</li>
 					<li class="col-md-3 col-sm-6 col-xs-12 mix category_3 category_4" data-cat="3">
 						<a href="#">
-							<img class="img-responsive" src="assets/img/main/img3.jpg" alt="">
+							<img class="img-responsive" src="/static/images/doctor.jpg" alt="">
 							<span class="sorting-cover">
-								<span>Happy New Year</span>
+								<span>Article 4</span>
 								<p>Anim pariatur cliche reprehenderit</p>
 							</span>
 						</a>
 					</li>
 					<li class="col-md-3 col-sm-6 col-xs-12 mix category_2 category_1 category_4" data-cat="2">
 						<a href="#">
-							<img class="img-responsive" src="assets/img/main/img2.jpg" alt="">
+							<img class="img-responsive" src="/static/images/doctor.jpg" alt="">
 							<span class="sorting-cover">
-								<span>Happy New Year</span>
+								<span>Article 5</span>
 								<p>Anim pariatur cliche reprehenderit</p>
 							</span>
 						</a>
 					</li>
 					<li class="col-md-3 col-sm-6 col-xs-12 mix category_4" data-cat="1">
 						<a href="#">
-							<img class="img-responsive" src="assets/img/main/img6.jpg" alt="">
+							<img class="img-responsive" src="/static/images/doctor.jpg" alt="">
 							<span class="sorting-cover">
-								<span>Happy New Year</span>
+								<span>Article 6</span>
 								<p>Anim pariatur cliche reprehenderit</p>
 							</span>
 						</a>
 					</li>
 					<li class="col-md-3 col-sm-6 col-xs-12 mix category_2 category_3  category_4" data-cat="2">
 						<a href="#">
-							<img class="img-responsive" src="assets/img/main/img8.jpg" alt="">
+							<img class="img-responsive" src="/static/images/doctor.jpg" alt="">
 							<span class="sorting-cover">
-								<span>Happy New Year</span>
+								<span>Article 7</span>
 								<p>Anim pariatur cliche reprehenderit</p>
 							</span>
 						</a>
 					</li>
 					<li class="col-md-3 col-sm-6 col-xs-12 mix category_1 category_2 category_3" data-cat="1">
 						<a href="#">
-							<img class="img-responsive" src="assets/img/main/img1.jpg" alt="">
+							<img class="img-responsive" src="/static/images/doctor.jpg" alt="">
 							<span class="sorting-cover">
-								<span>Happy New Year</span>
+								<span>Article 8</span>
 								<p>Anim pariatur cliche reprehenderit</p>
 							</span>
 						</a>
 					</li>
 					<li class="col-md-3 col-sm-6 col-xs-12 mix category_4 category_2" data-cat="1">
 						<a href="#">
-							<img class="img-responsive" src="assets/img/main/img11.jpg" alt="">
+							<img class="img-responsive" src="/static/images/doctor.jpg" alt="">
 							<span class="sorting-cover">
-								<span>Happy New Year</span>
+								<span>Article 9</span>
 								<p>Anim pariatur cliche reprehenderit</p>
 							</span>
 						</a>
 					</li>
 					<li class="col-md-3 col-sm-6 col-xs-12 mix category_3 category_2" data-cat="3">
 						<a href="#">
-							<img class="img-responsive" src="assets/img/main/img12.jpg" alt="">
+							<img class="img-responsive" src="/static/images/doctor.jpg" alt="">
 							<span class="sorting-cover">
-								<span>Happy New Year</span>
+								<span>Artical 10</span>
 								<p>Anim pariatur cliche reprehenderit</p>
 							</span>
 						</a>
@@ -1938,7 +1955,7 @@ function remove_nav_active(nav_id_to_keep, all_navs){
     }
 };
     
-var all_nav_ids =  ['#nav-home', '#nav-insights', '#nav-solutions', '#nav-demo', '#nav-plans', '#nav-why']
+var all_nav_ids =  ['#nav-home', '#nav-insights', '#nav-solutions', '#nav-demo', '#nav-plans', '#nav-why', '#nav-resources']
 function add_nav_waypoint(waypoint_id, nav_id){ //string with hash
     var waypoint = new Waypoint({
       element: $(waypoint_id),
@@ -1959,6 +1976,7 @@ add_nav_waypoint('#insights','#nav-insights');
 add_nav_waypoint('#demo','#nav-demo');
 add_nav_waypoint('#plans','#nav-plans');
 add_nav_waypoint('#why','#nav-why');
+add_nav_waypoint('#resource','#nav-resources');
     
 //Triggers are for the scroll up
     
@@ -2011,7 +2029,6 @@ $('#demo-now').bind('click', function(e) {
 
 <!-- SELECT THE CORRECT TIMELINE TAB WHEN CLICKING ON THE HEX -->
  <script>
-$( "#t-tab-1" ).trigger( "click" ); //Selects patient engagement by default
 
 var hex_ids = ['#hex-1', '#hex-2', '#hex-3', '#hex-4', '#hex-5', '#hex-6', '#hex-7']
 
@@ -2034,9 +2051,15 @@ hex_handler('#hex-7', '#t-tab-4');
 
 </script>
 
+<!-- CLICK BY DEFAULT WHEN PAGE LOADS-->
 <script>
-                $(document).ready(function(){
-                    $('[data-toggle="popover"]').popover(); 
+    $("#t-tab-1").trigger( "click" ); //Selects patient engagement by default
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
                 });
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
@@ -2044,5 +2067,22 @@ $(document).ready(function(){
 </script>
 
 
+	<script type="text/javascript" src="static/plugins/jquery/jquery-migrate.min.js"></script>
+	<!-- JS Implementing Plugins -->
+	<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
+	<script type="text/javascript" src="/static/plugins/smoothScroll.js"></script>
+	<script type="text/javascript" src="/static/plugins/jquery.mixitup.min.js"></script>
+	<!-- JS Customization -->
+	<script type="text/javascript" src="/static/js/custom.js"></script>
+	<!-- JS Page Level -->
+	<script type="text/javascript" src="/static/js/app.js"></script>
+	<script type="text/javascript" src="/static/js/plugins/style-switcher.js"></script>
+	<script type="text/javascript" src="/static/js/pages/page_portfolio.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			App.init();
+			PortfolioPage.init();
+		});
+	</script>
 
 {% endblock more-javascript %}

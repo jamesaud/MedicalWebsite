@@ -214,7 +214,9 @@ a:hover{
 
 .section-faq{
     background: white;
-    
+    h1{
+        color: #333 !important;
+    }
     .panel-body{
         color: #444;
         h5, p{
@@ -243,6 +245,48 @@ a:hover{
     }
     a:hover{
         text-decoration: none;
+    }
+    
+    .faq-resources{
+        max-height: 550px;
+        padding-top: 20px;
+        
+        p{
+            font-size: 11px !important;
+        }
+ 
+        //Overwriting from portfolio-2.css
+        .sorting-block .sorting-grid li a:hover .sorting-cover {
+            background: $primary-color;
+        }
+
+        .sorting-block .sorting-grid li a:hover .sorting-cover p,
+        .sorting-block .sorting-grid li a:hover .sorting-cover span {
+            color: #fff;
+        }
+      
+        
+        span{
+            font-size: 15px !important;
+        }
+        .sorting-nav{
+            text-align: center;
+            li{
+                font-style: normal;
+                font-size: 16px;
+            }
+            li.active{
+                color: $primary-color;
+                text-decoration: none;
+                border-bottom: 1px solid $primary-color;
+            }
+        }
+        a{
+        }
+        .sorting-grid{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -325,9 +369,15 @@ a:hover{
         }
     }
     
-    .color-top-1, .color-top-2{
+   
+    .color-top-0, .color-top-1, .color-top-2{
         height: 20px;
     }
+    
+     .color-top-0{
+        background: $primary-color;
+    }
+    
     .color-top-1{
         background: $second-color;
     }
