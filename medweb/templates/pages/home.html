@@ -91,7 +91,7 @@
         style="z-index: 6">
         <br>
         <a id='learn-more' href="#section-all-content" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
-        <a id='demo-now' href="##" onClick="return false;" data-toggle="collapse" data-target="#call-now" aria-expanded="false" aria-controls="call-now" class="btn-u btn-brd btn-brd-hover btn-u-red">Demo Now</a>
+        <a id='demo-now' href="##" onClick="return false;" data-toggle="modal" data-target="#gridSystemModal" aria-expanded="false" aria-controls="call-now" class="btn-u btn-brd btn-brd-hover btn-u-red">Demo Now</a>
             <br>
             
           <!--<div class="collapse m-b-0 p-b-0" id="call-now">
@@ -196,7 +196,7 @@
 -->
 <div class='one-page-inner one-default section-highlights container'>
         
-        <div class='row section-highlights-block-2 container content'>
+        <div class='section-highlights-block-2 container content'>
           
                    <div class="section-highlights-title section-highlights-block-1 col-md-12">
                           <div class="text-center main-points">
@@ -205,41 +205,50 @@
                          </div>
                      </div>
             
-         <div class=' col-md-12'>
+         <div class='highlights-components row'>
+             <div class='col-md-2'>
+                <div id='component-pe'><h5><p>Patient Engagement</p></h5></div>
                 <span>
                       <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Patient Engagement" 
                       data-content= "Clinics using Synergy+ have 97% of patients with EHRs vs 77% nationwide. Patients are healthier and happy to comply with doctors and staff." class="fa circle-text fa-my-1">PE</a>
                 </span>
-
-            
+             </div>
+            <div class='col-md-2 col-sm-3'>
+                <h5><p>Data Security</p></h5>
                 <span >
                    <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Data Security" 
                       data-content= "All data is Cloud secured and simultaneously accessible on-site. You'll meet government regulations or we'll make them a non-issue." class="fa circle-text fa-my-2">DS</a>
                 </span>
-            
-            
+            </div>
+            <div class='col-md-2 col-sm-3'>
+                <h5><p>E-Health Records</p></h5>
                 <span >
                    <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Electronic Health Records" 
                       data-content= "Software is installed and employees are trained in 1 day. Our powerful yet intuitive software enables doctors to see 25-40% more patients and reduces expenses." class="fa  circle-text fa-my-3">EHR</a>
                 </span>
-            
-            
+             </div>
+            <div class='col-md-2'>
+                <h5><p>Revenue Cycle</p></h5>
                 <span >
                    <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Revenue Cycle Management" 
                       data-content= "We guarantee net income gains of 25-100% and cash flow optimization. Deposits occur at the end of the day, not in weeks." class="fa circle-text fa-my-4">RCM</a>
                 </span>
-            
-            
+             </div>
+            <div class='col-md-2'>
+                <h5><p>Data Analytics</p></h5>
                 <span >
                    <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Data Analytics" 
                       data-content= "Comprehensive analytics solutions currently in alpha testing, you can opt-in to participate in our evolving data analytics platform." class="fa  circle-text fa-my-5">DA</a>
                 </span>
-            
-            
+             </div>
+             
+            <div class='col-md-2'>
+                <h5><p>Population Health</p></h5>
                 <span >
                    <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Population Health Management" 
                       data-content= "Instant access and always up to date with population health management, so you'll stay informed and provide better care." class="fa  circle-text fa-my-6">PHM</a>
-                </span>  
+                </span> 
+             </div>
          </div>
             
             
@@ -367,7 +376,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
 
         <div class='col-md-4 main-points-block'>
             <i class="fa fa-life-ring fa-4x icon col-2" aria-hidden="true" ></i>
-            <h3 class='main-points-header'><strong>All-Inclusive Provider</strong></h3>
+            <h3 class='main-points-header'><strong>All-Inclusive Technology</strong></h3>
             <h5>Our advanced technology automates every step of the process, saving 7-10 minutes per patient visit.</h5>
         </div>
           
@@ -906,7 +915,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                                     <h3>Maximize Revenue</h3>
                                     <h5>
                                         <p>
-                                            Our RCM system maximizes your profit. We can afford to offer 25% minimum net revenue gains with a state of the art RCM service.
+                                            Our RCM system maximizes your profit with cash flow optimization.</p><p> We can afford to offer 25% minimum net income gains with our state of the art RCM service.
                                         </p>
                                     </h5>
                                 </div>
@@ -920,7 +929,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                                     <img class='tab_image' src="{% static 'images/engagement.jpg' %}">
                                 </div>
                                   <div class='col-md-5 tab-content-main-message'>
-                                    <h3 class='col-1'>Patient Engagement</h3>
+                                    <h3 class='col-1'>Data Analytics</h3>
                                       <p>
                                       The next step of modern healthcare; patient engagement is the process of the provider and patient working together to improve health.
                                       </p>
@@ -976,53 +985,52 @@ delivers the first all-inclusive system for independent doctors; you have to see
                                     <img class='tab_image' src="{% static 'images/engagement.jpg' %}">
                                 </div>
                                   <div class='col-md-5 tab-content-main-message'>
-                                    <h3 class='col-1'>Patient Engagement</h3>
+                                    <h3 class='col-1'>Population Health Management</h3>
                                       <p>
-                                      The next step of modern healthcare; patient engagement is the process of the provider and patient working together to improve health.
+                                      PHM is the aggregation and analysis of patient data across health information technology resources to improve clinical and financial outcomes.
                                       </p>
                                       <p>
-                                        To us, PE is more than just websites and portals; we help you create a culture of care where patients feel valued and lasting relationships grow.
+                                       With 86% of Americans suffering from chronic disease, this is the #1 investment in the foreseeable future.
                                       </p>
                                   </div>
                               </div>
                               
                               <hr>
                               
-                              <div class='row modal-body-titles'>
-                                  <div class='col-md-12'>
-                                    <h3>Focused on Your Patient's Needs</h3>
-                                </div>
-                              </div>
-                              
-                              <div class='row'>
-                                <div class='col-md-12'>
-                                    <div classs='row'>
-                                        <p><strong>Instead</strong> of being stuck at the office waiting, patients are notified when doctors are backed up. As a result, patients feel respected and are happier with your service. Our PE program gets 97% of patients to use the patient portal so 97% have an EHR, whereas most competitors peak at 70%.</p>
-                                        <p>
-                                        <strong>Patients</strong> get expedited appointments that day or within 7 days instead of the typical 21-60 days.
-
-                                        By providing faster appointments, preemptive care, and self-care we help you cater to your patient’s needs. Patients comply and participate more optimistically in their own health care.
-                                        </p>
-                                    </div>
-                                </div>
-                              </div>
-                              <hr>
-                              <div class='row modal-body-titles'>
-                                  <div class='col-md-12 '>
-                                    <h3>Increased Efficiency &amp; Online Presence</h3>
-                                </div>
-                              </div>
-                              
                             <div class='row'>
-                                <div class='col-md-12 pull-right'>
-                                    <p><strong>More</strong> patients are finding clinics online. We help you optimize your online profile, the way you want it to be.
-
-                                    We help get you 20-100% more patients through google search engine optimization and targeted sales methods.
-
-                                    We also don't neglect the 23% of patients who aren't online; in clinic patient sign-up services are also optimized.
-                                    </p>
+                                 
+                              <div class=' modal-body-titles'>
+                                  <div class='col-md-12 '>
+                                    <h3>Healthier Populations</h3>
+                                      <h5><p>Through large scale data analytics, our PHM services provides insights about:</p>
+                                        
+                                            <ul class="list-unstyled">
+                                            <li><i class="fa fa-check color-green"></i> Modern medicine and drugs</li>
+                                            <li><i class="fa fa-check color-green"></i> Preventative care - Teach healthier lifestyles, and treatments to prevent patients from getting sick.</li>
+                                            <li><i class="fa fa-check color-green"></i> Traditional and alternative medicines - Due to 11% of patients demanding it, we provide insights into
+the effectiveness of traditional and alternative treatment methods.</li>
+                                           </ul>
+                                        
+                                      </h5>
                                 </div>
                               </div>
+
+                            </div>
+                              <hr>
+                            <div class='row'>
+                              <div class=' modal-body-titles'>
+                                  <div class='col-md-6 '>
+                                    <h3>Accessible Information</h3>
+                                      <h5><p>Information is condensed and sent on a weekly basis in a whitepage briefing, so you stay up to date on current PHM trends. Your specialty, combined with location data, influences your relevant information.</p><p>Maximize your effectiveness, stay informed, and help your patients become healthier.</p></h5>
+                                </div>
+                                  <div class='col-md-6 '>
+                                    <h3>The Future of Healthcare</h3>
+                                      <h5><p>The USA ranks 11th of developed countries and 37th in the world in treatment of chronic care. Population health management is rapidly growing; 19.9 billion is going to be spend in 2020. </p><p>If you delay to invest now, you will lose
+patients within the next three to five years.</p></h5>
+                                </div>
+                              </div>
+                        
+                            </div>
                               
                           </div>                           
                             
@@ -1032,54 +1040,84 @@ delivers the first all-inclusive system for independent doctors; you have to see
                                     <img class='tab_image' src="{% static 'images/engagement.jpg' %}">
                                 </div>
                                   <div class='col-md-5 tab-content-main-message'>
-                                    <h3 class='col-1'>Patient Engagement</h3>
+                                    <h3 id='add-header'>Synergy+ Services</h3>
                                       <p>
-                                      The next step of modern healthcare; patient engagement is the process of the provider and patient working together to improve health.
+                                      Synergy+ provides proprietary services that provide value and that make your life simpler.
                                       </p>
                                       <p>
-                                        To us, PE is more than just websites and portals; we help you create a culture of care where patients feel valued and lasting relationships grow.
+                                        We are an all-inclusive provider because of our unique combination of technology and services.
+                                      </p>
+                                      <p>
+                                     Synergy+ works with you the way you want.
                                       </p>
                                   </div>
                               </div>
                               
                               <hr>
-                              
-                              <div class='row modal-body-titles'>
-                                  <div class='col-md-12'>
-                                    <h3>Focused on Your Patient's Needs</h3>
-                                </div>
-                              </div>
-                              
-                              
-                              <div class='row'>
-                                <div class='col-md-12'>
-                                    <div classs='row'>
-                                        <p><strong>Instead</strong> of being stuck at the office waiting, patients are notified when doctors are backed up. As a result, patients feel respected and are happier with your service. Our PE program gets 97% of patients to use the patient portal so 97% have an EHR, whereas most competitors peak at 70%.</p>
-                                        <p>
-                                        <strong>Patients</strong> get expedited appointments that day or within 7 days instead of the typical 21-60 days.
-
-                                        By providing faster appointments, preemptive care, and self-care we help you cater to your patient’s needs. Patients comply and participate more optimistically in their own health care.
-                                        </p>
-                                    </div>
-                                </div>
-                              </div>
-                              <hr>
-                              <div class='row modal-body-titles'>
-                                  <div class='col-md-12 '>
-                                    <h3>Increased Efficiency &amp; Online Presence</h3>
-                                </div>
-                              </div>
-                              
                             <div class='row'>
-                                <div class='col-md-12 pull-right'>
-                                    <p><strong>More</strong> patients are finding clinics online. We help you optimize your online profile, the way you want it to be.
-
-                                    We help get you 20-100% more patients through google search engine optimization and targeted sales methods.
-
-                                    We also don't neglect the 23% of patients who aren't online; in clinic patient sign-up services are also optimized.
-                                    </p>
+                                <div class='col-md-4'>
+                                     <i class='fa fa-binoculars fa-2x col-1'></i>
+                                    <h3>Physician Recruiting</h3>
+                                    <h5><p>
+                                        Need doctors? We can help. 
+                                        </p>
+                                        <p>
+                                        We will work with you to find the doctors and personnel you need; you can rely on a comprehensive recruiting service.
+                                        </p>
+                                    </h5>
                                 </div>
-                              </div>
+                                <div class='col-md-4'>
+                                    <i class='fa fa-bell-o fa-2x col-2'></i>
+                                    <h3>Consulting Services</h3>
+                                    <h5>
+                                        <p>
+                                        Thinking about expanding, growing, or moving?
+                                        </p>
+                                        <p>
+                                        With expertise in healthcare and expansive resources, Synergy+ has consulting services you can depend on.
+                                        </p>
+                                    </h5>
+                                </div>
+                                <div class='col-md-4'>
+                                    <i class='fa fa-pencil-square-o fa-2x col-3'></i>
+                                    <h3>Triage Service</h3>
+                                    <h5>
+                                        <p>
+                                        Don't have the resources to manage your own triage?
+                                        </p>
+                                        <p>
+                                        We'll set up a portal for you, and a qualified Synergy+ doctor will monitor all of your triage services.
+                                        </p>
+                                    </h5>
+                                </div>
+                            </div>
+                               <hr>
+                            <div class='row'>
+                                <div class='col-md-4'>
+                                    <i class='fa fa-clone fa-2x col-4'></i>
+                                    <h3>Digitilize Files</h3>
+                                    <h5><p>We'll help you transfer all of your patient medical records into the cloud on the first day of service.</p>
+                                    </h5>
+                                </div>
+                                <div class='col-md-4'>
+                                    <i class='fa fa-lightbulb-o fa-2x col-5'></i>
+                                    <h3>Support</h3>
+                                    <h5>
+                                        <p>24 hours, 7 days a week phone and live chat support. We provide consistent, quality support for clients.</p>
+                                    </h5>
+                                </div>
+                                <div class='col-md-4'>
+                                    <i class='fa fa-map-o fa-2x col-6'></i>
+                                    <h3>Add-Ons</h3>
+                                    <h5>
+                                        <p>Proprietary services are available to clients who purchase our exponential growth package.</p>
+                                    </h5>
+                                </div>
+                            </div>
+                              
+                             
+                              
+
                               
                           </div>
                         
@@ -1129,7 +1167,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                 <th></th>
                 <th class="sent">Synergy+</th>
                 <th id='industry-avg' class="paid">Industry Avg</th>
-                <th><a  id='info-circle' href='#'  data-toggle="tooltip" title="See Full Analysis"><i class='fa fa-2x fa-info-circle' ></i></a></th>
+                <th><a  id='info-circle' href='#' onClick='return false;'  data-toggle="tooltip" title="See Full Analysis"><i class='fa fa-2x fa-info-circle' ></i></a></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -1307,7 +1345,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
             <h1>Designed <span class='col-1'>by</span> doctors<span class='col-1'> for</span> doctors</h1> 
             <h5><strong> <em>It's okay, we know;</em></strong> existing products from the vast majority of services have reduced productivity by as much as 30%, leading to an increased cost of care.
           </h5>
-          <h5> Top doctors, IT specialists and business analysts with over 180 years in healthcare worked together to design our proprietary technology and services. Synergy+ is first in the world to provide a comprehensive solution that works out of the box.
+          <h5> Top doctors, IT specialists and business analysts with over 180 years of experience in healthcare worked together to design our proprietary technology and services. Synergy+ is the first to provide a comprehensive solution that works out of the box.
           </h5>
             <h5>Don't waste time learning software, let Synergy+ software work for you.</h5>
         </div>
@@ -1322,7 +1360,8 @@ delivers the first all-inclusive system for independent doctors; you have to see
         <div class='row'>
         
             <div class='col-md-6'>
-                <div style="overflow:hidden;height:310px;width:540px;max-width:100%;max-height:100%;"><div id="youtube_canvas" style="height:100%;width:100%;max-width:100%"><iframe style="height:100%;width:100%;max-width:100%;border:0;" frameborder="0" src="https://www.youtube.com/embed/iZIN7D5eXHU?hl=en&amp;autoplay=0&amp;cc_load_policy=0&amp;loop=0&amp;iv_load_policy=1&amp;fs=1&amp;showinfo=1"></iframe></div><a class="youtube-embed-code" href="http://www.tubeembed.com" id="get-youtube-data">tubeembed</a><style>#youtube_canvas img{max-width:none!important;background:none!important}</style></div>
+                
+                <div style="overflow:hidden;height:310px;width:540px;max-width:100%;max-height:100%;"><div id="youtube_canvas" style="height:100%;width:100%;max-width:100%" ><iframe style="height:100%;width:100%;max-width:100%;border:0;" frameborder="0" src="https://www.youtube.com/embed/iZIN7D5eXHU?hl=en&amp;autoplay=0&amp;cc_load_policy=0&amp;loop=0&amp;iv_load_policy=1&amp;fs=1&amp;showinfo=1" allowfullscreen></iframe></div><a class="youtube-embed-code" href="http://www.tubeembed.com" id="get-youtube-data">tubeembed</a><style>#youtube_canvas img{max-width:none!important;background:none!important}</style></div>
             </div>
             
             <div class='col-md-6'>
@@ -1331,7 +1370,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                 <div style='position: absolute; top: 110px;'class='bottom-align-text'>
                     <h5>*Investors 
                         <br>
-                        &nbsp;&nbsp;-This is a preliminary video. Production quality is affected by our limited budget.
+                        &nbsp;&nbsp;-This is a preliminary video. Production quality is affected by our budget.
                     </h5>
                 </div>
             </div>
@@ -1510,12 +1549,43 @@ delivers the first all-inclusive system for independent doctors; you have to see
 							<div id="collapseTwo" class="panel-collapse collapse">
 								<div class="panel-body">
 									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-									<ul class="list-unstyled">
-										<li><i class="fa fa-check color-green"></i> Donec id elit non mi porta gravida at eget metus..</li>
-										<li><i class="fa fa-check color-green"></i> Fusce dapibus, tellus ac cursus comodo egetine..</li>
-										<li><i class="fa fa-check color-green"></i> Food truck quinoa nesciunt laborum eiusmod runch..</li>
-										<li><i class="fa fa-check color-green"></i> Donec id elit non mi porta gravida at eget metus..</li>
-									</ul>
+									       <div class='row'>
+                                 
+                              <div class=' modal-body-titles'>
+                                  <div class='col-md-6 '>
+                                    <h3>Interoperatability</h3>
+                                      <h5><p>Facilitates maximum speed, cost, accuracy, and accessibility while minimizing provider disruption. Health information is instantly accessible to authorized providers across practices and health organizations.</p></h5>
+                                </div>
+                              </div>
+                            <div class='modal-body-titles'>
+                                  <div class='col-md-6 '>
+                                    <h3>Dragon Dictation</h3>
+                                      <h5><p>Eliminate scribers. Automatic transcription while you dictate in front of the patient. With 98%+ accuracy, your notes will be near-perfect. Patients can correct notes while you speak (so you'll always cut off the correct leg).</p></h5>
+                                </div>
+                              </div>
+
+                            </div>
+                              <hr>
+                            <div class='row'>
+                              <div class=' modal-body-titles'>
+                                  <div class='col-md-4 '>
+                                    <h3>Powerful yet Intuitive</h3>
+                                      <h5><p>The three window view provides everything you need at a glance, and the most important features are just a click away.</p><p> The Synergy+ EHR workflow matches the real life health care process. </p></h5>
+                                </div>
+                              </div>
+                            <div class='modal-body-titles'>
+                                  <div class='col-md-4 '>
+                                    <h3>Customizeable</h3>
+                                      <h5><p>Design your EHR the way you want it. With advanced customization features, it can adapt to fit your workflow.</p><p> Improve your practice with a superior EHR specialized for your needs.</p></h5>
+                                </div>
+                              </div>
+                              <div class=' modal-body-titles'>
+                                  <div class='col-md-4 '>
+                                    <h3>Trained in 1 day</h3>
+                                      <h5><p>Unlike other systems, which take 21-60 days to learn, within one day you will feel comfortable when using our intuitive software. </p><p>Plus a personal Synergy+ training coach helps you out as long as you need.</p></h5>
+                                </div>
+                              </div>
+                            </div>
 								</div>
 							</div>
 						</div>
@@ -2067,16 +2137,11 @@ $(document).ready(function(){
 </script>
 
 
-	<script type="text/javascript" src="static/plugins/jquery/jquery-migrate.min.js"></script>
 	<!-- JS Implementing Plugins -->
 	<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
-	<script type="text/javascript" src="/static/plugins/smoothScroll.js"></script>
 	<script type="text/javascript" src="/static/plugins/jquery.mixitup.min.js"></script>
 	<!-- JS Customization -->
-	<script type="text/javascript" src="/static/js/custom.js"></script>
 	<!-- JS Page Level -->
-	<script type="text/javascript" src="/static/js/app.js"></script>
-	<script type="text/javascript" src="/static/js/plugins/style-switcher.js"></script>
 	<script type="text/javascript" src="/static/js/pages/page_portfolio.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
