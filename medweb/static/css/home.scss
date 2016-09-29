@@ -43,43 +43,29 @@ a:hover{
 .section-investors{
     margin: 0 auto;
     h1{
-        text-align: center;
+        padding-top: 0;
         color:black;
         margin: 0;
+        text-align: left;
     }
     
     
-    a:link{
-        color: #0000EE;
-    }
-    a:hover{
-        color:#f60; 
-        text-decoration: none;
-    }
-    a:visited{
-        color: #551A8B;
-    }
     h2{
         color: #333 !important;
     }
     
-    .headline-center h2:after{
-        background: $primary-color !important;
-    }
-    
-    .our-team{
-        margin-top: 60px;
-    }
-    
-    small{
-        color: $primary-color;
-    }
-    
-    img{
-        margin: 0 auto;
-        max-height: 180px;
-        width: auto;
-        margin-bottom: 10px;
+      a:link{
+            color: #0000EE;
+        }
+        a:hover{
+            color:#f60; 
+            text-decoration: none;
+        }
+        a:visited{
+            color: #551A8B;   
+        }
+    .investors-message{
+        margin-bottom: 30px;
     }
 
 }
@@ -269,15 +255,28 @@ a:hover{
 }
 
 .section-faq{
-    background: white;
+    #faqs{
+        .panel-body{
+            color: #444;
+            h5, p{
+                color: #444 !important
+            }
+        }
+        .panel{
+
+            a:hover{
+                text-decoration: none;
+            }
+            a{
+                color: $primary-color;
+            }
+            .collapsed{
+                color: #333 !important;
+            }
+        }
+    }
     h1{
         color: #333 !important;
-    }
-    .panel-body{
-        color: #444;
-        h5, p{
-            color: #444 !important
-        }
     }
     
     i{
@@ -298,9 +297,6 @@ a:hover{
         border-bottom: none;
         margin-bottom: 15px ;
         h2{margin-bottom: 0px;}
-    }
-    a:hover{
-        text-decoration: none;
     }
     
     .faq-resources{
@@ -337,11 +333,28 @@ a:hover{
                 border-bottom: 1px solid $primary-color;
             }
         }
-        a{
-        }
         .sorting-grid{
             max-width: 1000px;
             margin: 0 auto;
+        }
+    }
+    
+         
+    #our-team{
+        margin-top: 40px;
+        .headline-center h2:after{
+            background: $primary-color !important;
+        }
+
+        small{
+            color: $primary-color;
+        }
+    
+        img{
+            margin: 0 auto;
+            max-height: 180px;
+            width: auto;
+            margin-bottom: 10px;
         }
     }
 }
