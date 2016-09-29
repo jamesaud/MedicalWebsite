@@ -40,7 +40,49 @@ a:hover{
 
 }
 
+.section-investors{
+    margin: 0 auto;
+    h1{
+        text-align: center;
+        color:black;
+        margin: 0;
+    }
+    
+    
+    a:link{
+        color: #0000EE;
+    }
+    a:hover{
+        color:#f60; 
+        text-decoration: none;
+    }
+    a:visited{
+        color: #551A8B;
+    }
+    h2{
+        color: #333 !important;
+    }
+    
+    .headline-center h2:after{
+        background: $primary-color !important;
+    }
+    
+    .our-team{
+        margin-top: 60px;
+    }
+    
+    small{
+        color: $primary-color;
+    }
+    
+    img{
+        margin: 0 auto;
+        max-height: 180px;
+        width: auto;
+        margin-bottom: 10px;
+    }
 
+}
 
 .section-highlights{
     
@@ -78,11 +120,12 @@ a:hover{
         //font-size: $font-size-four;
     }
     
-    #component-pe{
-        position: relative;
-        left: -12px !important;
+    @media screen and (min-width: 769px){
+        #component-pe{
+            position: relative;
+            left: -12px !important;
+        }
     }
-    
     .highlights-components{
         max-width: 920px;
         margin: 0 auto;
@@ -684,6 +727,7 @@ a:hover{
         img.tab_image{ /* Shrink the image proportionally */
                 width:100%; /* you can use % */
                 height:auto;
+                min-height: 250px;
             }
         hr{
             margin-top: 10px;
@@ -696,7 +740,7 @@ a:hover{
         }
         
         .tab-content-main-message{
-            p{font-style: italic;}
+            p{font-style: normal;}
             h3{
                 font-weight: bold;
             }
@@ -853,6 +897,7 @@ a:hover{
         display: none;
     }
 }
+
 
 
 #EHR{

@@ -428,6 +428,7 @@ hr.no-margin{
             font-size: 10px !important;             
         }
             
-.absolute{
-    position: absolute;
+.no-wrap{
+     overflow: visible;
+    white-space: nowrap;
 }
