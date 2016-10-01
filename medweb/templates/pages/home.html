@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="/static/css/pages/page_one.css">
         <link rel="stylesheet" href="/static/css/pages/page_search.css"><!-- for the purchase now boxes -->
         <link rel="stylesheet" href="/static/css/hex.css"><!-- for the hexes -->
-        
+        >
         
 
         <link rel="stylesheet" href="/static/css/pages/shortcode_timeline1.css"><!-- for the timeline -->
@@ -29,10 +29,11 @@
         <link href="{% sass_src 'css/home.scss' %}" rel="stylesheet" type="text/css" />
         <link href="{% sass_src 'css/charts.scss' %}" rel="stylesheet" type="text/css" />
         <link href="{% sass_src 'css/graphs.scss' %}" rel="stylesheet" type="text/css" />
-
+        <link href="{% sass_src 'css/circle-tabs.scss' %}" rel="stylesheet" type='text/css'/>
         <!-- for local dev only -->
         <link href="{% static '/staticfiles/css/home.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static '/staticfiles/css/graphs.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static '/staticfiles/css/circle-tabs.css' %}" rel="stylesheet" type="text/css" />
 
         
         <div id='home'></div><!-- guarantees home nav lights up at the top of the pages -->
@@ -259,45 +260,72 @@
     </div> <!-- /row -->
 
 
-<hr>
+      <div id='benefits' class="bg-blue">
+    <div class="container content text-center">
+        <div class="row title">
+            <h1>Benefits</h1>
+        </div>
+    </div>
+  </div>
     
 <div class="one-page-inner one-default section-benefits ">
-            <div class="container content main-points sb-title">
-              <div class="row text-center">
-                      <h1 class='main-points-title'>Synergy+ Benefits Everyone</h1>
-                      <h2>When doctors are free to practice medicine their way</h2>
-              </div>
-            </div>
  
     <div class="container content main-points sb-benefits">
      <div class='row'>
-        <div class='col-md-3 main-points-block'>
+        <div class='col-md-9 main-points-block col-centered'>
             <div class='main-points-block-title'>
                 <i id='icon-user' class="fa fa-user fa-4x icon" aria-hidden="true"></i>
                 <h3 class='main-points-header'>Group Owners</h3>
-                <h4 class='col-1'>earn 25-100% more</h4>
+                <h4 class='col-1'>earn 25-100% more guaranteed | employee satisfaction guaranteed </h4>
             </div>
-            <ul>
-                <h5>
-                <li>Motivate employees with <strong>Bonus Incentive Retention</strong></li>
-                <li>Pass savings on to your customers, staff, and doctors</li>
-                </h5>
-            </ul>
+            <div class='col-md-6'>
+                <ul>
+                    <h5>
+                    <li>Retain employees with a <strong>Bonus Incentive Plan</strong></li>
+                    <li>Pass savings on to customers, staff, and doctors</li>
+                    <li>Recruit top quality doctors</li>
+                    <li>Advantages of managed care, with zero waste</li>
+                    </h5>
+                </ul>
+            </div>
+            <div class='col-md-6 sb-block-1'>
+                <ul>
+                    <h5>
+                    <li>All-inclusive services bundled - <strong>40% lower cost</strong></li>
+                    <li>Reduces stress, optimizes performance</li>
+                    <li>Optimal net &amp; cash-flow; cash to grow or invest</li>
+                    <li>Optional Exponential Growth Plan</li>
+                    </h5>
+                </ul>
+            </div>
         </div>
+     </div>
+     <div class='row'>
         <div class='col-md-3 main-points-block'>
             <div class='main-points-block-title'>
                 <i id='icon-user-md' class="fa fa-user-md fa-4x icon" aria-hidden="true"></i>
                 <h3 class='main-points-header'>Doctors</h3>
-                <h4 class='col-2'>see up to 40% more patients</h4>
+                <h4 class='col-2'>save 8 minutes per patient</h4>
             </div>
-            <ul>
-                <h5>
-                <li>Doctors are motivated with <strong>Optimal Incentive Bonuses</strong></li>
-                <li>Provide better quality of care</li> <li>Doctors go home on time</li>
-                </h5>
-            </ul>
+
+                <ul>
+                    <h5>
+                        <li>See up to <strong>40% more patients</strong></li>
+                    <li>Optimal Incentive Bonuses</li>
+                    <li>Provide better quality of care</li> 
+                    <li>Doctors go home on time</li>
+                    </h5>
+                </ul>
         </div>
-        
+         
+        <div class='col-md-6'>
+           <div class="main-points sb-title">
+              <div class="text-center">
+                      <h1 class='main-points-title'>Synergy+ Benefits Everyone</h1>
+                      <h2>When doctors are free to practice medicine their way, patients get healthier</h2>
+              </div>
+            </div>
+        </div>
         <div class='col-md-3 main-points-block'>
             <div class='main-points-block-title'>
                 <i id='icon-users' class="fa fa-users fa-4x" aria-hidden="true"></i>
@@ -306,27 +334,47 @@
             </div>
             <ul>
                 <h5>
-                <li>With <strong>Incentive Retention Bonuses</strong>, staff feel valued</li>
-                <li>Free staff to do important jobs like Patient Engagement</li>
+                <li>Staff feel valued and secure</li>
+                <li>Incentive Retention Bonuses</li>
+                <li>Free to do Patient Engagement</li>
+                <li>Staff go home on time</li>
                 </h5>
             </ul>
         </div>
-         
-        <div class='col-md-3 main-points-block'>
-            <div class='main-points-block-title'>
-                <i id='icon-heart-o' class="fa fa-heart-o fa-4x" aria-hidden="true"></i>
-                <h3 class='main-points-header'>Patients</h3>
-                <h4 class='col-3'>enjoy 30% shorter visits</h4>
+    </div>
+    <div class='row'>
+        <div class='col-md-8 col-centered'>
+            <div class='col-md-6 main-points-block'>
+                <div class='main-points-block-title'>
+                    <i id='icon-heart-o' class="fa fa-street-view fa-4x icon col-6" aria-hidden="true"></i>
+                    <h3 class='main-points-header'>Patients</h3>
+                    <h4 class='col-6'>enjoy 30% shorter visits</h4>
+                </div>
+                <ul>
+                    <h5>
+                    <li>Save 30% more time in the process</li>
+                    <li>Patient Engagment increases compliance</li>
+                    <li>Compliance results in healthier outcomes</li>
+                    <li>Expedited appointments optimize care</li>
+                    </h5>
+                </ul>
             </div>
-            <ul>
-                <h5>
-                <li>Patient Engagement optimized</li>
-                <li>Expedited appointments with advanced online scheduling</li> 
-                <li>Leads to <strong>healthier outcomes</strong></li>
-                </h5>
-            </ul>
+            <div class='col-md-6 main-points-block'>
+                <div class='main-points-block-title'>
+                    <i id='icon-heart-o' class="fa fa-heart-o fa-4x icon col-3" aria-hidden="true"></i>
+                    <h3 class='main-points-header'>Community</h3>
+                    <h4 class='col-3'>creating healthier populations</h4>
+                </div>
+                <ul>
+                    <h5>
+                    <li>Patient Engagment gets you more patients</li> 
+                    <li>Preemtive care helps patients stay healthy</li>
+                    <li>Population Health Management produces healthier communities</li>
+                    
+                    </h5>
+                </ul>
+            </div>
         </div>
-         
      </div>
       </div>
     
@@ -527,7 +575,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
           <div class="modal-dialog" role="document">
 
             <div class="modal-content">
-              <div class="modal-header container-fluid">
+              <!--<div class="modal-header container-fluid">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class='row'>
                       <div class='timeline_width col-md-3'>
@@ -539,7 +587,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                         <h5>The only healthcare company <strong>guaranteeing independent doctors net income gains of 25-100%</strong></h5>
                       </div>
                 </div>
-              </div>
+              </div>-->
                 
               <div class="modal-body">
                 <div class="row">
@@ -1473,7 +1521,7 @@ patients within the next three to five years.</p></h5>
                                 <li>Documentation</li>
                             </ul>
                         
-                        <a href="#" class="btn-u btn-large" onClick='return false;'>Purchase Now</a>
+                        <a href=""  data-toggle="modal" data-target=".modal-price-3" class="btn-u btn-large" >Purchase Now</a>
                         
                       <div id='trigger-plans'></div>
                     </div>
@@ -1486,26 +1534,68 @@ patients within the next three to five years.</p></h5>
         </div>
       
       <!-- Large modal -->
-            <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-
-            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class='section-popup-pricing'>
+            <div class="modal fade modal-price-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  ...
+                <div class="modal-content ">
+                  <div class='row text-center'>
+        <section>
+                    <div class="col-md-12">
+            <div class="card hovercard">
+                <div class="card-background">
+                    <img class="card-bkimg" alt="" src="{% static 'images/girl.jpeg' %}">
+                    <!-- http://lorempixel.com/850/280/people/9/ -->
+                </div>
+                
+                <!--<div class="useravatar">
+                    <img alt="" src="{% static 'images/girl.jpeg' %}">
+                </div>-->
+                
+                <div class="card-info"> <span class="card-title"><h2>Exponential Growth &amp; Market Domination</h2></span></div>
+            </div>
+            <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+                <div class="btn-group" role="group">
+                    <button type="button" id="stars" class="btn btn-primary" href=".tab1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <div class="hidden-xs">EHR Optimization</div>
+                    </button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                        <div class="hidden-xs">Sustainable Practice</div>
+                    </button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <div class="hidden-xs">Exponential Growth</div>
+                    </button>
+                </div>
+            </div>
+
+                <div class="well">
+              <div class="tab-content">
+                <div class="tab-pane fade in active tab1">
+                  <h3>This is tab 1</h3>
+                </div>
+                <div class="tab-pane fade in" id="tab2">
+                  <h3>This is tab 2</h3>
+                </div>
+                <div class="tab-pane fade in" id="tab3">
+                  <h3>This is tab 3</h3>
                 </div>
               </div>
             </div>
 
-            <!-- Small modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
-
-            <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                  ...
+            </div>
+        </section>
+   
+                      
+                  </div>
                 </div>
               </div>
             </div>
+                    
+      </div>
+            
       
       
     </div>  
@@ -2192,6 +2282,16 @@ hex_handler('#hex-7', '#t-tab-4');
     $("#t-tab-1").trigger( "click" ); //Selects patient engagement by default
 </script>
 
+<!-- SECTION PRICING POPUP JQUERY CODE -->
+<script>
+$(document).ready(function() {
+$(".btn-pref .btn").click(function () {
+    $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+    // $(".tab").addClass("active"); // instead of this do the below 
+    $(this).removeClass("btn-default").addClass("btn-primary");   
+});
+});
+</script>
 
 <script>
 $(document).ready(function(){

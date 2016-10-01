@@ -70,6 +70,43 @@ a:hover{
 
 }
 
+.section-popup-pricing{
+    .modal-dialog{
+        width: 1000px;
+    }
+    .card.hovercard .card-info {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    }
+    .card.hovercard .card-info .card-title {
+        
+        h2,h3{
+        display: inline;
+        padding: 0 10px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.6);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        }
+        h2{
+            font-size: $font-size-two !important;
+            line-height: 2;
+        }
+        
+        
+    }
+    .card.hovercard .card-info {
+        overflow: hidden;
+        font-size: 12px;
+        line-height: 20px;
+        color: #737373;
+        text-overflow: ellipsis;
+    }
+}
+
 .section-highlights{
     
     margin-top: 0px;
@@ -366,7 +403,10 @@ a:hover{
     }
     
     .sb-title{
-        padding-bottom: 30px;
+        height: 290px;
+        vertical-align: middle;
+        display: table-cell;
+    vertical-align: middle;
     }
     .main-points{   
         padding-top: 0;
@@ -397,8 +437,8 @@ a:hover{
                 display:inline-block;
                 zoom:1;
                 *display:inline;
-                padding-left: 14%;
-                padding-right: 4%;
+               
+                
                 li {
                     line-height: 30px;
                     font-size: $font-size-four;
@@ -776,7 +816,7 @@ a:hover{
     
 
     .timeline-v1{
-        
+        padding-top: 0px;
         padding-bottom: 0px;
 
         a{
@@ -879,10 +919,7 @@ a:hover{
     text-shadow: 3px 3px 3px #ccc;
 }
 
-#icon-heart-o {
-    color: $third-color;
-    text-shadow: 3px 3px 3px #ccc;
-}
+
 
 #click-here{
     font-family: $font-fun;
