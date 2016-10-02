@@ -571,39 +571,7 @@ a:hover{
 
 
 
-.tp-banner {
-    h1,h2,h3,h4,h5,h6 {
-        color: #fff;
-    }
-    h1{
-        font-size: 44px;
-    }
-    h2{
-        font-size: 22px;
-    }
-    .tp-subtitle{
-        @include transparentBackgroundColor(.3, $primary-color);
-        color: white !important;
-        font-size: $font-size-five !important;
-        line-height: 2px !important;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-bottom: 10px;
-        display: inline;
-        text-align: center;
-    }
-    
-    .tp-sub-span{
-        text-align: center;
-    }
-    .tp-subtitle-1{
-        float:left;
-    }
-    .tp-subtitle-2{
-    }
-}
+
 
 
 
@@ -616,8 +584,6 @@ a:hover{
         background: none !important;
     }
 }
-
-
 
 
 .col-1 {
