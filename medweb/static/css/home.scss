@@ -121,27 +121,19 @@ a:hover{
     }
     
     .popover{
-    width: 250px; /* Max Width of the popover (depending on the container!) */
+    width: 270px; /* Max Width of the popover (depending on the container!) */
 }
     
     h1{
         color:black !important;
         padding-top: 30px;
     }
-     h3 {
-        color: black !important;
-    }
     
     h4{
         color: black !important;
         font-weight: bold;
     }
-    h5{
-        overflow: visible;
-        white-space: nowrap;
-        p{color: #333 !important;}
-        //font-size: $font-size-four;
-    }
+    
     
     @media screen and (min-width: 769px){
         #component-pe{
@@ -153,15 +145,32 @@ a:hover{
         max-width: 920px;
         margin: 0 auto;
         text-align: center;
+        h5{
+            overflow: visible;
+            white-space: nowrap;
+            p{color: #333 !important;}
+        //font-size: $font-size-four;
+    }
     }
     
     .section-highlights-block-1{
-        margin-bottom: 30px;
+        margin-top: 40px;
+        padding-bottom: 25px !important;
     }
     
     
-    .section-highlights-title-2{
-        padding-top: 5px ;
+    .section-highlights-block-2{
+        padding-top: 25px ;
+        padding-bottom: 55px !important;
+        h3{
+            padding-bottom: 5px;
+        }
+    }
+    
+
+    #hover-over{
+        font-family: $font-fun;
+        font-size: $font-size-three;
     }
     
     .main-points{
