@@ -497,10 +497,8 @@ Doctors save 8 minutes every patient visit and see 40% more patients. </div>
              </div>
          </div>
             
-            
+            <div id='trigger-home'></div>
         </div>
-    
-        
     </div> <!-- /row -->
 
 
@@ -622,7 +620,7 @@ Doctors save 8 minutes every patient visit and see 40% more patients. </div>
      </div>
       </div>
     
-       <div id='trigger-home'></div>
+       <div id='trigger-benefits'></div>
     </div>
       
          
@@ -2425,7 +2423,7 @@ function remove_nav_active(nav_id_to_keep, all_navs){
     }
 };
     
-var all_nav_ids =  ['#nav-home', '#nav-insights', '#nav-solutions', '#nav-demo', '#nav-plans', '#nav-why', '#nav-resources']
+var all_nav_ids =  ['#nav-home', '#nav-benefits', '#nav-insights', '#nav-solutions', '#nav-demo', '#nav-plans', '#nav-why', '#nav-resources']
 function add_nav_waypoint(waypoint_id, nav_id){ //string with hash
     var waypoint = new Waypoint({
       element: $(waypoint_id),
@@ -2441,6 +2439,7 @@ function add_nav_waypoint(waypoint_id, nav_id){ //string with hash
 //all nav ids for adding active class or removing active class
 //Add waypoints listeners that add and remove active class from navbar for each section
 add_nav_waypoint('#home','#nav-home');
+add_nav_waypoint('#benefits','#nav-benefits');
 add_nav_waypoint('#solutions','#nav-solutions');
 add_nav_waypoint('#insights','#nav-insights');
 add_nav_waypoint('#demo','#nav-demo');
@@ -2451,6 +2450,7 @@ add_nav_waypoint('#resource','#nav-resources');
 //Triggers are for the scroll up
     
 add_nav_waypoint('#trigger-home','#nav-home');
+add_nav_waypoint('#trigger-benefits','#nav-benefits');
 add_nav_waypoint('#trigger-solutions','#nav-solutions');
 add_nav_waypoint('#trigger-insights','#nav-insights');
 add_nav_waypoint('#trigger-demo','#nav-demo');
