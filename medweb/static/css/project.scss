@@ -23,7 +23,7 @@
     
     .navbar-brand{
         position: absolute;
-            width: 250px; 
+            width: 230px; 
             padding: 6px;
             left: -20px;
             text-align: center !important;
@@ -35,7 +35,7 @@
 }
 
 .header-fixed .header-v8.header-fixed-shrink .navbar-brand {
-        width: 210px;
+        width: 190px;
 		max-height: 60px;
 		line-height: 43px;
         padding-top: 10px;
@@ -66,6 +66,7 @@
     
         h5{ //for the header by the logo
         /*Prevents a glitch where the text shrinks and goes to new line for half a second when resizing*/
+        
         padding-top: 1px;
         font-size:  .95em;
         span{
