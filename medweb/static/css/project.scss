@@ -84,6 +84,7 @@
     }
 
 .header-slogan-mobile{
+   text-align: center;
     display: none;
     h5{
         display: none;
@@ -97,7 +98,6 @@
 
 .show-mobile{
     display: none;
-  
 }
 @media screen and (max-width: 768px){
     .hide-mobile{
@@ -121,7 +121,7 @@
     }
     }
     .header-slogan-mobile{
-        display: inline;
+        display: block;
         
         h5{
             display: inline;

@@ -29,9 +29,6 @@ a:hover{
     }
     
  .main-points-block{
-     
-    p {
-      }
    }
     
     .main-points-header{
@@ -406,6 +403,13 @@ a:hover{
 }
 
 .section-benefits{
+    // Prevents awkward resizing and text-wrapping at some widths
+    @media screen and (min-width: 1100px){
+        > .container{
+            min-width: 1100px !important;
+        }
+    
+    }
     margin-bottom: 25px;
     .sb-benefits{
         margin-bottom: 0px;
@@ -415,10 +419,9 @@ a:hover{
         height: 290px;
         vertical-align: middle;
         display: table-cell;
-    vertical-align: middle;
+        vertical-align: middle;
     }
     .main-points{   
-        padding-top: 0;
         .main-points-block{
             padding-left: 5px;
             padding-right: 5px;
@@ -446,7 +449,6 @@ a:hover{
                 display:inline-block;
                 zoom:1;
                 *display:inline;
-               
                 
                 li {
                     line-height: 30px;
