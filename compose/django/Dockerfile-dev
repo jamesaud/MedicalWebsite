@@ -21,5 +21,4 @@ RUN apt-get update \
 
 RUN pip install libsass django-compressor django-sass-processor
 
-#gem install SASS
-#pip install libsass django-compressor django-sass-processor
+RUN npm install readmore-js
