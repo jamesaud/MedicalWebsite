@@ -1,17 +1,8 @@
 /* USER PROFILE PAGE */
- .card {
+.card {
     margin-top: 20px;
     padding: 30px;
     background-color: rgba(214, 224, 226, 0.2);
-    -webkit-border-top-left-radius:5px;
-    -moz-border-top-left-radius:5px;
-    border-top-left-radius:5px;
-    -webkit-border-top-right-radius:5px;
-    -moz-border-top-right-radius:5px;
-    border-top-right-radius:5px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 .card.hovercard {
     margin-top: 0px;
@@ -23,7 +14,7 @@
     background-color: rgba(255, 255, 255, 1);
 }
 .card.hovercard .card-background {
-    height: 70px;
+    height: 80px;
 }
 .card-background img {
     -webkit-filter: blur(25px);

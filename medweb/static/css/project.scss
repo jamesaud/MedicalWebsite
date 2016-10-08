@@ -465,6 +465,12 @@ hr.no-margin{
 .modal-fullscreen {
   background: transparent;
 }
+
+.modal-fullscreen .modal-header, .modal-fullscreen .modal-footer{
+    border-bottom: none;
+    border-top: none;
+}
+
 .modal-fullscreen .modal-content {
   background: white;
   border: 0;
@@ -507,15 +513,30 @@ hr.no-margin{
 /* END CUSTOM MODAL STYLE  */
 
 #modal-contact{
-        .form-inline{
-            display: inline;
+   .form-inline{
+        display: inline;
     }
-        .modal-dialog{
-            margin-top: 5%;
-            margin-bottom: 5%;
-        }
-       .modal-dialog, .modal-body{
-            max-width: 600px;
-            }   
+   .modal-dialog{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
     
+   .modal-dialog, .modal-body{
+        max-width: 550px;
+        } 
+    
+   .modal-header{
+       margin-bottom: 10px;
+       .m-contact-title{
+            margin-bottom: 20px;
+           color: #333 !important;
+        }
+        h5{color: #777 !important;}
+    }
+    .modal-footer{
+        padding-top: 0;
+    }
+    .modal-body{
+        padding-bottom: 0;
+    }
 }
