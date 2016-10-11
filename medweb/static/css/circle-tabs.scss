@@ -14,7 +14,7 @@
     background-color: rgba(255, 255, 255, 1);
 }
 .card.hovercard .card-background {
-    height: 80px;
+    min-height: 80px;
 }
 .card-background img {
     -webkit-filter: blur(25px);
@@ -25,22 +25,6 @@
     margin-left: -100px;
     margin-top: -200px;
     min-width: 130%;
-}
-.card.hovercard .useravatar {
-    position: absolute;
-    top: 15px;
-    left: 0;
-    right: 0;
-}
-.card.hovercard .useravatar img {
-    width: 100px;
-    height: 100px;
-    max-width: 100px;
-    max-height: 100px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    border: 5px solid rgba(255, 255, 255, 0.5);
 }
 
 .card.hovercard .bottom {

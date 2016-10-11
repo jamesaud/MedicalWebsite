@@ -413,17 +413,6 @@ hr.no-margin{
     }
 }
 
-
-.btn-u-red{
-    border-color: $third-color;
-    @include transparentBackgroundColor(.85, $third-color, !important);
-}
-
-.btn-u-red:hover{
-    background: $third-color !important;
-}
-
-
 .no-break{
     white-space: nowrap;
     overflow: visible;
