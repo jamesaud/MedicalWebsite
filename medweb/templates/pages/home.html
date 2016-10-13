@@ -960,7 +960,7 @@ delivers the first all-inclusive system for independent doctors; you have to see
                                 <a class='selector-1' data-toggle='tab' href='#PE' ><i id='dot-1' class="glyphicon glyphicon-record invert "></i></a>
                             </div>
 							<div class="timeline-panel ">
-								<a id='t-tab-1' class='selector-1' data-toggle='tab' href='#PE'>
+								<a id='t-tab-1' class='selector-1 active' data-toggle='tab' href='#PE'>
                                     <div class="timeline-body text-justify bg-col-1">
                                         <p>Patient<br>Engagement</p>
 								    </div>
@@ -1834,7 +1834,7 @@ patients within the next three to five years.</p></h5>
                                     <li>Social Networking</li>
                                     <li>Documentation</li>
                                 </ul>
-                                <a href=""  data-toggle="modal" data-target=".modal-price-3" class="btn-u btn-large">Learn More</a>
+                                <a href="" id='pricing-btn-1'  data-toggle="modal" data-target=".modal-price-3" class="btn-u btn-large">Learn More</a>
                             </div>
                         </div>
                 </div>
@@ -1846,7 +1846,7 @@ patients within the next three to five years.</p></h5>
                                 <div class='service-block-title'>
                                     <i class="icon-lg rounded-x icon-line icon-trophy"></i>
                                     <h2 class="heading-sm">Sustainable Practice</h2>
-                                    <h4>Simple Business and Lifestyle</h4>
+                                    <h4>Easy Business and Lifestyle</h4>
                                     <hr>
                                         <h3>$$$ per Month</h3>
 
@@ -1860,7 +1860,7 @@ patients within the next three to five years.</p></h5>
                                     <li>Social Networking</li>
                                     <li>Documentation</li>
                                 </ul>
-                                <a href=""  data-toggle="modal" data-target=".modal-price-3" class="btn-u btn-large">Learn More</a>
+                                <a href="" id='pricing-btn-2'  data-toggle="modal" data-target=".modal-price-3" class="btn-u btn-large">Learn More</a>
                             </div>
                         </div>
                 </div>
@@ -1888,7 +1888,7 @@ patients within the next three to five years.</p></h5>
                                     <li>Documentation</li>
                                 </ul>
 
-                            <a href=""  data-toggle="modal" data-target=".modal-price-3" class="btn-u btn-large" >Learn More</a>
+                            <a href="" id='pricing-btn-3'  data-toggle="modal" data-target=".modal-price-3" class="btn-u btn-large" >Learn More</a>
 
                           <div id='trigger-plans'></div>
                         </div>
@@ -1912,17 +1912,17 @@ patients within the next three to five years.</p></h5>
                         <button type="button" class="close close-button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
                             <div class="btn-group button-color-1" role="group">
-                                <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <button type="button" id="pricing-modal-btn-1" class="btn btn-primary" href="#pricing-modal-tab-1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                                     <div >EHR Optimization</div>
                                 </button>
                             </div>
                             <div class="btn-group button-color-2" role="group">
-                                <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                                <button type="button" id="pricing-modal-btn-2" class="btn btn-default" href="#pricing-modal-tab-2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
                                     <div >Sustainable Practice</div>
                                 </button>
                             </div>
                             <div class="btn-group button-color-3" role="group">
-                                <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                <button type="button" id="pricing-modal-btn-3" class="btn btn-default" href="#pricing-modal-tab-3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                                     <div>Exponential Growth</div>
                                 </button>
                             </div>
@@ -1931,11 +1931,760 @@ patients within the next three to five years.</p></h5>
 
                               <div class="tab-content">
                                   
-                                <div id="tab1" class="tab-pane tab-pane-color-1 fade in active">
+                                <div id="pricing-modal-tab-1" class="tab-pane tab-pane-color-1 fade in active">
                                   
                                       <div class="card hovercard">
                                             <div class="card-background">
                                                 <img class="card-bkimg" alt="" src="{% static 'images/blue.jpg' %}">
+                                                <!-- http://lorempixel.com/850/280/people/9/ -->
+                                            </div>
+
+                                            <!--<div class="useravatar">
+                                                <img alt="" src="{% static 'images/girl.jpeg' %}">
+                                            </div>-->
+
+                                            <div class="card-info"> 
+                                                <span class="card-title"><h2>EHR Optimization</h2></span>
+                                                <br>
+                                               
+                                                <span class="card-title"><h3>For cash based practices</h3></span>
+                                            
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class='tab-pane-content'>
+                                               <!--<h3 class='m-pricing-tab-title'>Exponential Growth Plan Includes Premium Services</h3>-->
+                                            
+                                               <div class='m-pricing-tab-content'>
+                                                      <!--<div class='row tab-sub-header'>
+                                                        <div class='col-md-12 text-center'>
+                                                            <h3><strong>CALL 812-650-2998</strong> FOR YOUR PRELIMINARY NET INCOME GUARANTEE</h3>
+                                                        </div>   
+                                                        </div>-->
+                                                 <div class='row'>
+
+                                                   <div class='col-md-10'>
+                                                    <div class='col-md-4'>
+                                                        <div class='m-pricing-tab-title'>
+                                                            <h3 >Advanced Technology</h3>
+                                                        </div>
+                                                        <hr class='hr-subtitle'>
+                                                          <ul>
+                                                              <h5>
+                                                                  <li>
+                                                                      <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html="True"
+                                                                         data-content= "
+                                                                                        <strong>Features</strong><br>
+                                                                                        - Patient Portal<br>
+                                                                                        - Advanced Online Scheduling<br>
+                                                                                        - E-Signature online, saving patients an initial trip to the office.<br>
+                                                                                       " class="fa circle-text fa-my-1 pop"><h4>Patient Engagement</h4></a>
+                                                                  </li>
+                                                                  <li>
+                                                                      <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html="true"
+                                                                         data-content= "
+                                                                                        <strong>Features</strong><br>
+                                                                                        - ICD-10 Ready<br>
+                                                                                        - Amazon Cloud Data Backup &amp; On-Site Data<br>
+                                                                                        - HIPPA Security Insurance<br>
+                                                                                        - Automatic Cloud Sync<br>
+                                                                                        - 128bit Data Encryption<br>
+                                                                                        <br>
+                                                                                        
+                                                                                        We have never had a security breach; our priority is to keep your patient records safe and confidential.
+                                                                                       " class="fa circle-text fa-my-1 pop"><h4>Data Security</h4></a>
+                                                                  </li>
+                                                                  <li>
+                                                                      <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='True'
+                                                                         data-content= "
+                                                                                        <strong>Features</strong><br>
+                                                                                        - Interoperability, Surpassing Industry Standards<br>
+                                                                                        - Dragon Dictation (automatic notes while you speak)<br>
+                                                                                        - Customization<br>
+                                                                                        - Clean Interface<br>
+                                                                                        - Powerful Features<br>
+                                                                                        - 1 Day Training
+                                                                                        " class="fa circle-text fa-my-1 pop"><h4>Electronic Health Record</h4></a>
+                                                                  </li>
+                                                                  <li>
+                                                                      <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover"  data-html='true'
+                                                                         data-content= "
+                                                                                        <strong>Features</strong><br>
+                                                                                        - Built directly into EHR<br>
+                                                                                        - Automatic Code Lookups <br>
+                                                                                        - Automatic Deposits <br>
+                                                                                        - 1 Day Deposits <br>
+                                                                                        - Revenue Optimization
+                                                                                        
+                                                                                        " class="fa circle-text fa-my-1 pop"><h4>Revenue Cycle Management</h4></a>
+                                                                  </li>
+                                                                  
+                                                                  <li>
+                                                                      <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='True'
+                                                                         data-content= "
+                                                                                        Comprehensive Data Analytics coming 2017. Free membership to our Beta service starting June 2017.
+                                                                                        " class="fa circle-text fa-my-1 pop"><h4>Data Analytics</h4></a>
+                                                                  </li>
+                                                                  <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
+                                                                     data-content= "
+                                                                                    Population Health Management solutions coming in March 2017. Featuring information about the best treatment methods to get your patients and communities healthier.
+                                                                                    " class="fa circle-text fa-my-1 pop"><h4>Population Health Management</h4></a>
+                                                              </li>
+                                                              </h5>
+                                                        </ul>
+                                                    </div>
+
+                                                   <div class='col-md-4'>
+                                                        <div class='m-pricing-tab-title'>
+                                                            <h3>Premium Services</h3>
+                                                       </div>
+                                                       <hr class='hr-subtitle'>
+
+                                                          <ul class=''>
+                                                              <h5>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
+                                                                  data-html='true'
+                                                                     data-content= "
+                                                                                    Need doctors or staff? We can help.
+                                                                                    <br><br>
+                                                                                    Our expansive network of physicians and outreach enable us to aquire top quality physicians tailored to fit your requirements.<br><br>
+                                                                                    Physicians can be aquired within 30 days, ready to sign on with your clinic.
+                                                                                   " 
+                                                                     class="fa circle-text fa-my-1 pop"><h4>Physician Recruiting Services</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
+                                                                  data-html='true'
+                                                                     data-content= "
+                                                                                    <strong>Services Provided</strong><br>
+                                                                                    - Search Engine Optimization (SEO)<br>
+                                                                                    - Google Analytics<br>
+                                                                                    - Targeted Google Ads<br>
+                                                                                    - Facebook Ads<br>
+                                                                                    - Custom Website Design<br>
+                                                                                    - Patient Outreach
+                                                                                    <br><br>
+                                                                                    <strong>Marketing Evaluation</strong><br>
+                                                                                        We evaluate your website and portal and advise on changes to benefit patients and optimize patient volume.
+                                                                                   " class="fa circle-text fa-my-1 pop"><h4>Online Profile Optimization</h4></a>
+                                                              </li>
+                                                              
+                                                              <li>
+                                                                  <a href='#' class="fa circle-text fa-my-1 pop" onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='true'
+                                                                     data-content= "
+                                                                                    <strong><em>Synergy+ News, Evidenced Based Research & Trends</em></strong> includes everything you need to know summarized at a glance. <br><br>
+                                                                                    We compile a report based on 120 articles reviewed monthly, so you'll always stay up to date with industry knowledge.<br><br>
+                                                                                    Valuable advice further optimizes your time, earnings and patient outcomes.
+                                                                                    "><h4>Industry Monthly Report</h4></a>
+                                                              </li>
+                                                        
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
+                                                                     data-content= "What do we want to put here?" class="fa circle-text fa-my-1 pop"><h4>Cultural Awareness Seminar</h4></a>
+                                                              </li>
+                                                            </h5>
+                                                        </ul>
+                                                    </div>
+
+                                                    
+                                                   <div class='col-md-4'>
+                                                        <div class='m-pricing-tab-title'>
+                                                            <h3>EHR Only Benefits</h3>
+                                                       </div>
+                                                       <hr class='hr-subtitle'>
+
+                                                          <ul class=''>
+                                                              <h5>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Grow 50%+ in First Year</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Dominate Google Search Rankings</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Top Quality Doctors</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" data-html='true'
+                                                                     data-content= "
+                                                                                    Making expedited appointments, paying bills and filling out forms on-line with our e-signature and reduced appointment times saves patients 90-135 minutes vs. all other EHR/PE systems.<br><br> <strong><em>Patients finally feel respected!</strong></em> Pay on-line diminishes delinquency of co-pay and patients like to know their visit is pre-approved. 
+                                                                                    " class="fa circle-text fa-my-1 pop"><h4>Expedited Patient Appointments</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Employee Incentive Bonus Retention</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" data-html='true'
+                                                                     data-content= "
+                                                                                    Clients who refer doctors who contract for our services are credit on the next
+                                                                                    month’s service fee between 10-100% depending on the # of doctors who sign up. <br><br>
+                                                                                    You may also elect to expense the fee as normal and receive a personal referral fee 
+                                                                                    by check or direct deposit into your account. We appreciate your referrals and the referees 
+                                                                                    will thank you!
+                                                                                    " class="fa circle-text fa-my-1 pop"><h4>Synergy+ Referral Program</h4></a>
+                                                              </li>
+                                                            </h5>
+                                                        </ul>
+                                                    </div>
+
+
+
+                                                </div>
+                                                     
+                                                   <div class='col-md-2'>
+                                                        <div class='m-pricing-tab-title'>
+                                                            <h3>Pricing</h3>
+                                                       </div>
+                                                       <hr class='hr-subtitle-2'>
+
+                                                          <ul class=''>
+                                                              <h5>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "
+                                                                                    <table>
+                                                                                        <tr>
+                                                                                            <th># of Providers&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                                                            <th>Cost per Provider</th>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>1-5</td>
+                                                                                            <td>$1750/Month</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>6-10</td>
+                                                                                            <td>$1500/Month</td>
+                                                                                        </tr><tr>
+                                                                                            <td>11+</td>
+                                                                                            <td>$1000/Month</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <br>
+                                                                                    You get the billed amount, including co-pays &amp; out of pocket, minus 3%.
+                                                                                    <br><br>
+                                                                                    You pay the per provider fee on the 30th day 
+                                                                                    when we front you your ARs.
+                                                                                    <br><br>
+                                                                                    1st fee is due approximately 30 days from installation - enough time to transfer over all insurers.
+                                                                                    
+                                                                                   "
+                                                                     data-html="true"
+                                                                     class="fa circle-text fa-my-1 pop"><h4>$1000/Month* per Provider + 3%</h4></a>
+                                                              </li>
+                                                              
+                                                             <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "
+                                                                                    <strong>One Time Cost</strong><br>
+                                                                                     $150/hour, seldom exceeds $750<br><br>
+                                                                                    Most require no charge, depending on the current system.
+                                                                                    " data-html="true" class="fa circle-text fa-my-1 pop"><h4>One Time License &amp; Customization</h4></a>
+                                                              </li>
+                                                                  
+                                                            <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "
+                                                                                    <table>
+                                                                                        <tr>
+                                                                                            <th> Position&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                                                            <th>Cost per Position</th>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Admin</td>
+                                                                                            <td>$300</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Non-Provider</td>
+                                                                                            <td>$500</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Midlevel</td>
+                                                                                            <td>$750</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Doctor</td>
+                                                                                            <td>$1000</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <br>
+                                                                                    <strong>Origination Fee Is For</strong><br>
+                                                                                    - Initial System Installation<br>
+                                                                                    - Your Customized system <br>
+                                                                                    - 2 charts/specialty<br>
+                                                                                    - Training of key person who can easily assist doctors in creating future charts, saving money long term.
+                                                                                    " data-html="true" class="fa circle-text fa-my-1 pop"><h4>Origination Fee</h4></a>
+                                                              </li>
+                                                            
+                                                             <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-html="true"
+                                                                     data-content= "
+                                                                                    <strong>Services to be Billed at Cost</strong><br>
+                                                                                    - e-prescribe<br>
+                                                                                    - e-fax<br>
+                                                                                    - data storage<br>
+                                                                                    - in-person training<br>
+                                                                                    - etc. 
+                                                                                   " class="fa circle-text fa-my-1 pop"><h4>Optional Add-Ons</h4></a>
+                                                              </li>
+                                                            </h5>
+                                                        </ul>
+                                                    </div>
+
+
+                                                     
+                                              <!--      <div class='col-md-4 m-pricing-col'>
+                                                        <div class='m-pricing-tab-title'>
+                                                            <h3 >Pricing</h3>
+                                                        </div>
+                                                        <hr class='hr-subtitle'>
+                                                        <h4>2% Per Month</h4>
+                                                        <h4>$300/Month Per Doctor</h4>
+                                                        <h4>Initial Deposit (dependent upon group size)</h4>
+
+                                                        <br>
+
+                                                    </div> -->
+
+                                                 </div> 
+                                               </div>
+                                            <hr>    
+                                                <div class='row m-pricing-tab-content-2'>
+                                                    <div class='col-md-8'>
+                                                       <div class='col-md-6'>
+                                                        <h5>33%+ Net Income Gains Guaranteed in Writing, Call Now for Your Quote</h5>
+                                                       </div>
+                                                        <div class='col-md-6'>
+                                                            <h5>Service Installation Typically Takes Less Than 5 Days. Get Trained in 1 Day!</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class='col-md-4'>
+                                                       <div class='btn btn-color'>Inquire Now</div>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                </div>
+
+                               <div id="pricing-modal-tab-2" class="tab-pane tab-pane-color-2 fade in">
+                                  
+                                      <div class="card hovercard">
+                                            <div class="card-background">
+                                                <img class="card-bkimg" alt="" src="{% static 'images/yellow.jpg' %}">
+                                                <!-- http://lorempixel.com/850/280/people/9/ -->
+                                            </div>
+
+                                            <!--<div class="useravatar">
+                                                <img alt="" src="{% static 'images/girl.jpeg' %}">
+                                            </div>-->
+
+                                            <div class="card-info"> 
+                                                <span class="card-title"><h2>Sustainable Practice</h2></span>
+                                                <br>
+                                               
+                                                <span class="card-title"><h3>For a sustainable practice and easy lifestyle</h3></span>
+                                            
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class='tab-pane-content'>
+                                               <!--<h3 class='m-pricing-tab-title'>Exponential Growth Plan Includes Premium Services</h3>-->
+                                            
+                                               <div class='m-pricing-tab-content'>
+                                                      <!--<div class='row tab-sub-header'>
+                                                        <div class='col-md-12 text-center'>
+                                                            <h3><strong>CALL 812-650-2998</strong> FOR YOUR PRELIMINARY NET INCOME GUARANTEE</h3>
+                                                        </div>   
+                                                        </div>-->
+                                                 <div class='row'>
+
+                                                   <div class='col-md-10'>
+                                                    <div class='col-md-4'>
+                                                        <div class='m-pricing-tab-title'>
+                                                            <h3 >Advanced Technology</h3>
+                                                        </div>
+                                                        <hr class='hr-subtitle'>
+                                                          <ul>
+                                                              <h5>
+                                                                  <li>
+                                                                      <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html="True"
+                                                                         data-content= "
+                                                                                        <strong>Features</strong><br>
+                                                                                        - Patient Portal<br>
+                                                                                        - Advanced Online Scheduling<br>
+                                                                                        - E-Signature online, saving patients an initial trip to the office.<br>
+                                                                                       " class="fa circle-text fa-my-1 pop"><h4>Patient Engagement</h4></a>
+                                                                  </li>
+                                                                  <li>
+                                                                      <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html="true"
+                                                                         data-content= "
+                                                                                        <strong>Features</strong><br>
+                                                                                        - ICD-10 Ready<br>
+                                                                                        - Amazon Cloud Data Backup &amp; On-Site Data<br>
+                                                                                        - HIPPA Security Insurance<br>
+                                                                                        - Automatic Cloud Sync<br>
+                                                                                        - 128bit Data Encryption<br>
+                                                                                        <br>
+                                                                                        
+                                                                                        We have never had a security breach; our priority is to keep your patient records safe and confidential.
+                                                                                       " class="fa circle-text fa-my-1 pop"><h4>Data Security</h4></a>
+                                                                  </li>
+                                                                  <li>
+                                                                      <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='True'
+                                                                         data-content= "
+                                                                                        <strong>Features</strong><br>
+                                                                                        - Interoperability, Surpassing Industry Standards<br>
+                                                                                        - Dragon Dictation (automatic notes while you speak)<br>
+                                                                                        - Customization<br>
+                                                                                        - Clean Interface<br>
+                                                                                        - Powerful Features<br>
+                                                                                        - 1 Day Training
+                                                                                        " class="fa circle-text fa-my-1 pop"><h4>Electronic Health Record</h4></a>
+                                                                  </li>
+                                                                  <li>
+                                                                      <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover"  data-html='true'
+                                                                         data-content= "
+                                                                                        <strong>Features</strong><br>
+                                                                                        - Built directly into EHR<br>
+                                                                                        - Automatic Code Lookups <br>
+                                                                                        - Automatic Deposits <br>
+                                                                                        - 1 Day Deposits <br>
+                                                                                        - Revenue Optimization
+                                                                                        
+                                                                                        " class="fa circle-text fa-my-1 pop"><h4>Revenue Cycle Management</h4></a>
+                                                                  </li>
+                                                                  
+                                                                  <li>
+                                                                      <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='True'
+                                                                         data-content= "
+                                                                                        Comprehensive Data Analytics coming 2017. Free membership to our Beta service starting June 2017.
+                                                                                        " class="fa circle-text fa-my-1 pop"><h4>Data Analytics</h4></a>
+                                                                  </li>
+                                                                  <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
+                                                                     data-content= "
+                                                                                    Population Health Management solutions coming in March 2017. Featuring information about the best treatment methods to get your patients and communities healthier.
+                                                                                    " class="fa circle-text fa-my-1 pop"><h4>Population Health Management</h4></a>
+                                                              </li>
+                                                              </h5>
+                                                        </ul>
+                                                    </div>
+
+                                                   <div class='col-md-4'>
+                                                        <div class='m-pricing-tab-title'>
+                                                            <h3>Premium Services</h3>
+                                                       </div>
+                                                       <hr class='hr-subtitle'>
+
+                                                          <ul class=''>
+                                                              <h5>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
+                                                                  data-html='true'
+                                                                     data-content= "
+                                                                                    Need doctors or staff? We can help.
+                                                                                    <br><br>
+                                                                                    Our expansive network of physicians and outreach enable us to aquire top quality physicians tailored to fit your requirements.<br><br>
+                                                                                    Physicians can be aquired within 30 days, ready to sign on with your clinic.
+                                                                                   " 
+                                                                     class="fa circle-text fa-my-1 pop"><h4>Physician Recruiting Services</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
+                                                                  data-html='true'
+                                                                     data-content= "
+                                                                                    <strong>Services Provided</strong><br>
+                                                                                    - Search Engine Optimization (SEO)<br>
+                                                                                    - Google Analytics<br>
+                                                                                    - Targeted Google Ads<br>
+                                                                                    - Facebook Ads<br>
+                                                                                    - Custom Website Design<br>
+                                                                                    - Patient Outreach
+                                                                                    <br><br>
+                                                                                    <strong>Marketing Evaluation</strong><br>
+                                                                                        We evaluate your website and portal and advise on changes to benefit patients and optimize patient volume.
+                                                                                   " class="fa circle-text fa-my-1 pop"><h4>Online Profile Optimization</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover"  data-html='true'
+                                                                     data-content= "
+                                                                                    <strong>Services Provided</strong><br>
+                                                                                    - Call Support: 9am-9pm Mon-Sun until Jan 1st, with 24/7 support<br>
+                                                                                    - Online Chat Support: 24/7<br>
+                                                                                    - Email Support: response within 24 hours
+                                                                                    <br><br>
+                                                                                    Your exponential plan provides a dedicated support assistant. You'll always speak to the same person, who will become an expert and understand your practice.
+                                                                                    
+                                                                                   " class="fa circle-text fa-my-1 pop"><h4>24/7 Phone &amp; Chat Support</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='true' 
+                                                                     data-content= "
+                                                                                    We are confident you can learn the software online within hours.<br><br>
+                                                                                    Video and Phone training is provided at  no extra cost. You'll speak with a certified Synergy+ training specialist to answer your questions.
+                                                                                    " class="fa circle-text fa-my-1 pop"><h4>Unlimited 1:1 Training</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='true' 
+                                                                     data-content= "
+                                                                                    <strong>Care System Chief (CSC)</strong><br>
+                                                                                    Your clinic is provided a CSC to whom all group members report concerns.<br><br>
+                                                                                    
+                                                                                    <strong>Synergy Chief</strong><br>
+                                                                                    You are also assigned a Synergy Chief to whom group executives and managers have direct contact with. Your Synergy Chief and CSC work closely together to monitor and resolve all issues within your orginization.
+                                                                                    " class="fa circle-text fa-my-1 pop"><h4>Dedicated Care System Chief (CSC)</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='true'
+                                                                     data-content= "
+                                                                                    We monitor your financials to make sure reimbursements, productivty gains and expense reductions occur. We evaluate operations and financials quarterly to ensure you attain your minimum net income guarantee. <br><br>
+                                                                                    During the first 90 days, this takes a great deal of our time and consulting on adjustments will be recommended.
+                                                                                    " class="fa circle-text fa-my-1 pop"><h4>Net Income Optimization</h4></a>
+                                                              </li>
+                                                                  <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='true'
+                                                                     data-content= "
+                                                                                    <strong>Interoperability Consulting</strong><br>With Value Based Care becoming standard, interoperability requirements are higher. We surpass the government requirements and help prioritize your resources to achieve optimized interoperability.<br><br>
+                                                                                    
+                                                                                    <strong>Data Security Consulting</strong><br>
+                                                                                    The risk has never been greater for records to be stolen.
+                                                                                    We can refer you to certified Data Security &amp; HIPPA experts to keep you protected.
+                                                                                    
+                                                                                    <br><br>
+                                                                                    
+                                                                                    <strong>Patient Engagement Consultation</strong><br>
+                                                                                    An assigned PE specialist teaches staff how to build strong, trusting relationships with each patient. We provide initial training and periodic seminars.
+
+                                                                                    We also help you select a PE specialist that we train one on one to optimize patient services.
+                                                                                    " class="fa circle-text fa-my-1 pop"><h4>Strategy Consulting</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='true'
+                                                                     data-content= "
+                                                                                    Our EHR/RCM cuts between 12-35% of all labor. These staff members are freed up and can be reassigned to more productive roles<br><br>
+                                                                                    <strong>Human Resource Consulting</strong><br>
+                                                                                    Consulting is available to help reassign or relocated staff. Clients always have the option to decline advice on staff reductions. Staff can take on more productive roles in Patient Engagement or support roles.<br><br>
+                                                                                    <strong>Space Optimization Consulting</strong><br>
+                                                                                    12-35% of office space is also freed up. Physician Recruiting services are available to add more doctors. Alternatively, share your freed up space with another qualified physician that we can recruit for you.
+                                                                                    
+                                                                                    " class="fa circle-text fa-my-1 pop"><h4>Resource Consulting</h4></a>
+                                                              </li>
+                                                              
+                                                              <li>
+                                                                  <a href='#' class="fa circle-text fa-my-1 pop" onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='true'
+                                                                     data-content= "
+                                                                                    <strong><em>Synergy+ News, Evidenced Based Research & Trends</em></strong> includes everything you need to know summarized at a glance. <br><br>
+                                                                                    We compile a report based on 120 articles reviewed monthly, so you'll always stay up to date with industry knowledge.<br><br>
+                                                                                    Valuable advice further optimizes your time, earnings and patient outcomes.
+                                                                                    "><h4>Industry Monthly Report</h4></a>
+                                                              </li>
+                                                        
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
+                                                                     data-content= "What do we want to put here?" class="fa circle-text fa-my-1 pop"><h4>Cultural Awareness Seminar</h4></a>
+                                                              </li>
+                                                            </h5>
+                                                        </ul>
+                                                    </div>
+
+                                                    
+                                                   <div class='col-md-4'>
+                                                        <div class='m-pricing-tab-title'>
+                                                            <h3>Sustainable Benefits</h3>
+                                                       </div>
+                                                       <hr class='hr-subtitle'>
+
+                                                          <ul class=''>
+                                                              <h5>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Grow 50%+ in First Year</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Dominate Google Search Rankings</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Top Quality Doctors</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" data-html='true'
+                                                                     data-content= "
+                                                                                    Making expedited appointments, paying bills and filling out forms on-line with our e-signature and reduced appointment times saves patients 90-135 minutes vs. all other EHR/PE systems.<br><br> <strong><em>Patients finally feel respected!</strong></em> Pay on-line diminishes delinquency of co-pay and patients like to know their visit is pre-approved. 
+                                                                                    " class="fa circle-text fa-my-1 pop"><h4>Expedited Patient Appointments</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Employee Incentive Bonus Retention</h4></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" data-html='true'
+                                                                     data-content= "
+                                                                                    Clients who refer doctors who contract for our services are credit on the next
+                                                                                    month’s service fee between 10-100% depending on the # of doctors who sign up. <br><br>
+                                                                                    You may also elect to expense the fee as normal and receive a personal referral fee 
+                                                                                    by check or direct deposit into your account. We appreciate your referrals and the referees 
+                                                                                    will thank you!
+                                                                                    " class="fa circle-text fa-my-1 pop"><h4>Synergy+ Referral Program</h4></a>
+                                                              </li>
+                                                            </h5>
+                                                        </ul>
+                                                    </div>
+
+
+
+                                                </div>
+                                                     
+                                                   <div class='col-md-2'>
+                                                        <div class='m-pricing-tab-title'>
+                                                            <h3>Pricing</h3>
+                                                       </div>
+                                                       <hr class='hr-subtitle-2'>
+
+                                                          <ul class=''>
+                                                              <h5>
+                                                              <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "
+                                                                                    <table>
+                                                                                        <tr>
+                                                                                            <th># of Providers&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                                                            <th>Cost per Provider</th>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>1-5</td>
+                                                                                            <td>$1750/Month</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>6-10</td>
+                                                                                            <td>$1500/Month</td>
+                                                                                        </tr><tr>
+                                                                                            <td>11+</td>
+                                                                                            <td>$1000/Month</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <br>
+                                                                                    You get the billed amount, including co-pays &amp; out of pocket, minus 3%.
+                                                                                    <br><br>
+                                                                                    You pay the per provider fee on the 30th day 
+                                                                                    when we front you your ARs.
+                                                                                    <br><br>
+                                                                                    1st fee is due approximately 30 days from installation - enough time to transfer over all insurers.
+                                                                                    
+                                                                                   "
+                                                                     data-html="true"
+                                                                     class="fa circle-text fa-my-1 pop"><h4>$1000/Month* per Provider + 3%</h4></a>
+                                                              </li>
+                                                              
+                                                             <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "
+                                                                                    <strong>One Time Cost</strong><br>
+                                                                                     $150/hour, seldom exceeds $750<br><br>
+                                                                                    Most require no charge, depending on the current system.
+                                                                                    " data-html="true" class="fa circle-text fa-my-1 pop"><h4>One Time License &amp; Customization</h4></a>
+                                                              </li>
+                                                                  
+                                                            <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-content= "
+                                                                                    <table>
+                                                                                        <tr>
+                                                                                            <th> Position&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                                                            <th>Cost per Position</th>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Admin</td>
+                                                                                            <td>$300</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Non-Provider</td>
+                                                                                            <td>$500</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Midlevel</td>
+                                                                                            <td>$750</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Doctor</td>
+                                                                                            <td>$1000</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <br>
+                                                                                    <strong>Origination Fee Is For</strong><br>
+                                                                                    - Initial System Installation<br>
+                                                                                    - Your Customized system <br>
+                                                                                    - 2 charts/specialty<br>
+                                                                                    - Training of key person who can easily assist doctors in creating future charts, saving money long term.
+                                                                                    " data-html="true" class="fa circle-text fa-my-1 pop"><h4>Origination Fee</h4></a>
+                                                              </li>
+                                                            
+                                                             <li>
+                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
+                                                                     data-html="true"
+                                                                     data-content= "
+                                                                                    <strong>Services to be Billed at Cost</strong><br>
+                                                                                    - e-prescribe<br>
+                                                                                    - e-fax<br>
+                                                                                    - data storage<br>
+                                                                                    - in-person training<br>
+                                                                                    - etc. 
+                                                                                   " class="fa circle-text fa-my-1 pop"><h4>Optional Add-Ons</h4></a>
+                                                              </li>
+                                                            </h5>
+                                                        </ul>
+                                                    </div>
+
+
+                                                     
+                                              <!--      <div class='col-md-4 m-pricing-col'>
+                                                        <div class='m-pricing-tab-title'>
+                                                            <h3 >Pricing</h3>
+                                                        </div>
+                                                        <hr class='hr-subtitle'>
+                                                        <h4>2% Per Month</h4>
+                                                        <h4>$300/Month Per Doctor</h4>
+                                                        <h4>Initial Deposit (dependent upon group size)</h4>
+
+                                                        <br>
+
+                                                    </div> -->
+
+                                                 </div> 
+                                               </div>
+                                            <hr>    
+                                                <div class='row m-pricing-tab-content-2'>
+                                                    <div class='col-md-8'>
+                                                       <div class='col-md-6'>
+                                                        <h5>33%+ Net Income Gains Guaranteed in Writing, Call Now for Your Quote</h5>
+                                                       </div>
+                                                        <div class='col-md-6'>
+                                                            <h5>Service Installation Typically Takes Less Than 5 Days. Get Trained in 1 Day!</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class='col-md-4'>
+                                                       <div class='btn btn-color'>Inquire Now</div>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                </div>
+ 
+                                <!-- EXPONENTIAL GROWTH TAB -->
+                                  <div id="pricing-modal-tab-3" class="tab-pane tab-pane-color-3 fade in">
+                                  
+                                      <div class="card hovercard">
+                                            <div class="card-background">
+                                                <img class="card-bkimg" alt="" src="{% static 'images/red.jpg' %}">
                                                 <!-- http://lorempixel.com/850/280/people/9/ -->
                                             </div>
 
@@ -2190,7 +2939,7 @@ patients within the next three to five years.</p></h5>
                                                                                     Clients who refer doctors who contract for our services are credit on the next
                                                                                     month’s service fee between 10-100% depending on the # of doctors who sign up. <br><br>
                                                                                     You may also elect to expense the fee as normal and receive a personal referral fee 
-                                                                                    by check or direct deposit into your account. We appreciate your referrals and they 
+                                                                                    by check or direct deposit into your account. We appreciate your referrals and the referees 
                                                                                     will thank you!
                                                                                     " class="fa circle-text fa-my-1 pop"><h4>Synergy+ Referral Program</h4></a>
                                                               </li>
@@ -2336,352 +3085,7 @@ patients within the next three to five years.</p></h5>
 
                                         </div>
                                 </div>
-
-                                <div id="tab2" class="tab-pane tab-pane-color-2 fade in">
-                                  
-                                      <div class="card hovercard">
-                                            <div class="card-background">
-                                                <img class="card-bkimg" alt="" src="{% static 'images/yellow.jpg' %}">
-                                                <!-- http://lorempixel.com/850/280/people/9/ -->
-                                            </div>
-
-                                            <!--<div class="useravatar">
-                                                <img alt="" src="{% static 'images/girl.jpeg' %}">
-                                            </div>-->
-
-                                            <div class="card-info"> 
-                                                <span class="card-title"><h2>Exponential Growth &amp; Market Domination</h2></span>
-                                                <br>
-                                               
-                                                <span class="card-title"><h3>For ambitious owners who want to achieve growth and dominate their market</h3></span>
-                                            
-                                            </div>
-
-                                        </div>
-                                        
-                                        <div class='tab-pane-content'>
-                                               <!--<h3 class='m-pricing-tab-title'>Exponential Growth Plan Includes Premium Services</h3>-->
-                                            
-                                               <div class='m-pricing-tab-content'>
-                                             
-                                                 <div class='row'>
-
-                                                   <div class='col-md-10'>
-                                                    <div class='col-md-4'>
-                                                        <div class='m-pricing-tab-title'>
-                                                            <h3>Advanced Technology</h3>
-                                                        </div>
-                                                        <hr class='hr-subtitle'>
-                                                          <ul>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Patient Engagment</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Data Security</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Revenue Cycle Management</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Electronic Health Record</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Data Analytics</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Population Health Management</h4></a>
-                                                              </li>
-
-                                                        </ul>
-                                                    </div>
-
-                                                   <div class='col-md-4'>
-                                                        <div class='m-pricing-tab-title'>
-                                                            <h3>Premium Services</h3>
-                                                       </div>
-                                                       <hr class='hr-subtitle'>
-
-                                                          <ul class=''>
-                                                              <h5>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Physician Recruiting Services</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Online Profile Optimization</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>24/7 Support</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover"  data-html='true'
-                                                                     data-content= "
-                                                                                    We are confident you will learn online within hours.<br><br>
-                                                                                    Video and Phone training support is provided at no extra cost. You'll speak with a certified Synergy+ training specialist to answer your questions.
-                                                                                   " class="fa circle-text fa-my-1 pop"><h4>Unlimited 1:1 Training</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Dedicated Synergy+ Consultant</h4></a>
-                                                              </li>
-                                                            </h5>
-                                                        </ul>
-                                                    </div>
-
-                                                    
-                                                   <div class='col-md-4'>
-                                                        <div class='m-pricing-tab-title'>
-                                                            <h3>Exponential Benefits</h3>
-                                                       </div>
-                                                       <hr class='hr-subtitle'>
-
-                                                          <ul class=''>
-                                                              <h5>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Grow 50%+ in First Year</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Dominate Google Search Rankings</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Recruit Top Quality Doctors</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Expert Synergy+ Consulting Assistant</h4></a>
-                                                              </li>
-                                                            </h5>
-                                                        </ul>
-                                                    </div>
-
-
-
-                                                </div>
-                                                     
-                                                   <div class='col-md-2'>
-                                                        <div class='m-pricing-tab-title'>
-                                                            <h3>Price</h3>
-                                                       </div>
-                                                       <hr class='hr-subtitle-2'>
-
-                                                          <ul class=''>
-                                                              <h5>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>2% per Month</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4><strong>1-5 Providers:</strong>$1750/Month</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>$10,000 Initial Deposit</h4></a>
-                                                              </li>
-                                                            </h5>
-                                                        </ul>
-                                                    </div>
-
-
-                                                     
-                                              <!--      <div class='col-md-4 m-pricing-col'>
-                                                        <div class='m-pricing-tab-title'>
-                                                            <h3 >Pricing</h3>
-                                                        </div>
-                                                        <hr class='hr-subtitle'>
-                                                        <h4>2% Per Month</h4>
-                                                        <h4>$300/Month Per Doctor</h4>
-                                                        <h4>Initial Deposit (dependent upon group size)</h4>
-
-                                                        <br>
-
-                                                    </div> -->
-
-                                                 </div> 
-                                               </div>
-                                            <hr>    
-                                            <div class='row m-pricing-tab-content-2'>
-                                                <div class='col-md-8'>
-                                                   <div class='col-md-6'>
-                                                    <h5>25%+ Net Income Gains Guaranteed in Writing, Contact Now for Your Quote</h5>
-                                                   </div>
-                                                    <div class='col-md-6'>
-                                                        <h5>Service Installation Typically Takes Less Than 5 Days. Get Trained in 1 Day!</h5>
-                                                    </div>
-                                                </div>
-                                                <div class='col-md-4 btn-center text-center'>
-                                                   <div class='btn btn-color'>Inquire Now</div>
-                                                </div>
-
-
-
-                                            </div>
-
-                                        </div>
-                                </div>
-                                
-                                <!-- EXPONENTIAL GROWTH TAB -->
-                                   <div id="tab3" class="tab-pane tab-pane-color-3 fade in">
-                                  
-                                      <div class="card hovercard">
-                                            <div class="card-background">
-                                                <img class="card-bkimg" alt="" src="{% static 'images/red.jpg' %}">
-                                                <!-- http://lorempixel.com/850/280/people/9/ -->
-                                            </div>
-
-                                            <!--<div class="useravatar">
-                                                <img alt="" src="{% static 'images/girl.jpeg' %}">
-                                            </div>-->
-
-                                            <div class="card-info"> 
-                                                <span class="card-title"><h2>Exponential Growth &amp; Market Domination</h2></span>
-                                                <br>
-                                                <span class="card-title"><h3>For ambitious owners who want to achieve growth and dominate their market</h3></span>
-                                            </div>
-
-                                        </div>
-                                        <div class='tab-pane-content'>
-                                               <!--<h3 class='m-pricing-tab-title'>Exponential Growth Plan Includes Premium Services</h3>-->
-                                               <div class='m-pricing-tab-content'>
-
-                                                 <div class='row'>
-
-                                                   <div class='col-md-8'>
-                                                    <div class='col-md-6'>
-                                                        <div class='m-pricing-tab-title'>
-                                                            <h3 >Advanced Technology</h3>
-                                                        </div>
-                                                        <hr class='hr-subtitle'>
-                                                          <ul>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Patient Engagment</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Data Security</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Revenue Cycle Management</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Electronic Health Record</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Data Analytics</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Population Health Management</h4></a>
-                                                              </li>
-
-                                                        </ul>
-                                                    </div>
-
-                                                   <div class='col-md-6'>
-                                                        <div class='m-pricing-tab-title'>
-                                                            <h3>Premium Services</h3>
-                                                       </div>
-                                                       <hr class='hr-subtitle'>
-
-                                                          <ul class=''>
-                                                              <h5>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Physician Recruiting Services</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Online Profile Optimization</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>24/7 Support</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Unlimited 1:1 Training</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Dedicated Synergy+ Consultant</h4></a>
-                                                              </li>
-                                                            </h5>
-                                                        </ul>
-                                                    </div>
-
-
-
-
-
-                                                </div>
-
-
-                                                   <div class='col-md-4'>
-                                                        <div class='m-pricing-tab-title'>
-                                                            <h3>Exponential Benefits</h3>
-                                                       </div>
-                                                       <hr class='hr-subtitle'>
-
-                                                          <ul class=''>
-                                                              <h5>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Grow 50%+ in First Year</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Dominate Google Search Rankings</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Recruit Top Quality Doctors</h4></a>
-                                                              </li>
-                                                              <li>
-                                                                  <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" 
-                                                                     data-content= "Synergy+ Patient Engagment is proven to optimize patient compliance and patient health outcomes. Patients are enthusiastic to participate in their own care." class="fa circle-text fa-my-1 pop"><h4>Expert Synergy+ Consulting Assistant</h4></a>
-                                                              </li>
-                                                            </h5>
-                                                        </ul>
-                                                    </div>
-
-                                                 </div> 
-                                               </div>
-                                            <hr>    
-                                            <div class='row m-pricing-tab-content-2'>
-                                                <div class='col-md-8'>
-                                                   <div class='col-md-6'>
-                                                    <h5>25%+ Net Income Gains Guaranteed in Writing, Contact Now for Your Quote</h5>
-                                                   </div>
-                                                    <div class='col-md-6'>
-                                                        <h5>Service Installation Typically Takes Less Than 5 Days. Get Trained in 1 Day!</h5>
-                                                    </div>
-                                                </div>
-                                                <div class='col-md-4'>
-                                                   <div class='btn btn-color'>Inquire Now</div>
-                                                </div>
-
-
-
-                                            </div>
-
-                                        </div>
-                                </div>
-                              
+ 
                                   
                             </div>     
                         </div>
@@ -3353,47 +3757,33 @@ $('.learn-more').bind('click', function(e) {
 	$('html, body').animate({scrollTop:top - offset_up}, 'slow');                                                         
 
 });
-    
-$('#demo-now').bind('click', function(e) {
-    e.preventDefault();
-    var hashTag = this.hash;
-  	var top = 0;
- 	if ($(hashTag).offset()) {
-    	top = $(hashTag).offset().top
-  	}
-	$('html, body').animate({scrollTop:top - offset_up}, 'slow');                                                         
-
-});
 </script>
 
 <!-- SELECT THE CORRECT TIMELINE TAB WHEN CLICKING ON THE HEX -->
+<!-- SELECT THE CORRECT PRICING MODAL TAB WHEN CLICKING ON THE 3 PRICING BANNERS -->
  <script>
-
-var hex_ids = ['#hex-1', '#hex-2', '#hex-3', '#hex-4', '#hex-5', '#hex-6', '#hex-7']
-
- // Opens the correct modal from the hex that is clicked
+ // Triggers a click on one id when clicking another ID
  // List -> null
-function hex_handler(hex_id, tab_id){
-        $(hex_id).click(function(){
-            $(tab_id).trigger('click');
+function trigger_handler(trigger_id, dest_id){
+        $(trigger_id).click(function(){
+            $(dest_id).trigger('click');
         })}
 
-
+trigger_handler('#hex-1', '#t-tab-1');
+trigger_handler('#hex-2', '#t-tab-2');
+trigger_handler('#hex-3', '#t-tab-6');
+trigger_handler('#hex-4', '#t-tab-7');
+trigger_handler('#hex-5', '#t-tab-3');
+trigger_handler('#hex-6', '#t-tab-5');
+trigger_handler('#hex-7', '#t-tab-4');
      
-hex_handler('#hex-1', '#t-tab-1');
-hex_handler('#hex-2', '#t-tab-2');
-hex_handler('#hex-3', '#t-tab-6');
-hex_handler('#hex-4', '#t-tab-7');
-hex_handler('#hex-5', '#t-tab-3');
-hex_handler('#hex-6', '#t-tab-5');
-hex_handler('#hex-7', '#t-tab-4');
+trigger_handler('#pricing-btn-1', '#pricing-modal-btn-1');
+trigger_handler('#pricing-btn-2', '#pricing-modal-btn-2');
+trigger_handler('#pricing-btn-3', '#pricing-modal-btn-3');
+/* Start with the largest modal pricing tab selected, and leave it selected when exited so modal is in the correct vertical position */
 
 </script>
 
-<!-- CLICK BY DEFAULT WHEN PAGE LOADS-->
-<script>
-    $("#t-tab-1").trigger( "click" ); //Selects patient engagement by default
-</script>
 
 <!-- SECTION PRICING POPUP JQUERY CODE -->
 <script>
@@ -3414,6 +3804,7 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
 });
 </script>
+
     <!-- Revolution Slider Plugins -->
 <script type="text/javascript" src="/static/img-slider/news-gallery1/js/jquery.themepunch.tools.min.js"></script>
 		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/jquery.themepunch.revolution.min.js"></script>
