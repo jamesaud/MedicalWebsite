@@ -10,13 +10,13 @@
         <meta name="description" content="">
         <meta name="author" content="">
         {% block more-head %} {% endblock more-head %}
-    </head>
+ 
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    
     {% block css %}
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico">
@@ -60,8 +60,10 @@
     {% endblock css %}
 
     {% block more-css %}{% endblock more-css %}
-
-        <!DOCTYPE html>
+    
+    </head>
+    
+<!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
@@ -390,6 +392,24 @@ $(function() {
         });
     });
     </script>
+    
+            <!-- PASSWORD POPUP REQUIREMENT -->  
+        <script>
+        function myFunction() {
+            solution = "investor"
+            var pass;
+            $("body").css('display', 'none');
+            while (pass != solution){
+                var pass= prompt("Please Enter Your Investor Password");
+
+            }
+            if (pass == solution){
+                $("body").css('display', 'inherit');
+            }
+        }
+                myFunction();
+        </script>
+
     {% block more-javascript %}{% endblock more-javascript %}
 
 </body>
