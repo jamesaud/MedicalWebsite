@@ -393,22 +393,7 @@ $(function() {
     });
     </script>
     
-            <!-- PASSWORD POPUP REQUIREMENT -->  
-        <script>
-        function myFunction() {
-            solution = "investor"
-            var pass;
-            $("body").css('display', 'none');
-            while (pass != solution){
-                var pass= prompt("Please Enter Your Investor Password");
-
-            }
-            if (pass == solution){
-                $("body").css('display', 'inherit');
-            }
-        }
-                myFunction();
-        </script>
+   
 
     {% block more-javascript %}{% endblock more-javascript %}
 
