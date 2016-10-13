@@ -334,6 +334,52 @@ a:hover{
     padding-bottom: 0 !important;
     
     
+    .hi-success{
+        text-align: center;
+        padding-top: 45px !important;
+        padding-bottom: 43px !important;
+
+        #not-just{
+            font-weight: 400 !important;
+        }
+        h1{
+            color:black !important;
+        }
+        h4{
+            color: black !important;
+            font-weight: bold;
+        }
+        .section-insights-block-1{
+            margin-bottom: 50px;
+        }
+
+        .section-insights-title-2{
+            padding-top: 5px ;
+        }
+
+        .si-title{
+            margin-bottom: 10px;
+        }
+
+
+        .main-points{
+            .main-points-title{
+                //padding-bottom: 0px !important;
+            }
+            .main-points-block{
+                i {
+                    padding-bottom: 15px;
+                }
+            }
+        }
+
+        h3 {
+            color: black !important;
+        }
+    }
+    
+    
+    
     @media screen and (min-width: 769px){
         #component-pe{
             position: relative;
@@ -354,28 +400,19 @@ a:hover{
             p{color: #333 !important;}
         //font-size: $font-size-four;
     }
-    }
-    
-    .section-highlights-block-1{
-        margin-top: 40px;
-        padding-bottom: 25px !important;
-           h1{
-                color:black !important;
-                padding-top: 30px;
-            }
-
-            h4{
-                color: black !important;
-                font-weight: bold;
-            }
-
-    }
+    } 
     
     
     .section-highlights-block-2{
-        padding-top: 25px ;
+        padding-top: 30px ;
         padding-bottom: 55px !important;
+        h2{
+            color: black !important;
+            padding-bottom: 0px;
+            margin-bottom: 35px;
+        }
         h3{
+            font-weight: 400 !important;
             padding-bottom: 5px;
         }
     }
@@ -459,50 +496,6 @@ a:hover{
 
 
 .section-insights{
-    .si-success{
-        text-align: center;
-        padding-top: 20px !important;
-        padding-bottom: 40px !important;
-
-        #not-just{
-            font-weight: 400 !important;
-        }
-        h1{
-            color:black !important;
-        }
-        h4{
-            color: black !important;
-            font-weight: bold;
-        }
-        .section-insights-block-1{
-            margin-bottom: 50px;
-        }
-
-        .section-insights-title-2{
-            padding-top: 5px ;
-        }
-
-        .si-title{
-            margin-bottom: 10px;
-        }
-
-
-        .main-points{
-            .main-points-title{
-                //padding-bottom: 0px !important;
-            }
-            .main-points-block{
-                i {
-                    padding-bottom: 15px;
-                }
-            }
-        }
-
-        h3 {
-            color: black !important;
-        }
-    }
-    
     .si-info{
         padding-top: 15px;
         padding-bottom: 40px;
