@@ -37,35 +37,6 @@ a:hover{
 
 }
 
-.section-investors{
-    margin: 0 auto;
-    h1{
-        padding-top: 0;
-        color:black;
-        margin: 0;
-        text-align: left;
-    }
-    
-    
-    h2{
-        color: #333 !important;
-    }
-    
-      a:link{
-            color: #0000EE;
-        }
-        a:hover{
-            color:#f60; 
-            text-decoration: none;
-        }
-        a:visited{
-            color: #551A8B;   
-        }
-    .investors-message{
-        margin-bottom: 30px;
-    }
-
-}
 
 .section-modal-pricing{
     $font-mult: 1;
@@ -531,6 +502,7 @@ a:hover{
 }
 
 .section-faq{
+    //Background set as in-style background, to use Django static image location
     #faqs{
         .panel-body{
             color: #444;
@@ -633,6 +605,38 @@ a:hover{
             margin-bottom: 10px;
         }
     }
+    
+    
+    .section-investors{
+        margin: 0 auto;
+        background: transparent !important; // For some reason section-investors wants to have a white background by defaul.
+        h1{
+            padding-top: 0;
+            color:black;
+            margin: 0;
+            text-align: left;
+        }
+
+
+        h2{
+            color: #333 !important;
+        }
+
+          a:link{
+                color: #0000EE;
+            }
+            a:hover{
+                color:#f60; 
+                text-decoration: none;
+            }
+            a:visited{
+                color: #551A8B;   
+            }
+        .investors-message{
+            margin-bottom: 30px;
+        }
+
+      }
 }
 
 .section-benefits{
@@ -891,13 +895,21 @@ a:hover{
 .section-modal-solutions{
     
     #ADD{
+        .col-middle{
+            border-right: 1px solid #eee;
+            border-left: 1px solid #eee;
+        }
+        
         #add-header{
-            text-align: left !important;
+            text-align: center !important;
+            font-size: $font-size-three;
         }
         .col-md-4{
             text-align: center;
         }
         i{text-align: center;}
+        
+        
     }
     
     .col-md-9.lg{
