@@ -453,6 +453,22 @@ hr.no-margin{
 
 .modal-fullscreen {
   background: transparent;
+  
+    //Wrap around bootsrap default close button
+  .close-button{
+        right: 8px;
+        top: 4px;
+        position: absolute;
+        z-index: 1000;
+        //Default boostrap close button class
+        .close {
+            font-size: 25px;
+            //color: #333; 
+            //filter: alpha(opacity=20);
+            //opacity: .4;
+      }
+
+    }
 }
 
 .modal-fullscreen .modal-header, .modal-fullscreen .modal-footer{
@@ -484,6 +500,13 @@ hr.no-margin{
   margin-left: auto;
   width: 100%;
 }
+
+.modal-fullscreen .modal-header, .modal-fullscreen .modal-body {
+  padding-left: 15px;
+    padding-right: 15px;
+}
+
+
 @media (min-width: 768px) {
   .modal-fullscreen .modal-dialog {
     width: 750px;
@@ -500,9 +523,11 @@ hr.no-margin{
   }
 }
 
+
 /* END CUSTOM MODAL STYLE  */
 
 #modal-contact{
+    
    .form-inline{
         display: inline;
     }
@@ -517,6 +542,7 @@ hr.no-margin{
     
    .modal-header{
        margin-bottom: 10px;
+       padding-top: 10px;
        .m-contact-title{
             margin-bottom: 20px;
            color: #333 !important;

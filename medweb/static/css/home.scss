@@ -349,7 +349,14 @@ a:hover{
         }
     }
     
-    
+    .hi-novo{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        h2{color: black;}
+        a{
+            color: $third-color;
+        }
+    }
     
     @media screen and (min-width: 769px){
         #component-pe{
@@ -715,6 +722,10 @@ a:hover{
         color: black !important;
     }
     
+    a, a:visited{
+        color: white;
+    }
+    
     .title{
         margin-bottom: 50px;
         
@@ -770,6 +781,11 @@ a:hover{
             font-size: $font-size-four;
             padding-bottom: 10px;
         }
+    }
+    
+    .btn-u{
+        font-size: $font-size-four;
+        width: 100%;
     }
 }
 
@@ -858,6 +874,22 @@ a:hover{
 
 .col-6 {
     color: $sixth-color;
+}
+
+.col-7 {
+    color: $seventh-color;
+}
+
+.col-8 {
+    color: $eighth-color;
+}
+
+.col-9 {
+    color: $ninth-color;
+}
+
+.col-10 {
+    color: $tenth-color;
 }
 
 .bg-col-1 {
@@ -949,29 +981,8 @@ a:hover{
         }
     }
     .modal-header{
-        padding-bottom: 0;
-        h5{
-            vertical-align: middle;
-            display: block;
-        }
-        
-        .col-md-9{
-            top: -10px;
-        }
-        @media screen and (max-width: 768px){
-            .col-md-9{
-            top: 0px;
-            }
-        }
-        
-        #modal-logo{
-            text-align: center;
-            width:80%; /* you can use % */
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            vertical-align: middle;
-        }
+        margin: 0;
+        padding: 0;
     }
     
     //Generates the title colors for each tab
