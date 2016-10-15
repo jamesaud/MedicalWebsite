@@ -77,3 +77,4 @@ medweb/static/*
 !medweb/static/img-slider/
 !medweb/static/fonts/
 !medweb/static/js/
+!medweb/static/files/
