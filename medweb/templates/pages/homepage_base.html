@@ -1,0 +1,404 @@
+{% load staticfiles i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Synergy+ Software</title>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        {% block more-head %} {% endblock more-head %}
+ 
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    {% block css %}
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <!-- Web Fonts -->
+        <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300,200,100,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    
+        <!-- CSS Global Compulsory -->
+        <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+
+        <!-- CSS Header and Footer -->
+        <link rel="stylesheet" href="/static/css/headers/header-default.css">
+        <link rel="stylesheet" href="/static/css/headers/header-v8.css">
+        <link rel="stylesheet" href="/static/css/footers/footer-v1.css">
+    
+
+        <!-- CSS Implementing Plugins -->
+        <link rel="stylesheet" href="/static/plugins/animate.css">
+        <link rel="stylesheet" href="/static/plugins/line-icons/line-icons.css">
+        <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/plugins/login-signup-modal-window/css/style.css">
+    
+        <!-- CSS Theme -->
+        <link rel="stylesheet" href="/static/css/theme-colors/default.css" id="style_color">
+        <link rel="stylesheet" href="/static/css/theme-skins/dark.css">
+
+        <!-- CSS Customization -->
+        <link rel="stylesheet" href="/static/css/custom.css">
+
+         <!-- My CSS -->
+        {% load sass_tags %}
+        <link rel="stylesheet" href="{% sass_src 'css/project.scss' %}">
+        <!-- for dev only -->
+         <link href="{% static 'staticfiles/css/project.css' %}" rel="stylesheet" type="text/css" />
+        
+    {% endblock css %}
+
+    {% block more-css %}{% endblock more-css %}
+    
+    </head>
+    
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<body class="header-fixed ">
+	<div class="wrapper">
+		<!--=== Header v8 ===-->
+        
+
+        
+		<div class="header-v8 header-sticky">
+            
+			<!-- Topbar blog -->
+            
+			<!-- End Topbar blog -->
+
+			<!-- Navbar -->
+			<div class="navbar mega-menu" role="navigation">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="res-container">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+                        
+                        <div class='row nav-top'>
+                            
+                            <div class='logo-wrapper'>
+                                <div class='col-md-6'>
+                                <div class="navbar-brand">
+                                    <a class='' href="index.html">
+                                        <img src="{% static 'images/logo1.png' %}" alt="Logo">
+                                    </a>
+                                </div>
+                                </div>
+                              </div>
+                            
+                              <div class='col-md-4 header-slogan hide-mobile text-center'>
+                                    <h5><a href='' onClick='return false;'><strong><span>WE GUARANTEE NET INCOME GAINS OF 33-100%</span></strong>
+                                        <br>
+                                       The only all-inclusive provider serving Independent Doctors
+                                        <br>
+                                        Doctors practice medicine their way, patients get healthier</a>
+                                      </h5>
+                                  </div>
+                            
+                            <div class='pull-right'>
+                                <ul class='mynav1 hide-mobile nav navbar-nav'>      
+                                            <li class='nav-li-extra' id='nav-contact'><br><a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">Contact</a></li>
+                                            <li class='nav-li-extra' id='nav-call-now'><a href="##" onClick="return false;" data-toggle="collapse" data-target="#call-now-info"><i class='fa fa-phone'></i> +1 (812) 360-9245<br>
+                                                &nbsp;Free Evaluation
+                                                </a>
+                                            </li>    
+                                </ul>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                        <hr/>
+                        
+                        <div>
+                              <div class="row mynav">
+                            <!-- Toggles the mobile display of the header-slogan banner -->        
+                            
+                               <div class='header-slogan-mobile'>
+                                <h5><a href=''><br><strong>We guarantee independent doctors net income gains of 33-100%.</strong> <br>We are the first all-inclusive service provider for independent doctors.<br> Doctors practice medicine their way, patients get healthier. <br><br></a></h5>
+                                </div>
+                                  
+                                <div class="collapse navbar-collapse navbar-responsive-collapse ">
+                                
+                               <!--/end responsive container-->
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class='nav-links-wrapper'>
+                                    <ul class="nav navbar-nav nav-links">
+                                            <!-- Home -->
+                                            <li id='nav-home' class='active'><a href="#">Home</a></li>
+                                            <li id='nav-benefits'><a href='#benefits'>Benefits</a></li>
+                                            <li id='nav-insights'><a href='#insights'>Insights</a></li>
+                                            <li id='nav-solutions'><a href="#solutions">Solutions</a></li>
+                                            <li id='nav-why'><a href="#why">Why Us</a></li>
+                                            <li id='nav-demo'><a href="#demo">Demo</a></li>
+                                            <li id='nav-plans'><a href="#plans">Plans &amp; Pricing</a></li>
+                                            <li id='nav-resources'><a href="#resource">Resources</a></li>
+                                            <li id='nav-investors'><a href="#tab-investors">Investors</a></li>
+                                            <ul class='show-mobile nav navbar-nav nav-links'>
+                                                
+                                                <li ><a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">Contact</a></li>
+                                                <li><a href="##" onClick="return false;" data-toggle="collapse" data-target="#call-now-info"><i class='fa fa-phone'></i> +1 (812) 360-9245</a>
+                                                </li>  
+                                            </ul>
+                                            
+                                    </ul>
+                                        </div>
+                                </div>
+                            </div></div></div></div></div>
+
+            </div>
+        
+        
+        
+        <div class='sidebar'>
+            
+            <ul>
+                <li id='sidebar-phone' ><a href='##' onClick="return false;"><i class="fa fa-phone fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>812-360-9245</span></h5></a></li>
+                <li id='sidebar-contact'>  <a href='' data-toggle="modal" data-target="#modal-contact"><i class="fa fa-envelope-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Contact</span></h5></a></li>
+                <li id='sidebar-live-chat' ><a href='##' onClick="return false;"> <i class="fa fa-comments-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Live Chat</span></h5></a></li>
+            </ul>
+        </div>
+        
+        <div id="modal-contact" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-contact" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class='close-button'>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                          <h2 class='m-contact-title'>Have Questions? Interested in a Demo?</h2>
+                          
+                          <h5 class="modal-title" id="gridModalLabel">Tell us about yourself to recieve your <strong><em>Free Preliminary Net Income Guarantee!</em></strong><br> Your personal Synergy+ specialist will reply to you within 24 hours.</h5>
+                          
+                      </div>
+                        
+                      <div class="modal-body container">
+                          <form action="">
+                              <div class='row'>
+                                  <div class="form-group col-md-6 inline required">
+                                      <div class='control-label'></div><input type="text" class="form-control" id="fname" placeholder="First Name">
+                                  </div>
+                                    <div class="form-group col-md-6 required">
+                                      <div class='control-label'></div><input type="text" class="form-control" id="lname" placeholder="Last Name">
+                                  </div>
+                               </div>
+                              <div class='row'>
+                                  <div class="form-group required col-md-12">
+                                      <div class='control-label'></div><input type="text" class="form-control" id="email" placeholder="Email">
+                                  </div>
+                              </div>
+                              <div class='row'>
+                                  <div class="form-group col-md-12">
+                                      <input type="text" class="form-control" id="phone1" placeholder="Home Phone">
+                                  </div>
+                              </div>
+                              <div class='row'>
+                                  <div class="form-group col-md-12">
+                                      <input type="text" class="form-control" id="phone2" placeholder="Cell Phone">
+                                  </div>
+                              </div>
+                               <div class='row'>
+                                      <div class="form-group col-md-12">
+                                          <input type="text" class="form-control" id="groupname" placeholder="Website">
+                                      </div>
+                              </div>
+                              <div class='row'>
+                                  <div class='col-md-6'>
+                                      <div class="form-group required">
+                                          <div class='control-label'><input type="text" class="form-control" id="groupname" placeholder="Group Name"></div>
+                                      </div>
+                                  </div>
+                                  <div class='col-md-6'>
+                                      <div class="form-group required">
+                                         <div class='control-label'>
+                                          <select class='form-control'>
+                                            <option value='type1'>Group Type</option>
+                                            <option value='type2'>Val 2</option>
+                                            <option value='type3'>Val 3</option>
+                                            <option value='type4'>Val 4</option>
+                                            <option value='type5'>Val 5</option>
+                                            <option value='type6'>Val 6</option>
+                                          </select>
+                                         </div>
+                                      </div>
+                                  </div>
+                              </div>
+                             
+                              <div class='row'>
+                                  <div class="form-group required col-md-12">
+                                      <div class='control-label'></div><textarea class="form-control" rows="4" id="comment" placeholder="Message"></textarea>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button id='contact-us' type="button" class="btn btn-primary">Contact Us</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        
+		<!--=== End Header ===-->
+    <div class='content-main'>
+    {% block modal %}
+    {% endblock modal %}
+    </div>
+    {% block footer %}
+		<!--=== Footer Version 1 ===-->
+		<div class="footer-v1">
+
+
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<p class='absolute'>
+								2015 &copy; All Rights Reserved.
+								<!--<a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>-->
+							</p>
+						</div>
+
+						<!-- Social Links -->
+						<div class="col-md-6">
+							<ul class="footer-socials list-inline">
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+										<i class="fa fa-skype"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+										<i class="fa fa-google-plus"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+										<i class="fa fa-pinterest"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+										<i class="fa fa-dribbble"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- End Social Links -->
+					</div>
+				</div>
+			</div><!--/copyright-->
+		</div>
+		<!--=== End Footer Version 1 ===-->
+    {% endblock footer %}
+	</div><!--/wrapper-->
+
+	
+
+	<!-- JS Global Compulsory -->
+	<script type="text/javascript" src="/static/plugins/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/plugins/jquery/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- JS Implementing Plugins -->
+	<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
+	<script type="text/javascript" src="/static/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="/static/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="/static/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<!-- JS Customization -->
+	<script type="text/javascript" src="/static/js/custom.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="/static/plugins/respond.js"></script>
+	<script src="/static/plugins/html5shiv.js"></script>
+	<script src="/static/plugins/placeholder-IE-fixes.js"></script>
+	<![endif]-->
+    <!-- Waypoints plugin -->
+    <script src="{% static 'css/plugins/waypoints4.0/lib/jquery.waypoints.min.js' %}"></script>
+        
+    <script>
+    // .modal-backdrop classes. Rely on the css classes to change modal styles.
+
+    $(".modal-transparent").on('show.bs.modal', function () {
+      setTimeout( function() {
+        $(".modal-backdrop").addClass("modal-backdrop-transparent");
+      }, 0);
+    });
+    $(".modal-transparent").on('hidden.bs.modal', function () {
+      $(".modal-backdrop").addClass("modal-backdrop-transparent");
+    });
+
+    $(".modal-fullscreen").on('show.bs.modal', function () {
+      setTimeout( function() {
+        $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+      }, 0);
+    });
+    $(".modal-fullscreen").on('hidden.bs.modal', function () {
+      $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+    });
+    </script>
+    <!-- CENTER MODAL -->
+    <script>
+        
+    /**
+ * Vertically center(ish) Bootstrap 3 modals so they aren't always stuck at the top
+ */
+$(function() {
+    function reposition() {
+            var modal = $(this),
+                dialog = modal.find('.modal-dialog');
+            modal.css('display', 'block');
+
+            // Dividing by two centers the modal exactly, but dividing by three 
+            // or four works better for larger screens.
+            dialog.css("margin-top", Math.max(0, ($(window).height() - dialog.height()) / 2.7));
+        }
+        // Reposition when a modal is shown
+        $('.modal').on('show.bs.modal', reposition);
+        // Reposition when the window is resized
+        $(window).on('resize', function() {
+            $('.modal:visible').each(reposition);
+        });
+    });
+    </script>
+    
+   
+
+    {% block more-javascript %}{% endblock more-javascript %}
+
+</body>
+</html>

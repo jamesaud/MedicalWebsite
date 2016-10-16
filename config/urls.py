@@ -11,7 +11,6 @@ from django.views import defaults as default_views
 from medweb.homepage import views as homepage_views
 
 urlpatterns = [
-    url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
     url(r'^test/$', TemplateView.as_view(template_name='pages/test.html'), name='test'),
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, include(admin.site.urls)),
