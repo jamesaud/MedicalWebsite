@@ -504,6 +504,16 @@ a:hover{
                     font-weight: bold;
                 }
             }
+            
+            span{
+                font-weight: bold;
+            }
+            .problem{
+                color: $third-color;
+            }
+            .solution{
+                color: $primary-color;
+            }
         }
     }
 }
