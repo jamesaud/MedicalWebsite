@@ -280,8 +280,11 @@ a:hover{
             @include tab-pane-color('tab-pane-color-2', $second-color);
             @include tab-pane-color('tab-pane-color-1', $primary-color);
             
+        
             #pricing-modal-tab-4{
                 background: #222;
+                padding-top: 15px;
+                padding-bottom: 18px !important;
                 .tab-pane-content{
                             padding-left: 10%;
                             padding-right: 10%;
@@ -290,31 +293,48 @@ a:hover{
                             max-width: 700px;
                             margin: 0 auto;
                     
-
+                            
                             .tab-pane{
-                                
                             }
                 }
+                
+                .inquire-title{
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                }    
+            
                 .contact-btn{
                     font-size: $font-size-four;
                     min-width: 180px;
                 }
+                
                 .next-step, .prev-step{
                      font-size: $font-size-six;
-                    min-width: 120px;
+                     min-width: 120px;
                 }
-                
+                .next-step{
+                    float: right;
+                }
+                .prev-step{
+                    float: left;
+                }
+               
                 form{
                     .form-title{
-                        
+                        border-bottom: 2px solid $primary-color;
+                        display: inline-block;
+                        min-width: 100px;
+                        padding-bottom: 0px;
+                        margin-bottom: 10px;
                         h5{
-                            width: 100px;
-                            border-bottom: 1px solid #111;
+                            color: $primary-color;
                             display: inline;
+                            font-size: $font-size-six;
                         }
-                        margin-bottom: 6px ;
                     }
                 }
+                
+            
             }
             
         }
@@ -1224,5 +1244,3 @@ a:hover{
 }
 
 
-.Newspaper-Subtitle{
-    }

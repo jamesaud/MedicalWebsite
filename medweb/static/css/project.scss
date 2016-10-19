@@ -106,6 +106,9 @@ hr{
 .show-mobile{
     display: none;
 }
+
+
+
 @media screen and (max-width: 768px){
     .hide-mobile{
         display: none;
@@ -298,8 +301,6 @@ hr.no-margin{
 .star_text{
     font-size: $font-size-mini;
 }
-
-
 
 
 .sidebar {
@@ -556,3 +557,5 @@ hr.no-margin{
         padding-bottom: 0;
     }
 }
+
+
