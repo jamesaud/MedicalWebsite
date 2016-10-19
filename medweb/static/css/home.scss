@@ -45,7 +45,6 @@ a:hover{
         max-width: 1000px;
         .container{
             max-width: 1000px;
-            margin: auto 0;
         }
     }
     
@@ -69,16 +68,14 @@ a:hover{
         }
 
 
-        .card.hovercard .card-background {
-            height: 100px;
-        }
         .card.hovercard {
-            .card-info{
+            padding-bottom: 30px;
+            padding-top: 20px;
+            .card-background {
                 position: absolute;
-                top: 15%;
-                left: 0;
-                right: 0;
-
+            }
+            .card-info{
+                position: relative;
                 .card-title{
                     h2, h3{
                         display: inline;
@@ -282,6 +279,43 @@ a:hover{
             @include tab-pane-color('tab-pane-color-3', $third-color);
             @include tab-pane-color('tab-pane-color-2', $second-color);
             @include tab-pane-color('tab-pane-color-1', $primary-color);
+            
+            #pricing-modal-tab-4{
+                background: #222;
+                .tab-pane-content{
+                            padding-left: 10%;
+                            padding-right: 10%;
+                            padding-bottom: 2%;
+                            background: white;
+                            max-width: 700px;
+                            margin: 0 auto;
+                    
+
+                            .tab-pane{
+                                
+                            }
+                }
+                .contact-btn{
+                    font-size: $font-size-four;
+                    min-width: 180px;
+                }
+                .next-step, .prev-step{
+                     font-size: $font-size-six;
+                    min-width: 120px;
+                }
+                
+                form{
+                    .form-title{
+                        
+                        h5{
+                            width: 100px;
+                            border-bottom: 1px solid #111;
+                            display: inline;
+                        }
+                        margin-bottom: 6px ;
+                    }
+                }
+            }
             
         }
 

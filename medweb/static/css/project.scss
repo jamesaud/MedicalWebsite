@@ -486,8 +486,8 @@ hr.no-margin{
   background: black;
 }
 .modal-backdrop.modal-backdrop-fullscreen.in {
-  opacity: .84;
-  filter: alpha(opacity=84);
+  opacity: .9;
+  filter: alpha(opacity=90);
 }
 
 
@@ -537,7 +537,7 @@ hr.no-margin{
     }
     
    .modal-dialog, .modal-body{
-        max-width: 550px;
+        max-width: 500px;
         } 
     
    .modal-header{
