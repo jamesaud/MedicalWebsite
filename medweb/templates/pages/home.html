@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="/static/plugins/fancybox/source/jquery.fancybox.css">
         <link rel="stylesheet" href="/static/plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
 
-
         <!--[if lt IE 9]><link rel="stylesheet" href="/static/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
 
         <!-- CSS Pages Style -->
@@ -49,11 +48,13 @@
         <link href="{% sass_src 'css/charts.scss' %}" rel="stylesheet" type="text/css" />
         <link href="{% sass_src 'css/graphs.scss' %}" rel="stylesheet" type="text/css" />
         <link href="{% sass_src 'css/circle-tabs.scss' %}" rel="stylesheet" type='text/css'/>
+        <link href="{% sass_src 'css/parsley-floating.scss' %}" rel="stylesheet" type='text/css'/>
+
         <!-- for local dev only -->
         <link href="{% static '/staticfiles/css/home.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static '/staticfiles/css/graphs.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static '/staticfiles/css/circle-tabs.css' %}" rel="stylesheet" type="text/css" />
-
+        <link href="{% static '/staticfiles/css/parsley-floating.css' %}" rel="stylesheet" type="text/css" />  <!-- Form parsley floating css -->
 
         <div id='home'></div><!-- guarantees home nav lights up at the top of the pages -->
 {% endblock more-css %}
@@ -1862,17 +1863,17 @@ patients within the next three to five years.</p></h5>
                         <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
                             <div class="btn-group button-color-1" role="group">
                                 <button type="button" id="pricing-modal-btn-1" class="btn btn-primary" href="#pricing-modal-tab-1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                                    <div >EHR Optimization</div>
+                                    <div class='hidden-xs'>EHR Optimization</div>
                                 </button>
                             </div>
                             <div class="btn-group button-color-2" role="group">
                                 <button type="button" id="pricing-modal-btn-2" class="btn btn-default " href="#pricing-modal-tab-2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                                    <div class='hidden-xs  modal-pricing-text'>Sustainable Practice</div>
+                                    <div class='hidden-xs'>Sustainable Practice</div>
                                 </button>
                             </div>
                             <div class="btn-group button-color-3" role="group">
                                 <button type="button" id="pricing-modal-btn-3" class="btn btn-default " href="#pricing-modal-tab-3" data-toggle="tab"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-                                    <div class='hidden-xs  modal-pricing-text'>Exponential Growth</div>
+                                    <div class='hidden-xs '>Exponential Growth</div>
                                 </button>
                             </div>
                         </div>
@@ -2914,19 +2915,37 @@ patients within the next three to five years.</p></h5>
                                           
                                             <div class='inquire-title'>
                                                 <h4>Receive Your <strong><em> Free Preliminary Net Income Guarantee</em></strong></h4>
+                                                <h4><em>Plus an exclusive Industry Analysis Report</em></h4>
+                                                
                                              </div>
+                                            
+                                            <hr/>
 
-
-                                            <form action="">
+                                            <div class='bt-form__wrapper'>
+                                                <form class=" bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled action="" >
+                                                    
                                                         <div class='form-title'>
                                                             <h5>Personal Details</h5>
                                                         </div>
                                                           <div class='row'>
-                                                              <div class="form-group col-md-6 inline required">
-                                                                  <div class='control-label'></div><input type="text" class="form-control" id="fname" placeholder="First Name">
+
+                                                            <!--<div class="bt-flabels__wrapper">
+                                                              <label>First Name</label>
+                                                              <input type="text" name="first_name" placeholder="First Name" autocomplete="off" data-parsley-required />
+                                                              <span class="bt-flabels__error-desc">Required</span>
+                                                            </div>-->
+                                                              
+                                                              <div class="col-md-6 inline required bt-flabels__wrapper">
+                                                                  <div class='required control-label'></div>
+                                                                      <label>First Name</label>
+                                                                      <input type="text" name="first_name" class="form-control" placeholder="First Name" data-parsley-required>
+                                                                      <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
-                                                                <div class="form-group col-md-6 required">
-                                                                  <div class='control-label'></div><input type="text" class="form-control" id="lname" placeholder="Last Name">
+                                                              
+                                                              <div class="form-group col-md-6 required bt-flabels__wrapper">
+                                                                  <label>Last Name</label>
+                                                                  <input type="text" class="form-control" name="lname" placeholder="Last Name" data-parsley-required>
+                                                                  <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                            </div>
                                                 
@@ -3017,14 +3036,16 @@ patients within the next three to five years.</p></h5>
                                                           </div>
 
                                                         </div>
-
-                                                      </form>
-
+                                                
+                                                        
                                                     <div class='row'>
                                                         <div class='text-center'>
                                                             <button type="button btn-large" class="btn btn-default btn-primary contact-btn" href="#inquire-tab-2" data-toggle="tab">Contact Us</button>
                                                         </div>
                                                     </div>
+
+                                                </form>
+                                            </div>
 
                                         </div> 
                                         
@@ -4067,7 +4088,9 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
 	<!-- JS Customization -->
 	<!-- JS Page Level -->
 	<script type="text/javascript" src="/static/js/pages/page_portfolio.js"></script>
+    <script type="text/javascript" src="/static/js/parsley.min.js"></script>
 
+    <!-- SET READ MORE PARAMETERS -->
     <script>
         $('article').readmore({
             speed: 500,
@@ -4075,15 +4098,62 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
             lessLink: '<h5><a  class="read-more" href="#">Read less</a></h5>',
         });
     </script>
+
+    <!-- FORM PARLSEY JAVASCRIPT FLOATING TEXT -->
+<script>
+(function () {
+    (function ($) {
+        'use strict';
+        var floatingLabel;
+        floatingLabel = function (onload) {
+            var $input;
+            $input = $(this);
+            if (onload) {
+                $.each($('.bt-flabels__wrapper input'), function (index, value) {
+                    var $current_input;
+                    $current_input = $(value);
+                    if ($current_input.val()) {
+                        $current_input.closest('.bt-flabels__wrapper').addClass('bt-flabel__float');
+                    }
+                });
+            }
+            setTimeout(function () {
+                if ($input.val()) {
+                    $input.closest('.bt-flabels__wrapper').addClass('bt-flabel__float');
+                } else {
+                    $input.closest('.bt-flabels__wrapper').removeClass('bt-flabel__float');
+                }
+            }, 1);
+        };
+        $('.bt-flabels__wrapper input').keydown(floatingLabel);
+        $('.bt-flabels__wrapper input').change(floatingLabel);
+        window.addEventListener('load', floatingLabel(true), false);
+        $('.js-flabels').parsley().on('form:error', function () {
+            $.each(this.fields, function (key, field) {
+                if (field.validationResult !== true) {
+                    field.$element.closest('.bt-flabels__wrapper').addClass('bt-flabels__error');
+                }
+            });
+        });
+        $('.js-flabels').parsley().on('field:validated', function () {
+            if (this.validationResult === true) {
+                this.$element.closest('.bt-flabels__wrapper').removeClass('bt-flabels__error');
+            } else {
+                this.$element.closest('.bt-flabels__wrapper').addClass('bt-flabels__error');
+            }
+        });
+    }(jQuery));
+}.call(this));
+</script>
+
+
+
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			App.init();
 			PortfolioPage.init();
             // Initialize the plugin
 		});
-        
-
-
 	</script>
 
 {% endblock more-javascript %}

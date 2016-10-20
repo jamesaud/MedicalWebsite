@@ -260,7 +260,7 @@ header-fixed .header-v8.header-fixed-shrink .navbar-brand img{
 	color: $primary-color !important;
 }
 
-.form-group.required .control-label:before{
+.required .control-label:before{
    color: red;
    content: "*";
    position: absolute;

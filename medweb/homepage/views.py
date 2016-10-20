@@ -17,3 +17,7 @@ def index(request):
             return render(request, 'pages/homepage_login.html', context={'message': message})
 
     return render(request, 'pages/homepage_login.html', context={})
+
+def test(request):
+    print("----test------")
+    return render(request, 'pages/test.html', context={})

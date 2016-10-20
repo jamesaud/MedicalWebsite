@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "pages/homepage_base.html" %}
 {% load staticfiles %}
 {% load static %}
 
@@ -8,32 +8,102 @@
 {% endblock more-head %}
 
 {% block more-css %}
-{% get_static_prefix as STATIC_PREFIX %}
 	<!-- CSS Page Style -->
 
+{% load sass_tags %}
+<link rel="stylesheet" href="{% sass_src 'css/test.scss' %}">
+<link href="{% static 'css/parley-floating.css' %}" rel="stylesheet" type="text/css" />
 
 {% endblock more-css %}
 
 {% block modal %}
-<br><br><br><br><br><br><br><br><br><br><br>
-<form class="form-horizontal">
-  <div class="control-group">
-    <label class="control-label">Type a number</label>
-    <div class="controls">
-      <input type="number" />
-      <p class="help-block"></p>
+<br><br><br><br><br>
+<h1>This is a test</h1>
+<div class="bt-form__wrapper">
+  <form class="uk-form bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled>
+    <div class="uk-grid uk-grid-collapse">
+      <div class="uk-width-1-2">
+        <div class="bt-flabels__wrapper">
+          <label>First Name</label>
+          <input type="text" name="first_name" placeholder="First Name" autocomplete="off" data-parsley-required />
+          <span class="bt-flabels__error-desc">Required</span>
+        </div>
+      </div>
+      <div class="uk-width-1-2">
+        <div class="bt-flabels__wrapper bt-flabels--right">
+          <label>Last Name</label>
+          <input type="text" name="last_name" autocomplete="off" placeholder="Last Name" data-parsley-required />
+          <span class="bt-flabels__error-desc">Required</span>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="form-actions">
-</form>
+    <div class="bt-flabels__wrapper">
+      <label>Email</label>
+      <input type="text" name="email" placeholder="name@website.com" data-parsley-required data-parsley-type="email" autocomplete="off" />
+      <span class="bt-flabels__error-desc">Required/Invalid Email</span>
+    </div>
+    <div class="bt-flabels__wrapper">
+      <label>Phone (# used as password)</label>
+      <input type="text" name="phone" data-parsley-required placeholder="Phone (# used as password)" autocomplete="off" />
+      <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
+    </div>
+
+    <div class="uk-text-center uk-margin-top">
+      <button type="submit" class="uk-button uk-button-primary uk-button-large js-submit">Submit</button>
+    </div>
+  </form>
+
+
+</div>
+
 
 {% endblock modal %}
 
 {% block more-javascript %}
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- or use local jquery -->
-<script src="{% static 'js/jqBootstrapValidation/jqBootstrapValidation.js' %}"></script>
+ <script type="text/javascript" src="/static/js/parsley.min.js"></script>
 <script>
-  $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+(function () {
+    (function ($) {
+        'use strict';
+        var floatingLabel;
+        floatingLabel = function (onload) {
+            var $input;
+            $input = $(this);
+            if (onload) {
+                $.each($('.bt-flabels__wrapper input'), function (index, value) {
+                    var $current_input;
+                    $current_input = $(value);
+                    if ($current_input.val()) {
+                        $current_input.closest('.bt-flabels__wrapper').addClass('bt-flabel__float');
+                    }
+                });
+            }
+            setTimeout(function () {
+                if ($input.val()) {
+                    $input.closest('.bt-flabels__wrapper').addClass('bt-flabel__float');
+                } else {
+                    $input.closest('.bt-flabels__wrapper').removeClass('bt-flabel__float');
+                }
+            }, 1);
+        };
+        $('.bt-flabels__wrapper input').keydown(floatingLabel);
+        $('.bt-flabels__wrapper input').change(floatingLabel);
+        window.addEventListener('load', floatingLabel(true), false);
+        $('.js-flabels').parsley().on('form:error', function () {
+            $.each(this.fields, function (key, field) {
+                if (field.validationResult !== true) {
+                    field.$element.closest('.bt-flabels__wrapper').addClass('bt-flabels__error');
+                }
+            });
+        });
+        $('.js-flabels').parsley().on('field:validated', function () {
+            if (this.validationResult === true) {
+                this.$element.closest('.bt-flabels__wrapper').removeClass('bt-flabels__error');
+            } else {
+                this.$element.closest('.bt-flabels__wrapper').addClass('bt-flabels__error');
+            }
+        });
+    }(jQuery));
+}.call(this));
 </script>
 {% endblock more-javascript %}

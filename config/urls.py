@@ -11,7 +11,6 @@ from django.views import defaults as default_views
 from medweb.homepage import views as homepage_views
 
 urlpatterns = [
-    url(r'^test/$', TemplateView.as_view(template_name='pages/test.html'), name='test'),
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, include(admin.site.urls)),
 
@@ -21,6 +20,7 @@ urlpatterns = [
 
     # Your stuff: custom urls includes go here
     url(r'^$', homepage_views.index, name='home'),
+    url(r'^test/$', homepage_views.test, name='test'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
