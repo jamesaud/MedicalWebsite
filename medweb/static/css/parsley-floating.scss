@@ -7,6 +7,15 @@ $anim: cubic-bezier(0.215, 0.610, 0.355, 1.00);
 $error-bg: #feeeee;
 $error-color: darken($error-bg, 35);
 
+
+.required .control-label:before{
+   color: red;
+   content: "*";
+   position: absolute;
+   margin-left: 2px;
+    z-index: 100;
+}
+
 .bt-form__wrapper {
   margin: 15px auto;
   max-width: 500px;

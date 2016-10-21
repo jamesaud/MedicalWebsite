@@ -2919,30 +2919,24 @@ patients within the next three to five years.</p></h5>
                                                 
                                              </div>
                                             
-                                            <hr/>
-
                                             <div class='bt-form__wrapper'>
-                                                <form class=" bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled action="" >
+                                                <form id='inquire-form-1' class="bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
                                                     
                                                         <div class='form-title'>
                                                             <h5>Personal Details</h5>
                                                         </div>
                                                           <div class='row'>
 
-                                                            <!--<div class="bt-flabels__wrapper">
-                                                              <label>First Name</label>
-                                                              <input type="text" name="first_name" placeholder="First Name" autocomplete="off" data-parsley-required />
-                                                              <span class="bt-flabels__error-desc">Required</span>
-                                                            </div>-->
                                                               
-                                                              <div class="col-md-6 inline required bt-flabels__wrapper">
-                                                                  <div class='required control-label'></div>
-                                                                      <label>First Name</label>
+                                                              <div class="col-md-6 inline bt-flabels__wrapper required">
+                                                                  <div class='control-label'></div>
+                                                                  <label>First Name</label>
                                                                       <input type="text" name="first_name" class="form-control" placeholder="First Name" data-parsley-required>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                               
                                                               <div class="form-group col-md-6 required bt-flabels__wrapper">
+                                                                  <div class='control-label'></div>
                                                                   <label>Last Name</label>
                                                                   <input type="text" class="form-control" name="lname" placeholder="Last Name" data-parsley-required>
                                                                   <span class="bt-flabels__error-desc">Required</span>
@@ -2960,7 +2954,8 @@ patients within the next three to five years.</p></h5>
                                                           </div>
                                                 
                                                           <div class='row'>
-                                                                  <div class="bt-flabels__wrapper  col-md-6">
+                                                                  <div class="bt-flabels__wrapper required col-md-6">
+                                                                      <div class='control-label'></div>
                                                                       <label>Email</label>
                                                                       <input type="text" name="email" placeholder="Email" data-parsley-required data-parsley-type="email" autocomplete="off" />
                                                                       <span class="bt-flabels__error-desc">Required/Invalid Email</span>
@@ -2968,7 +2963,7 @@ patients within the next three to five years.</p></h5>
                                                               
                                                                   <div class="bt-flabels__wrapper col-md-6">
                                                                       <label>Phone (xxx-xxx-xxxx)</label>
-                                                                      <input type="text" name="phone" data-parsley-required  placeholder="Phone" autocomplete="off" class='phone-autodash'/>
+                                                                      <input type="text" name="phone" placeholder="Phone" autocomplete="off" class='phone-autodash' />
                                                                       <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
                                                                     </div>
                                                           </div>
@@ -2979,8 +2974,9 @@ patients within the next three to five years.</p></h5>
                                                                 
                                                           <div class='row'>
                                                                 
-                                                              <div class='bt-flabels__wrapper col-md-9'>
-                                                                  <div class="form-group required">
+                                                              <div class='bt-flabels__wrapper required col-md-9'>
+                                                                  <div class='control-label'></div>
+                                                                  <div class="form-group">
                                                                       <label>Group Name</label>
                                                                       <input type="text" name="group" class="form-control" placeholder="Group Name" data-parsley-required>
                                                                 <span class="bt-flabels__error-desc">Required</span></div>
@@ -3006,13 +3002,15 @@ patients within the next three to five years.</p></h5>
                                                           <div class='row'>
                                                               <div class='bt-flabels__wrapper col-md-6'>
                                                                   <div class="form-group required">
+                                                                      <div class='control-label'></div>
                                                                       <label>City</label>
                                                                       <input type="text" name="group" class="form-control" placeholder="City" data-parsley-required>
                                                                 <span class="bt-flabels__error-desc">Required</span></div>
                                                               </div>
                                                               
-                                                              <div class="bt-flabels__wrapper required col-md-3">
-                                                                     <div class='control-label'>
+                                                              <div class="bt-flabels__wrapper col-md-3 required">
+                                                                  
+                                                                  <div class='control-label'></div>
                                                                       <select class='form-control'>
                                                                         <option value='type1'>State</option>
                                                                         <option value='type2'>Val 2</option>
@@ -3021,13 +3019,14 @@ patients within the next three to five years.</p></h5>
                                                                         <option value='type5'>Val 5</option>
                                                                         <option value='type6'>Val 6</option>
                                                                       </select>
-                                                                     </div>
+                                                                     
                                                               </div>
                                                               
-                                                              <div class='bt-flabels__wrapper col-md-3'>
-                                                                  <div class="form-group required">
+                                                              <div class='bt-flabels__wrapper col-md-3 required'>
+                                                                  <div class="form-group ">
+                                                                      <div class='control-label'></div>
                                                                       <label>Zip</label>
-                                                                      <input type="text" name="zip" class="form-control" placeholder="Zip" data-parsley-required>
+                                                                      <input  type="text" name="zip" class="form-control " placeholder="Zip" data-parsley-required>
                                                                     <span class="bt-flabels__error-desc">Required</span>
                                                                   </div>
                                                               </div>
@@ -3035,35 +3034,31 @@ patients within the next three to five years.</p></h5>
                                                           </div>
                                                 
                                                 
-                                                           <div class='row'>
-                                                                  <div class='bt-flabels__wrapper col-md-12'>
-                                                                  <div class="form-group">
-                                                                      <label>Website</label>
-                                                                      <input type="text" name="website" class="form-control" placeholder="Website">
-                                                                  </div>
-                                                              </div>
-                                                          </div>
                                                 
                                                         <div class='row'>
-
-                                                          <div class="bt-flabels__wrapper col-md-6">
-                                                                      <label>Office Phone</label>
-                                                                      <input type="text" name="phone" data-parsley-required placeholder="Office Phone" autocomplete="off" class='phone-autodash'/>
-                                                                      <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
-                                                                    </div>
-                                                          <div class="form-group col-md-6">
-                                                                  <input type="text" class="form-control" id="phone1" placeholder="Best Day to Call">
-                                                          </div>
+                                                        
+                                                          
+                                                              <div class="bt-flabels__wrapper required col-md-9">
+                                                                        <div class='control-label'></div>
+                                                                          <label>Office Phone (xxx-xxx-xxxx)</label>
+                                                                          <input type="text" name="phone2" data-parsley-required placeholder="Office Phone" autocomplete="off" data-parsley-pattern='/(\d{3})\-?(\d{3})\-?(\d{4})/' class='phone-autodash '/>
+                                                                          <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
+                                                              </div>
+                                                            
+                                                            
+                                                              <div class="bt-flabels__wrapper col-md-3">
+                                                                          <label>Ext</label>
+                                                                          <input type="text" name="ext" placeholder="ext" autocomplete="off" class='inline'/>
+                                                              </div>
 
                                                         </div>
-                                                
+
                                                         
-                                                    <div class='row'>
-                                                        <div class='text-center'>
-                                                            <button type="submit" class="btn button btn-large btn-default btn-primary contact-btn js-submit" href="#inquire-tab-2" data-toggle="tab">Contact Us</button>
+                                                    <div class='row form-button'>
+                                                        <div class='col-md-12'>
+                                                            <button type="submit" class="btn button btn-large btn-default btn-primary contact-btn js-submit">Contact Us</button>
                                                         </div>
                                                     </div>
-                                                    <button type="submit" class="uk-button uk-button-primary uk-button-large js-submit">Submit</button>
 
                                                 </form>
                                             </div>
@@ -3098,12 +3093,12 @@ patients within the next three to five years.</p></h5>
                                                           </div>
                                                           <div class='row'>
                                                               <div class='col-md-6'>
-                                                                  <div class="form-group required">
+                                                                  <div class="form-group">
                                                                       <div class='control-label'><input type="text" class="form-control" id="groupname" placeholder="Group Name"></div>
                                                                   </div>
                                                               </div>
                                                               <div class='col-md-6'>
-                                                                  <div class="form-group required">
+                                                                  <div class="form-group">
                                                                      <div class='control-label'>
                                                                       <select class='form-control'>
                                                                         <option value='type1'>Group Type</option>
@@ -3979,8 +3974,7 @@ $(document).ready(function(){
 $('.phone-autodash').keyup(function(){
     $(this).val($(this).val().replace(/(\d{3})\-?(\d{3})\-?(\d{4})/,'$1-$2-$3'))
 });
-
-
+   
 </script>
 
     <!-- Revolution Slider Plugins -->
@@ -4130,6 +4124,33 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
         });
     </script>
 
+
+<!-- PARSLEY FUNCTIONS -->
+ <script>
+window.Parsley.on('field:success', function() {
+    var field = this.$element[0].id;
+    // This global callback will be called for any field that fails validation.
+    //console.log('Validation succeeded for: ', field);
+    //$('#' + field).parent().append('<i class="fa fa-check-circle fa-lg fa-fw"></i>');
+});
+</script>
+
+<script>
+    /* Ensure that form 1 is valid before moving to the next form  */
+    $("#inquire-form-1").submit(function(e){
+        e.preventDefault();
+        var form = $(this);
+
+        form.parsley().validate();
+
+        if (form.parsley().isValid()){
+            $("#inquire-tab-1").removeClass('active');
+            $("#inquire-tab-2").addClass('active');
+        };
+        
+    });
+</script>
+
     <!-- FORM PARLSEY JAVASCRIPT FLOATING TEXT -->
 <script>
 (function () {
@@ -4139,6 +4160,8 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
         floatingLabel = function (onload) {
             var $input;
             $input = $(this);
+            
+            
             if (onload) {
                 $.each($('.bt-flabels__wrapper input'), function (index, value) {
                     var $current_input;
@@ -4151,8 +4174,11 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
             setTimeout(function () {
                 if ($input.val()) {
                     $input.closest('.bt-flabels__wrapper').addClass('bt-flabel__float');
+                    $input.closest('.required').removeClass('required'); //Remove the red required dot
+            
                 } else {
                     $input.closest('.bt-flabels__wrapper').removeClass('bt-flabel__float');
+                    $input.closest('div').addClass('required'); //Replace the red required dot
                 }
             }, 1);
         };

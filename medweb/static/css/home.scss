@@ -307,10 +307,16 @@ a:hover{
                         margin-bottom: 3px;
                     }
                 }    
-            
+                
+                .form-button{
+                    margin-top: 28px;
+                }
+                
+                
                 .contact-btn{
                     font-size: $font-size-four;
-                    min-width: 180px;
+                    min-width: 100%;
+                    text-align: center;
                 }
                 
                 .next-step, .prev-step{
@@ -337,6 +343,9 @@ a:hover{
                             display: inline;
                             font-size: $font-size-six;
                         }
+                    }
+                    .form-title:first-child{
+                        margin-top: 0px;
                     }
                 }
                 
