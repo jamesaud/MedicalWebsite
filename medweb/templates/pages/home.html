@@ -435,7 +435,7 @@ Doctors save 8 minutes every patient visit and see up to 40% more patients. </di
         <div class='row hi-novo'>
             
             
-            <img src="{% static 'images/novo.png' %}" alt="Logo">
+            <img src="{% static 'images/novo.png' %}" alt="Logo" class='img-responsive col-centered'>
             <h2>Synergy+ has partnered with NovoMedici to offer a state of the art EHR &amp; RCM system </h2>
             
             <h5><p>Synergy+ with NovoMedici, a comprehensive practice resource, offers all-inclusive software and specialized services</p><p> <a href="{% static 'files/NovoClinical-Brochure.pdf' %}" target='_blank' >Read more about NovoMedici, our software partner</a></p></h5>
@@ -878,7 +878,8 @@ delivers the first all-inclusive system for independent doctors; you have to see
                 
               <div class="modal-body">
                 <div class="row">
-                  <div class=" timeline_width col-md-3 col-sm-12 col-xs-12">
+                    <!-- Timeline navigation for non-mobile drvices -->
+                  <div class=" timeline_width col-md-3 col-sm-12 col-xs-12 hide-mobile">
                         
                     <ul class="timeline-v1">
 						<li class="timeline">
@@ -968,8 +969,20 @@ delivers the first all-inclusive system for independent doctors; you have to see
 						<li class="clearfix" style="float: none;"></li>
 					</ul>  
                   </div> <!-- /col-md -->
-
-                  <div class='col-md-9 lg col-sm-12 col-xs-12'>
+                    <!-- Timeline navigation for mobile devices -->
+                    <div class='col-md-12 show-mobile'>
+                        <ul class="nav nav-tabs">
+                          <li class="active"><a class='selector-1' data-toggle='tab' href='#PE'>Patient Engagement</a></li>
+                          <li><a class='selector-2' data-toggle='tab' href='#DS'>Data Security</a></li>
+                          <li><a class='selector-3' data-toggle='tab' href='#EHR'>EHR</a></li>
+                          <li><a class='selector-4' data-toggle='tab' href='#RCM'>RCM</a></li>
+                          <li><a class='selector-5' data-toggle='tab' href='#DA'>Data Analytics</a></li>
+                          <li><a class='selector-6' data-toggle='tab' href='#PHM'>PHM</a></li>
+                          <li><a class='selector-7' data-toggle='tab' href='#ADD'>Services</a></li>
+                        </ul>
+                    </div>
+                    
+          <div class='col-md-9 lg col-sm-12 col-xs-12'>
                         <div class="tab-content">
                             
                           <div id="PE" class="tab-pane fade in active">
@@ -1519,7 +1532,7 @@ patients within the next three to five years.</p></h5>
         
         
         <div class='container content '>
-            <div class='graph'>
+            <div class='graph hide-mobile'>
                 <table id="q-graph">
                 <caption></caption>
                 <thead>
@@ -2918,6 +2931,8 @@ patients within the next three to five years.</p></h5>
                                                 <h4><em>Plus an exclusive Industry Analysis Report</em></h4>
                                                 
                                              </div>
+                                            
+                                            <hr>
                                             
                                             <div class='bt-form__wrapper'>
                                                 <form id='inquire-form-1' class="bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
