@@ -52,6 +52,11 @@
         <!-- CSS Customization -->
         <link rel="stylesheet" href="/static/css/custom.css">
 
+        <!-- For datetimepicker bootstrap plugin -->
+
+        <link rel="stylesheet" href="{% static 'bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css' %}" />
+        
+        
          <!-- My CSS -->
         {% load sass_tags %}
         <link rel="stylesheet" href="{% sass_src 'css/project.scss' %}">
@@ -334,6 +339,8 @@
 	<script type="text/javascript" src="/static/plugins/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="/static/plugins/jquery/jquery-migrate.min.js"></script>
 	<script type="text/javascript" src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/parsley.min.js"></script>
+
 	<!-- JS Implementing Plugins -->
 	<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
 	<script type="text/javascript" src="/static/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
@@ -347,8 +354,16 @@
 	<script src="/static/plugins/html5shiv.js"></script>
 	<script src="/static/plugins/placeholder-IE-fixes.js"></script>
 	<![endif]-->
+    
     <!-- Waypoints plugin -->
     <script src="{% static 'css/plugins/waypoints4.0/lib/jquery.waypoints.min.js' %}"></script>
+        
+    <!-- BOOTSRAP DATETIME PICKER Plugin -->
+    <script type="text/javascript" src="{% static 'bower_components/moment/min/moment.min.js' %}"></script> <!-- MOMENT js requirement -->
+
+    <script src="{% static 'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js' %}"></script>
+
+    
         
     <script>
     // .modal-backdrop classes. Rely on the css classes to change modal styles.
@@ -396,9 +411,11 @@ $(function() {
     });
     </script>
     
+
    
 
     {% block more-javascript %}{% endblock more-javascript %}
 
+    
 </body>
 </html>

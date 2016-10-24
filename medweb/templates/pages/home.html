@@ -2924,7 +2924,7 @@ patients within the next three to five years.</p></h5>
                                 <div id="pricing-modal-tab-4" class="tab-pane in">
                                    
                                     <div class='tab-pane-content tab-content'>
-                                        <div id='inquire-tab-1' class='tab-pane in active'>
+                                        <div id='inquire-tab-1' class='tab-pane in'>
                                           
                                             <div class='inquire-title'>
                                                 <h4>Receive Your <strong><em> Free Preliminary Net Income Guarantee</em></strong></h4>
@@ -2940,9 +2940,8 @@ patients within the next three to five years.</p></h5>
                                                         <div class='form-title'>
                                                             <h5>Personal Details</h5>
                                                         </div>
-                                                          <div class='row'>
-
-                                                              
+                                                    
+                                                          <div class='row form-group'>
                                                               <div class="col-md-6 inline bt-flabels__wrapper required">
                                                                   <div class='control-label'></div>
                                                                   <label>First Name</label>
@@ -2950,7 +2949,7 @@ patients within the next three to five years.</p></h5>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                               
-                                                              <div class="form-group col-md-6 required bt-flabels__wrapper">
+                                                              <div class="col-md-6 required bt-flabels__wrapper">
                                                                   <div class='control-label'></div>
                                                                   <label>Last Name</label>
                                                                   <input type="text" class="form-control" name="lname" placeholder="Last Name" data-parsley-required>
@@ -2959,8 +2958,8 @@ patients within the next three to five years.</p></h5>
                                                            </div>
                                                 
                                                         
-                                                          <div class='row'>
-                                                            <div class="form-group required bt-flabels__wrapper col-md-12">
+                                                          <div class='row form-group'>
+                                                            <div class="required bt-flabels__wrapper col-md-12">
                                                                   <div class='control-label'></div>
                                                                 <label>Title or Position</label>
                                                                 <input type="text" name="title" class="form-control" placeholder="Title or Position" data-parsley-required>
@@ -2978,7 +2977,7 @@ patients within the next three to five years.</p></h5>
                                                               
                                                                   <div class="bt-flabels__wrapper col-md-6">
                                                                       <label>Phone (xxx-xxx-xxxx)</label>
-                                                                      <input type="text" name="phone" placeholder="Phone" autocomplete="off" class='phone-autodash' />
+                                                                      <input type="text" name="phone" placeholder="Home Phone" autocomplete="off" class='phone-autodash' />
                                                                       <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
                                                                     </div>
                                                           </div>
@@ -2987,7 +2986,7 @@ patients within the next three to five years.</p></h5>
                                                             <h5>Practice Information</h5>
                                                           </div>
                                                                 
-                                                          <div class='row'>
+                                                          <div class='row form-group'>
                                                                 
                                                               <div class='bt-flabels__wrapper required col-md-9'>
                                                                       <div class='control-label'></div>
@@ -2997,7 +2996,7 @@ patients within the next three to five years.</p></h5>
                                                               </div>
                                                               
                                                               <div class='col-md-3'>
-                                                                  <div class="form-group required">
+                                                                  <div class="required">
                                                                      <div class='control-label'>
                                                                       <select class='form-control'>
                                                                         <option value='type1'>Group Type</option>
@@ -3013,9 +3012,9 @@ patients within the next three to five years.</p></h5>
                                                               
                                                           </div>
                                                     
-                                                          <div class='row'>
+                                                          <div class='row form-group'>
                                                               <div class='bt-flabels__wrapper col-md-6'>
-                                                                  <div class="form-group required">
+                                                                  <div class="required">
                                                                       <div class='control-label'></div>
                                                                       <label>City</label>
                                                                       <input type="text" name="group" class="form-control" placeholder="City" data-parsley-required>
@@ -3037,22 +3036,21 @@ patients within the next three to five years.</p></h5>
                                                               </div>
                                                               
                                                               <div class='bt-flabels__wrapper col-md-3 required'>
-                                                                  <div class="form-group ">
                                                                       <div class='control-label'></div>
                                                                       <label>Zip</label>
                                                                       <input  type="text" name="zip" class="form-control " placeholder="Zip" data-parsley-required>
                                                                     <span class="bt-flabels__error-desc">Required</span>
-                                                                  </div>
                                                               </div>
                                                               
                                                           </div>
                                                 
                                                 
                                                 
-                                                        <div class='row'>
+                                                        <div class='row form-group'>
                                                         
                                                           
                                                               <div class="bt-flabels__wrapper required col-md-9">
+                                                                        
                                                                         <div class='control-label'></div>
                                                                           <label>Office Phone (xxx-xxx-xxxx)</label>
                                                                           <input type="text" name="phone2" data-parsley-required placeholder="Office Phone" autocomplete="off" data-parsley-pattern='/(\d{3})\-?(\d{3})\-?(\d{4})/' class='phone-autodash '/>
@@ -3062,9 +3060,16 @@ patients within the next three to five years.</p></h5>
                                                             
                                                               <div class="bt-flabels__wrapper col-md-3">
                                                                           <label>Ext</label>
-                                                                          <input type="text" name="ext" placeholder="ext" autocomplete="off" class='inline'/>
+                                                                          <input type="text" name="ext" placeholder="ext" autocomplete="off"/>
                                                               </div>
 
+                                                        </div>
+                                                    
+                                                        <div class='row'>                                                                        
+                                                                         <div class='col-md-12 bt-flabels__wrapper'>
+                                                                             <label>Best time to call</label>
+                                                                            <input type='text' class="form-control " id='datetimepicker3' name="time" placeholder="Best time to call" autocomplete="off"/>
+                                                                        </div>
                                                         </div>
 
                                                         
@@ -3079,7 +3084,7 @@ patients within the next three to five years.</p></h5>
 
                                         </div> 
                                         
-                                        <div id='inquire-tab-2' class='tab-pane in'>
+                                        <div id='inquire-tab-2' class='tab-pane in active'>
                                             <div class="card hovercard">
                                                     <!--<div class="useravatar">
                                                         <img alt="" src="{% static 'images/girl.jpeg' %}">
@@ -3090,49 +3095,6 @@ patients within the next three to five years.</p></h5>
                                                     </div>
 
                                             </div>
-
-                                            <form action="">
-                                                <div class='form-title'>
-                                                            <h5>Practice Information</h5>
-                                                          </div>
-                                                          <div class='row'>
-                                                              <div class="form-group col-md-12">
-                                                                  <input type="text" class="form-control" id="phone2" placeholder="Cell Phone">
-                                                              </div>
-                                                          </div>
-                                                           <div class='row'>
-                                                                  <div class="form-group col-md-12">
-                                                                      <input type="text" class="form-control" id="groupname" placeholder="Website">
-                                                                  </div>
-                                                          </div>
-                                                          <div class='row'>
-                                                              <div class='col-md-6'>
-                                                                  <div class="form-group">
-                                                                      <div class='control-label'><input type="text" class="form-control" id="groupname" placeholder="Group Name"></div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class='col-md-6'>
-                                                                  <div class="form-group">
-                                                                     <div class='control-label'>
-                                                                      <select class='form-control'>
-                                                                        <option value='type1'>Group Type</option>
-                                                                        <option value='type2'>Val 2</option>
-                                                                        <option value='type3'>Val 3</option>
-                                                                        <option value='type4'>Val 4</option>
-                                                                        <option value='type5'>Val 5</option>
-                                                                        <option value='type6'>Val 6</option>
-                                                                      </select>
-                                                                     </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-
-                                                          <div class='row'>
-                                                              <div class="form-group required col-md-12">
-                                                                  <div class='control-label'></div><textarea class="form-control" rows="4" id="comment" placeholder="Message"></textarea>
-                                                              </div>
-                                                          </div>
-                                                      </form>
 
                                                     <div class='row'>
                                                         <div class='col-md-12'>
@@ -4127,7 +4089,6 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
 	<!-- JS Customization -->
 	<!-- JS Page Level -->
 	<script type="text/javascript" src="/static/js/pages/page_portfolio.js"></script>
-    <script type="text/javascript" src="/static/js/parsley.min.js"></script>
 
     <!-- SET READ MORE PARAMETERS -->
     <script>
@@ -4217,6 +4178,18 @@ window.Parsley.on('field:success', function() {
 }.call(this));
 </script>
 
+
+
+<!-- Datetime picker javascript -->
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker3').datetimepicker({
+         //sideBySide: true,
+        });
+
+    });
+</script>
 
 
 	<script type="text/javascript">

@@ -2,7 +2,7 @@
 
 $border-color: none;
 $active-bg: #f5f8fc;
-$active-color: #52a6e1;
+$active-color: $primary-color;
 $anim: cubic-bezier(0.215, 0.610, 0.355, 1.00);
 $error-bg: #feeeee;
 $error-color: darken($error-bg, 35);
