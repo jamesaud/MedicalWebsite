@@ -3095,6 +3095,12 @@ patients within the next three to five years.</p></h5>
                                                     </div>
 
                                             </div>
+                                            
+                                            
+                                            <div class='bt-form__wrapper'>
+                                                <form id='inquire-form-2' class="parsley-validate bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                </form>
+                                            </div>
 
                                                     <div class='row'>
                                                         <div class='col-md-12'>
@@ -4124,6 +4130,13 @@ window.Parsley.on('field:success', function() {
         };
         
     });
+
+</script>
+
+<script>
+$(function(){          
+   $('.parsley-validate').parsley();
+})
 </script>
 
     <!-- FORM PARLSEY JAVASCRIPT FLOATING TEXT -->
@@ -4185,6 +4198,8 @@ window.Parsley.on('field:success', function() {
 <script type="text/javascript">
     $(function () {
         $('#datetimepicker3').datetimepicker({
+            icons: {
+                },
          //sideBySide: true,
         });
 

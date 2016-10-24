@@ -337,9 +337,11 @@
 
 	<!-- JS Global Compulsory -->
 	<script type="text/javascript" src="/static/plugins/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="/static/plugins/jquery/jquery-migrate.min.js"></script>
-	<script type="text/javascript" src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/static/js/parsley.min.js"></script>
+    <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-migrate-1.4.1.min.js' %}"></script>
+    
+    
+    <script type="text/javascript" src="/static/js/parsley.min.js"></script> <!-- DATA parsley plugin -->
 
 	<!-- JS Implementing Plugins -->
 	<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
