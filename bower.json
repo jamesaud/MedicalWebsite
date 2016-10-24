@@ -4,6 +4,7 @@
   "componentsDirectory": "public/",
   "dependencies": {
     "jquery": "*",
-    "eonasdan-bootstrap-datetimepicker": "*"
+    "eonasdan-bootstrap-datetimepicker": "*",
+    "bootstrap" : "3.3.7"
   }
 }

@@ -30,7 +30,7 @@
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     
         <!-- CSS Global Compulsory -->
-        <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="/static/css/style.css">
 
         <!-- CSS Header and Footer -->
@@ -336,12 +336,15 @@
 	
 
 	<!-- JS Global Compulsory -->
-	<script type="text/javascript" src="/static/plugins/jquery/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="/static/plugins/jquery/jquery.min.js"></script>
+    	<script type="text/javascript" src="/static/plugins/jquery/jquery-migrate.min.js"></script>-->
+
     <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/jquery-migrate-1.4.1.min.js' %}"></script>
     
+    <script type="text/javascript" src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
     
-    <script type="text/javascript" src="/static/js/parsley.min.js"></script> <!-- DATA parsley plugin -->
 
 	<!-- JS Implementing Plugins -->
 	<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
@@ -359,6 +362,9 @@
     
     <!-- Waypoints plugin -->
     <script src="{% static 'css/plugins/waypoints4.0/lib/jquery.waypoints.min.js' %}"></script>
+    
+    <script type="text/javascript" src="/static/js/parsley.min.js"></script> <!-- DATA parsley plugin -->
+
         
     <!-- BOOTSRAP DATETIME PICKER Plugin -->
     <script type="text/javascript" src="{% static 'bower_components/moment/min/moment.min.js' %}"></script> <!-- MOMENT js requirement -->
