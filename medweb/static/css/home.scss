@@ -427,15 +427,7 @@ a:hover{
             color: black !important;
         }
     }
-    
-    .hi-novo{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        h2{color: black;}
-        a{
-            color: $third-color;
-        }
-    }
+  
     
     @media screen and (min-width: 769px){
         #component-pe{
@@ -593,6 +585,19 @@ a:hover{
             .solution{
                 color: $primary-color;
             }
+        }
+    }
+}
+
+.section-why-us{
+      
+    .why-novo{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        h2{color: black;}
+        a{
+            color: $third-color;
         }
     }
 }
