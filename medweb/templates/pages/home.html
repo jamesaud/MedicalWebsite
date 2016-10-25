@@ -3197,49 +3197,301 @@ patients within the next three to five years.</p></h5>
                                                     <div class='form-title'>
                                                             <h5>Human Resource Evaluation</h5>
                                                         </div>
-                                                        
-                                                          <div class='row form-group'>
-                                                                    <div class="bt-flabels__wrapper required col-md-6">
+                                                            
+                                                          <div class='row'>
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
                                                                          <div class='control-label'></div>
-                                                                          <label># of Providers</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="providers" placeholder="# of Providers" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
-                                                                    </div>
-                                                                    
-                                                                    <div class="bt-flabels__wrapper required col-md-6">
-                                                                         <div class='control-label'></div>
-                                                                          <label># of Non-Providers</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="non-providers" placeholder="# of Non-Providers" autocomplete="off"/>
+                                                                          <label># Providers</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="providers" placeholder="# Providers" autocomplete="off"/>
                                                                           <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
                                                               
+                                                              
+                                                                    
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
+                                                                         <div class='control-label'></div>
+                                                                          <label># IT Staff</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="it_staff" placeholder="# IT Staff" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                              
+                                                              
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Other Staff</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="other_staff" placeholder="# Other Staff" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                                    
+                                                          </div>
+                                                    
+                                                    
+                                                    <div class='form-title'>
+                                                            <h5>EHR Users</h5>
+                                                    </div>
+                                                    
+                                                    <div class='row'>
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Providers</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_providers" placeholder="# Providers" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                                    
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># MAs</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_ma" placeholder="# MAs" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                        
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Receptionists</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_receptionist" placeholder="# Receptionists" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                        
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Admin</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_admin" placeholder="# Admin" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                              
+                                                          </div>
+                                                    
+                                                     <div class='form-title'>
+                                                            <h5>RCM Details</h5>
+                                                    </div>
+                                                    
+                                                    <div class='row form-group'>
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Billers</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_biller" placeholder="# Billers" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                                    
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Coders</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_coder" placeholder="# Coders" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                        
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Scribes</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_scribe" placeholder="# Scribes" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                        
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Collectors</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_collector" placeholder="# Collectors" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                              
+                                                          </div>
+                                                            
+                                                        <div class='row form-group'>
+                                                            <div class="bt-flabels__wrapper required col-md-12">
+                                                                  <div class='control-label'></div>
+                                                                <label>Clearing House</label>
+                                                                <input type="text" name="clearing_house" placeholder="Clearing House" data-parsley-required autocomplete="off" >
+                                                                <span class="bt-flabels__error-desc">Required</span>
+                                                              </div>
                                                           </div>
                                                     
                                                         <div class='row form-group'>
-                                                                    <div class="bt-flabels__wrapper required col-md-6">
-                                                                         <div class='control-label'></div>
-                                                                          <label># of Providers</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="providers" placeholder="# of Providers" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
-                                                                    </div>
-                                                                    
-                                                                    <div class="bt-flabels__wrapper required col-md-6">
-                                                                         <div class='control-label'></div>
-                                                                          <label># of Non-Providers</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="non-providers" placeholder="# of Non-Providers" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
-                                                                    </div>
-                                                              
+                                                            <div class="bt-flabels__wrapper required col-md-12">
+                                                                  <div class='control-label'></div>
+                                                                <label>Billing Company</label>
+                                                                <input type="text" name="billing_company" placeholder="Billing Company" data-parsley-required autocomplete="off" >
+                                                                <span class="bt-flabels__error-desc">Required</span>
+                                                              </div>
                                                           </div>
                                                     
-                                                            
-                                                            
-                                                        
+                                                    <div class='row form-statement form-group required'>
+                                                        <div class='col-md-12'>
+                                                            <div class='inline'>It usually takes me</div>
+                                                            <div class='inline control-label'></div>
+                                                            <input type="number" name="days" placeholder="10" data-parsley-required data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off" > 
+                                                            <div class='inline'>days to collect</div>
+                                                            <div class='inline control-label'></div>
+                                                            <input type="number" name="billing_company" placeholder="20" data-parsley-required data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off">
+                                                            % of ARs.
+                                                        </div>
+                                                      
+                                                    </div>
 
                                                     <div class='row'>
                                                         <div class='col-md-12'>
                                                             <button type="button btn-large" class="btn btn-default prev-step btn-primary contact-btn" href="#inquire-tab-2" data-toggle="tab">Back</button>
                                                             <button type="submit" class="btn btn-default next-step btn-primary contact-btn" >Last Page</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+
+
+                                        </div>
+                                        
+                                        <div id='inquire-tab-4' class='tab-pane in'>
+                                            <div class='inquire-title'>
+                                                    <!--<div class="useravatar">
+                                                        <img alt="" src="{% static 'images/girl.jpeg' %}">
+                                                    </div>-->
+
+                                                    <div class="card-info"> 
+                                                        <span class="card-title"><h3>You've almost got it...</h3></span>
+                                                    </div>
+
+                                            </div>
+                                            
+                                            <hr>
+                                            
+                                            <div class='bt-form__wrapper'>
+                                                <form id='inquire-form-4' class=" bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                    
+                                                    <div class='form-title'>
+                                                            <h5>Human Resource Evaluation</h5>
+                                                        </div>
+                                                            
+                                                          <div class='row'>
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Providers</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="providers" placeholder="# Providers" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                              
+                                                              
+                                                                    
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
+                                                                         <div class='control-label'></div>
+                                                                          <label># IT Staff</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="it_staff" placeholder="# IT Staff" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                              
+                                                              
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Other Staff</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="other_staff" placeholder="# Other Staff" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                                    
+                                                          </div>
+                                                    
+                                                    
+                                                    <div class='form-title'>
+                                                            <h5>EHR Users</h5>
+                                                    </div>
+                                                    
+                                                    <div class='row'>
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Providers</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_providers" placeholder="# Providers" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                                    
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># MAs</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_ma" placeholder="# MAs" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                        
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Receptionists</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_receptionist" placeholder="# Receptionists" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                        
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Admin</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_admin" placeholder="# Admin" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                              
+                                                          </div>
+                                                    
+                                                     <div class='form-title'>
+                                                            <h5>RCM Details</h5>
+                                                    </div>
+                                                    
+                                                    <div class='row form-group'>
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Billers</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_biller" placeholder="# Billers" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                                    
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Coders</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_coder" placeholder="# Coders" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                        
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Scribes</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_scribe" placeholder="# Scribes" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                        
+                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                         <div class='control-label'></div>
+                                                                          <label># Collectors</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_collector" placeholder="# Collectors" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                              
+                                                          </div>
+                                                            
+                                                        <div class='row form-group'>
+                                                            <div class="bt-flabels__wrapper required col-md-12">
+                                                                  <div class='control-label'></div>
+                                                                <label>Clearing House</label>
+                                                                <input type="text" name="clearing_house" placeholder="Clearing House" data-parsley-required autocomplete="off" >
+                                                                <span class="bt-flabels__error-desc">Required</span>
+                                                              </div>
+                                                          </div>
+                                                    
+                                                        <div class='row form-group'>
+                                                            <div class="bt-flabels__wrapper required col-md-12">
+                                                                  <div class='control-label'></div>
+                                                                <label>Billing Company</label>
+                                                                <input type="text" name="billing_company" placeholder="Billing Company" data-parsley-required autocomplete="off" >
+                                                                <span class="bt-flabels__error-desc">Required</span>
+                                                              </div>
+                                                          </div>
+                                                    
+                                                    <div class='row form-statement form-group'>
+                                                        <div class='col-md-12'>
+                                                            It usually takes me
+                                                            <input type="number" name="days" placeholder="10" data-parsley-required data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off" > 
+                                                            days to collect 
+                                                            <input type="number" name="billing_company" placeholder="20" data-parsley-required data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off">
+                                                            % of ARs.
+                                                        </div>
+                                                      
+                                                    </div>
+
+                                                    <div class='row'>
+                                                        <div class='col-md-12'>
+                                                            <button type="button btn-large" class="btn btn-default prev-step btn-primary contact-btn" href="#inquire-tab-3" data-toggle="tab">Back</button>
+                                                            <button type="submit" class="btn btn-default next-step btn-primary contact-btn" >Finish</button>
                                                         </div>
                                                     </div>
                                                     
@@ -4318,8 +4570,10 @@ function validate_form_tab(form_id, tab_id_curr, tab_id_next){
         })
 }
 
+//INQUIRE FORM JQUERY SUBMIT BUTTON LISTENERS
 validate_form_tab('#inquire-form-1', '#inquire-tab-1', '#inquire-tab-2');
 validate_form_tab('#inquire-form-2', '#inquire-tab-2', '#inquire-tab-3');
+validate_form_tab('#inquire-form-3', '#inquire-tab-3', '#inquire-tab-4');
  
 </script>
 

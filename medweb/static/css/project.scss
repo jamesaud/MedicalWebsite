@@ -523,10 +523,6 @@ hr.no-margin{
 /* END CUSTOM MODAL STYLE  */
 
 #modal-contact{
-    
-   .form-inline{
-        display: inline;
-    }
    .modal-dialog{
         margin-top: 5%;
         margin-bottom: 5%;
@@ -553,4 +549,8 @@ hr.no-margin{
     }
 }
 
+
+.inline{
+    display: inline;
+}
 
