@@ -327,6 +327,15 @@ a:hover{
                 }
                 .prev-step{
                     float: left;
+                    background-color: transparent;
+                    color: $btn-color;
+                    border: 1px solid $btn-color;
+                    
+                    &:hover{
+                        color: white;
+                        background-color: $btn-color;
+                        transition: all .1s;
+                    }
                 }
                
                 form{

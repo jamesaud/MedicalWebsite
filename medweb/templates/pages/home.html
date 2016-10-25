@@ -2935,7 +2935,7 @@ patients within the next three to five years.</p></h5>
                                             <hr>
                                             
                                             <div class='bt-form__wrapper'>
-                                                <form id='inquire-form-1' class="bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                <form id='inquire-form-1' class="bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  >
                                                     
                                                         <div class='form-title'>
                                                             <h5>Personal Details</h5>
@@ -2945,27 +2945,28 @@ patients within the next three to five years.</p></h5>
                                                               <div class="col-md-6 inline bt-flabels__wrapper required">
                                                                   <div class='control-label'></div>
                                                                   <label>First Name</label>
-                                                                      <input type="text" name="first_name" class="form-control" placeholder="First Name" data-parsley-required>
+                                                                      <input type="text" name="first_name" placeholder="First Name" data-parsley-required>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                               
                                                               <div class="col-md-6 required bt-flabels__wrapper">
                                                                   <div class='control-label'></div>
                                                                   <label>Last Name</label>
-                                                                  <input type="text" class="form-control" name="lname" placeholder="Last Name" data-parsley-required>
+                                                                  <input type="text" name="lname" placeholder="Last Name" data-parsley-required>
                                                                   <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                            </div>
                                                 
                                                         
                                                           <div class='row form-group'>
-                                                            <div class="required bt-flabels__wrapper col-md-12">
+                                                            <div class="bt-flabels__wrapper required col-md-12">
                                                                   <div class='control-label'></div>
                                                                 <label>Title or Position</label>
-                                                                <input type="text" name="title" class="form-control" placeholder="Title or Position" data-parsley-required>
+                                                                <input type="text" name="title" placeholder="Title or Position" data-parsley-required autocomplete="off" >
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
+                                                    
                                                 
                                                           <div class='row'>
                                                                   <div class="bt-flabels__wrapper required col-md-6">
@@ -2991,14 +2992,14 @@ patients within the next three to five years.</p></h5>
                                                               <div class='bt-flabels__wrapper required col-md-9'>
                                                                       <div class='control-label'></div>
                                                                       <label>Group Name</label>
-                                                                      <input type="text" name="group" class="form-control" placeholder="Group Name" data-parsley-required>
+                                                                      <input type="text" name="group"  placeholder="Group Name" data-parsley-required>
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                               
                                                               <div class='col-md-3'>
                                                                   <div class="required">
                                                                      <div class='control-label'>
-                                                                      <select class='form-control'>
+                                                                      <select>
                                                                         <option value='type1'>Group Type</option>
                                                                         <option value='type2'>Val 2</option>
                                                                         <option value='type3'>Val 3</option>
@@ -3017,14 +3018,14 @@ patients within the next three to five years.</p></h5>
                                                                   <div class="required">
                                                                       <div class='control-label'></div>
                                                                       <label>City</label>
-                                                                      <input type="text" name="group" class="form-control" placeholder="City" data-parsley-required>
+                                                                      <input type="text" name="group" placeholder="City" data-parsley-required>
                                                                 <span class="bt-flabels__error-desc">Required</span></div>
                                                               </div>
                                                               
                                                               <div class="bt-flabels__wrapper col-md-3 required">
                                                                   
                                                                   <div class='control-label'></div>
-                                                                      <select class='form-control'>
+                                                                      <select>
                                                                         <option value='type1'>State</option>
                                                                         <option value='type2'>Val 2</option>
                                                                         <option value='type3'>Val 3</option>
@@ -3038,7 +3039,7 @@ patients within the next three to five years.</p></h5>
                                                               <div class='bt-flabels__wrapper col-md-3 required'>
                                                                       <div class='control-label'></div>
                                                                       <label>Zip</label>
-                                                                      <input  type="text" name="zip" class="form-control " placeholder="Zip" data-parsley-required>
+                                                                      <input  type="text" name="zip" placeholder="Zip" data-parsley-required>
                                                                     <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                               
@@ -3068,7 +3069,7 @@ patients within the next three to five years.</p></h5>
                                                         <div class='row'>                                                                        
                                                                          <div class='col-md-12 bt-flabels__wrapper'>
                                                                              <label>Best time to call</label>
-                                                                            <input type='text' class="form-control " id='datetimepicker3' name="time" placeholder="Best time to call" autocomplete="off"/>
+                                                                            <input type='text' id='datetimepicker3' name="time" placeholder="Best time to call" autocomplete="off"/>
                                                                         </div>
                                                         </div>
 
@@ -3084,8 +3085,8 @@ patients within the next three to five years.</p></h5>
 
                                         </div> 
                                         
-                                        <div id='inquire-tab-2' class='tab-pane in active'>
-                                            <div class="card hovercard">
+                                        <div id='inquire-tab-2' class='tab-pane in'>
+                                            <div class='inquire-title'>
                                                     <!--<div class="useravatar">
                                                         <img alt="" src="{% static 'images/girl.jpeg' %}">
                                                     </div>-->
@@ -3096,20 +3097,151 @@ patients within the next three to five years.</p></h5>
 
                                             </div>
                                             
+                                            <hr>
                                             
                                             <div class='bt-form__wrapper'>
-                                                <form id='inquire-form-2' class="parsley-validate bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
-                                                </form>
-                                            </div>
+                                                <form id='inquire-form-2' class=" bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                    
+                                                    <div class='form-title'>
+                                                            <h5>EHR Information</h5>
+                                                        </div>
+                                                        
+                                                            
+                                                           <div class='row form-group'>   
+                                                              <div class="bt-flabels__wrapper col-md-12 required">
+                                                                  
+                                                                  <div class='control-label'></div>
+                                                                      <select>
+                                                                        <option value='type1'>Current System</option>
+                                                                        <option value='type2'>Val 2</option>
+                                                                        <option value='type3'>Val 3</option>
+                                                                        <option value='type4'>Val 4</option>
+                                                                        <option value='type5'>Val 5</option>
+                                                                        <option value='type6'>Val 6</option>
+                                                                      </select>
+                                                                     
+                                                              </div>
+                                                           </div>
+                                                        
+                                                          
+                                                
+                                                          <div class='row form-group'>
+                                                                  <div class="bt-flabels__wrapper col-md-6">
+                                                                      <label># of EHR support vendors</label>
+                                                                      <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="vendors" placeholder="# of EHR support vendors" autocomplete="off"/>
+                                                                      <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                              
+                                                                    <div class="bt-flabels__wrapper col-md-6">
+                                                                      <label># of EHR support personnel</label>
+                                                                      <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="personnel" placeholder="# of EHR support personnel" autocomplete="off"/>
+                                                                      <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                          </div>
+                                                    
+                                                            <div class='row form-group'>
+                                                                          <div class="bt-flabels__wrapper text-area col-md-12">
+                                                                              <span class='text-area-title'>EHR LIKES:</span>
+                                                                              <textarea name="likes" placeholder="Things I like about my current EHR"></textarea>
+                                                                              
+                                                                            </div>
+                                                            </div>
+                                                    
+                                                            <div class='row form-group'>
+                                                                          <div class="bt-flabels__wrapper text-area col-md-12">
+                                                                              <span class='text-area-title'>EHR DISLIKES:</span>
+                                                                              <textarea name="dislikes" placeholder="Things I dislike about my current EHR"></textarea>
+                                                                            </div>
+                                                            </div>
+                                                            
+                                                        
 
                                                     <div class='row'>
                                                         <div class='col-md-12'>
                                                             <button type="button btn-large" class="btn btn-default prev-step btn-primary contact-btn" href="#inquire-tab-1" data-toggle="tab">Back</button>
-                                                            <button type="button btn-large" class="btn btn-default next-step btn-primary contact-btn"  h>Continue</button>
+                                                            <button type="submit" class="btn btn-default next-step btn-primary contact-btn" >Continue</button>
                                                         </div>
                                                     </div>
+                                                    
+                                                </form>
+                                            </div>
 
-                                        </div> 
+
+                                        </div>
+                                        
+                                        
+                                        <div id='inquire-tab-3' class='tab-pane in active'>
+                                            <div class='inquire-title'>
+                                                    <!--<div class="useravatar">
+                                                        <img alt="" src="{% static 'images/girl.jpeg' %}">
+                                                    </div>-->
+
+                                                    <div class="card-info"> 
+                                                        <span class="card-title"><h3>You've almost got it...</h3></span>
+                                                    </div>
+
+                                            </div>
+                                            
+                                            <hr>
+                                            
+                                            <div class='bt-form__wrapper'>
+                                                <form id='inquire-form-3' class=" bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                    
+                                                    <div class='form-title'>
+                                                            <h5>Human Resource Evaluation</h5>
+                                                        </div>
+                                                        
+                                                          <div class='row form-group'>
+                                                                    <div class="bt-flabels__wrapper required col-md-6">
+                                                                         <div class='control-label'></div>
+                                                                          <label># of Providers</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="providers" placeholder="# of Providers" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                                    
+                                                                    <div class="bt-flabels__wrapper required col-md-6">
+                                                                         <div class='control-label'></div>
+                                                                          <label># of Non-Providers</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="non-providers" placeholder="# of Non-Providers" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                              
+                                                          </div>
+                                                    
+                                                        <div class='row form-group'>
+                                                                    <div class="bt-flabels__wrapper required col-md-6">
+                                                                         <div class='control-label'></div>
+                                                                          <label># of Providers</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="providers" placeholder="# of Providers" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                                    
+                                                                    <div class="bt-flabels__wrapper required col-md-6">
+                                                                         <div class='control-label'></div>
+                                                                          <label># of Non-Providers</label>
+                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="non-providers" placeholder="# of Non-Providers" autocomplete="off"/>
+                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+                                                              
+                                                          </div>
+                                                    
+                                                            
+                                                            
+                                                        
+
+                                                    <div class='row'>
+                                                        <div class='col-md-12'>
+                                                            <button type="button btn-large" class="btn btn-default prev-step btn-primary contact-btn" href="#inquire-tab-2" data-toggle="tab">Back</button>
+                                                            <button type="submit" class="btn btn-default next-step btn-primary contact-btn" >Last Page</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+
+
+                                        </div>
+                                        
                                     </div>
                                     
                                 </div>
@@ -4105,43 +4237,9 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
         });
     </script>
 
-
-<!-- PARSLEY FUNCTIONS -->
- <script>
-window.Parsley.on('field:success', function() {
-    var field = this.$element[0].id;
-    // This global callback will be called for any field that fails validation.
-    //console.log('Validation succeeded for: ', field);
-    //$('#' + field).parent().append('<i class="fa fa-check-circle fa-lg fa-fw"></i>');
-});
-</script>
-
-<script>
-    /* Ensure that form 1 is valid before moving to the next form  */
-    $("#inquire-form-1").submit(function(e){
-        e.preventDefault();
-        var form = $(this);
-
-        form.parsley().validate();
-
-        if (form.parsley().isValid()){
-            $("#inquire-tab-1").removeClass('active');
-            $("#inquire-tab-2").addClass('active');
-        };
-        
-    });
-
-</script>
-
-<script>
-$(function(){          
-   $('.parsley-validate').parsley();
-})
-</script>
-
     <!-- FORM PARLSEY JAVASCRIPT FLOATING TEXT -->
 <script>
-(function () {
+function floating_label(form_id) {
     (function ($) {
         'use strict';
         var floatingLabel;
@@ -4170,25 +4268,52 @@ $(function(){
                 }
             }, 1);
         };
-        $('.bt-flabels__wrapper input').keydown(floatingLabel);
-        $('.bt-flabels__wrapper input').change(floatingLabel);
+        $(form_id.concat(' .bt-flabels__wrapper input')).keydown(floatingLabel);
+        $(form_id.concat(' .bt-flabels__wrapper input')).change(floatingLabel);
         window.addEventListener('load', floatingLabel(true), false);
-        $('.js-flabels').parsley().on('form:error', function () {
+        $(form_id.concat('.js-flabels')).parsley().on('form:error', function () {
             $.each(this.fields, function (key, field) {
                 if (field.validationResult !== true) {
-                    field.$element.closest('.bt-flabels__wrapper').addClass('bt-flabels__error');
+                    field.$element.closest(form_id.concat(' .bt-flabels__wrapper')).addClass('bt-flabels__error');
                 }
             });
         });
-        $('.js-flabels').parsley().on('field:validated', function () {
+        $(form_id.concat('.js-flabels')).parsley().on('field:validated', function () {
             if (this.validationResult === true) {
-                this.$element.closest('.bt-flabels__wrapper').removeClass('bt-flabels__error');
+                this.$element.closest(form_id.concat(' .bt-flabels__wrapper')).removeClass('bt-flabels__error');
             } else {
-                this.$element.closest('.bt-flabels__wrapper').addClass('bt-flabels__error');
+                this.$element.closest(form_id.concat(' .bt-flabels__wrapper')).addClass('bt-flabels__error');
             }
         });
     }(jQuery));
-}.call(this));
+};
+
+floating_label('#inquire-form-1');
+floating_label('#inquire-form-2');
+floating_label('#inquire-form-3');
+
+    
+</script>
+
+<!-- form on submission, check data parsley validation -->
+<script>
+/* Ensure that form 1 is valid before moving to the next form  */
+function validate_form_tab(form_id, tab_id_curr, tab_id_next){
+    $(form_id).submit(function(e){
+            e.preventDefault();
+            var form = $(form_id);
+            form.parsley().validate();
+
+            if (form.parsley().isValid()){
+                $(tab_id_curr).removeClass('active');
+                $(tab_id_next).addClass('active');
+            }; 
+        })
+}
+
+validate_form_tab('#inquire-form-1', '#inquire-tab-1', '#inquire-tab-2');
+validate_form_tab('#inquire-form-2', '#inquire-tab-2', '#inquire-tab-3');
+ 
 </script>
 
 

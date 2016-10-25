@@ -16,13 +16,32 @@ $error-color: darken($error-bg, 35);
     z-index: 100;
 }
 
+.text-area{
+    .text-area-title{
+        font-weight: bold;
+        z-index: 1000;
+        color: $primary-color;
+        position: absolute;
+        left: 24px;
+        font-size: 12px;
+    }
+    
+    textarea{
+        padding-top: 20px;
+        min-height: 120px;
+        width: 100%;
+        resize: vertical;
+        line-height: 20px;
+    }
+}
+
 .bt-form__wrapper {
   margin: 15px auto;
   max-width: 500px;
 }
 
 .bt-flabels {
-  input[type] {
+  input[type], select, textarea {
     position: relative;
     padding-left: 10px;
     
@@ -41,9 +60,9 @@ $error-color: darken($error-bg, 35);
   }
     
 
-  input[type], select{
+  input[type], select, textarea{
         height: 43px;
-
+        background: transparent;
         transition: background 0.3s $anim, border-color 0.3s $anim;      
         border: none;
         border-radius: 0;
@@ -60,7 +79,7 @@ $error-color: darken($error-bg, 35);
     padding-right: 3px;
     padding-bottom: 0;
     margin-bottom: 0;
-    top: -5.2px;
+    top: -4.2px;
       
     pointer-events: none;
     position: absolute;
@@ -75,7 +94,6 @@ $error-color: darken($error-bg, 35);
   }
   
   >*:not(:first-child) {
-    
     &.bt-flabels__wrapper, .bt-flabels__wrapper {
       border-top: none;
     }
