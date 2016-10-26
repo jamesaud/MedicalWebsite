@@ -349,7 +349,7 @@ a:hover{
                         h5{
                             color: $primary-color !important;
                             display: inline;
-                            font-size: $font-size-six;
+                            font-size: 14px;
                         }
                     }
                     
@@ -369,6 +369,11 @@ a:hover{
                         }
                         margin-bottom: 20px;
                     }
+                    
+                    #form-are-you-trying{
+                        min-height: 100px;
+                    }
+                    
                 }
                 
             

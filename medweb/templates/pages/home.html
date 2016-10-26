@@ -3361,19 +3361,36 @@ patients within the next three to five years.</p></h5>
                                                     
                                                     <div class='form-title'>
                                                             <h5>Financial Evaluation</h5>
-                                                        </div>
+                                                    </div>
+                                                            
 
                                                       <div class='row form-group'>
-                                                                <div class="bt-flabels__wrapper required col-md-4">
+                                                                <div class="bt-flabels__wrapper required col-md-6">
+                                                                     <div class='control-label'></div>
+                                                                      <label># Available Rooms for Doctors</label>
+                                                                      <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="available_rooms" placeholder="# Available Rooms for Doctors" autocomplete="off"/>
+                                                                      <span class="bt-flabels__error-desc">Required</span>
+                                                                </div>
+                                                                <div class="bt-flabels__wrapper required col-md-6">
                                                                      <div class='control-label'></div>
                                                                       <label># Revenue Labs</label>
                                                                       <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="providers" placeholder="# Revenue Labs" autocomplete="off"/>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                                 </div>
+                                                          
                                                       </div>
                                                     
-                                                     <div class='row form-statement form-group required'>
-                                                         
+                                                    <div class='row form-group'>
+                                                                <div class="bt-flabels__wrapper required col-md-12">
+                                                                     <div class='control-label'></div>
+                                                                      <label>Total Revenue in 2015</label>
+                                                                      <input type="text"  name="total_revenue" placeholder="Total Revenue in 2015" autocomplete="off"/>
+                                                                      <span class="bt-flabels__error-desc">Required</span>
+                                                                </div>
+                                                    
+                                                      </div>
+                                                    
+                                                     <div class='row form-statement form-group required'> 
                                                         <div class='col-md-12'>
                                                             <div class='inline'>Over the last 3 years, my group's net income has &nbsp;</div>
                                                             <div class='inline control-label'></div>
@@ -3386,7 +3403,26 @@ patients within the next three to five years.</p></h5>
                                                           </select>
                                                                      
                                                         </div>
-                                                      
+                                                    </div>
+                                                    
+                                                    <div class='row'>
+                                                          <div class="bt-flabels__wrapper text-area col-md-12">
+                                                              <span class='text-area-title' >Are you trying to recruit doctors? How many and which specialities?</span>
+                                                              <textarea id='form-are-you-trying' name="likes" placeholder="Yes, 2-3 more pediactric doctors and 1 more orthopedic surgeon."></textarea>
+
+                                                            </div>
+                                                    </div>
+                                                    
+                                                     <div class='form-title'>
+                                                            <h5>How did you hear about us?</h5>
+                                                    </div>
+                                                    
+                                                    <div class='row form-group'>
+                                                        <div class="bt-flabels__wrapper text-area col-md-12">
+                                                           <input type="checkbox" value="">Option 1
+                                                            <input type="checkbox" value="">Option 2
+                                                            <input type="checkbox" value="">Option 3
+                                                        </div>
                                                     </div>
                                                     
 
@@ -4452,6 +4488,7 @@ function floating_label(form_id) {
 floating_label('#inquire-form-1');
 floating_label('#inquire-form-2');
 floating_label('#inquire-form-3');
+floating_label('#inquire-form-4');
 
     
 </script>
