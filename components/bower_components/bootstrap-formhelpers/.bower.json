@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-formhelpers",
+  "version": "2.3.0",
+  "homepage": "http://bootstrapformhelpers.com",
+  "authors": [
+    "Vincent Lamanna <v@cakemail.com>"
+  ],
+  "description": "A collection of jQuery plugins for Bootstrap.",
+  "dependencies": {
+    "bootstrap": "3.0.0"
+  },
+  "_release": "2.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.3.0",
+    "commit": "229fe02b9aedc51a658210d39a6b7e5f1d42eafb"
+  },
+  "_source": "https://github.com/vlamanna/BootstrapFormHelpers.git",
+  "_target": "^2.3.0",
+  "_originalSource": "bootstrap-formhelpers",
+  "_direct": true
+}

@@ -298,12 +298,30 @@ a:hover{
                             }
                 }
                 
+                .inquire-form{
+                    min-height: 500px;
+                }
+                
+                .inquire-finish{
+                    .inquire-title{
+                        padding-top: 15%;
+                    }
+                    .inquire-close-button{
+                        width: 100%;
+                        margin-top: 10%;
+                        margin-bottom: 20px;
+                    }
+                }
+                
                 .inquire-title{
                     text-align: center;
                     padding-top: 20px;
                     padding-bottom: 0px;
                     h4{
                         //color: $primary-color;
+                    }
+                    h2{
+                        color:black;
                     }
                 }    
                 
@@ -370,8 +388,13 @@ a:hover{
                     }
                     
                     #form-are-you-trying{
-                        min-height: 100px;
+                        min-height: 90px;
                     }
+                    
+                    #form-bottom{
+                        margin-top: 15px;
+                    }
+                    
                     
                 }
                 

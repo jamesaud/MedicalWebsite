@@ -16,7 +16,7 @@ $error-color: darken($error-bg, 35);
     z-index: 100;
 }
 
-.text-area{
+.text-area-wrapper{
     .text-area-title{
         font-weight: bold;
         z-index: 1000;
@@ -24,6 +24,7 @@ $error-color: darken($error-bg, 35);
         position: absolute;
         left: 24px;
         font-size: 12px;
+       //text-transform: uppercase;
     }
     
     textarea{
@@ -147,8 +148,13 @@ $error-color: darken($error-bg, 35);
   }
 }
 
+.checkbox-wrapper{
+        font-size: 15px;
+}
 
 input[type='checkbox']{
     margin-left: 10px;
+    margin-right: 3px;
+
 }
 

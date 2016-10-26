@@ -2944,7 +2944,7 @@ patients within the next three to five years.</p></h5>
                                             <hr>
                                             
                                             <div class='bt-form__wrapper'>
-                                                <form id='inquire-form-1' class="bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  >
+                                                <form id='inquire-form-1' class="bt-flabels js-flabels inquire-form" data-parsley-validate data-parsley-errors-messages-disabled  >
                                                     
                                                         <div class='form-title'>
                                                             <h5>Personal Details</h5>
@@ -3109,7 +3109,7 @@ patients within the next three to five years.</p></h5>
                                             <hr>
                                             
                                             <div class='bt-form__wrapper'>
-                                                <form id='inquire-form-2' class=" bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                <form id='inquire-form-2' class=" bt-flabels js-flabels inquire-form" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
                                                     
                                                     <div class='form-title'>
                                                             <h5>EHR Information</h5>
@@ -3149,7 +3149,7 @@ patients within the next three to five years.</p></h5>
                                                           </div>
                                                     
                                                             <div class='row form-group'>
-                                                                          <div class="bt-flabels__wrapper text-area col-md-12">
+                                                                          <div class="bt-flabels__wrapper text-area-wrapper col-md-12">
                                                                               <span class='text-area-title'>EHR LIKES:</span>
                                                                               <textarea name="likes" placeholder="Things I like about my current EHR"></textarea>
                                                                               
@@ -3157,7 +3157,7 @@ patients within the next three to five years.</p></h5>
                                                             </div>
                                                     
                                                             <div class='row form-group'>
-                                                                          <div class="bt-flabels__wrapper text-area col-md-12">
+                                                                          <div class="bt-flabels__wrapper text-area-wrapper col-md-12">
                                                                               <span class='text-area-title'>EHR DISLIKES:</span>
                                                                               <textarea name="dislikes" placeholder="Things I dislike about my current EHR"></textarea>
                                                                             </div>
@@ -3194,7 +3194,7 @@ patients within the next three to five years.</p></h5>
                                             <hr>
                                             
                                             <div class='bt-form__wrapper'>
-                                                <form id='inquire-form-3' class=" bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                <form id='inquire-form-3' class=" bt-flabels js-flabels inquire-form" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
                                                     
                                                     <div class='form-title'>
                                                             <h5>Human Resource Evaluation</h5>
@@ -3357,7 +3357,7 @@ patients within the next three to five years.</p></h5>
                                             <hr>
                                             
                                             <div class='bt-form__wrapper'>
-                                                <form id='inquire-form-4' class=" bt-flabels js-flabels" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                <form id='inquire-form-4' class=" bt-flabels js-flabels inquire-form" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
                                                     
                                                     <div class='form-title'>
                                                             <h5>Financial Evaluation</h5>
@@ -3383,7 +3383,7 @@ patients within the next three to five years.</p></h5>
                                                     
                                                     
                                                     <div class='row'>
-                                                          <div class="bt-flabels__wrapper text-area form-group col-md-12">
+                                                          <div class="bt-flabels__wrapper text-area-wrapper form-group col-md-12">
                                                               <span class='text-area-title' >Are you trying to recruit doctors? How many and which specialities?</span>
                                                               <textarea id='form-are-you-trying' name="likes" placeholder="Yes, 2-3 more pediactric doctors and 1 more orthopedic surgeon."></textarea>
 
@@ -3419,16 +3419,28 @@ patients within the next three to five years.</p></h5>
                                                             <h5>How did you hear about us?</h5>
                                                     </div>
                                                     
-                                                    <div class='row form-group'>
-                                                        <div class="bt-flabels__wrapper text-area col-md-12">
-                                                           <input type="checkbox" value="">Option 1
-                                                            <input type="checkbox" value="">Option 2
-                                                            <input type="checkbox" value="">Option 3
+                                                    <div class='row'>
+                                                        <div class="bt-flabels__wrapper checkbox-wrapper col-md-12">
+                                                           <input type="checkbox" value="">Referral
+                                                            <input type="checkbox" value="">LinkedIn
+                                                            <input type="checkbox" value="">Facebook
+                                                            <input type="checkbox" value="">Twitter
+                                                            <input type="checkbox" value="">Google
+                                                            <input type="checkbox" value="">Other
                                                         </div>
                                                     </div>
                                                     
+                                                    <div class='form-title'>
+                                                            <h5>Email Me the Monthly Newsletter</h5>
+                                                    </div>
+                                                    
+                                                    <div class='row form-group'>
+                                                        <div class="bt-flabels__wrapper checkbox-wrapper col-md-12">
+                                                           <input type="checkbox" value="">Yes
+                                                        </div>
+                                                    </div>
 
-                                                    <div class='row'>
+                                                    <div class='row' id='form-bottom'>
                                                         <div class='col-md-12'>
                                                             <button type="button btn-large" class="btn btn-default prev-step btn-primary contact-btn" href="#inquire-tab-3" data-toggle="tab">Back</button>
                                                             <button type="submit" class="btn btn-default next-step btn-primary contact-btn" >Finish</button>
@@ -3440,6 +3452,27 @@ patients within the next three to five years.</p></h5>
 
 
                                         </div>
+                                        
+                                        <div id='inquire-tab-5' class='tab-pane in  inquire-finish'>
+                                            <div class='inquire-title'>
+
+                                                            <h2>Thank you for contacting Synergy+!</h2>
+                                                            <h3> A Synergy+ Representative will be in touch.</h3> 
+                                                            <h3> Your net income evaluation will be sent to the provided email within 24 hours.</h3> 
+                                                            <h3>To expedite the process, speak with a Synergy+ Representative by calling <strong>812-360-9245</strong>.</h3>
+                                             </div>
+                                            
+                                            <div class='row'>
+                                                <div class='col-md-10 col-centered'>
+                                                    <button type="button" class="btn btn-default inquire-close-button" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                                    
+                                        </div>
+                                            
+
+                                        </div>
+                                        
                                         
                                     </div>
                                     
@@ -4487,10 +4520,14 @@ function floating_label(form_id) {
     }(jQuery));
 };
 
+//Floating labels for the inquire forms
 floating_label('#inquire-form-1');
 floating_label('#inquire-form-2');
 floating_label('#inquire-form-3');
 floating_label('#inquire-form-4');
+
+//Floating labels for the contact forms
+floating_label('#contact-form-1');
 
     
 </script>
@@ -4515,6 +4552,7 @@ function validate_form_tab(form_id, tab_id_curr, tab_id_next){
 validate_form_tab('#inquire-form-1', '#inquire-tab-1', '#inquire-tab-2');
 validate_form_tab('#inquire-form-2', '#inquire-tab-2', '#inquire-tab-3');
 validate_form_tab('#inquire-form-3', '#inquire-tab-3', '#inquire-tab-4');
+validate_form_tab('#inquire-form-4', '#inquire-tab-4', '#inquire-tab-5');
  
 </script>
 
