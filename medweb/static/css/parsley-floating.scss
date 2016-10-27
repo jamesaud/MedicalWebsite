@@ -60,7 +60,7 @@ $error-color: darken($error-bg, 35);
     
 
   input[type='text'], input[type='number'], select, textarea{
-        height: 43px;
+        height: 41px;
         background: transparent;
         transition: background 0.3s $anim, border-color 0.3s $anim;      
         border: none;
