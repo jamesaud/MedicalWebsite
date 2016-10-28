@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@font-face { font-family: Vollkorn, serif; src: url(https://fonts.googleapis.com/css?family=Vollkorn); }
+
+.required .control-label:before { color: red; content: "*"; position: absolute; margin-left: 2px; z-index: 100; }
+
+.text-area-wrapper .text-area-title { font-weight: bold; z-index: 1000; color: #45AEEA; position: absolute; left: 24px; font-size: 12px; }
+
+.text-area-wrapper textarea { padding-top: 20px; min-height: 120px; width: 100%; resize: vertical; line-height: 20px; }
+
+.bt-form__wrapper { margin: 15px auto; max-width: 500px; }
+
+.bt-flabels input[type='text'], .bt-flabels input[type='number'], .bt-flabels select, .bt-flabels textarea { position: relative; padding-left: 10px; width: 100%; font-size: 15px; z-index: 1; }
+
+.bt-flabels input[type='text']:focus, .bt-flabels input[type='number']:focus, .bt-flabels select:focus, .bt-flabels textarea:focus { outline: none; background: #f5f8fc; }
+
+.bt-flabels input[type='text'], .bt-flabels input[type='number'], .bt-flabels select, .bt-flabels textarea { height: 41px; background: transparent; transition: background 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), border-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); border: none; border-radius: 0; -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); box-shadow: 0px 0px 5px 0px lightgray; }
+
+.bt-flabels label { border-top: 3px solid white; margin-left: 3px; padding-left: 3px; padding-right: 3px; padding-bottom: 0; margin-bottom: 0; top: -4.2px; pointer-events: none; position: absolute; opacity: 0; transform: translateY(15%); z-index: 10; font-weight: bold; font-size: 10px; text-transform: uppercase; color: #45AEEA; transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+.bt-flabels > *:not(:first-child).bt-flabels__wrapper, .bt-flabels > *:not(:first-child) .bt-flabels__wrapper { border-top: none; }
+
+.bt-flabels__wrapper { position: relative; }
+
+.bt-flabels__error-desc { position: absolute; top: 0; right: 20px; opacity: 0; font-weight: bold; color: #f44545; font-size: 10px; text-transform: uppercase; z-index: 3; pointer-events: none; }
+
+.bt-flabels__error input[type='text'], .bt-flabels__error input[type='number'], .bt-flabels__error select, .bt-flabels__error textarea { background: #feeeee; }
+
+.bt-flabels__error input[type='text']:focus, .bt-flabels__error input[type='number']:focus, .bt-flabels__error select:focus, .bt-flabels__error textarea:focus { background: #feeeee; }
+
+.bt-flabels__error .bt-flabels__error-desc { opacity: 1; transform: translateY(0); }
+
+.bt-flabels--right { border-left: none; }
+
+.bt-flabel__float label { opacity: 1; transform: translateY(0); }
+
+.bt-flabel__float input[type='text'], .bt-flabel__float input[type='number'] { padding-top: 9px; }
+
+.checkbox-wrapper { font-size: 15px; }
+
+input[type='checkbox'] { margin-left: 10px; margin-right: 3px; }
+
+/*# sourceMappingURL=../../../../static/css/parsley-floating.css.map */

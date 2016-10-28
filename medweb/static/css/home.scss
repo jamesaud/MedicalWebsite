@@ -317,15 +317,21 @@ a:hover{
 .section-highlights{
     
     margin-top: 0px;
-    padding-top: 0px!important;
+    padding-top: 60px !important;
     text-align: center;
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
     
+    .hi-intro{
+        margin-bottom: 40px;
+        
+        .main-points{
+            h2{color:black;}
+        }
+    }
     
     .hi-success{
         text-align: center;
-        padding-top: 45px !important;
         padding-bottom: 43px !important;
 
         #not-just{
@@ -475,6 +481,8 @@ a:hover{
     
     h2 {
         padding-bottom: 25px;
+        color: black !important;
+
     }
     
     .main-points-header{
@@ -539,6 +547,22 @@ a:hover{
             color: $third-color;
         }
     }
+    
+    .why-testimonials{
+        .headline-center{
+            h2{
+                color:black;
+                    &:after{background: $primary-color;}
+            }
+        }
+        .testimonials-info{
+            &:hover{
+                 border-bottom: solid 3px $primary-color;
+            }
+        }
+    }
+    
+    
 }
 
 .section-faq{
