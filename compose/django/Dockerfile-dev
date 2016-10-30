@@ -25,6 +25,8 @@ RUN npm install readmore-js
 
 RUN npm install -g bower
 
+RUN npm install --save lightbox2
+
 # Symlink Bower
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 

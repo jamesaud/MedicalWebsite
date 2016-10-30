@@ -317,12 +317,12 @@ a:hover{
 .section-highlights{
     
     margin-top: 0px;
-    padding-top: 50px !important;
     text-align: center;
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
     
     .hi-intro{
+        padding-top: 13px;
         margin-bottom: 40px;
         
         .main-points{
@@ -333,10 +333,34 @@ a:hover{
     
     .hi-intro-2{
         @extend .hi-intro;
-        padding-top: 34px;
+        padding-top: 30px;
         padding-bottom: 30px;
         a{
             color: $third-color;
+        }
+    }
+    
+    .hi-comp{
+
+        padding-bottom: 50px;
+        padding-top: 40px;
+        .main-points{
+            padding-bottom: 35px !important;
+            text-align: center;
+            vertical-align: center;
+            .main-points-title{color: black !important}
+        }
+        a,img{
+            z-index: 0;
+            text-align: left;
+            max-height: 250px;
+            max-width: auto;
+            position: relative;
+            -webkit-filter: blur(1px);
+              -moz-filter: blur(1px);
+              -o-filter: blur(1px);
+              -ms-filter: blur(1px);
+              filter: blur(1.0px);
         }
     }
     
@@ -354,13 +378,10 @@ a:hover{
             color: black !important;
             font-weight: bold;
         }
-        .section-insights-block-1{
-            margin-bottom: 50px;
+        .section-success-block-1{
+            margin-bottom: 43px;
         }
 
-        .section-insights-title-2{
-            padding-top: 5px ;
-        }
 
         .si-title{
             margin-bottom: 10px;
@@ -409,7 +430,7 @@ a:hover{
     
     .section-highlights-block-2{
         padding-top: 30px ;
-        padding-bottom: 55px !important;
+        margin-bottom: 55px !important;
         h2{
             color: black !important;
             padding-bottom: 0px;
