@@ -317,7 +317,7 @@ a:hover{
 .section-highlights{
     
     margin-top: 0px;
-    padding-top: 60px !important;
+    padding-top: 50px !important;
     text-align: center;
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
@@ -331,10 +331,19 @@ a:hover{
         }
     }
     
+    .hi-intro-2{
+        @extend .hi-intro;
+        padding-top: 34px;
+        padding-bottom: 30px;
+        a{
+            color: $third-color;
+        }
+    }
+    
     .hi-success{
         text-align: center;
         padding-bottom: 43px !important;
-
+        padding-top: 18px !important;
         #not-just{
             font-weight: 400 !important;
         }
@@ -495,7 +504,7 @@ a:hover{
     .si-message{
         text-align: center;
         padding-top: 60px;
-        padding-bottom: 35px;
+        padding-bottom: 28px;
         .main-points{
             
             padding-top: 0px;
@@ -525,17 +534,17 @@ a:hover{
         $btn-color-2: $primary-color;
         
         .si-message-btn-1{
-            border: $btn-color 2px solid;
-            @include transparentBackgroundColor(.55, $btn-color, !important);
+            border: $btn-color 1.4px solid;
+            @include transparentBackgroundColor(.75, $btn-color, !important);
             &:hover{
-                @include transparentBackgroundColor(.70, $btn-color, !important);
+                @include transparentBackgroundColor(.85, $btn-color, !important);
             }
         }
         .si-message-btn-2{
-            border: $btn-color-2 2px solid;
-            @include transparentBackgroundColor(.55, $btn-color-2, !important);
+            border: $btn-color-2 1.4px solid;
+            @include transparentBackgroundColor(.8, $btn-color-2, !important);
             &:hover{
-                @include transparentBackgroundColor(.70, $btn-color-2, !important);
+                @include transparentBackgroundColor(.9, $btn-color-2, !important);
             }
         }
         
@@ -544,8 +553,8 @@ a:hover{
             color: white;
             padding-top: 5px;
             padding-bottom: 0px;
-            padding-left: 70px;
-            padding-right: 70px;
+            padding-left: 8%;
+            padding-right: 8%;
             font-size: $font-size-four;
             line-height: 25px;
             vertical-align: middle;
@@ -554,12 +563,12 @@ a:hover{
             margin: 0 auto;
             white-space: normal;
             
-            h3, h4, p{color: white !important;}
+            h3, h4, h5 p{color: white !important;}
             h3{
                 font-weight: bold;
             }
             h4{
-                font-size: 17px;
+                font-size: $font-size-four;
             }
             hr{
                 margin-top: 16px;
