@@ -342,8 +342,8 @@ a:hover{
     
     .hi-comp{
 
-        padding-bottom: 50px;
-        padding-top: 40px;
+        padding-bottom: 55px;
+        padding-top: 45px;
         .main-points{
             padding-bottom: 35px !important;
             text-align: center;
@@ -356,11 +356,6 @@ a:hover{
             max-height: 250px;
             max-width: auto;
             position: relative;
-            -webkit-filter: blur(1px);
-              -moz-filter: blur(1px);
-              -o-filter: blur(1px);
-              -ms-filter: blur(1px);
-              filter: blur(1.0px);
         }
     }
     
@@ -1464,4 +1459,79 @@ a:hover{
     color: #a0d6f7 !important;
 }
 
+
+#modal-guarantee{
+    .modal-header, .modal-dialog, .modal-body, .modal-footer{
+        max-width: 1000px;
+    }
+    
+    .modal-body{
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+    
+    .modal-footer{
+        text-align: center !important;
+        .row{padding-left: 8%;
+            padding-right: 8%;}
+    }
+    
+    .modal-header{
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-top: 17px;
+        h3, h4{
+            color: $third-color;
+            font-weight: bold;
+        }
+        
+        h5{
+            color: black;
+            font-style: normals;}
+    }
+    
+    hr{
+        margin-top: 10px;
+    }
+    
+    .guarantee-points{
+        padding-top: 10px;
+    }
+    
+    .round-wrapper{
+        display: block;
+        height: 140px;
+        h5{
+            padding: 0;
+            display: inline;
+            line-height: 20px;
+        }
+    }
+    
+    .round-tabs{
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        display: inline-block;
+        border-radius: 100px;
+        font-size: 25px;
+        background: transparent;
+        margin-top: 0px;
+        margin-right: 10px;
+    }
+    
+    .no-bottom{
+        height: auto !important;
+    }
+
+    .round-tabs.one{
+        color: rgb(34, 194, 34);
+        border: 2px solid rgb(34, 194, 34);
+    }
+    
+    .modal-footer{
+        font-size: $font-size-mini;
+        text-align: left;
+    }
+}
 
