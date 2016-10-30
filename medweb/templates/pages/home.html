@@ -517,7 +517,7 @@ Doctors see up to 40% more patients, and everyone goes home on time!
 
                 <div class='col-md-4 main-points-block'>
                     <i class="fa fa-bar-chart fa-4x icon col-6" aria-hidden="true" ></i>
-                    <h3 class='main-points-header'><strong>Interoperability</strong></h3>
+                    <h3 class='main-points-header'><strong>Hospital Interoperability</strong></h3>
                     <h5>Integrates with any system meeting interoperable standards at a fraction of 
                             the cost of existing outdated technology.
                         Utilize our all-inclusive services, or simply
@@ -712,12 +712,14 @@ Doctors see up to 40% more patients, and everyone goes home on time!
         <hr>
         <div class='hi-comp container'>
             <div class='row'>
-                <div class='main-points col-md-6'>
-                    <h2 class='main-points-title'>View Our Industry Comparative Analysis</h2>
-                    <h4>Click the chart to see how Synergy+ compares to competitors</h4>
-                </div>
+                
                 <div class='img-wrapper col-md-6 '>
-                    <a class="" href="{% static 'images/comparativeanalysis.jpg' %}" target='_blank'><img class="example-image" src="{% static 'images/comparativeanalysisicon.png' %}" alt="image-1"/></a>
+                    <a class="" href="{% static 'images/comparativeanalysis.jpg' %}" target='_blank'><img class="img-responsive" src="{% static 'images/comparativeanalysisicon.png' %}" alt="image-1"/></a>
+                </div>
+                
+                <div class='main-points col-md-6'>
+                    <h2 class='main-points-title'>View Industry Comparative Analysis</h2>
+                    <h4>Click the chart to see how Synergy+ compares to competitors</h4>
                 </div>
             </div>
             <div id='trigger-home'></div>
@@ -762,9 +764,14 @@ Doctors see up to 40% more patients, and everyone goes home on time!
                                             <h4>New services are emerging that will change how your practice operates and how patients are treated.</h4>
                                             <hr> 
                                             <h4>
-                                                Patient Engagement (PE) and Population Health Management (PHM) are the two most valueable emergeing services doctors must begin offering to patients to help mitigate chronic disease.</h4>
+                                                It is no secret that most patients are unsatisfied with healthcare in the USA. Chronic care afflics over half the country; this is partly due to antequated technology, at no fault of the doctors.
+                                            </h4>
                                             <h4>
-                                            All Americans should support PHM and PE efforts for better healthcare. Moreover, clinics utilizing PE &amp; PHM optimize Value Based Care reimbursements. 
+                                                Patient Engagement (PE) and Population Health Management (PHM) are the two most valuable emerging services doctors must begin offering to patients to help mitigate chronic disease.
+                                            </h4>
+                                            
+                                            <h4>
+                                            All Americans should support PHM and PE efforts for better healthcare. Plus, clinics utilizing PE &amp; PHM optimize Value Based Care reimbursements. 
                                             </h4>
                                         </article>
                                     </div>
@@ -784,6 +791,7 @@ Doctors see up to 40% more patients, and everyone goes home on time!
                                             It’s no secret: to a great extent technology (mainly EHRs) has failed to meet regulations. We say with confidence: regulators need to step up in monitoring EHR vendors.</h4><h4>
                                             Based on market share reports, over 70% of all EHR systems in use were provided by vendors whose systems are known to reduce clinical physicians and staff’s productivity. 
                                             </h4>
+                                            <h4>Moreover, these systems are inadequate for future interoperability requirements, so by 2020 you'll be facing cost-prohibitive interoperability upgrades.</h4>
                                         </article>
                                     </div>
                                 </div>
@@ -955,7 +963,7 @@ Doctors see up to 40% more patients, and everyone goes home on time!
                       <h1 class='no-effect'>Data Security &amp; Regulations</h1>
                       <p class='no-effect'>Protect Patients</p>
                       <h1>Data Security &amp; Regulations</h1>
-                      <p>Keep your data secure with advanced data protection</p>
+                      <p>Click to learn more</p>
                     </a>
                   </li>
 
@@ -964,7 +972,7 @@ Doctors see up to 40% more patients, and everyone goes home on time!
                       <h1 class='no-effect'>Population Health Management</h1>
                       <h1>Population Health Management</h1>
                       <p class='no-effect'>Healthier Communities</p>
-                      <p>Access to valuable population health data and treatment methods</p>
+                      <p>Click to learn more</p>
                     </a>
                   </li>
                     <li class="hex">
@@ -972,7 +980,7 @@ Doctors see up to 40% more patients, and everyone goes home on time!
                       <h1 class='no-effect'>Synergy+ Services</h1>
                       <h1>Synergy+ Services</h1>
                       <p class='no-effect'>Learn more about Synergy+</p>
-                      <p>Services to maximize growth and beat the competition</p>
+                      <p>Click to learn more</p>
                     </a>
                   </li>
                   <li class="hex">
@@ -980,7 +988,7 @@ Doctors see up to 40% more patients, and everyone goes home on time!
                       <h1 class='no-effect'>EHR</h1>
                       <h1>EHR</h1>
                       <p class='no-effect'>Cloud Secured</p>
-                      <p>Cloud backed patient records, always accessible on-site</p>
+                      <p>Click to learn more</p>
                     </a>
                   </li>
                  <li class="hex">
@@ -988,15 +996,15 @@ Doctors see up to 40% more patients, and everyone goes home on time!
                       <h1 class='no-effect'>Data Analytics</h1>
                       <h1>Data Analytics</h1>
                       <p class='no-effect'>Patient Data Insights</p>
-                      <p>Advanced analytics at your fingertips to keep patients healthy</p>
+                      <p>Click to learn more</p>
                     </a>
                   </li>
                 <li class="hex">
                     <a id='hex-7'  class="hexIn selector-7" href=".hex-modal" data-toggle="modal">
                       <h1 class='no-effect'>Revenue Cycle Management</h1>
-                      <p class='no-effect'>Minimum 33% Revenue Gains</p>
+                      <p class='no-effect'>Optimize Cash Flow</p>
                       <h1>Revenue Cycle Management</h1>
-                      <p>Learn how the guarantee of 33% revenue gains is possible</p>
+                      <p>Click to learn more</p>
                     </a>
                   </li>
 
@@ -1431,51 +1439,61 @@ Doctors see up to 40% more patients, and everyone goes home on time!
                                 </div>
                                   <div class='col-md-5 tab-content-main-message'>
                                     <h3 class='col-1'>Data Analytics</h3>
-                                      <p>
-                                      This section is not filled out yet. The following is just placeholder text.
+                                      
+                                        <p>
+                                          Data Analytics is about leveraging existing patient records and information to gather valuable insights into individual and community health.
+                                        </p>
+                                       <p>
+                                        We work with you to generate meaningful results so you can stay informed of individual and large scale data trends to provide better care.
                                       </p>
-                                      <p>
-                                        To us, PE is more than just websites and portals; we help you create a culture of care where patients feel valued and lasting relationships grow.
-                                      </p>
+                                      
                                   </div>
                               </div>
                               
                               <hr>
                               
-                              <div class='row modal-body-titles'>
-                                  <div class='col-md-12'>
-                                    <h3>Focused on Your Patient's Needs</h3>
-                                </div>
-                              </div>
-                              
                               <div class='row'>
-                                <div class='col-md-12'>
-                                    <div classs='row'>
-                                        <p><strong>Instead</strong> of being stuck at the office waiting, patients are notified when doctors are backed up. As a result, patients feel respected and are happier with your service. Our PE program gets 97% of patients to use the patient portal so 97% have an EHR, whereas most competitors peak at 70%.</p>
-                                        <p>
-                                        <strong>Patients</strong> get expedited appointments that day or within 7 days instead of the typical 21-60 days.
-
-                                        By providing faster appointments, preemptive care, and self-care we help you cater to your patient’s needs. Patients comply and participate more optimistically in their own health care.
-                                        </p>
+                                  <div class='col-md-12'>
+                                    <div class=' modal-body-titles'>
+                                        <h3>Data Analytics &amp; Population Health Management</h3>
+                                    </div>
+                          
+                                    <div>
+                                        <h5>
+                                            <p>With Synergy+, your medical records are available to optionally utilize data analytics services.
+                                            </p>
+                                            <p>PHM requires large scale data analytics to assertain insights for more informed treatment. Concentrated geographical data, among other factors, is critical in achieving good results. When our customer base grows, so does our analytics platform.<p>We also consider your input for PHM, so your efforts will be accounted in helping determine the types of data mining we pursue to reveal best methods of treatment.</p>
+                                        </h5>
                                     </div>
                                 </div>
                               </div>
-                              <hr>
-                              <div class='row modal-body-titles'>
-                                  <div class='col-md-12 '>
-                                    <h3>Increased Efficiency &amp; Online Presence</h3>
-                                </div>
-                              </div>
                               
-                            <div class='row'>
-                                <div class='col-md-12 pull-right'>
-                                    <p><strong>More</strong> patients are finding clinics online. We help you optimize your online profile, the way you want it to be.
-
-                                    We help get you 20-100% more patients through google search engine optimization and targeted sales methods.
-
-                                    We also don't neglect the 23% of patients who aren't online; in clinic patient sign-up services are also optimized.
-                                    </p>
+                              <hr>
+                              
+                              <div class='row modal-body-titles'>
+                                  <div class='col-md-8 '>
+                                    <div class=''>
+                                        <h3>Helping You Stay Protected</h3>
+                                    </div>
+                                    <h5>
+                                    <p>
+                                        Data analysis services for clinical research, KPI studies, government and private insurance audits, HIPAA compliance, Security audits and PHM are available as query request fulfillment (subject to federal and state regulatory requirements).</p><p> It is essential to have a data analytics services to protect yourself from legal investigations, audits, or other circumstances. </p>
+                                    </h5>
                                 </div>
+                                  
+                                  <div class='col-md-4 '>
+                                    <div class=''>
+                                        <h3>Coming Early 2017</h3>
+                                    </div>
+                                    <h5>
+                                        <p>
+                                            Personalized date querries for individual patient records is available, on demand now.
+                                        </p>
+                                        <p>Large scale analytics is currently in alpha testing and won't be available until second quarter 2017.
+                                        </p>
+                                    </h5>
+                                </div>
+                                  
                               </div>
                               
                           </div>
@@ -1823,7 +1841,7 @@ patients within the next three to five years.</p></h5>
                 <th></th>
                 <th class="sent">Synergy+</th>
                 <th id='industry-avg' class="paid">Industry Avg</th>
-                <th><a  id='info-circle' href='#' onClick='return false;'  data-toggle="tooltip" title="See Full Analysis"><i class='fa fa-2x fa-info-circle' ></i></a></th>
+                <th><a  id='info-circle' class="" href="{% static 'images/comparativeanalysis.jpg' %}" target='_blank' data-toggle="tooltip" title="See Full Analysis"><i class='fa fa-2x fa-info-circle' ></i></a></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -1853,7 +1871,7 @@ patients within the next three to five years.</p></h5>
                 </tr>
                 
                 <tr class="qtr" id="q5">
-                <th scope="row">Net Income Guarantee</th>
+                <th scope="row">Net Income Evaluation</th>
                 <td class="sent bar" style="height: 292px;"><p>100%</p></td>
                 <td class="paid bar" style="height: 2px;"><p></p></td>
                 </tr>
@@ -1882,7 +1900,7 @@ patients within the next three to five years.</p></h5>
             <img src="{% static 'images/novo.png' %}" alt="Logo" class='img-responsive col-centered'>
             <h2>Synergy+ has partnered with NovoMedici to offer a state of the art EHR &amp; RCM system </h2>
             
-            <h5><p>Synergy+ with NovoMedici, a comprehensive practice resource, offers all-inclusive software and specialized services</p><p> <a href="{% static 'files/NovoClinical-Brochure.pdf' %}" target='_blank' >Read more about NovoMedici, our software partner</a></p></h5>
+            <h5><p>Synergy+, with NovoMedici, offers all-inclusive services and software with unparalleled efficiency &amp; cost savings </p><p> <a href="{% static 'files/NovoClinical-Brochure.pdf' %}" target='_blank' >Read more about NovoMedici, our software partner</a></p></h5>
             
         </div>
     <hr>
@@ -2001,7 +2019,7 @@ patients within the next three to five years.</p></h5>
               <div class="row text-center">
                   <h1 class='main-points-title'>We Promise You Won't Look Back</h1>
                   
-                      <h2> Call <strong><span>812-360-9245</span></strong> Now And Receive Your Written Net Income Guarantee </h2>
+                      <h2> Call <strong><span>812-360-9245</span></strong> Now And Receive Your Written Net Income Evaluation </h2>
               </div>
     </div>
         
@@ -2090,7 +2108,7 @@ patients within the next three to five years.</p></h5>
                                     <li>Cash Based Only</li>
                                     <li>1 Day Installation</li>
                                     <li>Online Training</li>
-                                    <li>24/7 Support</li>
+                                    <li>24/7* Support</li>
                                     <li>And More...</li>
                                 </ul>
                                 <a href="" id='pricing-btn-1'  data-toggle="modal" data-target="#modal-pricing" class="btn-u btn-large">Learn More</a>
@@ -2116,7 +2134,7 @@ patients within the next three to five years.</p></h5>
                                     <li>Core Synergy+ Services</li>
                                     <li>Net Income Optimization </li>
                                      <li>Sustainable Growth</li>
-                                    <li>24/7 Support</li>
+                                    <li>24/7* Support</li>
                                     <li>And More...</li>
                                 </ul>
                                 <a href="" id='pricing-btn-2'  data-toggle="modal" data-target="#modal-pricing" class="btn-u btn-large">Learn More</a>
@@ -2141,9 +2159,9 @@ patients within the next three to five years.</p></h5>
                                     <ul class="list-unstyled">
                                         <li>All-Inclusive Technology</li>
                                         <li>Premium Synergy+ Services</li>
-                                        <li>Net Income Guarantee</li>
+                                        <li>Net Income Evaluation</li>
                                         <li>Exponential Growth</li>
-                                        <li>24/7 Support</li>
+                                        <li>24/7* Support</li>
                                         <li>And More...</li>
                                     </ul>
                                     <a href="" id='pricing-btn-3'  data-toggle="modal" data-target="#modal-pricing" class="btn-u btn-large">Learn More</a>
@@ -2216,11 +2234,7 @@ patients within the next three to five years.</p></h5>
                                                <!--<h3 class='m-pricing-tab-title'>Exponential Growth Plan Includes Premium Services</h3>-->
                                             
                                                <div class='m-pricing-tab-content'>
-                                                      <!--<div class='row tab-sub-header'>
-                                                        <div class='col-md-12 text-center'>
-                                                            <h3><strong>CALL 812-650-2998</strong> FOR YOUR PRELIMINARY NET INCOME GUARANTEE</h3>
-                                                        </div>   
-                                                        </div>-->
+                                                     
                                                  <div class='row'>
 
                                                    <div class='col-md-10'>
@@ -2292,7 +2306,7 @@ patients within the next three to five years.</p></h5>
                                                                                     <br><br>
                                                                                     Your exponential plan provides a dedicated support assistant. You'll always speak to the same person, who will become an expert and understand your practice.
                                                                                     
-                                                                                   " class="fa circle-text fa-my-1 pop"><h4>24/7 Phone &amp; Chat Support</h4></a>
+                                                                                   " class="fa circle-text fa-my-1 pop"><h4>24/7* Phone &amp; Chat Support</h4></a>
                                                               </li>
                                                               
                                                             </h5>
@@ -2484,11 +2498,7 @@ patients within the next three to five years.</p></h5>
                                                <!--<h3 class='m-pricing-tab-title'>Exponential Growth Plan Includes Premium Services</h3>-->
                                             
                                                <div class='m-pricing-tab-content'>
-                                                      <!--<div class='row tab-sub-header'>
-                                                        <div class='col-md-12 text-center'>
-                                                            <h3><strong>CALL 812-650-2998</strong> FOR YOUR PRELIMINARY NET INCOME GUARANTEE</h3>
-                                                        </div>   
-                                                        </div>-->
+                                                     
                                                  <div class='row'>
 
                                                    <div class='col-md-10'>
@@ -2609,12 +2619,12 @@ patients within the next three to five years.</p></h5>
                                                                                     <br><br>
                                                                                     Your exponential plan provides a dedicated support assistant. You'll always speak to the same person, who will become an expert and understand your practice.
                                                                                     
-                                                                                   " class="fa circle-text fa-my-1 pop"><h4>24/7 Phone &amp; Chat Support</h4></a>
+                                                                                   " class="fa circle-text fa-my-1 pop"><h4>24/7* Phone &amp; Chat Support</h4></a>
                                                               </li>
                                                               <li>
                                                                   <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='true'
                                                                      data-content= "
-                                                                                    We monitor your financials to make sure reimbursements, productivty gains and expense reductions occur. We evaluate operations and financials quarterly to ensure you attain your minimum net income guarantee. <br><br>
+                                                                                    We monitor your financials to make sure reimbursements, productivty gains and expense reductions occur. We evaluate operations and financials quarterly to ensure you attain your minimum net income gains. <br><br>
                                                                                     During the first 90 days, this takes a great deal of our time and consulting on adjustments will be recommended.
                                                                                     " class="fa circle-text fa-my-1 pop"><h4>Net Income Optimization</h4></a>
                                                               </li>
@@ -2836,11 +2846,7 @@ patients within the next three to five years.</p></h5>
                                                <!--<h3 class='m-pricing-tab-title'>Exponential Growth Plan Includes Premium Services</h3>-->
                                             
                                                <div class='m-pricing-tab-content'>
-                                                      <!--<div class='row tab-sub-header'>
-                                                        <div class='col-md-12 text-center'>
-                                                            <h3><strong>CALL 812-650-2998</strong> FOR YOUR PRELIMINARY NET INCOME GUARANTEE</h3>
-                                                        </div>   
-                                                        </div>-->
+                                                      
                                                  <div class='row'>
 
                                                    <div class='col-md-10'>
@@ -2960,7 +2966,7 @@ patients within the next three to five years.</p></h5>
                                                                                     <br><br>
                                                                                     Your exponential plan provides a dedicated support assistant. You'll always speak to the same person, who will become an expert and understand your practice.
                                                                                     
-                                                                                   " class="fa circle-text fa-my-1 pop"><h4>24/7 Phone &amp; Chat Support</h4></a>
+                                                                                   " class="fa circle-text fa-my-1 pop"><h4>24/7* Phone &amp; Chat Support</h4></a>
                                                               </li>
                                                               <li>
                                                                   <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='true' 
@@ -2982,7 +2988,7 @@ patients within the next three to five years.</p></h5>
                                                               <li>
                                                                   <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" data-html='true'
                                                                      data-content= "
-                                                                                    We monitor your financials to make sure reimbursements, productivty gains and expense reductions occur. We evaluate operations and financials quarterly to ensure you attain your minimum net income guarantee. <br><br>
+                                                                                    We monitor your financials to make sure reimbursements, productivty gains and expense reductions occur. We evaluate operations and financials quarterly to ensure you attain your minimum net income evaluation. <br><br>
                                                                                     During the first 90 days, this takes a great deal of our time and consulting on adjustments will be recommended.
                                                                                     " class="fa circle-text fa-my-1 pop"><h4>Net Income Optimization</h4></a>
                                                               </li>
@@ -3225,7 +3231,7 @@ patients within the next three to five years.</p></h5>
                                         <div id='inquire-tab-0' class='tab-pane in active'>
                                           
                                             <div class='inquire-title'>
-                                                <h4>Receive Your <strong><em> Free Preliminary Net Income Guarantee</em></strong></h4>
+                                                <h4>Receive Your <strong><em> Free Preliminary Net Income Evaluation</em></strong></h4>
                                                 <h4><em>Plus an exclusive Industry Analysis Report</em></h4>
                                                 
                                              </div>
@@ -3414,7 +3420,7 @@ patients within the next three to five years.</p></h5>
                                                     </div>-->
 
                                                     <div class="card-info"> 
-                                                        <span class="card-title"><h3>Your net income guarantee is waiting around the corner...</h3></span>
+                                                        <span class="card-title"><h3>Your net income evaluation is waiting around the corner...</h3></span>
                                                     </div>
 
                                             </div>
@@ -3662,7 +3668,7 @@ patients within the next three to five years.</p></h5>
                                                     </div>-->
 
                                                     <div class="card-info"> 
-                                                        <span class="card-title"><h3>Last Page! Get Your Net Income Guarantee!</h3></span>
+                                                        <span class="card-title"><h3>Last Page! Get Your Net Income Evaulation!</h3></span>
                                                     </div>
 
                                             </div>
@@ -3938,7 +3944,7 @@ patients within the next three to five years.</p></h5>
                                 </div>
                                 <div id="collapseFive" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Extremely low overhead allows us to focus on our clients, and pass our savings onto them. </p><p>Synergy+ provides expertise in services designed specifically for doctors to make their lives easier, optimize revenue, and exceed in the market. Top business experts ensure you recieve your net income guarantee.</p><p> Our technology partner, NovoMedici, is specialized in medical software developement. Designed by doctors and top IT experts, the software is made to increase efficiency as much as possible while optimizing patient care outcomes.</p>
+                                        <p>Extremely low overhead allows us to focus on our clients, and pass our savings onto them. </p><p>Synergy+ provides expertise in services designed specifically for doctors to make their lives easier, optimize revenue, and exceed in the market. Top business experts ensure you recieve your net income evaluation.</p><p> Our technology partner, NovoMedici, is specialized in medical software developement. Designed by doctors and top IT experts, the software is made to increase efficiency as much as possible while optimizing patient care outcomes.</p>
                                         
                                     </div>
                                 </div>
@@ -4126,7 +4132,7 @@ patients within the next three to five years.</p></h5>
                 <h2>Meet Our Team</h2>
 			</div>
 
-			<div class="row team-v6 margin-bottom-60">
+			<div class="row team-v6 margin-bottom-20">
 				<div class="col-md-3 col-sm-6 md-margin-bottom-50">
 					<img class="img-responsive" src="{% static 'images/team/john.png' %}" alt="">
 					<span>John Oljace</span>
@@ -4168,6 +4174,11 @@ patients within the next three to five years.</p></h5>
 					</ul>
 				</div>
 			</div><!--/end team v6-->
+                
+            <div class='headline-center'>
+                <h2>Potential Hires</h2>
+			</div>
+                
             <div class="row team-v6 margin-bottom-60">
 				<div class="col-md-3 col-sm-6 md-margin-bottom-50">
 					<img class="img-responsive" src="{% static 'images/team/randall.png' %}" alt="">
@@ -4255,7 +4266,7 @@ patients within the next three to five years.</p></h5>
                 <div class='row investors-message'>
                     <div class='col-md-8'>
                         <h2>Stock and Investment</h2>
-                        <p><h5>In our first round of funding we are selling $100,000 of stock in 4 units of $25,000. 
+                        <p><h5>In our first round of funding we are seeking $75,000 of stock in multiple units.
                         <br>
                         Contact us for details on stock options.
                         <br><br>
@@ -4267,11 +4278,11 @@ patients within the next three to five years.</p></h5>
                         <p><h5>Call us at: &nbsp;&nbsp;&nbsp;&nbsp; <strong class='col-3'>812-360-9245</strong></h5></p>
                     </div>
                 </div>
-                <div class='row investors-message'>
+                <div class='row '>
                     <div class='col-md-8'>
                         <h2>More Investment Information</h2>
                         <p><h5>
-                            This is our seed funding round. We are aiming for $100,000 in order to provide service staff for our clients, marketing funds, and more. 
+                            This is our seed funding round. We are aiming for $75,000 in order to provide service staff for our clients, marketing funds, and more. 
                             <br><br>
                             We plan on having additional funding rounds within the next 12 months.
                             
@@ -4283,6 +4294,40 @@ patients within the next three to five years.</p></h5>
                         <p><h5>
                         We are prepared to answer all of your investment related questions.</h5></p>
                         <p><h5>Speak directly to CEO John Olace by email or phone.
+                        </h5></p>
+                    </div>
+                </div>
+        <hr>
+                <div class='investors-sales'>
+                    <div class='row'>
+                        <div class='col-md-4'>
+                        <h2>Distinct Sales Advantages</h2>
+                        </div>
+                    </div>
+                    <div class='row'>
+                    <div class='col-md-8 '>
+                        <div class='col-md-6'>
+                        <p>
+                        <h4>
+                            <strong>Website Sales Points</strong></h4>
+                        <h5>
+                        - less time than other sites<br>
+                        - single page site with more clarity <br>
+                        - stronger sales tools<br>
+                        - data profiling with evaluation form for low cost
+                        </div>
+                        <div class='col-md-6'>
+                        <h4>
+                        <strong>Other Sales Points</strong></h4>
+                        <h5>
+                        - Focused sales strategy <br>
+                        - All-inclusive bundled services<br>
+                        - Strategic pricing with enormous value<br>
+                        - Google PPC advertising strategy<br>
+                        - We will grow rapidly with low cost of sales.
+                        </div>  
+                    </div>
+                            
                         </h5></p>
                     </div>
                 </div>
