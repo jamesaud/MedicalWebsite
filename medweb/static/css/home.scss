@@ -322,8 +322,9 @@ a:hover{
     padding-bottom: 0 !important;
     
     .hi-intro{
+        text-align: center;
         padding-top: 13px;
-        margin-bottom: 40px;
+        padding-bottom: 40px;
         
         .main-points{
             h2{color:black;}
@@ -333,10 +334,26 @@ a:hover{
     
     .hi-intro-2{
         @extend .hi-intro;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        margin-bottom: 0;
+        h2, h3{color: black !important;}
         a{
             color: $third-color;
+        }
+        
+        &:after{
+            .overlay:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.5);
+    opacity: 1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+}
         }
     }
     

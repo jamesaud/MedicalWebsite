@@ -453,15 +453,15 @@ hr.no-margin{
     //Wrap around bootsrap default close button
   .close-button{
         right: 8px;
-        top: 4px;
+        top: 0px;
         position: absolute;
         z-index: 1000;
         //Default boostrap close button class
         .close {
-            font-size: 25px;
+            font-size: 35px !important;
             //color: #333; 
             //filter: alpha(opacity=20);
-            //opacity: .4;
+            //opacity: .5;
       }
 
     }
@@ -589,6 +589,13 @@ hr.no-margin{
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
+}
+
+hr.no-bottom{
+    margin-bottom: 0;
+}
+hr.no-top{
+    margin-top: 0 !important;
 }
 
 
