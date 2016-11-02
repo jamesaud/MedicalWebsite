@@ -476,7 +476,7 @@ Doctors see up to 40% more patients, and everyone goes home on time!
         </div>
         </div>
         
-        <div class='container row'>
+        <div class=''>
         <hr>
         </div>  
 
@@ -1981,36 +1981,7 @@ patients within the next three to five years.</p></h5>
 		</div><!--/end container-->  
   
      <hr>
-     
-        <!-- circles animation waypoint -->    
-<div id='way-circles'></div>    
-
-  <div class="section-circles">
-      
-    <div class="container content main-points">
-          <div class="row text-center">
-              <h2>Time analysis studies show the incredible Synergy+ efficiency</h2>     
-            </div>
-              <div class="row text-center pie-progress-charts main-points-block">
-                   <div id="canvas">
-                       <div class='col-md-4'>
-                           <h3 class='main-points-header'>Staff Reduction/Reassignment</h3>
-                           <div class="circle" id="circles-blue"></div>
-                       </div>
-                       <div class='col-md-4'>
-                           <h3 class='main-points-header'>Increase of Patients Admitted</h3>
-                           <div class="circle" id="circles-red"></div>
-                       </div>
-                       <div class='col-md-4'>
-                           <h3 class='main-points-header'>Average Revenue Increase</h3>
-                           <div class="circle" id="circles-yellow"></div>
-                       </div>
-            
-                   </div>    
-               </div>  
-        
-          </div>
-    </div>
+       
      
           <div id='trigger-why'></div>
      
@@ -4366,7 +4337,6 @@ patients within the next three to five years.</p></h5>
 	<script type="text/javascript" src="/static/js/plugins/fancy-box.js"></script>
 	<script type="text/javascript" src="/static/js/plugins/style-switcher.js"></script>
 	<script type="text/javascript" src="/static/js/plugins/revolution-slider.js"></script>
-    <script type="text/javascript" src="{% static 'plugins/circles-master/circles.js' %}"></script>
 
 <!-- Slideshow function -->
 	<script type="text/javascript">
@@ -4378,86 +4348,6 @@ patients within the next three to five years.</p></h5>
 		});
 	</script>
 
-<!-- Circles Function -->
-
-  <script>
-      function draw_initial_circles(){
-        Circles.create({
-            id:         'circles-blue',
-            percentage: 0,
-            radius:     60,
-            width:      10,
-            number:   	0,
-            text:       '%',
-            colors:     ['#BEE3F7', '#45AEEA']
-        });
-
-        Circles.create({
-            id:         'circles-yellow',
-            percentage: 0,
-            radius:     60,
-            width:      10,
-            number:   	0,
-            text:       '%',
-            colors:     ['#FCE6A4', '#EFB917']
-        });
-
-        Circles.create({
-            id:         'circles-red',
-            percentage: 0,
-            radius:     60,
-            width:      10,
-            number:   	0,
-            text:       '%',
-            colors:     ['#F4BCBF', '#D43A43']
-        });
-      }
-      
-  function draw_filled_circles(){
-        Circles.create({
-            id:         'circles-blue',
-            percentage: 28,
-            radius:     60,
-            width:      10,
-            number:   	28,
-            text:       '%',
-            colors:     ['#BEE3F7', '#45AEEA']
-        });
-
-        Circles.create({
-            id:         'circles-yellow',
-            percentage: 64,
-            radius:     60,
-            width:      10,
-            number:   	64,
-            text:       '%',
-            colors:     ['#FCE6A4', '#EFB917']
-        });
-
-        Circles.create({
-            id:         'circles-red',
-            percentage: 40,
-            radius:     60,
-            width:      10,
-            number:   	40,
-            text:       '%',
-            colors:     ['#F4BCBF', '#D43A43']
-        });
-      }
-      
-draw_initial_circles(); //draw the circles with 0%
-      
-//WAYPOINT    
-      
-var waypoint = new Waypoint({
-  element: document.getElementById('way-circles'),
-  handler: function(){
-      draw_filled_circles();
-      this.destroy()
-  },
-  offset: 340
-})
-</script>
 
 <!-- CHANGE TIMELINE DOT COLOR ON CLICK -->
 <script>
