@@ -34,9 +34,31 @@ $max-width: 1300px;
     src: url(https://fonts.googleapis.com/css?family=Vollkorn);
 }
 
+//REUSEABLE MIXINS 
+//Pseudo class, shouldn't be used just extended
+.__color-button{
+     color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 65px;
+    padding-right: 65px;
+    font-size: $font-size-four;
+}
+
 @mixin transparentBackgroundColor($alpha,$color, $important:null) {
   background-color: rgba(red($color), green($color), blue($color), $alpha) $important;
 }
 
+@mixin color_btn($color){
+    @extend .__color-button;
+    border-color: $color;
+    @include transparentBackgroundColor(.85, $color);
+    
+    &:hover{
+            color: white;
+            background-color: $color;
+            transition: all .1s;
+        }
+    }
 
 

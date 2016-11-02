@@ -1016,8 +1016,16 @@ a:hover{
         margin-bottom: 30px;
     }
     
-    h1{
+    h2{
         color: black !important;
+    }
+    
+    .btn-color{
+        @include color_btn($third-color);
+    }
+    
+    .demo-btn-wrapper{
+        margin-top: 20px;
     }
 }
 
