@@ -280,7 +280,7 @@ hr.no-margin{
 
 
 /* To be below fixed nav bar */
-.content-main { margin-top: 140px; }
+.content-main { margin-top: 70px; }
 
 @media screen and (max-width: 768px) {
     .content-main { margin-top: 0px; }
@@ -296,6 +296,8 @@ hr.no-margin{
 .star_text{
     font-size: $font-size-mini;
 }
+
+
 
 
 .sidebar {
@@ -326,7 +328,7 @@ hr.no-margin{
             overflow: visible;
             white-space: nowrap;
             i{
-                margin-right: 10px;
+                margin-right: 13px;
                 width: 25px;
                 color: $primary-color;
             }
@@ -335,6 +337,7 @@ hr.no-margin{
             h5{
                 display: inline;
             }
+            
             a{
                 text-decoration: none;
                 display: block;
@@ -374,7 +377,6 @@ hr.no-margin{
             }
     }
 }
-
 @media screen and (max-width: 768px){
     .sidebar{
         display:none;
@@ -385,6 +387,7 @@ hr.no-margin{
             width: 150px;
             .sidebar-content{
                 display: inline;
+                top: -2px;
             }
     }
 

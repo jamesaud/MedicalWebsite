@@ -57,6 +57,17 @@
         <link href="{% static '/staticfiles/css/circle-tabs.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static '/staticfiles/css/parsley-floating.css' %}" rel="stylesheet" type="text/css" />  <!-- Form parsley floating css -->
 
+
+        <!-- TEST CSS -->
+
+    <!-- css -->
+        <link rel="stylesheet" href="{% static 'standalone/auto-hiding-navigation/css/style.css' %}">
+
+        {% load sass_tags %}
+        <link rel="stylesheet" href="{% sass_src 'css/test.scss' %}">
+        <!-- for dev only -->
+         <link href="{% static 'staticfiles/css/test.css' %}" rel="stylesheet" type="text/css" />
+
         <div id='home'></div><!-- guarantees home nav lights up at the top of the pages -->
 {% endblock more-css %}
 
@@ -65,8 +76,44 @@
 {% get_static_prefix as STATIC_PREFIX %}
 
 
+<!-- TEST -->
+{% block navbar %}{% endblock %}
+<div class='cd-navbar-wrapper'>
+<header class="cd-auto-hide-header">
+	<div class="logo"><a href="#0"><img src="{% static 'images/logo1.png' %}" alt="Logo"></a></div>
+    <!--<span >
+           <h5>Optimizing Net Income</h5>
+             <h5>Non-clinical Issues Become Non-Issues</h5>
+            <h5>Doctors Practice Medicine Their Way</h5>
+        </span>-->
+
+   
+    
+	<nav class="cd-primary-nav">
+        
+		<a href="#cd-navigation" class="nav-trigger">
+			<span>
+				<em aria-hidden="true"></em>
+				Menu
+			</span>
+		</a> <!-- .nav-trigger -->
+        
+       
+		<ul id="cd-navigation">
+			<li><a href="#0">The team</a></li>
+			<li><a href="#0">Our Products</a></li>
+			<li><a href="#0">Our Services</a></li>
+			<li><a href="#0">Shopping tools</a></li>
+			<li><a href="#0">Contact Us</a></li>
+		</ul>
+	</nav> <!-- .cd-primary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+</div>
 
 
+<section>
+	<div>
+		<!-- TP BANNER -->
 <div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery1" style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
 <!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
 	<div id="rev_slider_2_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
@@ -452,11 +499,30 @@ Doctors see up to 40% more patients, and everyone goes home on time!
 <div class="tp-bannertimer tp-bottom" style="height: 5px; background-color: rgba(166, 216, 236, 1.00);"></div>	</div>
 </div><!-- END
 <!-- END TP BANNER -->
+	</div>
+</section> <!-- .cd-hero -->
+
+<nav class="cd-secondary-nav">
+	<ul>
+		<li><a class="active" href="#0">Intro</a></li>
+		<li><a href="#0">Features</a></li>
+		<li><a href="#0">Photos</a></li>
+		<li><a href="#0">Videos</a></li>
+		<li><a href="#0">Specs</a></li>
+		<li><a href="#0">Support</a></li>
+		<li><a href="#0">Compare</a></li>
+		<li><a href="#0">Buy</a></li>
+	</ul>
+</nav> <!-- .cd-secondary-nav -->
+
+<!-- ENDTEST --->
 
 
 
 
-<div class="one-page">
+
+
+<div class="one-page cd-main-content sub-nav-hero">
 
     
 <!--== HIGHLIGHTS == -->
@@ -4860,5 +4926,11 @@ validate_form_tab('#contact-form-4', '#contact-tab-4', '#contact-tab-5');
             // Initialize the plugin
 		});
 	</script>
+
+<!-- TEST JS SECTINO -->
+
+
+        <script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
+
 
 {% endblock more-javascript %}

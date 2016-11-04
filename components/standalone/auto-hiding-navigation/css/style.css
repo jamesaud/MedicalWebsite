@@ -3,27 +3,7 @@
 Primary style
 
 -------------------------------- */
-*, *::after, *::before {
-  box-sizing: border-box;
-}
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Hind", sans-serif;
-  color: #25283D;
-  background-color: #ECF0F1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  color: #8F3985;
-  text-decoration: none;
-}
 
 /* -------------------------------- 
 
@@ -376,10 +356,7 @@ a {
 Main content
 
 -------------------------------- */
-.cd-main-content {
-  padding: 60px 5% 2em;
-  overflow: hidden;
-}
+
 .cd-main-content.sub-nav {
   /* to be used if there is sub nav */
   padding-top: 110px;
@@ -391,13 +368,7 @@ Main content
 .cd-main-content.sub-nav-hero.secondary-nav-fixed {
   margin-top: 50px;
 }
-.cd-main-content p {
-  max-width: 1024px;
-  line-height: 1.6;
-  margin: 2em auto;
-  font-family: "David Libre", serif;
-  color: #a5a8a9;
-}
+
 @media only screen and (min-width: 1024px) {
   .cd-main-content {
     padding-top: 80px;
@@ -408,9 +379,7 @@ Main content
   .cd-main-content.sub-nav-hero.secondary-nav-fixed {
     margin-top: 70px;
   }
-  .cd-main-content p {
-    font-size: 2.4rem;
-  }
+ 
 }
 
 /*
