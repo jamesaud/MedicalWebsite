@@ -7,23 +7,6 @@ p {
 a:hover{
     color: $primary-color;
 }
-    
-.logo-wrapper{
-    display: inline-block;
-}
-    span{
-        //display: inline-block;
-        height: 100%;
-        
-        top: 10px;
-        position: relative;
-
-        h5{
-            line-height: 10px;
-            font-size: $font-size-six;
-        }
-        
-}
 
 
 .cd-secondary-nav{
@@ -1511,12 +1494,12 @@ a:hover{
 
     }
 
-//Styling the TP-BANNER Slider
-.Newspaper-Subtitle, .tp-tab-title{
-    
-    color: #a0d6f7 !important;
+.rev_slider_wrapper{
+    //Styling the TP-BANNER Slider
+    .Newspaper-Subtitle, .tp-tab-title{
+        //color: #a0d6f7 !important;
+    }
 }
-
 
 #modal-guarantee{
     .modal-header, .modal-dialog, .modal-body, .modal-footer{
