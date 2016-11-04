@@ -43,6 +43,8 @@ $max-width: 1300px;
     padding-left: 65px;
     padding-right: 65px;
     font-size: $font-size-four;
+      border-radius: 50em;
+
 }
 
 @mixin transparentBackgroundColor($alpha,$color, $important:null) {
@@ -60,5 +62,6 @@ $max-width: 1300px;
             transition: all .1s;
         }
     }
+
 
 
