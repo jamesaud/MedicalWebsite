@@ -1,20 +1,17 @@
-{% extends "pages/homepage_base.html" %}
-{% load staticfiles %}
-{% load static %}
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link href="https://fonts.googleapis.com/css?family=David+Libre|Hind:400,700" rel="stylesheet">
 
-{% block more-css %}
-        <link rel="stylesheet" href="{% static 'standalone/auto-hiding-navigation/css/style.css' %}">
-
-        {% load sass_tags %}
-        <link rel="stylesheet" href="{% sass_src 'css/test.scss' %}">
-        <!-- for dev only -->
-         <link href="{% static 'staticfiles/css/test.css' %}" rel="stylesheet" type="text/css" />
-{% endblock more-css %}
-	
-
-
-{% block navbar %}
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  	
+	<title>Auto-Hiding Navigation - Simple | CodyHouse</title>
+</head>
+<body>
 <header class="cd-auto-hide-header">
 	<div class="logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
 
@@ -36,26 +33,7 @@
 	</nav> <!-- .cd-primary-nav -->
 </header> <!-- .cd-auto-hide-header -->
 
-<section class="cd-hero">
-	<div class="cd-hero-content">
-		<!-- your content here -->
-	</div>
-</section> <!-- .cd-hero -->
-
-<nav class="cd-secondary-nav">
-	<ul>
-		<li><a class="active" href="#0">Intro</a></li>
-		<li><a href="#0">Features</a></li>
-		<li><a href="#0">Photos</a></li>
-		<li><a href="#0">Videos</a></li>
-		<li><a href="#0">Specs</a></li>
-		<li><a href="#0">Support</a></li>
-		<li><a href="#0">Compare</a></li>
-		<li><a href="#0">Buy</a></li>
-	</ul>
-</nav> <!-- .cd-secondary-nav -->
-
-<main class="cd-main-content sub-nav-hero">
+<main class="cd-main-content">
 	<div>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, quos, voluptate, sunt, in suscipit quibusdam quis dignissimos eligendi repellendus ipsam exercitationem adipisci nostrum fugit accusamus quae cum nisi accusantium eaque.
@@ -86,15 +64,11 @@
 		</p>
 	</div>
 </main> <!-- .cd-main-content -->
-{% endblock navbar %}
-
-
-{% block modal %}
-
-{% endblock modal %}
-
-
-{% block more-javascript %}
-<script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
-
-{% endblock more-javascript %}
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
