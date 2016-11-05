@@ -1,127 +1,19 @@
-{% extends "pages/homepage_base.html" %}
-{% load staticfiles %}
-{% load static %}
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link href="https://fonts.googleapis.com/css?family=David+Libre|Hind:400,700" rel="stylesheet">
 
-{% block more-css %}
-<<<<<<< HEAD
-        <link rel="stylesheet" href="{% static 'standalone/pointy-slider/css/style.css' %}">
-        
-=======
-        <link rel="stylesheet" href="{% static 'standalone/auto-hiding-navigation/css/style.css' %}">
-
->>>>>>> content
-        {% load sass_tags %}
-        <link rel="stylesheet" href="{% sass_src 'css/test.scss' %}">
-        <!-- for dev only -->
-         <link href="{% static 'staticfiles/css/test.css' %}" rel="stylesheet" type="text/css" />
-{% endblock more-css %}
-	
-<<<<<<< HEAD
-	 
-
-
-{% block modal %}
-<div class='section-slideshow'>
-    <div class="cd-slider-wrapper">
-        <ul class="cd-slider">
-            <li class="is-visible">
-                <div class="cd-half-block image"></div>
-
-                <div class="cd-half-block content content-white">
-                    <div>
-                        <h2>A workflow matching the natural healthcare process</h2>
-                        <p class=''>
-                            <span>From the moment</span> the patient gets sick to the time they leave the clinic, we've got you covered.  </p>
-                        
-                        <p class='hide-mobile'><span>A system designed</span> from the ground up by doctors, nurses, MA's, administration, and patients to optimize the healthcare process in every way possible. 
-                        </p>
-                        <p class='hide-mobile'>
-                            <span>Follow</span>  the Synergy+ flow by using the tabs below.
-                        </p>
-                        <div class="btn btn-color" href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">Live Demo Now</div> 
-                    </div>
-                </div>
-            </li> <!-- .cd-half-block.content -->
-
-            <li>
-                <div class="cd-half-block image"></div>
-
-                <div class="cd-half-block content">
-                    <div>
-                        <h2>Engage from the Beginning</h2>
-                        <p>
-                            The patient gets sick and searches online. 
-                        </p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="cd-half-block image"></div>
-
-                <div class="cd-half-block content">
-                    <div>
-                        <h2>Slide Number 3</h2>
-                        <p>
-                            <!-- content here -->
-                        </p>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="cd-half-block image"></div>
-
-                <div class="cd-half-block content">
-                    <div>
-                        <h2>Slide Number 4</h2>
-                        <p>
-                            <!-- content here -->
-                        </p>
-                    </div>
-                </div>
-            </li>
-
-            <!-- addition list items here -->
-        </ul> <!-- .cd-slider -->
-
-        <!-- The ol.cd-slider-navigation element is created using jQuery and inserted here-->
-    </div> <!-- .cd-slider-wrapper -->
-</div>
-{% endblock modal %}
-        
-
-
-
-{% block more-javascript %}
-    	<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/jquery.mobile.custom.min.js' %}"></script>
-
-	<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/main.js' %}"></script>
-	<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/modernizr.js' %}"></script>
-<script>
-    var sliderPagination = createSliderPagination('.cd-slider-wrapper'); // sliderContainer = $('.cd-slider-wrapper')
-
-    function createSliderPagination(container){
-        var wrapper = $('<ol class="cd-slider-navigation"></ol>');
-        $(container).children('.cd-slider').find('li').each(function(index){
-            var dotWrapper = (index == 0) ? $('<li class="selected"></li>') : $('<li></li>'),
-                dot = $('<a href="#0"></a>').appendTo(dotWrapper);
-            dotWrapper.appendTo(wrapper);
-            var dotText = ( index+1 < 10 ) ? '0'+ (index+1) : index+1;
-            dot.text(dotText);
-        });
-        wrapper.appendTo(container);
-        return wrapper.children('li');
-    }
-</script>
-=======
-
-
-{% block navbar %}
-<div class='cd-navbar-wrapper'>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  	
+	<title>Auto-Hiding Navigation - with Sub Nav | CodyHouse</title>
+</head>
+<body>
 <header class="cd-auto-hide-header">
-	<div class="logo"><a href="#0"><img src="{% static 'images/logo1.png' %}" alt="Logo"></a></div>
+	<div class="logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
 
 	<nav class="cd-primary-nav">
 		<a href="#cd-navigation" class="nav-trigger">
@@ -139,30 +31,22 @@
 			<li><a href="#0">Contact Us</a></li>
 		</ul>
 	</nav> <!-- .cd-primary-nav -->
+
+	<nav class="cd-secondary-nav">
+		<ul>
+			<li><a class="active" href="#0">Intro</a></li>
+			<li><a href="#0">Features</a></li>
+			<li><a href="#0">Photos</a></li>
+			<li><a href="#0">Videos</a></li>
+			<li><a href="#0">Specs</a></li>
+			<li><a href="#0">Support</a></li>
+			<li><a href="#0">Compare</a></li>
+			<li><a href="#0">Buy</a></li>
+		</ul>
+	</nav> <!-- .cd-secondary-nav -->
 </header> <!-- .cd-auto-hide-header -->
-</div>
 
-
-<section class="cd-hero">
-	<div class="cd-hero-content">
-		<!-- your content here -->
-	</div>
-</section> <!-- .cd-hero -->
-
-<nav class="cd-secondary-nav">
-	<ul>
-		<li><a class="active" href="#0">Intro</a></li>
-		<li><a href="#0">Features</a></li>
-		<li><a href="#0">Photos</a></li>
-		<li><a href="#0">Videos</a></li>
-		<li><a href="#0">Specs</a></li>
-		<li><a href="#0">Support</a></li>
-		<li><a href="#0">Compare</a></li>
-		<li><a href="#0">Buy</a></li>
-	</ul>
-</nav> <!-- .cd-secondary-nav -->
-
-<main class="cd-main-content sub-nav-hero">
+<main class="cd-main-content sub-nav">
 	<div>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, quos, voluptate, sunt, in suscipit quibusdam quis dignissimos eligendi repellendus ipsam exercitationem adipisci nostrum fugit accusamus quae cum nisi accusantium eaque.
@@ -191,18 +75,21 @@
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dolore, impedit eveniet necessitatibus voluptate distinctio quam repellendus voluptates voluptatum inventore rem sapiente minus esse saepe iste harum architecto numquam quis vero dignissimos beatae est id libero adipisci enim odio natus commodi explicabo modi similique nesciunt deserunt vel consectetur velit omnis quaerat corrupti. Cumque, perspiciatis, culpa, reprehenderit laboriosam obcaecati deleniti soluta tempora ipsum ipsam iure temporibus dolore modi quidem cum doloribus ex vel suscipit sapiente ut esse optio voluptates molestias natus nostrum illo nihil quisquam facilis hic atque voluptas quae pariatur placeat officia doloremque quia ea recusandae rem iste asperiores iusto debitis quod incidunt id nemo repellendus itaque. Iure, vel, expedita quam repellendus aliquam fugit autem obcaecati libero reiciendis excepturi officia voluptate molestiae quis itaque consequatur nulla ea sunt facilis cupiditate tempora sequi nam in asperiores! Sunt, maxime at id eaque debitis quasi a possimus eveniet eum velit tempore quidem voluptates expedita quibusdam officiis. Ipsum, quaerat, vero, adipisci enim autem inventore eum maiores consectetur culpa molestiae cumque sed qui dolorem. Placeat, quae deleniti molestiae minima cupiditate quaerat sit est perspiciatis error iste. Ratione, minus, commodi, magni laborum doloribus libero ullam quos tenetur quis molestias ipsam consequuntur harum asperiores culpa nostrum omnis.
 		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dolore, impedit eveniet necessitatibus voluptate distinctio quam repellendus voluptates voluptatum inventore rem sapiente minus esse saepe iste harum architecto numquam quis vero dignissimos beatae est id libero adipisci enim odio natus commodi explicabo modi similique nesciunt deserunt vel consectetur velit omnis quaerat corrupti. Cumque, perspiciatis, culpa, reprehenderit laboriosam obcaecati deleniti soluta tempora ipsum ipsam iure temporibus dolore modi quidem cum doloribus ex vel suscipit sapiente ut esse optio voluptates molestias natus nostrum illo nihil quisquam facilis hic atque voluptas quae pariatur placeat officia doloremque quia ea recusandae rem iste asperiores iusto debitis quod incidunt id nemo repellendus itaque. Iure, vel, expedita quam repellendus aliquam fugit autem obcaecati libero reiciendis excepturi officia voluptate molestiae quis itaque consequatur nulla ea sunt facilis cupiditate tempora sequi nam in asperiores! Sunt, maxime at id eaque debitis quasi a possimus eveniet eum velit tempore quidem voluptates expedita quibusdam officiis. Ipsum, quaerat, vero, adipisci enim autem inventore eum maiores consectetur culpa molestiae cumque sed qui dolorem. Placeat, quae deleniti molestiae minima cupiditate quaerat sit est perspiciatis error iste. Ratione, minus, commodi, magni laborum doloribus libero ullam quos tenetur quis molestias ipsam consequuntur harum asperiores culpa nostrum omnis.
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dolore, impedit eveniet necessitatibus voluptate distinctio quam repellendus voluptates voluptatum inventore rem sapiente minus esse saepe iste harum architecto numquam quis vero dignissimos beatae est id libero adipisci enim odio natus commodi explicabo modi similique nesciunt deserunt vel consectetur velit omnis quaerat corrupti. Cumque, perspiciatis, culpa, reprehenderit laboriosam obcaecati deleniti soluta tempora ipsum ipsam iure temporibus dolore modi quidem cum doloribus ex vel suscipit sapiente ut esse optio voluptates molestias natus nostrum illo nihil quisquam facilis hic atque voluptas quae pariatur placeat officia doloremque quia ea recusandae rem iste asperiores iusto debitis quod incidunt id nemo repellendus itaque. Iure, vel, expedita quam repellendus aliquam fugit autem obcaecati libero reiciendis excepturi officia voluptate molestiae quis itaque consequatur nulla ea sunt facilis cupiditate tempora sequi nam in asperiores! Sunt, maxime at id eaque debitis quasi a possimus eveniet eum velit tempore quidem voluptates expedita quibusdam officiis. Ipsum, quaerat, vero, adipisci enim autem inventore eum maiores consectetur culpa molestiae cumque sed qui dolorem. Placeat, quae deleniti molestiae minima cupiditate quaerat sit est perspiciatis error iste. Ratione, minus, commodi, magni laborum doloribus libero ullam quos tenetur quis molestias ipsam consequuntur harum asperiores culpa nostrum omnis.
+		</p>
 	</div>
 </main> <!-- .cd-main-content -->
-{% endblock navbar %}
-
-
-{% block modal %}
-
-{% endblock modal %}
-
-
-{% block more-javascript %}
-<script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
-
->>>>>>> content
-{% endblock more-javascript %}
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

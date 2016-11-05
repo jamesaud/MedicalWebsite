@@ -11,6 +11,7 @@ $font-size-mini:   11px;
 $font-size-six:   13px;
 
 $btn-color: rgb(51, 122, 183);
+$border-color: #eee;
 
 $primary-color: #45AEEA;
 $second-color: #EFB917;
@@ -47,7 +48,7 @@ $max-width: 1300px;
 
 }
 
-@mixin transparentBackgroundColor($alpha,$color, $important:null) {
+@mixin transparentBackgroundColor($alpha, $color, $important:null) {
   background-color: rgba(red($color), green($color), blue($color), $alpha) $important;
 }
 

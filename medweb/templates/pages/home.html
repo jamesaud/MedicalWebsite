@@ -34,8 +34,9 @@
 		      <!-- REVOLUTION STYLE SHEETS -->
 		<link rel="stylesheet" type="text/css" href="/static/img-slider/news-gallery1/css/settings.css">
 
-		<style>.tp-caption.Newspaper-Button,.Newspaper-Button{color:rgba(255,255,255,1.00);font-size:13px;line-height:17px;font-weight:700;font-style:normal;font-family:Roboto;padding:12px 35px 12px 35px;text-decoration:none;background-color:rgba(255,255,255,0);border-color:rgba(255,255,255,0.25);border-style:solid;border-width:1px;border-radius:0px 0px 0px 0px;text-align:left;letter-spacing:2px}.tp-caption.Newspaper-Button:hover,.Newspaper-Button:hover{color:rgba(0,0,0,1.00);text-decoration:none;background-color:rgba(255,255,255,1.00);border-color:rgba(255,255,255,1.00);border-style:solid;border-width:1px;border-radius:0px 0px 0px 0px;cursor:pointer}.tp-caption.Newspaper-Subtitle,.Newspaper-Subtitle{color:rgba(168,216,238,1.00);font-size:15px;line-height:20px;font-weight:900;font-style:normal;font-family:Roboto;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}.tp-caption.Newspaper-Title,.Newspaper-Title{color:rgba(255,255,255,1.00);font-size:50px;line-height:55px;font-weight:400;font-style:normal;font-family:"Roboto Slab";padding:0 0 10px 0;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}</style>
+        <style>.tp-caption.Newspaper-Button,.Newspaper-Button{color:rgba(255,255,255,1.00);font-size:13px;line-height:17px;font-weight:700;font-style:normal;font-family:Roboto;padding:12px 35px 12px 35px;text-decoration:none;background-color:rgba(255,255,255,0);border-color:rgba(255,255,255,0.25);border-style:solid;border-width:1px;border-radius:0px 0px 0px 0px;text-align:left;letter-spacing:2px}.tp-caption.Newspaper-Button:hover,.Newspaper-Button:hover{color:rgba(0,0,0,1.00);text-decoration:none;background-color:rgba(255,255,255,1.00);border-color:rgba(255,255,255,1.00);border-style:solid;border-width:1px;border-radius:0px 0px 0px 0px;cursor:pointer}.tp-caption.Newspaper-Subtitle,.Newspaper-Subtitle{color:rgba(168,216,238,1.00);font-size:15px;line-height:20px;font-weight:900;font-style:normal;font-family:Roboto;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}.tp-caption.Newspaper-Title,.Newspaper-Title{color:rgba(255,255,255,1.00);font-size:50px;line-height:55px;font-weight:400;font-style:normal;font-family:"Roboto Slab";padding:0 0 10px 0;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}</style>
 				<style type="text/css">.erinyen .tp-tab-title{color:rgb(168,216,238);  font-size:13px;  font-weight:700;  text-transform:uppercase;  font-family:"Roboto Slab";  margin-bottom:5px;  line-height:15px}.erinyen .tp-tab-desc{font-size:18px;  font-weight:400;  color:rgb(255,255,255);  line-height:25px;font-family:"Roboto Slab"}</style>
+
 				
 
         
@@ -57,6 +58,16 @@
         <link href="{% static '/staticfiles/css/circle-tabs.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static '/staticfiles/css/parsley-floating.css' %}" rel="stylesheet" type="text/css" />  <!-- Form parsley floating css -->
 
+
+        <!-- TEST CSS -->
+
+    <!-- css -->
+
+        {% load sass_tags %}
+        <link rel="stylesheet" href="{% sass_src 'css/test.scss' %}">
+        <!-- for dev only -->
+         <link href="{% static 'staticfiles/css/test.css' %}" rel="stylesheet" type="text/css" />
+
         <div id='home'></div><!-- guarantees home nav lights up at the top of the pages -->
 {% endblock more-css %}
 
@@ -65,20 +76,25 @@
 {% get_static_prefix as STATIC_PREFIX %}
 
 
+<!-- TEST -->
 
 
-<div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery1" style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
+<section>  
+    
+<!-- TP BANNER -->
+
+<div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery1" style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
 <!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
-	<div id="rev_slider_2_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
+	<div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
 <ul>	<!-- SLIDE  -->
-    <li data-index="rs-5" data-transition="parallaxvertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/100x50_0d4eb-newscarousel1.jpeg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Synergy+ Value Based Services" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="Optimizing healthcare and patient care outcomes">
+    <li data-index="rs-1" data-transition="parallaxvertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="static/img-slider/news-gallery1/assets/100x50_9fd03-0d4eb-newscarousel1.jpeg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Synergy+ Value Based Services" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="Optimizing earnings and patient care outcomes">
 		<!-- MAIN IMAGE -->
-        <img src="/static/img-slider/news-gallery1/assets/0d4eb-newscarousel1.jpeg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+        <img src="static/img-slider/news-gallery1/assets/9fd03-0d4eb-newscarousel1.jpeg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 		<!-- LAYERS -->
 
 		<!-- LAYER NR. 1 -->
 		<div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme" 
-			 id="slide-5-layer-3" 
+			 id="slide-1-layer-3" 
 			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
 			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
 						data-width="full"
@@ -97,11 +113,11 @@
 
 		<!-- LAYER NR. 2 -->
 		<div class="tp-caption Newspaper-Title   tp-resizeme" 
-			 id="slide-5-layer-1" 
-			 data-x="['left','left','left','left']" data-hoffset="['49','32','50','33']" 
-			 data-y="['top','top','top','top']" data-voffset="['136','111','89','72']" 
-						data-fontsize="['55','50','50','50']"
-			data-lineheight="['60','55','55','60']"
+			 id="slide-1-layer-1" 
+			 data-x="['left','left','left','left']" data-hoffset="['108','59','50','31']" 
+			 data-y="['top','top','top','top']" data-voffset="['134','119','81','30']" 
+						data-fontsize="['55','50','50','45']"
+			data-lineheight="['62','55','55','50']"
 			data-width="['600','600','600','420']"
 			data-height="none"
 			data-whitespace="normal"
@@ -117,17 +133,17 @@
 			data-responsive_offset="on" 
 
 			
-			style="z-index: 6; min-width: 600px; max-width: 600px; white-space: normal; font-size: 55px; line-height: 60px;">Synergy+ Value Based Services  </div>
+			style="z-index: 6; min-width: 600px; max-width: 600px; white-space: normal; font-size: 55px; line-height: 62px; color: rgba(255, 255, 255, 1.00);">Synergy+ Value Based Services </div>
 
 		<!-- LAYER NR. 3 -->
 		<div class="tp-caption Newspaper-Subtitle   tp-resizeme" 
-			 id="slide-5-layer-2" 
-			 data-x="['left','left','left','left']" data-hoffset="['51','38','51','-81']" 
-			 data-y="['top','top','top','top']" data-voffset="['274','246','216','11']" 
-						data-color="['rgba(160, 214, 247, 1.00)','rgba(160, 214, 247, 1.00)','rgba(168, 216, 238, 1.00)','rgba(0, 10, 0, 1.00)']"
-			data-width="['none','none','none','28']"
+			 id="slide-1-layer-2" 
+			 data-x="['left','left','left','left']" data-hoffset="['114','63','54','777']" 
+			 data-y="['top','top','top','top']" data-voffset="['275','244','202','4']" 
+						data-color="['rgba(180, 220, 247, 1.00)','rgba(168, 216, 238, 1.00)','rgba(168, 216, 238, 1.00)','rgba(168, 216, 238, 1.00)']"
+			data-width="none"
 			data-height="none"
-			data-whitespace="['nowrap','nowrap','nowrap','normal']"
+			data-whitespace="nowrap"
 			data-transform_idle="o:1;"
  
 			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
@@ -140,152 +156,27 @@
 			data-responsive_offset="on" 
 
 			
-			style="z-index: 7; white-space: nowrap; color: rgba(160, 214, 247, 1.00);border-color:rgba(252, 7, 7, 1.00);">Efficiency for Doctors, staff and patients: quality of care is optimized without sacrificing volume.<br>
+			style="z-index: 7; white-space: nowrap; color: rgba(180, 220, 247, 1.00);">Efficiency for Doctors, staff and patients: quality of care is optimized without sacrificing volume.<br>
+
 Exceed expectations of VBC by optimizing time and money every step of the healthcare process.<br>
+
 Featuring Patient Engagement, Data Security, EHR + Integration, RCM+, Data Analytics and PHM. </div>
 
 		<!-- LAYER NR. 4 -->
-		<a class='read-more-btn' href='#read-more-destination'>
-<div class="tp-caption Newspaper-Button rev-btn " 
-			 id="slide-5-layer-5" 
-			 data-x="['left','left','left','left']" data-hoffset="['53','53','53','25']" 
-			 data-y="['top','top','top','top']" data-voffset="['383','331','301','241']" 
-						data-width="none"
-			data-height="none"
-			data-whitespace="nowrap"
-			data-transform_idle="o:1;"
-				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-				data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);"
- 
-			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-			 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-			data-start="1000" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-responsive_offset="on" 
-			data-responsive="off"
-			
-			style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">READ MORE </div></a>
-
-		<!-- LAYER NR. 5 -->
-        <a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">
-		<div class="tp-caption Newspaper-Button rev-btn " 
-			 id="slide-5-layer-7" 
-			 data-x="['left','left','left','left']" data-hoffset="['276','249','249','235']" 
-			 data-y="['top','top','top','top']" data-voffset="['383','332','302','244']" 
-						data-width="['208','178','177','178']"
-			data-height="none"
-			data-whitespace="normal"
-			data-transform_idle="o:1;"
-				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-				data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(212, 58, 67, 0.60);bc:rgba(212, 58, 67, 0.60);"
- 
-			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-			 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-			data-start="1000" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-responsive_offset="on" 
-			data-responsive="off"
-			
-			style="z-index: 9; min-width: 208px; max-width: 208px; white-space: normal;text-align:center;background-color:rgba(212, 58, 67, 0.30);border-color:rgba(212, 58, 67, 0.30);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">DEMO NOW </div>
-        </a>
-        
-	</li>
-	<!-- SLIDE  -->
-    <li data-index="rs-10" data-transition="parallaxvertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/100x50_402e9-newscarousel2.jpeg"  data-rotate="0"  data-saveperformance="off"  data-title="Highly Specialized Services" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="Maximizing cash-flow and net income gains ">
-		<!-- MAIN IMAGE -->
-        <img src="/static/img-slider/news-gallery1/assets/402e9-newscarousel2.jpeg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-		<!-- LAYERS -->
-
-		<!-- LAYER NR. 1 -->
-		<div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme" 
-			 id="slide-10-layer-3" 
-			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-						data-width="full"
-			data-height="full"
-			data-whitespace="normal"
-			data-transform_idle="o:1;"
- 
-			 data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
-			 data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;" 
-			data-start="1000" 
-			data-basealign="slide" 
-			data-responsive_offset="on" 
-
-			
-			style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);"> </div>
-
-		<!-- LAYER NR. 2 -->
-		<div class="tp-caption Newspaper-Title   tp-resizeme" 
-			 id="slide-10-layer-1" 
-			 data-x="['left','left','left','left']" data-hoffset="['49','32','50','33']" 
-			 data-y="['top','top','top','top']" data-voffset="['136','111','89','41']" 
-						data-fontsize="['55','50','50','50']"
-			data-lineheight="['60','55','55','60']"
-			data-width="['600','600','600','420']"
-			data-height="none"
-			data-whitespace="normal"
-			data-transform_idle="o:1;"
- 
-			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-			 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-			data-start="1000" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-responsive_offset="on" 
-
-			
-			style="z-index: 6; min-width: 600px; max-width: 600px; white-space: normal; font-size: 55px; line-height: 60px;">Highly Specialized Services </div>
-
-		<!-- LAYER NR. 3 -->
-		<div class="tp-caption Newspaper-Subtitle   tp-resizeme" 
-			 id="slide-10-layer-2" 
-			 data-x="['left','left','left','left']" data-hoffset="['51','38','51','-81']" 
-			 data-y="['top','top','top','top']" data-voffset="['274','246','216','11']" 
-						data-color="['rgba(160, 214, 247, 1.00)','rgba(160, 214, 247, 1.00)','rgba(168, 216, 238, 1.00)','rgba(0, 10, 0, 1.00)']"
-			data-width="['none','none','none','28']"
+		<a class='read-more-btn' href='#read-more-destination'><div class="tp-caption Newspaper-Button rev-btn " 
+			 id="slide-1-layer-5" 
+			 data-x="['left','left','left','left']" data-hoffset="['115','62','53','34']" 
+			 data-y="['top','top','top','top']" data-voffset="['361','322','282','242']" 
+						data-width="['none','none','none','163']"
 			data-height="none"
 			data-whitespace="['nowrap','nowrap','nowrap','normal']"
 			data-transform_idle="o:1;"
- 
-			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
-			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-			 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
-			data-start="1000" 
-			data-splitin="none" 
-			data-splitout="none" 
-			data-responsive_offset="on" 
-
-			
-			style="z-index: 7; white-space: nowrap; color: rgba(160, 214, 247, 1.00);border-color:rgba(252, 7, 7, 1.00);">Specialized services combined with disruptive technology yields a Synergistic effect.<br>
-Net income grows by 33-100% for private groups and hospitals. <br>
-When Doctors practice medicine their way, patients get healthier. </div>
-
-		<!-- LAYER NR. 4 -->
-		<a class='read-more-btn' href='#read-more-destination'><div class="tp-caption Newspaper-Button rev-btn" 
-             href="#read-more-destination"
-			 id="slide-10-layer-5" 
-			 data-x="['left','left','left','left']" data-hoffset="['53','53','53','25']" 
-			 data-y="['top','top','top','top']" data-voffset="['383','331','301','241']" 
-						data-width="none"
-			data-height="none"
-			data-whitespace="nowrap"
-			data-transform_idle="o:1;"
 				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
 				data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);"
  
 			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
 			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-			 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+			 data-mask_in="x:0px;y:0px;" 
 			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
 			data-start="1000" 
 			data-splitin="none" 
@@ -296,17 +187,39 @@ When Doctors practice medicine their way, patients get healthier. </div>
                                                                     style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">READ MORE </div></a>
 
 		<!-- LAYER NR. 5 -->
-        <a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">
-		<div class="tp-caption Newspaper-Button rev-btn " 
-			 id="slide-10-layer-7" 
-			 data-x="['left','left','left','left']" data-hoffset="['276','249','249','235']" 
-			 data-y="['top','top','top','top']" data-voffset="['383','332','302','244']" 
-						data-width="['208','178','177','178']"
-			data-height="none"
+		<a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact"><div class="tp-caption Newspaper-Button rev-btn " 
+			 id="slide-1-layer-6" 
+			 data-x="['left','left','left','left']" data-hoffset="['321','280','272','239']" 
+			 data-y="['top','top','top','top']" data-voffset="['361','321','282','242']" 
+						data-width="['201','190','194','182']"
+			data-height="['none','44','44','none']"
 			data-whitespace="normal"
 			data-transform_idle="o:1;"
 				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-				data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(212, 58, 67, 0.60);bc:rgba(212, 58, 67, 0.60);"
+				data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(212, 58, 67, 0.85);bc:rgba(212, 58, 67, 0.90);"
+ 
+			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+			 data-mask_in="x:0px;y:0px;" 
+			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+			data-responsive="off"
+			
+                                                                                                    style="z-index: 9; min-width: 201px; max-width: 201px; white-space: normal;text-align:center;background-color:rgba(212, 58, 67, 0.60);border-color:rgba(212, 58, 67, 0.70);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">DEMO NOW </div></a>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-caption Newspaper-Subtitle   tp-resizeme" 
+			 id="slide-1-layer-7" 
+			 data-x="['left','left','left','left']" data-hoffset="['1136','1075','901','34']" 
+			 data-y="['top','top','top','top']" data-voffset="['-135','212','88','152']" 
+						data-color="['rgba(180, 220, 247, 1.00)','rgba(168, 216, 238, 1.00)','rgba(168, 216, 238, 1.00)','rgba(168, 216, 238, 1.00)']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
  
 			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
 			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
@@ -316,20 +229,20 @@ When Doctors practice medicine their way, patients get healthier. </div>
 			data-splitin="none" 
 			data-splitout="none" 
 			data-responsive_offset="on" 
-			data-responsive="off"
+
 			
-			style="z-index: 9; min-width: 208px; max-width: 208px; white-space: normal;text-align:center;background-color:rgba(212, 58, 67, 0.30);border-color:rgba(212, 58, 67, 0.30);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">DEMO NOW </div>
-        </a>
+			style="z-index: 10; white-space: nowrap; color: rgba(180, 220, 247, 1.00);">Efficiency for Doctors, staff and patients: <br>quality of care is optimized without sacrificing volume.<br>
+Exceed expectations of VBC by optimizing time &amp; money. </div>
 	</li>
 	<!-- SLIDE  -->
-    <li data-index="rs-11" data-transition="parallaxvertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/100x50_45dd9-newscarousel6.jpeg"  data-rotate="0"  data-saveperformance="off"  data-title="Innovative Healthcare" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="Making non-clinical issues non-issues">
+    <li data-index="rs-2" data-transition="parallaxvertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="static/img-slider/news-gallery1/assets/100x50_0b42e-402e9-newscarousel2.jpeg"  data-rotate="0"  data-saveperformance="off"  data-title="Highly Specialized Services" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="Maximizing cash-flow and net income gains">
 		<!-- MAIN IMAGE -->
-        <img src="/static/img-slider/news-gallery1/assets/45dd9-newscarousel6.jpeg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+        <img src="static/img-slider/news-gallery1/assets/0b42e-402e9-newscarousel2.jpeg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 		<!-- LAYERS -->
 
 		<!-- LAYER NR. 1 -->
 		<div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme" 
-			 id="slide-11-layer-3" 
+			 id="slide-2-layer-3" 
 			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
 			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
 						data-width="full"
@@ -348,11 +261,11 @@ When Doctors practice medicine their way, patients get healthier. </div>
 
 		<!-- LAYER NR. 2 -->
 		<div class="tp-caption Newspaper-Title   tp-resizeme" 
-			 id="slide-11-layer-1" 
-			 data-x="['left','left','left','left']" data-hoffset="['49','32','51','33']" 
-			 data-y="['top','top','top','top']" data-voffset="['175','142','101','72']" 
-						data-fontsize="['55','50','50','50']"
-			data-lineheight="['60','55','55','60']"
+			 id="slide-2-layer-1" 
+			 data-x="['left','left','left','left']" data-hoffset="['108','59','50','31']" 
+			 data-y="['top','top','top','top']" data-voffset="['134','119','81','37']" 
+						data-fontsize="['55','50','50','45']"
+			data-lineheight="['62','55','55','50']"
 			data-width="['600','600','600','420']"
 			data-height="none"
 			data-whitespace="normal"
@@ -368,17 +281,17 @@ When Doctors practice medicine their way, patients get healthier. </div>
 			data-responsive_offset="on" 
 
 			
-			style="z-index: 6; min-width: 600px; max-width: 600px; white-space: normal; font-size: 55px; line-height: 60px;">Innovative Healthcare </div>
+			style="z-index: 6; min-width: 600px; max-width: 600px; white-space: normal; font-size: 55px; line-height: 62px; color: rgba(255, 255, 255, 1.00);">Highly Specialized Services </div>
 
 		<!-- LAYER NR. 3 -->
 		<div class="tp-caption Newspaper-Subtitle   tp-resizeme" 
-			 id="slide-11-layer-2" 
-			 data-x="['left','left','left','left']" data-hoffset="['51','38','55','-81']" 
-			 data-y="['top','top','top','top']" data-voffset="['260','214','184','11']" 
-						data-color="['rgba(160, 214, 247, 1.00)','rgba(160, 214, 247, 1.00)','rgba(168, 216, 238, 1.00)','rgba(0, 10, 0, 1.00)']"
-			data-width="['none','none','none','28']"
+			 id="slide-2-layer-2" 
+			 data-x="['left','left','left','left']" data-hoffset="['111','65','54','777']" 
+			 data-y="['top','top','top','top']" data-voffset="['275','244','202','4']" 
+						data-color="['rgba(180, 220, 247, 1.00)','rgba(168, 216, 238, 1.00)','rgba(168, 216, 238, 1.00)','rgba(168, 216, 238, 1.00)']"
+			data-width="none"
 			data-height="none"
-			data-whitespace="['nowrap','nowrap','nowrap','normal']"
+			data-whitespace="nowrap"
 			data-transform_idle="o:1;"
  
 			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
@@ -391,28 +304,25 @@ When Doctors practice medicine their way, patients get healthier. </div>
 			data-responsive_offset="on" 
 
 			
-			style="z-index: 7; white-space: nowrap; color: rgba(160, 214, 247, 1.00);border-color:rgba(252, 7, 7, 1.00);">Our system makes non-clinical issues non-issues for doctors. <br>
-The system’s workflow is identical to the care process to which Doctors are accustomed.<br>
-Doctors see up to 40% more patients, and everyone goes home on time!
- </div>
+			style="z-index: 7; white-space: nowrap; color: rgba(180, 220, 247, 1.00);">Specialized services combined with disruptive technology yields a Synergistic effect.<br>
+Net income grows by 33-100% for private groups and hospitals. <br>
+When Doctors practice medicine their way, patients get healthier.  </div>
 
 		<!-- LAYER NR. 4 -->
-        <a class='read-more-btn' href='#read-more-destination'>
-		<div class="tp-caption Newspaper-Button rev-btn read-more-btn" 
-             href="#read-more-destination"
-			 id="slide-11-layer-5" 
-			 data-x="['left','left','left','left']" data-hoffset="['53','53','53','25']" 
-			 data-y="['top','top','top','top']" data-voffset="['383','331','301','241']" 
-						data-width="none"
+		<a class='read-more-btn' href='#read-more-destination'><div class="tp-caption Newspaper-Button rev-btn " 
+			 id="slide-2-layer-5" 
+			 data-x="['left','left','left','left']" data-hoffset="['115','65','53','34']" 
+			 data-y="['top','top','top','top']" data-voffset="['360','327','285','242']" 
+						data-width="['none','none','none','163']"
 			data-height="none"
-			data-whitespace="nowrap"
+			data-whitespace="['nowrap','nowrap','nowrap','normal']"
 			data-transform_idle="o:1;"
 				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
 				data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);"
  
 			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
 			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
-			 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+			 data-mask_in="x:0px;y:0px;" 
 			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
 			data-start="1000" 
 			data-splitin="none" 
@@ -420,20 +330,42 @@ Doctors see up to 40% more patients, and everyone goes home on time!
 			data-responsive_offset="on" 
 			data-responsive="off"
 			
-             style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">READ MORE </div></a>
+                                                                    style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">READ MORE </div></a>
 
 		<!-- LAYER NR. 5 -->
-        < a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">
-		<div class="tp-caption Newspaper-Button rev-btn " 
-			 id="slide-11-layer-7" 
-			 data-x="['left','left','left','left']" data-hoffset="['276','249','249','235']" 
-			 data-y="['top','top','top','top']" data-voffset="['383','332','302','244']" 
-						data-width="['208','178','177','178']"
-			data-height="none"
+		<a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact"><div class="tp-caption Newspaper-Button rev-btn " 
+			 id="slide-2-layer-6" 
+			 data-x="['left','left','left','left']" data-hoffset="['321','281','272','239']" 
+			 data-y="['top','top','top','top']" data-voffset="['360','327','286','242']" 
+						data-width="['201','190','194','182']"
+			data-height="['none','44','44','none']"
 			data-whitespace="normal"
 			data-transform_idle="o:1;"
 				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-				data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(212, 58, 67, 0.60);bc:rgba(212, 58, 67, 0.60);"
+				data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(212, 58, 67, 0.85);bc:rgba(212, 58, 67, 0.90);"
+ 
+			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+			 data-mask_in="x:0px;y:0px;" 
+			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+			data-responsive="off"
+			
+                                                                                                    style="z-index: 9; min-width: 201px; max-width: 201px; white-space: normal;text-align:center;background-color:rgba(212, 58, 67, 0.60);border-color:rgba(212, 58, 67, 0.70);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">DEMO NOW </div></a>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-caption Newspaper-Subtitle   tp-resizeme" 
+			 id="slide-2-layer-7" 
+			 data-x="['left','left','left','left']" data-hoffset="['1136','1075','901','34']" 
+			 data-y="['top','top','top','top']" data-voffset="['-135','212','88','151']" 
+						data-color="['rgba(180, 220, 247, 1.00)','rgba(168, 216, 238, 1.00)','rgba(168, 216, 238, 1.00)','rgba(168, 216, 238, 1.00)']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
  
 			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
 			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
@@ -443,25 +375,198 @@ Doctors see up to 40% more patients, and everyone goes home on time!
 			data-splitin="none" 
 			data-splitout="none" 
 			data-responsive_offset="on" 
+
+			
+			style="z-index: 10; white-space: nowrap; color: rgba(180, 220, 247, 1.00);">Specialized services with disruptive technology.<br>
+Net income grows by 33-100% for private groups &amp; hospitals. <br>
+Doctors practice medicine their way, patients get healthier.  </div>
+	</li>
+	<!-- SLIDE  -->
+    <li data-index="rs-3" data-transition="parallaxvertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="static/img-slider/news-gallery1/assets/100x50_12e75-45dd9-newscarousel6.jpeg"  data-rotate="0"  data-saveperformance="off"  data-title="Innovative Healthcare" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="Making non-clinical issues non-issues">
+		<!-- MAIN IMAGE -->
+        <img src="static/img-slider/news-gallery1/assets/12e75-45dd9-newscarousel6.jpeg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme" 
+			 id="slide-3-layer-3" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+						data-width="full"
+			data-height="full"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;" 
+			data-start="1000" 
+			data-basealign="slide" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);"> </div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption Newspaper-Title   tp-resizeme" 
+			 id="slide-3-layer-1" 
+			 data-x="['left','left','left','left']" data-hoffset="['108','59','50','31']" 
+			 data-y="['top','top','top','top']" data-voffset="['156','135','99','38']" 
+						data-fontsize="['55','50','50','45']"
+			data-lineheight="['62','55','55','50']"
+			data-width="['600','600','600','420']"
+			data-height="none"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+			 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 6; min-width: 600px; max-width: 600px; white-space: normal; font-size: 55px; line-height: 62px; color: rgba(255, 255, 255, 1.00);">Innovative Healthcare </div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption Newspaper-Subtitle   tp-resizeme" 
+			 id="slide-3-layer-2" 
+			 data-x="['left','left','left','left']" data-hoffset="['111','62','54','777']" 
+			 data-y="['top','top','top','top']" data-voffset="['245','212','173','4']" 
+						data-color="['rgba(180, 220, 247, 1.00)','rgba(168, 216, 238, 1.00)','rgba(168, 216, 238, 1.00)','rgba(168, 216, 238, 1.00)']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+			 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 7; white-space: nowrap; color: rgba(180, 220, 247, 1.00);">Our system makes non-clinical issues non-issues for doctors. <br>
+The system’s workflow is identical to the care process to which Doctors are accustomed.<br>
+Doctors see up to 40% more patients, and everyone goes home on time! </div>
+
+		<!-- LAYER NR. 4 -->
+		<a class='read-more-btn' href='#read-more-destination'><div class="tp-caption Newspaper-Button rev-btn " 
+			 id="slide-3-layer-5" 
+			 data-x="['left','left','left','left']" data-hoffset="['115','62','53','34']" 
+			 data-y="['top','top','top','top']" data-voffset="['343','308','268','250']" 
+						data-width="['none','none','none','163']"
+			data-height="none"
+			data-whitespace="['nowrap','nowrap','nowrap','normal']"
+			data-transform_idle="o:1;"
+				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+				data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);"
+ 
+			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+			 data-mask_in="x:0px;y:0px;" 
+			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
 			data-responsive="off"
 			
-			style="z-index: 9; min-width: 208px; max-width: 208px; white-space: normal;text-align:center;background-color:rgba(212, 58, 67, 0.30);border-color:rgba(212, 58, 67, 0.30);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">DEMO NOW </div>
-        </a>
+                                                                    style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">READ MORE </div></a>
+
+		<!-- LAYER NR. 5 -->
+		<a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact"><div class="tp-caption Newspaper-Button rev-btn " 
+			 id="slide-3-layer-6" 
+			 data-x="['left','left','left','left']" data-hoffset="['321','281','272','239']" 
+			 data-y="['top','top','top','top']" data-voffset="['345','310','269','250']" 
+						data-width="['201','190','194','182']"
+			data-height="['none','44','44','none']"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+				data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(212, 58, 67, 0.85);bc:rgba(212, 58, 67, 0.90);"
+ 
+			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+			 data-mask_in="x:0px;y:0px;" 
+			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+			data-responsive="off"
+			
+                                                                                                    style="z-index: 9; min-width: 201px; max-width: 201px; white-space: normal;text-align:center;background-color:rgba(212, 58, 67, 0.60);border-color:rgba(212, 58, 67, 0.70);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">DEMO NOW </div></a>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-caption Newspaper-Subtitle   tp-resizeme" 
+			 id="slide-3-layer-7" 
+			 data-x="['left','left','left','left']" data-hoffset="['1136','1075','901','35']" 
+			 data-y="['top','top','top','top']" data-voffset="['-135','212','88','157']" 
+						data-color="['rgba(180, 220, 247, 1.00)','rgba(168, 216, 238, 1.00)','rgba(168, 216, 238, 1.00)','rgba(168, 216, 238, 1.00)']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+			 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+			 data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 10; white-space: nowrap; color: rgba(180, 220, 247, 1.00);">Our system makes non-clinical issues non-issues. <br>
+The system’s workflow is identical to the care process.<br>
+Doctors, staff &amp; patients goes home on time! </div>
 	</li>
 </ul>
 <div class="tp-bannertimer tp-bottom" style="height: 5px; background-color: rgba(166, 216, 236, 1.00);"></div>	</div>
-</div><!-- END
+</div><!-- END REVOLUTION SLIDER -->
+    
+<!-- END
+
+
 <!-- END TP BANNER -->
 
+</section> <!-- .cd-hero -->
+
+<div id='read-more-destination'></div>
+
+<nav class="cd-secondary-nav">
+	<ul>
+		 <li id='nav-home'><a class='active' href="#">Home</a></li>
+        <li id='nav-insights'><a href='#insights'>Insights</a></li>
+        <li id='nav-solutions'><a href="#solutions">Solutions</a></li>
+        <li id='nav-benefits'><a href='#benefits'>Benefits</a></li>
+        <li id='nav-why'><a href="#why">Why Us</a></li>
+        <li id='nav-demo'><a href="#demo">Demo</a></li>
+        <li id='nav-plans'><a href="#plans">Plans &amp; Pricing</a></li>
+        <li id='nav-resources'><a href="#resource">Resources</a></li>
+        <li id='nav-investors'><a href="#tab-investors">Investors</a></li>
+	</ul>
+</nav> <!-- .cd-secondary-nav -->
+
+<!-- ENDTEST --->
 
 
 
-<div class="one-page">
+
+
+
+<div class="one-page cd-main-content sub-nav-hero">
 
     
 <!--== HIGHLIGHTS == -->
 
-    <div id='read-more-destination'></div>
 
     <div class='one-page-inner one-default section-highlights'>
         
@@ -476,11 +581,51 @@ Doctors see up to 40% more patients, and everyone goes home on time!
         </div>
         </div>
         
-        <div class=''>
+    
         <hr>
-        </div>  
+ 
+        
+        <div class='container hi-intro-points'>
+            <div class='main-points intro-block-1'>
+                <div class='row'>
+                    <div class='col-md-6 main-points-block'>
+                            <i class="fa fa-clock-o fa-4x icon col-1" aria-hidden="true" ></i>
+                            <h2 class='main-points-header'>The Time Machine</h2>
+                            <h4>Introducing a transparent EHR that saves 40% more time every step of the care
+process. Doctors save 7-10 minutes per patient visit &amp; see up to 40% more patients.</h4>
 
-        <div class='hi-success'>
+                    </div>
+                    
+                    <div class='col-md-6 main-points-block'>
+                            <i class="fa fa-dashboard fa-4x icon col-3" aria-hidden="true" ></i>
+                            <h2 class='main-points-header'>Optimize, Eliminate, Grow</h2>
+                            <h4>Automatic coding bills at the highest level for <span>optimized</span> reimbursements. Receive direct deposits same day of service. Our RCM <span>eliminates</span> 80%+ of related staff so you can <span>grow</span>.</h4>
+                    </div>
+                </div>
+                    <div class='i-points-border-t'></div>
+
+                <div class='row intro-block-2'>
+                    <div class='col-md-6 main-points-block'>
+                            <i class="fa fa-plus fa-4x icon col-2" aria-hidden="true" ></i>
+                            <h2 class='main-points-header'>Simplicity &amp; Reliability</h2>
+                            <h4>Install in 1 day &amp; train online in minutes; save time and 
+money in a matter of days!  We carefully monitor the first 30 
+days to make sure you meet or exceed our 
+guaranteed services. </h4>
+                    </div>
+                    
+                    <div class='col-md-6 main-points-block'>
+                            <i class="fa fa-money fa-4x icon col-4" aria-hidden="true" ></i>
+                            <h2 class='main-points-header'>Amazingly Affordable</h2>
+                            <h4>All-inclusive services are guaranteed in writing to add value, or we don't earn! With an industry-low EHR fee at 4% and RCM saving 30%+ per bill, you can't afford not to try.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        
+        <!--<div class='hi-success'>
             <div class='main-points container content'>
               <div class='row section-success-block-1'>
                 <div class='col-md-4 main-points-block'>
@@ -530,7 +675,7 @@ Doctors see up to 40% more patients, and everyone goes home on time!
              </div>
         </div> 
        
-            <hr >
+            <hr>-->
             
         <div class='hi-intro-2'  >
             
@@ -3979,6 +4124,21 @@ patients within the next three to five years.</p></h5>
                                     </div>
                                 </div>
                             </div>
+                             <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                                            What if I am currently locked in a contract?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Please call us if you are locked into a contract that you believe is unsustainable or unfair. Many vendors <em>fail to deliver what they promised</em>. We can refer you to legal experts to deal with your specific situation, and in some cases legally break the contract.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div><!--/acc-v1-->
                         <!-- End General Questions -->
                     </div>
@@ -4434,7 +4594,7 @@ function remove_nav_active(nav_id_to_keep, all_navs){
             continue;
         }
         else{
-            $(nav_id).removeClass('active');
+            $(nav_id).children('a').removeClass('active');
         }
     }
 };
@@ -4444,10 +4604,10 @@ function add_nav_waypoint(waypoint_id, nav_id){ //string with hash
     var waypoint = new Waypoint({
       element: $(waypoint_id),
       handler: function(){
-          $(nav_id).addClass('active');
+          $(nav_id).children('a').addClass('active');
           remove_nav_active(nav_id, all_nav_ids);
       },
-      offset: 110 // one pixel before the scroll on click in the navbar, so that it changes correctly
+      offset: 70 // one pixel before the scroll on click in the navbar, so that it changes correctly
     });
 };
 
@@ -4481,9 +4641,9 @@ add_nav_waypoint('#trigger-why','#nav-why');
 
 <!-- NAVBAR SMOOTH SCROLL -->
 <script>
-var offset_up = 110; // fixed navbar height blocks the view, move up certain amount of pixels to offset it.
+var offset_up = 70; // fixed navbar height blocks the view, move up certain amount of pixels to offset it.
     
-$('.navbar-nav li a').bind('click', function(e) {
+$('.cd-secondary-nav li a').bind('click', function(e) {
     e.preventDefault();
     var hashTag = this.hash;
   	var top = 0;
@@ -4606,18 +4766,18 @@ $('.phone-autodash').keyup(function(){
 		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/extensions/revolution.extension.parallax.min.js"></script>
 		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/extensions/revolution.extension.slideanims.min.js"></script>
 		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/extensions/revolution.extension.video.min.js"></script>
-
-		<script type="text/javascript">
+		
+<script type="text/javascript">
 						var tpj=jQuery;
 			
-			var revapi2;
+			var revapi1;
 			tpj(document).ready(function() {
-				if(tpj("#rev_slider_2_1").revolution == undefined){
-					revslider_showDoubleJqueryError("#rev_slider_2_1");
+				if(tpj("#rev_slider_1_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_1_1");
 				}else{
-					revapi2 = tpj("#rev_slider_2_1").show().revolution({
+					revapi1 = tpj("#rev_slider_1_1").show().revolution({
 						sliderType:"standard",
-jsFileLocation:"//localhost:8887/revslider/public/assets/js/",
+jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
 						sliderLayout:"fullwidth",
 						dottedOverlay:"none",
 						delay:9000,
@@ -4719,7 +4879,8 @@ jsFileLocation:"//localhost:8887/revslider/public/assets/js/",
 				}
 			});	/*ready*/
 		</script>
-		
+
+	
 
 
 	<!-- JS Implementing Plugins -->
@@ -4860,5 +5021,11 @@ validate_form_tab('#contact-form-4', '#contact-tab-4', '#contact-tab-5');
             // Initialize the plugin
 		});
 	</script>
+
+<!-- TEST JS SECTINO -->
+
+
+        <script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
+
 
 {% endblock more-javascript %}

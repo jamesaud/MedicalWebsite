@@ -59,6 +59,15 @@
         <!-- bootstrap form-helper plugin -->
         <link rel="stylesheet" href="{% static 'bower_components/bootstrap-formhelpers/dist/css/bootstrap-formhelpers.min.css' %}" />
         
+<<<<<<< HEAD
+=======
+        <!-- Lightbox Plugin -->
+        <link rel="stylesheet" href="{% static 'standalone/lightbox2/dist/css/lightbox.min.css' %}" />
+        
+        <!-- navbar plugin css -->
+                <link rel="stylesheet" href="{% static 'standalone/auto-hiding-navigation/css/style.css' %}">
+
+>>>>>>> content
         
          <!-- My CSS -->
         {% load sass_tags %}
@@ -77,105 +86,45 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 
-<body class="header-fixed ">
+<body class="">
 	<div class="wrapper">
 		<!--=== Header v8 ===-->
         
 
-        
-		<div class="header-v8 header-sticky">
-            
-			<!-- Topbar blog -->
-            
-			<!-- End Topbar blog -->
+        {% block navbar %}
+	       <!-- TOP NAVBAR -->
+<div class='cd-navbar-wrapper'>
+<header class="cd-auto-hide-header">
+	<div class="logo"><a href="#0"><img src="{% static 'images/logo1.png' %}" alt="Logo"></a></div>
+    <!--<span >
+           <h5>Optimizing Net Income</h5>
+             <h5>Non-clinical Issues Become Non-Issues</h5>
+            <h5>Doctors Practice Medicine Their Way</h5>
+        </span>-->
 
-			<!-- Navbar -->
-			<div class="navbar mega-menu" role="navigation">
-				<div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="res-container">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-                        
-                        <div class='row nav-top'>
-                            
-                            <div class='logo-wrapper'>
-                                <div class='col-md-6'>
-                                <div class="navbar-brand">
-                                    <a class='' href="#" onClick="return false;">
-                                        <img src="{% static 'images/logo1.png' %}" alt="Logo">
-                                    </a>
-                                </div>
-                                </div>
-                              </div>
-                            
-                              <div class='col-md-4 header-slogan hide-mobile text-center'>
-                                    <h5><a href='' onClick='return false;'><strong><span>Optimizing Earnings and Patient Care Outcomes</span></strong>
-                                        <br>
-                                       Net income rises as non-clinical issues become non-issues
-                                        <br>
-                                        Doctors practice medicine their way, patients get healthier</a>
-                                      </h5>
-                                  </div>
-                            
-                            <div class='pull-right'>
-                                <ul class='mynav1 hide-mobile nav navbar-nav'>      
-                                            <li class='nav-li-extra' id='nav-contact'><br><a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">Contact</a></li>
-                                            <li class='nav-li-extra' id='nav-call-now'><a href="##" onClick="return false;" data-toggle="collapse" data-target="#call-now-info"><i class='fa fa-phone'></i> +1 (812) 360-9245<br>
-                                                &nbsp;Free Evaluation
-                                                </a>
-                                            </li>    
-                                </ul>
-                            </div>
-                            
-                            
-                        </div>
-                        
-                        <hr/>
-                        
-                        <div>
-                              <div class="row mynav">
-                            <!-- Toggles the mobile display of the header-slogan banner -->        
-                            
-                               <div class='header-slogan-mobile'>
-                                <h5><a href=''><br><strong>Optimizing Earnings and Patient Care Outcomes.</strong> <br>Net income rises as non-clinical issues become non-issues.<br> Doctors practice medicine their way, patients get healthier. <br><br></a></h5>
-                                </div>
-                                  
-                                <div class="collapse navbar-collapse navbar-responsive-collapse ">
-                                
-                               <!--/end responsive container-->
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <div class='nav-links-wrapper'>
-                                    <ul class="nav navbar-nav nav-links">
-                                            <!-- Home -->
-                                            <li id='nav-home' class='active'><a href="#">Home</a></li>
-                                            <li id='nav-insights'><a href='#insights'>Insights</a></li>
-                                            <li id='nav-solutions'><a href="#solutions">Solutions</a></li>
-                                            <li id='nav-benefits'><a href='#benefits'>Benefits</a></li>
-                                            <li id='nav-why'><a href="#why">Why Us</a></li>
-                                            <li id='nav-demo'><a href="#demo">Demo</a></li>
-                                            <li id='nav-plans'><a href="#plans">Plans &amp; Pricing</a></li>
-                                            <li id='nav-resources'><a href="#resource">Resources</a></li>
-                                            <li id='nav-investors'><a href="#tab-investors">Investors</a></li>
-                                            <ul class='show-mobile nav navbar-nav nav-links'>
-                                                
-                                                <li ><a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">Contact</a></li>
-                                                <li><a href="##" onClick="return false;" data-toggle="collapse" data-target="#call-now-info"><i class='fa fa-phone'></i> +1 (812) 360-9245</a>
-                                                </li>  
-                                            </ul>
-                                            
-                                    </ul>
-                                        </div>
-                                </div>
-                            </div></div></div></div></div>
-
-            </div>
+   
+    
+	<nav class="cd-primary-nav">
         
+		<a href="#cd-navigation" class="nav-trigger">
+			<span>
+				<em aria-hidden="true"></em>
+				Menu
+			</span>
+		</a> <!-- .nav-trigger -->
         
+       
+		<ul id="cd-navigation">
+			<li><a href="">Synergy+</a></li>
+			<li><a href="#">Physician Jobs</a></li>
+			<li><a href="#">Knowledge Base</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#modal-contact">Contact Us</a></li>
+		</ul>
+	</nav> <!-- .cd-primary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+</div>
+<!-- ENDTOP NAVBAR -->   
+        {% endblock navbar %}
         
         <div class='sidebar'>
             
@@ -904,4 +853,5 @@ $(function() {
 
     
 </body>
+    
 </html>
