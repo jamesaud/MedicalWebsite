@@ -12,11 +12,19 @@ hr{
     margin: 0 auto;
 }
 
-.nav-top{
-    margin-right: 2%;
-    max-width: $max-width;
-    margin: 0 auto;
+//NAVBAR
+.cd-navbar-wrapper{
+    header{
+
+        .logo{
+            img{
+                height: 40px;
+                width: auto;
+            }
+        }
+    }
 }
+
 
 .cd-navbar-wrapper{
     .cd-auto-hide-header{
@@ -47,6 +55,7 @@ hr{
     }
 }
 
+//END NAVBAR
 
 .show-mobile{
     display: none;
@@ -475,16 +484,19 @@ hr.no-margin{
        margin-bottom: 0px;
        padding-top: 18px;
        
-       
+
        
        .m-contact-title{
             margin-bottom: 10px;
            color: #333 !important;
            font-size: 22px;
+            font-weight: 300;
         }
         h5{
             color: #777 !important;
-            font-size: 14.5px;
+            font-size: $font-size-four;
+            
+                   font-weight: 300;
        }
        .bt-form__wrapper{
            margin-bottom: 0px;
