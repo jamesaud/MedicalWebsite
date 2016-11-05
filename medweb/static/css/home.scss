@@ -336,32 +336,84 @@ a:hover{
         
         .main-points{
             h2{color:black;}
-            h3{font-weight: normal;}
+            h3{font-weight: 300;}
         }
     }
     
     .hi-intro-2{
         @extend .hi-intro;
         margin-bottom: 0;
-        h2, h3{color: black !important;}
+        h2, h3{
+            color: black !important;
+        }
         a{
             color: $third-color;
         }
         
         &:after{
             .overlay:after {
-    content: '\A';
-    position: absolute;
-    width: 100%; 
-    height:100%;
-    top:0; 
-    left:0;
-    background:rgba(0,0,0,0.5);
-    opacity: 1;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-   -moz-transition: all 0.5s;
-}
+            content: '\A';
+            position: absolute;
+            width: 100%; 
+            height:100%;
+            top:0; 
+            left:0;
+            background:rgba(0,0,0,0.5);
+            opacity: 1;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+           -moz-transition: all 0.5s;
+        }
+        }
+    }
+    
+    .hi-intro-points{
+        $border-color: #777;
+        $padding: 35px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        
+        .main-points{
+            padding-top: 0;
+        }
+        
+        h4{
+            font-size:  $font-size-five;
+            font-weight: 300;
+        }
+        
+        .main-points-block{
+            padding-left: 3%;
+            padding-right: 3%;
+            span{
+                font-style: italic;
+            }
+            
+            
+            &:first-child{
+                  border-right: 1px dotted $border-color;
+            }
+        }
+        
+        .i-points-border-t{
+            border-top: 1px dotted $border-color;
+            width: 95%;
+            margin: 0 auto;
+        }
+        
+
+        
+        .intro-block-1{
+            .main-points-block{
+                padding-bottom: $padding !important;
+            }
+        }
+        
+        .intro-block-2{
+            .main-points-block{
+                padding-top: $padding !important;
+                padding-bottom: 15px !important;
+            }
         }
     }
     
@@ -1497,7 +1549,12 @@ a:hover{
 .rev_slider_wrapper{
     //Styling the TP-BANNER Slider
     .Newspaper-Subtitle, .tp-tab-title{
-        //color: #a0d6f7 !important;
+        color: #AEDBF7 !important;
+    }
+    
+    //Change background shading to darker
+    .tp-shape {
+        background-color: rgba(0, 0, 0, 0.4002) !important;
     }
 }
 
@@ -1577,4 +1634,3 @@ a:hover{
         text-align: left;
     }
 }
-
