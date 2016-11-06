@@ -367,10 +367,6 @@ a:hover{
         }
     }
     
-    
-    .hi-intro-3-wrapper{
-    }
-    
      .hi-intro-3{
          position: relative !important;
         @extend .hi-intro;
@@ -378,10 +374,7 @@ a:hover{
          padding-bottom: 55px;
          margin-bottom: 0px;
       
-         button{
-             margin-bottom: 3px;
-             margin-right: 2px;
-         }
+         
          h3{
              color: white;
         }
@@ -394,11 +387,51 @@ a:hover{
              font-style: italic;
              font-weight: bold;
          }
+         button{
+             margin-bottom: 5px;
+             margin-right: 2px;
+         }
          input{
+             font-size: $font-size-four;
+         }
+         input, button{
              border-right: none;
              max-width: 300px;
-             margin: 0 auto;
+             height: 50px;
          }
+    }
+    
+    .hi-intro-4{
+        @extend .hi-intro;
+        padding-bottom: 50px;
+        .btn-color-1{
+            @include color_btn($second-color);
+        }
+        .btn-color-2{
+            @include color_btn($third-color);
+        }
+        .btn-color-0{
+            margin-top: 2px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 18px;
+            padding-right: 18px;
+            
+            //outline: 1px solid $primary-color;
+            background: transparent;
+
+            color: $primary-color;  
+            
+            font-size: 23px;
+            span{
+                font-weight: bold;
+            }
+            &:hover{
+                background: $primary-color;
+                color: white;
+                transition: all .3s;
+            }
+        }
     }
    
     
@@ -514,13 +547,7 @@ a:hover{
         }
     }
   
-    
-    @media screen and (min-width: 769px){
-        #component-pe{
-            position: relative;
-            left: -12px !important;
-        }
-    }
+   
     .highlights-components{
         max-width: 920px;
         margin: 0 auto;
@@ -545,10 +572,14 @@ a:hover{
             color: black !important;
             padding-bottom: 0px;
             margin-bottom: 25px;
+            line-height: 35px !important;
         }
         h3{
             font-weight: 400 !important;
             padding-bottom: 5px;
+        }
+        .hi-block-2-text{
+            margin-top: 0px;
         }
     }
 
