@@ -388,7 +388,7 @@ a:hover{
              font-weight: bold;
          }
          button{
-             margin-bottom: 5px;
+             margin-bottom: 4px;
              margin-right: 2px;
          }
          input{
@@ -497,6 +497,7 @@ a:hover{
                 color: black !important;            
             }
         }
+        
         a,img{
             z-index: 0;
             text-align: left;
@@ -552,11 +553,33 @@ a:hover{
         max-width: 920px;
         margin: 0 auto;
         text-align: center;
+        
         .popover{
-            width: 370px; /* Max Width of the popover (depending on the container!) */
-            max-width: none;
+            width: 550px; /* Max Width of the popover (depending on the container!) */
+            max-width: 550px;
             z-index: 5;
+            p{
+                text-decoration: underline;
+                text-align: center;
+                padding: 0;
             }
+            ul{
+                padding-left: 20px;
+            }
+            li{
+              margin-bottom: 5px;  
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+        
+        }
+        
+        @media screen and (max-width: 769px){
+            .popover{
+                max-width: 100%;
+            }
+        }
     
         h5{
             overflow: visible;
@@ -619,6 +642,8 @@ a:hover{
           -webkit-box-shadow: 3px 3px 5px 6px #ccc;
           box-shadow:         0px 0px 0px 5px #333;
     }
+    
+    
     
 
     
@@ -1038,6 +1063,51 @@ a:hover{
 }
 
 
+//Use REM in this sectinon for units
+.section-slideshow{
+    margin: 0 auto;
+    max-width: $max-width;
+    
+    @media (min-width: 992px) {
+        .cd-slider-wrapper{
+            max-height: 92vh;
+        }
+    }
+    
+    
+    .cd-slider-wrapper{
+        padding-bottom: 0;
+    }
+    h2{
+        line-height: 1.4;
+        margin-bottom: 30px;
+        font-size: 3.0rem;
+    }
+    
+    p{
+        font-size: 1.6rem;
+        line-height: 1.4; 
+        span{
+            font-weight: bold;
+        }
+        
+    }
+    
+    .content-white{
+        h2,p{
+            color: white;
+        }
+    }
+    
+    .btn-color{
+        @include color_btn($third-color);    }
+    
+    @media screen and (max-width: 768px){
+        h2{
+            margin-bottom: 20px;
+        }
+    }
+}
 
 .section-plans{
     background: #3E4747 !important;

@@ -92,12 +92,34 @@ hr{
         right: 12px;
         top: 20px;
     }
+    
+}
+
+@media screen and (max-width: 1025px){
+        #cd-navigation{
+            padding-left: 0;
+            li{list-style-type: none}
+        }
+        #nav-call{
+            width: auto;
+             a{
+                position: relative;
+                top: auto;}
+            span.tiny{
+                display: none;
+            }
+            .show-mobile{
+                display: inline;
+                font-size: 12px !important;
+            }
+    }
 }
 
 .cd-primary-nav{
     padding-right: 3%;
 }
    
+
 
 .center{
     float: none;
@@ -127,10 +149,12 @@ hr.no-margin{
 
 
 /* To be below fixed nav bar */
-.content-main { margin-top: 70px; }
+.content-main { 
+    margin-top: 75px !important; 
+}
 
-@media screen and (max-width: 768px) {
-    .content-main { margin-top: 0px; }
+@media screen and (max-width: 1025px) {
+    .content-main { margin-top: 65px !important; }
 }
 
 

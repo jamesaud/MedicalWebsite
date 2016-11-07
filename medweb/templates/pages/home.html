@@ -4,12 +4,7 @@
 
 {% block more-css %}
         <!-- CSS Implementing Plugins -->
-        <link rel="stylesheet" href="/static/plugins/animate.css">
-        <link rel="stylesheet" href="/static/plugins/line-icons/line-icons.css">
-        <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/static/plugins/fancybox/source/jquery.fancybox.css">
-        <link rel="stylesheet" href="/static/plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
-
+       
         <!--[if lt IE 9]><link rel="stylesheet" href="/static/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
 
         <!-- CSS Pages Style -->
@@ -18,9 +13,9 @@
         <link rel="stylesheet" href="/static/css/hex.css"><!-- for the hexes -->
 
         <link rel="stylesheet" href="/static/css/pages/shortcode_timeline1.css"><!-- for the timeline -->
-        <link rel="stylesheet" href="/static/plugins/owl-carousel/owl-carousel/owl.carousel.css">
 
         <link rel="stylesheet" href="/static/css/pages/portfolio-v2.css">
+        <link rel="stylesheet" href="{% static 'standalone/pointy-slider/css/style.css' %}"> <!-- Pointy Slider -->
 
 
         
@@ -29,7 +24,7 @@
 		<link href="http://fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C700" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Roboto%3A900%2C700" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Roboto+Slab%3A400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 
 		<link rel="stylesheet" type="text/css" href="/static/img-slider/news-gallery1/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-		<link rel="stylesheet" type="text/css" href="/static/img-slider/news-gallery1/fonts/font-awesome/css/font-awesome.min.css">
+
 
 		      <!-- REVOLUTION STYLE SHEETS -->
 		<link rel="stylesheet" type="text/css" href="/static/img-slider/news-gallery1/css/settings.css">
@@ -46,37 +41,26 @@
         <!-- sass -->
         {% load sass_tags %}
     
-        <link href="{% sass_src 'css/home.scss' %}" rel="stylesheet" type="text/css" />
         <link href="{% sass_src 'css/charts.scss' %}" rel="stylesheet" type="text/css" />
         <link href="{% sass_src 'css/graphs.scss' %}" rel="stylesheet" type="text/css" />
         <link href="{% sass_src 'css/circle-tabs.scss' %}" rel="stylesheet" type='text/css'/>
         <link href="{% sass_src 'css/parsley-floating.scss' %}" rel="stylesheet" type='text/css'/>
+        <link href="{% sass_src 'css/home.scss' %}" rel="stylesheet" type="text/css" />
+
 
         <!-- for local dev only -->
-        <link href="{% static '/staticfiles/css/home.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static '/staticfiles/css/graphs.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static '/staticfiles/css/circle-tabs.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static '/staticfiles/css/parsley-floating.css' %}" rel="stylesheet" type="text/css" />  <!-- Form parsley floating css -->
+        <link href="{% static '/staticfiles/css/home.css' %}" rel="stylesheet" type="text/css" />
 
-
-        <!-- TEST CSS -->
-
-        <link rel="stylesheet" href="{% static 'standalone/pointy-slider/css/style.css' %}">
 
         {% load sass_tags %}
         <link rel="stylesheet" href="{% sass_src 'css/test.scss' %}">
         <!-- for dev only -->
          <link href="{% static 'staticfiles/css/test.css' %}" rel="stylesheet" type="text/css" />
 
-        <!-- END TEST CSS -->
-
-    <!-- css -->
-
-        {% load sass_tags %}
-        <link rel="stylesheet" href="{% sass_src 'css/test.scss' %}">
-        <!-- for dev only -->
-         <link href="{% static 'staticfiles/css/test.css' %}" rel="stylesheet" type="text/css" />
-
+        
         <div id='home'></div><!-- guarantees home nav lights up at the top of the pages -->
 {% endblock more-css %}
 
@@ -88,7 +72,7 @@
 <!-- TEST -->
 
 
-<section>  
+<section class='content-main'>  
     
 <!-- TP BANNER -->
 
@@ -314,8 +298,8 @@ Exceed expectations of VBC by optimizing time &amp; money. </div>
 
 			
 			style="z-index: 7; white-space: nowrap; color: rgba(180, 220, 247, 1.00);">Specialized services combined with disruptive technology yields a Synergistic effect.<br>
-Net income grows by 33-100% for private groups and hospitals. <br>
-When Doctors practice medicine their way, patients get healthier.  </div>
+            Most private groups &amp; hospitals realize clinical net income gains of 25-100%.<br>
+            When Doctors can afford to practice medicine their way, patients get healthier.  </div>
 
 		<!-- LAYER NR. 4 -->
 		<a class='read-more-btn' href='#read-more-destination'><div class="tp-caption Newspaper-Button rev-btn " 
@@ -387,7 +371,7 @@ When Doctors practice medicine their way, patients get healthier.  </div>
 
 			
 			style="z-index: 10; white-space: nowrap; color: rgba(180, 220, 247, 1.00);">Specialized services with disruptive technology.<br>
-Net income grows by 33-100% for private groups &amp; hospitals. <br>
+Private groups &amp; hospitals achieve 25-100% net income gains. <br>
 Doctors practice medicine their way, patients get healthier.  </div>
 	</li>
 	<!-- SLIDE  -->
@@ -852,8 +836,8 @@ guaranteed services. </h4>
             <div class='section-highlights-block-2 main-points container'>
                 <div class='row'>
 
-                    <div class='highlights-components'>
-                    <h2 class='main-points-title'>Delivering 6 Key Components for All-Inclusive Healthcare</h2>
+                <div class='highlights-components'>
+                    <h2 class='main-points-title'>Summary of 6 Key Components for All-Inclusive Healthcare</h2>
 
 
                  <div class='col-md-2'>
@@ -863,10 +847,20 @@ guaranteed services. </h4>
                           data-content= "
                                          <div class='row'>
                                             <div class='col-md-6'>
-                                                Our PE system is proven to optimize patient compliance and patient health outcomes. PE is more than just a web portal; it's about creating long lasting relationships with patients to enable better care. 
+                                                
+                                                <ul>
+                                                    <li>Google SEO services guarantees you more patients.</li>
+                                                    <li>As little as $485/mo will secure a top Google search positon.</li>
+                                                    <li>Self-care &amp; preventative care programs, proven to cure or greatly reduce symptoms (approved by your doctor) </li>
+                                                    <li>Triage services coming in 2017</li>
+                                                </ul>
+                                                
                                             </div>
                                             <div class='col-md-6'>
-                                                    Our PE system is proven to optimize patient compliance and patient health outcomes. PE is more than just a web portal; it's about creating long lasting relationships with patients to enable be
+                                                   <ul>
+                                                    <li>All providers and staff embrace a team Approach. 
+                                                    </li>
+                                                </ul> 
                                             </div>
                                          </div>
                                          " class="fa circle-text fa-my-1 pop">PE</a>
@@ -875,7 +869,7 @@ guaranteed services. </h4>
                 <div class='col-md-2 col-sm-3'>
                     <h5><p>Data Security</p></h5>
                     <span >
-                       <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Data Security" data-html='true'
+                       <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" title="Data Security" data-html='true'
                           data-content= "HIPAA Compliance &amp; Cloud Based. 
                                          HIPAA Certified Compliance Consultation is provided as needed.   
                                          We exceed all HIPAA security regulations; all service risks are substantially reduced." class="fa circle-text fa-my-2">DS</a>
@@ -884,21 +878,21 @@ guaranteed services. </h4>
                 <div class='col-md-2'>
                     <h5><p>E-Health Records</p></h5>
                     <span >
-                       <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Electronic Health Records" 
+                       <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" title="Electronic Health Records" 
                           data-content= "The comprehensive practice resource for doctors. Software is installed and employees are trained in 1 day. With top integration for interoperability, doctors save 7-10 minutes per patient and see up to 40% " class="fa  circle-text fa-my-3">EHR</a>
                     </span>
                  </div>
                 <div class='col-md-2'>
                     <h5><p>Revenue Cycle</p></h5>
                     <span >
-                       <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Revenue Cycle Management" 
+                       <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" title="Revenue Cycle Management" 
                           data-content= "Eliminates all ARs - we pay you on the day of service while we collect. Dictation alone codes to high degree of accuracy. Recieve optimal reimbursements: 80%+ of all related costs of coding, billing and collections is eliminated." class="fa circle-text fa-my-4">RCM</a>
                     </span>
                  </div>
                 <div class='col-md-2'>
                     <h5><p>Data Analytics</p></h5>
                     <span >
-                       <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Data Analytics" 
+                       <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" title="Data Analytics" 
                           data-content= "Data analysis services for clinical research, KPI studies, government and private insurance audits, HIPAA compliance, Security audits and PHM are available as query request fulfillment." class="fa  circle-text fa-my-5">DA</a>
                     </span>
                  </div>
@@ -906,7 +900,7 @@ guaranteed services. </h4>
                 <div class='col-md-2'>
                     <h5><p>Population Health</p></h5>
                     <span >
-                       <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Population Health Management" 
+                       <a href='#' onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover" title="Population Health Management" 
                           data-content= "PHM reveals the best treatment methods and medicines while optimizing value based care reimbursements so patients get healthier. We strongly support value based care, but also optimize volume!" class="fa  circle-text fa-my-6">PHM</a>
                     </span> 
                  </div>
@@ -4265,7 +4259,7 @@ patients within the next three to five years.</p></h5>
                                 </div>
                                 <div id="collapseSix" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Your practice is most likely not too large! We support all sizes of clinics, even small hospitals. We strongly recommend contacting us if you are a mid-large sized group. Currently we are building our resources in order to bring full support to hospital systems.</p><p>
+                                        <p>Your practice is most likely not too large! We support all sizes of clinics, even hospitals. We strongly recommend contacting us if you are a mid-large sized group. Currently we are building our resources in order to bring full support to hospital systems.</p><p>
                                         Although Synergy+ was specifically designed for independent practices, the software can be scaled to handle larger practices. We work with you to develop any accommodations you might need in order to support your system.</p>
                                     </div>
                                 </div>
@@ -5042,7 +5036,7 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
 		</script>
 
 	
-
+    
 
 	<!-- JS Implementing Plugins -->
 	<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
@@ -5051,6 +5045,15 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
 	<!-- JS Customization -->
 	<!-- JS Page Level -->
 	<script type="text/javascript" src="/static/js/pages/page_portfolio.js"></script>
+
+    <!-- TEST JS SECTINO -->
+    <script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
+
+    <!-- POINTY SLIDER -->
+    <script type="text/javascript" src="{% static 'standalone/pointy-slider/js/jquery.mobile.custom.min.js' %}"></script>
+
+	<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/main.js' %}"></script>
+	<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/modernizr.js' %}"></script>
 
     <!-- SET READ MORE PARAMETERS -->
     <script>
@@ -5183,14 +5186,7 @@ validate_form_tab('#contact-form-4', '#contact-tab-4', '#contact-tab-5');
 		});
 	</script>
 
-<!-- TEST JS SECTINO -->
-<script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
-
 <!-- POINTY SLIDER -->
-<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/jquery.mobile.custom.min.js' %}"></script>
-
-	<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/main.js' %}"></script>
-	<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/modernizr.js' %}"></script>
 <script>
     var sliderPagination = createSliderPagination('.cd-slider-wrapper'); // sliderContainer = $('.cd-slider-wrapper')
 
@@ -5206,6 +5202,26 @@ validate_form_tab('#contact-form-4', '#contact-tab-4', '#contact-tab-5');
         wrapper.appendTo(container);
         return wrapper.children('li');
     }
+</script>
+
+<script>
+//Force popover to bottom on mobile, otherwise use the specified popover placements
+var options = {
+    placement: function (context, source) {
+        var position = $(source).position();
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        
+        if (width < 769){
+            return "bottom";
+        }
+        
+       else{
+            return $(source).data('placement');
+        }     
+    }
+};
+$(".circle-text").popover(options);
+    
 </script>
 
 
