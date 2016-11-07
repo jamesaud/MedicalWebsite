@@ -2,7 +2,19 @@
 
 //Use REM in this sectinon for units
 .section-slideshow{
+    margin: 0 auto;
+    max-width: $max-width;
     
+    @media (min-width: 992px) {
+        .cd-slider-wrapper{
+            max-height: 92vh;
+        }
+    }
+    
+    
+    .cd-slider-wrapper{
+        padding-bottom: 0;
+    }
     h2{
         line-height: 1.4;
         margin-bottom: 30px;

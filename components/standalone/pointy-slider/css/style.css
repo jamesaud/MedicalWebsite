@@ -51,7 +51,7 @@ Slider
   background-image: url(../img/img-1.jpg);
 }
 .cd-slider li:nth-of-type(2) .image {
-  background-image: url(../img/img-2.jpg);
+  //background-image: url(../img/img-2.jpg);
 }
 .cd-slider li:nth-of-type(3) .image {
   background-image: url(../img/img-3.jpg);
@@ -219,7 +219,7 @@ Slider Navigation
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  bottom: 30px;
+  bottom: 0px;
 }
 
     
@@ -288,7 +288,7 @@ Slider Navigation
         height: 90%;
     }
     .cd-slider-navigation{
-        bottom: 14%;
+        bottom: 10%;
     }
     
     

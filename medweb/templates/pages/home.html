@@ -61,6 +61,15 @@
 
         <!-- TEST CSS -->
 
+        <link rel="stylesheet" href="{% static 'standalone/pointy-slider/css/style.css' %}">
+
+        {% load sass_tags %}
+        <link rel="stylesheet" href="{% sass_src 'css/test.scss' %}">
+        <!-- for dev only -->
+         <link href="{% static 'staticfiles/css/test.css' %}" rel="stylesheet" type="text/css" />
+
+        <!-- END TEST CSS -->
+
     <!-- css -->
 
         {% load sass_tags %}
@@ -591,15 +600,15 @@ Doctors, staff &amp; patients goes home on time! </div>
                     <div class='col-md-6 main-points-block'>
                             <i class="fa fa-clock-o fa-4x icon col-1" aria-hidden="true" ></i>
                             <h2 class='main-points-header'>The Time Machine</h2>
-                            <h4>Introducing a transparent cloud-based EHR that saves 40% more time every step of the care
-process. Doctors save 7-10 minutes per patient visit &amp; see up to 40% more patients.</h4>
+                            <h4>Introducing a transparent cloud-based EHR that saves up to 40% of time every step of the care
+process. Doctors save 7-10 minutes per patient visit, seeing 25-40% more patients with equal revenue gains.</h4>
 
                     </div>
                     
                     <div class='col-md-6 main-points-block'>
                             <i class="fa fa-dashboard fa-4x icon col-3" aria-hidden="true" ></i>
                             <h2 class='main-points-header'>Optimize, Eliminate, Grow</h2>
-                            <h4>Automatic coding bills at the highest level for <span>optimized</span> reimbursements. Receive direct deposits same day of service. Our RCM <span>eliminates</span> 80%+ of related staff so you can <span>grow</span>.</h4>
+                            <h4>Automatic coding bills at the highest level for <span>optimized</span> reimbursements. Receive direct deposits same day of service. Our RCM <span>eliminates</span> 80%+ of related costs. Revenue &amp; cash-flow are optimized so you can <span>grow</span>.</h4>
                     </div>
                 </div>
                     <div class='i-points-border-t'></div>
@@ -609,15 +618,15 @@ process. Doctors save 7-10 minutes per patient visit &amp; see up to 40% more pa
                             <i class="fa fa-plus fa-4x icon col-2" aria-hidden="true" ></i>
                             <h2 class='main-points-header'>Simplicity &amp; Reliability</h2>
                             <h4>Install in 1 day &amp; train online in minutes; save time and 
-money in a matter of days!  We carefully monitor the first 30 
-days to make sure you meet or exceed our 
+money in a matter of days! All-inclusive services reduce dealing with multiple vendors.   We evaluate your progress 
+quarterly to ensure you meet or exceed our 
 guaranteed services. </h4>
                     </div>
                     
                     <div class='col-md-6 main-points-block'>
                             <i class="fa fa-money fa-4x icon col-4" aria-hidden="true" ></i>
                             <h2 class='main-points-header'>Amazingly Affordable</h2>
-                            <h4>All-inclusive services are guaranteed in writing to add value, or we don't earn! With an industry-low EHR fee at 4% and RCM saving 30%+ per bill, you can't afford not to try.</h4>
+                            <h4>With an unheard EHR/RCM rate of less than 4% (vs competitors 4-11%), you instantly save 25-50% on your current RCM bill. Do the math: on average our clients save 18k per doctor per year. Regardless of your needs, call us: you always get more for less. </h4>
                     </div>
                 </div>
             </div>
@@ -850,8 +859,17 @@ guaranteed services. </h4>
                  <div class='col-md-2'>
                     <div><h5><p>Patient Engagement</p></h5></div>
                     <span>
-                          <a href='#' onClick="return false;" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Patient Engagement" 
-                          data-content= "Our PE system is proven to optimize patient compliance and patient health outcomes. PE is more than just a web portal; it's about creating long lasting relationships with patients to enable better care." class="fa circle-text fa-my-1 pop">PE</a>
+                          <a href='#' onClick="return false;" data-toggle="popover" data-placement="right" data-trigger="hover" title="Patient Engagement" data-html='true'
+                          data-content= "
+                                         <div class='row'>
+                                            <div class='col-md-6'>
+                                                Our PE system is proven to optimize patient compliance and patient health outcomes. PE is more than just a web portal; it's about creating long lasting relationships with patients to enable better care. 
+                                            </div>
+                                            <div class='col-md-6'>
+                                                    Our PE system is proven to optimize patient compliance and patient health outcomes. PE is more than just a web portal; it's about creating long lasting relationships with patients to enable be
+                                            </div>
+                                         </div>
+                                         " class="fa circle-text fa-my-1 pop">PE</a>
                     </span>
                  </div>
                 <div class='col-md-2 col-sm-3'>
@@ -958,9 +976,81 @@ guaranteed services. </h4>
         </div>
     </div>
   </div>
-    
+       
      <div class="one-page-inner one-default section-insights content">
          
+<div class='container-fluid'>        
+    <div class='section-slideshow'>
+    <div class="cd-slider-wrapper">
+        <ul class="cd-slider">
+            <li class="is-visible">
+                <div class="cd-half-block image"></div>
+
+                <div class="cd-half-block content content-white">
+                    <div>
+                        <h2>A workflow matching the natural healthcare process</h2>
+                        <p class=''>
+                            <span>From the moment</span> the patient gets sick to the time they leave the clinic, we've got you covered.  </p>
+                        
+                        <p class='hide-mobile'><span>A system designed</span> from the ground up by doctors, with input from nurses, MA's, business consultants, and patients to optimize the healthcare process in every way possible. 
+                        </p>
+                        <p class='hide-mobile'>
+                            <span>Follow</span>  the Synergy+ flow by using the tabs below.
+                        </p>
+                        <div class="btn btn-color" href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">Live Demo Now</div> 
+                    </div>
+                </div>
+            </li> <!-- .cd-half-block.content -->
+
+            <li>
+                <div class="cd-half-block image" style="background-image:  url({% static 'images/doctor.jpg'%});"></div>
+
+                <div class="cd-half-block content">
+                    <div>
+                        <h2>Engage from the Beginning</h2>
+                        <p>
+                            The patient gets sick and searches online. 
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="cd-half-block image"></div>
+
+                <div class="cd-half-block content">
+                    <div>
+                        <h2>Slide Number 3</h2>
+                        <p>
+                            <!-- content here -->
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="cd-half-block image"></div>
+
+                <div class="cd-half-block content">
+                    <div>
+                        <h2>Slide Number 4</h2>
+                        <p>
+                            <!-- content here -->
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- addition list items here -->
+        </ul> <!-- .cd-slider -->
+
+        <!-- The ol.cd-slider-navigation element is created using jQuery and inserted here-->
+    </div> <!-- .cd-slider-wrapper -->
+</div>
+</div>
+
+        <hr class='no-top'>
+        
          <div class='si-message'>
              <div class=' container'>
                 <div class='row si-message-1'>
@@ -1031,6 +1121,7 @@ guaranteed services. </h4>
          <hr>
          
  <div class='si-info'>
+     
      
     <div class='container'>  
                 <!-- READMORE IMPLEMENTED AT BOTTOM WITH READMORE.JS PLUGIN. HEight is specified by article max-height in the css. -->
@@ -1124,13 +1215,20 @@ guaranteed services. </h4>
             </div>
             
         </div>
-                  <div id='trigger-insights'></div>
+     
+     
+         
+     
+     
+       <div id='trigger-insights'></div>
 
     </div>
 
          
     </div>
 
+    
+    
   <!-- INSIGHTS: BENEFITS -->
     
     <!-- Synergy+ benefits everyone -->
@@ -1150,14 +1248,13 @@ guaranteed services. </h4>
         
     </div>
   </div>
-
     
     
     <!-- HEALTHCARE MADE SIMPLE -->
     <div class="one-page-inner one-default">
-        <div class='row section-highlights-block-2'>
-          
-        </div>
+        
+        
+        
         <div class="container content main-points ">
           <div class="row text-center">
               <h1 class='main-points-title'>Healthcare Made Simple</h1>
@@ -5087,9 +5184,29 @@ validate_form_tab('#contact-form-4', '#contact-tab-4', '#contact-tab-5');
 	</script>
 
 <!-- TEST JS SECTINO -->
+<script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
 
+<!-- POINTY SLIDER -->
+<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/jquery.mobile.custom.min.js' %}"></script>
 
-        <script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
+	<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/main.js' %}"></script>
+	<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/modernizr.js' %}"></script>
+<script>
+    var sliderPagination = createSliderPagination('.cd-slider-wrapper'); // sliderContainer = $('.cd-slider-wrapper')
+
+    function createSliderPagination(container){
+        var wrapper = $('<ol class="cd-slider-navigation"></ol>');
+        $(container).children('.cd-slider').find('li').each(function(index){
+            var dotWrapper = (index == 0) ? $('<li class="selected"></li>') : $('<li></li>'),
+                dot = $('<a href="#0"></a>').appendTo(dotWrapper);
+            dotWrapper.appendTo(wrapper);
+            var dotText = ( index+1 < 10 ) ? '0'+ (index+1) : index+1;
+            dot.text(dotText);
+        });
+        wrapper.appendTo(container);
+        return wrapper.children('li');
+    }
+</script>
 
 
 {% endblock more-javascript %}

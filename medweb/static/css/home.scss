@@ -487,7 +487,7 @@ a:hover{
     
     .hi-comp{
 
-        padding-bottom: 55px;
+        padding-bottom: 45px;
         padding-top: 45px;
         .main-points{
             padding-bottom: 35px !important;
@@ -553,7 +553,9 @@ a:hover{
         margin: 0 auto;
         text-align: center;
         .popover{
-            width: 270px; /* Max Width of the popover (depending on the container!) */
+            width: 370px; /* Max Width of the popover (depending on the container!) */
+            max-width: none;
+            z-index: 5;
             }
     
         h5{
@@ -665,8 +667,8 @@ a:hover{
 .section-insights{
     .si-message{
         text-align: center;
-        padding-top: 60px;
-        padding-bottom: 28px;
+        margin-top: 60px ;
+        margin-bottom: 35px;
         .main-points{
             
             padding-top: 0px;
