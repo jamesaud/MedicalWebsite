@@ -4658,17 +4658,11 @@ patients within the next three to five years.</p></h5>
 {% block more-javascript %}
     <!-- JS Page Level -->
 	<script type="text/javascript" src="/static/js/app.js"></script>
-	<script type="text/javascript" src="/static/js/plugins/fancy-box.js"></script>
-	<script type="text/javascript" src="/static/js/plugins/style-switcher.js"></script>
-	<script type="text/javascript" src="/static/js/plugins/revolution-slider.js"></script>
 
 <!-- Slideshow function -->
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			App.init();
-			FancyBox.initFancybox();
-			StyleSwitcher.initStyleSwitcher();
-			RevolutionSlider.initRSfullWidth();
 		});
 	</script>
 
@@ -5039,21 +5033,27 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
     
 
 	<!-- JS Implementing Plugins -->
-	<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
 	<script type="text/javascript" src="/static/plugins/jquery.mixitup.min.js"></script>
-    <script type="text/javascript" src="/static/js/readmore.min.js"></script>
-	<!-- JS Customization -->
+    <script type="text/javascript" src="/static/js/readmore.min.js"></script> <!-- READMORE JS -->
+	
 	<!-- JS Page Level -->
 	<script type="text/javascript" src="/static/js/pages/page_portfolio.js"></script>
 
-    <!-- TEST JS SECTINO -->
+    <!-- Auto Hiding Navigation -->
     <script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
 
     <!-- POINTY SLIDER -->
     <script type="text/javascript" src="{% static 'standalone/pointy-slider/js/jquery.mobile.custom.min.js' %}"></script>
-
 	<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/main.js' %}"></script>
 	<script type="text/javascript" src="{% static 'standalone/pointy-slider/js/modernizr.js' %}"></script>
+
+
+    <!-- FORM HELPERS -->
+    <script type="text/javascript" src="{% static 'bower_components/bootstrap-formhelpers/dist/js/bootstrap-formhelpers.min.js' %}"></script>
+
+    <!-- BOOTSRAP DATETIME PICKER PLUGIN -->
+    <script type="text/javascript" src="{% static 'bower_components/moment/min/moment.min.js' %}"></script> <!-- MOMENT js requirement -->
+    <script src="{% static 'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js' %}"></script>
 
     <!-- SET READ MORE PARAMETERS -->
     <script>
@@ -5186,7 +5186,7 @@ validate_form_tab('#contact-form-4', '#contact-tab-4', '#contact-tab-5');
 		});
 	</script>
 
-<!-- POINTY SLIDER -->
+<!-- POINTY SLIDER INITALIZE SLIDESHOW-->
 <script>
     var sliderPagination = createSliderPagination('.cd-slider-wrapper'); // sliderContainer = $('.cd-slider-wrapper')
 
@@ -5204,6 +5204,7 @@ validate_form_tab('#contact-form-4', '#contact-tab-4', '#contact-tab-5');
     }
 </script>
 
+<!-- BOOTSTRAP POPOVER SETTINGS -->
 <script>
 //Force popover to bottom on mobile, otherwise use the specified popover placements
 var options = {
