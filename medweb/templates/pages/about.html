@@ -4,10 +4,25 @@
 
 
 {% block more-css %}
-        {% load sass_tags %}
-        <link rel="stylesheet" href="{% sass_src 'css/about.scss' %}">
-        <!-- for dev only -->
-         <link href="{% static 'staticfiles/css/about.css' %}" rel="stylesheet" type="text/css" />
+
+         <!-- LOADING FONTS AND ICONS -->
+         		<link href="http://fonts.googleapis.com/css?family=Roboto%3A100%2C300%2C400%2C500%2C700%2C900" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Roboto%3A900%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+
+         		<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+         		<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+
+         		<!-- REVOLUTION STYLE SHEETS -->
+         		<link rel="stylesheet" type="text/css" href="/static/img-slider/our-team/css/settings.css">
+         		<!-- REVOLUTION LAYERS STYLES -->
+            <style>.tp-caption.Team-Name,.Team-Name{color:rgba(255,255,255,1.00);font-size:70px;line-height:70px;font-weight:900;font-style:normal;font-family:Roboto;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}.tp-caption.Team-Position,.Team-Position{color:rgba(255,255,255,1.00);font-size:30px;line-height:30px;font-weight:400;font-style:normal;font-family:Georgia,serif;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}.tp-caption.Team-Description,.Team-Description{color:rgba(255,255,255,1.00);font-size:18px;line-height:28px;font-weight:400;font-style:normal;font-family:Roboto;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}.tp-caption.Team-Social,.Team-Social{color:rgba(255,255,255,1.00);font-size:50px;line-height:50px;font-weight:400;font-style:normal;font-family:Arial;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:center}.tp-caption.Team-Social:hover,.Team-Social:hover{color:rgba(255,255,255,1.00);text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;cursor:pointer}.tp-caption.Team-Thumb,.Team-Thumb{color:rgba(255,255,255,1.00);font-size:20px;line-height:22px;font-weight:400;font-style:normal;font-family:Arial;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}.tp-caption.Team-Thumb:hover,.Team-Thumb:hover{color:rgba(255,255,255,1.00);text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;cursor:pointer}</style>
+<style type="text/css">.tp-static-layers .tp-parallax-wrap:not(:first-child):hover{z-index:100 !important}</style>
+
+
+         {% load sass_tags %}
+         <link rel="stylesheet" href="{% sass_src 'css/about.scss' %}">
+         <!-- for dev only -->
+          <link href="{% static 'staticfiles/css/about.css' %}" rel="stylesheet" type="text/css" />
+
 {% endblock more-css %}
 
 
@@ -15,17 +30,1076 @@
 {% block modal %}
 
 
+<section class='content-main'>
+
+  <div id="rev_slider_3_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="our-team" style="margin:0px auto;background-color:#000000;padding:0px;margin-top:0px;margin-bottom:0px;">
+  <!-- START REVOLUTION SLIDER 5.2.6 auto mode -->
+  	<div id="rev_slider_3_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
+  <ul>	<!-- SLIDE  -->
+      <li data-index="rs-14" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power1.easeInOut" data-easeout="Power1.easeInOut" data-masterspeed="500"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="500" data-fsslotamount="7" data-saveperformance="off"  data-title="First" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+  		<!-- MAIN IMAGE -->
+          <img src="/static/img-slider/our-team/assets/d17e5-people_circle_blur.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+  		<!-- LAYERS -->
+
+  		<!-- LAYER NR. 1 -->
+  		<div class="tp-caption tp-shape tp-shapewrapper "
+  			 id="slide-14-layer-4"
+  			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+  			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+  						data-width="full"
+  			data-height="full"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="opacity:0;s:1000;"
+  			data-start="500"
+  			data-basealign="slide"
+  			data-responsive_offset="off"
+  			data-responsive="off"
+
+  			style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> </div>
+
+  		<!-- LAYER NR. 2 -->
+  		<div class="tp-caption Team-Name   tp-resizeme"
+  			 id="slide-14-layer-1"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['300','250','220','150']"
+  						data-fontsize="['70','70','50','50']"
+  			data-lineheight="['70','70','50','50']"
+  			data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="0"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 6; white-space: nowrap;">Synergy+ </div>
+
+  		<!-- LAYER NR. 3 -->
+  		<div class="tp-caption Team-Position   tp-resizeme"
+  			 id="slide-14-layer-2"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['369','320','270','200']"
+  						data-fontsize="['30','30','20','20']"
+  			data-lineheight="['30','30','20','20']"
+  			data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="250"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 7; white-space: nowrap;">Mission Statement </div>
+
+  		<!-- LAYER NR. 4 -->
+  		<div class="tp-caption Team-Description   tp-resizeme"
+  			 id="slide-14-layer-3"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['450','400','320','250']"
+  						data-fontsize="['18','18','15','15']"
+  			data-lineheight="['28','28','25','25']"
+  			data-width="['640','640','640','360']"
+  			data-height="none"
+  			data-whitespace="normal"
+  			data-transform_idle="o:1;rZ:360;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="500"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 8; min-width: 640px; max-width: 640px; white-space: normal;">Our goal is to help doctors provide better patient care through the use of technology. Clinical issues are for doctors; we do our best to keep it that way. Through the utilization of services like Patient Engagement &amp; Population Health Management, we are striving to increase the effectiveness of Chronic Care. </div>
+
+  		<!-- LAYER NR. 5 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://www.facebook.com/themepunchofficial" target="_blank"			 id="slide-14-layer-5"
+  			 data-x="['left','left','left','left']" data-hoffset="['130','80','30','10']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 9; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-facebook"></i> </a>
+
+  		<!-- LAYER NR. 6 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://twitter.com/themepunch" target="_blank"			 id="slide-14-layer-7"
+  			 data-x="['left','left','left','left']" data-hoffset="['180','130','80','60']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 10; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-twitter"></i> </a>
+
+  		<!-- LAYER NR. 7 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://www.linkedin.com" target="_blank"			 id="slide-14-layer-8"
+  			 data-x="['left','left','left','left']" data-hoffset="['230','180','130','110']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','387']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 11; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-linkedin"></i> </a>
+
+  		<!-- LAYER NR. 8 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="mailto:support@envato.com" target="_self"			 id="slide-14-layer-9"
+  			 data-x="['left','left','left','left']" data-hoffset="['280','230','180','160']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 12; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-envelope"></i> </a>
+  	</li>
+  	<!-- SLIDE  -->
+      <li data-index="rs-15" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power1.easeInOut" data-easeout="Power1.easeInOut" data-masterspeed="500"  data-rotate="0"  data-saveperformance="off"  data-title="Second" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+  		<!-- MAIN IMAGE -->
+          <img src="/static/img-slider/our-team/assets/team_4.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+  		<!-- LAYERS -->
+
+  		<!-- LAYER NR. 1 -->
+  		<div class="tp-caption tp-shape tp-shapewrapper "
+  			 id="slide-15-layer-4"
+  			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+  			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+  						data-width="full"
+  			data-height="full"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="opacity:0;s:1000;"
+  			data-start="500"
+  			data-basealign="slide"
+  			data-responsive_offset="off"
+  			data-responsive="off"
+
+  			style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> </div>
+
+  		<!-- LAYER NR. 2 -->
+  		<div class="tp-caption Team-Name   tp-resizeme"
+  			 id="slide-15-layer-1"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['300','250','220','150']"
+  						data-fontsize="['70','70','50','50']"
+  			data-lineheight="['70','70','50','50']"
+  			data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="0"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 6; white-space: nowrap;">John Oljace </div>
+
+  		<!-- LAYER NR. 3 -->
+  		<div class="tp-caption Team-Position   tp-resizeme"
+  			 id="slide-15-layer-2"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['370','320','270','200']"
+  						data-fontsize="['30','30','20','20']"
+  			data-lineheight="['30','30','20','20']"
+  			data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="250"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 7; white-space: nowrap;">CEO </div>
+
+  		<!-- LAYER NR. 4 -->
+  		<div class="tp-caption Team-Description   tp-resizeme"
+  			 id="slide-15-layer-3"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['450','400','320','250']"
+  						data-fontsize="['18','18','15','15']"
+  			data-lineheight="['28','28','25','25']"
+  			data-width="['640','640','640','360']"
+  			data-height="none"
+  			data-whitespace="normal"
+  			data-transform_idle="o:1;rZ:360;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="500"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 8; min-width: 640px; max-width: 640px; white-space: normal;">Healthcare is my passion, but I also like long walks on the beach. </div>
+
+  		<!-- LAYER NR. 5 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://www.facebook.com/themepunchofficial" target="_blank"			 id="slide-15-layer-5"
+  			 data-x="['left','left','left','left']" data-hoffset="['130','80','30','10']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 9; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-facebook"></i> </a>
+
+  		<!-- LAYER NR. 6 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://twitter.com/themepunch" target="_blank"			 id="slide-15-layer-7"
+  			 data-x="['left','left','left','left']" data-hoffset="['180','130','80','60']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 10; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-twitter"></i> </a>
+
+  		<!-- LAYER NR. 7 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://www.linkedin.com" target="_blank"			 id="slide-15-layer-8"
+  			 data-x="['left','left','left','left']" data-hoffset="['230','180','130','110']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','387']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 11; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-linkedin"></i> </a>
+
+  		<!-- LAYER NR. 8 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="mailto:support@envato.com" target="_self"			 id="slide-15-layer-9"
+  			 data-x="['left','left','left','left']" data-hoffset="['280','230','180','160']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 12; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-envelope"></i> </a>
+  	</li>
+  	<!-- SLIDE  -->
+      <li data-index="rs-16" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power1.easeInOut" data-easeout="Power1.easeInOut" data-masterspeed="500"  data-rotate="0"  data-saveperformance="off"  data-title="Third" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+  		<!-- MAIN IMAGE -->
+          <img src="/static/img-slider/our-team/assets/team_9.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+  		<!-- LAYERS -->
+
+  		<!-- LAYER NR. 1 -->
+  		<div class="tp-caption tp-shape tp-shapewrapper "
+  			 id="slide-16-layer-4"
+  			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+  			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+  						data-width="full"
+  			data-height="full"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="opacity:0;s:1000;"
+  			data-start="500"
+  			data-basealign="slide"
+  			data-responsive_offset="off"
+  			data-responsive="off"
+
+  			style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> </div>
+
+  		<!-- LAYER NR. 2 -->
+  		<div class="tp-caption Team-Name   tp-resizeme"
+  			 id="slide-16-layer-1"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['300','250','220','150']"
+  						data-fontsize="['70','70','50','50']"
+  			data-lineheight="['70','70','50','50']"
+  			data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="0"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 6; white-space: nowrap;">Paul Lukey </div>
+
+  		<!-- LAYER NR. 3 -->
+  		<div class="tp-caption Team-Position   tp-resizeme"
+  			 id="slide-16-layer-2"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['370','320','270','200']"
+  						data-fontsize="['30','30','20','20']"
+  			data-lineheight="['30','30','20','20']"
+  			data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="250"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 7; white-space: nowrap;">COO </div>
+
+  		<!-- LAYER NR. 4 -->
+  		<div class="tp-caption Team-Description   tp-resizeme"
+  			 id="slide-16-layer-3"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['451','400','320','250']"
+  						data-fontsize="['18','18','15','15']"
+  			data-lineheight="['28','28','25','25']"
+  			data-width="['640','640','640','360']"
+  			data-height="none"
+  			data-whitespace="normal"
+  			data-transform_idle="o:1;rZ:360;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="500"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 8; min-width: 640px; max-width: 640px; white-space: normal;">I don't drink beer much, but when I do, I prefer Coors Light. </div>
+
+  		<!-- LAYER NR. 5 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://www.facebook.com/themepunchofficial" target="_blank"			 id="slide-16-layer-5"
+  			 data-x="['left','left','left','left']" data-hoffset="['130','80','30','10']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 9; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-facebook"></i> </a>
+
+  		<!-- LAYER NR. 6 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://twitter.com/themepunch" target="_blank"			 id="slide-16-layer-7"
+  			 data-x="['left','left','left','left']" data-hoffset="['180','130','80','60']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 10; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-twitter"></i> </a>
+
+  		<!-- LAYER NR. 7 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://www.linkedin.com" target="_blank"			 id="slide-16-layer-8"
+  			 data-x="['left','left','left','left']" data-hoffset="['230','180','130','110']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','387']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 11; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-linkedin"></i> </a>
+
+  		<!-- LAYER NR. 8 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="mailto:support@envato.com" target="_self"			 id="slide-16-layer-9"
+  			 data-x="['left','left','left','left']" data-hoffset="['280','230','180','160']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 12; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-envelope"></i> </a>
+  	</li>
+  	<!-- SLIDE  -->
+      <li data-index="rs-17" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power1.easeInOut" data-easeout="Power1.easeInOut" data-masterspeed="500"  data-rotate="0"  data-saveperformance="off"  data-title="Fourth" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+  		<!-- MAIN IMAGE -->
+          <img src="/static/img-slider/our-team/assets/team_5.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+  		<!-- LAYERS -->
+
+  		<!-- LAYER NR. 1 -->
+  		<div class="tp-caption tp-shape tp-shapewrapper "
+  			 id="slide-17-layer-4"
+  			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+  			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+  						data-width="full"
+  			data-height="full"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="opacity:0;s:1000;"
+  			data-start="500"
+  			data-basealign="slide"
+  			data-responsive_offset="off"
+  			data-responsive="off"
+
+  			style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> </div>
+
+  		<!-- LAYER NR. 2 -->
+  		<div class="tp-caption Team-Name   tp-resizeme"
+  			 id="slide-17-layer-1"
+  			 data-x="['left','left','left','left']" data-hoffset="['149','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['300','250','220','150']"
+  						data-fontsize="['70','70','50','50']"
+  			data-lineheight="['70','70','50','50']"
+  			data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="0"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 6; white-space: nowrap;">JONAH SCHMIECHEN </div>
+
+  		<!-- LAYER NR. 3 -->
+  		<div class="tp-caption Team-Position   tp-resizeme"
+  			 id="slide-17-layer-2"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['370','320','270','200']"
+  						data-fontsize="['30','30','20','20']"
+  			data-lineheight="['30','30','20','20']"
+  			data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="250"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 7; white-space: nowrap;">CFO </div>
+
+  		<!-- LAYER NR. 4 -->
+  		<div class="tp-caption Team-Description   tp-resizeme"
+  			 id="slide-17-layer-3"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['450','400','320','250']"
+  						data-fontsize="['18','18','15','15']"
+  			data-lineheight="['28','28','25','25']"
+  			data-width="['640','640','640','360']"
+  			data-height="none"
+  			data-whitespace="normal"
+  			data-transform_idle="o:1;rZ:360;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="500"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 8; min-width: 640px; max-width: 640px; white-space: normal;">Money don't mean a thing. </div>
+
+  		<!-- LAYER NR. 5 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://www.facebook.com/themepunchofficial" target="_blank"			 id="slide-17-layer-5"
+  			 data-x="['left','left','left','left']" data-hoffset="['130','80','30','10']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 9; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-facebook"></i> </a>
+
+  		<!-- LAYER NR. 6 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://twitter.com/themepunch" target="_blank"			 id="slide-17-layer-7"
+  			 data-x="['left','left','left','left']" data-hoffset="['180','130','80','60']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 10; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-twitter"></i> </a>
+
+  		<!-- LAYER NR. 7 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://www.linkedin.com" target="_blank"			 id="slide-17-layer-8"
+  			 data-x="['left','left','left','left']" data-hoffset="['230','180','130','110']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','387']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 11; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-linkedin"></i> </a>
+
+  		<!-- LAYER NR. 8 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="mailto:support@envato.com" target="_self"			 id="slide-17-layer-9"
+  			 data-x="['left','left','left','left']" data-hoffset="['280','230','180','160']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 12; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-envelope"></i> </a>
+  	</li>
+  	<!-- SLIDE  -->
+      <li data-index="rs-18" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power1.easeInOut" data-easeout="Power1.easeInOut" data-masterspeed="500"  data-rotate="0"  data-saveperformance="off"  data-title="Fifth" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+  		<!-- MAIN IMAGE -->
+          <img src="/static/img-slider/our-team/assets/team_6.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+  		<!-- LAYERS -->
+
+  		<!-- LAYER NR. 1 -->
+  		<div class="tp-caption tp-shape tp-shapewrapper "
+  			 id="slide-18-layer-4"
+  			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+  			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+  						data-width="full"
+  			data-height="full"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="opacity:0;s:1000;"
+  			data-start="500"
+  			data-basealign="slide"
+  			data-responsive_offset="off"
+  			data-responsive="off"
+
+  			style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);"> </div>
+
+  		<!-- LAYER NR. 2 -->
+  		<div class="tp-caption Team-Name   tp-resizeme"
+  			 id="slide-18-layer-1"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['300','250','220','150']"
+  						data-fontsize="['70','70','50','50']"
+  			data-lineheight="['70','70','50','50']"
+  			data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="0"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 6; white-space: nowrap;">James Audretsch </div>
+
+  		<!-- LAYER NR. 3 -->
+  		<div class="tp-caption Team-Position   tp-resizeme"
+  			 id="slide-18-layer-2"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['370','320','270','200']"
+  						data-fontsize="['30','30','20','20']"
+  			data-lineheight="['30','30','20','20']"
+  			data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="250"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 7; white-space: nowrap;">CIO </div>
+
+  		<!-- LAYER NR. 4 -->
+  		<div class="tp-caption Team-Description   tp-resizeme"
+  			 id="slide-18-layer-3"
+  			 data-x="['left','left','left','left']" data-hoffset="['150','100','50','30']"
+  			 data-y="['top','top','top','top']" data-voffset="['450','400','320','250']"
+  						data-fontsize="['18','18','15','15']"
+  			data-lineheight="['28','28','25','25']"
+  			data-width="['640','640','640','360']"
+  			data-height="none"
+  			data-whitespace="normal"
+  			data-transform_idle="o:1;rZ:360;"
+
+  			 data-transform_in="x:-50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="x:50px;opacity:0;s:500;e:Power1.easeInOut;"
+  			data-start="500"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 8; min-width: 640px; max-width: 640px; white-space: normal;">Technology is what you make of it. </div>
+
+  		<!-- LAYER NR. 5 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://www.facebook.com/themepunchofficial" target="_blank"			 id="slide-18-layer-5"
+  			 data-x="['left','left','left','left']" data-hoffset="['130','80','30','10']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 9; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-facebook"></i> </a>
+
+  		<!-- LAYER NR. 6 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://twitter.com/themepunch" target="_blank"			 id="slide-18-layer-7"
+  			 data-x="['left','left','left','left']" data-hoffset="['180','130','80','60']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 10; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-twitter"></i> </a>
+
+  		<!-- LAYER NR. 7 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="https://www.linkedin.com" target="_blank"			 id="slide-18-layer-8"
+  			 data-x="['left','left','left','left']" data-hoffset="['230','180','130','110']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','387']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 11; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-linkedin"></i> </a>
+
+  		<!-- LAYER NR. 8 -->
+  		<a class="tp-caption Team-Social   tp-resizeme"
+   href="mailto:support@envato.com" target="_self"			 id="slide-18-layer-9"
+  			 data-x="['left','left','left','left']" data-hoffset="['280','230','180','160']"
+  			 data-y="['top','top','top','top']" data-voffset="['620','550','430','390']"
+  						data-width="50"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:500;e:Power1.easeInOut;"
+  			 data-transform_out="auto:auto;s:500;e:Power1.easeInOut;"
+  			data-start="750"
+  			data-splitin="none"
+  			data-splitout="none"
+  			data-actions=''
+  			data-responsive_offset="on"
+
+
+  			style="z-index: 12; min-width: 50px; max-width: 50px; white-space: nowrap;cursor:pointer;"><i class="fa-icon-envelope"></i> </a>
+  	</li>
+  </ul>
+  <div style="" class="tp-static-layers">
+
+  		<!-- LAYER NR. 1 -->
+  		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme tp-static-layer"
+  			 id="slider-3-layer-1"
+  			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+  			 data-y="['top','top','top','top']" data-voffset="['-6','-6','-6','0']"
+  						data-width="['full','full','full','full']"
+  			data-height="['108','108','108','50']"
+  			data-whitespace="['normal','normal','normal','nowrap']"
+  			data-transform_idle="o:1;"
+
+  			 data-transform_in="y:top;s:500;e:Power2.easeInOut;"
+  			 data-transform_out="opacity:0;s:500;"
+  			data-start="0"
+  			data-responsive_offset="on"
+
+  			data-startslide="0"
+  			data-endslide="4"
+  			 data-end="8800"
+
+  			style="z-index: 5;background-color:rgba(0, 0, 0, 0.70);border-color:rgba(0, 0, 0, 0);width: 100%;"> </div>
+
+  		<!-- LAYER NR. 2 -->
+  		<div class="tp-caption Team-Thumb   tp-resizeme tp-static-layer"
+  			 id="slider-3-layer-2"
+  			 data-x="['center','center','center','center']" data-hoffset="['-453','-315','-315','-180']"
+  			 data-y="['top','top','top','top']" data-voffset="['0','30','30','10']"
+  						data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;skX:0px;skY:0px;rX:0;rY:0;rZ:0;z:0;s:500;e:Power2.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);br:0 0 0px 0;"
+
+  			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;"
+  			 data-transform_out="opacity:0;s:300;"
+  			data-start="500"
+  			data-actions='[{"event":"mouseenter","action":"jumptoslide","slide":"rs-14","delay":""}]'
+  			data-responsive_offset="on"
+
+  			data-startslide="0"
+  			data-endslide="4"
+
+  			style="z-index: 6; line-height: 22px;cursor:pointer;"><img src="/static/img-slider/our-team/assets/people_circle.png" alt="" data-ww="['200px','140px','140px','80px']" data-hh="['200px','140px','140px','80px']" data-no-retina> </div>
+
+  		<!-- LAYER NR. 3 -->
+  		<div class="tp-caption   tp-resizeme tp-static-layer"
+  			 id="slider-3-layer-3"
+  			 data-x="['center','center','center','center']" data-hoffset="['-302','-210','-210','-120']"
+  			 data-y="['top','top','top','top']" data-voffset="['0','30','30','10']"
+  						data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:500;e:Power2.easeInOut;"
+  				data-style_hover="c:rgba(0, 0, 0, 1.00);br:0px 0px 0px 0px;"
+
+  			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;"
+  			 data-transform_out="opacity:0;s:300;"
+  			data-start="500"
+  			data-actions='[{"event":"mouseenter","action":"jumptoslide","slide":"rs-15","delay":""}]'
+  			data-responsive_offset="on"
+
+  			data-startslide="0"
+  			data-endslide="4"
+
+  			style="z-index: 7;cursor:pointer;"><img src="/static/img-slider/our-team/assets/team_thumb4.jpg" alt="" data-ww="['200px','140px','140px','80px']" data-hh="['200px','140px','140px','80px']" data-no-retina> </div>
+
+  		<!-- LAYER NR. 4 -->
+  		<div class="tp-caption   tp-resizeme tp-static-layer"
+  			 id="slider-3-layer-4"
+  			 data-x="['center','center','center','center']" data-hoffset="['-151','-105','-105','-60']"
+  			 data-y="['top','top','top','top']" data-voffset="['0','30','30','10']"
+  						data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:500;e:Power2.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);"
+
+  			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;"
+  			 data-transform_out="opacity:0;s:300;"
+  			data-start="500"
+  			data-actions='[{"event":"mouseenter","action":"jumptoslide","slide":"rs-16","delay":""}]'
+  			data-responsive_offset="on"
+
+  			data-startslide="0"
+  			data-endslide="4"
+
+  			style="z-index: 8;cursor:pointer;"><img src="/static/img-slider/our-team/assets/team_thumb9.jpg" alt="" data-ww="['200px','140px','140px','80px']" data-hh="['200px','140px','140px','80px']" data-no-retina> </div>
+
+  		<!-- LAYER NR. 5 -->
+  		<div class="tp-caption   tp-resizeme tp-static-layer"
+  			 id="slider-3-layer-5"
+  			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+  			 data-y="['top','top','top','top']" data-voffset="['0','30','30','10']"
+  						data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:500;e:Power2.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);"
+
+  			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;"
+  			 data-transform_out="opacity:0;s:300;"
+  			data-start="500"
+  			data-actions='[{"event":"mouseenter","action":"jumptoslide","slide":"rs-17","delay":""}]'
+  			data-responsive_offset="on"
+
+  			data-startslide="0"
+  			data-endslide="4"
+
+  			style="z-index: 9;cursor:pointer;"><img src="/static/img-slider/our-team/assets/team_thumb5.jpg" alt="" data-ww="['200px','140px','140px','80px']" data-hh="['200px','140px','140px','80px']" data-no-retina> </div>
+
+  		<!-- LAYER NR. 6 -->
+  		<div class="tp-caption   tp-resizeme tp-static-layer"
+  			 id="slider-3-layer-6"
+  			 data-x="['center','center','center','center']" data-hoffset="['151','105','105','60']"
+  			 data-y="['top','top','top','top']" data-voffset="['0','30','30','10']"
+  						data-width="none"
+  			data-height="none"
+  			data-whitespace="nowrap"
+  			data-transform_idle="o:1;sX:0.5;sY:0.5;"
+  				data-transform_hover="o:1;sX:1.01;sY:1.01;rX:0;rY:0;rZ:0;z:0;s:500;e:Power2.easeInOut;"
+  				data-style_hover="c:rgba(255, 255, 255, 1.00);"
+
+  			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;"
+  			 data-transform_out="opacity:0;s:300;"
+  			data-start="500"
+  			data-actions='[{"event":"mouseenter","action":"jumptoslide","slide":"rs-18","delay":""}]'
+  			data-responsive_offset="on"
+
+  			data-startslide="0"
+  			data-endslide="4"
+
+  			style="z-index: 10;cursor:pointer;"><img src="/static/img-slider/our-team/assets/team_thumb6.jpg" alt="" data-ww="['200px','140px','140px','80px']" data-hh="['200px','140px','140px','80px']" data-no-retina> </div>
+  </div>
+  <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+</section>
+
+
+
 <nav class="cd-secondary-nav">
 	<ul>
 		 <li id='nav-home'><a class='active' href="#">Home</a></li>
-        <li id='nav-insights'><a href='#insights'>Insights</a></li>
-        <li id='nav-solutions'><a href="#solutions">Solutions</a></li>
-        <li id='nav-benefits'><a href='#benefits'>Benefits</a></li>
-        <li id='nav-why'><a href="#why">Why Us</a></li>
-        <li id='nav-demo'><a href="#demo">Demo</a></li>
-        <li id='nav-plans'><a href="#plans">Plans &amp; Pricing</a></li>
-        <li id='nav-resources'><a href="#resource">Resources</a></li>
-        <li id='nav-investors'><a href="#tab-investors">Investors</a></li>
+     <li id='nav-resources'><a href="#team">Team</a></li>
+      <li id='nav-resources'><a href="#history">History</a></li>
+      <li id='nav-investors'><a href="#tab-investors">Investors</a></li>
 	</ul>
 </nav> <!-- .cd-secondary-nav -->
 
@@ -34,15 +1108,19 @@
 <div class="one-page cd-main-content sub-nav-hero">
 
     <div class='one-page-inner one-default section-highlights'>
-        
+
         <div class='container'>
             <div class='row'>
-            
+
                 <div class='col-md-6'>
                     <h2> Main Content Goes Here</h2>
                 </div>
-                
+
             </div>
+          </div>
+      </div>
+</div>
+
 {% endblock modal %}
 
 
@@ -50,4 +1128,67 @@
 
 {% block more-javascript %}
 
+<!-- FINAL IMPORT -->
+  <!-- This version of jquery required for the slideshow to work. Make it the final import before slider in this  html file-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+
+		<!-- REVOLUTION JS FILES -->
+		<script type="text/javascript" src="/static/img-slider/our-team/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="/static/img-slider/our-team/js/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+		<script type="text/javascript" src="/static/img-slider/our-team/js/extensions/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="/static/img-slider/our-team/js/extensions/revolution.extension.carousel.min.js"></script>
+		<script type="text/javascript" src="/static/img-slider/our-team/js/extensions/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="/static/img-slider/our-team/js/extensions/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="/static/img-slider/our-team/js/extensions/revolution.extension.migration.min.js"></script>
+		<script type="text/javascript" src="/static/img-slider/our-team/js/extensions/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="/static/img-slider/our-team/js/extensions/revolution.extension.parallax.min.js"></script>
+		<script type="text/javascript" src="/static/img-slider/our-team/js/extensions/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="/static/img-slider/our-team/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script type="text/javascript">
+            var tpj=jQuery;
+
+      var revapi3;
+      tpj(document).ready(function() {
+        if(tpj("#rev_slider_3_1").revolution == undefined){
+          revslider_showDoubleJqueryError("#rev_slider_3_1");
+        }else{
+          revapi3 = tpj("#rev_slider_3_1").show().revolution({
+            sliderType:"standard",
+jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
+            sliderLayout:"auto",
+            dottedOverlay:"none",
+            delay:9000,
+            navigation: {
+              onHoverStop:"off",
+            },
+            responsiveLevels:[1240,1024,778,480],
+            visibilityLevels:[1240,1024,778,480],
+            gridwidth:[1400,1024,778,480],
+            gridheight:[800,700,600,500],
+            lazyType:"none",
+            shadow:0,
+            spinner:"off",
+            stopLoop:"on",
+            stopAfterLoops:0,
+            stopAtSlide:1,
+            shuffle:"off",
+            autoHeight:"off",
+            disableProgressBar:"on",
+            hideThumbsOnMobile:"off",
+            hideSliderAtLimit:0,
+            hideCaptionAtLimit:0,
+            hideAllCaptionAtLilmit:0,
+            debugMode:false,
+            fallbacks: {
+              simplifyAll:"off",
+              nextSlideOnWindowFocus:"off",
+              disableFocusListener:false,
+            }
+          });
+        }
+      });	/*ready*/
+    </script>
 {% endblock more-javascript %}

@@ -10,15 +10,15 @@
         <meta name="description" content="">
         <meta name="author" content="">
         {% block more-head %} {% endblock more-head %}
- 
+
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
+
     {% block css %}
-        
+
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico">
 
@@ -28,7 +28,7 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300,200,100,900' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    
+
         <!-- CSS Global Compulsory -->
         <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="/static/css/style.css">
@@ -37,18 +37,18 @@
         <link rel="stylesheet" href="/static/css/headers/header-default.css">
         <link rel="stylesheet" href="/static/css/headers/header-v8.css">
         <link rel="stylesheet" href="/static/css/footers/footer-v1.css">
-        
+
         <!-- Page Classes For Easy Styling -->
         <link rel="stylesheet" href="/static/css/pages/page_one.css">
 
-        
+
 
         <!-- CSS Implementing Plugins -->
         <link rel="stylesheet" href="/static/plugins/animate.css">
         <link rel="stylesheet" href="/static/plugins/line-icons/line-icons.css">
         <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/static/plugins/login-signup-modal-window/css/style.css">
-    
+
         <!-- CSS Theme -->
         <link rel="stylesheet" href="/static/css/theme-colors/default.css" id="style_color">
         <link rel="stylesheet" href="/static/css/theme-skins/dark.css">
@@ -59,15 +59,15 @@
         <!-- For datetimepicker bootstrap plugin -->
 
         <link rel="stylesheet" href="{% static 'bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css' %}" />
-        
+
         <!-- bootstrap form-helper plugin -->
         <link rel="stylesheet" href="{% static 'bower_components/bootstrap-formhelpers/dist/css/bootstrap-formhelpers.min.css' %}" />
-        
+
 
         <!-- navbar plugin css -->
         <link rel="stylesheet" href="{% static 'standalone/auto-hiding-navigation/css/style.css' %}">
 
-        
+
          <!-- My CSS -->
         {% load sass_tags %}
         <link rel="stylesheet" href="{% sass_src 'css/project.scss' %}">
@@ -77,13 +77,13 @@
          <link href="{% static 'staticfiles/css/project.css' %}" rel="stylesheet" type="text/css" />
          <link href="{% static '/staticfiles/css/parsley-floating.css' %}" rel="stylesheet" type="text/css" />  <!-- Form parsley floating css -->
 
-        
+
     {% endblock css %}
 
     {% block more-css %}{% endblock more-css %}
-    
+
     </head>
-    
+
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -92,7 +92,7 @@
 <body class="">
 	<div class="wrapper">
 		<!--=== Header v8 ===-->
-        
+
 
         {% block navbar %}
 	       <!-- TOP NAVBAR -->
@@ -105,19 +105,19 @@
             <h5>Doctors Practice Medicine Their Way</h5>
         </span>-->
 
-   <div id='cd-nav-text'><h5>Doctors &amp; Staff Save So Much Time, Patient Care Is Optimized <br>Net Income Rises As Non-clinical Issues Become Non-Issues <br>Doctors Practice Medicine Their Way, Patients Get Healthier</h5></div>
-    
+   <!--<div id='cd-nav-text'><h5>Doctors &amp; Staff Save So Much Time, Patient Care Is Optimized <br>Net Income Rises As Non-clinical Issues Become Non-Issues <br>Doctors Practice Medicine Their Way, Patients Get Healthier</h5></div>-->
+
 	<nav class="cd-primary-nav">
-        
+
 		<a href="#cd-navigation" class="nav-trigger">
 			<span>
 				<em aria-hidden="true"></em>
 				Menu
 			</span>
 		</a> <!-- .nav-trigger -->
-        
-       
-        
+
+
+
 		<ul id="cd-navigation">
 			<li><a href="">Synergy+</a></li>
 			<li><a href="#">About Us</a></li>
@@ -127,18 +127,18 @@
 	</nav> <!-- .cd-primary-nav -->
 </header> <!-- .cd-auto-hide-header -->
 </div>
-<!-- ENDTOP NAVBAR -->   
+<!-- ENDTOP NAVBAR -->
         {% endblock navbar %}
-        
+
         <div class='sidebar'>
-            
+
             <ul>
                 <li id='sidebar-phone' ><a href='##' onClick="return false;"><i class="fa fa-phone fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>812-360-9245</span></h5></a></li>
                 <li id='sidebar-contact'>  <a href='' data-toggle="modal" data-target="#modal-contact"><i class="fa fa-envelope-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Contact</span></h5></a></li>
                 <li id='sidebar-live-chat' ><a href='##' onClick="return false;"> <i class="fa fa-comments-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Live Chat</span></h5></a></li>
             </ul>
         </div>
-        
+
         <div id="modal-contact" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-contact" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -146,29 +146,29 @@
                         <div class='close-button'>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
-                          
+
                       </div>
-                        
+
                       <div class="modal-body container">
-                            
-                          
+
+
                                     <div class='tab-pane-content tab-content'>
                                         <div id='contact-tab-0' class='tab-pane in active'>
-                                          
-                                            
+
+
                                             <div class='contact-title'>
-                                                
+
                                               <h3 class='m-contact-title'>Have Questions? Interested in a Demo?</h3>
 
                                               <h5 class="modal-title" id="gridModalLabel">Contact now and recieve your <strong><em>Free Full Practice Evaluation!</em></strong><br> Your personal Synergy+ specialist will reply within 24 hours.</h5>
-                                                
+
                                              </div>
                                             <hr>
-                                            
+
                                             <div class='bt-form__wrapper'>
                                                 <form id='contact-form-0' class="bt-flabels js-flabels contact-form" data-parsley-validate data-parsley-errors-messages-disabled  >
-                                                    
-                                                    
+
+
                                                           <div class='row form-group'>
                                                               <div class="col-md-6 bt-flabels__wrapper required">
                                                                   <div class='control-label'></div>
@@ -176,7 +176,7 @@
                                                                       <input type="text" name="first_name" placeholder="First Name" data-parsley-required>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
-                                                              
+
                                                               <div class="col-md-6 required bt-flabels__wrapper">
                                                                   <div class='control-label'></div>
                                                                   <label>Last Name</label>
@@ -184,8 +184,8 @@
                                                                   <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                            </div>
-                                                
-                                                        
+
+
                                                           <div class='row form-group'>
                                                             <div class="bt-flabels__wrapper required col-md-12">
                                                                   <div class='control-label'></div>
@@ -194,8 +194,8 @@
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
-                                                    
-                                                
+
+
                                                           <div class='row form-group'>
                                                                   <div class="bt-flabels__wrapper required col-md-6">
                                                                       <div class='control-label'></div>
@@ -203,23 +203,23 @@
                                                                       <input type="text" name="email" placeholder="Email" data-parsley-required data-parsley-type="email" />
                                                                       <span class="bt-flabels__error-desc">Required/Invalid Email</span>
                                                                   </div>
-                                                              
+
                                                                   <div class="bt-flabels__wrapper col-md-6">
                                                                       <label>Phone (xxx-xxx-xxxx)</label>
                                                                       <input type="text" name="phone" placeholder="Home Phone" autocomplete="off" class='phone-autodash' />
                                                                       <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
                                                                     </div>
                                                           </div>
-                                                            
+
                                                           <div class='row form-group'>
-                                                                
+
                                                               <div class='bt-flabels__wrapper required col-md-9'>
                                                                       <div class='control-label'></div>
                                                                       <label>Group Name</label>
                                                                       <input type="text" name="group"  placeholder="Group Name" data-parsley-required>
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
-                                                              
+
                                                               <div class='col-md-3'>
                                                                   <div class="required">
                                                                      <div class='control-label'>
@@ -234,45 +234,45 @@
                                                                      </div>
                                                                   </div>
                                                               </div>
-                                                              
+
                                                           </div>
-                                                    
-                                                
+
+
                                                         <div class='row form-group'>
-                                                        
-                                                          
+
+
                                                               <div class="bt-flabels__wrapper required col-md-9">
-                                                                        
+
                                                                         <div class='control-label'></div>
                                                                           <label>Office Phone (xxx-xxx-xxxx)</label>
                                                                           <input type="text" name="phone2" data-parsley-required placeholder="Office Phone" autocomplete="off" data-parsley-pattern='/(\d{3})\-?(\d{3})\-?(\d{4})/' class='phone-autodash '/>
                                                                           <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
                                                               </div>
-                                                            
-                                                            
+
+
                                                               <div class="bt-flabels__wrapper col-md-3">
                                                                           <label>Ext</label>
                                                                           <input type="text" name="ext" placeholder="ext" autocomplete="off"/>
                                                               </div>
 
                                                         </div>
-                                                    
-                                                        <div class='row form-group'>                                                                        
+
+                                                        <div class='row form-group'>
                                                                          <div class='col-md-12 bt-flabels__wrapper'>
                                                                              <label>Best time to call</label>
                                                                             <input type='text' class='datetimepicker3' name="time" placeholder="Best time to call" autocomplete="off"/>
                                                                         </div>
                                                         </div>
-                                                    
+
                                                     <div class='row form-group'>
                                                                           <div class="bt-flabels__wrapper text-area-wrapper col-md-12">
                                                                               <span class='text-area-title'>MESSAGE:</span>
                                                                               <textarea id='textarea-message' name="likes" placeholder="What would you like to say?"></textarea>
-                                                                              
+
                                                                             </div>
                                                             </div>
 
-                                                        
+
                                                     <div class='row'>
                                                         <div class='col-md-12'>
                                                             <button type="submit" class="btn button btn-large btn-default btn-primary contact-btn js-submit">Contact Us</button>
@@ -283,20 +283,20 @@
                                             </div>
 
                                         </div>
-                                        
+
                                        <div id='contact-tab-1' class='tab-pane in inquire-finish'>
                                             <div class='inquire-title'>
 
                                                             <h2>Thank you for contacting Synergy+!</h2>
-                                                            <h3> A Synergy+ Representative will be in touch.</h3> 
-                                                
-                                                
+                                                            <h3> A Synergy+ Representative will be in touch.</h3>
+
+
                                                             <h4>Please continue to receive your full practice evaluation and free industry analysis report.</h4>
                                                             <h4>To expedite the process, speak with a Synergy+ Representative by calling <strong>812-360-9245</strong>.</h4>
-                                               
-                                                            
+
+
                                              </div>
-                                           
+
                                            <div class='bt-form__wrapper'>
                                                 <form id='contact-form-1' class=" bt-flabels js-flabels contact-form" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
                                                     <div class='row'>
@@ -304,35 +304,35 @@
                                                             <button type="submit" class="btn btn-primary inquire-close-button" >Continue</button>
                                                         </div>
                                                     </div>
-                                               </form>  
+                                               </form>
                                            </div>
-                                        </div> 
-                                        
+                                        </div>
+
                                         <div id='contact-tab-2' class='tab-pane in'>
                                             <div class='inquire-title'>
                                                     <!--<div class="useravatar">
                                                         <img alt="" src="{% static 'images/girl.jpeg' %}">
                                                     </div>-->
 
-                                                    <div class="card-info"> 
+                                                    <div class="card-info">
                                                         <span class="card-title"><h3>Your full practice evaluation is waiting around the corner...</h3></span>
                                                     </div>
 
                                             </div>
-                                            
+
                                             <hr>
-                                            
+
                                             <div class='bt-form__wrapper'>
                                                 <form id='contact-form-2' class=" bt-flabels js-flabels contact-form" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
-                                                    
+
                                                     <div class='form-title'>
                                                             <h5>EHR Information</h5>
                                                         </div>
-                                                        
-                                                            
-                                                           <div class='row form-group'>   
+
+
+                                                           <div class='row form-group'>
                                                               <div class="bt-flabels__wrapper col-md-12 required">
-                                                                  
+
                                                                   <div class='control-label'></div>
                                                                       <select>
                                                                         <option value='type1'>Current System</option>
@@ -342,42 +342,42 @@
                                                                         <option value='type5'>Val 5</option>
                                                                         <option value='type6'>Val 6</option>
                                                                       </select>
-                                                                     
+
                                                               </div>
                                                            </div>
-                                                        
-                                                          
-                                                
+
+
+
                                                           <div class='row form-group'>
                                                                   <div class="bt-flabels__wrapper col-md-6">
                                                                       <label># EHR support vendors</label>
                                                                       <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="vendors" placeholder="# EHR support vendors" autocomplete="off"/>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
-                                                              
+
                                                                     <div class="bt-flabels__wrapper col-md-6">
                                                                       <label># EHR support personnel</label>
                                                                       <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="personnel" placeholder="# EHR support personnel" autocomplete="off"/>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
                                                           </div>
-                                                    
+
                                                             <div class='row form-group'>
                                                                           <div class="bt-flabels__wrapper text-area-wrapper col-md-12">
                                                                               <span class='text-area-title'>EHR LIKES:</span>
                                                                               <textarea name="likes" placeholder="Things I like about my current EHR"></textarea>
-                                                                              
+
                                                                             </div>
                                                             </div>
-                                                    
+
                                                             <div class='row form-group'>
                                                                           <div class="bt-flabels__wrapper text-area-wrapper col-md-12">
                                                                               <span class='text-area-title'>EHR DISLIKES:</span>
                                                                               <textarea name="dislikes" placeholder="Things I dislike about my current EHR"></textarea>
                                                                             </div>
                                                             </div>
-                                                            
-                                                        
+
+
 
                                                     <div class='row'>
                                                         <div class='col-md-12'>
@@ -385,35 +385,35 @@
                                                             <button type="submit" class="btn btn-default next-step btn-primary contact-btn" >Continue</button>
                                                         </div>
                                                     </div>
-                                                    
+
                                                 </form>
                                             </div>
 
 
                                         </div>
-                                        
-                                        
+
+
                                         <div id='contact-tab-3' class='tab-pane in'>
                                             <div class='inquire-title'>
                                                     <!--<div class="useravatar">
                                                         <img alt="" src="{% static 'images/girl.jpeg' %}">
                                                     </div>-->
 
-                                                    <div class="card-info"> 
+                                                    <div class="card-info">
                                                         <span class="card-title"><h3>You've almost got it...</h3></span>
                                                     </div>
 
                                             </div>
-                                            
+
                                             <hr>
-                                            
+
                                             <div class='bt-form__wrapper'>
                                                 <form id='contact-form-3' class=" bt-flabels js-flabels contact-form" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
-                                                    
+
                                                     <div class='form-title'>
                                                             <h5>Human Resource Evaluation</h5>
                                                         </div>
-                                                            
+
                                                           <div class='row'>
                                                                     <div class="bt-flabels__wrapper required col-md-4">
                                                                          <div class='control-label'></div>
@@ -421,31 +421,31 @@
                                                                           <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="providers" placeholder="# Providers" autocomplete="off"/>
                                                                           <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
-                                                              
-                                                              
-                                                                    
+
+
+
                                                                     <div class="bt-flabels__wrapper required col-md-4">
                                                                          <div class='control-label'></div>
                                                                           <label># IT Staff</label>
                                                                           <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="it_staff" placeholder="# IT Staff" autocomplete="off"/>
                                                                           <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
-                                                              
-                                                              
+
+
                                                                     <div class="bt-flabels__wrapper required col-md-4">
                                                                          <div class='control-label'></div>
                                                                           <label># Other Staff</label>
                                                                           <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="other_staff" placeholder="# Other Staff" autocomplete="off"/>
                                                                           <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
-                                                                    
+
                                                           </div>
-                                                    
-                                                    
+
+
                                                     <div class='form-title'>
                                                             <h5>EHR Users</h5>
                                                     </div>
-                                                    
+
                                                     <div class='row'>
                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
@@ -453,34 +453,34 @@
                                                                           <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_providers" placeholder="# Providers" autocomplete="off"/>
                                                                           <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
-                                                                    
+
                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
                                                                           <label># MAs</label>
                                                                           <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_ma" placeholder="# MAs" autocomplete="off"/>
                                                                           <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
-                                                        
+
                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
                                                                           <label># Reception</label>
                                                                           <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_receptionist" placeholder="# Receptionists" autocomplete="off"/>
                                                                           <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
-                                                        
+
                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
                                                                           <label># Admin</label>
                                                                           <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_admin" placeholder="# Admin" autocomplete="off"/>
                                                                           <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
-                                                              
+
                                                           </div>
-                                                    
+
                                                      <div class='form-title'>
                                                             <h5>RCM Details</h5>
                                                     </div>
-                                                    
+
                                                     <div class='row form-group'>
                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
@@ -488,30 +488,30 @@
                                                                           <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_biller" placeholder="# Billers" autocomplete="off"/>
                                                                           <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
-                                                                    
+
                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
                                                                           <label># Coders</label>
                                                                           <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_coder" placeholder="# Coders" autocomplete="off"/>
                                                                           <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
-                                                        
+
                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
                                                                           <label># Scribes</label>
                                                                           <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_scribe" placeholder="# Scribes" autocomplete="off"/>
                                                                           <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
-                                                        
+
                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
                                                                           <label># Collectors</label>
                                                                           <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_collector" placeholder="# Collectors" autocomplete="off"/>
                                                                           <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
-                                                              
+
                                                           </div>
-                                                            
+
                                                         <div class='row form-group'>
                                                             <div class="bt-flabels__wrapper required col-md-12">
                                                                   <div class='control-label'></div>
@@ -520,7 +520,7 @@
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
-                                                    
+
                                                         <div class='row form-group'>
                                                             <div class="bt-flabels__wrapper required col-md-12">
                                                                   <div class='control-label'></div>
@@ -529,18 +529,18 @@
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
-                                                    
+
                                                     <div class='row form-statement form-group required'>
                                                         <div class='col-md-12'>
                                                             <div class='inline'>It usually takes me</div>
                                                             <div class='inline control-label'></div>
-                                                            <input type="number" name="days" placeholder="10" data-parsley-required data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off" > 
+                                                            <input type="number" name="days" placeholder="10" data-parsley-required data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off" >
                                                             <div class='inline'>days to collect</div>
                                                             <div class='inline control-label'></div>
                                                             <input type="number" name="billing_company" placeholder="20" data-parsley-required data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off">
                                                             % of ARs.
                                                         </div>
-                                                      
+
                                                     </div>
 
                                                     <div class='row'>
@@ -549,34 +549,34 @@
                                                             <button type="submit" class="btn btn-default next-step btn-primary contact-btn" >Last Page</button>
                                                         </div>
                                                     </div>
-                                                    
+
                                                 </form>
                                             </div>
 
 
                                         </div>
-                                        
+
                                         <div id='contact-tab-4' class='tab-pane in'>
                                             <div class='inquire-title'>
                                                     <!--<div class="useravatar">
                                                         <img alt="" src="{% static 'images/girl.jpeg' %}">
                                                     </div>-->
 
-                                                    <div class="card-info"> 
+                                                    <div class="card-info">
                                                         <span class="card-title"><h3>Last Page! Get Your Full Practice Evaluation!</h3></span>
                                                     </div>
 
                                             </div>
-                                            
+
                                             <hr>
-                                            
+
                                             <div class='bt-form__wrapper'>
                                                 <form id='contact-form-4' class=" bt-flabels js-flabels contact-form" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
-                                                    
+
                                                     <div class='form-title'>
                                                             <h5>Financial Evaluation</h5>
                                                     </div>
-                                                            
+
 
                                                       <div class='row form-group'>
                                                                 <div class="bt-flabels__wrapper required col-md-7">
@@ -591,11 +591,11 @@
                                                                       <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="providers" placeholder="# Revenue Labs" autocomplete="off"/>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                                 </div>
-                                                          
+
                                                       </div>
-                                                    
-                                                    
-                                                    
+
+
+
                                                     <div class='row'>
                                                           <div class="bt-flabels__wrapper text-area-wrapper form-group col-md-12">
                                                               <span class='text-area-title' >Are you trying to recruit doctors? How many and which specialities?</span>
@@ -603,7 +603,7 @@
 
                                                             </div>
                                                     </div>
-                                                    
+
                                                     <div class='row form-group'>
                                                                 <div class="bt-flabels__wrapper required col-md-12">
                                                                      <div class='control-label'></div>
@@ -611,10 +611,10 @@
                                                                       <input type="text"  name="total_revenue" placeholder="Total Revenue in 2015" autocomplete="off"/>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                                 </div>
-                                                    
+
                                                       </div>
-                                                    
-                                                     <div class='row form-statement required'> 
+
+                                                     <div class='row form-statement required'>
                                                         <div class='col-md-12'>
                                                             <div class='inline'>My group's net income has &nbsp;</div>
                                                             <div class='inline control-label'></div>
@@ -628,14 +628,14 @@
                                                                      <div class='inline'>over the last 3 years.</div>
                                                         </div>
                                                     </div>
-                                                    
+
                                                      <div class='form-title'>
                                                             <h5>How did you hear about us?</h5>
                                                     </div>
-                                                    
+
                                                     <div class='row'>
                                                         <div class="bt-flabels__wrapper checkbox-wrapper col-md-12">
-                                                            
+
                                                            <input type="checkbox" value="">Referral
                                                             <input type="checkbox" value="">LinkedIn
                                                             <input type="checkbox" value="">Facebook
@@ -644,11 +644,11 @@
                                                             <input type="checkbox" value="">Other
                                                         </div>
                                                     </div>
-                                                    
+
                                                     <div class='form-title'>
                                                             <h5>Email Me the Monthly Newsletter</h5>
                                                     </div>
-                                                    
+
                                                     <div class='row form-group'>
                                                         <div class="bt-flabels__wrapper checkbox-wrapper col-md-12">
                                                            <input type="checkbox" value="">Yes
@@ -661,40 +661,40 @@
                                                             <button type="submit" class="btn btn-default next-step btn-primary contact-btn" >Finish</button>
                                                         </div>
                                                     </div>
-                                                    
+
                                                 </form>
                                             </div>
 
 
                                         </div>
-                                        
+
                                         <div id='contact-tab-5' class='tab-pane in  inquire-finish'>
                                             <div class='inquire-title'>
 
                                                             <h2>Thank you for contacting Synergy+!</h2>
-                                                            <h3> A Synergy+ Representative will be in touch.</h3> 
-                                                            <h3> Your full practice evaluation will be sent to the provided email within 24 hours.</h3> 
+                                                            <h3> A Synergy+ Representative will be in touch.</h3>
+                                                            <h3> Your full practice evaluation will be sent to the provided email within 24 hours.</h3>
                                                             <h3>To expedite the process, speak with a Synergy+ Representative by calling <strong>812-360-9245</strong>.</h3>
                                              </div>
-                                            
+
                                             <div class='row'>
                                                 <div class='col-md-10 col-centered'>
                                                     <button type="button" class="btn btn-default inquire-close-button" data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
-                                                    
+
                                         </div>
-                                            
+
 
                                 </div>
-                                      
-                          
+
+
                       </div>
                     </div>
                   </div>
                 </div>
 
-        
+
 		<!--=== End Header ===-->
     <div class='content-main'>
     {% block modal %}
@@ -764,7 +764,7 @@
     {% endblock footer %}
 	</div><!--/wrapper-->
 
-	
+
 
 	<!-- JS Global Compulsory -->
 	<!--<script type="text/javascript" src="/static/plugins/jquery/jquery.min.js"></script>
@@ -772,11 +772,11 @@
 
     <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/jquery-migrate-1.4.1.min.js' %}"></script>
-    
+
     <script type="text/javascript" src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
 
-    
-    
+
+
 
 	<!-- JS Implementing Plugins -->
 	<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
@@ -788,12 +788,12 @@
 	<script src="/static/plugins/html5shiv.js"></script>
 	<script src="/static/plugins/placeholder-IE-fixes.js"></script>
 	<![endif]-->
-    
+
     <!-- WAYPOINTS PLUGIN -->
     <script src="{% static 'css/plugins/waypoints4.0/lib/jquery.waypoints.min.js' %}"></script>
-    
+
     <script type="text/javascript" src="/static/js/parsley.min.js"></script> <!-- DATA parsley plugin -->
-        
+
     <script>
     // .modal-backdrop classes. Rely on the css classes to change modal styles.
 
@@ -817,7 +817,7 @@
     </script>
     <!-- CENTER MODAL -->
     <script>
-        
+
     /**
  * Vertically center(ish) Bootstrap 3 modals so they aren't always stuck at the top
  */
@@ -827,7 +827,7 @@ $(function() {
                 dialog = modal.find('.modal-dialog');
             modal.css('display', 'block');
 
-            // Dividing by two centers the modal exactly, but dividing by three 
+            // Dividing by two centers the modal exactly, but dividing by three
             // or four works better for larger screens.
             dialog.css("margin-top", Math.max(0, ($(window).height() - dialog.height()) / 2.7));
         }
@@ -839,14 +839,14 @@ $(function() {
         });
     });
     </script>
-    
+
     <!-- Tooltip -->
 <script>
     $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
+    $('[data-toggle="tooltip"]').tooltip();
 });
-</script>  
-    
+</script>
+
 <script>
 /* Ensure that form 1 is valid before moving to the next form  */
 function validate_form_tab(form_id, tab_id_curr, tab_id_next){
@@ -858,21 +858,82 @@ function validate_form_tab(form_id, tab_id_curr, tab_id_next){
             if (form.parsley().isValid()){
                 $(tab_id_curr).removeClass('active');
                 $(tab_id_next).addClass('active');
-            }; 
+            };
         })
 }
-    
+
 //CONTACT FORM JQUERY SUBMIT BUTTON LISTENERS
-    
+
 validate_form_tab('#contact-form-0', '#contact-tab-0', '#contact-tab-1');
 validate_form_tab('#contact-form-1', '#contact-tab-1', '#contact-tab-2');
 validate_form_tab('#contact-form-2', '#contact-tab-2', '#contact-tab-3');
 validate_form_tab('#contact-form-3', '#contact-tab-3', '#contact-tab-4');
 validate_form_tab('#contact-form-4', '#contact-tab-4', '#contact-tab-5');
 </script>
+
+
+<!-- DATA PARSLEY FLOATING LABELS -->
+<script>
+function floating_label(form_id) {
+    (function ($) {
+        'use strict';
+        var floatingLabel;
+        floatingLabel = function (onload) {
+            var $input;
+            $input = $(this);
+
+
+            if (onload) {
+                $.each($('.bt-flabels__wrapper input'), function (index, value) {
+                    var $current_input;
+                    $current_input = $(value);
+                    if ($current_input.val()) {
+                        $current_input.closest('.bt-flabels__wrapper').addClass('bt-flabel__float');
+                    }
+                });
+            }
+            setTimeout(function () {
+                if ($input.val()) {
+                    $input.closest('.bt-flabels__wrapper').addClass('bt-flabel__float');
+                    $input.closest('.required').removeClass('required'); //Remove the red required dot
+
+                } else {
+                    $input.closest('.bt-flabels__wrapper').removeClass('bt-flabel__float');
+                    $input.closest('div').addClass('required'); //Replace the red required dot
+                }
+            }, 1);
+        };
+        $(form_id.concat(' .bt-flabels__wrapper input')).keydown(floatingLabel);
+        $(form_id.concat(' .bt-flabels__wrapper input')).change(floatingLabel);
+        window.addEventListener('load', floatingLabel(true), false);
+        $(form_id.concat('.js-flabels')).parsley().on('form:error', function () {
+            $.each(this.fields, function (key, field) {
+                if (field.validationResult !== true) {
+                    field.$element.closest(form_id.concat(' .bt-flabels__wrapper')).addClass('bt-flabels__error');
+                }
+            });
+        });
+        $(form_id.concat('.js-flabels')).parsley().on('field:validated', function () {
+            if (this.validationResult === true) {
+                this.$element.closest(form_id.concat(' .bt-flabels__wrapper')).removeClass('bt-flabels__error');
+            } else {
+                this.$element.closest(form_id.concat(' .bt-flabels__wrapper')).addClass('bt-flabels__error');
+            }
+        });
+    }(jQuery));
+};
+
+//Floating labels for the contact forms
+floating_label('#contact-form-0');
+floating_label('#contact-form-1');
+floating_label('#contact-form-2');
+floating_label('#contact-form-3');
+floating_label('#contact-form-4');
+</script>
+
     {% block more-javascript %}{% endblock more-javascript %}
 
-    
+
 </body>
-    
+
 </html>
