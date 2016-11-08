@@ -37,7 +37,11 @@
         <link rel="stylesheet" href="/static/css/headers/header-default.css">
         <link rel="stylesheet" href="/static/css/headers/header-v8.css">
         <link rel="stylesheet" href="/static/css/footers/footer-v1.css">
-    
+        
+        <!-- Page Classes For Easy Styling -->
+        <link rel="stylesheet" href="/static/css/pages/page_one.css">
+
+        
 
         <!-- CSS Implementing Plugins -->
         <link rel="stylesheet" href="/static/plugins/animate.css">
@@ -61,7 +65,7 @@
         
 
         <!-- navbar plugin css -->
-                <link rel="stylesheet" href="{% static 'standalone/auto-hiding-navigation/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'standalone/auto-hiding-navigation/css/style.css' %}">
 
         
          <!-- My CSS -->
@@ -832,8 +836,12 @@ $(function() {
     });
     </script>
     
-
-   
+    <!-- Tooltip -->
+<script>
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>  
 
     {% block more-javascript %}{% endblock more-javascript %}
 

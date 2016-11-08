@@ -21,8 +21,9 @@ urlpatterns = [
     # Your stuff: custom urls includes go here
     url(r'^$', homepage_views.index, name='home'),
     url(r'^test/$', homepage_views.test, name='test'),
+    url(r'^about/$', homepage_views.about, name='about'),
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit
