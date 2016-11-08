@@ -550,9 +550,18 @@ a:hover{
   
    
     .highlights-components{
-        max-width: 920px;
+        max-width: $max-width;
         margin: 0 auto;
         text-align: center;
+        
+        .component-circle{
+            width: 120px;
+            display: inline-block;
+            margin-left: 18px;
+            margin-right: 18px;
+            
+        }
+        
         
         .popover{
             width: 550px; /* Max Width of the popover (depending on the container!) */
@@ -629,6 +638,13 @@ a:hover{
         text-decoration: none;
     }
     
+    #component-pe{
+        p{ 
+            position: relative;
+            padding-right: 10px;
+        }
+    }
+    
     %fa-my{
           margin-left: 12px;
           margin-right: 12px;
@@ -669,6 +685,7 @@ a:hover{
 @include fa-my-generator(fa-my-4, $fourth-color);
 @include fa-my-generator(fa-my-5, $sixth-color);
 @include fa-my-generator(fa-my-6, $third-color);
+@include fa-my-generator(fa-my-7, $seventh-color);
 
     
     
