@@ -9,14 +9,6 @@ a:hover{
 }
 
 
-.cd-secondary-nav{
-    a{
-        font-size: $font-size-four;
-        
-    }
-}
-
-
 .main-points{
 
  padding-bottom: 0;
@@ -1095,6 +1087,11 @@ a:hover{
     .cd-slider-wrapper{
         padding-bottom: 0;
     }
+    
+    .cd-slider-navigation{
+        z-index: 1;
+    }
+    
     h2{
         line-height: 1.4;
         margin-bottom: 30px;
@@ -1396,14 +1393,7 @@ a:hover{
     }       
     }
 
-    @media screen and (max-width: 768px) {
-        .modal-dialog {
-        }
-    }
-    .modal-header{
-        margin: 0;
-        padding: 0;
-    }
+
     
     //Generates the title colors for each tab
     @mixin generateTabClassColor($class, $color){

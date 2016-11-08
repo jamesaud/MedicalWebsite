@@ -43,21 +43,16 @@
         <link href="{% sass_src 'css/charts.scss' %}" rel="stylesheet" type="text/css" />
         <link href="{% sass_src 'css/graphs.scss' %}" rel="stylesheet" type="text/css" />
         <link href="{% sass_src 'css/circle-tabs.scss' %}" rel="stylesheet" type='text/css'/>
-        <link href="{% sass_src 'css/parsley-floating.scss' %}" rel="stylesheet" type='text/css'/>
         <link href="{% sass_src 'css/home.scss' %}" rel="stylesheet" type="text/css" />
 
 
         <!-- for local dev only -->
         <link href="{% static '/staticfiles/css/graphs.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static '/staticfiles/css/circle-tabs.css' %}" rel="stylesheet" type="text/css" />
-        <link href="{% static '/staticfiles/css/parsley-floating.css' %}" rel="stylesheet" type="text/css" />  <!-- Form parsley floating css -->
         <link href="{% static '/staticfiles/css/home.css' %}" rel="stylesheet" type="text/css" />
 
 
         {% load sass_tags %}
-        <link rel="stylesheet" href="{% sass_src 'css/test.scss' %}">
-        <!-- for dev only -->
-         <link href="{% static 'staticfiles/css/test.css' %}" rel="stylesheet" type="text/css" />
 
         
         <div id='home'></div><!-- guarantees home nav lights up at the top of the pages -->
@@ -5135,19 +5130,6 @@ floating_label('#contact-form-4');
 
 <!-- form on submission, check data parsley validation -->
 <script>
-/* Ensure that form 1 is valid before moving to the next form  */
-function validate_form_tab(form_id, tab_id_curr, tab_id_next){
-    $(form_id).submit(function(e){
-            e.preventDefault();
-            var form = $(form_id);
-            form.parsley().validate();
-
-            if (form.parsley().isValid()){
-                $(tab_id_curr).removeClass('active');
-                $(tab_id_next).addClass('active');
-            }; 
-        })
-}
 
 //INQUIRE FORM JQUERY SUBMIT BUTTON LISTENERS
 validate_form_tab('#inquire-form-0', '#inquire-tab-0', '#inquire-tab-1');
@@ -5156,13 +5138,6 @@ validate_form_tab('#inquire-form-2', '#inquire-tab-2', '#inquire-tab-3');
 validate_form_tab('#inquire-form-3', '#inquire-tab-3', '#inquire-tab-4');
 validate_form_tab('#inquire-form-4', '#inquire-tab-4', '#inquire-tab-5');
 
-//CONTACT FORM JQUERY SUBMIT BUTTON LISTENERS
-    
-validate_form_tab('#contact-form-0', '#contact-tab-0', '#contact-tab-1');
-validate_form_tab('#contact-form-1', '#contact-tab-1', '#contact-tab-2');
-validate_form_tab('#contact-form-2', '#contact-tab-2', '#contact-tab-3');
-validate_form_tab('#contact-form-3', '#contact-tab-3', '#contact-tab-4');
-validate_form_tab('#contact-form-4', '#contact-tab-4', '#contact-tab-5');
 </script>
 
 

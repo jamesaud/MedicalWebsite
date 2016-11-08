@@ -25,6 +25,8 @@ hr{
     }
 }
 
+
+
 #cd-nav-text{
     position: absolute;
     left: 28%;
@@ -53,6 +55,7 @@ hr{
     z-index: 10 !important;
     li{
         a{
+            font-size: $font-size-four;
             color: white;
             text-decoration: none;
             &.active{
@@ -61,6 +64,8 @@ hr{
         }
     }
 }
+
+
 @media only screen and (min-width: 1024px){
     .cd-secondary-nav{
         //Change height here?
@@ -413,6 +418,20 @@ hr.no-margin{
   .modal-fullscreen .modal-dialog {
      width: 1170px;
   }
+}
+
+
+.modal-header{
+        margin: 0;
+        padding: 0;
+}
+
+.modal{
+    .contact-btn{
+            font-size: $font-size-four;
+            min-width: 100%;
+            text-align: center;
+        }
 }
 
 
