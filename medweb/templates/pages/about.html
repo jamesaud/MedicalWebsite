@@ -29,7 +29,7 @@
          <!-- for dev only -->
           <link href="{% static 'staticfiles/css/about.css' %}" rel="stylesheet" type="text/css" />
         
-        <div id='nav-home'></div><!-- guarantees home nav lights up at the top of the pages -->
+        <div id='way-nav-home'></div><!-- guarantees home nav lights up at the top of the pages -->
 
 {% endblock more-css %}
 
@@ -1098,6 +1098,8 @@
   </div>
   <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
     </div>
+
+<div id='trigger-nav-home'></div>
 </section>
 
 
@@ -1113,6 +1115,7 @@
 
 <!-- MAIN CONTENT -->
 <div class="one-page cd-main-content sub-nav-hero">
+    <div id='way-nav-team'></div>
     
      <div id='our-team' class='one-page-inner one-default'>
         <div class="container">
@@ -1215,8 +1218,9 @@
 
             </div>
          </div>
-            
-        </div>
+            <div id='trigger-nav-team'></div>
+
+        </div> <!-- OUR TEAM -->
    
     
 </div>
@@ -1227,6 +1231,22 @@
 
 
 {% block more-javascript %}
+
+
+<script>
+//Add waypoints listeners that add and remove active class from navbar for each section
+add_nav_waypoint('#way-nav-home','#nav-home');
+add_nav_waypoint('#way-nav-team','#nav-team');
+//add_nav_waypoint('#way-nav-history','#nav-history');
+//add_nav_waypoint('#way-nav-location','#nav-location');
+
+    
+//Triggers are for the scroll up
+add_nav_waypoint('#trigger-nav-home','#nav-home');
+add_nav_waypoint('#trigger-nav-team','#nav-benefits');
+
+</script>
+
 
 <!-- FINAL IMPORT -->
   <!-- This version of jquery required for the slideshow to work. Make it the final import before slider in this  html file-->

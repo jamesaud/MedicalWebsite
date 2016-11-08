@@ -782,7 +782,7 @@
 	<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
 	<!-- JS Customization -->
 	<script type="text/javascript" src="/static/js/custom.js"></script>
-
+    
 	<!--[if lt IE 9]>
 	<script src="/static/plugins/respond.js"></script>
 	<script src="/static/plugins/html5shiv.js"></script>
@@ -792,7 +792,13 @@
     <!-- WAYPOINTS PLUGIN -->
     <script src="{% static 'css/plugins/waypoints4.0/lib/jquery.waypoints.min.js' %}"></script>
 
-    <script type="text/javascript" src="/static/js/parsley.min.js"></script> <!-- DATA parsley plugin -->
+    <!-- DATA parsley plugin -->
+    <script type="text/javascript" src="/static/js/parsley.min.js"></script> 
+    
+    <!-- Auto Hiding Navigation -->
+    <script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
+
+
 
     <script>
     // .modal-backdrop classes. Rely on the css classes to change modal styles.
@@ -931,10 +937,28 @@ floating_label('#contact-form-3');
 floating_label('#contact-form-4');
 </script>
     
-    <!-- Auto Hiding Navigation -->
-    <script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
 
 
+<!-- ADD WAYPOINTS TO NAVBAR ON SCROLL -->
+<script>
+//Remove active class from all other nav_ids
+function remove_nav_active(nav_id_to_keep){
+    
+    $('.cd-secondary-nav a').removeClass('active');
+    $(nav_id_to_keep).children('a').addClass('active');
+};
+
+function add_nav_waypoint(waypoint_id, nav_id){ //string with hash
+    var waypoint = new Waypoint({
+      element: $(waypoint_id),
+      handler: function(){
+          $(nav_id).children('a').addClass('active');
+          remove_nav_active(nav_id);
+      },
+      offset: 70 // one pixel before the scroll on click in the navbar, so that it changes correctly
+    });
+};
+</script>
     {% block more-javascript %}{% endblock more-javascript %}
 
 
