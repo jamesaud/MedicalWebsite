@@ -1,5 +1,33 @@
-
-#rev_slider_3_1_wrapper{
-  max-height: 680px;
-
+@import 'variables';
+//Slider settings
+.rev_slider_wrapper{
 }
+
+#our-team{
+        padding-top: 40px;
+    
+        .headline-title{
+            h2{
+                    font-size: $font-size-three;
+                }
+        }
+    
+        .headline-center{
+            & h2:after{
+                background: $primary-color !important;
+            }
+        }
+
+        small{
+            color: $primary-color;
+        }
+    
+        img{
+            margin: 0 auto;
+            max-height: 180px;
+            width: auto;
+            margin-bottom: 10px;
+        }
+    }
+ 
+

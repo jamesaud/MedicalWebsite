@@ -11,8 +11,14 @@
          		<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
          		<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
 
+                <!-- ADDITIONAL CSS -->
+                <!-- STYLING FOR OUR TEAM -->
+                <link rel="stylesheet" href="/static/css/pages/portfolio-v2.css">
+
+
          		<!-- REVOLUTION STYLE SHEETS -->
          		<link rel="stylesheet" type="text/css" href="/static/img-slider/our-team/css/settings.css">
+
          		<!-- REVOLUTION LAYERS STYLES -->
             <style>.tp-caption.Team-Name,.Team-Name{color:rgba(255,255,255,1.00);font-size:70px;line-height:70px;font-weight:900;font-style:normal;font-family:Roboto;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}.tp-caption.Team-Position,.Team-Position{color:rgba(255,255,255,1.00);font-size:30px;line-height:30px;font-weight:400;font-style:normal;font-family:Georgia,serif;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}.tp-caption.Team-Description,.Team-Description{color:rgba(255,255,255,1.00);font-size:18px;line-height:28px;font-weight:400;font-style:normal;font-family:Roboto;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}.tp-caption.Team-Social,.Team-Social{color:rgba(255,255,255,1.00);font-size:50px;line-height:50px;font-weight:400;font-style:normal;font-family:Arial;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:center}.tp-caption.Team-Social:hover,.Team-Social:hover{color:rgba(255,255,255,1.00);text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;cursor:pointer}.tp-caption.Team-Thumb,.Team-Thumb{color:rgba(255,255,255,1.00);font-size:20px;line-height:22px;font-weight:400;font-style:normal;font-family:Arial;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}.tp-caption.Team-Thumb:hover,.Team-Thumb:hover{color:rgba(255,255,255,1.00);text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;cursor:pointer}</style>
 <style type="text/css">.tp-static-layers .tp-parallax-wrap:not(:first-child):hover{z-index:100 !important}</style>
@@ -22,6 +28,8 @@
          <link rel="stylesheet" href="{% sass_src 'css/about.scss' %}">
          <!-- for dev only -->
           <link href="{% static 'staticfiles/css/about.css' %}" rel="stylesheet" type="text/css" />
+        
+        <div id='nav-home'></div><!-- guarantees home nav lights up at the top of the pages -->
 
 {% endblock more-css %}
 
@@ -31,7 +39,6 @@
 
 
 <section class='content-main'>
-
   <div id="rev_slider_3_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="our-team" style="margin:0px auto;background-color:#000000;padding:0px;margin-top:0px;margin-bottom:0px;">
   <!-- START REVOLUTION SLIDER 5.2.6 auto mode -->
   	<div id="rev_slider_3_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
@@ -1090,35 +1097,128 @@
   			style="z-index: 10;cursor:pointer;"><img src="/static/img-slider/our-team/assets/team_thumb6.jpg" alt="" data-ww="['200px','140px','140px','80px']" data-hh="['200px','140px','140px','80px']" data-no-retina> </div>
   </div>
   <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+    </div>
 </section>
-
 
 
 <nav class="cd-secondary-nav">
 	<ul>
 		 <li id='nav-home'><a class='active' href="#">Home</a></li>
-     <li id='nav-resources'><a href="#team">Team</a></li>
-      <li id='nav-resources'><a href="#history">History</a></li>
-      <li id='nav-investors'><a href="#tab-investors">Investors</a></li>
+     <li id='nav-team'><a href="#nav-team">Team</a></li>
+      <li id='nav-history'><a href="#nav-history">History</a></li>
+      <li id='nav-location'><a href="#nav-location">Location</a></li>
 	</ul>
 </nav> <!-- .cd-secondary-nav -->
 
 
 <!-- MAIN CONTENT -->
 <div class="one-page cd-main-content sub-nav-hero">
+    
+     <div id='our-team' class='one-page-inner one-default'>
+        <div class="container">
+			<div class='headline-center'>
+                <h2>Meet Our Talented Team</h2>
+			</div>
 
-    <div class='one-page-inner one-default section-highlights'>
+			<div class="row team-v6 margin-bottom-20">
+				<div class="col-md-3 col-sm-6 md-margin-bottom-50">
+					<img class="img-responsive" src="{% static 'images/team/john.png' %}" alt="">
+					<span>John Oljace</span>
+					<small>CEO</small>
+				</div>
+				<div class="col-md-3 col-sm-6 md-margin-bottom-50">
+					<img class="img-responsive" src="{% static 'images/team/paul.png' %}" alt="">
+					<span>Paul Lucky</span>
+					<small>COO</small>
+					
+				</div>
+				<div class="col-md-3 col-sm-6 sm-margin-bottom-50">
+					<img class="img-responsive" src="{% static 'images/team/jonah.jpg' %}" alt="">
+					<span>Jonah Schmiechen</span>
+					<small>CFO</small>
+					
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img class="img-responsive" src="{% static 'images/team/james.png' %}" alt="">
+					<span>James Audretsch</span>
+					<small>CIO/Marketing Director </small>
+					
+				</div>
+			</div><!--/end team v6-->
+                
+            <div class='headline-center'>
+                <h2>New/Potential Hires</h2>
+			</div>
+                
+            <div class="row team-v6 margin-bottom-60">
+				<div class="col-md-3 col-sm-6 sm-margin-bottom-50">
+					<img class="img-responsive" src="{% static 'images/team/april.png' %}" alt="">
+					<span>April Voliva</span>
+					<small>Registered Nurse</small>
+					
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img class="img-responsive" src="{% static 'images/team/ma.png' %}" alt="">
+					<span>Shuxin Ma</span>
+					<small>Human Resources</small>
+				</div>
+                <div class="col-md-3 col-sm-6 md-margin-bottom-50">
+					<img class="img-responsive" src="{% static 'images/team/adam.png' %}" alt="">
+					<span>Adam Wolf</span>
+					<small>Web &amp; Graphic Design</small>
+					
+				</div>
+				<div class="col-md-3 col-sm-6 md-margin-bottom-50">
+					<img class="img-responsive" src="{% static 'images/team/linda.png' %}" alt="">
+					<span>Linda Cain</span>
+					<small>Service</small>
+					
+				</div>
+                
+			</div><!--/end team v6-->
+            
+            <div class="row team-v6 margin-bottom-60">
+				
+				<div class="col-md-3 col-sm-6 sm-margin-bottom-50">
+					<img class="img-responsive" src="{% static 'images/team/kim.png' %}" alt="">
+					<span>Kim Yentes</span>
+					<small>Management</small>
+				</div>
+            	<div class="col-md-3 col-sm-6 sm-margin-bottom-50">
+					<img class="img-responsive" src="{% static 'images/team/jenny.png' %}" alt="">
+					<span>Jenny Frederickson</span>
+					<small>Research</small>
+				</div>
+			</div>
+            
+            <!--/end team v6-->
 
-        <div class='container'>
-            <div class='row'>
+                    
+            <div class='headline-center'>
+                <h2>Mentors</h2>
+			</div>
+                
+            <div class="row team-v6">
 
-                <div class='col-md-6'>
-                    <h2> Main Content Goes Here</h2>
-                </div>
+                <div class="col-md-3 col-sm-6 md-margin-bottom-50">
+                        <img class="img-responsive" src="{% static 'images/team/randall.png' %}" alt="">
+                        <span>Randall D. Shields</span>
+                        <small>Publishing Consultant</small>
+
+                    </div>
+                    <div class="col-md-3 col-sm-6 md-margin-bottom-50">
+                        <img class="img-responsive" src="{% static 'images/team/holder.png' %}" alt="">
+                        <span>Dr. Paul Herscu</span>
+                        <small>Mentor</small>
+
+                    </div>
 
             </div>
-          </div>
-      </div>
+         </div>
+            
+        </div>
+   
+    
 </div>
 
 {% endblock modal %}
@@ -1130,7 +1230,7 @@
 
 <!-- FINAL IMPORT -->
   <!-- This version of jquery required for the slideshow to work. Make it the final import before slider in this  html file-->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
 
 		<!-- REVOLUTION JS FILES -->
 		<script type="text/javascript" src="/static/img-slider/our-team/js/jquery.themepunch.tools.min.js"></script>
@@ -1191,4 +1291,6 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
         }
       });	/*ready*/
     </script>
+
+
 {% endblock more-javascript %}

@@ -98,7 +98,7 @@
 	       <!-- TOP NAVBAR -->
 <div class='cd-navbar-wrapper'>
 <header class="cd-auto-hide-header">
-	<div class="logo"><a href="#0"><img src="{% static 'images/logo1.png' %}" alt="Logo"></a></div>
+	<div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo1.png' %}" alt="Logo"></a></div>
     <!--<span >
            <h5>Optimizing Net Income</h5>
              <h5>Non-clinical Issues Become Non-Issues</h5>
@@ -119,8 +119,8 @@
 
 
 		<ul id="cd-navigation">
-			<li><a href="">Synergy+</a></li>
-			<li><a href="#">About Us</a></li>
+			<li><a href="{% url 'home' %}">Synergy+</a></li>
+			<li><a href="{% url 'about' %}">About Us</a></li>
 			<li><a href="#" data-toggle="modal" data-target="#modal-contact">Contact Us</a></li>
             <li id='nav-call'><a  href="#">1-800-xxx-xxxx<span class='tiny'>FREE EVALUATION</span><span class='show-mobile'>&nbsp;&nbsp;FREE EVALUATION </span></a></li>
 		</ul>
@@ -930,6 +930,10 @@ floating_label('#contact-form-2');
 floating_label('#contact-form-3');
 floating_label('#contact-form-4');
 </script>
+    
+    <!-- Auto Hiding Navigation -->
+    <script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
+
 
     {% block more-javascript %}{% endblock more-javascript %}
 
