@@ -30,20 +30,7 @@ services:
     links:
       - postgres
 
-
-
-  pycharm:
-    build:
-      context: .
-      dockerfile: ./compose/django/Dockerfile-dev
-    depends_on:
-      - postgres
-    environment:
-      - POSTGRES_USER=medweb
-    volumes:
-      - .:/app
-    links:
-      - postgres
+  
 
 
 
