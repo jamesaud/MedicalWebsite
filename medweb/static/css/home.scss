@@ -539,7 +539,7 @@ a:hover{
             color: black !important;
         }
     }
-  
+
    
     .highlights-components{
         max-width: $max-width;
@@ -630,12 +630,6 @@ a:hover{
         text-decoration: none;
     }
     
-    #component-pe{
-        p{ 
-            position: relative;
-            padding-right: 10px;
-        }
-    }
     
     %fa-my{
           margin-left: 12px;
@@ -682,6 +676,14 @@ a:hover{
     
     
 }
+
+
+
+#component-pe{
+    position: relative;
+    right: 12px !important;
+}
+
 
 .section-circles{
     align-content: center;
