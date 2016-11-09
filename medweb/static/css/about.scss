@@ -4,9 +4,9 @@
 }
 
 #our-team{
-        padding-top: 40px;
+        padding-top: 65px ;
+        padding-bottom: 30px;
    
-    
         .headline-center{
             & h2:after{
                 background: $primary-color !important;
@@ -23,6 +23,92 @@
             width: auto;
             margin-bottom: 10px;
         }
+    
+    .team-v6{
+        margin-bottom: 40px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
     }
+}
  
+
+//TIMELINE CUSTOM STYLE
+$color: $primary-color;
+.cd-horizontal-timeline{
+    
+    h2{
+        color: #333;
+    }
+    
+    .filling-line{
+        background-color: $color;
+    }
+    
+    
+    .events-wrapper{
+        &:before, &:after{
+            width: 7px;
+        }
+        span{
+            font-weight: bold;
+            font-size: $font-size-three;
+        }
+        
+        
+        a:hover{
+            color: $color;
+        }
+        
+    }
+    .timeline{
+        max-width: $max-width - 200px;
+    }
+    
+    .year{
+        
+    }   
+}
+
+//Overwrites from style.css for proper colors
+$color: $primary-color;
+
+.no-touch .cd-horizontal-timeline .events a:hover::after {
+  background-color: $color;
+  border-color: $color;
+}
+.cd-horizontal-timeline .events a.selected {
+  pointer-events: none;
+}
+.cd-horizontal-timeline .events a.selected::after {
+  background-color: $color;
+  border-color: $color;
+}
+.cd-horizontal-timeline .events a.older-event::after {
+  border-color: $color;
+}
+
+
+.section-location{
+    padding-bottom: 60px;
+    padding-top: 20px;
+    
+    .location-title{
+        margin-bottom: 40px;
+        
+        h2{
+            font-weight: 300;
+            text-align: center;
+            line-height: 40px;
+            font-size: $font-size-two;
+            color: #555;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #777;
+            border-top: 3px solid #777;
+            
+        }
+    }
+}
+
 

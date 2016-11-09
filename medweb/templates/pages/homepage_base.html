@@ -774,6 +774,9 @@
     <script type="text/javascript" src="{% static 'js/jquery-migrate-1.4.1.min.js' %}"></script>
 
     <script type="text/javascript" src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    
+    <!-- MODERNIZR -->
+    <script type="text/javascript" src="{% static 'standalone/pointy-slider/js/modernizr.js' %}"></script>
 
 
 
@@ -798,6 +801,7 @@
     <!-- Auto Hiding Navigation -->
     <script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
 
+  
 
 
     <script>
@@ -958,6 +962,23 @@ function add_nav_waypoint(waypoint_id, nav_id){ //string with hash
       offset: 70 // one pixel before the scroll on click in the navbar, so that it changes correctly
     });
 };
+</script>
+    
+    
+<!-- SMOOTH SCROLL -->   
+<script>
+var offset_up = 70; // fixed navbar height blocks the view, move up certain amount of pixels to offset it.
+    
+$('.cd-secondary-nav li a').bind('click', function(e) {
+    e.preventDefault();
+    var hashTag = this.hash;
+  	var top = 0;
+ 	if ($(hashTag).offset()) {
+    	top = $(hashTag).offset().top
+  	}
+	$('html, body').animate({scrollTop:top - offset_up}, 'slow');                                                         
+
+});
 </script>
     {% block more-javascript %}{% endblock more-javascript %}
 
