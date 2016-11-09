@@ -1,9 +1,9 @@
-import xml.etree.ElementTree as ET
+import csv
 
+def parseTable(csv_file):
+    with open(csv_file, 'rb') as csvfile:
+        reader = csv.DictReader(csvfile)
+        print(reader)
 
-def parseTable(xml_file):
-    tree = ET.parse(xml_file)
-
-
-parseTable('comparison.xml')
+parseTable('comparison.csv')
 
