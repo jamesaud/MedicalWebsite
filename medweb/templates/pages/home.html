@@ -41,21 +41,13 @@
 		
 
         <!-- sass -->
-        {% load sass_tags %}
-    
-        <link href="{% sass_src 'css/charts.scss' %}" rel="stylesheet" type="text/css" />
-        <link href="{% sass_src 'css/graphs.scss' %}" rel="stylesheet" type="text/css" />
-        <link href="{% sass_src 'css/circle-tabs.scss' %}" rel="stylesheet" type='text/css'/>
-        <link href="{% sass_src 'css/home.scss' %}" rel="stylesheet" type="text/css" />
-
-
+       
         <!-- for local dev only -->
         <link href="{% static '/staticfiles/css/graphs.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static '/staticfiles/css/circle-tabs.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static '/staticfiles/css/home.css' %}" rel="stylesheet" type="text/css" />
 
 
-        {% load sass_tags %}
 
         
         <div id='home'></div><!-- guarantees home nav lights up at the top of the pages -->
