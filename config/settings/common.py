@@ -37,10 +37,10 @@ DJANGO_APPS = (
 )
 THIRD_PARTY_APPS = (
     'crispy_forms',  # Form layouts
-    'allauth',  # registration
-    'allauth.account',  # registration
-    'allauth.socialaccount',  # registration
-    'sass_processor',
+    #'allauth',  # registration
+    #'allauth.account',  # registration
+    #'allauth.socialaccount',  # registration
+    #'sass_processor',
 )
 
 # Apps specific for this project go here.
@@ -76,7 +76,7 @@ MIGRATION_MODULES = {
 # DEBUG
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#debug
-DEBUG = env.bool('DJANGO_DEBUG', False)
+DEBUG = env.bool('DJANGO_DEBUG', True)
 
 # FIXTURE CONFIGURATION
 # ------------------------------------------------------------------------------
@@ -197,7 +197,7 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'sass_processor.finders.CssFinder',
+    #'sass_processor.finders.CssFinder',
 )
 
 # MEDIA CONFIGURATION
