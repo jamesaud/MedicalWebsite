@@ -95,7 +95,7 @@ hr{
 
  
 #nav-call{
-    width: 150px;
+    width: 180px;
     a{
         top: 23px;
         color: $third-color;
@@ -105,9 +105,10 @@ hr{
             }
     }
      span.tiny{
+         width: 100%;
         font-size: 12px !important;
         position: absolute;
-        right: 12px;
+        right: -11px;
         top: 20px;
     }
     

@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import 'variables';
 
 p {
@@ -1061,16 +1062,19 @@ a:hover{
     margin: 0 auto;
     max-width: $max-width;
     
-    @media (min-width: 992px) {
-        .cd-slider-wrapper{
-            max-height: 92vh;
-        }
-    }
-    
+
     
     .cd-slider-wrapper{
         padding-bottom: 0;
+
     }
+    
+    @media (min-width: 992px) {
+        .cd-slider-wrapper{
+            max-height: 900px;
+        }
+    }
+    
     
     .cd-slider-navigation{
         z-index: 1;

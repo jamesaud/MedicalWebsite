@@ -1,46 +1,77 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@font-face { font-family: Vollkorn, serif; src: url(https://fonts.googleapis.com/css?family=Vollkorn); }
+@font-face {
+  font-family: Vollkorn, serif;
+  src: url(https://fonts.googleapis.com/css?family=Vollkorn); }
+.__color-button {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 65px;
+  padding-right: 65px;
+  font-size: 15.5px;
+  border-radius: 50em; }
 
-.__color-button { color: white; padding-top: 10px; padding-bottom: 10px; padding-left: 65px; padding-right: 65px; font-size: 15.5px; border-radius: 50em; }
+#our-team {
+  padding-top: 65px;
+  padding-bottom: 30px; }
+  #our-team .headline-center h2:after {
+    background: #45AEEA !important; }
+  #our-team small {
+    color: #45AEEA; }
+  #our-team img {
+    margin: 0 auto;
+    max-height: 180px;
+    width: auto;
+    margin-bottom: 10px; }
+  #our-team .team-v6 {
+    margin-bottom: 40px; }
+    #our-team .team-v6:last-child {
+      margin-bottom: 0px; }
 
-#our-team { padding-top: 65px; padding-bottom: 30px; }
+.cd-horizontal-timeline {
+  padding-top: 30px; }
+  .cd-horizontal-timeline h2 {
+    color: #333; }
+  .cd-horizontal-timeline .filling-line {
+    background-color: #45AEEA; }
+  .cd-horizontal-timeline .events-wrapper:before, .cd-horizontal-timeline .events-wrapper:after {
+    width: 7px; }
+  .cd-horizontal-timeline .events-wrapper span {
+    font-weight: bold;
+    font-size: 24px; }
+  .cd-horizontal-timeline .events-wrapper a:hover {
+    color: #45AEEA; }
+  .cd-horizontal-timeline .timeline {
+    max-width: 1100px; }
 
-#our-team .headline-center h2:after { background: #45AEEA !important; }
+.no-touch .cd-horizontal-timeline .events a:hover::after {
+  background-color: #45AEEA;
+  border-color: #45AEEA; }
 
-#our-team small { color: #45AEEA; }
+.cd-horizontal-timeline .events a.selected {
+  pointer-events: none; }
 
-#our-team img { margin: 0 auto; max-height: 180px; width: auto; margin-bottom: 10px; }
+.cd-horizontal-timeline .events a.selected::after {
+  background-color: #45AEEA;
+  border-color: #45AEEA; }
 
-#our-team .team-v6 { margin-bottom: 40px; }
+.cd-horizontal-timeline .events a.older-event::after {
+  border-color: #45AEEA; }
 
-#our-team .team-v6:last-child { margin-bottom: 0px; }
+.section-location {
+  padding-bottom: 60px;
+  padding-top: 20px; }
+  .section-location .location-title {
+    margin-bottom: 40px; }
+    .section-location .location-title h2 {
+      font-weight: 300;
+      text-align: center;
+      line-height: 40px;
+      font-size: 30px;
+      color: #555;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #777;
+      border-top: 3px solid #777; }
 
-.cd-horizontal-timeline { padding-top: 30px; }
-
-.cd-horizontal-timeline h2 { color: #333; }
-
-.cd-horizontal-timeline .filling-line { background-color: #45AEEA; }
-
-.cd-horizontal-timeline .events-wrapper:before, .cd-horizontal-timeline .events-wrapper:after { width: 7px; }
-
-.cd-horizontal-timeline .events-wrapper span { font-weight: bold; font-size: 24px; }
-
-.cd-horizontal-timeline .events-wrapper a:hover { color: #45AEEA; }
-
-.cd-horizontal-timeline .timeline { max-width: 1100px; }
-
-.no-touch .cd-horizontal-timeline .events a:hover::after { background-color: #45AEEA; border-color: #45AEEA; }
-
-.cd-horizontal-timeline .events a.selected { pointer-events: none; }
-
-.cd-horizontal-timeline .events a.selected::after { background-color: #45AEEA; border-color: #45AEEA; }
-
-.cd-horizontal-timeline .events a.older-event::after { border-color: #45AEEA; }
-
-.section-location { padding-bottom: 60px; padding-top: 20px; }
-
-.section-location .location-title { margin-bottom: 40px; }
-
-.section-location .location-title h2 { font-weight: 300; text-align: center; line-height: 40px; font-size: 30px; color: #555; padding-top: 10px; padding-bottom: 10px; border-bottom: 3px solid #777; border-top: 3px solid #777; }
-
-/*# sourceMappingURL=../../../../static/css/about.css.map */
+/*# sourceMappingURL=about.css.map */

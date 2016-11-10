@@ -1,9 +1,7 @@
 {
-	"version": 3,
-	"file": "../../app/medweb/static/css/test.css",
-	"sources": [
-		"../../app/medweb/static/css/test.scss"
-	],
-	"mappings": "",
-	"names": []
+"version": 3,
+"mappings": "",
+"sources": [],
+"names": [],
+"file": "test.css"
 }
