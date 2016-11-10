@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "../../app/medweb/static/css/test.css",
+	"sources": [
+		"../../app/medweb/static/css/test.scss"
+	],
+	"mappings": "",
+	"names": []
+}
