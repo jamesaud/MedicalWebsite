@@ -5,16 +5,16 @@
 {% block more-css %}
         <!-- CSS Implementing Plugins -->
        
-        <!--[if lt IE 9]><link rel="stylesheet" href="/static/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+        <!--[if lt IE 9]><link rel="stylesheet" href="{% static 'plugins/revolution-slider/rs-plugin/css/settings-ie8.css' %}" type="text/css" media="screen"><![endif]-->
 
         <!-- CSS Pages Style -->
-        <link rel="stylesheet" href="/static/css/pages/page_search.css"><!-- for the purchase now boxes -->
-        <link rel="stylesheet" href="/static/css/hex.css"><!-- for the hexes -->
+        <link rel="stylesheet" href="{% static 'css/pages/page_search.css' %}"><!-- for the purchase now boxes -->
+        <link rel="stylesheet" href="{% static 'css/hex.css' %}"><!-- for the hexes -->
 
-        <link rel="stylesheet" href="/static/css/pages/shortcode_timeline1.css"><!-- for the timeline -->
+        <link rel="stylesheet" href="{% static 'css/pages/shortcode_timeline1.css' %}"><!-- for the timeline -->
         
         <!-- For the resources tab -->
-        <link rel="stylesheet" href="/static/css/pages/portfolio-v2.css">
+        <link rel="stylesheet" href="{% static 'css/pages/portfolio-v2.css' %}">
 
 
         <link rel="stylesheet" href="{% static 'standalone/pointy-slider/css/style.css' %}"> <!-- Pointy Slider -->
@@ -25,11 +25,11 @@
 		      <!-- LOADING FONTS AND ICONS -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C700" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Roboto%3A900%2C700" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Roboto+Slab%3A400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 
-		<link rel="stylesheet" type="text/css" href="/static/img-slider/news-gallery1/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'img-slider/news-gallery1/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css' %}">
 
 
 		      <!-- REVOLUTION STYLE SHEETS -->
-		<link rel="stylesheet" type="text/css" href="/static/img-slider/news-gallery1/css/settings.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'img-slider/news-gallery1/css/settings.css' %}">
 
         <style>.tp-caption.Newspaper-Button,.Newspaper-Button{color:rgba(255,255,255,1.00);font-size:13px;line-height:17px;font-weight:700;font-style:normal;font-family:Roboto;padding:12px 35px 12px 35px;text-decoration:none;background-color:rgba(255,255,255,0);border-color:rgba(255,255,255,0.25);border-style:solid;border-width:1px;border-radius:0px 0px 0px 0px;text-align:left;letter-spacing:2px}.tp-caption.Newspaper-Button:hover,.Newspaper-Button:hover{color:rgba(0,0,0,1.00);text-decoration:none;background-color:rgba(255,255,255,1.00);border-color:rgba(255,255,255,1.00);border-style:solid;border-width:1px;border-radius:0px 0px 0px 0px;cursor:pointer}.tp-caption.Newspaper-Subtitle,.Newspaper-Subtitle{color:rgba(168,216,238,1.00);font-size:15px;line-height:20px;font-weight:900;font-style:normal;font-family:Roboto;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}.tp-caption.Newspaper-Title,.Newspaper-Title{color:rgba(255,255,255,1.00);font-size:50px;line-height:55px;font-weight:400;font-style:normal;font-family:"Roboto Slab";padding:0 0 10px 0;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}</style>
 				<style type="text/css">.erinyen .tp-tab-title{color:rgb(168,216,238);  font-size:13px;  font-weight:700;  text-transform:uppercase;  font-family:"Roboto Slab";  margin-bottom:5px;  line-height:15px}.erinyen .tp-tab-desc{font-size:18px;  font-weight:400;  color:rgb(255,255,255);  line-height:25px;font-family:"Roboto Slab"}</style>
@@ -69,7 +69,7 @@
 <!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
 	<div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
 <ul>	<!-- SLIDE  -->
-    <li data-index="rs-1" data-transition="parallaxvertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="static/img-slider/news-gallery1/assets/100x50_9fd03-0d4eb-newscarousel1.jpeg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Synergy+ Value Based Services" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="Optimizing earnings and patient care outcomes">
+    <li data-index="rs-1" data-transition="parallaxvertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="{% static 'img-slider/news-gallery1/assets/100x50_9fd03-0d4eb-newscarousel1.jpeg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Synergy+ Value Based Services" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="Optimizing earnings and patient care outcomes">
 		<!-- MAIN IMAGE -->
         <img src="static/img-slider/news-gallery1/assets/9fd03-0d4eb-newscarousel1.jpeg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 		<!-- LAYERS -->
@@ -4516,7 +4516,7 @@ patients within the next three to five years.</p></h5>
                     <ul class="row sorting-grid">
                         <li class="col-md-3 col-sm-6 col-xs-12 mix category_1 category_3" data-cat="1">
                             <a href="http://www.physicianspractice.com/articles/why-does-your-practice-need-professional-website?GUID=E1D21067-7002-4CE0-AC3B-5A823001F29B&rememberme=1&ts=18102016" target="_blank">
-                                <img class="img-responsive" src="/static/images/links/1.png" alt="">
+                                <img class="img-responsive" src="{% static 'images/links/1.png" alt="">
                                 <span class="sorting-cover">
                                     <span>Patient Engagement</span>
                                     <p>Do I need a professional website?</p>
@@ -4525,7 +4525,7 @@ patients within the next three to five years.</p></h5>
                         </li>
                         <li class="col-md-3 col-sm-6 col-xs-12 mix category_3 category_1" data-cat="3">
                             <a href="http://www.physicianspractice.com/sponsored-resources/white-paper-ehr-usability-how-recognize-it-and-where-find-it?GUID=E1D21067-7002-4CE0-AC3B-5A823001F29B&rememberme=1&ts=18102016" target="_blank">
-                                <img class="img-responsive" src="/static/images/links/2.jpg" alt="">
+                                <img class="img-responsive" src="{% static 'images/links/2.jpg" alt="">
                                 <span class="sorting-cover">
                                     <span>EHR</span>
                                     <p>EHR usability and how to recognize it</p>
@@ -4534,7 +4534,7 @@ patients within the next three to five years.</p></h5>
                         </li>
                         <li class="col-md-3 col-sm-6 col-xs-12 mix category_2 category_1" data-cat="2">
                             <a href="http://www.physicianspractice.com/coding/icd-10-enters-year-two-practices-reflect-transition?GUID=E1D21067-7002-4CE0-AC3B-5A823001F29B&rememberme=1&ts=18102016" target="_blank">
-                                <img class="img-responsive" src="/static/images/links/3.jpg" alt="">
+                                <img class="img-responsive" src="{% static 'images/links/3.jpg" alt="">
                                 <span class="sorting-cover">
                                     <span>ICD-10</span>
                                     <p>Reflecting on the transition to ICD-10</p>
@@ -4543,7 +4543,7 @@ patients within the next three to five years.</p></h5>
                         </li>
                         <li class="col-md-3 col-sm-6 col-xs-12 mix category_3 category_4" data-cat="3">
                             <a href="http://www.physicianspractice.com/blog/top-5-strategies-succeed-under-macra?GUID=E1D21067-7002-4CE0-AC3B-5A823001F29B&rememberme=1&ts=18102016" target="_blank">
-                                <img class="img-responsive" src="/static/images/links/4.jpg" alt="">
+                                <img class="img-responsive" src="{% static 'images/links/4.jpg" alt="">
                                 <span class="sorting-cover">
                                     <span>MACRA</span>
                                     <p>Top 5 strategies to succeed under MACRA</p>
@@ -4552,7 +4552,7 @@ patients within the next three to five years.</p></h5>
                         </li>
                         <li class="col-md-3 col-sm-6 col-xs-12 mix category_2 category_1 category_4" data-cat="2">
                             <a href="#">
-                                <img class="img-responsive" src="/static/images/links/5.jpg" alt="">
+                                <img class="img-responsive" src="{% static 'images/links/5.jpg" alt="">
                                 <span class="sorting-cover">
                                     <span>MACRA</span>
                                     <p>6 must-know parts of MACRA final rule</p>
@@ -4561,7 +4561,7 @@ patients within the next three to five years.</p></h5>
                         </li>
                         <li class="col-md-3 col-sm-6 col-xs-12 mix category_4" data-cat="1">
                             <a href="http://hitconsultant.net/2015/04/28/12-things-about-value-based-reimbursement/" target="_blank">
-                                <img class="img-responsive" src="/static/images/links/6.jpg" alt="">
+                                <img class="img-responsive" src="{% static 'images/links/6.jpg" alt="">
                                 <span class="sorting-cover">
                                     <span>Value Based Care</span>
                                     <p>12 things to know about VBC reimbursements</p>
@@ -4570,7 +4570,7 @@ patients within the next three to five years.</p></h5>
                         </li>
                         <li class="col-md-3 col-sm-6 col-xs-12 mix category_2 category_3  category_4" data-cat="2">
                             <a href="http://www.law360.com/articles/772870/value-based-reimbursement-the-new-norm-for-health-care" target="_blank">
-                                <img class="img-responsive" src="/static/images/links/7.jpg" alt="">
+                                <img class="img-responsive" src="{% static 'images/links/7.jpg" alt="">
                                 <span class="sorting-cover">
                                     <span>Value Based Care</span>
                                     <p>VBC, the new norm for healthcare</p>
@@ -4579,7 +4579,7 @@ patients within the next three to five years.</p></h5>
                         </li>
                         <li class="col-md-3 col-sm-6 col-xs-12 mix category_1 category_2 category_3" data-cat="1">
                             <a href="#">
-                                <img class="img-responsive" src="/static/images/links/8.jpg" alt="">
+                                <img class="img-responsive" src="{% static 'images/links/8.jpg" alt="">
                                 <span class="sorting-cover">
                                     <span>Value Based Care</span>
                                     <p>Healthcare is now on march to value-based pay</p>
@@ -4588,7 +4588,7 @@ patients within the next three to five years.</p></h5>
                         </li>
                         <li class="col-md-3 col-sm-6 col-xs-12 mix category_4 category_2" data-cat="1">
                             <a href="#">
-                                <img class="img-responsive" src="/static/images/links/9.png" alt="">
+                                <img class="img-responsive" src="{% static 'images/links/9.png" alt="">
                                 <span class="sorting-cover">
                                     <span>Value Based Care</span>
                                     <p>Why EHR's aren't enough for VBC</p>
@@ -4696,7 +4696,7 @@ patients within the next three to five years.</p></h5>
 
 {% block more-javascript %}
     <!-- JS Page Level -->
-	<script type="text/javascript" src="/static/js/app.js"></script>
+	<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
 
 <!-- Slideshow function -->
 	<script type="text/javascript">
@@ -4895,19 +4895,19 @@ $('.phone-autodash').keyup(function(){
 
     <!-- Revolution Slider Plugins -->
 		<!-- REVOLUTION JS FILES -->
-		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="{% static 'img-slider/news-gallery1/js/jquery.themepunch.tools.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/news-gallery1/js/jquery.themepunch.revolution.min.js' %}"></script>
 
 		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/extensions/revolution.extension.actions.min.js"></script>
-		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/extensions/revolution.extension.carousel.min.js"></script>
-		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/extensions/revolution.extension.kenburn.min.js"></script>
-		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/extensions/revolution.extension.layeranimation.min.js"></script>
-		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/extensions/revolution.extension.migration.min.js"></script>
-		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/extensions/revolution.extension.navigation.min.js"></script>
-		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/extensions/revolution.extension.parallax.min.js"></script>
-		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/extensions/revolution.extension.slideanims.min.js"></script>
-		<script type="text/javascript" src="/static/img-slider/news-gallery1/js/extensions/revolution.extension.video.min.js"></script>
+		<script type="text/javascript" src="{% static 'img-slider/news-gallery1/js/extensions/revolution.extension.actions.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/news-gallery1/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/news-gallery1/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/news-gallery1/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/news-gallery1/js/extensions/revolution.extension.migration.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/news-gallery1/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/news-gallery1/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/news-gallery1/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/news-gallery1/js/extensions/revolution.extension.video.min.js' %}"></script>
 		
 <script type="text/javascript">
 						var tpj=jQuery;
@@ -5026,11 +5026,11 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
     
 
 	<!-- JS Implementing Plugins -->
-	<script type="text/javascript" src="/static/plugins/jquery.mixitup.min.js"></script>
-    <script type="text/javascript" src="/static/js/readmore.min.js"></script> <!-- READMORE JS -->
+	<script type="text/javascript" src="{% static 'plugins/jquery.mixitup.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/readmore.min.js' %}"></script> <!-- READMORE JS -->
 	
 	<!-- JS Page Level -->
-	<script type="text/javascript" src="/static/js/pages/page_portfolio.js"></script>
+	<script type="text/javascript" src="{% static 'js/pages/page_portfolio.js' %}"></script>
 
     <!-- POINTY SLIDER -->
     <script type="text/javascript" src="{% static 'standalone/pointy-slider/js/jquery.mobile.custom.min.js' %}"></script>
