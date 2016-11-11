@@ -1,0 +1,40 @@
+/*
+Error: Invalid US-ASCII character "\xE2"
+        on line 234 of /Users/jamesaudretsch/DeveloperProjects/MedicalWebsite/medweb/static/css/home.scss
+
+229:                                     color: $color !important;
+230:                                 }
+231:                             }
+232:                         }
+233:                         li:before{
+234:                             content: '✔';   
+235:                             margin-left: -1em;
+236:                             margin-top: .4em;
+237:                             margin-right: 0;
+238:                             color: $color;
+239:                             position: absolute;
+
+Backtrace:
+/Users/jamesaudretsch/DeveloperProjects/MedicalWebsite/medweb/static/css/home.scss:234
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1320:in `block in find_encoding_error'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each_with_index'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `find_encoding_error'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/util.rb:896:in `check_sass_encoding'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:423:in `check_encoding!'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:379:in `_to_tree'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
+/Users/jamesaudretsch/Downloads/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid US-ASCII character \"\xE2\"\A         on line 234 of /Users/jamesaudretsch/DeveloperProjects/MedicalWebsite/medweb/static/css/home.scss\A \A 229:                                     color: $color !important;\A 230:                                 }\A 231:                             }\A 232:                         }\A 233:                         li:before{\A 234:                             content: '✔';   \A 235:                             margin-left: -1em;\A 236:                             margin-top: .4em;\A 237:                             margin-right: 0;\A 238:                             color: $color;\A 239:                             position: absolute;"; }
