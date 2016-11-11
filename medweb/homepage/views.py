@@ -36,9 +36,9 @@ def create(request):
     if request.method == 'POST':
         post_text = request.POST.get('form')
         response_data = {}
-
+        print(post_text)
         dict_json = json.loads(post_text)
-        print(dict_json['first_name'])
+        print(dict_json)
         #person = Person(first_name="test", last_name="test")
        # person.save()
 
