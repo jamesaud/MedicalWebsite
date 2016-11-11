@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^$', homepage_views.index, name='home'),
     url(r'^test/$', homepage_views.test, name='test'),
     url(r'^about/$', homepage_views.about, name='about'),
+    url(r'^create/$', homepage_views.create, name='create'),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

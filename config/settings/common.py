@@ -48,6 +48,7 @@ LOCAL_APPS = (
     # custom users app
     'medweb.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'medweb.homepage.apps.HomepageConfig',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
