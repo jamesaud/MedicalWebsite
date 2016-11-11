@@ -787,6 +787,8 @@ a:hover {
   color: #45AEEA; }
 .section-faq #faqs .panel .collapsed {
   color: #333 !important; }
+.section-faq .nav-tabs > li > a {
+  font-size: 15.5px; }
 .section-faq h1 {
   color: #333 !important; }
 .section-faq i {

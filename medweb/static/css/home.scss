@@ -885,6 +885,11 @@ a:hover{
             }
         }
     }
+    
+    .nav-tabs{
+        >li >a{ font-size: $font-size-four;}
+    }
+    
     h1{
         color: #333 !important;
     }
