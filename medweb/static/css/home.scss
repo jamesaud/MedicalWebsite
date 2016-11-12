@@ -2,7 +2,7 @@
 @import 'variables';
 
 p {
-    font-size: $font-size-four !important;
+    font-size: $font-size-four;
 }
 
 a:hover{
@@ -959,40 +959,7 @@ a:hover{
     }
     
             
-    
-    .section-investors{
-        margin: 0 auto;
-        background: transparent !important; // For some reason section-investors wants to have a white background by default
-        h1{
-            padding-top: 0;
-            color:black;
-            margin: 0;
-            text-align: left;
-        }
-
-
-        h2{
-            color: #333 !important;
-        }
-
-          a:link{
-                color: #0000EE;
-            }
-            a:hover{
-                color:#f60; 
-                text-decoration: none;
-            }
-            a:visited{
-                color: #551A8B;   
-            }
-        .investors-message{
-            margin-bottom: 30px;
-        }
-        
-        .investors-sales{}
-
-      }
-}
+   }
 
 .section-benefits{
     // Prevents awkward resizing and text-wrapping at some widths
@@ -1236,18 +1203,6 @@ a:hover{
 }
 
 
-
-.bg-blue {
-	background: $primary-color;
-}
-
-
-
-
-
-
-
-
 .nav-justified{
     a, a:active, a:focus{
         color: black !important;
@@ -1258,78 +1213,6 @@ a:hover{
     }
 }
 
-
-.col-1 {
-    color: $primary-color;
-}
-
-.col-2 {
-    color: $second-color;
-}
-
-.col-3 {
-    color: $third-color;
-}
-
-
-.col-4 {
-    color: $fourth-color;
-}
-
-
-.col-5 {
-    color: $fifth-color;
-}
-
-.col-6 {
-    color: $sixth-color;
-}
-
-.col-7 {
-    color: $seventh-color;
-}
-
-.col-8 {
-    color: $eighth-color;
-}
-
-.col-9 {
-    color: $ninth-color;
-}
-
-.col-10 {
-    color: $tenth-color;
-}
-
-.bg-col-1 {
-    background: $primary-color;
-}
-
-.bg-col-2 {
-    background: $second-color;
-}
-
-.bg-col-3 {
-    background: $third-color;
-}
-
-
-.bg-col-4 {
-    background: $fourth-color;
-}
-
-
-.bg-col-5 {
-    background: $fifth-color;
-}
-
-.bg-col-6 {
-    background: $sixth-color;
-}
-
-.bg-col-7 {
-    background: $seventh-color;
-}
 
 
 

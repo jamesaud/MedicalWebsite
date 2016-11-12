@@ -1,4 +1,75 @@
-ul {
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: Vollkorn, serif;
+  src: url(https://fonts.googleapis.com/css?family=Vollkorn); }
+.__color-button {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 65px;
+  padding-right: 65px;
+  font-size: 15.5px;
+  border-radius: 50em; }
+
+.rev_slider ul {
   padding: 0; }
+
+.section-investors {
+  margin: 0 auto;
+  background: transparent !important; }
+  .section-investors h1 {
+    padding-top: 0;
+    color: black;
+    margin: 0;
+    text-align: left; }
+  .section-investors h2 {
+    color: #333 !important; }
+  .section-investors a:link {
+    color: #0000EE; }
+  .section-investors a:hover {
+    text-decoration: underline; }
+  .section-investors a:visited {
+    color: #551A8B; }
+  .section-investors .investors-message {
+    margin-bottom: 30px; }
+
+.section-comparison .comparison-header {
+  padding-bottom: 50px; }
+.section-comparison .main-points-title {
+  color: black !important; }
+.section-comparison .hover-effect:hover {
+  color: #45AEEA; }
+.section-comparison .panel .panel-body {
+  padding-top: 40px !important; }
+.section-comparison .panel .tooltip {
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden; }
+.section-comparison .panel h4 {
+  color: #222;
+  font-weight: bold;
+  text-decoration: underline; }
+  .section-comparison .panel h4 span {
+    color: #333; }
+.section-comparison .panel .btn-u {
+  background-color: #45AEEA; }
+
+.section-letter {
+  background: #333 !important; }
+  .section-letter .main-points {
+    text-align: center;
+    margin-bottom: 20px; }
+    .section-letter .main-points .main-points-title {
+      margin-bottom: 20px; }
+  .section-letter .letter {
+    padding-bottom: 40px;
+    padding-top: 10px;
+    margin: 0 auto;
+    background: white;
+    max-width: 1000px; }
+    .section-letter .letter span {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px; }
 
 /*# sourceMappingURL=invest.css.map */

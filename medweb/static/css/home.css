@@ -13,7 +13,7 @@
   border-radius: 50em; }
 
 p {
-  font-size: 15.5px !important; }
+  font-size: 15.5px; }
 
 a:hover {
   color: #45AEEA; }
@@ -831,25 +831,6 @@ a:hover {
     margin: 0 auto; }
   .section-faq .faq-resources .img-responsive {
     height: 130px; }
-.section-faq .section-investors {
-  margin: 0 auto;
-  background: transparent !important; }
-  .section-faq .section-investors h1 {
-    padding-top: 0;
-    color: black;
-    margin: 0;
-    text-align: left; }
-  .section-faq .section-investors h2 {
-    color: #333 !important; }
-  .section-faq .section-investors a:link {
-    color: #0000EE; }
-  .section-faq .section-investors a:hover {
-    color: #f60;
-    text-decoration: none; }
-  .section-faq .section-investors a:visited {
-    color: #551A8B; }
-  .section-faq .section-investors .investors-message {
-    margin-bottom: 30px; }
 
 .section-benefits {
   margin-bottom: 25px; }
@@ -1004,65 +985,11 @@ a:hover {
 .section-demo .demo-btn-wrapper {
   margin-top: 20px; }
 
-.bg-blue {
-  background: #45AEEA; }
-
 .nav-justified a, .nav-justified a:active, .nav-justified a:focus {
   color: black !important; }
 .nav-justified a:hover {
   color: #D43A43 !important;
   background: none !important; }
-
-.col-1 {
-  color: #45AEEA; }
-
-.col-2 {
-  color: #EFB917; }
-
-.col-3 {
-  color: #D43A43; }
-
-.col-4 {
-  color: #72c02c; }
-
-.col-5 {
-  color: #FF8800; }
-
-.col-6 {
-  color: #C900E3; }
-
-.col-7 {
-  color: lightgrey; }
-
-.col-8 {
-  color: #00E891; }
-
-.col-9 {
-  color: #4D0CE8; }
-
-.col-10 {
-  color: #FF0060; }
-
-.bg-col-1 {
-  background: #45AEEA; }
-
-.bg-col-2 {
-  background: #EFB917; }
-
-.bg-col-3 {
-  background: #D43A43; }
-
-.bg-col-4 {
-  background: #72c02c; }
-
-.bg-col-5 {
-  background: #FF8800; }
-
-.bg-col-6 {
-  background: #C900E3; }
-
-.bg-col-7 {
-  background: lightgrey; }
 
 .section-modal-solutions {
   /* MODAL SETTINGS */
