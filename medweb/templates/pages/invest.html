@@ -115,7 +115,7 @@
 			style="z-index: 7; white-space: nowrap;">GET INVOLVED WITH SYNERGY+ </div>
 
 		<!-- LAYER NR. 4 -->
-		<div class="tp-caption NotGeneric-CallToAction rev-btn " 
+		<a id='interested-btn' href='#investing'><div class="tp-caption NotGeneric-CallToAction rev-btn " 
 			 id="slide-30-layer-7" 
 			 data-x="['center','center','center','center']" data-hoffset="['1','0','0','0']" 
 			 data-y="['middle','middle','middle','middle']" data-voffset="['63','68','80','65']" 
@@ -137,7 +137,8 @@
 			data-responsive="off"
 			
 			style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">I'm Interested </div>
-	</li>
+		</a>
+		</li>
 </ul>
 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
 </div><!-- END REVOLUTION SLIDER -->
@@ -202,7 +203,7 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
 
 <div class="one-page cd-main-content sub-nav-hero">
 
-		<div id='insights' class="bg-blue">
+		<div id='investing' class="bg-blue">
 			<div class="container content text-center">
 				<div class="row title">
 					<h1>Investing</h1>
@@ -263,7 +264,7 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
 			<div class='row comparison-header'>
 				<div class='col-md-12 text-center main-points'>
 					<h2 class='main-points-title'>Market Research</h2> 
-					<h4>The following links and documents will help you make an informed decision to support our mission. </h4>
+					<h4>The following links and documents will help you make an informed decision to support our mission </h4>
 				</div>
 			</div>
 
@@ -814,7 +815,7 @@ You will gain more ownership based on a proportional reduction in round 2 fund
 							We will sign a promissory note.  
 						</p>
 						<br>
-						<span>Best regards,</span>
+						<span>Best Regards,</span>
 						<h5>John Olace &amp; the Synergy+ Team
 </div>
 					</div>
@@ -834,5 +835,8 @@ You will gain more ownership based on a proportional reduction in round 2 fund
 
 
 {% block more-javascript %}
+<script>
+smoothScroll('#interested-btn');
+</script>
 
 {% endblock more-javascript %}

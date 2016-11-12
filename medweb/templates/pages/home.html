@@ -4714,20 +4714,9 @@ add_nav_waypoint('#trigger-why','#nav-why');
 </script>
 
 
-<!-- NAVBAR SMOOTH SCROLL -->
+<!-- READMORE SMOOTH SCROLL -->
 <script>
-var offset_up = 70; // fixed navbar height blocks the view, move up certain amount of pixels to offset it.
-
-$('.read-more-btn').bind('click', function(e) {
-    e.preventDefault();
-    var hashTag = this.hash;
-  	var top = 0;
- 	if ($(hashTag).offset()) {
-    	top = $(hashTag).offset().top
-  	}
-	$('html, body').animate({scrollTop:top - offset_up}, 'slow');                                                         
-
-});    
+smoothScroll('.read-more-btn');
 </script>
 
 <!-- SELECT THE CORRECT TIMELINE TAB WHEN CLICKING ON THE HEX -->
