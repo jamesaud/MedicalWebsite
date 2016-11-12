@@ -1,0 +1,212 @@
+{% extends "pages/homepage_base.html" %}
+{% load staticfiles %}
+{% load static %}
+
+
+{% block more-css %}
+         <link href="{% static 'css/about.css' %}" rel="stylesheet" type="text/css" />
+{% endblock more-css %}
+
+
+
+{% block modal %}
+
+<section class='content-main'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+		<!-- LOADING FONTS AND ICONS -->
+		<link href="http://fonts.googleapis.com/css?family=Raleway%3A500%2C800" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Raleway%3A400%2C800%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+
+		<link rel="stylesheet" type="text/css" href="{% static 'img-slider/image-hero1/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'img-slider/image-hero1/fonts/font-awesome/css/font-awesome.min.css' %}">
+
+		<!-- REVOLUTION STYLE SHEETS -->
+		<style>.tp-caption.NotGeneric-Title,.NotGeneric-Title{color:rgba(255,255,255,1.00);font-size:70px;line-height:70px;font-weight:800;font-style:normal;font-family:Raleway;padding:10px 0px 10px 0;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px}.tp-caption.NotGeneric-SubTitle,.NotGeneric-SubTitle{color:rgba(255,255,255,1.00);font-size:13px;line-height:20px;font-weight:500;font-style:normal;font-family:Raleway;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left;letter-spacing:4px;text-align:left}.tp-caption.NotGeneric-CallToAction,.NotGeneric-CallToAction{color:rgba(255,255,255,1.00);font-size:14px;line-height:14px;font-weight:500;font-style:normal;font-family:Raleway;padding:10px 30px 10px 30px;text-decoration:none;background-color:rgba(0,0,0,0);border-color:rgba(255,255,255,0.50);border-style:solid;border-width:1px;border-radius:0px 0px 0px 0px;text-align:left;letter-spacing:3px;text-align:left}.tp-caption.NotGeneric-CallToAction:hover,.NotGeneric-CallToAction:hover{color:rgba(255,255,255,1.00);text-decoration:none;background-color:transparent;border-color:rgba(255,255,255,1.00);border-style:solid;border-width:1px;border-radius:0px 0px 0px 0px;cursor:pointer}</style>
+
+        
+		<!-- REVOLUTION JS FILES -->
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/jquery.themepunch.tools.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.actions.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.migration.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.video.min.js' %}"></script>			
+<div id="rev_slider_5_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="image-hero1" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+<!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
+	<div id="rev_slider_5_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
+<ul>	<!-- SLIDE  -->
+    <li data-index="rs-30" data-transition="zoomout" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="assets/100x50_notgenericherobg.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+        <img src="{% static 'img-slider/image-hero1/assets/notgenericherobg.jpg' %}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption tp-shape tp-shapewrapper  " 
+			 id="slide-30-layer-10" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+						data-width="full"
+			data-height="full"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="s:300;" 
+			data-start="750" 
+			data-basealign="slide" 
+			data-responsive_offset="on" 
+			data-responsive="off"
+			
+			style="z-index: 5;background-color:rgba(0, 0, 0, 0.40);border-color:rgba(0, 0, 0, 0.50);"> </div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption NotGeneric-Title   tp-resizeme" 
+			 id="slide-30-layer-1" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['-54','-44','-22','-29']" 
+						data-fontsize="['70','70','70','50']"
+			data-lineheight="['70','70','70','50']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;" 
+			 data-mask_in="x:0px;y:0px;" 
+			 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 6; white-space: nowrap;">Investors </div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption NotGeneric-SubTitle   tp-resizeme" 
+			 id="slide-30-layer-4" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['2','7','28','13']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" 
+			 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;" 
+			 data-mask_in="x:0px;y:[100%];" 
+			 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 7; white-space: nowrap;">GET INVOLVED WITH SYNERGY+ </div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-caption NotGeneric-CallToAction rev-btn " 
+			 id="slide-30-layer-7" 
+			 data-x="['center','center','center','center']" data-hoffset="['1','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['63','68','80','65']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+				data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);"
+ 
+			 data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeInOut;" 
+			 data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;" 
+			 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+			data-start="1250" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-actions='[{"event":"click","action":"scrollbelow","offset":"0px","delay":""}]'
+			data-responsive_offset="on" 
+			data-responsive="off"
+			
+			style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">I'm Interested </div>
+	</li>
+</ul>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+</div><!-- END REVOLUTION SLIDER -->
+    
+		<script type="text/javascript">
+						var tpj=jQuery;
+			
+			var revapi5;
+			tpj(document).ready(function() {
+				if(tpj("#rev_slider_5_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_5_1");
+				}else{
+					revapi5 = tpj("#rev_slider_5_1").show().revolution({
+						sliderType:"hero",
+jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
+						sliderLayout:"fullwidth",
+						dottedOverlay:"none",
+						delay:9000,
+						navigation: {
+						},
+						responsiveLevels:[1240,1024,778,480],
+						visibilityLevels:[1240,1024,778,480],
+						gridwidth:[1240,1024,778,480],
+						gridheight:[550,500,400,300],
+						lazyType:"none",
+						parallax: {
+							type:"mouse",
+							origo:"slidercenter",
+							speed:2000,
+							levels:[2,3,4,5,6,7,12,16,10,50,47,48,49,50,51,55],
+							type:"mouse",
+						},
+						shadow:0,
+						spinner:"off",
+						autoHeight:"off",
+						disableProgressBar:"on",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							disableFocusListener:false,
+						}
+					});
+				}
+			});	/*ready*/
+		</script>
+
+
+	
+</section>
+
+<nav class="cd-secondary-nav">
+	<ul>
+      <li id='nav-home'><a class='active' href="#">Home</a></li>
+      <li id='nav-team'><a href="#way-nav-team">Team</a></li>
+      <li id='nav-history'><a href="#way-nav-history">History</a></li>
+      <li id='nav-location'><a href="#way-nav-location">Location</a></li>
+	</ul>
+</nav> <!-- .cd-secondary-nav -->
+
+<div class="one-page cd-main-content sub-nav-hero">
+</div>
+	
+
+{% endblock modal %}
+
+
+
+
+{% block more-javascript %}
+
+{% endblock more-javascript %}

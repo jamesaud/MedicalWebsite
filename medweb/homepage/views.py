@@ -32,6 +32,11 @@ def test(request):
 def about(request):
     return render(request, 'pages/about.html', context={})
 
+
+def invest(request):
+    return render(request, 'pages/invest.html', context={})
+
+
 def create(request):
     if request.method == 'POST':
         post_text = request.POST.get('form')

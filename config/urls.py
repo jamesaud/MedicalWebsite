@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^test/$', homepage_views.test, name='test'),
     url(r'^about/$', homepage_views.about, name='about'),
     url(r'^create/$', homepage_views.create, name='create'),
-
+    url(r'^invest/$', homepage_views.invest, name='invest'),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
