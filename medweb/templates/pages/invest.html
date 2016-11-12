@@ -2,10 +2,13 @@
 {% load staticfiles %}
 {% load static %}
 
+{% block css %}
+{{ block.super }}
 
-{% block more-css %}
-         <link href="{% static 'css/about.css' %}" rel="stylesheet" type="text/css" />
-{% endblock more-css %}
+<link href="{% static 'css/invest.css' %}" rel="stylesheet" type="text/css" />
+
+{% endblock css %}
+
 
 
 
@@ -63,7 +66,7 @@
 			data-responsive_offset="on" 
 			data-responsive="off"
 			
-			style="z-index: 5;background-color:rgba(0, 0, 0, 0.40);border-color:rgba(0, 0, 0, 0.50);"> </div>
+			style=" z-index: 5;background-color:rgba(0, 0, 0, 0.40);border-color:rgba(0, 0, 0, 0.50);"> </div>
 
 		<!-- LAYER NR. 2 -->
 		<div class="tp-caption NotGeneric-Title   tp-resizeme" 
@@ -201,6 +204,7 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
 <div class="one-page cd-main-content sub-nav-hero">
 </div>
 	
+        <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
 
 {% endblock modal %}
 
