@@ -36,6 +36,9 @@ def about(request):
 def invest(request):
     return render(request, 'pages/invest.html', context={})
 
+def compare(request):
+    return render(request, 'pages/compare.htm', context={})
+
 
 def create(request):
     if request.method == 'POST':

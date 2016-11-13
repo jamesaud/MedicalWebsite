@@ -24,6 +24,8 @@ urlpatterns = [
     url(r'^about/$', homepage_views.about, name='about'),
     url(r'^create/$', homepage_views.create, name='create'),
     url(r'^invest/$', homepage_views.invest, name='invest'),
+    url(r'^compare/$', homepage_views.compare, name='compare'),
+    url(r'^robots.txt/$', TemplateView.as_view(template_name='robots.txt', content_type='text/plain')),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
