@@ -7,15 +7,6 @@
 
 <link href="{% static 'css/invest.css' %}" rel="stylesheet" type="text/css" />
 
-{% endblock css %}
-
-
-
-
-{% block modal %}
-
-<section class='content-main'>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
 		<!-- LOADING FONTS AND ICONS -->
 		<link href="http://fonts.googleapis.com/css?family=Raleway%3A500%2C800" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Raleway%3A400%2C800%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 
@@ -25,21 +16,16 @@
 		<!-- REVOLUTION STYLE SHEETS -->
 		<style>.tp-caption.NotGeneric-Title,.NotGeneric-Title{color:rgba(255,255,255,1.00);font-size:70px;line-height:70px;font-weight:800;font-style:normal;font-family:Raleway;padding:10px 0px 10px 0;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px}.tp-caption.NotGeneric-SubTitle,.NotGeneric-SubTitle{color:rgba(255,255,255,1.00);font-size:13px;line-height:20px;font-weight:500;font-style:normal;font-family:Raleway;padding:0 0 0 0px;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left;letter-spacing:4px;text-align:left}.tp-caption.NotGeneric-CallToAction,.NotGeneric-CallToAction{color:rgba(255,255,255,1.00);font-size:14px;line-height:14px;font-weight:500;font-style:normal;font-family:Raleway;padding:10px 30px 10px 30px;text-decoration:none;background-color:rgba(0,0,0,0);border-color:rgba(255,255,255,0.50);border-style:solid;border-width:1px;border-radius:0px 0px 0px 0px;text-align:left;letter-spacing:3px;text-align:left}.tp-caption.NotGeneric-CallToAction:hover,.NotGeneric-CallToAction:hover{color:rgba(255,255,255,1.00);text-decoration:none;background-color:transparent;border-color:rgba(255,255,255,1.00);border-style:solid;border-width:1px;border-radius:0px 0px 0px 0px;cursor:pointer}</style>
 
-        
-		<!-- REVOLUTION JS FILES -->
-		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/jquery.themepunch.tools.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/jquery.themepunch.revolution.min.js' %}"></script>
+{% endblock css %}
 
-		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.actions.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.carousel.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.migration.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.navigation.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.parallax.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
-		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.video.min.js' %}"></script>			
+
+
+
+{% block modal %}
+
+<section class='content-main'>
+
+
 <div id="rev_slider_5_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="image-hero1" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
 <!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
 	<div id="rev_slider_5_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
@@ -142,62 +128,13 @@
 </ul>
 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
 </div><!-- END REVOLUTION SLIDER -->
-    
-		<script type="text/javascript">
-						var tpj=jQuery;
-			
-			var revapi5;
-			tpj(document).ready(function() {
-				if(tpj("#rev_slider_5_1").revolution == undefined){
-					revslider_showDoubleJqueryError("#rev_slider_5_1");
-				}else{
-					revapi5 = tpj("#rev_slider_5_1").show().revolution({
-						sliderType:"hero",
-jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
-						sliderLayout:"fullwidth",
-						dottedOverlay:"none",
-						delay:9000,
-						navigation: {
-						},
-						responsiveLevels:[1240,1024,778,480],
-						visibilityLevels:[1240,1024,778,480],
-						gridwidth:[1240,1024,778,480],
-						gridheight:[550,500,400,300],
-						lazyType:"none",
-						parallax: {
-							type:"mouse",
-							origo:"slidercenter",
-							speed:2000,
-							levels:[2,3,4,5,6,7,12,16,10,50,47,48,49,50,51,55],
-							type:"mouse",
-						},
-						shadow:0,
-						spinner:"off",
-						autoHeight:"off",
-						disableProgressBar:"on",
-						hideThumbsOnMobile:"off",
-						hideSliderAtLimit:0,
-						hideCaptionAtLimit:0,
-						hideAllCaptionAtLilmit:0,
-						debugMode:false,
-						fallbacks: {
-							simplifyAll:"off",
-							disableFocusListener:false,
-						}
-					});
-				}
-			});	/*ready*/
-		</script>
-
-
-	
 </section>
 
 <nav class="cd-secondary-nav">
 	<ul>
-      <li id='nav-home'><a class='active' href="#">Investing</a></li>
-      <li id='nav-team'><a href="#way-nav-team">Research</a></li>
-      <li id='nav-history'><a href="#way-nav-history">Final Remarks</a></li>
+      <li id='nav-investing'><a class='active' href="#investing">Investing</a></li>
+      <li id='nav-research'><a href="#research">Research</a></li>
+      <li id='nav-letter'><a href="#letter">Final Remarks</a></li>
 	</ul>
 </nav> <!-- .cd-secondary-nav -->
 
@@ -218,12 +155,14 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
                 <div class='row investors-message'>
                     <div class='col-md-8'>
                         <h2>Stock and Investment</h2>
-                        <p> For our first round of funding we will secure loans totalling $150,000 from friends, family and business partners. We want our loaners to be 100% comfortable in their investment. 
+                        <p> For our first round of funding we will secure loans totalling $150,000 from friends, family and business partners. It is critical to raise money before Thanksgivingto analyze Google PPC (pay per click) prior to January, 
+							the start of our busy season.  
 							<br>
 						   <br> 
-						We are seeking loans totaling 150,000, secured by our personal stock. This is convertible to stock upon completion of a private placement memorandum (PPM).
-                        <br><br>
-                        Stock is selling quickly, don't miss your opportunity.</p>
+						   	Lenders may; convert notes to Synergy+ stock upon completion of a private placement memorandum (PPM) required for non-registered securities.  We should have this completed by mid-January.  Lenders may choose to be paid back with up to an additional 25-35% above their initial investment based on the amount of the loan. We will make the payback on Dec. 31, 2017 from the year-end distributions; we plan quarterly distributions thereafter. 
+							   <br><br>  
+							   The minimum amount to raise before spending is $25k; this is enough to start sales immediately. All four working owners will sign a a promissory note with our personal stock as security.
+						</p>
                     </div>
                     <div class='col-md-4'>
                         <h2>How do I invest?</h2>
@@ -246,13 +185,15 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
                         </p>
                     </div>
                 </div>             
+					<div id='trigger-investing'></div>
 
             </div>
-				
+			
+
         </div>
         </div>
 
-		<div id='insights' class="bg-blue">
+		<div id='research' class="bg-blue">
 			<div class="container content text-center">
 				<div class="row title">
 					<h1>Research</h1>
@@ -729,13 +670,14 @@ Doctors see up to 30% fewer patients - to do nothing is immmoral.</p>
 												</div>
 										</div>
 									</div> <!-- /row -->
+					<div id='trigger-research'></div>
 
 								</div> <!-- /panel_body -->
 					</div> <!-- /panel -->
 		</div> <!-- /sectioncomparison -->
 
 
-		<div id='insights' class="bg-blue">
+		<div id='letter' class="bg-blue">
 			<div class="container content text-center">
 				<div class="row title">
 					<h1>Final Remarks</h1>
@@ -835,8 +777,82 @@ You will gain more ownership based on a proportional reduction in round 2 fund
 
 
 {% block more-javascript %}
+        
+		<!-- REVOLUTION JS FILES -->
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/jquery.themepunch.tools.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.actions.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.migration.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'img-slider/image-hero1/js/extensions/revolution.extension.video.min.js' %}"></script>			
+		
+		<script type="text/javascript">
+						var tpj=jQuery;
+			
+			var revapi5;
+			tpj(document).ready(function() {
+				if(tpj("#rev_slider_5_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_5_1");
+				}else{
+					revapi5 = tpj("#rev_slider_5_1").show().revolution({
+						sliderType:"hero",
+jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
+						sliderLayout:"fullwidth",
+						dottedOverlay:"none",
+						delay:9000,
+						navigation: {
+						},
+						responsiveLevels:[1240,1024,778,480],
+						visibilityLevels:[1240,1024,778,480],
+						gridwidth:[1240,1024,778,480],
+						gridheight:[550,500,400,300],
+						lazyType:"none",
+						parallax: {
+							type:"mouse",
+							origo:"slidercenter",
+							speed:2000,
+							levels:[2,3,4,5,6,7,12,16,10,50,47,48,49,50,51,55],
+							type:"mouse",
+						},
+						shadow:0,
+						spinner:"off",
+						autoHeight:"off",
+						disableProgressBar:"on",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							disableFocusListener:false,
+						}
+					});
+				}
+			});	/*ready*/
+		</script>
+
+<!-- SMOOTH SCROLL FOR BTN -->
 <script>
 smoothScroll('#interested-btn');
+</script>
+
+<!-- WAYPOINTS FOR LIGHTING SUBNAV-->
+<script>
+add_nav_waypoint('#investing','#nav-investing');
+add_nav_waypoint('#research','#nav-research');
+add_nav_waypoint('#letter','#nav-letter');
+
+add_nav_waypoint('#trigger-investing','#nav-investing');
+add_nav_waypoint('#trigger-research','#nav-research');
+
 </script>
 
 {% endblock more-javascript %}
