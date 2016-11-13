@@ -105,3 +105,21 @@
         }
     }
 }
+
+.invisible{
+    color: transparent;
+}
+
+ .invested{
+    img{
+        height: 90px;
+        display: inline-block;
+        width: auto;
+    }
+    h5{
+        font-weight: bold;
+    }
+    p{
+        display: inline;
+    }
+ }

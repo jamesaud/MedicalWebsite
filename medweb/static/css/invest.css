@@ -77,4 +77,16 @@
       display: block;
       margin-bottom: 8px; }
 
+.invisible {
+  color: transparent; }
+
+.invested img {
+  height: 90px;
+  display: inline-block;
+  width: auto; }
+.invested h5 {
+  font-weight: bold; }
+.invested p {
+  display: inline; }
+
 /*# sourceMappingURL=invest.css.map */

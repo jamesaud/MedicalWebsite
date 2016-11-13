@@ -116,7 +116,7 @@
 
 
 		<ul id="cd-navigation">
-			<li><a href="{% url 'home' %}">Synergy+</a></li>
+			<li><a href="{% url 'home' %}">Home</a></li>
 			<li><a href="{% url 'about' %}">About Us</a></li>
             <li><a href="{% url 'invest' %}">Investors</a></li>
 
@@ -939,7 +939,13 @@ floating_label('#contact-form-3');
 floating_label('#contact-form-4');
 </script>
     
-
+<!-- PUT DASHES IN PHONE INPUTS FOR CONTACT FORM-->
+<script>
+$('.phone-autodash').keyup(function(){
+    $(this).val($(this).val().replace(/(\d{3})\-?(\d{3})\-?(\d{4})/,'$1-$2-$3'))
+});
+   
+</script>
 
 <!-- ADD WAYPOINTS TO NAVBAR ON SCROLL -->
 <script>
