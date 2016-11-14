@@ -1126,11 +1126,13 @@ a:hover{
     .heading-sm{
         color: black !important;
         margin-bottom: 10px;
+        font-size: $font-size-three;
     }
 
-    
+
     .service-blocks {
-        padding-top: 0px;
+        padding-top: 30px;
+        padding-bottom: 25px;
         
     }
     .service-block{
@@ -1148,7 +1150,8 @@ a:hover{
         margin-top: 30px;
     }
       h4{
-            font-weight: bold;
+            font-weight: 400;
+            color: #333;
         }
 
     ul{
@@ -1168,6 +1171,8 @@ a:hover{
             h1,h2,h3,h4,h5,p{
                 color: white !important;
             }
+
+            padding-top: 0px;
     }
 
 }

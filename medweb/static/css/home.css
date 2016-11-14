@@ -928,9 +928,11 @@ a:hover {
     background: #D43A43; }
   .section-plans .heading-sm {
     color: black !important;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 24px; }
   .section-plans .service-blocks {
-    padding-top: 0px; }
+    padding-top: 30px;
+    padding-bottom: 25px; }
   .section-plans .service-block {
     margin: 0 auto;
     margin-bottom: 30px;
@@ -943,15 +945,18 @@ a:hover {
     padding: 0px;
     margin-top: 30px; }
   .section-plans h4 {
-    font-weight: bold; }
+    font-weight: 400;
+    color: #333; }
   .section-plans ul li {
     font-size: 15.5px;
     padding-bottom: 10px; }
   .section-plans .btn-u {
     font-size: 15.5px;
     width: 100%; }
-  .section-plans .service-message h1, .section-plans .service-message h2, .section-plans .service-message h3, .section-plans .service-message h4, .section-plans .service-message h5, .section-plans .service-message p {
-    color: white !important; }
+  .section-plans .service-message {
+    padding-top: 0px; }
+    .section-plans .service-message h1, .section-plans .service-message h2, .section-plans .service-message h3, .section-plans .service-message h4, .section-plans .service-message h5, .section-plans .service-message p {
+      color: white !important; }
 
 .section-services {
   margin-bottom: 60px !important; }
