@@ -1108,7 +1108,7 @@ a:hover{
     
    
     .color-top-0, .color-top-1, .color-top-2{
-        height: 20px;
+        height: 25px;
     }
     
      .color-top-0{
@@ -1125,7 +1125,8 @@ a:hover{
     
     .heading-sm{
         color: black !important;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
+        margin-top: 20px;
         font-size: $font-size-three;
     }
 
@@ -1137,7 +1138,7 @@ a:hover{
     }
     .service-block{
         margin: 0 auto;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         width: 100%;
         .service-block-content{
             padding-top: 20px;

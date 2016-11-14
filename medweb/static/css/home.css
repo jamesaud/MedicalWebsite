@@ -919,7 +919,7 @@ a:hover {
     .section-plans .title h1 {
       color: white !important; }
   .section-plans .color-top-0, .section-plans .color-top-1, .section-plans .color-top-2 {
-    height: 20px; }
+    height: 25px; }
   .section-plans .color-top-0 {
     background: #45AEEA; }
   .section-plans .color-top-1 {
@@ -928,14 +928,15 @@ a:hover {
     background: #D43A43; }
   .section-plans .heading-sm {
     color: black !important;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     font-size: 24px; }
   .section-plans .service-blocks {
     padding-top: 30px;
     padding-bottom: 25px; }
   .section-plans .service-block {
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     width: 100%; }
     .section-plans .service-block .service-block-content {
       padding-top: 20px;
