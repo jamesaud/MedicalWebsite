@@ -437,7 +437,8 @@ a:hover {
     .section-highlights .hi-intro .main-points h3, .section-highlights .hi-intro-2 .main-points h3, .section-highlights .hi-intro-3 .main-points h3, .section-highlights .hi-intro-4 .main-points h3 {
       font-weight: 300; }
   .section-highlights .hi-intro-2 {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 30px; }
     .section-highlights .hi-intro-2 h2, .section-highlights .hi-intro-2 h3 {
       color: black !important; }
     .section-highlights .hi-intro-2 a {
@@ -598,8 +599,8 @@ a:hover {
       .section-highlights .highlights-components h5 p {
         color: #333 !important; }
   .section-highlights .section-highlights-block-2 {
-    padding-top: 60px;
-    margin-bottom: 55px !important; }
+    padding-top: 45px;
+    margin-bottom: 65px !important; }
     .section-highlights .section-highlights-block-2 h2 {
       color: black !important;
       padding-bottom: 0px;
