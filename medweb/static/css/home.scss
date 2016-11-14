@@ -1,7 +1,8 @@
+@charset "utf-8";
 @import 'variables';
 
 p {
-    font-size: $font-size-four !important;
+    font-size: $font-size-four;
 }
 
 a:hover{
@@ -335,6 +336,7 @@ a:hover{
     .hi-intro-2{
         @extend .hi-intro;
         margin-bottom: 0;
+        margin-top: 30px;
         h2, h3{
             color: black !important;
         }
@@ -380,7 +382,7 @@ a:hover{
              font-weight: bold;
          }
          button{
-             margin-bottom: 4px;
+             margin-bottom: 5px;
              margin-right: 2px;
          }
          input{
@@ -592,8 +594,8 @@ a:hover{
     
     
     .section-highlights-block-2{
-        padding-top: 60px ;
-        margin-bottom: 55px !important;
+        padding-top: 45px ;
+        margin-bottom: 65px !important;
         h2{
             color: black !important;
             padding-bottom: 0px;
@@ -884,6 +886,11 @@ a:hover{
             }
         }
     }
+    
+    .nav-tabs{
+        >li >a{ font-size: $font-size-four;}
+    }
+    
     h1{
         color: #333 !important;
     }
@@ -949,45 +956,11 @@ a:hover{
         
         .img-responsive{
             height: 130px;
-            width: 200px;
         }
     }
     
             
-    
-    .section-investors{
-        margin: 0 auto;
-        background: transparent !important; // For some reason section-investors wants to have a white background by default
-        h1{
-            padding-top: 0;
-            color:black;
-            margin: 0;
-            text-align: left;
-        }
-
-
-        h2{
-            color: #333 !important;
-        }
-
-          a:link{
-                color: #0000EE;
-            }
-            a:hover{
-                color:#f60; 
-                text-decoration: none;
-            }
-            a:visited{
-                color: #551A8B;   
-            }
-        .investors-message{
-            margin-bottom: 30px;
-        }
-        
-        .investors-sales{}
-
-      }
-}
+   }
 
 .section-benefits{
     // Prevents awkward resizing and text-wrapping at some widths
@@ -1061,16 +1034,19 @@ a:hover{
     margin: 0 auto;
     max-width: $max-width;
     
-    @media (min-width: 992px) {
-        .cd-slider-wrapper{
-            max-height: 92vh;
-        }
-    }
-    
+
     
     .cd-slider-wrapper{
         padding-bottom: 0;
+
     }
+    
+    @media (min-width: 992px) {
+        .cd-slider-wrapper{
+            max-height: 900px;
+        }
+    }
+    
     
     .cd-slider-navigation{
         z-index: 1;
@@ -1228,18 +1204,6 @@ a:hover{
 }
 
 
-
-.bg-blue {
-	background: $primary-color;
-}
-
-
-
-
-
-
-
-
 .nav-justified{
     a, a:active, a:focus{
         color: black !important;
@@ -1250,78 +1214,6 @@ a:hover{
     }
 }
 
-
-.col-1 {
-    color: $primary-color;
-}
-
-.col-2 {
-    color: $second-color;
-}
-
-.col-3 {
-    color: $third-color;
-}
-
-
-.col-4 {
-    color: $fourth-color;
-}
-
-
-.col-5 {
-    color: $fifth-color;
-}
-
-.col-6 {
-    color: $sixth-color;
-}
-
-.col-7 {
-    color: $seventh-color;
-}
-
-.col-8 {
-    color: $eighth-color;
-}
-
-.col-9 {
-    color: $ninth-color;
-}
-
-.col-10 {
-    color: $tenth-color;
-}
-
-.bg-col-1 {
-    background: $primary-color;
-}
-
-.bg-col-2 {
-    background: $second-color;
-}
-
-.bg-col-3 {
-    background: $third-color;
-}
-
-
-.bg-col-4 {
-    background: $fourth-color;
-}
-
-
-.bg-col-5 {
-    background: $fifth-color;
-}
-
-.bg-col-6 {
-    background: $sixth-color;
-}
-
-.bg-col-7 {
-    background: $seventh-color;
-}
 
 
 

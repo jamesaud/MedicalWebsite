@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: Vollkorn, serif;
+  src: url(https://fonts.googleapis.com/css?family=Vollkorn); }
+.__color-button {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 65px;
+  padding-right: 65px;
+  font-size: 15.5px;
+  border-radius: 50em; }
+
+.graph {
+  height: 360px; }
+
+#q-graph {
+  display: block;
+  /* fixes layout wonkiness in FF1.5 */
+  position: relative;
+  width: 80%;
+  height: 350px;
+  left: 225px;
+  padding: 0;
+  background: transparent;
+  font-size: 11px;
+  margin: 0 !important; }
+
+#q-graph caption {
+  caption-side: top;
+  width: 800px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  top: -40px;
+  position: relative;
+  z-index: 10;
+  font-weight: bold;
+  text-align: center; }
+
+#q-graph tr, #q-graph th, #q-graph td {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+#industry-avg {
+  left: 100px !important;
+  top: 0px !important; }
+
+#q-graph td {
+  transition: all .3s ease; }
+  #q-graph td:hover {
+    background-color: #4d4d4d;
+    opacity: .9;
+    color: white; }
+
+#info-circle {
+  position: absolute;
+  left: -38px;
+  top: -8px; }
+  #info-circle i {
+    color: #777; }
+
+#info-circle:hover i {
+  color: #333; }
+
+#q-graph thead tr {
+  left: 0%;
+  top: 10%;
+  bottom: auto;
+  margin: 20px 0 0 56px; }
+
+#q-graph thead th {
+  width: 90px;
+  height: auto;
+  padding: 5px 10px; }
+
+#q-graph thead th.sent {
+  top: 0;
+  left: 0;
+  line-height: 2; }
+
+#q-graph thead th.paid {
+  top: 2.75em;
+  line-height: 2;
+  left: 0; }
+
+#q-graph tbody tr {
+  height: 296px;
+  padding-top: 2px;
+  border-right: 1px dotted #C4C4C4;
+  color: #AAA; }
+
+#q-graph #q1 {
+  left: 0; }
+
+#q-graph #q2 {
+  left: 150px; }
+
+#q-graph #q3 {
+  left: 300px; }
+
+#q-graph #q4 {
+  left: 450px; }
+
+#q-graph #q5 {
+  left: 600px; }
+
+#q-graph #q6 {
+  left: 750px; }
+
+#q-graph #q7 {
+  left: 900px; }
+
+#q-graph #q-last {
+  left: 1050px;
+  border-right: none; }
+
+#q-graph tbody th {
+  bottom: -2.0em;
+  vertical-align: top;
+  font-weight: normal;
+  color: #333;
+  font-size: 13px; }
+
+#q-graph .bar {
+  width: 60px;
+  border: 1px solid;
+  border-bottom: none;
+  color: #000; }
+
+#q-graph .bar p {
+  margin: 5px 0 0;
+  padding: 0;
+  opacity: .4; }
+
+#q-graph .sent {
+  left: 13px;
+  background-color: #45AEEA;
+  border-color: transparent; }
+
+#q-graph .paid {
+  left: 77px;
+  background-color: #39cccc;
+  border-color: transparent; }
+
+#tick-wrapper {
+  position: absolute; }
+
+#ticks {
+  position: relative;
+  height: 295px;
+  z-index: 1;
+  font-size: 10px;
+  font-family: "fira-sans-2", Verdana, sans-serif; }
+
+#ticks .tick {
+  position: relative;
+  border-bottom: 1px dotted #C4C4C4;
+  left: 205px;
+  top: -295px;
+  width: 769px; }
+
+#ticks .tick p {
+  position: absolute;
+  left: -40px;
+  top: -15px; }
+
+@media screen and (max-width: 1200px) {
+  #q-graph {
+    left: 125px; }
+
+  #ticks .tick {
+    left: 105px; } }
+@media screen and (max-width: 768px) {
+  #q-graph {
+    left: 125px;
+    max-width: 65%;
+    overflow: scroll; }
+
+  #ticks .tick {
+    left: 105px;
+    max-width: 54%; } }
+
+/*# sourceMappingURL=graphs.css.map */

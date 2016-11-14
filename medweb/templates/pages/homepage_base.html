@@ -31,30 +31,30 @@
 
         <!-- CSS Global Compulsory -->
         <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
-        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
         <!-- CSS Header and Footer -->
-        <link rel="stylesheet" href="/static/css/headers/header-default.css">
-        <link rel="stylesheet" href="/static/css/headers/header-v8.css">
-        <link rel="stylesheet" href="/static/css/footers/footer-v1.css">
+        <link rel="stylesheet" href="{% static 'css/headers/header-default.css' %}">
+        <link rel="stylesheet" href="{% static 'css/headers/header-v8.css' %}">
+        <link rel="stylesheet" href="{% static 'css/footers/footer-v1.css' %}">
 
         <!-- Page Classes For Easy Styling -->
-        <link rel="stylesheet" href="/static/css/pages/page_one.css">
+        <link rel="stylesheet" href="{% static 'css/pages/page_one.css' %}">
 
 
 
         <!-- CSS Implementing Plugins -->
-        <link rel="stylesheet" href="/static/plugins/animate.css">
-        <link rel="stylesheet" href="/static/plugins/line-icons/line-icons.css">
-        <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/static/plugins/login-signup-modal-window/css/style.css">
+        <link rel="stylesheet" href="{% static 'plugins/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'plugins/line-icons/line-icons.css' %}">
+        <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'plugins/login-signup-modal-window/css/style.css' %}">
 
         <!-- CSS Theme -->
-        <link rel="stylesheet" href="/static/css/theme-colors/default.css" id="style_color">
-        <link rel="stylesheet" href="/static/css/theme-skins/dark.css">
+        <link rel="stylesheet" href="{% static 'css/theme-colors/default.css' %}" id="style_color">
+        <link rel="stylesheet" href="{% static 'css/theme-skins/dark.css' %}">
 
         <!-- CSS Customization -->
-        <link rel="stylesheet" href="/static/css/custom.css">
+        <link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
         <!-- For datetimepicker bootstrap plugin -->
 
@@ -68,11 +68,10 @@
         <link rel="stylesheet" href="{% static 'standalone/auto-hiding-navigation/css/style.css' %}">
 
 
-         <!-- My CSS -->
-        
+
         <!-- for local dev only -->
-         <link href="{% static 'staticfiles/css/project.css' %}" rel="stylesheet" type="text/css" />
-         <link href="{% static '/staticfiles/css/parsley-floating.css' %}" rel="stylesheet" type="text/css" />  <!-- Form parsley floating css -->
+         <link href="{% static 'css/project.css' %}" rel="stylesheet" type="text/css" />
+         <link href="{% static 'css/parsley-floating.css' %}" rel="stylesheet" type="text/css" />  <!-- Form parsley floating css -->
 
 
     {% endblock css %}
@@ -116,8 +115,10 @@
 
 
 		<ul id="cd-navigation">
-			<li><a href="{% url 'home' %}">Synergy+</a></li>
+			<li><a href="{% url 'home' %}">Home</a></li>
 			<li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'invest' %}">Investors</a></li>
+
 			<li><a href="#" data-toggle="modal" data-target="#modal-contact">Contact Us</a></li>
             <li id='nav-call'><a  href="#">1-800-xxx-xxxx<span class='tiny'>FREE EVALUATION</span><span class='show-mobile'>&nbsp;&nbsp;FREE EVALUATION </span></a></li>
 		</ul>
@@ -163,21 +164,22 @@
                                             <hr>
 
                                             <div class='bt-form__wrapper'>
-                                                <form id='contact-form-0' class="bt-flabels js-flabels contact-form" data-parsley-validate data-parsley-errors-messages-disabled  >
+                                                <form id='contact-form-0' class="bt-flabels js-flabels contact-form" action="/create_post/" method="POST"  data-parsley-validate data-parsley-errors-messages-disabled  >
 
+                                                     {% csrf_token %}
 
                                                           <div class='row form-group'>
                                                               <div class="col-md-6 bt-flabels__wrapper required">
                                                                   <div class='control-label'></div>
                                                                   <label>First Name</label>
-                                                                      <input type="text" name="first_name" placeholder="First Name" data-parsley-required>
+                                                                      <input type="text" name="first_name" placeholder="First Name" data-parsley-require>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
 
                                                               <div class="col-md-6 required bt-flabels__wrapper">
                                                                   <div class='control-label'></div>
                                                                   <label>Last Name</label>
-                                                                  <input type="text" name="lname" placeholder="Last Name" data-parsley-required>
+                                                                  <input type="text" name="lname" placeholder="Last Name" data-parsley-require>
                                                                   <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                            </div>
@@ -187,7 +189,7 @@
                                                             <div class="bt-flabels__wrapper required col-md-12">
                                                                   <div class='control-label'></div>
                                                                 <label>Title or Position</label>
-                                                                <input type="text" name="title" placeholder="Title or Position" data-parsley-required autocomplete="off" >
+                                                                <input type="text" name="title" placeholder="Title or Position" data-parsley-require autocomplete="off" >
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
@@ -197,7 +199,7 @@
                                                                   <div class="bt-flabels__wrapper required col-md-6">
                                                                       <div class='control-label'></div>
                                                                       <label>Email</label>
-                                                                      <input type="text" name="email" placeholder="Email" data-parsley-required data-parsley-type="email" />
+                                                                      <input type="text" name="email" placeholder="Email" data-parsley-require data-parsley-type="email" />
                                                                       <span class="bt-flabels__error-desc">Required/Invalid Email</span>
                                                                   </div>
 
@@ -213,7 +215,7 @@
                                                               <div class='bt-flabels__wrapper required col-md-9'>
                                                                       <div class='control-label'></div>
                                                                       <label>Group Name</label>
-                                                                      <input type="text" name="group"  placeholder="Group Name" data-parsley-required>
+                                                                      <input type="text" name="group"  placeholder="Group Name" data-parsley-require>
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
 
@@ -242,7 +244,7 @@
 
                                                                         <div class='control-label'></div>
                                                                           <label>Office Phone (xxx-xxx-xxxx)</label>
-                                                                          <input type="text" name="phone2" data-parsley-required placeholder="Office Phone" autocomplete="off" data-parsley-pattern='/(\d{3})\-?(\d{3})\-?(\d{4})/' class='phone-autodash '/>
+                                                                          <input type="text" name="phone2" data-parsley-require placeholder="Office Phone" autocomplete="off" data-parsley-pattern='/(\d{3})\-?(\d{3})\-?(\d{4})/' class='phone-autodash '/>
                                                                           <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
                                                               </div>
 
@@ -764,14 +766,12 @@
 
 
 	<!-- JS Global Compulsory -->
-	<!--<script type="text/javascript" src="/static/plugins/jquery/jquery.min.js"></script>
-    	<script type="text/javascript" src="/static/plugins/jquery/jquery-migrate.min.js"></script>-->
 
     <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/jquery-migrate-1.4.1.min.js' %}"></script>
 
     <script type="text/javascript" src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
-    
+
     <!-- MODERNIZR -->
     <script type="text/javascript" src="{% static 'standalone/pointy-slider/js/modernizr.js' %}"></script>
 
@@ -779,26 +779,26 @@
 
 
 	<!-- JS Implementing Plugins -->
-	<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
+	<script type="text/javascript" src="{% static 'plugins/back-to-top.js' %}"></script>
 	<!-- JS Customization -->
-	<script type="text/javascript" src="/static/js/custom.js"></script>
-    
+	<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
 	<!--[if lt IE 9]>
-	<script src="/static/plugins/respond.js"></script>
-	<script src="/static/plugins/html5shiv.js"></script>
-	<script src="/static/plugins/placeholder-IE-fixes.js"></script>
+	<script src="{% static 'plugins/respond.js' %}"></script>
+	<script src="{% static 'plugins/html5shiv.js' %}"></script>
+	<script src="{% static 'plugins/placeholder-IE-fixes.js' %}"></script>
 	<![endif]-->
 
     <!-- WAYPOINTS PLUGIN -->
     <script src="{% static 'css/plugins/waypoints4.0/lib/jquery.waypoints.min.js' %}"></script>
 
     <!-- DATA parsley plugin -->
-    <script type="text/javascript" src="/static/js/parsley.min.js"></script> 
-    
+    <script type="text/javascript" src="{% static 'js/parsley.min.js' %}"></script>
+
     <!-- Auto Hiding Navigation -->
     <script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
 
-  
+
 
 
     <script>
@@ -937,14 +937,20 @@ floating_label('#contact-form-2');
 floating_label('#contact-form-3');
 floating_label('#contact-form-4');
 </script>
-    
 
+<!-- PUT DASHES IN PHONE INPUTS FOR CONTACT FORM-->
+<script>
+$('.phone-autodash').keyup(function(){
+    $(this).val($(this).val().replace(/(\d{3})\-?(\d{3})\-?(\d{4})/,'$1-$2-$3'))
+});
+
+</script>
 
 <!-- ADD WAYPOINTS TO NAVBAR ON SCROLL -->
 <script>
 //Remove active class from all other nav_ids
 function remove_nav_active(nav_id_to_keep){
-    
+
     $('.cd-secondary-nav a').removeClass('active');
     $(nav_id_to_keep).children('a').addClass('active');
 };
@@ -960,24 +966,134 @@ function add_nav_waypoint(waypoint_id, nav_id){ //string with hash
     });
 };
 </script>
-    
-    
-<!-- SMOOTH SCROLL -->   
+
+
+<!-- SMOOTH SCROLL -->
 <script>
-var offset_up = 70; // fixed navbar height blocks the view, move up certain amount of pixels to offset it.
-    
-$('.cd-secondary-nav li a').bind('click', function(e) {
-    e.preventDefault();
-    var hashTag = this.hash;
-  	var top = 0;
- 	if ($(hashTag).offset()) {
-    	top  = $(hashTag).offset().top
-  	}
-	$('html, body').animate({scrollTop:top - offset_up}, 'slow');                                                         
+function smoothScroll(tag, offset){
+    if(typeof offset === "undefined") {
+        var offset_up = 70; // fixed navbar height blocks the view, move up certain amount of pixels to offset it.
+    }
+
+    $(tag).bind('click', function(e) {
+            e.preventDefault();
+            var hashTag = this.hash;
+            var top = 0;
+            if ($(hashTag).offset()) {
+                top  = $(hashTag).offset().top
+            }
+            $('html, body').animate({scrollTop:top - offset_up}, 'slow');
+        });
+}
+
+smoothScroll('.cd-secondary-nav li a');
+</script>
+
+
+<script>
+$('#contact-form-0').on('submit', function(event){
+    event.preventDefault();
+    console.log("form submitted!")  // sanity check
+    create_post();
+});
+
+/* Takes a form id and returns the form fields in json */
+function serialize_form_to_json(form){
+        var serialized = $(form).serializeArray()
+
+        var dict_form = {};
+
+        //Turn the form into a dictionary
+        $.each(serialized, function(_, dict) {
+           dict_form[dict['name']] = dict['value'];
+        });
+
+        //JSON the dictionary
+        return JSON.stringify(dict_form);
+}
+
+function create_post() {
+    console.log("create post is working!") // sanity check
+    $.ajax({
+        url : "create/", // the endpoint
+        type : "POST", // http method
+        data : {
+            form : serialize_form_to_json('#contact-form-0')}, // data sent with the post request
+
+        // handle a successful response
+        success : function(json) {
+            console.log("success"); // another sanity check
+        },
+
+        // handle a non-successful response
+        error : function(xhr,errmsg,err) {
+            console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+        }
+    });
+};
+
+
+//CRSF FIX
+    $(function() {
+
+
+    // This function gets cookie with a given name
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie != '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+    var csrftoken = getCookie('csrftoken');
+
+    /*
+    The functions below will create a header with csrftoken
+    */
+
+    function csrfSafeMethod(method) {
+        // these HTTP methods do not require CSRF protection
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+    function sameOrigin(url) {
+        // test that a given url is a same-origin URL
+        // url could be relative or scheme relative or absolute
+        var host = document.location.host; // host + port
+        var protocol = document.location.protocol;
+        var sr_origin = '//' + host;
+        var origin = protocol + sr_origin;
+        // Allow absolute or scheme relative URLs to same origin
+        return (url == origin || url.slice(0, origin.length + 1) == origin + '/') ||
+            (url == sr_origin || url.slice(0, sr_origin.length + 1) == sr_origin + '/') ||
+            // or any other URL that isn't scheme relative or absolute i.e relative.
+            !(/^(\/\/|http:|https:).*/.test(url));
+    }
+
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && sameOrigin(settings.url)) {
+                // Send the token to same-origin, relative URLs only.
+                // Send the token only if the method warrants CSRF protection
+                // Using the CSRFToken value acquired earlier
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }
+    });
 
 });
 </script>
+
     {% block more-javascript %}{% endblock more-javascript %}
+
+
 
 
 </body>

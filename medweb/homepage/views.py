@@ -1,5 +1,12 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+from django.http import JsonResponse
+
 from config.settings.secrets import HOME_PASSWORD
+
+from medweb.homepage.models import Person
+
+import json
 
 
 def index(request):
@@ -24,3 +31,30 @@ def test(request):
 
 def about(request):
     return render(request, 'pages/about.html', context={})
+
+
+def invest(request):
+    return render(request, 'pages/invest.html', context={})
+
+def compare(request):
+    return render(request, 'pages/compare.htm', context={})
+
+
+def create(request):
+    if request.method == 'POST':
+        post_text = request.POST.get('form')
+        response_data = {}
+        print(post_text)
+        dict_json = json.loads(post_text)
+        print(dict_json)
+        #person = Person(first_name="test", last_name="test")
+       # person.save()
+
+        response_data['result'] = 'Create post successful!'
+        #response_data['first_name'] = person.first_name
+
+
+        return JsonResponse(response_data)
+    else:
+        response_data = {"nothing to see": "this isn't happening"}
+        return JsonResponse(response_data)

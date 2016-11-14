@@ -48,6 +48,7 @@ LOCAL_APPS = (
     # custom users app
     'medweb.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'medweb.homepage.apps.HomepageConfig',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -197,7 +198,6 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    #'sass_processor.finders.CssFinder',
 )
 
 # MEDIA CONFIGURATION
@@ -250,6 +250,3 @@ ADMIN_URL = r'^admin/'
 
 
 # Your common stuff: Below this line define 3rd party library settings
-
-SASS_PRECISION = 8
-SASS_OUTPUT_STYLE = 'compact'

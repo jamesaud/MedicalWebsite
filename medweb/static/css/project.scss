@@ -1,5 +1,38 @@
 @import 'variables';
 
+
+.bg-blue {
+	background: $primary-color;
+}
+
+.main-points{
+
+ padding-bottom: 0;
+ padding-top: 30px;
+    
+ h1{
+     padding-bottom: 10px;
+     text-align: center;
+     color: black !important; 
+    }
+    
+  .main-points-title{
+         font-size: $font-size-one;
+    }
+    
+ h3{
+    font-weight: bold;
+    }
+    
+ .main-points-block{
+   }
+    
+    .main-points-header{
+        color: black !important;
+    }
+
+}
+
 //Make HR a visual tag for html5
 
 hr{
@@ -95,7 +128,7 @@ hr{
 
  
 #nav-call{
-    width: 150px;
+    width: 180px;
     a{
         top: 23px;
         color: $third-color;
@@ -105,9 +138,10 @@ hr{
             }
     }
      span.tiny{
+         width: 100%;
         font-size: 12px !important;
         position: absolute;
-        right: 12px;
+        right: -11px;
         top: 20px;
     }
     
@@ -519,3 +553,80 @@ hr.no-top{
 }
 
 
+.col-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+.col-1 {
+    color: $primary-color;
+}
+
+.col-2 {
+    color: $second-color;
+}
+
+.col-3 {
+    color: $third-color;
+}
+
+
+.col-4 {
+    color: $fourth-color;
+}
+
+
+.col-5 {
+    color: $fifth-color;
+}
+
+.col-6 {
+    color: $sixth-color;
+}
+
+.col-7 {
+    color: $seventh-color;
+}
+
+.col-8 {
+    color: $eighth-color;
+}
+
+.col-9 {
+    color: $ninth-color;
+}
+
+.col-10 {
+    color: $tenth-color;
+}
+
+.bg-col-1 {
+    background: $primary-color;
+}
+
+.bg-col-2 {
+    background: $second-color;
+}
+
+.bg-col-3 {
+    background: $third-color;
+}
+
+
+.bg-col-4 {
+    background: $fourth-color;
+}
+
+
+.bg-col-5 {
+    background: $fifth-color;
+}
+
+.bg-col-6 {
+    background: $sixth-color;
+}
+
+.bg-col-7 {
+    background: $seventh-color;
+}

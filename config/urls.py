@@ -14,15 +14,14 @@ urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, include(admin.site.urls)),
 
-    # User management
- #   url(r'^users/', include('medweb.users.urls', namespace='users')),
-#    url(r'^accounts/', include('allauth.urls')),
-
     # Your stuff: custom urls includes go here
     url(r'^$', homepage_views.index, name='home'),
     url(r'^test/$', homepage_views.test, name='test'),
     url(r'^about/$', homepage_views.about, name='about'),
-
+    url(r'^create/$', homepage_views.create, name='create'),
+    url(r'^invest/$', homepage_views.invest, name='invest'),
+    url(r'^compare/$', homepage_views.compare, name='compare'),
+    url(r'^robots.txt/$', TemplateView.as_view(template_name='robots.txt', content_type='text/plain')),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
