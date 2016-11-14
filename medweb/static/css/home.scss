@@ -1131,7 +1131,6 @@ a:hover{
     
     .service-blocks {
         padding-top: 0px;
-        text-align: center;
         
     }
     .service-block{
@@ -1139,6 +1138,7 @@ a:hover{
         margin-bottom: 30px;
         width: 100%;
         .service-block-content{
+            padding-top: 20px;
             padding-left: 40px;
             padding-right: 40px;
         }
@@ -1147,6 +1147,10 @@ a:hover{
         padding: 0px;
         margin-top: 30px;
     }
+      h4{
+            font-weight: bold;
+        }
+
     ul{
         li{
             font-size: $font-size-four;

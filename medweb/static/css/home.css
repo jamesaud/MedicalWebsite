@@ -930,18 +930,20 @@ a:hover {
     color: black !important;
     margin-bottom: 10px; }
   .section-plans .service-blocks {
-    padding-top: 0px;
-    text-align: center; }
+    padding-top: 0px; }
   .section-plans .service-block {
     margin: 0 auto;
     margin-bottom: 30px;
     width: 100%; }
     .section-plans .service-block .service-block-content {
+      padding-top: 20px;
       padding-left: 40px;
       padding-right: 40px; }
   .section-plans .service-block-default {
     padding: 0px;
     margin-top: 30px; }
+  .section-plans h4 {
+    font-weight: bold; }
   .section-plans ul li {
     font-size: 15.5px;
     padding-bottom: 10px; }
