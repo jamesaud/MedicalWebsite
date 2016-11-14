@@ -1132,7 +1132,7 @@ a:hover{
 
     .service-blocks {
         padding-top: 20px;
-        padding-bottom: 25px;
+        padding-bottom: 0px;
         .service-blocks-header{
             h2{
                 margin-bottom: 10px;
@@ -1146,9 +1146,10 @@ a:hover{
     .service-block{
         margin: 0 auto;
         margin-bottom: 0px;
+        padding-top: 20px;
         width: 100%;
         .service-block-content{
-            padding-top: 20px;
+            padding-top: 15px;
             padding-left: 40px;
             padding-right: 40px;
         }

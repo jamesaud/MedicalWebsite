@@ -932,7 +932,7 @@ a:hover {
     font-size: 24px; }
   .section-plans .service-blocks {
     padding-top: 20px;
-    padding-bottom: 25px; }
+    padding-bottom: 0px; }
     .section-plans .service-blocks .service-blocks-header h2 {
       margin-bottom: 10px; }
     .section-plans .service-blocks .service-blocks-header h2, .section-plans .service-blocks .service-blocks-header h3, .section-plans .service-blocks .service-blocks-header h4 {
@@ -940,9 +940,10 @@ a:hover {
   .section-plans .service-block {
     margin: 0 auto;
     margin-bottom: 0px;
+    padding-top: 20px;
     width: 100%; }
     .section-plans .service-block .service-block-content {
-      padding-top: 20px;
+      padding-top: 15px;
       padding-left: 40px;
       padding-right: 40px; }
   .section-plans .service-block-default {
