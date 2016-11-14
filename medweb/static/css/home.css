@@ -933,8 +933,6 @@ a:hover {
   .section-plans .service-blocks {
     padding-top: 20px;
     padding-bottom: 0px; }
-    .section-plans .service-blocks i {
-      color: white !important; }
     .section-plans .service-blocks .service-blocks-header h2 {
       margin-bottom: 10px; }
     .section-plans .service-blocks .service-blocks-header h2, .section-plans .service-blocks .service-blocks-header h3, .section-plans .service-blocks .service-blocks-header h4 {
@@ -960,6 +958,8 @@ a:hover {
   .section-plans .btn-u {
     font-size: 15.5px;
     width: 100%; }
+  .section-plans .message-block i, .section-plans .service-blocks-header i {
+    color: white !important; }
   .section-plans .service-message {
     padding-top: 0px; }
     .section-plans .service-message h1, .section-plans .service-message h2, .section-plans .service-message h3, .section-plans .service-message h4, .section-plans .service-message h5, .section-plans .service-message p {
