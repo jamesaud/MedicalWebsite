@@ -933,6 +933,8 @@ a:hover {
   .section-plans .service-blocks {
     padding-top: 20px;
     padding-bottom: 0px; }
+    .section-plans .service-blocks i {
+      color: white !important; }
     .section-plans .service-blocks .service-blocks-header h2 {
       margin-bottom: 10px; }
     .section-plans .service-blocks .service-blocks-header h2, .section-plans .service-blocks .service-blocks-header h3, .section-plans .service-blocks .service-blocks-header h4 {
@@ -943,7 +945,7 @@ a:hover {
     padding-top: 20px;
     width: 100%; }
     .section-plans .service-block .service-block-content {
-      padding-top: 15px;
+      padding-top: 5px;
       padding-left: 40px;
       padding-right: 40px; }
   .section-plans .service-block-default {

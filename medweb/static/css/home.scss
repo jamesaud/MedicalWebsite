@@ -1133,6 +1133,9 @@ a:hover{
     .service-blocks {
         padding-top: 20px;
         padding-bottom: 0px;
+        i{
+            color: white !important;
+        }
         .service-blocks-header{
             h2{
                 margin-bottom: 10px;
@@ -1149,7 +1152,7 @@ a:hover{
         padding-top: 20px;
         width: 100%;
         .service-block-content{
-            padding-top: 15px;
+            padding-top: 5px;
             padding-left: 40px;
             padding-right: 40px;
         }
