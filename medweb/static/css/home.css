@@ -935,18 +935,21 @@ a:hover {
   .section-plans .service-block {
     margin: 0 auto;
     margin-bottom: 30px;
-    max-width: 415px; }
+    width: 100%; }
     .section-plans .service-block .service-block-content {
       padding-left: 40px;
       padding-right: 40px; }
   .section-plans .service-block-default {
-    padding: 0px; }
+    padding: 0px;
+    margin-top: 30px; }
   .section-plans ul li {
     font-size: 15.5px;
     padding-bottom: 10px; }
   .section-plans .btn-u {
     font-size: 15.5px;
     width: 100%; }
+  .section-plans .service-message h1, .section-plans .service-message h2, .section-plans .service-message h3, .section-plans .service-message h4, .section-plans .service-message h5, .section-plans .service-message p {
+    color: white !important; }
 
 .section-services {
   margin-bottom: 60px !important; }

@@ -1127,6 +1127,7 @@ a:hover{
         color: black !important;
         margin-bottom: 10px;
     }
+
     
     .service-blocks {
         padding-top: 0px;
@@ -1136,7 +1137,7 @@ a:hover{
     .service-block{
         margin: 0 auto;
         margin-bottom: 30px;
-        max-width: 415px;
+        width: 100%;
         .service-block-content{
             padding-left: 40px;
             padding-right: 40px;
@@ -1144,6 +1145,7 @@ a:hover{
     }
     .service-block-default{
         padding: 0px;
+        margin-top: 30px;
     }
     ul{
         li{
@@ -1156,6 +1158,14 @@ a:hover{
         font-size: $font-size-four;
         width: 100%;
     }
+
+
+    .service-message{
+            h1,h2,h3,h4,h5,p{
+                color: white !important;
+            }
+    }
+
 }
 
 
