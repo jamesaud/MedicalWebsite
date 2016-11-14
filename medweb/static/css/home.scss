@@ -1096,7 +1096,7 @@ a:hover{
     }
     
     .title{
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         
         h2{
             color: white !important;
@@ -1125,15 +1125,22 @@ a:hover{
     
     .heading-sm{
         color: black !important;
-        margin-bottom: 30px;
-        margin-top: 20px;
+        margin-bottom: 10px;
         font-size: $font-size-three;
     }
 
 
     .service-blocks {
-        padding-top: 30px;
+        padding-top: 20px;
         padding-bottom: 25px;
+        .service-blocks-header{
+            h2{
+                margin-bottom: 10px;
+            }
+            h2, h3, h4{
+                color: white !important;
+            }
+        }
         
     }
     .service-block{
@@ -1150,6 +1157,8 @@ a:hover{
         padding: 0px;
         margin-top: 30px;
     }
+
+    
       h4{
             font-weight: 400;
             color: #333;
@@ -1174,6 +1183,14 @@ a:hover{
             }
 
             padding-top: 0px;
+    }
+
+    .message-block{
+        margin-top: 30px;
+        margin-bottom: 60px;
+        &:last-child{
+            margin-bottom: 30px;
+        }
     }
 
 }
