@@ -532,8 +532,8 @@ a:hover {
       padding-top: 35px !important;
       padding-bottom: 15px !important; }
   .section-highlights .hi-comp {
-    padding-bottom: 45px;
-    padding-top: 45px; }
+    padding-bottom: 40px;
+    padding-top: 43px; }
     .section-highlights .hi-comp .main-points {
       padding-bottom: 35px !important;
       text-align: center;
@@ -808,8 +808,8 @@ a:hover {
         position: absolute;
         color: #45AEEA; }
   .section-why-us .why-conditions {
-    padding-bottom: 73px;
-    padding-top: 65px;
+    padding-top: 60px;
+    padding-bottom: 68px;
     text-align: center; }
     .section-why-us .why-conditions h2 {
       color: #222;
@@ -1033,8 +1033,8 @@ a:hover {
 
 .section-demo .sb-title {
   margin-bottom: 20px; }
-.section-demo h2 {
-  color: black !important; }
+.section-demo .demo-content h2 {
+  color: black; }
 .section-demo .btn-color {
   border-color: #D43A43;
   background-color: rgba(212, 58, 67, 0.85); }

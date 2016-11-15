@@ -481,8 +481,8 @@ a:hover{
     
     .hi-comp{
 
-        padding-bottom: 45px;
-        padding-top: 45px;
+        padding-bottom: 40px;
+        padding-top: 43px;
         .main-points{
             padding-bottom: 35px !important;
             text-align: center;
@@ -901,8 +901,9 @@ a:hover{
     }
 
     .why-conditions{
-        padding-bottom: 73px;
-        padding-top: 65px;
+        padding-top: 60px;
+        padding-bottom: 68px;
+
         text-align: center;
         h2{
             color: #222;
@@ -1284,8 +1285,10 @@ a:hover{
         margin-bottom: 20px;
     }
     
-    h2{
-        color: black !important;
+    .demo-content{
+        h2{
+            color: black;
+        }
     }
     
     .btn-color{
