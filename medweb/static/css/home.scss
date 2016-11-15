@@ -836,11 +836,11 @@ a:hover{
 }
 
 .section-why-us{
-      
+    padding-bottom: 0;      
     .why-novo{
         text-align: center;
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
         h2{color: black;}
         a{
             color: $third-color;
@@ -848,10 +848,14 @@ a:hover{
     }
     
     .why-testimonials{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: #333 !important;
         .headline-center{
             h2{
-                color:black;
-                    &:after{background: $primary-color;}
+                margin-bottom: 30px;
+                color: $primary-color;
+                &:after{background: $primary-color;}
             }
         }
         .testimonials-info{
@@ -859,10 +863,57 @@ a:hover{
                  border-bottom: solid 3px $primary-color;
             }
         }
+
+         .testimonials{
+                .item blockquote {
+                    border-left: none;
+                    margin: 0;
+                
+                    & .quote{
+                        color: white !important;
+                    }
+
+                  & small{
+                      color: $second-color;
+                  }
+
+                  & .quote:before {
+                    content: "\f10d";
+                    font-family: 'Fontawesome';
+                    float: left;
+                    left: 10px;
+                    font-size: 20px;
+                    position: absolute;
+                    color: $primary-color;
+                }
+
+                 & .quote:after{
+                      content: "\f10e";
+                    font-family: 'Fontawesome';
+                    float: left;
+                    right: 10px;
+                    font-size: 20px;
+                    position: absolute;
+                    color: $primary-color;
+                 }
+            } 
+        }
     }
-    
-    
+
+    .why-conditions{
+        padding-bottom: 73px;
+        padding-top: 65px;
+        text-align: center;
+        h2{
+            color: #222;
+            margin-bottom: 35px;
+        }
+        h4{
+        }
+    }
+
 }
+
 
 .section-faq{
     //Background set as in-style background, to use Django static image location
@@ -1243,6 +1294,10 @@ a:hover{
     
     .demo-btn-wrapper{
         margin-top: 20px;
+    }
+
+    span.color{
+        color: $primary-color;
     }
 }
 

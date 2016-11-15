@@ -763,20 +763,57 @@ a:hover {
   .section-insights .si-info .section-insights-block-3 .solution {
     color: #45AEEA; }
 
-.section-why-us .why-novo {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px; }
-  .section-why-us .why-novo h2 {
-    color: black; }
-  .section-why-us .why-novo a {
-    color: #D43A43; }
-.section-why-us .why-testimonials .headline-center h2 {
-  color: black; }
-  .section-why-us .why-testimonials .headline-center h2:after {
-    background: #45AEEA; }
-.section-why-us .why-testimonials .testimonials-info:hover {
-  border-bottom: solid 3px #45AEEA; }
+.section-why-us {
+  padding-bottom: 0; }
+  .section-why-us .why-novo {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px; }
+    .section-why-us .why-novo h2 {
+      color: black; }
+    .section-why-us .why-novo a {
+      color: #D43A43; }
+  .section-why-us .why-testimonials {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #333 !important; }
+    .section-why-us .why-testimonials .headline-center h2 {
+      margin-bottom: 30px;
+      color: #45AEEA; }
+      .section-why-us .why-testimonials .headline-center h2:after {
+        background: #45AEEA; }
+    .section-why-us .why-testimonials .testimonials-info:hover {
+      border-bottom: solid 3px #45AEEA; }
+    .section-why-us .why-testimonials .testimonials .item blockquote {
+      border-left: none;
+      margin: 0; }
+      .section-why-us .why-testimonials .testimonials .item blockquote .quote {
+        color: white !important; }
+      .section-why-us .why-testimonials .testimonials .item blockquote small {
+        color: #EFB917; }
+      .section-why-us .why-testimonials .testimonials .item blockquote .quote:before {
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        float: left;
+        left: 10px;
+        font-size: 20px;
+        position: absolute;
+        color: #45AEEA; }
+      .section-why-us .why-testimonials .testimonials .item blockquote .quote:after {
+        content: "\f10e";
+        font-family: 'Fontawesome';
+        float: left;
+        right: 10px;
+        font-size: 20px;
+        position: absolute;
+        color: #45AEEA; }
+  .section-why-us .why-conditions {
+    padding-bottom: 73px;
+    padding-top: 65px;
+    text-align: center; }
+    .section-why-us .why-conditions h2 {
+      color: #222;
+      margin-bottom: 35px; }
 
 .section-faq #faqs .panel-body {
   color: #444; }
@@ -1007,6 +1044,8 @@ a:hover {
     transition: all .1s; }
 .section-demo .demo-btn-wrapper {
   margin-top: 20px; }
+.section-demo span.color {
+  color: #45AEEA; }
 
 .nav-justified a, .nav-justified a:active, .nav-justified a:focus {
   color: black !important; }
