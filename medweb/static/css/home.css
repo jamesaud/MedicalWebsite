@@ -764,18 +764,63 @@ a:hover {
     color: #45AEEA; }
 
 .section-why-us {
-  padding-bottom: 0; }
+  padding-top: 0 !important; }
   .section-why-us .why-novo {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 40px; }
     .section-why-us .why-novo h2 {
       color: black; }
     .section-why-us .why-novo a {
       color: #D43A43; }
+  .section-why-us .why-title-wrapper {
+    background: #333 !important; }
+  .section-why-us .why-title {
+    padding-top: 50px;
+    padding-bottom: 140px;
+    margin-bottom: 180px; }
+    .section-why-us .why-title h2.main-points-title {
+      color: white !important;
+      font-weight: 700; }
+    .section-why-us .why-title h2 {
+      color: #fff; }
+  .section-why-us .white-box {
+    position: absolute;
+    top: 80px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    -webkit-box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.75);
+    padding-top: 7%;
+    padding-bottom: 5%;
+    padding-right: 7%;
+    padding-left: 7%;
+    margin: auto 0;
+    margin-right: 5%;
+    margin-left: 5%; }
+    .section-why-us .white-box h4 {
+      color: #333;
+      margin-bottom: 0; }
+    .section-why-us .white-box h5 {
+      font-weight: 300; }
+    .section-why-us .white-box i {
+      margin-bottom: 3px; }
+  @media screen and (max-width: 1100px) {
+    .section-why-us .white-box {
+      position: relative; }
+    .section-why-us .why-title {
+      margin-bottom: 0px; } }
+  .section-why-us .why-graph {
+    padding-bottom: 100px !important;
+    text-align: center; }
+    .section-why-us .why-graph h2 {
+      color: black; }
+    .section-why-us .why-graph .graph {
+      margin-top: 20px; }
   .section-why-us .why-testimonials {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: #333 !important; }
     .section-why-us .why-testimonials .headline-center h2 {
       margin-bottom: 30px;
@@ -807,13 +852,6 @@ a:hover {
         font-size: 20px;
         position: absolute;
         color: #45AEEA; }
-  .section-why-us .why-conditions {
-    padding-top: 60px;
-    padding-bottom: 68px;
-    text-align: center; }
-    .section-why-us .why-conditions h2 {
-      color: #222;
-      margin-bottom: 35px; }
 
 .section-faq #faqs .panel-body {
   color: #444; }
