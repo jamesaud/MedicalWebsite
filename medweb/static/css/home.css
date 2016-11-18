@@ -981,14 +981,24 @@ a:hover {
       margin-bottom: 20px; } }
 
 .section-plans {
-  background: #3E4747 !important;
-  text-align: center; }
+  background: #3E4747 !important; }
   .section-plans h4 {
     color: black !important; }
+  .section-plans li {
+    margin-bottom: 6px; }
   .section-plans a, .section-plans a:visited {
-    color: white; }
+    color: #555555;
+    text-decoration: none; }
+  .section-plans .popover {
+    width: 250px; }
+    .section-plans .popover li, .section-plans .popover h5 {
+      margin-bottom: 0px;
+      font-size: 14px !important; }
+    .section-plans .popover h5 {
+      margin-bottom: 0px !important; }
   .section-plans .title {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    text-align: center; }
     .section-plans .title h2 {
       color: white !important; }
     .section-plans .title h1 {
@@ -1046,6 +1056,7 @@ a:hover {
     .section-plans .service-message h1, .section-plans .service-message h2, .section-plans .service-message h3, .section-plans .service-message h4, .section-plans .service-message h5, .section-plans .service-message p {
       color: white !important; }
   .section-plans .message-block {
+    text-align: left;
     margin-top: 30px;
     margin-bottom: 60px; }
     .section-plans .message-block:last-child {
@@ -1386,5 +1397,29 @@ form .prev-step {
 #modal-guarantee .modal-footer {
   font-size: 11px;
   text-align: left; }
+
+#modal-test .close-button {
+  right: 10px !important;
+  top: -20px !important; }
+  #modal-test .close-button button {
+    color: white !important;
+    font-size: 70px !important; }
+#modal-test .modal-content {
+  background: transparent; }
+#modal-test .modal-body {
+  padding: 0; }
+#modal-test ul {
+  list-style-type: none;
+  padding: 0; }
+#modal-test li {
+  font-size: 15.5px; }
+#modal-test h2 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+  font-size: 18px !important; }
+#modal-test #cd-table {
+  background: white !important; }
+#modal-test .cd-left-title {
+  padding-left: 15px !important; }
 
 /*# sourceMappingURL=home.css.map */

@@ -1187,19 +1187,34 @@ a:hover{
 
 .section-plans{
     background: #3E4747 !important;
-    text-align: center;
     
     h4{
         color: black !important;
     }
+
+    li{
+        margin-bottom: 6px;
+    }
     
     a, a:visited{
-        color: white;
+        color: rgb(85, 85, 85);
+        text-decoration: none;
+    }
+
+    .popover{
+        width: 250px;
+        li, h5{
+            margin-bottom: 0px;
+            font-size: 14px !important;
+        }
+        h5{
+            margin-bottom: 0px !important;
+        }
     }
     
     .title{
         margin-bottom: 40px;
-        
+        text-align: center;
         h2{
             color: white !important;
         }
@@ -1306,6 +1321,7 @@ a:hover{
     }
 
     .message-block{
+        text-align: left;
         margin-top: 30px;
         margin-bottom: 60px;
         &:last-child{
@@ -1822,3 +1838,39 @@ a:hover{
 }
 
 
+
+
+#modal-test{
+    .close-button{
+        right: 10px !important;
+        top: -20px !important;
+        button{
+            color: white !important;
+            font-size: 70px !important;
+        }
+    }
+    .modal-content{background: transparent;}
+    .modal-body{
+        padding: 0;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    li{
+        font-size: $font-size-four;
+    }
+    h2{
+        margin-bottom: 0 !important;
+        padding-bottom: 0;
+        font-size: $font-size-five !important;
+    }
+    #cd-table{
+        background: white !important;
+    }
+    .cd-left-title{
+        padding-left: 15px !important;
+    }
+
+
+}
