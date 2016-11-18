@@ -993,14 +993,20 @@ a:hover {
       color: white !important; }
     .section-plans .title h1 {
       color: white !important; }
-  .section-plans .color-top-0, .section-plans .color-top-1, .section-plans .color-top-2 {
-    height: 25px; }
+  .section-plans .color-top-0, .section-plans .color-top-1, .section-plans .color-top-2, .section-plans .color-top-3, .section-plans .color-top-4, .section-plans .color-top-5 {
+    height: 20px; }
   .section-plans .color-top-0 {
     background: #45AEEA; }
   .section-plans .color-top-1 {
     background: #EFB917; }
   .section-plans .color-top-2 {
     background: #D43A43; }
+  .section-plans .color-top-3 {
+    background: #FF8800; }
+  .section-plans .color-top-4 {
+    background: #C900E3; }
+  .section-plans .color-top-5 {
+    background: #00E891; }
   .section-plans .heading-sm {
     color: black !important;
     margin-bottom: 10px;

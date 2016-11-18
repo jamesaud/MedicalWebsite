@@ -1209,8 +1209,8 @@ a:hover{
     }
     
    
-    .color-top-0, .color-top-1, .color-top-2{
-        height: 25px;
+    .color-top-0, .color-top-1, .color-top-2, .color-top-3, .color-top-4, .color-top-5{
+        height: 20px;
     }
     
      .color-top-0{
@@ -1223,6 +1223,18 @@ a:hover{
     
     .color-top-2{
         background: $third-color;
+    }
+
+    .color-top-3{
+        background: $fifth-color;
+    }
+
+    .color-top-4{
+        background: $sixth-color;
+    }
+
+    .color-top-5{
+        background: $eighth-color;
     }
     
     .heading-sm{
