@@ -629,3 +629,105 @@ hr.no-top{
 .bg-col-7 {
     background: $seventh-color;
 }
+
+
+
+
+
+    .inquire-finish{
+        .inquire-title{
+            padding-top: 15%;
+        }
+        .inquire-close-button{
+            width: 100%;
+            margin-top: 10%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .inquire-title{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        h4{
+            //color: $primary-color;
+        }
+        h2{
+            color:black;
+        }
+    }    
+
+//Styling forms
+    form{
+        .form-title{
+            border-bottom: 2px solid $primary-color;
+            display: inline-block;
+            min-width: 100px;
+            padding-bottom: 0px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            h5{
+                color: $primary-color !important;
+                display: inline;
+                font-size: 14px;
+            }
+        }
+
+        .form-title:first-child{
+            margin-top: 0px;
+        }
+
+        .form-statement{
+            font-size: 15px;
+
+            input{
+                width: 44px !important;
+            }
+            select{
+                width: 140px;
+                bottom: 1px;
+            }
+        }
+
+        #form-are-you-trying{
+            min-height: 90px;
+        }
+
+        #form-bottom{
+            margin-top: 15px;
+        }
+
+        .form-button{
+        margin-top: 28px;
+    }
+
+
+    .contact-btn{
+        font-size: $font-size-four;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .next-step, .prev-step{
+         font-size: $font-size-six;
+         max-width: 120px;
+    }
+    .next-step{
+        float: right;
+    }
+    .prev-step{
+        float: left;
+        background-color: transparent;
+        color: $btn-color;
+        border: 1px solid $btn-color;
+
+        &:hover{
+            color: white;
+            background-color: $btn-color;
+            transition: all .1s;
+        }
+    }
+
+
+
+    }

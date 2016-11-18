@@ -397,4 +397,63 @@ hr.no-top {
 .bg-col-7 {
   background: lightgrey; }
 
+.inquire-finish .inquire-title {
+  padding-top: 15%; }
+.inquire-finish .inquire-close-button {
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 20px; }
+
+.inquire-title {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0px; }
+  .inquire-title h2 {
+    color: black; }
+
+form .form-title {
+  border-bottom: 2px solid #45AEEA;
+  display: inline-block;
+  min-width: 100px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  margin-top: 15px; }
+  form .form-title h5 {
+    color: #45AEEA !important;
+    display: inline;
+    font-size: 14px; }
+form .form-title:first-child {
+  margin-top: 0px; }
+form .form-statement {
+  font-size: 15px; }
+  form .form-statement input {
+    width: 44px !important; }
+  form .form-statement select {
+    width: 140px;
+    bottom: 1px; }
+form #form-are-you-trying {
+  min-height: 90px; }
+form #form-bottom {
+  margin-top: 15px; }
+form .form-button {
+  margin-top: 28px; }
+form .contact-btn {
+  font-size: 15.5px;
+  min-width: 100%;
+  text-align: center; }
+form .next-step, form .prev-step {
+  font-size: 13px;
+  max-width: 120px; }
+form .next-step {
+  float: right; }
+form .prev-step {
+  float: left;
+  background-color: transparent;
+  color: #337ab7;
+  border: 1px solid #337ab7; }
+  form .prev-step:hover {
+    color: white;
+    background-color: #337ab7;
+    transition: all .1s; }
+
 /*# sourceMappingURL=project.css.map */

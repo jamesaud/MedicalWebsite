@@ -3,7 +3,7 @@
 @font-face {
   font-family: Vollkorn, serif;
   src: url(https://fonts.googleapis.com/css?family=Vollkorn); }
-.__color-button, .section-highlights .hi-intro-4 .btn-color-1, .section-highlights .hi-intro-4 .btn-color-2, .section-slideshow .btn-color, .section-demo .btn-color {
+.__color-button, .section-highlights .hi-intro-4 .btn-color-1, .section-highlights .hi-intro-4 .btn-color-2, .section-slideshow .btn-color, .section-plans .btn-color, .section-demo .btn-color {
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -982,8 +982,29 @@ a:hover {
 
 .section-plans {
   background: #3E4747 !important; }
+  .section-plans .plans-btn-wrapper {
+    margin-top: 40px !important; }
   .section-plans h4 {
     color: black !important; }
+  .section-plans .btn-color {
+    border-color: #00E891;
+    background-color: rgba(0, 232, 145, 0.85);
+    display: table;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 65px;
+    padding-right: 65px;
+    background-color: transparent; }
+    .section-plans .btn-color:hover {
+      color: white;
+      background-color: #00E891;
+      transition: all .1s; }
+    .section-plans .btn-color h4 {
+      color: white !important; }
+  .section-plans .pricing-menus-wrapper {
+    padding-top: 30px;
+    padding-bottom: 50px; }
   .section-plans li {
     margin-bottom: 6px; }
   .section-plans a, .section-plans a:visited {
@@ -1003,7 +1024,7 @@ a:hover {
       color: white !important; }
     .section-plans .title h1 {
       color: white !important; }
-  .section-plans .color-top-0, .section-plans .color-top-1, .section-plans .color-top-2, .section-plans .color-top-3, .section-plans .color-top-4, .section-plans .color-top-5 {
+  .section-plans .color-top-0, .section-plans .color-top-1, .section-plans .color-top-2, .section-plans .color-top-3 {
     height: 20px; }
   .section-plans .color-top-0 {
     background: #45AEEA; }
@@ -1012,11 +1033,7 @@ a:hover {
   .section-plans .color-top-2 {
     background: #D43A43; }
   .section-plans .color-top-3 {
-    background: #FF8800; }
-  .section-plans .color-top-4 {
-    background: #C900E3; }
-  .section-plans .color-top-5 {
-    background: #00E891; }
+    background: #72c02c; }
   .section-plans .heading-sm {
     color: black !important;
     margin-bottom: 10px;
@@ -1283,65 +1300,6 @@ a:hover {
 @media screen and (max-width: 768px) {
   #click-here {
     display: none; } }
-.inquire-finish .inquire-title {
-  padding-top: 15%; }
-.inquire-finish .inquire-close-button {
-  width: 100%;
-  margin-top: 10%;
-  margin-bottom: 20px; }
-
-.inquire-title {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 0px; }
-  .inquire-title h2 {
-    color: black; }
-
-form .form-title {
-  border-bottom: 2px solid #45AEEA;
-  display: inline-block;
-  min-width: 100px;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-  margin-top: 15px; }
-  form .form-title h5 {
-    color: #45AEEA !important;
-    display: inline;
-    font-size: 14px; }
-form .form-title:first-child {
-  margin-top: 0px; }
-form .form-statement {
-  font-size: 15px; }
-  form .form-statement input {
-    width: 44px !important; }
-  form .form-statement select {
-    width: 140px;
-    bottom: 1px; }
-form #form-are-you-trying {
-  min-height: 90px; }
-form #form-bottom {
-  margin-top: 15px; }
-form .form-button {
-  margin-top: 28px; }
-form .contact-btn {
-  font-size: 15.5px;
-  min-width: 100%;
-  text-align: center; }
-form .next-step, form .prev-step {
-  font-size: 13px;
-  min-width: 120px; }
-form .next-step {
-  float: right; }
-form .prev-step {
-  float: left;
-  background-color: transparent;
-  color: #337ab7;
-  border: 1px solid #337ab7; }
-  form .prev-step:hover {
-    color: white;
-    background-color: #337ab7;
-    transition: all .1s; }
-
 .rev_slider_wrapper .Newspaper-Subtitle, .rev_slider_wrapper .tp-tab-title {
   color: #AEDBF7 !important; }
 .rev_slider_wrapper .tp-shape {
@@ -1413,12 +1371,12 @@ form .prev-step {
   padding: 0; }
 #modal-test li {
   font-size: 15.5px; }
+#modal-test #cd-table {
+  background: white !important; }
 #modal-test h2 {
   margin-bottom: 0 !important;
   padding-bottom: 0;
   font-size: 18px !important; }
-#modal-test #cd-table {
-  background: white !important; }
 #modal-test .cd-left-title {
   padding-left: 15px !important; }
 

@@ -1188,9 +1188,32 @@ a:hover{
 .section-plans{
     background: #3E4747 !important;
     
+    .plans-btn-wrapper{
+                margin-top: 40px !important;
+
+    }
     h4{
         color: black !important;
     }
+
+    .btn-color{
+        @include color_btn($eighth-color);
+        display: table;
+        margin: 0 auto;
+           padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 65px;
+        padding-right: 65px;
+        background-color: transparent;
+        h4{color: white !important;}
+    }
+
+    .pricing-menus-wrapper{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+ 
 
     li{
         margin-bottom: 6px;
@@ -1224,7 +1247,7 @@ a:hover{
     }
     
    
-    .color-top-0, .color-top-1, .color-top-2, .color-top-3, .color-top-4, .color-top-5{
+    .color-top-0, .color-top-1, .color-top-2, .color-top-3, {
         height: 20px;
     }
     
@@ -1241,16 +1264,9 @@ a:hover{
     }
 
     .color-top-3{
-        background: $fifth-color;
+        background: $fourth-color;
     }
 
-    .color-top-4{
-        background: $sixth-color;
-    }
-
-    .color-top-5{
-        background: $eighth-color;
-    }
     
     .heading-sm{
         color: black !important;
@@ -1650,104 +1666,6 @@ a:hover{
 
 
 
-    .inquire-finish{
-        .inquire-title{
-            padding-top: 15%;
-        }
-        .inquire-close-button{
-            width: 100%;
-            margin-top: 10%;
-            margin-bottom: 20px;
-        }
-    }
-
-    .inquire-title{
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 0px;
-        h4{
-            //color: $primary-color;
-        }
-        h2{
-            color:black;
-        }
-    }    
-
-
-    form{
-        .form-title{
-            border-bottom: 2px solid $primary-color;
-            display: inline-block;
-            min-width: 100px;
-            padding-bottom: 0px;
-            margin-bottom: 10px;
-            margin-top: 15px;
-            h5{
-                color: $primary-color !important;
-                display: inline;
-                font-size: 14px;
-            }
-        }
-
-        .form-title:first-child{
-            margin-top: 0px;
-        }
-
-        .form-statement{
-            font-size: 15px;
-
-            input{
-                width: 44px !important;
-            }
-            select{
-                width: 140px;
-                bottom: 1px;
-            }
-        }
-
-        #form-are-you-trying{
-            min-height: 90px;
-        }
-
-        #form-bottom{
-            margin-top: 15px;
-        }
-
-        .form-button{
-        margin-top: 28px;
-    }
-
-
-    .contact-btn{
-        font-size: $font-size-four;
-        min-width: 100%;
-        text-align: center;
-    }
-
-    .next-step, .prev-step{
-         font-size: $font-size-six;
-         min-width: 120px;
-    }
-    .next-step{
-        float: right;
-    }
-    .prev-step{
-        float: left;
-        background-color: transparent;
-        color: $btn-color;
-        border: 1px solid $btn-color;
-
-        &:hover{
-            color: white;
-            background-color: $btn-color;
-            transition: all .1s;
-        }
-    }
-
-
-
-    }
-
 .rev_slider_wrapper{
     //Styling the TP-BANNER Slider
     .Newspaper-Subtitle, .tp-tab-title{
@@ -1860,14 +1778,16 @@ a:hover{
     li{
         font-size: $font-size-four;
     }
+      #cd-table{
+        background: white !important;
+    }
     h2{
         margin-bottom: 0 !important;
         padding-bottom: 0;
         font-size: $font-size-five !important;
+
     }
-    #cd-table{
-        background: white !important;
-    }
+  
     .cd-left-title{
         padding-left: 15px !important;
     }
