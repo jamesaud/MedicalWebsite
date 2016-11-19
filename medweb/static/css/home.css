@@ -983,11 +983,12 @@ a:hover {
       margin-bottom: 20px; } }
 
 .section-plans {
-  background: #3E4747 !important; }
+  background: #3E4747 !important;
+  /* GENERATE 3 CLASSES WITH DIFFERENT COLORS FOR THE PURCHASING MODAL */ }
   .section-plans h4 {
     color: white !important; }
   .section-plans .plans-btn-wrapper {
-    margin-top: 40px !important; }
+    margin-top: 32px !important; }
   .section-plans .plans-intro {
     text-align: center;
     padding-top: 20px;
@@ -1046,12 +1047,8 @@ a:hover {
       color: white !important; }
   .section-plans .pricing-menus-wrapper {
     padding-bottom: 50px; }
-  .section-plans li {
-    margin-bottom: 6px; }
-  .section-plans a, .section-plans a:visited {
-    color: #555555;
-    text-decoration: none; }
   .section-plans .popover {
+    z-index: 3;
     width: 250px; }
     .section-plans .popover li, .section-plans .popover h5 {
       margin-bottom: 0px;
@@ -1097,6 +1094,11 @@ a:hover {
     width: 100%; }
     .section-plans .service-block h4 {
       color: #444 !important; }
+    .section-plans .service-block li {
+      margin-bottom: 6px; }
+    .section-plans .service-block a, .section-plans .service-block a:visited {
+      color: #555555;
+      text-decoration: none; }
     .section-plans .service-block .service-block-content {
       padding-top: 5px;
       padding-left: 40px;
@@ -1122,6 +1124,22 @@ a:hover {
     margin-bottom: 60px; }
     .section-plans .message-block:last-child {
       margin-bottom: 60px; }
+  .section-plans .plans-notice {
+    font-family: "Indie Flower", serif;
+    border-top: none;
+    padding-top: 12px;
+    text-align: center; }
+    .section-plans .plans-notice p {
+      color: white !important;
+      font-size: 18px; }
+  .section-plans .service-block-color-4 li a:hover {
+    color: #72c02c; }
+  .section-plans .service-block-color-3 li a:hover {
+    color: #D43A43; }
+  .section-plans .service-block-color-2 li a:hover {
+    color: #EFB917; }
+  .section-plans .service-block-color-1 li a:hover {
+    color: #45AEEA; }
 
 .section-services {
   margin-bottom: 60px !important; }

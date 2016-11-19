@@ -1193,10 +1193,10 @@ a:hover{
 }
 
 .section-plans{
-    background: #3E4747 !important;
+    background: #3E4747 !important; 
     h4{color: white !important;}
     .plans-btn-wrapper{
-                margin-top: 40px !important;
+                margin-top: 32px !important;
     }
 
   .plans-intro{
@@ -1260,18 +1260,9 @@ a:hover{
         padding-bottom: 50px;
     }
     
- 
-
-    li{
-        margin-bottom: 6px;
-    }
-    
-    a, a:visited{
-        color: rgb(85, 85, 85);
-        text-decoration: none;
-    }
 
     .popover{
+        z-index: 3;
         width: 250px;
         li, h5{
             margin-bottom: 0px;
@@ -1350,6 +1341,16 @@ a:hover{
         margin-bottom: 0px;
         padding-top: 20px;
         width: 100%;
+
+        li{
+            margin-bottom: 6px;
+        }
+        
+        a, a:visited{
+            color: rgb(85, 85, 85);
+            text-decoration: none;
+        }
+
         .service-block-content{
             padding-top: 5px;
             padding-left: 40px;
@@ -1395,6 +1396,34 @@ a:hover{
             margin-bottom: 60px;
         }
     }
+
+    .plans-notice{
+        font-family:  $font-fun;
+        border-top: none;
+        padding-top: 12px;
+        text-align: center;
+        p{
+            color: white !important;
+            font-size: $font-size-five;
+        }
+    }
+
+
+      /* GENERATE 3 CLASSES WITH DIFFERENT COLORS FOR THE PURCHASING MODAL */
+        @mixin service-block-color($class, $color){     
+            .#{$class}{
+                    li {
+                        a:hover{
+                            color: $color;
+                            }
+                        }
+                    }
+            }
+
+            @include service-block-color('service-block-color-4', $fourth-color);
+            @include service-block-color('service-block-color-3', $third-color);
+            @include service-block-color('service-block-color-2', $second-color);
+            @include service-block-color('service-block-color-1', $primary-color);
 
 }
 
@@ -1729,6 +1758,7 @@ a:hover{
     }
 }
 
+
 #modal-guarantee{
     .modal-header, .modal-dialog, .modal-body, .modal-footer{
         max-width: 1000px;
@@ -1846,6 +1876,5 @@ a:hover{
         margin-top: 0;
         padding-left: 0;
     }
-
 
 }
