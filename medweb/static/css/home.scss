@@ -835,8 +835,7 @@ a:hover{
     }
 }
 
-.section-why-us{
-    padding-top: 0 !important;
+
     .why-novo{
         text-align: center;
         padding-top: 50px;
@@ -846,6 +845,10 @@ a:hover{
             color: $third-color;
         }
     }
+
+.section-why-us{
+    padding-top: 0 !important;
+
     .why-title-wrapper{
         background: #333 !important;
     }
@@ -1187,14 +1190,55 @@ a:hover{
 
 .section-plans{
     background: #3E4747 !important;
-    
+    h4{color: white !important;}
     .plans-btn-wrapper{
                 margin-top: 40px !important;
+    }
 
+  .plans-intro{
+         text-align: center;
+        padding-top: 20px;
+        padding-bottom: 0px !important;
+        
+        .main-points{
+            h2{color: #eee;}
+            h3{font-weight: $weight-light;}
+            h4{
+                color: white !important;
+            }
+        }
+        padding-bottom: 50px;
+        .btn-color-1{
+            @include color_btn($second-color);
+        }
+        .btn-color-2{
+            @include color_btn($third-color);
+        }
+        .btn-color-0{
+            margin-top: 2px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 18px;
+            padding-right: 18px;
+            
+            //outline: 1px solid $primary-color;
+            background: transparent;
+
+            color: $primary-color;  
+            
+            font-size: 23px;
+            span{
+                font-weight: bold;
+            }
+            &:hover{
+                background: $primary-color;
+                color: white;
+                transition: all .3s;
+            }
+        }
     }
-    h4{
-        color: black !important;
-    }
+  
+
 
     .btn-color{
         @include color_btn($eighth-color);
@@ -1211,6 +1255,9 @@ a:hover{
     .pricing-menus-wrapper{
         padding-top: 30px;
         padding-bottom: 50px;
+            
+   
+        
     }
     
  
@@ -1290,6 +1337,9 @@ a:hover{
         
     }
     .service-block{
+        h4{
+            color: #444 !important;
+        }
         margin: 0 auto;
         margin-bottom: 0px;
         padding-top: 20px;
@@ -1305,11 +1355,6 @@ a:hover{
         margin-top: 30px;
     }
 
-    
-      h4{
-            font-weight: 400;
-            color: #333;
-        }
 
     ul{
         li{
@@ -1787,9 +1832,13 @@ a:hover{
         font-size: $font-size-five !important;
 
     }
-  
-    .cd-left-title{
+    
+    .cd-top-title{
         padding-left: 15px !important;
+    }
+    .cd-left-title{
+        margin-top: 0;
+        padding-left: 0;
     }
 
 
