@@ -4,7 +4,7 @@ $color-paid: #39cccc;
 $color-sent:  $primary-color;
 $q-width: 150px;
 $left: 225px;
-$media-left: 25px;
+$media-left: 100px;
 
 
 .graph{
@@ -182,14 +182,14 @@ $media-left: 25px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     #q-graph {
-        left: $media-left;
-        max-width: 65%;
-        overflow: scroll;
+      overflow: scroll;
+        left: $media-left - 100px;
     }
     #ticks .tick{
-        left: $media-left - 20px;
+      overflow: scroll;
+        left: $media-left;
        
         max-width: 54%;
     }

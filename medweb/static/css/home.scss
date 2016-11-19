@@ -1257,11 +1257,7 @@ a:hover{
     }
 
     .pricing-menus-wrapper{
-        padding-top: 30px;
         padding-bottom: 50px;
-            
-   
-        
     }
     
  
@@ -1287,7 +1283,7 @@ a:hover{
     }
     
     .title{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         text-align: center;
         h2{
             color: white !important;
@@ -1295,6 +1291,10 @@ a:hover{
         h1{
             color: white !important;
         }
+    }
+
+    .title-message{
+        padding-bottom: 30px !important;
     }
     
    
@@ -1329,7 +1329,7 @@ a:hover{
     .service-blocks {
         padding-top: 20px;
         padding-bottom: 0px;
-        
+        h5{color: white;}
         .service-blocks-header{
             h2{
                 margin-bottom: 10px;
@@ -1534,7 +1534,7 @@ a:hover{
     @include generateTabClassColor(PHM, $third-color);
     @include generateTabClassColor(ADD, $seventh-color-2);
 
-    .tab-content{
+    .section-modal-solutions .tab-content{
         padding-left: 20px;
         padding-right: 10px;
         color: black;

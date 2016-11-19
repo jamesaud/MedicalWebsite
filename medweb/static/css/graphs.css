@@ -171,18 +171,18 @@
 
 @media screen and (max-width: 1200px) {
   #q-graph {
-    left: 25px; }
+    left: 100px; }
 
   #ticks .tick {
-    left: 5px; } }
-@media screen and (max-width: 768px) {
+    left: 80px; } }
+@media screen and (max-width: 1000px) {
   #q-graph {
-    left: 25px;
-    max-width: 65%;
-    overflow: scroll; }
+    overflow: scroll;
+    left: 0px; }
 
   #ticks .tick {
-    left: 5px;
+    overflow: scroll;
+    left: 100px;
     max-width: 54%; } }
 
 /*# sourceMappingURL=graphs.css.map */

@@ -299,10 +299,10 @@ hr.no-margin {
 
 /* END CUSTOM MODAL STYLE  */
 #modal-contact .modal-dialog, #modal-contact .modal-body, #modal-contact .modal-header {
-  max-width: 520px; }
+  max-width: 550px; }
 #modal-contact .modal-body, #modal-contact .modal-header {
-  padding-left: 3%;
-  padding-right: 3%; }
+  padding-left: 6%;
+  padding-right: 6%; }
 #modal-contact .modal-footer {
   padding-top: 0; }
 #modal-contact .modal-body {

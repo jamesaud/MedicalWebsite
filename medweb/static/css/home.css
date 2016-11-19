@@ -1045,7 +1045,6 @@ a:hover {
     .section-plans .btn-color h4 {
       color: white !important; }
   .section-plans .pricing-menus-wrapper {
-    padding-top: 30px;
     padding-bottom: 50px; }
   .section-plans li {
     margin-bottom: 6px; }
@@ -1060,12 +1059,14 @@ a:hover {
     .section-plans .popover h5 {
       margin-bottom: 0px !important; }
   .section-plans .title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center; }
     .section-plans .title h2 {
       color: white !important; }
     .section-plans .title h1 {
       color: white !important; }
+  .section-plans .title-message {
+    padding-bottom: 30px !important; }
   .section-plans .color-top-0, .section-plans .color-top-1, .section-plans .color-top-2, .section-plans .color-top-3 {
     height: 20px; }
   .section-plans .color-top-0 {
@@ -1083,6 +1084,8 @@ a:hover {
   .section-plans .service-blocks {
     padding-top: 20px;
     padding-bottom: 0px; }
+    .section-plans .service-blocks h5 {
+      color: white; }
     .section-plans .service-blocks .service-blocks-header h2 {
       margin-bottom: 10px; }
     .section-plans .service-blocks .service-blocks-header h2, .section-plans .service-blocks .service-blocks-header h3, .section-plans .service-blocks .service-blocks-header h4 {
@@ -1220,25 +1223,25 @@ a:hover {
 #ADD h3 {
   color: black !important; }
 
-.tab-content {
+.section-modal-solutions .tab-content {
   padding-left: 20px;
   padding-right: 10px;
   color: black; }
-  .tab-content img.tab_image {
+  .section-modal-solutions .tab-content img.tab_image {
     /* Shrink the image proportionally */
     width: 100%;
     /* you can use % */
     height: auto;
     min-height: 250px; }
-  .tab-content hr {
+  .section-modal-solutions .tab-content hr {
     margin-top: 10px;
     margin-bottom: 10px; }
-  .tab-content p {
+  .section-modal-solutions .tab-content p {
     color: #555;
     text-align: justify; }
-  .tab-content .tab-content-main-message p {
+  .section-modal-solutions .tab-content .tab-content-main-message p {
     font-style: normal; }
-  .tab-content .tab-content-main-message h3 {
+  .section-modal-solutions .tab-content .tab-content-main-message h3 {
     font-weight: bold; }
 
 /*TIMELINE OVERRIDES */
