@@ -763,15 +763,6 @@ a:hover {
   .section-insights .si-info .section-insights-block-3 .solution {
     color: #45AEEA; }
 
-.why-novo {
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 40px; }
-  .why-novo h2 {
-    color: black; }
-  .why-novo a {
-    color: #D43A43; }
-
 .section-why-us {
   padding-top: 0 !important; }
   .section-why-us .why-title-wrapper {
@@ -780,7 +771,7 @@ a:hover {
     padding-top: 50px;
     padding-bottom: 140px;
     margin-bottom: 220px; }
-    .section-why-us .why-title h2.main-points-title {
+    .section-why-us .why-title h1.main-points-title {
       color: white !important;
       font-weight: 700; }
     .section-why-us .why-title h2 {
@@ -809,9 +800,19 @@ a:hover {
       margin-bottom: 3px; }
   @media screen and (max-width: 1100px) {
     .section-why-us .white-box {
-      position: relative; }
+      position: relative;
+      top: 20px; }
     .section-why-us .why-title {
-      margin-bottom: 0px; } }
+      margin-bottom: 0px;
+      padding-bottom: 40px; } }
+  .section-why-us .why-novo {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px; }
+    .section-why-us .why-novo h2 {
+      color: black; }
+    .section-why-us .why-novo a {
+      color: #D43A43; }
   .section-why-us .why-graph {
     padding-bottom: 100px !important;
     text-align: center; }

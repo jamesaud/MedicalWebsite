@@ -443,7 +443,7 @@ form .contact-btn {
   text-align: center; }
 form .next-step, form .prev-step {
   font-size: 13px;
-  max-width: 120px; }
+  width: 120px; }
 form .next-step {
   float: right; }
 form .prev-step {
