@@ -1342,9 +1342,14 @@ a:hover{
         padding-top: 20px;
         width: 100%;
 
-        li{
+       ul{
+           li{
             margin-bottom: 6px;
-        }
+            &:last-child{
+                margin-bottom: 0;
+            }
+         }
+       }
         
         a, a:visited{
             color: rgb(85, 85, 85);

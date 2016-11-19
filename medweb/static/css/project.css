@@ -456,4 +456,10 @@ form .prev-step {
     background-color: #337ab7;
     transition: all .1s; }
 
+/*
+div, span, p, h1, h2, h3, h4, h5{
+    border: 1px solid black !important;
+}
+*/
+
 /*# sourceMappingURL=project.css.map */

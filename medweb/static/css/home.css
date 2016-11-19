@@ -1094,8 +1094,10 @@ a:hover {
     width: 100%; }
     .section-plans .service-block h4 {
       color: #444 !important; }
-    .section-plans .service-block li {
+    .section-plans .service-block ul li {
       margin-bottom: 6px; }
+      .section-plans .service-block ul li:last-child {
+        margin-bottom: 0; }
     .section-plans .service-block a, .section-plans .service-block a:visited {
       color: #555555;
       text-decoration: none; }
