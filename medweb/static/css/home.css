@@ -772,8 +772,8 @@ a:hover {
     padding-bottom: 140px;
     margin-bottom: 220px; }
     .section-why-us .why-title h1.main-points-title {
-      color: white !important;
-      font-weight: 700; }
+      color: white  !important;
+      font-weight: bold; }
     .section-why-us .why-title h2 {
       color: #fff; }
   .section-why-us .white-box {
@@ -1067,6 +1067,8 @@ a:hover {
       color: white !important; }
   .section-plans .title-message {
     padding-bottom: 30px !important; }
+    .section-plans .title-message h5 {
+      color: white; }
   .section-plans .color-top-0, .section-plans .color-top-1, .section-plans .color-top-2, .section-plans .color-top-3 {
     height: 20px; }
   .section-plans .color-top-0 {
@@ -1084,8 +1086,6 @@ a:hover {
   .section-plans .service-blocks {
     padding-top: 20px;
     padding-bottom: 0px; }
-    .section-plans .service-blocks h5 {
-      color: white; }
     .section-plans .service-blocks .service-blocks-header h2 {
       margin-bottom: 10px; }
     .section-plans .service-blocks .service-blocks-header h2, .section-plans .service-blocks .service-blocks-header h3, .section-plans .service-blocks .service-blocks-header h4 {

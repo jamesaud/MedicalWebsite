@@ -849,8 +849,8 @@ a:hover{
         margin-bottom: 220px;
 
         h1.main-points-title{
-            color: white !important;
-            font-weight: 700;
+            color: white  !important;
+            font-weight: bold;
             }
         h2{color:#fff;}
     }
@@ -1294,6 +1294,9 @@ a:hover{
     }
 
     .title-message{
+        h5{
+            color: white;
+        }
         padding-bottom: 30px !important;
     }
     
@@ -1329,7 +1332,6 @@ a:hover{
     .service-blocks {
         padding-top: 20px;
         padding-bottom: 0px;
-        h5{color: white;}
         .service-blocks-header{
             h2{
                 margin-bottom: 10px;
