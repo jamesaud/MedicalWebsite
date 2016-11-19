@@ -1254,7 +1254,8 @@ a:hover {
 
 .timeline-v1 {
   padding-top: 0px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
   .timeline-v1 a {
     text-decoration: none;
     color: inherit !important; }
