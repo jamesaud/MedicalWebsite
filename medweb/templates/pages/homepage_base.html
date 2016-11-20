@@ -172,14 +172,14 @@
                                                               <div class="col-md-6 bt-flabels__wrapper required">
                                                                   <div class='control-label'></div>
                                                                   <label>First Name</label>
-                                                                      <input type="text" name="first_name" placeholder="First Name" data-parsley-require>
+                                                                      <input type="text" name="first_name" placeholder="First Name" data-parsley-required>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
 
                                                               <div class="col-md-6 required bt-flabels__wrapper">
                                                                   <div class='control-label'></div>
                                                                   <label>Last Name</label>
-                                                                  <input type="text" name="lname" placeholder="Last Name" data-parsley-require>
+                                                                  <input type="text" name="lname" placeholder="Last Name" data-parsley-required>
                                                                   <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                            </div>
@@ -189,7 +189,7 @@
                                                             <div class="bt-flabels__wrapper required col-md-12">
                                                                   <div class='control-label'></div>
                                                                 <label>Title or Position</label>
-                                                                <input type="text" name="title" placeholder="Title or Position" data-parsley-require autocomplete="off" >
+                                                                <input type="text" name="title" placeholder="Title or Position" data-parsley-required autocomplete="off" >
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
@@ -199,7 +199,7 @@
                                                                   <div class="bt-flabels__wrapper required col-md-6">
                                                                       <div class='control-label'></div>
                                                                       <label>Email</label>
-                                                                      <input type="text" name="email" placeholder="Email" data-parsley-require data-parsley-type="email" />
+                                                                      <input type="text" name="email" placeholder="Email" data-parsley-required data-parsley-type="email" />
                                                                       <span class="bt-flabels__error-desc">Required/Invalid Email</span>
                                                                   </div>
 
@@ -215,15 +215,15 @@
                                                               <div class='bt-flabels__wrapper required col-md-9'>
                                                                       <div class='control-label'></div>
                                                                       <label>Group Name</label>
-                                                                      <input type="text" name="group"  placeholder="Group Name" data-parsley-require>
+                                                                      <input type="text" name="group"  placeholder="Group Name" data-parsley-required>
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
 
                                                               <div class='col-md-3'>
                                                                   <div class="required">
                                                                      <div class='control-label'>
-                                                                      <select>
-                                                                        <option value='type1'>Group Type</option>
+                                                                      <select  required=''>
+                                                                        <option value=''>Group Type</option>
                                                                         <option value='type2'>Val 2</option>
                                                                         <option value='type3'>Val 3</option>
                                                                         <option value='type4'>Val 4</option>
@@ -244,7 +244,7 @@
 
                                                                         <div class='control-label'></div>
                                                                           <label>Office Phone (xxx-xxx-xxxx)</label>
-                                                                          <input type="text" name="phone2" data-parsley-require placeholder="Office Phone" autocomplete="off" data-parsley-pattern='/(\d{3})\-?(\d{3})\-?(\d{4})/' class='phone-autodash '/>
+                                                                          <input type="text" name="phone2" data-parsley-required placeholder="Office Phone" autocomplete="off" data-parsley-pattern='/(\d{3})\-?(\d{3})\-?(\d{4})/' class='phone-autodash '/>
                                                                           <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
                                                               </div>
 
