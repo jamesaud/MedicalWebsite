@@ -1323,6 +1323,7 @@ a:hover{
     .service-blocks {
         padding-top: 20px;
         padding-bottom: 0px;
+        max-width:  $max-width - 50px;
         .service-blocks-header{
             h2{
                 margin-bottom: 10px;

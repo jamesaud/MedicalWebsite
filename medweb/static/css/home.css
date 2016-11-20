@@ -1082,7 +1082,8 @@ a:hover {
     font-size: 24px; }
   .section-plans .service-blocks {
     padding-top: 20px;
-    padding-bottom: 0px; }
+    padding-bottom: 0px;
+    max-width: 1250px; }
     .section-plans .service-blocks .service-blocks-header h2 {
       margin-bottom: 10px; }
     .section-plans .service-blocks .service-blocks-header h2, .section-plans .service-blocks .service-blocks-header h3, .section-plans .service-blocks .service-blocks-header h4 {
