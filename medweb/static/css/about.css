@@ -20,14 +20,23 @@
 #our-team .headline-center h2:after {
   background: #45AEEA !important;
 }
+#our-team span {
+  margin-bottom: 0;
+}
 #our-team small {
   color: #45AEEA;
+  margin-bottom: 0;
 }
 #our-team img {
   margin: 0 auto;
   max-height: 180px;
   width: auto;
   margin-bottom: 10px;
+}
+#our-team h5 {
+  text-align: justify !important;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 #our-team .team-v6 {
   margin-bottom: 40px;
