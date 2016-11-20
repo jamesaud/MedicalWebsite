@@ -708,7 +708,6 @@ a:hover{
         margin-top: 60px ;
         margin-bottom: 35px;
         .main-points{
-            
             padding-top: 0px;
             .main-points-title{
                 vertical-align: center;
@@ -735,22 +734,7 @@ a:hover{
         $btn-color: $third-color;
         $btn-color-2: $primary-color;
         
-        .si-message-btn-1{
-            border: $btn-color 1.4px solid;
-            @include transparentBackgroundColor(.75, $btn-color, !important);
-            &:hover{
-                @include transparentBackgroundColor(.85, $btn-color, !important);
-            }
-        }
-        .si-message-btn-2{
-            border: $btn-color-2 1.4px solid;
-            @include transparentBackgroundColor(.8, $btn-color-2, !important);
-            &:hover{
-                @include transparentBackgroundColor(.9, $btn-color-2, !important);
-            }
-        }
-        
-        .si-message-btn{
+        %si-message-btn{
             text-align: center;
             color: white;
             padding-top: 5px;
@@ -782,13 +766,30 @@ a:hover{
                 display: block;
                 color: white !important;
                  font-weight: bold;
-                }
-    
+                 text-decoration: underline;
+
+                 &:hover{
+                     color: #333 !important;
+                 }
             }
-            article{
+    
+        }
+
+        .si-message-btn-1{
+            @extend %si-message-btn;
+            border: $btn-color 1.4px solid;
+            @include transparentBackgroundColor(.75, $btn-color, !important);
+        }
+        .si-message-btn-2{
+            @extend %si-message-btn;
+            border: $btn-color-2 1.4px solid;
+            @include transparentBackgroundColor(.8, $btn-color-2, !important); 
+        }
+
+        //For readmore.js
+        article{
                 max-height: 89px;
             }
-        
     }
     
     .si-info{

@@ -699,17 +699,7 @@ a:hover {
     padding-bottom: 70px; }
   .section-insights .si-message #si-message-btn-wrapper-2 {
     padding-top: 78px; }
-  .section-insights .si-message .si-message-btn-1 {
-    border: #D43A43 1.4px solid;
-    background-color: rgba(212, 58, 67, 0.75) !important; }
-    .section-insights .si-message .si-message-btn-1:hover {
-      background-color: rgba(212, 58, 67, 0.85) !important; }
-  .section-insights .si-message .si-message-btn-2 {
-    border: #45AEEA 1.4px solid;
-    background-color: rgba(69, 174, 234, 0.8) !important; }
-    .section-insights .si-message .si-message-btn-2:hover {
-      background-color: rgba(69, 174, 234, 0.9) !important; }
-  .section-insights .si-message .si-message-btn {
+  .section-insights .si-message .si-message-btn-1, .section-insights .si-message .si-message-btn-2 {
     text-align: center;
     color: white;
     padding-top: 5px;
@@ -723,21 +713,30 @@ a:hover {
     min-height: 100%;
     margin: 0 auto;
     white-space: normal; }
-    .section-insights .si-message .si-message-btn h3, .section-insights .si-message .si-message-btn h4, .section-insights .si-message .si-message-btn h5 p {
+    .section-insights .si-message .si-message-btn-1 h3, .section-insights .si-message .si-message-btn-2 h3, .section-insights .si-message .si-message-btn-1 h4, .section-insights .si-message .si-message-btn-2 h4, .section-insights .si-message .si-message-btn-1 h5 p, .section-insights .si-message .si-message-btn-2 h5 p {
       color: white !important; }
-    .section-insights .si-message .si-message-btn h3 {
+    .section-insights .si-message .si-message-btn-1 h3, .section-insights .si-message .si-message-btn-2 h3 {
       font-weight: bold; }
-    .section-insights .si-message .si-message-btn h4 {
+    .section-insights .si-message .si-message-btn-1 h4, .section-insights .si-message .si-message-btn-2 h4 {
       font-size: 15.5px; }
-    .section-insights .si-message .si-message-btn hr {
+    .section-insights .si-message .si-message-btn-1 hr, .section-insights .si-message .si-message-btn-2 hr {
       margin-top: 16px;
       margin-bottom: 14px;
       width: 40px; }
-    .section-insights .si-message .si-message-btn .read-more {
+    .section-insights .si-message .si-message-btn-1 .read-more, .section-insights .si-message .si-message-btn-2 .read-more {
       width: 100%;
       display: block;
       color: white !important;
-      font-weight: bold; }
+      font-weight: bold;
+      text-decoration: underline; }
+      .section-insights .si-message .si-message-btn-1 .read-more:hover, .section-insights .si-message .si-message-btn-2 .read-more:hover {
+        color: #333 !important; }
+  .section-insights .si-message .si-message-btn-1 {
+    border: #D43A43 1.4px solid;
+    background-color: rgba(212, 58, 67, 0.75) !important; }
+  .section-insights .si-message .si-message-btn-2 {
+    border: #45AEEA 1.4px solid;
+    background-color: rgba(69, 174, 234, 0.8) !important; }
   .section-insights .si-message article {
     max-height: 89px; }
 .section-insights .si-info {
