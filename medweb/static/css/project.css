@@ -301,8 +301,8 @@ hr.no-margin {
 #modal-contact .modal-dialog, #modal-contact .modal-body, #modal-contact .modal-header {
   max-width: 550px; }
 #modal-contact .modal-body, #modal-contact .modal-header {
-  padding-left: 6%;
-  padding-right: 6%; }
+  padding-left: 5%;
+  padding-right: 5%; }
 #modal-contact .modal-footer {
   padding-top: 0; }
 #modal-contact .modal-body {
