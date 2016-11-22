@@ -77,7 +77,7 @@ MIGRATION_MODULES = {
 # DEBUG
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#debug
-DEBUG = env.bool('DJANGO_DEBUG', True)
+DEBUG = env.bool('DJANGO_DEBUG', False)
 
 # FIXTURE CONFIGURATION
 # ------------------------------------------------------------------------------
@@ -178,9 +178,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-root
 
 STATIC_ROOT = str(ROOT_DIR('staticfiles'))
-#if settings.DEBUG:
-STATIC_ROOT = str(ROOT_DIR('medweb/static/staticfiles'))  # So the sass compiler can workj in developement
-
 
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
@@ -190,7 +187,7 @@ STATIC_URL = '/static/'
 # See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
 STATICFILES_DIRS = (
     str(APPS_DIR.path('static')),
-        str(ROOT_DIR('components')),
+        str(ROOT_DIR.path('components')),
 )
 
 
@@ -239,10 +236,6 @@ LOGIN_URL = 'account_login'
 
 # SLUGLIFIER
 AUTOSLUG_SLUGIFY_FUNCTION = 'slugify.slugify'
-
-
-# django-compressor
-# ------------------------------------------------------------------------------
 
 
 # Location of root django.contrib.admin URL, use {% url 'admin:index' %}
