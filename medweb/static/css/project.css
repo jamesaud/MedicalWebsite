@@ -422,6 +422,8 @@ form .form-title {
     color: #45AEEA !important;
     display: inline;
     font-size: 14px; }
+form .form-title.no-top {
+  margin-top: 0; }
 form .form-title:first-child {
   margin-top: 0px; }
 form .form-statement {

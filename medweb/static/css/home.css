@@ -1143,8 +1143,36 @@ a:hover {
   .section-plans .service-block-color-1 li a:hover {
     color: #45AEEA; }
 
+.ss-bg-col-1 {
+  background-color: rgba(69, 174, 234, 0.15); }
+
+.ss-bg-col-2 {
+  background-color: rgba(239, 185, 23, 0.15); }
+
+.ss-bg-col-3 {
+  background-color: rgba(212, 58, 67, 0.15); }
+
+.ss-bg-col-4 {
+  background-color: rgba(114, 192, 44, 0.15); }
+
+.ss-bg-col-5 {
+  background-color: rgba(255, 136, 0, 0.15); }
+
+.ss-bg-col-6 {
+  background-color: rgba(201, 0, 227, 0.15); }
+
+.ss-bg-col-7 {
+  background-color: rgba(211, 211, 211, 0.15); }
+
+.section-solutions {
+  -webkit-transition: background-color .3s;
+  /* Safari */
+  transition: background-color .3s; }
+  .section-solutions .one-default {
+    background: transparent; }
+
 .section-services {
-  margin-bottom: 60px !important; }
+  padding-bottom: 60px !important; }
   .section-services h1 {
     font-size: 1.15em;
     font-weight: 500; }

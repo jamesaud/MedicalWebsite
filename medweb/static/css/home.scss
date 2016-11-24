@@ -1435,8 +1435,26 @@ a:hover{
 }
 
 
+
+    $opacity: .15;
+    .ss-bg-col-1{ @include transparentBackgroundColor($opacity, $primary-color);}
+    .ss-bg-col-2{ @include transparentBackgroundColor($opacity, $second-color);}
+    .ss-bg-col-3{ @include transparentBackgroundColor($opacity, $third-color);}
+    .ss-bg-col-4{ @include transparentBackgroundColor($opacity, $fourth-color);}
+    .ss-bg-col-5{ @include transparentBackgroundColor($opacity, $fifth-color);}
+    .ss-bg-col-6{ @include transparentBackgroundColor($opacity, $sixth-color);}
+    .ss-bg-col-7{ @include transparentBackgroundColor($opacity, $seventh-color);}
+
+.section-solutions{
+    -webkit-transition: background-color .3s; /* Safari */
+    transition: background-color .3s;
+    .one-default{
+        background: transparent;
+    }
+}
+
 .section-services{
-    margin-bottom: 60px !important;
+    padding-bottom: 60px !important;
     h1{
      font-size:  1.15em;
      font-weight: 500;   
@@ -1458,6 +1476,7 @@ a:hover{
     #hex-5{background: $fifth-color;}
     #hex-6{background: $sixth-color;}
     #hex-7{background: $fourth-color;}
+
 }
 
 

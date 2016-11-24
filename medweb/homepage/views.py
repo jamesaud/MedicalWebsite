@@ -1,23 +1,24 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
-
+from medweb.homepage.forms import PersonForm, EvaluationForm
+from medweb.homepage.models import Person
 from config.settings.secrets import HOME_PASSWORD
 
-from medweb.homepage.models import Person
+from medweb.homepage.models import Person, Evaluation
 
 import json
 
 
 def index(request):
-    if HOME_PASSWORD == request.COOKIES.get('password'):
+    if HOME_PASSWORD == request.session.get('password'):
         return render(request, 'pages/home.html', context={})
 
     elif request.method == "POST":
         if request.POST.get('password') == HOME_PASSWORD:
-            response = render(request, 'pages/home.html', context={})
-            response.set_cookie('password', request.POST.get('password'))
-            return response
+            request.session['password'] = request.POST.get('password')
+            return render(request, 'pages/home.html', context={})
+
 
         else:
             message = "Password Was Incorrect. Please Try Again."
@@ -42,19 +43,34 @@ def compare(request):
 
 def create(request):
     if request.method == 'POST':
-        post_text = request.POST.get('form')
-        response_data = {}
-        print(post_text)
-        dict_json = json.loads(post_text)
-        print(dict_json)
-        #person = Person(first_name="test", last_name="test")
-       # person.save()
+        post = request.POST.copy() # Copying makes the dict Mutable
+        response_data = {'errors': None}
 
-        response_data['result'] = 'Create post successful!'
-        #response_data['first_name'] = person.first_name
+        pform = PersonForm(post)
+        eform = EvaluationForm(post)
 
+        # Save the person object based on the form fields
+        if pform.is_valid():
+            person = Person(**pform.cleaned_data) # Unpack cleaned data dictionary into Person
+            person.save()
+            request.session['person_id'] = person.id  # Set a cookie with the associated person_id
+
+        person_id = request.session.get('person_id') # Must come after cookie is set
+        post['person'] = person_id  # Add the person_id to post data so eform is valid
+
+        if eform.is_valid() and person_id:
+            # Prevent empty form fields from overwriting existing evaluation object fields
+            valid_clean_fields = {key: value for key, value in eform.cleaned_data.items() if value}
+
+            evaluation = Evaluation.objects.get_or_create(pk=person_id,\
+                                                          defaults={'person': Person.objects.get(pk=person_id)})
+            for field, value in valid_clean_fields.items():
+                setattr(evaluation, field, value)
+
+            evaluation.save()
 
         return JsonResponse(response_data)
+
     else:
         response_data = {"nothing to see": "this isn't happening"}
         return JsonResponse(response_data)

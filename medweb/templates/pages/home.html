@@ -1550,7 +1550,7 @@ guaranteed services. </h4>
     </div>
   </div>
 
-
+<div class='section-solutions'>
     <!-- HEALTHCARE MADE SIMPLE -->
     <div class="one-page-inner one-default">
 
@@ -2304,7 +2304,7 @@ patients within the next three to five years.</p></h5>
 
           </div><!--- /.modal -->
       </div>
-
+</div><!-- /section-solutions -->
 
  <!--=== Content Part ===-->
 
@@ -2404,9 +2404,9 @@ Check us out at the <a href="{% url 'about' %}" class='col-4' target='_blank'>ab
                                             <div class="col-md-8 col-centered">
 
                                                 <h5 class='quote'>
-                                                    Like most consumers, we do not buy written testimonials; we believe you should hear directly from our clients.<br>
+                                                   <span class='margin-right-20'></span> We do not believe written testimonials; we believe you should hear directly from our clients.
                                                      After a live demo of our system, we arrange for you to you speak with a Doctor, Practice Manager, or Administrator using our system.  
-                                                    We want you to be 100% confident and comfortable working with us. 
+                                                    We want you to be 100% confident and comfortable working with us. <span class='margin-right-20'></span>
 
                                                     </h5>
                                                 <small ><strong>Synergy+ Consultant Team</strong></small>
@@ -5651,6 +5651,28 @@ var options = {
 $(".circle-text").popover(options);
 $(".popover-resize").popover(options);
 
+</script>
+
+<script>
+
+function changeBackgroundColor(start, target, class_to_add){
+    $(start).hover(function() {
+        //Remove the other class that is there before adding a new one
+        for (i = 0; i < 8; i++){
+            $(target).removeClass('ss-bg-col-' + i.toString());
+        };
+        $(target).addClass(class_to_add);
+      
+    });
+}
+var target = '.section-solutions';
+changeBackgroundColor('#hex-1', target, 'ss-bg-col-1');
+changeBackgroundColor('#hex-2', target, 'ss-bg-col-2');
+changeBackgroundColor('#hex-3', target, 'ss-bg-col-3');
+changeBackgroundColor('#hex-4', target, 'ss-bg-col-7');
+changeBackgroundColor('#hex-5', target, 'ss-bg-col-5');
+changeBackgroundColor('#hex-6', target, 'ss-bg-col-6');
+changeBackgroundColor('#hex-7', target, 'ss-bg-col-4');
 </script>
 
 
