@@ -83,6 +83,10 @@ hr {
     position: absolute; }
     #nav-call a:hover {
       color: #D43A43 !important; }
+  #nav-call .popover h5 {
+    margin: 0;
+    padding-top: 0 !important;
+    padding-bottom: 0; }
   #nav-call span.tiny {
     width: 100%;
     font-size: 12px !important;

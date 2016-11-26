@@ -2,7 +2,7 @@
 from __future__ import unicode_literals, absolute_import
 from django.db import models
 from django.core.validators import RegexValidator
-
+from django.utils import timezone
 
 # Phone_Regex is from:
 # http://stackoverflow.com/questions/19130942/whats-the-best-way-to-store-phone-number-in-django-models
@@ -22,8 +22,12 @@ class Person(models.Model):
     home_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True, null=True)  # validators should be a list
     office_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True, null=True)
 
+    contacted = models.BooleanField(default=False)
+    created = models.DateTimeField(auto_now_add=True,)
+    modified = models.DateTimeField(auto_now=True,)
+
     def __str__(self):
-        return self.first_name + self.last_name
+        return self.first_name + " " + self.last_name
 
 
 class Evaluation(models.Model):
@@ -70,6 +74,9 @@ class Evaluation(models.Model):
 
     referral = models.CharField(max_length=255, blank=True)
     monthly_newsletter =  models.BooleanField(default=False)
+
+    created = models.DateTimeField(auto_now_add=True,)
+    modified = models.DateTimeField(auto_now=True,)
 
     def __str__(self):
         return 'Evaluation of: ' + str(self.person)

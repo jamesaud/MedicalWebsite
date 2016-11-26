@@ -120,7 +120,8 @@
             <li><a href="{% url 'invest' %}">Investors</a></li>
 
 			<li><a href="#" data-toggle="modal" data-target="#modal-contact">Contact Us</a></li>
-            <li id='nav-call'><a  href="#">1-800-xxx-xxxx<span class='tiny'>FREE EVALUATION</span><span class='show-mobile'>&nbsp;&nbsp;FREE EVALUATION </span></a></li>
+            <li id='nav-call'><a  href="#" onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover"  data-html='true'
+                                                                         data-content= "<h5>Receive a practice evaluation with financials, personnel costs, and liability analysis all for free!</h5>">1-800-xxx-xxxx<span class='tiny'>FREE EVALUATION</span><span class='show-mobile'>&nbsp;&nbsp;FREE EVALUATION </span></a></li>
 		</ul>
 	</nav> <!-- .cd-primary-nav -->
 </header> <!-- .cd-auto-hide-header -->
@@ -149,7 +150,6 @@
 
                       <div class="modal-body container">
 
-
                                     <div class='tab-pane-content tab-content'>
                                         <div id='contact-tab-0' class='tab-pane in active'>
 
@@ -164,7 +164,7 @@
                                             <hr>
 
                                             <div class='bt-form__wrapper'>
-                                                <form id='contact-form-0' class="bt-flabels js-flabels contact-form" action="create/" method="POST"  data-parsley-validate data-parsley-errors-messages-disabled  >
+                                                <form id='contact-form-0' class="bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST"  data-parsley-validate data-parsley-errors-messages-disabled  >
 
                                                      {% csrf_token %}
                                                     <input type="hidden" name="form_id" value="contact-form-0">
@@ -216,14 +216,14 @@
                                                               <div class='bt-flabels__wrapper required col-md-9'>
                                                                       <div class='control-label'></div>
                                                                       <label>Group Name</label>
-                                                                      <input type="text" name="group"  placeholder="Group Name" data-parsley-requiredd>
+                                                                      <input type="text" name="group_name"  placeholder="Group Name" data-parsley-requiredd>
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
 
                                                               <div class='col-md-3'>
                                                                   <div class="required">
                                                                      <div class='control-label'>
-                                                                      <select  > <!-- required='' -->
+                                                                      <select required=''>
                                                                         <option value=''>Group Type</option>
                                                                         <option value='type2'>Val 2</option>
                                                                         <option value='type3'>Val 3</option>
@@ -260,7 +260,7 @@
                                                         <div class='row form-group'>
                                                                          <div class='col-md-12 bt-flabels__wrapper'>
                                                                              <label>Best time to call</label>
-                                                                            <input type='text' class='datetimepicker3' name="time" placeholder="Best time to call" autocomplete="off"/>
+                                                                            <input type='text' class='datetimepicker3' name="call_time" placeholder="Best time to call" autocomplete="off"/>
                                                                         </div>
                                                         </div>
 
@@ -298,7 +298,7 @@
                                              </div>
 
                                            <div class='bt-form__wrapper'>
-                                                <form id='contact-form-1' class=" bt-flabels js-flabels contact-form" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                <form id='contact-form-1' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
                                                     <div class='row'>
                                                         <div class='col-md-10 col-centered'>
                                                             <button type="submit" class="btn btn-primary inquire-close-button" >Continue</button>
@@ -323,7 +323,7 @@
                                             <hr>
 
                                             <div class='bt-form__wrapper'>
-                                                <form id='contact-form-2' class=" bt-flabels js-flabels contact-form" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                <form id='contact-form-2' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
                                                  
                                                     <input type="hidden" name="form_id" value="contact-form-0">   
 
@@ -337,8 +337,8 @@
                                                               <div class="bt-flabels__wrapper col-md-12 required">
 
                                                                   <div class='control-label'></div>
-                                                                      <select>
-                                                                        <option value='type1'>Current System</option>
+                                                                      <select name=current_system>
+                                                                        <option value=''>Current System</option>
                                                                         <option value='type2'>Val 2</option>
                                                                         <option value='type3'>Val 3</option>
                                                                         <option value='type4'>Val 4</option>
@@ -354,13 +354,13 @@
                                                           <div class='row form-group'>
                                                                   <div class="bt-flabels__wrapper col-md-6">
                                                                       <label># EHR support vendors</label>
-                                                                      <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="vendors" placeholder="# EHR support vendors" autocomplete="off"/>
+                                                                      <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_support_vendors" placeholder="# EHR support vendors" autocomplete="off"/>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
                                                                     <div class="bt-flabels__wrapper col-md-6">
                                                                       <label># EHR support personnel</label>
-                                                                      <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="personnel" placeholder="# EHR support personnel" autocomplete="off"/>
+                                                                      <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_support_personnel" placeholder="# EHR support personnel" autocomplete="off"/>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
                                                           </div>
@@ -411,7 +411,7 @@
                                             <hr>
 
                                             <div class='bt-form__wrapper'>
-                                                <form id='contact-form-3' class=" bt-flabels js-flabels contact-form" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                <form id='contact-form-3' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
                                                     <input type="hidden" name="form_id" value="contact-form-3">   
 
 
@@ -576,7 +576,7 @@
                                             <hr>
 
                                             <div class='bt-form__wrapper'>
-                                                <form id='contact-form-4' class=" bt-flabels js-flabels contact-form" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                <form id='contact-form-4' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
                                                      <input type="hidden" name="form_id" value="contact-form-4">   
 
 
@@ -615,7 +615,7 @@
                                                                 <div class="bt-flabels__wrapper required col-md-12">
                                                                      <div class='control-label'></div>
                                                                       <label>Total Revenue in 2015</label>
-                                                                      <input type="text"  name="total_revenue" placeholder="Total Revenue in 2015" autocomplete="off"/>
+                                                                      <input type="number"  name="total_revenue" placeholder="Total Revenue in 2015" autocomplete="off"/>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                                 </div>
 
@@ -658,7 +658,7 @@
 
                                                     <div class='row form-group'>
                                                         <div class="bt-flabels__wrapper checkbox-wrapper col-md-12">
-                                                           <input type="checkbox" value="">Yes
+                                                           <input type="checkbox" name='monthly_newsletter' value="">Yes
                                                         </div>
                                                     </div>
 
@@ -1030,6 +1030,12 @@ function submit_form(form){
 }
 
 submit_form('#contact-form-0');
+submit_form('#contact-form-1');
+submit_form('#contact-form-2');
+submit_form('#contact-form-3');
+submit_form('#contact-form-4');
+
+
 
 //CRSF FIX
     $(function() {

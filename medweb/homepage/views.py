@@ -1,13 +1,12 @@
+import json
+
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
 from medweb.homepage.forms import PersonForm, EvaluationForm
 from medweb.homepage.models import Person
-from config.settings.secrets import HOME_PASSWORD
-
+from config.settings.common import HOME_PASSWORD
 from medweb.homepage.models import Person, Evaluation
-
-import json
 
 
 def index(request):
@@ -44,7 +43,7 @@ def compare(request):
 def create(request):
     if request.method == 'POST':
         post = request.POST.copy() # Copying makes the dict Mutable
-        response_data = {'errors': None}
+        response_data = {'status': "error"}
 
         pform = PersonForm(post)
         eform = EvaluationForm(post)
@@ -54,23 +53,31 @@ def create(request):
             person = Person(**pform.cleaned_data) # Unpack cleaned data dictionary into Person
             person.save()
             request.session['person_id'] = person.id  # Set a cookie with the associated person_id
+            response_data = {'status': "success"}
 
         person_id = request.session.get('person_id') # Must come after cookie is set
         post['person'] = person_id  # Add the person_id to post data so eform is valid
 
+        print(post)
+        print("FORM VALID", eform.is_valid())
+        print(eform)
+        # Update current person OR create new one
         if eform.is_valid() and person_id:
             # Prevent empty form fields from overwriting existing evaluation object fields
             valid_clean_fields = {key: value for key, value in eform.cleaned_data.items() if value}
 
-            evaluation = Evaluation.objects.get_or_create(pk=person_id,\
-                                                          defaults={'person': Person.objects.get(pk=person_id)})
+            # Check Django documentation on get_or_create - it returns a tuple
+            evaluation, create = Evaluation.objects.get_or_create(pk=person_id,\
+                                                 defaults={'person': Person.objects.get(pk=person_id)})
             for field, value in valid_clean_fields.items():
                 setattr(evaluation, field, value)
 
             evaluation.save()
+            print("EVALUATION SAVEd", evaluation, evaluation.call_time)
+            response_data = {'status': "success"}
 
         return JsonResponse(response_data)
 
     else:
-        response_data = {"nothing to see": "this isn't happening"}
+        response_data = {"status": "error"}
         return JsonResponse(response_data)

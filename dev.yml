@@ -23,6 +23,9 @@ services:
     environment:
       - POSTGRES_USER=medweb
       - USE_DOCKER=yes
+      - REMOTE_ADDRESS=192.168.99.1
+      # REMOTE_ADDRESS  is use django debug toolbar, check
+      # http://stackoverflow.com/questions/10517765/django-debug-toolbar-not-showing-up
     volumes:
       - .:/app
     ports:

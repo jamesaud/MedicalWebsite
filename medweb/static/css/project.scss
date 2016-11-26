@@ -134,6 +134,13 @@ hr{
             color: $third-color !important;
             }
     }
+    .popover{
+        h5{
+        margin: 0;
+        padding-top: 0 !important;
+        padding-bottom: 0;
+        }
+    }
      span.tiny{
          width: 100%;
         font-size: 12px !important;
