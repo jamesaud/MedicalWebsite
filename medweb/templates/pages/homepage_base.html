@@ -1,4 +1,4 @@
-{% load staticfiles i18n %}
+ {% load staticfiles i18n %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -78,6 +78,17 @@
 
     {% block more-css %}{% endblock more-css %}
 
+        <!-- GOOGLE ANALYTICS -->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-88013279-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+
     </head>
 
 <!DOCTYPE html>
@@ -100,7 +111,7 @@
    <div id='cd-nav-text'><!--<h5>Doctors &amp; Staff Save So Much Time, Patient Care Is Optimized <br>Net Income Rises As Non-clinical Issues Become Non-Issues <br>Doctors Practice Medicine Their Way, Patients Get Healthier</h5>-->
    <h5>
    This preliminary site is for investors &amp; funding<br>
-   The content is subject to change for sales 
+   The content is subject to change for sales
    </div>
 
 	<nav class="cd-primary-nav">
@@ -324,8 +335,8 @@
 
                                             <div class='bt-form__wrapper'>
                                                 <form id='contact-form-2' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
-                                                 
-                                                    <input type="hidden" name="form_id" value="contact-form-0">   
+
+                                                    <input type="hidden" name="form_id" value="contact-form-0">
 
 
                                                     <div class='form-title'>
@@ -412,7 +423,7 @@
 
                                             <div class='bt-form__wrapper'>
                                                 <form id='contact-form-3' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
-                                                    <input type="hidden" name="form_id" value="contact-form-3">   
+                                                    <input type="hidden" name="form_id" value="contact-form-3">
 
 
                                                     <div class='form-title'>
@@ -577,7 +588,7 @@
 
                                             <div class='bt-form__wrapper'>
                                                 <form id='contact-form-4' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
-                                                     <input type="hidden" name="form_id" value="contact-form-4">   
+                                                     <input type="hidden" name="form_id" value="contact-form-4">
 
 
                                                     <div class='form-title'>
