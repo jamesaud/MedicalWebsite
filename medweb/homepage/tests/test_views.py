@@ -25,7 +25,7 @@ class TestCreate(BaseHomepageTestCase):
     def test_create_view(self):
         url = reverse('create')
         person_post = {'first_name':'test', 'last_name': 'test', 'email':'test@test.com', 'position':'test'}
-        evaluation_post = {'message':'hello', 'ehr_likes': 'test'}
+        evaluation_post = {'message':'hello', 'ehr_likes': 'test', 'referral': ('type1', 'type2'),}
 
         # Test Get Request as error
         response = self.client.get(url)
@@ -47,6 +47,8 @@ class TestCreate(BaseHomepageTestCase):
         e = Evaluation.objects.get(message = evaluation_post['message'])
         ep = Evaluation.objects.get(person = p)
         self.assertEqual(e.message, evaluation_post['message'])
+        print(e.referral)
+        self.assertEqual('type1, type2', e.referral)
         self.assertEqual(e.person, ep.person)
 
         self.assertGoodView(create)

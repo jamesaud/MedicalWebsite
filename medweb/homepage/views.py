@@ -45,6 +45,10 @@ def create(request):
         post = request.POST.copy() # Copying makes the dict Mutable
         response_data = {'status': "error"}
 
+        print(request.POST.getlist('referral'))
+        if request.POST.getlist('referral'):
+            post['referral'] = ", ".join(request.POST.getlist('referral'))
+
         pform = PersonForm(post)
         eform = EvaluationForm(post)
 
@@ -58,9 +62,6 @@ def create(request):
         person_id = request.session.get('person_id') # Must come after cookie is set
         post['person'] = person_id  # Add the person_id to post data so eform is valid
 
-        print(post)
-        print("FORM VALID", eform.is_valid())
-        print(eform)
         # Update current person OR create new one
         if eform.is_valid() and person_id:
             # Prevent empty form fields from overwriting existing evaluation object fields

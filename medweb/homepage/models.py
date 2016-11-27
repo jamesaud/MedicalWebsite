@@ -23,6 +23,7 @@ class Person(models.Model):
     office_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True, null=True)
 
     contacted = models.BooleanField(default=False)
+    notes = models.TextField(blank=True)
     created = models.DateTimeField(auto_now_add=True,)
     modified = models.DateTimeField(auto_now=True,)
 
