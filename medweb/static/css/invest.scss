@@ -1,0 +1,125 @@
+@import 'variables';
+
+.rev_slider{
+    ul{
+        padding: 0;
+    }
+}
+
+.cd-main-content{
+    z-index: 5 ;
+    background: white;
+    position: relative;
+}
+
+ 
+.section-investors{
+        margin: 0 auto;
+        background: transparent !important; // For some reason section-investors wants to have a white background by 
+        h1{
+            padding-top: 0;
+            color:black;
+            margin: 0;
+            text-align: left;
+        }
+
+
+        h2{
+            color: #333 !important;
+        }
+
+          a:link{
+                color: #0000EE;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            a:visited{
+                color: #551A8B;   
+            }
+        .investors-message{
+            margin-bottom: 30px;
+        }
+        
+      }
+
+
+.section-comparison{
+    .comparison-header{
+        padding-bottom: 50px;
+    }
+    .main-points-title{
+        color:black !important;
+    }
+
+    .hover-effect{
+        &:hover{ 
+            color: $primary-color;
+        }
+    }
+    
+
+    .panel{
+        .panel-body{
+            padding-top: 40px !important;}
+
+        .tooltip{
+            max-width: 150px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        h4{
+            color: #222;
+           font-weight: bold;
+            span{color:#333;}
+            text-decoration: underline;
+        }
+        .btn-u{
+            background-color: $primary-color;
+        }
+    }
+}
+
+.section-letter{
+    background: #333 !important;
+    .main-points{
+        text-align: center;
+        margin-bottom: 20px;
+        .main-points-title{ 
+            margin-bottom: 20px;
+            }
+    }
+
+    .letter{
+        padding-bottom: 40px;
+        padding-top: 10px;
+        margin: 0 auto;
+        background: white;
+        max-width: 1000px;
+  
+        span{
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.invisible{
+    color: transparent;
+}
+
+ .invested{
+    img{
+        height: 90px;
+        display: inline-block;
+        width: auto;
+    }
+    h5{
+        font-weight: bold;
+    }
+    p{
+        display: inline;
+    }
+ }

@@ -1,5 +1,37 @@
 @import 'variables';
 
+.bg-blue {
+	background: $primary-color;
+}
+
+.main-points{
+
+ padding-bottom: 0;
+ padding-top: 30px;
+    
+ h1{
+     padding-bottom: 10px;
+     text-align: center;
+     color: black !important; 
+    }
+    
+  .main-points-title{
+         font-size: $font-size-one;
+    }
+    
+ h3{
+    font-weight: bold;
+    }
+    
+ .main-points-block{
+   }
+    
+    .main-points-header{
+        color: black !important;
+    }
+
+}
+
 //Make HR a visual tag for html5
 
 hr{
@@ -25,13 +57,11 @@ hr{
     }
 }
 
-
-
 #cd-nav-text{
     position: absolute;
     left: 28%;
     
-    margin-top: 8px;
+    margin-top: 1.4%;
     h5{
         font-size: 12px;
         color: black !important;
@@ -95,7 +125,7 @@ hr{
 
  
 #nav-call{
-    width: 150px;
+    width: 180px;
     a{
         top: 23px;
         color: $third-color;
@@ -104,10 +134,18 @@ hr{
             color: $third-color !important;
             }
     }
+    .popover{
+        h5{
+        margin: 0;
+        padding-top: 0 !important;
+        padding-bottom: 0;
+        }
+    }
      span.tiny{
+         width: 100%;
         font-size: 12px !important;
         position: absolute;
-        right: 12px;
+        right: -11px;
         top: 20px;
     }
     
@@ -442,12 +480,12 @@ hr.no-margin{
     }
     
    .modal-dialog, .modal-body, .modal-header{
-        max-width: 520px;
+        max-width: 550px;
         }
     
     .modal-body, .modal-header{
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     
     .modal-footer{
@@ -462,8 +500,6 @@ hr.no-margin{
        text-align: left;
        margin-bottom: 0px;
        padding-top: 18px;
-       
-
        
        .m-contact-title{
             margin-bottom: 10px;
@@ -519,3 +555,195 @@ hr.no-top{
 }
 
 
+.col-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+.col-1 {
+    color: $primary-color;
+}
+
+.col-2 {
+    color: $second-color;
+}
+
+.col-3 {
+    color: $third-color;
+}
+
+
+.col-4 {
+    color: $fourth-color;
+}
+
+
+.col-5 {
+    color: $fifth-color;
+}
+
+.col-6 {
+    color: $sixth-color;
+}
+
+.col-7 {
+    color: $seventh-color;
+}
+
+.col-8 {
+    color: $eighth-color;
+}
+
+.col-9 {
+    color: $ninth-color;
+}
+
+.col-10 {
+    color: $tenth-color;
+}
+
+.bg-col-1 {
+    background: $primary-color;
+}
+
+.bg-col-2 {
+    background: $second-color;
+}
+
+.bg-col-3 {
+    background: $third-color;
+}
+
+
+.bg-col-4 {
+    background: $fourth-color;
+}
+
+
+.bg-col-5 {
+    background: $fifth-color;
+}
+
+.bg-col-6 {
+    background: $sixth-color;
+}
+
+.bg-col-7 {
+    background: $seventh-color;
+}
+
+
+
+
+
+    .inquire-finish{
+        .inquire-title{
+            padding-top: 15%;
+        }
+        .inquire-close-button{
+            width: 100%;
+            margin-top: 10%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .inquire-title{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        h4{
+            //color: $primary-color;
+        }
+        h2{
+            color:black;
+        }
+    }    
+
+//Styling forms
+    form{
+        .form-title{
+            border-bottom: 2px solid $primary-color;
+            display: inline-block;
+            min-width: 100px;
+            padding-bottom: 0px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            h5{
+                color: $primary-color !important;
+                display: inline;
+                font-size: 14px;
+            }
+        }
+        .form-title.no-top{
+            margin-top: 0;
+        }
+
+        .form-title:first-child{
+            margin-top: 0px;
+        }
+
+        .form-statement{
+            font-size: 15px;
+
+            input{
+                width: 44px !important;
+            }
+            select{
+                width: 140px;
+                bottom: 1px;
+            }
+        }
+
+        #form-are-you-trying{
+            min-height: 90px;
+        }
+
+        #form-bottom{
+            margin-top: 15px;
+        }
+
+        .form-button{
+        margin-top: 28px;
+    }
+
+
+    .contact-btn{
+        font-size: $font-size-four;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .next-step, .prev-step{
+         font-size: $font-size-six;
+         width: 120px;
+    }
+    .next-step{
+        float: right;
+    }
+    .prev-step{
+        float: left;
+        background-color: transparent;
+        color: $btn-color;
+        border: 1px solid $btn-color;
+
+        &:hover{
+            color: white;
+            background-color: $btn-color;
+            transition: all .1s;
+        }
+    }
+
+
+
+    }
+
+
+
+
+//Use to debug whitespace
+/*
+div, span, p, h1, h2, h3, h4, h5{
+    border: 1px solid black !important;
+}
+*/

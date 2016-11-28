@@ -1,0 +1,39 @@
+/* USER PROFILE PAGE */
+.card {
+  margin-top: 20px;
+  padding: 30px;
+  background-color: rgba(214, 224, 226, 0.2); }
+
+.card.hovercard {
+  margin-top: 0px;
+  position: relative;
+  padding-top: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  background-color: white; }
+
+.card.hovercard .card-background {
+  min-height: 80px; }
+
+.card-background img {
+  -webkit-filter: blur(25px);
+  -moz-filter: blur(25px);
+  -o-filter: blur(25px);
+  -ms-filter: blur(25px);
+  filter: blur(25px);
+  margin-left: -100px;
+  margin-top: -200px;
+  min-width: 130%; }
+
+.card.hovercard .bottom {
+  padding: 0 20px;
+  margin-bottom: 17px; }
+
+.btn-pref .btn {
+  -webkit-border-radius: 0 !important; }
+
+.well {
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=circle-tabs.css.map */

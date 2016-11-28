@@ -1,7 +1,8 @@
+@charset "utf-8";
 @import 'variables';
 
 p {
-    font-size: $font-size-four !important;
+    font-size: $font-size-four;
 }
 
 a:hover{
@@ -320,7 +321,7 @@ a:hover{
     text-align: center;
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
-    
+
     .hi-intro{
         text-align: center;
         padding-top: 13px;
@@ -328,13 +329,14 @@ a:hover{
         
         .main-points{
             h2{color:black;}
-            h3{font-weight: 300;}
+            h3{font-weight: $weight-light;}
         }
     }
     
     .hi-intro-2{
         @extend .hi-intro;
         margin-bottom: 0;
+        margin-top: 30px;
         h2, h3{
             color: black !important;
         }
@@ -380,7 +382,7 @@ a:hover{
              font-weight: bold;
          }
          button{
-             margin-bottom: 4px;
+             margin-bottom: 5px;
              margin-right: 2px;
          }
          input{
@@ -439,7 +441,7 @@ a:hover{
         
         h4{
             font-size:  $font-size-five;
-            font-weight: 300;
+            font-weight: $weight-light;
         }
         
         .main-points-block{
@@ -479,8 +481,8 @@ a:hover{
     
     .hi-comp{
 
-        padding-bottom: 45px;
-        padding-top: 45px;
+        padding-bottom: 40px;
+        padding-top: 43px;
         .main-points{
             padding-bottom: 35px !important;
             text-align: center;
@@ -592,8 +594,8 @@ a:hover{
     
     
     .section-highlights-block-2{
-        padding-top: 60px ;
-        margin-bottom: 55px !important;
+        padding-top: 45px ;
+        margin-bottom: 65px !important;
         h2{
             color: black !important;
             padding-bottom: 0px;
@@ -706,7 +708,6 @@ a:hover{
         margin-top: 60px ;
         margin-bottom: 35px;
         .main-points{
-            
             padding-top: 0px;
             .main-points-title{
                 vertical-align: center;
@@ -733,22 +734,7 @@ a:hover{
         $btn-color: $third-color;
         $btn-color-2: $primary-color;
         
-        .si-message-btn-1{
-            border: $btn-color 1.4px solid;
-            @include transparentBackgroundColor(.75, $btn-color, !important);
-            &:hover{
-                @include transparentBackgroundColor(.85, $btn-color, !important);
-            }
-        }
-        .si-message-btn-2{
-            border: $btn-color-2 1.4px solid;
-            @include transparentBackgroundColor(.8, $btn-color-2, !important);
-            &:hover{
-                @include transparentBackgroundColor(.9, $btn-color-2, !important);
-            }
-        }
-        
-        .si-message-btn{
+        %si-message-btn{
             text-align: center;
             color: white;
             padding-top: 5px;
@@ -780,13 +766,30 @@ a:hover{
                 display: block;
                 color: white !important;
                  font-weight: bold;
-                }
-    
+                 text-decoration: underline;
+
+                 &:hover{
+                     color: #333 !important;
+                 }
             }
-            article{
+    
+        }
+
+        .si-message-btn-1{
+            @extend %si-message-btn;
+            border: $btn-color 1.4px solid;
+            @include transparentBackgroundColor(.75, $btn-color, !important);
+        }
+        .si-message-btn-2{
+            @extend %si-message-btn;
+            border: $btn-color-2 1.4px solid;
+            @include transparentBackgroundColor(.8, $btn-color-2, !important); 
+        }
+
+        //For readmore.js
+        article{
                 max-height: 89px;
             }
-        
     }
     
     .si-info{
@@ -833,23 +836,94 @@ a:hover{
     }
 }
 
+
+
 .section-why-us{
-      
-    .why-novo{
+    padding-top: 0 !important;
+
+    .why-title-wrapper{
+        background: #333 !important;
+    }
+    .why-title{
+        padding-top:  50px;
+        padding-bottom: 140px;
+        margin-bottom: 220px;
+
+        h1.main-points-title{
+            color: white  !important;
+            font-weight: bold;
+            }
+        h2{color:#fff;}
+    }
+    .white-box{
+        position: absolute;
+        top: 80px;
         text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        @include transparentBackgroundColor(.85, white);  
+         -webkit-box-shadow: 0px 4px 12px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 12px -2px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 12px -2px rgba(0,0,0,0.75);
+        padding-top: 7%;
+        padding-bottom: 5%;
+        padding-right: 7%;
+        padding-left: 7%;
+        margin: auto 0;
+        margin-right: 5%;
+        margin-left: 5%;
+        h4{
+            color: #333;
+            margin-bottom: 0;
+        }
+        h5{
+            font-weight: $weight-light;
+        }
+        i{
+            margin-bottom: 3px;
+        }
+    }
+
+    @media screen and (max-width: 1100px){
+        .white-box{
+            position: relative;
+            top: 20px;
+        }
+        .why-title{
+            margin-bottom: 0px;
+            padding-bottom: 40px;
+        }
+    }
+
+
+    .why-novo{
+        //background: #333;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 40px;
         h2{color: black;}
         a{
             color: $third-color;
         }
     }
+
+    .why-graph{
+        padding-bottom: 100px !important;
+        text-align: center;
+        h2{color: black;}
+        .graph{
+            margin-top: 20px;
+        }
+    }
     
     .why-testimonials{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: #333 !important;
+
         .headline-center{
             h2{
-                color:black;
-                    &:after{background: $primary-color;}
+                margin-bottom: 30px;
+                color:white;
+                &:after{background: $primary-color;}
             }
         }
         .testimonials-info{
@@ -857,10 +931,48 @@ a:hover{
                  border-bottom: solid 3px $primary-color;
             }
         }
+
+
+         .testimonials{
+                .item blockquote {
+                    border-left: none;
+                    margin: 0;
+                
+                    & .quote{
+                        color: white !important;
+                    }
+
+                  & small{
+                      color: $second-color;
+                  }
+
+                  & .quote:before {
+                    content: "\f10d";
+                    font-family: 'Fontawesome';
+                    float: left;
+                    left: 10px;
+                    font-size: 20px;
+                    position: absolute;
+                    color: $primary-color;
+                }
+
+                 & .quote:after{
+                      content: "\f10e";
+                    font-family: 'Fontawesome';
+                    float: left;
+                    right: 10px;
+                    font-size: 20px;
+                    position: absolute;
+                    color: $primary-color;
+                 }
+            } 
+        }
     }
-    
-    
+
+   
+
 }
+
 
 .section-faq{
     //Background set as in-style background, to use Django static image location
@@ -884,6 +996,11 @@ a:hover{
             }
         }
     }
+    
+    .nav-tabs{
+        >li >a{ font-size: $font-size-four;}
+    }
+    
     h1{
         color: #333 !important;
     }
@@ -949,45 +1066,11 @@ a:hover{
         
         .img-responsive{
             height: 130px;
-            width: 200px;
         }
     }
     
             
-    
-    .section-investors{
-        margin: 0 auto;
-        background: transparent !important; // For some reason section-investors wants to have a white background by default
-        h1{
-            padding-top: 0;
-            color:black;
-            margin: 0;
-            text-align: left;
-        }
-
-
-        h2{
-            color: #333 !important;
-        }
-
-          a:link{
-                color: #0000EE;
-            }
-            a:hover{
-                color:#f60; 
-                text-decoration: none;
-            }
-            a:visited{
-                color: #551A8B;   
-            }
-        .investors-message{
-            margin-bottom: 30px;
-        }
-        
-        .investors-sales{}
-
-      }
-}
+   }
 
 .section-benefits{
     // Prevents awkward resizing and text-wrapping at some widths
@@ -1061,16 +1144,19 @@ a:hover{
     margin: 0 auto;
     max-width: $max-width;
     
-    @media (min-width: 992px) {
-        .cd-slider-wrapper{
-            max-height: 92vh;
-        }
-    }
-    
+
     
     .cd-slider-wrapper{
         padding-bottom: 0;
+
     }
+    
+    @media (min-width: 992px) {
+        .cd-slider-wrapper{
+            max-height: 900px;
+        }
+    }
+    
     
     .cd-slider-navigation{
         z-index: 1;
@@ -1108,20 +1194,89 @@ a:hover{
 }
 
 .section-plans{
-    background: #3E4747 !important;
-    text-align: center;
-    
-    h4{
-        color: black !important;
+    background: #3E4747 !important; 
+    h4{color: white !important;}
+    .plans-btn-wrapper{
+                margin-top: 32px !important;
+    }
+
+  .plans-intro{
+         text-align: center;
+        padding-top: 20px;
+        padding-bottom: 0px !important;
+        
+        .main-points{
+            h2{color: #eee;}
+            h3{font-weight: $weight-light;}
+            h4{
+                color: white !important;
+            }
+        }
+        padding-bottom: 50px;
+        .btn-color-1{
+            @include color_btn($second-color);
+        }
+        .btn-color-2{
+            @include color_btn($third-color);
+        }
+        .btn-color-0{
+            margin-top: 2px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 18px;
+            padding-right: 18px;
+            
+            //outline: 1px solid $primary-color;
+            background: transparent;
+
+            color: $primary-color;  
+            
+            font-size: 23px;
+            span{
+                font-weight: bold;
+            }
+            &:hover{
+                background: $primary-color;
+                color: white;
+                transition: all .3s;
+            }
+        }
+    }
+  
+
+
+    .btn-color{
+        @include color_btn($eighth-color);
+        display: table;
+        margin: 0 auto;
+           padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 65px;
+        padding-right: 65px;
+        background-color: transparent;
+        h4{color: white !important;}
+    }
+
+    .pricing-menus-wrapper{
+        padding-bottom: 50px;
     }
     
-    a, a:visited{
-        color: white;
+
+    .popover{
+        z-index: 3;
+        width: 250px;
+        li, h5{
+            margin-bottom: 0px;
+            font-size: 14px !important;
+        }
+        h5{
+            margin-bottom: 0px !important;
+        }
     }
     
     .title{
-        margin-bottom: 50px;
-        
+        margin-bottom: 20px;
+        text-align: center;
         h2{
             color: white !important;
         }
@@ -1129,9 +1284,16 @@ a:hover{
             color: white !important;
         }
     }
+
+    .title-message{
+        h5{
+            color: white;
+        }
+        padding-bottom: 30px !important;
+    }
     
    
-    .color-top-0, .color-top-1, .color-top-2{
+    .color-top-0, .color-top-1, .color-top-2, .color-top-3, {
         height: 20px;
     }
     
@@ -1146,29 +1308,68 @@ a:hover{
     .color-top-2{
         background: $third-color;
     }
+
+    .color-top-3{
+        background: $fourth-color;
+    }
+
     
     .heading-sm{
         color: black !important;
         margin-bottom: 10px;
+        font-size: $font-size-three;
     }
-    
+
+
     .service-blocks {
-        padding-top: 0px;
-        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        max-width:  $max-width - 50px;
+        .service-blocks-header{
+            h2{
+                margin-bottom: 10px;
+            }
+            h2, h3, h4{
+                color: white !important;
+            }
+        }
         
     }
     .service-block{
+        h4{
+            color: #444 !important;
+        }
         margin: 0 auto;
-        margin-bottom: 30px;
-        max-width: 415px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        width: 100%;
+
+       ul{
+           li{
+            margin-bottom: 6px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+         }
+       }
+        
+        a, a:visited{
+            color: rgb(85, 85, 85);
+            text-decoration: none;
+        }
+
         .service-block-content{
+            padding-top: 5px;
             padding-left: 40px;
             padding-right: 40px;
         }
     }
     .service-block-default{
         padding: 0px;
+        margin-top: 30px;
     }
+
+
     ul{
         li{
             font-size: $font-size-four;
@@ -1180,11 +1381,80 @@ a:hover{
         font-size: $font-size-four;
         width: 100%;
     }
+
+    .message-block, .service-blocks-header{
+        i{
+            color: white !important;
+        }
+    }
+    .service-message{
+            h1,h2,h3,h4,h5,p{
+                color: white !important;
+            }
+
+            padding-top: 0px;
+    }
+
+    .message-block{
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        &:last-child{
+            margin-bottom: 60px;
+        }
+    }
+
+    .plans-notice{
+        font-family:  $font-fun;
+        border-top: none;
+        padding-top: 12px;
+        text-align: center;
+        p{
+            color: white !important;
+            font-size: $font-size-five;
+        }
+    }
+
+
+      /* GENERATE 3 CLASSES WITH DIFFERENT COLORS FOR THE PURCHASING MODAL */
+        @mixin service-block-color($class, $color){     
+            .#{$class}{
+                    li {
+                        a:hover{
+                            color: $color;
+                            }
+                        }
+                    }
+            }
+
+            @include service-block-color('service-block-color-4', $fourth-color);
+            @include service-block-color('service-block-color-3', $third-color);
+            @include service-block-color('service-block-color-2', $second-color);
+            @include service-block-color('service-block-color-1', $primary-color);
+
 }
 
 
+
+    $opacity: .15;
+    .ss-bg-col-1{ @include transparentBackgroundColor($opacity, $primary-color);}
+    .ss-bg-col-2{ @include transparentBackgroundColor($opacity, $second-color);}
+    .ss-bg-col-3{ @include transparentBackgroundColor($opacity, $third-color);}
+    .ss-bg-col-4{ @include transparentBackgroundColor($opacity, $fourth-color);}
+    .ss-bg-col-5{ @include transparentBackgroundColor($opacity, $fifth-color);}
+    .ss-bg-col-6{ @include transparentBackgroundColor($opacity, $sixth-color);}
+    .ss-bg-col-7{ @include transparentBackgroundColor($opacity, $seventh-color);}
+
+.section-solutions{
+    -webkit-transition: background-color .3s; /* Safari */
+    transition: background-color .3s;
+    .one-default{
+        background: transparent;
+    }
+}
+
 .section-services{
-    margin-bottom: 60px !important;
+    padding-bottom: 60px !important;
     h1{
      font-size:  1.15em;
      font-weight: 500;   
@@ -1206,6 +1476,7 @@ a:hover{
     #hex-5{background: $fifth-color;}
     #hex-6{background: $sixth-color;}
     #hex-7{background: $fourth-color;}
+
 }
 
 
@@ -1214,8 +1485,10 @@ a:hover{
         margin-bottom: 20px;
     }
     
-    h2{
-        color: black !important;
+    .demo-content{
+        h2{
+            color: black;
+        }
     }
     
     .btn-color{
@@ -1225,19 +1498,11 @@ a:hover{
     .demo-btn-wrapper{
         margin-top: 20px;
     }
+
+    span.color{
+        color: $primary-color;
+    }
 }
-
-
-
-.bg-blue {
-	background: $primary-color;
-}
-
-
-
-
-
-
 
 
 .nav-justified{
@@ -1250,78 +1515,6 @@ a:hover{
     }
 }
 
-
-.col-1 {
-    color: $primary-color;
-}
-
-.col-2 {
-    color: $second-color;
-}
-
-.col-3 {
-    color: $third-color;
-}
-
-
-.col-4 {
-    color: $fourth-color;
-}
-
-
-.col-5 {
-    color: $fifth-color;
-}
-
-.col-6 {
-    color: $sixth-color;
-}
-
-.col-7 {
-    color: $seventh-color;
-}
-
-.col-8 {
-    color: $eighth-color;
-}
-
-.col-9 {
-    color: $ninth-color;
-}
-
-.col-10 {
-    color: $tenth-color;
-}
-
-.bg-col-1 {
-    background: $primary-color;
-}
-
-.bg-col-2 {
-    background: $second-color;
-}
-
-.bg-col-3 {
-    background: $third-color;
-}
-
-
-.bg-col-4 {
-    background: $fourth-color;
-}
-
-
-.bg-col-5 {
-    background: $fifth-color;
-}
-
-.bg-col-6 {
-    background: $sixth-color;
-}
-
-.bg-col-7 {
-    background: $seventh-color;
-}
 
 
 
@@ -1398,7 +1591,7 @@ a:hover{
     @include generateTabClassColor(PHM, $third-color);
     @include generateTabClassColor(ADD, $seventh-color-2);
 
-    .tab-content{
+    .section-modal-solutions .tab-content{
         padding-left: 20px;
         padding-right: 10px;
         color: black;
@@ -1443,7 +1636,7 @@ a:hover{
     .timeline-v1{
         padding-top: 0px;
         padding-bottom: 0px;
-
+        margin-bottom: 0px;
         a{
             text-decoration: none;
             color: inherit !important;
@@ -1579,104 +1772,6 @@ a:hover{
 
 
 
-    .inquire-finish{
-        .inquire-title{
-            padding-top: 15%;
-        }
-        .inquire-close-button{
-            width: 100%;
-            margin-top: 10%;
-            margin-bottom: 20px;
-        }
-    }
-
-    .inquire-title{
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 0px;
-        h4{
-            //color: $primary-color;
-        }
-        h2{
-            color:black;
-        }
-    }    
-
-
-    form{
-        .form-title{
-            border-bottom: 2px solid $primary-color;
-            display: inline-block;
-            min-width: 100px;
-            padding-bottom: 0px;
-            margin-bottom: 10px;
-            margin-top: 15px;
-            h5{
-                color: $primary-color !important;
-                display: inline;
-                font-size: 14px;
-            }
-        }
-
-        .form-title:first-child{
-            margin-top: 0px;
-        }
-
-        .form-statement{
-            font-size: 15px;
-
-            input{
-                width: 44px !important;
-            }
-            select{
-                width: 140px;
-                bottom: 1px;
-            }
-        }
-
-        #form-are-you-trying{
-            min-height: 90px;
-        }
-
-        #form-bottom{
-            margin-top: 15px;
-        }
-
-        .form-button{
-        margin-top: 28px;
-    }
-
-
-    .contact-btn{
-        font-size: $font-size-four;
-        min-width: 100%;
-        text-align: center;
-    }
-
-    .next-step, .prev-step{
-         font-size: $font-size-six;
-         min-width: 120px;
-    }
-    .next-step{
-        float: right;
-    }
-    .prev-step{
-        float: left;
-        background-color: transparent;
-        color: $btn-color;
-        border: 1px solid $btn-color;
-
-        &:hover{
-            color: white;
-            background-color: $btn-color;
-            transition: all .1s;
-        }
-    }
-
-
-
-    }
-
 .rev_slider_wrapper{
     //Styling the TP-BANNER Slider
     .Newspaper-Subtitle, .tp-tab-title{
@@ -1688,6 +1783,7 @@ a:hover{
         background-color: rgba(0, 0, 0, 0.4002) !important;
     }
 }
+
 
 #modal-guarantee{
     .modal-header, .modal-dialog, .modal-body, .modal-footer{
@@ -1764,4 +1860,47 @@ a:hover{
         font-size: $font-size-mini;
         text-align: left;
     }
+}
+
+
+
+
+#modal-test{
+    .close-button{
+        right: 10px !important;
+        top: -20px !important;
+        button{
+            color: white !important;
+            font-size: 70px !important;
+        }
+    }
+    .modal-content{background: transparent;}
+    .modal-body{
+        padding: 0;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    li{
+        font-size: $font-size-four;
+    }
+      #cd-table{
+        background: white !important;
+    }
+    h2{
+        margin-bottom: 0 !important;
+        padding-bottom: 0;
+        font-size: $font-size-five !important;
+
+    }
+    
+    .cd-top-title{
+        padding-left: 15px !important;
+    }
+    .cd-left-title{
+        margin-top: 0;
+        padding-left: 0;
+    }
+
 }

@@ -37,10 +37,9 @@ DJANGO_APPS = (
 )
 THIRD_PARTY_APPS = (
     'crispy_forms',  # Form layouts
-    'allauth',  # registration
-    'allauth.account',  # registration
-    'allauth.socialaccount',  # registration
-    'sass_processor',
+    #'allauth',  # registration
+    #'allauth.account',  # registration
+    #'allauth.socialaccount',  # registration
 )
 
 # Apps specific for this project go here.
@@ -48,6 +47,7 @@ LOCAL_APPS = (
     # custom users app
     'medweb.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'medweb.homepage.apps.HomepageConfig',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -177,9 +177,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-root
 
 STATIC_ROOT = str(ROOT_DIR('staticfiles'))
-#if settings.DEBUG:
-STATIC_ROOT = str(ROOT_DIR('medweb/static/staticfiles'))  # So the sass compiler can workj in developement
-
 
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
@@ -189,7 +186,7 @@ STATIC_URL = '/static/'
 # See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
 STATICFILES_DIRS = (
     str(APPS_DIR.path('static')),
-        str(ROOT_DIR('components')),
+        str(ROOT_DIR.path('components')),
 )
 
 
@@ -197,7 +194,6 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'sass_processor.finders.CssFinder',
 )
 
 # MEDIA CONFIGURATION
@@ -241,15 +237,9 @@ LOGIN_URL = 'account_login'
 AUTOSLUG_SLUGIFY_FUNCTION = 'slugify.slugify'
 
 
-# django-compressor
-# ------------------------------------------------------------------------------
-
-
 # Location of root django.contrib.admin URL, use {% url 'admin:index' %}
 ADMIN_URL = r'^admin/'
 
 
 # Your common stuff: Below this line define 3rd party library settings
-
-SASS_PRECISION = 8
-SASS_OUTPUT_STYLE = 'compact'
+HOME_PASSWORD = env('HOME_PASSWORD', default='synergy651')
