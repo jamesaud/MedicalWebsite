@@ -84,27 +84,6 @@
 
     {% block more-css %}{% endblock more-css %}
 
-        <!-- GOOGLE ANALYTICS -->
-        <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-88013279-1', 'auto');
-        ga('send', 'pageview');
-      </script>
-
-      <!-- MOUSEFLOW -->
-      <script type="text/javascript">
-      var _mfq = _mfq || [];
-        (function() {
-          var mf = document.createElement("script");
-          mf.type = "text/javascript"; mf.async = true;
-          mf.src = "//cdn.mouseflow.com/projects/e62af502-d41e-41b5-bc30-c78aeac71cfe.js";
-          document.getElementsByTagName("head")[0].appendChild(mf);
-        })();
-</script>
 
     </head>
 
@@ -208,14 +187,14 @@
                                                               <div class="col-md-6 bt-flabels__wrapper required">
                                                                   <div class='control-label'></div>
                                                                   <label>First Name</label>
-                                                                      <input type="text" name="first_name" placeholder="First Name" data-parsley-requiredd>
+                                                                      <input type="text" name="first_name" placeholder="First Name" data-parsley-required>
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
 
                                                               <div class="col-md-6 required bt-flabels__wrapper">
                                                                   <div class='control-label'></div>
                                                                   <label>Last Name</label>
-                                                                  <input type="text" name="last_name" placeholder="Last Name" data-parsley-requiredd>
+                                                                  <input type="text" name="last_name" placeholder="Last Name" data-parsley-required>
                                                                   <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                            </div>
@@ -225,7 +204,7 @@
                                                             <div class="bt-flabels__wrapper required col-md-12">
                                                                   <div class='control-label'></div>
                                                                 <label>Title or Position</label>
-                                                                <input type="text" name="position" placeholder="Title or Position" data-parsley-requiredd autocomplete="off" >
+                                                                <input type="text" name="position" placeholder="Title or Position" data-parsley-required autocomplete="off" >
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
@@ -235,7 +214,7 @@
                                                                   <div class="bt-flabels__wrapper required col-md-6">
                                                                       <div class='control-label'></div>
                                                                       <label>Email</label>
-                                                                      <input type="text" name="email" placeholder="Email" data-parsley-requiredd data-parsley-type="email" />
+                                                                      <input type="text" name="email" placeholder="Email" data-parsley-required data-parsley-type="email" />
                                                                       <span class="bt-flabels__error-desc">Required/Invalid Email</span>
                                                                   </div>
 
@@ -251,7 +230,7 @@
                                                               <div class='bt-flabels__wrapper required col-md-9'>
                                                                       <div class='control-label'></div>
                                                                       <label>Group Name</label>
-                                                                      <input type="text" name="group_name"  placeholder="Group Name" data-parsley-requiredd>
+                                                                      <input type="text" name="group_name"  placeholder="Group Name" data-parsley-required>
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
 
@@ -280,7 +259,7 @@
 
                                                                         <div class='control-label'></div>
                                                                           <label>Office Phone (xxx-xxx-xxxx)</label>
-                                                                          <input type="text" name="office_phone" data-parsley-requiredd placeholder="Office Phone" autocomplete="off" data-parsley-pattern='/(\d{3})\-?(\d{3})\-?(\d{4})/' class='phone-autodash '/>
+                                                                          <input type="text" name="office_phone" data-parsley-required placeholder="Office Phone" autocomplete="off" data-parsley-pattern='/(\d{3})\-?(\d{3})\-?(\d{4})/' class='phone-autodash '/>
                                                                           <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
                                                               </div>
 
@@ -556,7 +535,7 @@
                                                             <div class="bt-flabels__wrapper required col-md-12">
                                                                   <div class='control-label'></div>
                                                                 <label>Clearing House</label>
-                                                                <input type="text" name="clearinghouse" placeholder="Clearinghouse" data-parsley-requiredd autocomplete="off" >
+                                                                <input type="text" name="clearinghouse" placeholder="Clearinghouse" data-parsley-required autocomplete="off" >
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
@@ -565,7 +544,7 @@
                                                             <div class="bt-flabels__wrapper required col-md-12">
                                                                   <div class='control-label'></div>
                                                                 <label>Billing Company</label>
-                                                                <input type="text" name="billing_company" placeholder="Billing Company" data-parsley-requiredd autocomplete="off" >
+                                                                <input type="text" name="billing_company" placeholder="Billing Company" data-parsley-required autocomplete="off" >
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
@@ -574,10 +553,10 @@
                                                         <div class='col-md-12'>
                                                             <div class='inline'>It usually takes me</div>
                                                             <div class='inline control-label'></div>
-                                                            <input type="number" name="days_to_collect" placeholder="10" data-parsley-requiredd data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off" >
+                                                            <input type="number" name="days_to_collect" placeholder="10" data-parsley-required data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off" >
                                                             <div class='inline'>days to collect</div>
                                                             <div class='inline control-label'></div>
-                                                            <input type="number" name="percent_ars" placeholder="20" data-parsley-requiredd data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off">
+                                                            <input type="number" name="percent_ars" placeholder="20" data-parsley-required data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off">
                                                             % of ARs.
                                                         </div>
 

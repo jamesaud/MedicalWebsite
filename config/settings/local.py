@@ -63,6 +63,9 @@ DEBUG_TOOLBAR_CONFIG = {
     'SHOW_TEMPLATE_CONTEXT': True,
 }
 
+
+TIME_ZONE = 'America/Indianapolis'
+
 # django-extensions
 # ------------------------------------------------------------------------------
 INSTALLED_APPS += ('django_extensions', )
