@@ -25,15 +25,70 @@ services:
     command: /gunicorn.sh
     env_file: .env
 
-  nginx:
-    build: ./compose/nginx
-    depends_on:
-      - django
+ # nginx:
+ #   build: ./compose/nginx
+ #   depends_on:
+ #     - django
 
-    ports:
-      - "0.0.0.0:80:80"
+ #   ports:
+ #     - "0.0.0.0:80:80"
 
   redis:
     image: redis:latest
 
 
+
+  # WORDPRESS BUILD
+  db:
+     image: mysql:5.7
+     volumes:
+       - db_data:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: wordpress
+       MYSQL_DATABASE: wordpress
+       MYSQL_USER: wordpress
+       MYSQL_PASSWORD: wordpress
+  php:
+     image: wodby/wordpress-php
+     environment:
+       PHP_SITE_NAME: dev
+       PHP_HOST_NAME: localhost:8000
+       #PHP_DOCROOT: blog # Relative path inside the /var/www/html/ directory.
+       PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
+       PHP_XDEBUG_ENABLED: 0 # Set 1 to enable.
+     environment:
+       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_PASSWORD: wordpress
+     volumes:
+       - ./wordpress/:/var/www/html
+
+  nginx:
+    build: ./compose/nginx
+
+    environment:
+      NGINX_SERVER_NAME: blog.localhost
+      NGINX_UPSTREAM_NAME: php
+      #NGINX_DOCROOT: blog # Relative path inside the /var/www/html/ directory.
+    depends_on:
+      - django
+    volumes_from:
+      - php
+    ports:
+      - "80:80"
+
+  pma:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_USER: wordpress
+      PMA_PASSWORD: wordpress
+      PHP_UPLOAD_MAX_FILESIZE: 1G
+      PHP_MAX_INPUT_VARS: 1G
+    ports:
+     - "8001:80"
+
+volumes:
+    db_data:
+    postgres_data:
+    postgres_backup:

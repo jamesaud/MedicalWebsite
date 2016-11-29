@@ -5,6 +5,7 @@ volumes:
   postgres_backup_dev: {}
 
 services:
+  # DJANGO BUILD SPECIFICATIONS
   postgres:
     build: ./compose/postgres
     volumes:
@@ -34,7 +35,7 @@ services:
       - postgres
 
 
-  # WORDPRESS STUFFS
+  # WORDPRESS BUILD
   db:
      image: mysql:5.7
      volumes:
