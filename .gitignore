@@ -71,6 +71,13 @@ medweb/media/
 # Hitch directory
 tests/.hitch
 
+# Postgres Backups
+postgres_backups/
+
+# Wordpress is too big to backup
+wordpress/
+
+# Static
 medweb/static/*
 !medweb/static/css/
 !medweb/static/images/

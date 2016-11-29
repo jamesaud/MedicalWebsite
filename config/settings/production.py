@@ -58,6 +58,7 @@ X_FRAME_OPTIONS = 'DENY'
 ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['192.168.99.100', '192.168.99.101', 'http://192.168.99.100'\
                                                           '.synergyvaluebasedcare.com',\
                                                           'synergyvaluebasedcare.com',\
+                                                          'dev.synergyvaluebasedcare.com',\
                                                           'www.synergyvaluebasedcare.com',\
                                                           'http://www.synergyvaluebasedcare.com'])
 # END SITE CONFIGURATION
@@ -108,6 +109,7 @@ MEDIA_URL = 'https://s3.amazonaws.com/%s/media/' % AWS_STORAGE_BUCKET_NAME
 
 STATIC_URL = 'https://s3.amazonaws.com/%s/static/' % AWS_STORAGE_BUCKET_NAME
 STATICFILES_STORAGE = 'config.settings.production.StaticRootS3BotoStorage'
+
 # See: https://github.com/antonagestam/collectfast
 # For Django 1.7+, 'collectfast' should come before
 # 'django.contrib.staticfiles'
