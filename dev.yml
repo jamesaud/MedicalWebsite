@@ -29,6 +29,75 @@ services:
     volumes:
       - .:/app
     ports:
-      - "8000:8000"
+      - "8005:8000"
     links:
       - postgres
+
+
+  # WORDPRESS STUFFS
+  db:
+     image: mysql:5.7
+     volumes:
+       - db_data:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: wordpress
+       MYSQL_DATABASE: wordpress
+       MYSQL_USER: wordpress
+       MYSQL_PASSWORD: wordpress
+  php:
+     image: wodby/wordpress-php
+     environment:
+       PHP_SITE_NAME: dev
+       PHP_HOST_NAME: localhost:8000
+#      PHP_DOCROOT: public # Relative path inside the /var/www/html/ directory.
+       PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
+       PHP_XDEBUG_ENABLED: 0 # Set 1 to enable.
+     environment:
+       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_PASSWORD: wordpress
+     volumes:
+       - ./wordpress/:/var/www/html
+
+  nginx:
+    image: wodby/wordpress-nginx
+    environment:
+      NGINX_SERVER_NAME: localhost
+      NGINX_UPSTREAM_NAME: php
+#      NGINX_DOCROOT: public # Relative path inside the /var/www/html/ directory.
+    volumes_from:
+      - php
+    ports:
+      - "8000:80"
+
+  pma:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_USER: wordpress
+      PMA_PASSWORD: wordpress
+      PHP_UPLOAD_MAX_FILESIZE: 1G
+      PHP_MAX_INPUT_VARS: 1G
+    ports:
+     - "8001:80"
+
+
+
+#  redis:
+#    image: redis:3.2-alpine
+
+#  memcached:
+#    image: memcached:1.4-alpine
+
+#  solr:
+#    image: solr:5.5-alpine
+#    volumes:
+#      - ./docker-runtime/solr:/opt/solr/server/solr/mycores
+#    ports:
+#      - "8003:8983"
+
+volumes:
+    db_data:
+    postgres_data_dev:
+    postgres_backup_dev:
+
