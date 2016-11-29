@@ -67,7 +67,7 @@ services:
     build: ./compose/nginx
 
     environment:
-      NGINX_SERVER_NAME: blog.localhost
+      NGINX_SERVER_NAME: localhost
       NGINX_UPSTREAM_NAME: php
       #NGINX_DOCROOT: blog # Relative path inside the /var/www/html/ directory.
     depends_on:
