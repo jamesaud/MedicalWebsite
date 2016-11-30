@@ -50,7 +50,9 @@ services:
        MYSQL_USER: wordpress
        MYSQL_PASSWORD: wordpress
   php:
-     image: wodby/wordpress-php
+     build:
+       context: .
+       dockerfile: ./compose/wordpress-php/Dockerfile
      environment:
        PHP_SITE_NAME: dev
        PHP_HOST_NAME: localhost:8000
@@ -62,8 +64,6 @@ services:
        WORDPRESS_DB_PASSWORD: wordpress
        WP_HOME: http://localhost/blog
        WP_SITEURL: http://localhost/blog
-     volumes:
-       - ./wordpress/:/var/www/html
 
   nginx:
     build: ./compose/nginx
