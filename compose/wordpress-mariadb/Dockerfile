@@ -7,7 +7,7 @@ ENV BASH_SOURCE /bin/bash
 RUN mkdir -p /var/run/mysqld
 RUN chown 100:101 /var/run/mysqld
 
-RUN mkdir /docker-entrypoint-initdb.d
+#RUN mkdir /docker-entrypoint-initdb.d
 COPY my.cnf /etc/mysql/my.cnf
 COPY docker-entrypoint.sh /usr/local/bin/
 
