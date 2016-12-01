@@ -40,10 +40,10 @@ services:
 
   # WORDPRESS BUILD
   db:
-     image: mysql:5.7
-     #build: 
-     #  context: .
-     #  dockerfile: ./compose/wordpress-mariadb/Dockerfile
+#     image: mysql:5.7
+     build:
+       context: .
+       dockerfile: ./compose/wordpress-mariadb/Dockerfile
      volumes:
        - db_data:/var/lib/mysql
      restart: always
@@ -71,6 +71,7 @@ services:
        #WORDPRESS_DEBUG: 1 # 1 for true
        WP_HOME: http://dev.synergyvaluebasedcare.com/blog
        WP_SITEURL: http://dev.synergyvaluebasedcare.com/blog
+       REDIS_HOST: redis
      volumes:
        - ./wordpress/:/var/www/html
 
