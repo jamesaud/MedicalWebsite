@@ -40,10 +40,8 @@ services:
 
   # WORDPRESS BUILD
   db:
-#     image: mysql:5.7
-     build:
-       context: .
-       dockerfile: ./compose/wordpress-mariadb/Dockerfile
+     image: mysql:5.7
+#     build: ./compose/wordpress-mariadb
      volumes:
        - db_data:/var/lib/mysql
      restart: always
