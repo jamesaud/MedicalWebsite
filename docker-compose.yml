@@ -40,7 +40,10 @@ services:
 
   # WORDPRESS BUILD
   db:
-     build: ./compose/wordpress-mariadb
+     image: mysql:5.7
+     #build:
+     #  context: .
+     #  dockerfile: ./compose/wordpress-mariadb/Dockerfile
      volumes:
        - db_data:/var/lib/mysql
      restart: always
@@ -55,8 +58,8 @@ services:
        context: .
        dockerfile: ./compose/wordpress-php/Dockerfile
      environment:
-       PHP_SITE_NAME: dev
-       PHP_HOST_NAME: localhost:8000
+       PHP_SITE_NAME: http://dev.synergyvaluebasedcare.com/blog
+       PHP_HOST_NAME: dev.synergyvaluebasedcare.com:8000
        #PHP_DOCROOT: blog # Relative path inside the /var/www/html/ directory.
        PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
        PHP_XDEBUG_ENABLED: 0 # Set 1 to enable.
@@ -66,8 +69,9 @@ services:
        WORDPRESS_DB_USER: wordpress
        WORDPRESS_DB_NAME: wordpress
        #WORDPRESS_DEBUG: 1 # 1 for true
-       WP_HOME: http://localhost/blog
-       WP_SITEURL: http://localhost/blog
+       WP_HOME: http://dev.synergyvaluebasedcare.com/blog
+       WP_SITEURL: http://dev.synergyvaluebasedcare.com/blog
+       REDIS_HOST: redis
      volumes:
        - ./wordpress/:/var/www/html
 
