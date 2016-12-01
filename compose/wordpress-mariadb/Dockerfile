@@ -14,13 +14,7 @@ COPY docker-entrypoint.sh /usr/local/bin/
 #WORKDIR /var/lib/mysql
 #VOLUME /var/lib/mysql
 
-#EXPOSE 3306
-
-RUN /usr/sbin/mysqld & \
-
-    sleep 10s &&\
-
-    echo "GRANT ALL ON *.* TO admin@'%' IDENTIFIED BY 'changeme' WITH GRANT OPTION; FLUSH PRIVILEGES" | mysql
+EXPOSE 3306
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["mysqld"]
