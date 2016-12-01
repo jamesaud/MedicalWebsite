@@ -64,6 +64,9 @@ services:
        WORDPRESS_DB_PASSWORD: wordpress
        WP_HOME: http://localhost/blog
        WP_SITEURL: http://localhost/blog
+     volumes:
+       - ./wordpress/:/var/www/html
+
 
   nginx:
     build: ./compose/nginx
