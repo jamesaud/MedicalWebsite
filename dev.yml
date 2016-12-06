@@ -30,7 +30,7 @@ services:
     volumes:
       - .:/app
     ports:
-      - "8005:8000"
+      - "8000:8000"
     links:
       - postgres
 
@@ -47,29 +47,37 @@ services:
        MYSQL_USER: wordpress
        MYSQL_PASSWORD: wordpress
   php:
-     image: wodby/wordpress-php
+     build:
+       context: .
+       dockerfile: ./compose/wordpress-php/Dockerfile
      environment:
-       PHP_SITE_NAME: dev
+       PHP_SITE_NAME: http://localhost/blog
        PHP_HOST_NAME: localhost:8000
-#      PHP_DOCROOT: public # Relative path inside the /var/www/html/ directory.
+       #PHP_DOCROOT: blog # Relative path inside the /var/www/html/ directory.
        PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
        PHP_XDEBUG_ENABLED: 0 # Set 1 to enable.
      environment:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_PASSWORD: wordpress
+       WORDPRESS_DB_USER: wordpress
+       WORDPRESS_DB_NAME: wordpress
+       #WORDPRESS_DEBUG: 1 # 1 for true
+       WP_HOME: http://localhost/blog
+       WP_SITEURL: http://localhost/blog
+       REDIS_HOST: redis
      volumes:
        - ./wordpress/:/var/www/html
 
   nginx:
-    image: wodby/wordpress-nginx
+    build: ./compose/nginx
     environment:
-      NGINX_SERVER_NAME: localhost
+      NGINX_SERVER_NAME: 192.168.99.100
       NGINX_UPSTREAM_NAME: php
 #      NGINX_DOCROOT: public # Relative path inside the /var/www/html/ directory.
     volumes_from:
       - php
     ports:
-      - "8000:80"
+      - "80:80"
 
   pma:
     image: phpmyadmin/phpmyadmin
@@ -80,7 +88,7 @@ services:
       PHP_UPLOAD_MAX_FILESIZE: 1G
       PHP_MAX_INPUT_VARS: 1G
     ports:
-     - "8001:80"
+     - "8002:80"
 
 
 

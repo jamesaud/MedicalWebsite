@@ -51,7 +51,6 @@ services:
        MYSQL_USER: wordpress
        MYSQL_PASSWORD: wordpress
   php:
-
      build:
        context: .
        dockerfile: ./compose/wordpress-php/Dockerfile
