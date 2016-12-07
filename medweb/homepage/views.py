@@ -7,32 +7,49 @@ from medweb.homepage.forms import PersonForm, EvaluationForm
 from medweb.homepage.models import Person
 from config.settings.common import HOME_PASSWORD
 from medweb.homepage.models import Person, Evaluation
+from functools import wraps  # Calling wraps inside a decorator keeps the docstring of the original function
+# https://docs.python.org/2/library/functools.html
+
+"""
+A decorator which passes the contact form (Person form + Evaluation form) to a function
+How to use: Give your function a parameter "context", the decorator provides the intial context with the forms.
+
+"""
+def pass_contact_form(view):
+    @wraps(view)
+    def wrapper(*args, **kwargs):
+        context = {'person_form': PersonForm(), 'evaluation_form' : EvaluationForm()}
+        return view(context=context, *args, **kwargs,)
+    return wrapper
 
 
-def index(request):
+
+@pass_contact_form
+def index(request, context={}):
     if HOME_PASSWORD == request.session.get('password'):
-        return render(request, 'pages/home.html', context={})
+        return render(request, 'pages/home.html', context=context)
 
     elif request.method == "POST":
         if request.POST.get('password') == HOME_PASSWORD:
             request.session['password'] = request.POST.get('password')
-            return render(request, 'pages/home.html', context={})
-
+            return render(request, 'pages/home.html', context=context)
 
         else:
             message = "Password Was Incorrect. Please Try Again."
             return render(request, 'pages/homepage_login.html', context={'message': message})
 
+
     return render(request, 'pages/homepage_login.html', context={})
 
+@pass_contact_form
 def test(request):
     return render(request, 'pages/test.html', context={})
 
-
+@pass_contact_form
 def about(request):
     return render(request, 'pages/about.html', context={})
 
-
+@pass_contact_form
 def invest(request):
     return render(request, 'pages/invest.html', context={})
 
@@ -70,11 +87,11 @@ def create(request):
             # Check Django documentation on get_or_create - it returns a tuple
             evaluation, create = Evaluation.objects.get_or_create(pk=person_id,\
                                                  defaults={'person': Person.objects.get(pk=person_id)})
+
             for field, value in valid_clean_fields.items():
                 setattr(evaluation, field, value)
 
             evaluation.save()
-            print("EVALUATION SAVEd", evaluation, evaluation.call_time)
             response_data = {'status': "success"}
 
         return JsonResponse(response_data)

@@ -5,6 +5,7 @@
   "dependencies": {
     "jquery": "*",
     "eonasdan-bootstrap-datetimepicker": "*",
-    "bootstrap" : "3.3.7"
+    "bootstrap": "3.3.7",
+    "parsleyjs": "2.6.0"
   }
 }

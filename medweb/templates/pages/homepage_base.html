@@ -186,25 +186,25 @@
                                                           <div class='row form-group'>
                                                               <div class="col-md-6 bt-flabels__wrapper required">
                                                                   <div class='control-label'></div>
-                                                                  <label>First Name</label>
-                                                                      <input type="text" name="first_name" placeholder="First Name" data-parsley-required>
+                                                                  {{ person_form.first_name.label_tag  }}
+                                                                    {{ person_form.first_name }}
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
 
                                                               <div class="col-md-6 required bt-flabels__wrapper">
                                                                   <div class='control-label'></div>
-                                                                  <label>Last Name</label>
-                                                                  <input type="text" name="last_name" placeholder="Last Name" data-parsley-required>
-                                                                  <span class="bt-flabels__error-desc">Required</span>
-                                                              </div>
+                                                                    {{ person_form.last_name.label_tag  }}
+                                                                    {{ person_form.last_name }}
+                                                                  </div>
                                                            </div>
 
 
                                                           <div class='row form-group'>
                                                             <div class="bt-flabels__wrapper required col-md-12">
-                                                                  <div class='control-label'></div>
-                                                                <label>Title or Position</label>
-                                                                <input type="text" name="position" placeholder="Title or Position" data-parsley-required autocomplete="off" >
+                                                                <div class='control-label'></div>
+                                                               <label for="{{ person_form.position.id_for_label }}">
+                                                                   Title or Position</label>
+                                                                    {{ person_form.position }}
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
@@ -213,15 +213,15 @@
                                                           <div class='row form-group'>
                                                                   <div class="bt-flabels__wrapper required col-md-6">
                                                                       <div class='control-label'></div>
-                                                                      <label>Email</label>
-                                                                      <input type="text" name="email" placeholder="Email" data-parsley-required data-parsley-type="email" />
-                                                                      <span class="bt-flabels__error-desc">Required/Invalid Email</span>
+                                                                          {{ person_form.email.label_tag  }}
+                                                                          {{ person_form.email }}
+                                                                    <span class="bt-flabels__error-desc">Required/Invalid Email</span>
                                                                   </div>
 
                                                                   <div class="bt-flabels__wrapper col-md-6">
-                                                                      <label>Phone (xxx-xxx-xxxx)</label>
-                                                                      <input type="text" name="home_phone" placeholder="Home Phone" autocomplete="off" class='phone-autodash' />
-                                                                      <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
+                                                                      {{ person_form.home_phone.label_tag  }}
+                                                                          {{ person_form.home_phone }}
+                                                                     <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
                                                                     </div>
                                                           </div>
 
@@ -229,13 +229,13 @@
 
                                                               <div class='bt-flabels__wrapper required col-md-9'>
                                                                       <div class='control-label'></div>
-                                                                      <label>Group Name</label>
-                                                                      <input type="text" name="group_name"  placeholder="Group Name" data-parsley-required>
-                                                                <span class="bt-flabels__error-desc">Required</span>
+                                                                     {{ evaluation_form.group_name.label_tag  }}
+                                                                     {{ evaluation_form.group_name }}
+                                                                    <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
 
                                                               <div class='col-md-3'>
-                                                                  <div class="required">
+                                                                  <div >
                                                                      <div class='control-label'>
                                                                       <select required=''>
                                                                         <option value=''>Group Type</option>
@@ -810,7 +810,7 @@
     <script src="{% static 'css/plugins/waypoints4.0/lib/jquery.waypoints.min.js' %}"></script>
 
     <!-- DATA parsley plugin -->
-    <script type="text/javascript" src="{% static 'js/parsley.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bower_components/parsleyjs/dist/parsley.min.js' %}"></script>
 
     <!-- Auto Hiding Navigation -->
     <script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
