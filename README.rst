@@ -81,7 +81,7 @@ Extra Tutorials
 
 Create a fixture from the an app - in this case 'homepage'
 
-> docker-compose -f dev.yml  run django python manage.py dumpdata --format=yaml --indent=4 homepage > $(pwd)/medweb/fixtures/initial_data.yaml
+$ docker-compose -f dev.yml  run django python manage.py dumpdata --format=yaml --indent=4 homepage > $(pwd)/medweb/fixtures/initial_data.yaml
 
 
 
