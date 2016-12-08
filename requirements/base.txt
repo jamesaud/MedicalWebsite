@@ -45,3 +45,4 @@ redis>=2.10.0
 
 # Your custom requirements go here
 django-parsley==0.3
+pyyaml>=3.12

@@ -245,3 +245,4 @@ ADMIN_URL = r'^admin/'
 
 # Your common stuff: Below this line define 3rd party library settings
 HOME_PASSWORD = env('HOME_PASSWORD', default='synergy651')
+DATA_PARLSEY_PREFIX = 'data-parsley'

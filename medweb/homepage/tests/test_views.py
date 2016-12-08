@@ -4,9 +4,12 @@ from django.core.urlresolvers import reverse
 from medweb.homepage.views import *
 from medweb.homepage.models import *
 from django.test import Client
+from utilities.helpers.model_helpers import get_field_names
 
 # AssertGoodView tests for 200 response, database calls under 50, etc.
 # Read test_plus documentation for more details
+
+
 
 class BaseHomepageTestCase(TestCase):
 
@@ -25,7 +28,11 @@ class TestCreate(BaseHomepageTestCase):
     def test_create_view(self):
         url = reverse('create')
         person_post = {'first_name':'test', 'last_name': 'test', 'email':'test@test.com', 'position':'test'}
-        evaluation_post = {'message':'hello', 'ehr_likes': 'test', 'referral': ('type1', 'type2'),}
+        evaluation_post = {
+            'message': 'hello',
+            'ehr_likes': 'test',
+            'referral': ('Facebook', 'Google'),
+        }
 
         # Test Get Request as error
         response = self.client.get(url)

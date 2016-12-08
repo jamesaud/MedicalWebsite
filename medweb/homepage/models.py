@@ -4,6 +4,42 @@ from django.db import models
 from django.core.validators import RegexValidator
 from django.utils import timezone
 
+
+SYSTEM_CHOICES = (
+        ('Cerner', 'Cerner'),
+        ('Epic', 'Epic'),
+        ('Allscripts', 'Allscripts'),
+        ('Other', 'Other'),
+    )
+
+GROUP_TYPE_CHOICES = (
+    ("MS", "MS"),
+    ("Solo", "Solo"),
+    ("Other", "Other"),
+)
+
+GROUP_TYPE_CHOICES = (
+    ("MS", "MS"),
+    ("Solo", "Solo"),
+    ("Other", "Other"),
+)
+
+NET_INCOME_STATUS_CHOICES = (
+    ("Decreased", "Decreased"),
+    ("Same", "Stayed the Same"),
+    ("Increased", "Increased"),
+)
+
+REFERRAL_CHOICES = (
+    ('LinkedIn', "LinkedIn"),
+    ('Facebook', "Facebook"),
+    ('Twitter', "Twitter"),
+    ('Google', "Google"),
+    ('Other', "Other"),
+)
+
+
+
 # Phone_Regex is from:
 # http://stackoverflow.com/questions/19130942/whats-the-best-way-to-store-phone-number-in-django-models
 # Writing custom validators:
@@ -19,9 +55,9 @@ class Person(models.Model):
     last_name = models.CharField(max_length=255, blank=False, null=False)
     email = models.EmailField(max_length=255, blank=False)
     position = models.CharField(max_length=255)
-    home_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True, null=True)  # validators should be a list
-    office_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True, null=True)
-
+    home_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True)  # validators should be a list
+    office_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True)
+    office_phone_extension = models.CharField(max_length=15, blank=True)
     contacted = models.BooleanField(default=False)
     notes = models.TextField(blank=True)
     created = models.DateTimeField(auto_now_add=True,)
@@ -31,6 +67,7 @@ class Person(models.Model):
         return self.first_name + " " + self.last_name
 
 
+# Every field here should be null (or blank if char field)
 class Evaluation(models.Model):
     # Make Person the Primary Key for an evaluation. I.E. We can't have an evaluation without a person
     person = models.OneToOneField(
@@ -42,7 +79,10 @@ class Evaluation(models.Model):
     group_name = models.CharField(max_length=255, blank=True)
     message = models.CharField(max_length=2000, blank=True)
     call_time = models.DateTimeField(null=True, blank=True)
-    current_system = models.CharField(max_length=255, blank=True)
+
+    group_type = models.CharField(max_length=255, choices=GROUP_TYPE_CHOICES, blank=True)
+
+    current_system = models.CharField(max_length=255, choices=SYSTEM_CHOICES, blank=True)
 
     ehr_support_vendors = models.IntegerField(null=True, blank=True)
     ehr_support_personnel = models.IntegerField(null=True, blank=True)
@@ -73,8 +113,10 @@ class Evaluation(models.Model):
     doctors_recruit = models.CharField(max_length=2000, blank=True)
     total_revenue = models.FloatField(null=True, blank=True)
 
+    net_income_status = models.CharField(max_length=255, choices=NET_INCOME_STATUS_CHOICES, blank=True)
+
     referral = models.CharField(max_length=255, blank=True)
-    monthly_newsletter =  models.BooleanField(default=False)
+    monthly_newsletter = models.BooleanField(default=False)
 
     created = models.DateTimeField(auto_now_add=True,)
     modified = models.DateTimeField(auto_now=True,)

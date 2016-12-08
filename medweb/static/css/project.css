@@ -328,7 +328,7 @@ hr.no-margin {
   #modal-contact .contact-title .bt-form__wrapper {
     margin-bottom: 0px;
     margin-top: 0px; }
-#modal-contact #textarea-message {
+#modal-contact #form-message textarea {
   min-height: 70px; }
 #modal-contact #contact-tab-15 .inquire-title h3 {
   margin-bottom: 30px; }

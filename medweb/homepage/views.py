@@ -25,7 +25,7 @@ def pass_contact_form(view):
 
 
 @pass_contact_form
-def index(request, context={}):
+def index(request, context):
     if HOME_PASSWORD == request.session.get('password'):
         return render(request, 'pages/home.html', context=context)
 
@@ -42,16 +42,16 @@ def index(request, context={}):
     return render(request, 'pages/homepage_login.html', context={})
 
 @pass_contact_form
-def test(request):
-    return render(request, 'pages/test.html', context={})
+def test(request, context):
+    return render(request, 'pages/test.html', context=context)
 
 @pass_contact_form
-def about(request):
-    return render(request, 'pages/about.html', context={})
+def about(request, context):
+    return render(request, 'pages/about.html', context=context)
 
 @pass_contact_form
-def invest(request):
-    return render(request, 'pages/invest.html', context={})
+def invest(request, context):
+    return render(request, 'pages/invest.html', context=context)
 
 def compare(request):
     return render(request, 'pages/compare.htm', context={})
@@ -62,7 +62,6 @@ def create(request):
         post = request.POST.copy() # Copying makes the dict Mutable
         response_data = {'status': "error"}
 
-        print(request.POST.getlist('referral'))
         if request.POST.getlist('referral'):
             post['referral'] = ", ".join(request.POST.getlist('referral'))
 
@@ -79,6 +78,7 @@ def create(request):
         person_id = request.session.get('person_id') # Must come after cookie is set
         post['person'] = person_id  # Add the person_id to post data so eform is valid
 
+        print(eform.errors)
         # Update current person OR create new one
         if eform.is_valid() and person_id:
             # Prevent empty form fields from overwriting existing evaluation object fields
