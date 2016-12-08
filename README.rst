@@ -76,19 +76,6 @@ Moved to `Live reloading and SASS compilation`_.
 
 
 
-Extra Tutorials
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Create a fixture from the an app - in this case 'homepage'
-
-$ docker-compose -f dev.yml  run django python manage.py dumpdata --format=yaml --indent=4 homepage > $(pwd)/medweb/fixtures/initial_data.yaml
-
-
-
-
-
-
-
 
 Deployment
 ----------
@@ -117,5 +104,16 @@ See detailed `cookiecutter-django Docker documentation`_.
 .. _`cookiecutter-django Docker documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-docker.html
 
 More help: https://realpython.com/blog/python/development-and-deployment-of-cookiecutter-django-via-docker/
+
+
+
+
+
+Extra Tutorials
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Create a fixture from the an app - in this case 'homepage'
+::
+    $ docker-compose -f dev.yml  run django python manage.py dumpdata --format=yaml --indent=4 homepage >          $(pwd)/medweb/fixtures/initial_data.yaml
 
 
