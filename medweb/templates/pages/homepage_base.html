@@ -84,7 +84,12 @@
 
     {% block more-css %}{% endblock more-css %}
 
+{% block header-js %}
 
+    <!-- MODERNIZR -->
+    <script type="text/javascript" src="{% static 'standalone/pointy-slider/js/modernizr.js' %}"></script>
+
+{% endblock header-js %}
     </head>
 
 <!DOCTYPE html>
@@ -781,9 +786,6 @@
     <script type="text/javascript" src="{% static 'js/jquery-migrate-1.4.1.min.js' %}"></script>
 
     <script type="text/javascript" src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
-
-    <!-- MODERNIZR -->
-    <script type="text/javascript" src="{% static 'standalone/pointy-slider/js/modernizr.js' %}"></script>
 
 	<!-- JS Implementing Plugins -->
 	<script type="text/javascript" src="{% static 'plugins/back-to-top.js' %}"></script>

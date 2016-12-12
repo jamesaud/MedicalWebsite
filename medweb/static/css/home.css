@@ -540,6 +540,8 @@ a:hover {
       vertical-align: center; }
       .section-highlights .hi-comp .main-points .main-points-title {
         color: black !important; }
+    .section-highlights .hi-comp h4 {
+      font-weight: 300; }
     .section-highlights .hi-comp a, .section-highlights .hi-comp img {
       z-index: 0;
       text-align: left;
@@ -580,16 +582,15 @@ a:hover {
       /* Max Width of the popover (depending on the container!) */
       max-width: 550px;
       z-index: 5; }
-      .section-highlights .highlights-components .popover p {
-        text-decoration: underline;
-        text-align: center;
-        padding: 0; }
       .section-highlights .highlights-components .popover ul {
         padding-left: 20px; }
       .section-highlights .highlights-components .popover li {
         margin-bottom: 5px; }
         .section-highlights .highlights-components .popover li:last-child {
           margin-bottom: 0px; }
+      .section-highlights .highlights-components .popover h5 {
+        word-wrap: normal;
+        white-space: normal; }
     @media screen and (max-width: 769px) {
       .section-highlights .highlights-components .popover {
         max-width: 100%; } }
@@ -810,6 +811,8 @@ a:hover {
     padding-bottom: 40px; }
     .section-why-us .why-novo h2 {
       color: black; }
+    .section-why-us .why-novo h4 {
+      font-weight: 300; }
     .section-why-us .why-novo a {
       color: #D43A43; }
   .section-why-us .why-graph {
@@ -853,6 +856,28 @@ a:hover {
         font-size: 20px;
         position: absolute;
         color: #45AEEA; }
+
+.cd-testimonials-wrapper:after {
+  font-size: 70px !important;
+  line-height: 75px;
+  background-color: rgba(239, 185, 23, 0.8);
+  height: 55px; }
+
+.cd-testimonials p {
+  font-size: 24px !important;
+  color: white !important; }
+.cd-testimonials li {
+  color: #45AEEA;
+  list-style-type: none !important;
+  list-style: none; }
+  .cd-testimonials li:first-child {
+    color: #EFB917; }
+.cd-testimonials .cd-author-info {
+  line-height: 1.4; }
+  .cd-testimonials .cd-author-info li:first-child {
+    font-size: 15.5px; }
+  .cd-testimonials .cd-author-info li:last-child {
+    font-size: 13px; }
 
 .section-faq #faqs .panel-body {
   color: #444; }
@@ -912,10 +937,12 @@ a:hover {
 .section-benefits {
   margin-bottom: 25px; }
   @media screen and (min-width: 1100px) {
-    .section-benefits > .container {
-      min-width: 1100px !important; } }
+    .section-benefits .container {
+      min-width: 1050px !important; } }
   .section-benefits .sb-benefits {
     margin-bottom: 0px; }
+    .section-benefits .sb-benefits li {
+      font-weight: 300; }
   .section-benefits .sb-title {
     height: 290px;
     vertical-align: middle;
@@ -938,7 +965,8 @@ a:hover {
       display: -moz-inline-stack;
       display: inline-block;
       zoom: 1;
-      *display: inline; }
+      *display: inline;
+      padding-left: 50px; }
       .section-benefits .main-points .main-points-block ul li {
         line-height: 30px;
         font-size: 15.5px;
@@ -1052,8 +1080,6 @@ a:hover {
     .section-plans .popover li, .section-plans .popover h5 {
       margin-bottom: 0px;
       font-size: 14px !important; }
-    .section-plans .popover h5 {
-      margin-bottom: 0px !important; }
   .section-plans .title {
     margin-bottom: 20px;
     text-align: center; }
@@ -1197,8 +1223,13 @@ a:hover {
 
 .section-demo .sb-title {
   margin-bottom: 20px; }
+  .section-demo .sb-title h2 {
+    font-weight: 500; }
 .section-demo .demo-content h2 {
   color: black; }
+.section-demo .demo-content h5 {
+  color: #444 !important;
+  font-weight: 500; }
 .section-demo .btn-color {
   border-color: #D43A43;
   background-color: rgba(212, 58, 67, 0.85); }

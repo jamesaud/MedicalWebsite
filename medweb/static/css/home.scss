@@ -491,6 +491,10 @@ a:hover{
                 color: black !important;            
             }
         }
+
+        h4{
+            font-weight: $weight-light;
+        }
         
         a,img{
             z-index: 0;
@@ -561,11 +565,7 @@ a:hover{
             width: 550px; /* Max Width of the popover (depending on the container!) */
             max-width: 550px;
             z-index: 5;
-            p{
-                text-decoration: underline;
-                text-align: center;
-                padding: 0;
-            }
+         
             ul{
                 padding-left: 20px;
             }
@@ -574,6 +574,10 @@ a:hover{
                 &:last-child{
                     margin-bottom: 0px;
                 }
+            }
+            h5{
+                word-wrap: normal;
+                white-space: normal;
             }
         
         }
@@ -900,6 +904,7 @@ a:hover{
         padding-top: 50px;
         padding-bottom: 40px;
         h2{color: black;}
+        h4{font-weight: $weight-light;}
         a{
             color: $third-color;
         }
@@ -971,6 +976,41 @@ a:hover{
 
    
 
+}
+
+.cd-testimonials-wrapper:after{
+            font-size: 70px !important;
+            line-height: 75px;
+            @include transparentBackgroundColor(.8, $second-color);
+            height: 55px;
+}
+
+//In the why-us section
+.cd-testimonials{
+    p{
+        font-size: $font-size-three !important;
+        color: white !important;
+    }
+    li{
+        color: $primary-color; 
+        list-style-type: none !important;
+        list-style: none;
+        &:first-child{
+            color: $second-color;
+        }
+        }
+
+        .cd-author-info {
+			line-height: 1.4;
+
+			li:first-child {
+				font-size: $font-size-four;
+			}
+
+			li:last-child {
+				font-size: $font-size-six;
+			}
+		}    
 }
 
 
@@ -1075,14 +1115,16 @@ a:hover{
 .section-benefits{
     // Prevents awkward resizing and text-wrapping at some widths
     @media screen and (min-width: 1100px){
-        > .container{
-            min-width: 1100px !important;
+         .container{
+            min-width: 1050px !important;
         }
-    
     }
     margin-bottom: 25px;
     .sb-benefits{
         margin-bottom: 0px;
+              li{
+            font-weight: $weight-light;
+        }
     }
     
     .sb-title{
@@ -1110,7 +1152,6 @@ a:hover{
             .main-points-block-title{
                 text-align: center;
                 padding-bottom: 5px;
-                h3{}
             }
             
             ul {
@@ -1120,6 +1161,7 @@ a:hover{
                 display:inline-block;
                 zoom:1;
                 *display:inline;
+                padding-left: 50px;
                 
                 li {
                     line-height: 30px;
@@ -1265,13 +1307,12 @@ a:hover{
     .popover{
         z-index: 3;
         width: 250px;
+  
         li, h5{
             margin-bottom: 0px;
             font-size: 14px !important;
         }
-        h5{
-            margin-bottom: 0px !important;
-        }
+      
     }
     
     .title{
@@ -1483,11 +1524,18 @@ a:hover{
 .section-demo{
     .sb-title{
         margin-bottom: 20px;
+        h2{
+            font-weight:  500; 
+        }
     }
     
     .demo-content{
         h2{
             color: black;
+        }
+        h5{
+            color: #444 !important;
+            font-weight: 500 ;
         }
     }
     

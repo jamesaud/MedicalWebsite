@@ -1,4 +1,4 @@
-@import 'bourbon'; // http://bourbon.io/
+@import '../bourbon/bourbon'; // http://bourbon.io/
 
 @import '../partials/variables'; // colors, fonts etc...
 
@@ -16,31 +16,29 @@ Primary style
 	@include box-sizing(border-box);
 }
 
-body {
-	font: {
-		size: 100%;
-		family: $primary-font; // variables inside partials > _variables.scss
-	}
-	color: $color-1;
-	background-color: $color-3;
-}
-
-a {
-	color: $color-2;
-	text-decoration: none;
-}
-
-img {
-	max-width: 100%;
-}
-
 /* -------------------------------- 
 
 Main components 
 
 -------------------------------- */
 
+%reset{
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+}
+
 .cd-testimonials-wrapper {
+	@extend %reset;
 	position: relative;
 	width: 90%;
 	max-width: $M;
@@ -61,7 +59,7 @@ Main components
 		padding-top: 8px;
 		margin-left: -25px;
 		background: rgba(darken($color-1, 10%), .9);
-		font-family: $secondary-font;
+		font-family: $secondary-font; 
 		color: $color-4;
 		@include font-size(70px);
 		text-align: center;
@@ -71,7 +69,7 @@ Main components
 
 	@include MQ(M) {
 		margin: 4em auto;
-		padding: 64px 50px 114px;
+		padding: 64px 50px 74px;
 	}
 
 	@include MQ(L) {
@@ -90,11 +88,14 @@ Main components
 	> li {
 		position: absolute;
 		opacity: 0;
-
+		width: 100%;
 		&:first-child {
 			position: relative;
 			opacity: 1;
 		}
+	}
+
+	li.flex-active-slide{
 	}
 
 	p {
@@ -120,6 +121,7 @@ Main components
 }
 
 .cd-author {
+	padding-top: 10px; 
 
 	img, .cd-author-info {
 		display: inline-block;
@@ -144,7 +146,6 @@ Main components
 
 		li:last-child {
 			@include font-size(12px);
-			color: lighten($color-1, 20%);
 		}
 	}
 
@@ -355,6 +356,8 @@ Main components
 		}
 	}
 
+	
+
 	@include MQ(M) {
 		.cd-testimonials-item {
 			width: 46%;
@@ -407,3 +410,5 @@ Main components
 		@include transform(rotate(-45deg));
 	}
 }
+
+
