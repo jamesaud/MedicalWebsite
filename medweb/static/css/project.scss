@@ -1,3 +1,4 @@
+@import 'bourbon/bourbon';
 @import 'variables';
 
 .bg-blue {
@@ -215,11 +216,11 @@ hr.no-margin{
 
 /* To be below fixed nav bar */
 .content-main { 
-    margin-top: 75px !important; 
+    margin-top: 60px !important; 
 }
 
 @media screen and (max-width: 1025px) {
-    .content-main { margin-top: 65px !important; }
+    .content-main { margin-top: 40px !important; }
 }
 
 
@@ -239,7 +240,7 @@ hr.no-margin{
 .sidebar {
     position: fixed;
     float:left;
-    margin-top: 10%;
+    margin-top: 20%;
     @include transparentBackgroundColor(.9, #FFFFFF);
     z-index: 500;
     padding-left: 10px;
@@ -284,9 +285,6 @@ hr.no-margin{
         #sidebar-phone{
             h5{color: $third-color;}
         }
-        #sidebar-contact{}
-        #sidebar-live-chat{}
-        
         
         .sidebar-content{
             display: none;
@@ -320,7 +318,7 @@ hr.no-margin{
 }
 
  .sidebar:hover{
-            width: 150px;
+            width: 170px;
             .sidebar-content{
                 display: inline;
                 top: -2px;
@@ -475,69 +473,57 @@ hr.no-margin{
 
 /* END CUSTOM MODAL STYLE  */
 
-#modal-contact{
-   .modal-dialog{
-    }
-    
-   .modal-dialog, .modal-body, .modal-header{
-        max-width: 550px;
+/* Custom Modals */
+@mixin modalSmall($width){
+    .modal-dialog, .modal-body, .modal-header{
+        max-width: $width;
         }
-    
-    .modal-body, .modal-header{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    
+        
     .modal-footer{
         padding-top: 0;
     }
     .modal-body{
         padding-top: 0px;
         padding-bottom: 10px;
+        margin-top: 3.5%;
     }
-    
-   .contact-title{
-       text-align: left;
-       margin-bottom: 0px;
-       padding-top: 18px;
-       
-       .m-contact-title{
-            margin-bottom: 10px;
-           color: #333 !important;
-           font-size: 22px;
-            font-weight: 300;
+    .modal-body, .modal-header{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .contact-title{
+        img{
+            margin-top: 15px;
         }
-        h5{
-            color: #777 !important;
+        .m-contact-title{
+            padding-top: 10px;
+        }
+        .modal-title{
             font-size: $font-size-four;
-            
-                   font-weight: 300;
-       }
-       .bt-form__wrapper{
-           margin-bottom: 0px;
-           margin-top: 0px;
-       }
+        }
     }
     
-    
-    #form-message textarea{
-        min-height: 70px;
+
+    .contact-message{
+        h5{
+            color: #555;
+            font-weight: $weight-light;
+        }
     }
-    
-    #contact-tab-15{
-           .inquire-title {
-               h3{
-                   margin-bottom: 30px;
-               }
-            }
-    }
-    
 }
 
+#modal-contact{
+   @include modalSmall(700px);
+}
 
+#modal-demo{
+    @include modalSmall(700px);
+    
+}
+/* end custom modals */
 
-
-
+/* Utility css */
 .inline{
     display: inline;
 }
@@ -633,11 +619,9 @@ hr.no-top{
     background: $seventh-color;
 }
 
+/* utility end */
 
-
-
-
-    .inquire-finish{
+.inquire-finish{
         .inquire-title{
             padding-top: 15%;
         }
@@ -662,6 +646,7 @@ hr.no-top{
 
 //Styling forms
     form{
+        
         .form-title{
             border-bottom: 2px solid $primary-color;
             display: inline-block;
@@ -705,8 +690,17 @@ hr.no-top{
 
         .form-button{
         margin-top: 28px;
-    }
+        }
 
+        input, textarea{
+            @include placeholder{
+                font-weight: $weight-light;
+            }
+        }
+
+        .form-message textarea{
+        min-height: 80px;
+    }
 
     .contact-btn{
         font-size: $font-size-four;
@@ -736,12 +730,12 @@ hr.no-top{
 
 
 
-    }
+}
 
 
 
 
-//Use to debug whitespace
+//Use to debug extra whitespace
 /*
 div, span, p, h1, h2, h3, h4, h5{
     border: 1px solid black !important;

@@ -2,14 +2,20 @@ from django import forms
 
 EMPTY_LABEL_DEFAULT = '-----'
 
-# REMOVE the ":" from the labels
 class NoColonForm(forms.Form):
+    """
+    Remove ":" character from labels, which are default in Django.
+    """
     def __init__(self, *args, **kwargs):
         kwargs.setdefault('label_suffix', '')
         super(NoColonForm, self).__init__(*args, **kwargs)
 
 
 class AutoPlaceholderForm(forms.Form):
+    """
+    Makes all placeholders default to the label of its field.
+    Is overwritten by specifying placeholder manually in attrs.
+    """
     def __init__(self, *args, **kwargs):
         super(AutoPlaceholderForm, self).__init__(*args, **kwargs)
         for field_name in self.fields:
@@ -19,9 +25,13 @@ class AutoPlaceholderForm(forms.Form):
                     field.widget.attrs.update({'placeholder': field.label})
 
 
-# https://gist.github.com/davidbgk/651080
+# Taken from https://gist.github.com/davidbgk/651080
 class EmptyChoiceField(forms.ChoiceField):
-    def __init__(self, choices=(), help_text=None, empty_label=None, required=True, widget=None, label=None,
+    """
+    Provides a default empty label in a choice field without having to specify it in the Model.
+    Specify the 'empty_label' argument to set a custom empty label.
+    """
+    def __init__(self, choices=(), help_text=None, empty_label=None, required=False, widget=None, label=None,
                  initial=None, *args, **kwargs):
         # prepend an empty label if it exists (and field is not required!)
         if empty_label is None:
@@ -35,6 +45,9 @@ class EmptyChoiceField(forms.ChoiceField):
 
 
 class EmptyTextarea(forms.Textarea):
+    """
+    Removes Django's default text area cols and rows.
+    """
     def __init__(self, *args, **kwargs):
         # Update the attrs
         if kwargs.get('attrs'):

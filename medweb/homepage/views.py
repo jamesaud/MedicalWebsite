@@ -78,7 +78,6 @@ def create(request):
         person_id = request.session.get('person_id') # Must come after cookie is set
         post['person'] = person_id  # Add the person_id to post data so eform is valid
 
-        print(eform.errors)
         # Update current person OR create new one
         if eform.is_valid() and person_id:
             # Prevent empty form fields from overwriting existing evaluation object fields

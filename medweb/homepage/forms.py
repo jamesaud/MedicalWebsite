@@ -6,7 +6,7 @@ from django import forms
 from django.forms import ModelForm
 from medweb.homepage.models import Person, Evaluation
 from parsley.decorators import parsleyfy
-from forms import NoColonForm, AutoPlaceholderForm, EmptyChoiceField, EmptyTextarea
+from utilities.forms import NoColonForm, AutoPlaceholderForm, EmptyChoiceField, EmptyTextarea
 from config.settings.common import DATA_PARLSEY_PREFIX
 from medweb.homepage.models import SYSTEM_CHOICES, GROUP_TYPE_CHOICES, NET_INCOME_STATUS_CHOICES, REFERRAL_CHOICES
 from django.utils.translation import ugettext_lazy as _
