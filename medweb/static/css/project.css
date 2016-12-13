@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 @font-face {
   font-family: Vollkorn, serif;
   src: url(https://fonts.googleapis.com/css?family=Vollkorn); }
@@ -97,6 +98,10 @@ hr {
 @media screen and (max-width: 1180px) {
   #cd-nav-text {
     display: none; } }
+#cd-navigation li {
+  margin-right: 25px;
+  font-family: "Lato", sans-serif; }
+
 @media screen and (max-width: 1023px) {
   #cd-navigation {
     padding-left: 0; }
@@ -416,12 +421,15 @@ hr.no-top {
   background: lightgrey; }
 
 /* utility end */
-.inquire-finish .inquire-title {
-  padding-top: 15%; }
-.inquire-finish .inquire-close-button {
-  width: 100%;
-  margin-top: 10%;
-  margin-bottom: 20px; }
+.inquire-finish {
+  padding-left: 7%;
+  padding-right: 7%; }
+  .inquire-finish .inquire-title {
+    padding-top: 15%; }
+  .inquire-finish .inquire-close-button {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 20px; }
 
 .inquire-title {
   text-align: center;

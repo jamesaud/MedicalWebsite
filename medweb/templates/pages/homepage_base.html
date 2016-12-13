@@ -116,12 +116,11 @@
 	<div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo1.png' %}" alt="Logo"></a></div>
 
 
-   <div id='cd-nav-text'><!--<h5>Doctors &amp; Staff Save So Much Time, Patient Care Is Optimized <br>Net Income Rises As Non-clinical Issues Become Non-Issues <br>Doctors Practice Medicine Their Way, Patients Get Healthier</h5>-->
-   <h5>
+   <div id='cd-nav-text'> <!--<h5>
    This preliminary site is for investors &amp; funding<br>
    The content is subject to change for sales
+   </div>-->
    </div>
-
 	<nav class="cd-primary-nav">
 
 		<a href="#cd-navigation" class="nav-trigger">
@@ -729,7 +728,7 @@
     <!-- END CONTACT MODAL -->
     
     <!-- DEMO MODAL -->
-        <div id="modal-demo" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-contact" aria-hidden="true">
+        <div id="modal-demo" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-demo" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header container">
@@ -748,20 +747,20 @@
                                             <div class='col-md-6 contact-message'>
                                                 <div class='contact-title'>
                                                 <img class='img-responsive' src="{% static 'images/ipad.jpg' %}" alt='ipad'/>
-                                                <h3 class='m-contact-title'>Choose a time and we'll call you to schedule a demo.</h3>
+                                                <h3 class='m-contact-title'>Choose a time and we'll call you to schedule a demo</h3>
 
-                                                <h5 class="modal-title" id="gridModalLabel">Use cutting edge EHR &amp; RCM technology with industry leading automation.</h5>
+                                                <h5 class="modal-title" id="gridModalLabel">Use cutting edge EHR &amp; RCM technology with industry leading automation</h5>
 
                                                 </div>
                                                 <hr>
                                                 <h5>
                                                     You will be set up with a Synergy+ training specialist who will walk you through the EHR/RCM demo and answer any questions.
                                                 </h5>
-                                                <h5>A cloud based system means you can test the real version in your browser pre-populated with fake patient data.</h5>
+                                                <h5>A cloud based system means you can test the real version in your browser, pre-populated with fake patient data.</h5>
                                                 <h5> With a system that takes only 40 minutes to train, you'll be up and practicing in no time!</h5>
                                             </div>
                                             <div class='bt-form__wrapper col-md-6'>
-                                                <form id='demo-form' class="bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST"  data-parsley-validate data-parsley-errors-messages-disabled  >
+                                                <form id='demo-form-0' class="bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST"  data-parsley-validate data-parsley-errors-messages-disabled  >
 
                                                      {% csrf_token %}
                                                     <input type="hidden" name="form_id" value="demo-form">
@@ -881,6 +880,25 @@
                                                 </form>
                                             </div>
                                         </div>
+                                        <div id='demo-tab-1' class='tab-pane in inquire-finish'>
+                                            <div class='inquire-title'>
+
+                                                            <h2>Thank you for contacting Synergy+!</h2>
+                                                            <h3> A Synergy+ Representative will be in touch.</h3>
+
+                                                            <h4>To expedite the process, speak with a Synergy+ Representative by calling <strong>812-360-9245</strong>.</h4>
+
+
+                                             </div>
+
+                                                    <div class='row'>
+                                                        <div class='col-md-10 col-centered'>
+                                                            <button type="submit" class="btn btn-default inquire-close-button" data-dismiss="modal" >Close</button>
+                                                        </div>
+                                                    </div>
+                                          
+                                        </div>
+
                                     </div>
                       </div>
                       </div>
@@ -1061,6 +1079,10 @@ validate_form_tab('#contact-form-1', '#contact-tab-1', '#contact-tab-2');
 validate_form_tab('#contact-form-2', '#contact-tab-2', '#contact-tab-3');
 validate_form_tab('#contact-form-3', '#contact-tab-3', '#contact-tab-4');
 validate_form_tab('#contact-form-4', '#contact-tab-4', '#contact-tab-5');
+
+//DEMO FORM
+validate_form_tab('#demo-form-0', '#demo-tab-0', '#demo-tab-1');
+
 </script>
 
 
@@ -1121,6 +1143,10 @@ floating_label('#contact-form-1');
 floating_label('#contact-form-2');
 floating_label('#contact-form-3');
 floating_label('#contact-form-4');
+
+//For demo form
+floating_label('#demo-form-0');
+
 </script>
 
 <!-- PUT DASHES IN PHONE INPUTS FOR CONTACT FORM-->
@@ -1176,13 +1202,7 @@ smoothScroll('.cd-secondary-nav li a');
 
 
 <script>
-/* Takes a form id and returns the form fields in json */
-function serialize_form(form){
-    var url = $(form).attr("action");
-    var formData = $(form).serializeArray();
-    console.log(formData);
-    return formData;
-}
+
 
 //send contact form via post
 function post_form(form) {
@@ -1194,7 +1214,7 @@ function post_form(form) {
 
         // handle a successful response
         success : function(data) {
-            console.log("success"); // another sanity check
+            //console.log("success");
         },
 
         // handle a non-successful response
@@ -1210,13 +1230,15 @@ function submit_form(form){
         post_form(form);
     });
 }
-
+// Submit forms for contact forms
 submit_form('#contact-form-0');
 submit_form('#contact-form-1');
 submit_form('#contact-form-2');
 submit_form('#contact-form-3');
 submit_form('#contact-form-4');
 
+//Submit forms for demo form
+submit_form('#demo-form-0');
 
 
 //CRSF FIX

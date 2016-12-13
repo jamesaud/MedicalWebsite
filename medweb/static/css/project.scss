@@ -158,6 +158,14 @@ hr{
     }
 }
 
+#cd-navigation{
+    li{
+        margin-right: 25px;
+        font-family: $font-two;
+    }
+}
+
+
 @media screen and (max-width: 1023px){
         #cd-navigation{
             padding-left: 0;
@@ -622,6 +630,8 @@ hr.no-top{
 /* utility end */
 
 .inquire-finish{
+    padding-left: 7%;
+    padding-right: 7%;
         .inquire-title{
             padding-top: 15%;
         }

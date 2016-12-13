@@ -95,7 +95,6 @@ class EvaluationForm(NoColonForm, AutoPlaceholderForm,  ModelForm):
                    'doctors_recruit': EmptyTextarea(attrs={'placeholder': 'Yes, 2-3 more pediatric doctors and 1 more orthopedic surgeon.'}),
                    }
 
-
     # Have to update call time attrs in init, can't use widgets (not sure why)
     def __init__(self, *args, **kwargs):
         super(EvaluationForm, self).__init__(*args, **kwargs)
