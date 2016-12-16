@@ -532,6 +532,13 @@ hr.no-margin{
 /* end custom modals */
 
 /* Utility css */
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+
 .inline{
     display: inline;
 }
@@ -751,3 +758,8 @@ div, span, p, h1, h2, h3, h4, h5{
     border: 1px solid black !important;
 }
 */
+
+//Footer width
+.footer-v1{
+    width: 100%;
+}

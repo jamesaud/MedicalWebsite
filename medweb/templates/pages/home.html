@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="{% static 'css/pages/portfolio-v2.css' %}">
 
 
-        <link rel="stylesheet" href="{% static 'standalone/pointy-slider/css/style.css' %}"> <!-- Pointy Slider -->
+        <link rel="stylesheet" href="{% static 'standalone/pointy-slider/scss/style.css' %}"> <!-- Pointy Slider -->
 
 
         <link rel="stylesheet" href="{% static 'standalone/client-testimonials-carousel/scss/style.css' %}"> <!-- CAROUSEL TESTIMONIALS Slider -->
@@ -169,7 +169,7 @@ When doctors can afford to practice medicine their way, patients get healthier. 
                                                                     style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">READ MORE </div></a>
 
 		<!-- LAYER NR. 5 -->
-		<a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact"><div class="tp-caption Newspaper-Button rev-btn "
+		<a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-demo"><div class="tp-caption Newspaper-Button rev-btn "
 			 id="slide-1-layer-6"
 			 data-x="['left','left','left','left']" data-hoffset="['321','280','272','239']"
 			 data-y="['top','top','top','top']" data-voffset="['361','321','282','242']"
@@ -190,7 +190,7 @@ When doctors can afford to practice medicine their way, patients get healthier. 
 			data-responsive_offset="on"
 			data-responsive="off"
 
-                                                                                                    style="z-index: 9; min-width: 201px; max-width: 201px; white-space: normal;text-align:center;background-color:rgba(212, 58, 67, 0.60);border-color:rgba(212, 58, 67, 0.70);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">DEMO NOW </div></a>
+                                                                                                    style="z-index: 9; min-width: 201px; max-width: 201px; white-space: normal;text-align:center;background-color:rgba(212, 58, 67, 0.60);border-color:rgba(212, 58, 67, 0.70);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">DEMO NOW</div></a>
 
 		<!-- LAYER NR. 6 -->
 		<div class="tp-caption Newspaper-Subtitle   tp-resizeme"
@@ -316,7 +316,7 @@ Exceed expectations of VBC by optimizing time &amp; money. </div>
                                                                     style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">READ MORE </div></a>
 
 		<!-- LAYER NR. 5 -->
-		<a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact"><div class="tp-caption Newspaper-Button rev-btn "
+		<a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-demo"><div class="tp-caption Newspaper-Button rev-btn "
 			 id="slide-2-layer-6"
 			 data-x="['left','left','left','left']" data-hoffset="['321','281','272','239']"
 			 data-y="['top','top','top','top']" data-voffset="['360','327','286','242']"
@@ -464,7 +464,7 @@ The system’s workflow is identical to the care process with which Doctors are 
                                                                     style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">READ MORE </div></a>
 
 		<!-- LAYER NR. 5 -->
-		<a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact"><div class="tp-caption Newspaper-Button rev-btn "
+		<a href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-demo"><div class="tp-caption Newspaper-Button rev-btn "
 			 id="slide-3-layer-6"
 			 data-x="['left','left','left','left']" data-hoffset="['321','281','272','239']"
 			 data-y="['top','top','top','top']" data-voffset="['345','310','269','250']"
@@ -1090,14 +1090,14 @@ guaranteed services. </h4>
         <hr>
 
         <div class='hi-comp container'>
-            <div class='row'>
+            <div class='row vcenter'>
 
-                <div class='main-points col-md-6'>
+                <div class='main-points col-md-6 '>
                     <h2 class='main-points-title'>Compare Your System to Ours &amp; Others</h2>
-                    <h4>There is no comparison - click the chart</h4>
+                    <h4>There is no comparison - click the chart to learn more</h4>
                 </div>
 
-                <div class='img-wrapper col-md-6 '>
+                <div class=' col-md-6'>
                     <a class="" href="{% url 'compare' %}" target='_blank'><img class="img-responsive" src="{% static 'images/comparativeanalysisicon.png' %}" alt="image-1"/></a>
                 </div>
 
@@ -1109,7 +1109,7 @@ guaranteed services. </h4>
         <div class='hi-intro-4 container'>
             <div class='row'>
                 <div class='col-md-4'><h4>For a free evaluation of what you stand to gain, call for expedited service</h4>
-                <div class="btn btn-color-0" href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">Call <span>800-xxx-xxxx</span></div>
+                <div class="btn btn-color-0" href="##" onClick="return false;"  data-toggle="modal">Call <span>800-xxx-xxxx</span></div>
                 </div>
 
                 <div class='col-md-4'>
@@ -1119,7 +1119,7 @@ guaranteed services. </h4>
 
                 <div class='col-md-4'>
                     <h4>Tired of waiting? Schedule an online demo now and use the EHR in your browser</h4>
-                    <div class="btn btn-color-2" href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">Demo Now</div>
+                    <div class="btn btn-color-2" href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-demo">Demo Now</div>
                 </div>
             </div>
                         <div id='trigger-home'></div>
@@ -1284,7 +1284,7 @@ guaranteed services. </h4>
             <li class="is-visible">
                 <div class="cd-half-block image"></div>
 
-                <div class="cd-half-block content content-white">
+                <div class="cd-half-block content">
                     <div>
                         <h2>A workflow matching the natural healthcare process</h2>
                         <p class=''>
@@ -1293,9 +1293,9 @@ guaranteed services. </h4>
                         <p class='hide-mobile'><span>A system designed</span> from the ground up by doctors, with input from nurses, MA's, business consultants, and patients to optimize the healthcare process in every way possible.
                         </p>
                         <p class='hide-mobile'>
-                            <span>Follow</span>  the Synergy+ flow by using the tabs below.
+                            <span>Follow</span>  the Synergy+ flow by using the tabs below, and see what the process looks like from start to finish.
                         </p>
-                        <div class="btn btn-color" href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">Live Demo Now</div>
+                        <div class="btn btn-color" href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-demo">Live Demo Now</div>
                     </div>
                 </div>
             </li> <!-- .cd-half-block.content -->
@@ -1305,10 +1305,15 @@ guaranteed services. </h4>
 
                 <div class="cd-half-block content">
                     <div>
-                        <h2>Engage from the Beginning</h2>
+                        <h4>Online Presence</h4>
+                        <h2>Dominate Online Marketing &amp; Secure Patients</h2>
                         <p>
-                            The patient gets sick and searches online.
+                            The patient gets sick and searches online: your clinic is at the top from our Google Adwords expertise.
                         </p>
+                        <p>The advanced patient portal with e-signature, appointment scheduling, &amp; more sees a 67%+ reduction in delayed appointments. Information is immediately verified and available to your clinic.</p>
+                        <p>Don't get left behind, 70% of patients research online before choosing a clinic. </p>
+                           <p> Competitors offer free online services. We offer a premium Google &amp; social media marketing team specialized for your market.</p>
+                        
                     </div>
                 </div>
             </li>
@@ -1318,10 +1323,20 @@ guaranteed services. </h4>
 
                 <div class="cd-half-block content">
                     <div>
-                        <h2>Slide Number 3</h2>
-                        <p>
-                            <!-- content here -->
-                        </p>
+                        <h4>Engage Patients From The Beginning</h4>
+                        <h2>Happy Patients Get Healthier &amp; Refer Other Patients</h2>
+                            <p>
+                                Our system frees staff which can be delegated to patient engagement to optimize the patient experience. 
+                            </p>
+                            <p>
+                                When the patient enters the clinic they are greeted, asked about symptons, vitals are taken, and promptly their EHR record is updated.
+                            </p>
+                            <p>
+                                No more complaints from delayed appointments. Compliance increases and patients provenly get healthier.
+                            </p>
+                             <p>
+                                 Patients feel engaged with the care process &amp; are more motivated to participate in their care.
+                            </p>
                     </div>
                 </div>
             </li>
@@ -1331,15 +1346,120 @@ guaranteed services. </h4>
 
                 <div class="cd-half-block content">
                     <div>
-                        <h2>Slide Number 4</h2>
+                        <h4>The Cloud EHR Experience</h4>
+                        <h2>Doctors Finally Can Practice Medicine Their Way</h2>
                         <p>
-                            <!-- content here -->
+                            Simply put, there is no better EHR/RCM combination in the market. 
                         </p>
+
+                        <p>
+                            From the patient portal, EHR information is filled in automatically.
+                             As soon vitals are taken, it's automatically accessible for the doctor.
+                        </p>
+                        <p>
+                            The patient enters the room &amp; the doctor begins diagnosing. 
+                            During the visit the doctor dictates notes with incredible accuracy. 
+                        </p>
+                        
+                        <p> As the doctor finishes one patient, he is ready to start diagnosing the next. 
+                            This process is shown to save 40% more time than competing products.</p>
+                        
                     </div>
                 </div>
             </li>
 
             <!-- addition list items here -->
+              <li>
+                <div class="cd-half-block image"></div>
+
+                <div class="cd-half-block content">
+                    <div>
+                        <h4>Industry Leading RCM Automation</h4>
+                        <h2>Automated Billing. That's Right, No More Human Error.</h2>
+                        <p>
+                            The RCM system is the only system in the industry that can do ICD-10 coding at the optimal level, completely automated. No more code lookups, no more errors. 
+                        </p>
+
+                        <p>
+                            After the doctor finishes dictating a patient visit, coding *magically* occurs and sent to insurance automatically.
+                        </p>
+
+                          <p>Utilize our integrated clearinghouse to maximize the effeciency of the RCM system.</p>
+
+                        <p>
+                            We buy your ARs up front. With our system, you see money deposited into your account the same day of service. 
+                            You work that day, you get paid for that work.
+                        </p>
+                        
+                        
+                    </div>
+                </div>
+            </li>
+
+               <li>
+                <div class="cd-half-block image"></div>
+
+                <div class="cd-half-block content">
+                    <div>
+                        <h4>After The Day Ends</h4>
+                        <h2>Peace Of Mind For Patients, Doctors &amp; Staff</h2>
+                        <p>
+                            We are the only technology provider that also provides the other services you need.
+                        </p>
+
+                        <p>
+                            With an extensive background in physician recruiting, we know how to recruit. 
+                            Imagine filling all your vacant positions with top producing doctors.
+                        </p>
+
+                          <p>
+                            We monitor your financials to optimize your cash flow. 
+                            All you have to decide is whether to invest or grow.
+                        </p>
+                        
+                        <p>Readily available business consulting to help achieve stability &amp; growth.</p>
+
+                        <p>
+                            Continue to solutions to learn more about what Synergy+ can do for you.
+                        </p>
+                        
+                    </div>
+                </div>
+            </li>
+
+
+            <li>
+                <div class="cd-half-block image"></div>
+
+                <div class="cd-half-block content">
+                    <div>
+                        <h4>Proprietary Services</h4>
+                        <h2>You Need Doctors, We Deliver Top Producers</h2>
+                        <p>
+                            We are the only technology provider that also provides the other services you need.
+                        </p>
+
+                        <p>
+                            With an extensive background in physician recruiting, we know how to recruit. 
+                            Imagine filling all your vacant positions with top producing doctors.
+                        </p>
+
+                          <p>
+                            We monitor your financials to optimize your cash flow. 
+                            All you have to decide is whether to invest or grow.
+                        </p>
+                        
+                        <p>Readily available business consulting to help achieve stability &amp; growth.</p>
+
+                        <p>
+                            Continue to solutions to learn more about what Synergy+ can do for you.
+                        </p>
+                        
+                    </div>
+                </div>
+            </li>
+
+            
         </ul> <!-- .cd-slider ->
 
         <!-- The ol.cd-slider-navigation element is created using jQuery and inserted here -->
@@ -1348,7 +1468,7 @@ guaranteed services. </h4>
 
 </div>
 
-        <hr class='no-top'>
+        <hr>
 
         
          <div class='si-message'>
@@ -1360,7 +1480,7 @@ guaranteed services. </h4>
 
                         <div class='main-points'>
                             <div>
-                                <h2 class='main-points-title '>Industry Fundamental Problems</h2>
+                                <h2 class='main-points-title '>Evidence Based Research</h2>
 
                                 <h4 class=''>Research identified the fundamental problems providers face; people are outraged by 20 years of inadequate technology created by legacy pioneer systems</h4>
                             </div>
@@ -2600,7 +2720,7 @@ Check us out at the <a href="{% url 'about' %}" class='col-4' target='_blank'>ab
 
                 <div class='row demo-btn-wrapper'>
                     <div class='col-md-12'>
-                            <div class="btn btn-color" href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">Schedule a Demo Now</div>
+                            <div class="btn btn-color" href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-demo">Schedule a Demo Now</div>
                     </div>
                 </div>
 
@@ -2671,7 +2791,7 @@ Check us out at the <a href="{% url 'about' %}" class='col-4' target='_blank'>ab
                                         <h2 class="heading-sm">EHR Optimized</h2>
                                         <h4> Cash Based Practices</h4>
                                         <hr>
-                                            <h3>$495 per Provider*</h3>
+                                            <h3>$495 per Provider</h3>
 
                                         <hr>
                                     </div>
@@ -3059,7 +3179,7 @@ satisfied and how we may better serve you. We check on recruitments you may need
 
             <div class='row'>
                 <div class='col-md-4'><h4>For a free evaluation of what you stand to gain, call for expedited service</h4>
-                <div class="btn btn-color-0" href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">Call <span>800-xxx-xxxx</span></div>
+                <div class="btn btn-color-0" href="##" onClick="return false;">Call <span>800-xxx-xxxx</span></div>
                 </div>
 
                 <div class='col-md-4'>
@@ -3069,7 +3189,7 @@ satisfied and how we may better serve you. We check on recruitments you may need
 
                 <div class='col-md-4'>
                     <h4>Tired of waiting? Schedule an online demo now and use the EHR in your browser</h4>
-                    <div class="btn btn-color-2" href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-contact">Demo Now</div>
+                    <div class="btn btn-color-2" href="##" onClick="return false;"  data-toggle="modal" data-target="#modal-demo">Demo Now</div>
                 </div>
 
 

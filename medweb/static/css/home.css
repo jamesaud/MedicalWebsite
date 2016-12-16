@@ -982,7 +982,8 @@ a:hover {
   margin: 0 auto;
   max-width: 1300px; }
   .section-slideshow .cd-slider-wrapper {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    max-height: 800px; }
   @media (min-width: 992px) {
     .section-slideshow .cd-slider-wrapper {
       max-height: 800px; } }
@@ -997,8 +998,6 @@ a:hover {
     line-height: 1.4; }
     .section-slideshow p span {
       font-weight: bold; }
-  .section-slideshow .content-white h2, .section-slideshow .content-white p {
-    color: white; }
   .section-slideshow .btn-color {
     border-color: #D43A43;
     background-color: rgba(212, 58, 67, 0.85); }

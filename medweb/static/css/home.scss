@@ -985,6 +985,7 @@ a:hover{
             height: 55px;
 }
 
+
 //In the why-us section
 .cd-testimonials{
     p{
@@ -1190,7 +1191,7 @@ a:hover{
     
     .cd-slider-wrapper{
         padding-bottom: 0;
-
+        max-height: 800px;
     }
     
     @media (min-width: 992px) {
@@ -1219,11 +1220,7 @@ a:hover{
         
     }
     
-    .content-white{
-        h2,p{
-            color: white;
-        }
-    }
+
     
     .btn-color{
         @include color_btn($third-color);    }

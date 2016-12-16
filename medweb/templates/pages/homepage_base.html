@@ -147,14 +147,17 @@
 <!-- ENDTOP NAVBAR -->
         {% endblock navbar %}
 
-        <div class='sidebar'>
+<!-- Sidebar -->
+        {% block sidebar %}
+            <div class='sidebar'>
 
-            <ul>
-                <li id='sidebar-phone' ><a href='##' onClick="return false;"><i class="fa fa-phone fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>812-360-9245</span></h5></a></li>
-                <li id='sidebar-contact'>  <a href='' data-toggle="modal" data-target="#modal-contact"><i class="fa fa-envelope-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Contact</span></h5></a></li>
-                 <li id='sidebar-demo' ><a href='' data-toggle="modal" data-target="#modal-demo"> <i class="fa fa-comments-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Schedule Demo</span></h5></a></li>
-            </ul>
-        </div>
+                <ul>
+                    <li id='sidebar-phone' ><a href='##' onClick="return false;"><i class="fa fa-phone fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>812-360-9245</span></h5></a></li>
+                    <li id='sidebar-contact'>  <a href='' data-toggle="modal" data-target="#modal-contact"><i class="fa fa-envelope-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Contact</span></h5></a></li>
+                    <li id='sidebar-demo' ><a href='' data-toggle="modal" data-target="#modal-demo"> <i class="fa fa-comments-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Schedule Demo</span></h5></a></li>
+                </ul>
+            </div>
+        {% endblock sidebar %}
 
     <!-- CONTACT MODAL -->
         <div id="modal-contact" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-contact" aria-hidden="true">

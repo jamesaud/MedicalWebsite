@@ -54,8 +54,7 @@ def invest(request, context):
     return render(request, 'pages/invest.html', context=context)
 
 def compare(request):
-    return render(request, 'pages/compare.htm', context={})
-
+    return render(request, 'pages/table.html', context={})
 
 def create(request):
     if request.method == 'POST':

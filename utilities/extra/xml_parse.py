@@ -1,9 +1,17 @@
-import csv
+import os 
 
-def parseTable(csv_file):
-    with open(csv_file, 'rb') as csvfile:
-        reader = csv.DictReader(csvfile)
-        print(reader)
+def parseTable(file):
+    """
+    Writes a compatible table for cross-reference-table css from an html file.
+    Output: html file
+    """
+    with open(file, 'r') as f:
+        text = f.read()
+    
+    print(tr)
 
-parseTable('comparison.csv')
+
+path = os.path.join(os.getcwd(), 'utilities/extra/test_table.html')
+
+parseTable(path)
 
