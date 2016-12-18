@@ -1199,6 +1199,15 @@ a:hover{
             max-height: 800px;
         }
     }
+
+    @media (max-width: 768px){
+        //Set height explicityly for the slider sadly.
+        .cd-slider-wrapper{
+            height: 1200px;
+            max-height: 1200px;
+            }
+    }
+    
     
     
     .cd-slider-navigation{

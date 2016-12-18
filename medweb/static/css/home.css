@@ -987,6 +987,10 @@ a:hover {
   @media (min-width: 992px) {
     .section-slideshow .cd-slider-wrapper {
       max-height: 800px; } }
+  @media (max-width: 768px) {
+    .section-slideshow .cd-slider-wrapper {
+      height: 1200px;
+      max-height: 1200px; } }
   .section-slideshow .cd-slider-navigation {
     z-index: 1; }
   .section-slideshow h2 {
