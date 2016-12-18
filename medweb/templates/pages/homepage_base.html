@@ -1,5 +1,6 @@
- {% load staticfiles i18n %}
+{% load staticfiles i18n %}
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -86,10 +87,15 @@
 
 {% block header-js %}
 
+    	<!-- JS Global Compulsory -->
+        <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery-migrate-1.4.1.min.js' %}"></script>
+
     <!-- MODERNIZR -->
     <script type="text/javascript" src="{% static 'standalone/pointy-slider/js/modernizr.js' %}"></script>
 
 {% endblock header-js %}
+
     </head>
 
 <!DOCTYPE html>
@@ -978,10 +984,7 @@
 
 
 
-	<!-- JS Global Compulsory -->
-
-    <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/jquery-migrate-1.4.1.min.js' %}"></script>
+{% block javascript %}
 
     <script type="text/javascript" src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
 
@@ -1299,6 +1302,7 @@ submit_form('#demo-form-0');
 
 });
 </script>
+{% endblock javascript %}
 
     {% block more-javascript %}{% endblock more-javascript %}
 

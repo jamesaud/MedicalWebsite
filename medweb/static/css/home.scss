@@ -1828,13 +1828,10 @@ a:hover{
 
 .rev_slider_wrapper{
     //Styling the TP-BANNER Slider
-    .Newspaper-Subtitle, .tp-tab-title{
-        color: #AEDBF7 !important;
-    }
+  
     
-    //Change background shading to darker
-    .tp-shape {
-        background-color: rgba(0, 0, 0, 0.4002) !important;
+    .tp-tab-desc{
+        color: lighten($primary-color, 30%) !important;
     }
 }
 

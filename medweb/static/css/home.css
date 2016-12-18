@@ -1428,10 +1428,8 @@ a:hover {
 @media screen and (max-width: 768px) {
   #click-here {
     display: none; } }
-.rev_slider_wrapper .Newspaper-Subtitle, .rev_slider_wrapper .tp-tab-title {
-  color: #AEDBF7 !important; }
-.rev_slider_wrapper .tp-shape {
-  background-color: rgba(0, 0, 0, 0.4002) !important; }
+.rev_slider_wrapper .tp-tab-desc {
+  color: #ceeafa !important; }
 
 #modal-guarantee .modal-header, #modal-guarantee .modal-dialog, #modal-guarantee .modal-body, #modal-guarantee .modal-footer {
   max-width: 1000px; }
