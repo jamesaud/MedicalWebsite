@@ -21,7 +21,7 @@ For example, if my docker machine ip was 256.34.23.12, the url would be:
 
 ==============================
 
-medical website
+me dical website
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
