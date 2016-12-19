@@ -110,4 +110,9 @@ See detailed `cookiecutter-django Docker documentation`_.
 
 More help: https://realpython.com/blog/python/development-and-deployment-of-cookiecutter-django-via-docker/
 
+Git Flow
+^^^^^^^^
+See detailed 'Git Flow Tutorial'
+.. _`git flow tutorial`: http://danielkummer.github.io/git-flow-cheatsheet/
+
 
