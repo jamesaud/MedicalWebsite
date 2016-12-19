@@ -3,6 +3,13 @@
 {% load static %}
 
 
+{% block css %}
+    {{ block.super }}
+
+
+
+{% endblock css %}
+
 
 
 
@@ -14,6 +21,15 @@
 
 
 
+
+
+
+
 {% endblock modal %}
 
 
+{% block javascript %}
+{{ block.super }}
+
+
+{% endblock javascript %}

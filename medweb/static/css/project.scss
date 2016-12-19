@@ -9,24 +9,24 @@
 
  padding-bottom: 0;
  padding-top: 30px;
-    
+
  h1{
      padding-bottom: 10px;
      text-align: center;
-     color: black !important; 
+     color: black !important;
     }
-    
+
   .main-points-title{
          font-size: $font-size-one;
     }
-    
+
  h3{
     font-weight: bold;
     }
-    
+
  .main-points-block{
    }
-    
+
     .main-points-header{
         color: black !important;
     }
@@ -52,7 +52,7 @@ hr{
             img{
                 height: 40px;
                 width: auto;
-                margin-bottom: 2px;          
+                margin-bottom: 2px;
             }
         }
     }
@@ -61,7 +61,7 @@ hr{
 #cd-nav-text{
     position: absolute;
     left: 28%;
-    
+
     margin-top: 1.4%;
     h5{
         font-size: 12px;
@@ -90,7 +90,7 @@ hr{
             color: white;
             text-decoration: none;
             &.active{
-              box-shadow: inset 0 -3px $primary-color !important;   
+              box-shadow: inset 0 -3px $primary-color !important;
             }
         }
     }
@@ -101,7 +101,7 @@ hr{
     .cd-secondary-nav{
         //Change height here?
     }
-    
+
 }
 
 //END NAVBAR
@@ -116,7 +116,7 @@ hr{
     .hide-mobile{
         display: none;
     }
-    
+
     .show-mobile{
         display: inherit;
     }
@@ -124,7 +124,7 @@ hr{
 }
 
 
- 
+
 #nav-call{
     width: 180px;
     a{
@@ -149,7 +149,7 @@ hr{
         right: -11px;
         top: 20px;
     }
-    
+
 }
 
 @media screen and (max-width: 1180px){
@@ -171,9 +171,9 @@ hr{
             padding-left: 0;
             li{list-style-type: none}
         }
-        
-        
-    
+
+
+
         #nav-call{
             width: auto;
              a{
@@ -192,7 +192,7 @@ hr{
 .cd-primary-nav{
     padding-right: 3%;
 }
-   
+
 
 
 .center{
@@ -223,8 +223,8 @@ hr.no-margin{
 
 
 /* To be below fixed nav bar */
-.content-main { 
-    margin-top: 60px !important; 
+.content-main {
+    margin-top: 60px !important;
 }
 
 @media screen and (max-width: 1025px) {
@@ -266,8 +266,8 @@ hr.no-margin{
         padding: 0;
         margin: 0;
         list-style-type:none;
-        
-        li{ 
+
+        li{
             padding: 0;
             padding-bottom: 10px;
             overflow: visible;
@@ -277,35 +277,35 @@ hr.no-margin{
                 width: 25px;
                 color: $primary-color;
             }
-  
-            
+
+
             h5{
                 display: inline;
             }
-            
+
             a{
                 text-decoration: none;
                 display: block;
             }
         }
-        
-        
+
+
         #sidebar-phone{
             h5{color: $third-color;}
         }
-        
+
         .sidebar-content{
             display: none;
             line-height: 20px;
             overflow: visible;
             white-space: nowrap;
         }
-        
-        
+
+
         li:last-child{
             padding-bottom: 0;
         }
-        
+
         li:hover{
             h5{color:black;}
 
@@ -313,7 +313,7 @@ hr.no-margin{
                 color: black;
             }
         }
-        
+
         #sidebar-phone:hover{
             h5{color: red !important;}
             }
@@ -364,9 +364,9 @@ hr.no-margin{
 }
 
 .tiny-text{
-            font-size: 10px !important;             
+            font-size: 10px !important;
         }
-            
+
 .no-wrap{
      overflow: visible;
     white-space: nowrap;
@@ -394,7 +394,7 @@ hr.no-margin{
 
 .modal-fullscreen {
   background: transparent;
-  
+
     //Wrap around bootsrap default close button
   .close-button{
         right: 8px;
@@ -404,7 +404,7 @@ hr.no-margin{
         //Default boostrap close button class
         .close {
             font-size: 35px !important;
-            //color: #333; 
+            //color: #333;
             //filter: alpha(opacity=20);
             //opacity: .5;
       }
@@ -486,7 +486,7 @@ hr.no-margin{
     .modal-dialog, .modal-body, .modal-header{
         max-width: $width;
         }
-        
+
     .modal-footer{
         padding-top: 0;
     }
@@ -511,7 +511,7 @@ hr.no-margin{
             font-size: $font-size-four;
         }
     }
-    
+
 
     .contact-message{
         h5{
@@ -527,7 +527,7 @@ hr.no-margin{
 
 #modal-demo{
     @include modalSmall(700px);
-    
+
 }
 /* end custom modals */
 
@@ -659,11 +659,11 @@ hr.no-top{
         h2{
             color:black;
         }
-    }    
+    }
 
 //Styling forms
     form{
-        
+
         .form-title{
             border-bottom: 2px solid $primary-color;
             display: inline-block;

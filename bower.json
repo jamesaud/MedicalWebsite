@@ -7,6 +7,6 @@
     "eonasdan-bootstrap-datetimepicker": "*",
     "bootstrap": "3.3.7",
     "parsleyjs": "2.6.0",
-    "isotope": "3.0.0"
+    "isotope": "^3.0.1"
   }
 }

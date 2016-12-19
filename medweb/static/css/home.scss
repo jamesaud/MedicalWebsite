@@ -14,24 +14,24 @@ a:hover{
 
  padding-bottom: 0;
  padding-top: 30px;
-    
+
  h1{
      padding-bottom: 10px;
      text-align: center;
-     color: black !important; 
+     color: black !important;
     }
-    
+
   .main-points-title{
          font-size: $font-size-one;
     }
-    
+
  h3{
     font-weight: bold;
     }
-    
+
  .main-points-block{
    }
-    
+
     .main-points-header{
         color: black !important;
     }
@@ -41,31 +41,31 @@ a:hover{
 
 .section-modal-pricing{
     $font-mult: 1;
-    
+
     .modal-dialog, .modal-body, .modal-content{
         max-width: 1000px;
         .container{
             max-width: 1000px;
         }
     }
-    
+
     // Set the min height of the middle section
-    
+
     #providers{
         font-weight: bold;
     }
-    
+
     .modal-content{
         .modal-body, .modal-footer{
             padding: 0;
         }
         .modal-header{
             padding: 0;
-            
+
             .close-button{
                 position: absolute;
             }
-            
+
         }
 
 
@@ -100,7 +100,7 @@ a:hover{
             background: white !important ;
         }
 
-        
+
         @mixin generate-button-colors($class, $color){
             .#{$class}{
                 .btn-primary{
@@ -111,10 +111,10 @@ a:hover{
                         color: #fff;
                         background-color: $color;
                         border-color: $color;
-                }  
+                }
             }
         }
-        
+
         @include generate-button-colors('button-color-1', $primary-color);
         @include generate-button-colors('button-color-2', $second-color);
         @include generate-button-colors('button-color-3', $third-color);
@@ -123,9 +123,9 @@ a:hover{
         .tab-content{
             padding-left: 0;
             padding-right: 0;
-            
+
              /* GENERATE 3 CLASSES WITH DIFFERENT COLORS FOR THE PURCHASING MODAL */
-            @mixin tab-pane-color($class, $color){     
+            @mixin tab-pane-color($class, $color){
                 .#{$class}{
                 .tab-pane-content{
                     padding-left: 4.5%;
@@ -152,7 +152,7 @@ a:hover{
                             padding-right: 5px;
                             color: white;
                             background: $third-color;
-                            display: inline; 
+                            display: inline;
                             border: 2px solid $third-color;
                         }
                         h3:hover{
@@ -197,7 +197,7 @@ a:hover{
                         *display:inline;
 
 
-                         
+
                         .popover{
                              font-size: $font-size-six;
                              width: 250px;
@@ -212,9 +212,9 @@ a:hover{
                          .popover.left>.arrow:after{
                              border-left-color: $color;
                          }
-                         
+
                         li {
-                            
+
                             a{
                                 h4{
                                     line-height: 20px;
@@ -232,7 +232,7 @@ a:hover{
                             }
                         }
                         li:before{
-                            content: '✔';   
+                            content: '✔';
                             margin-left: -1em;
                             margin-top: .4em;
                             margin-right: 0;
@@ -241,7 +241,7 @@ a:hover{
                         }
                     }
                 }
-                        
+
                 .m-pricing-tab-content-2{
                     text-align: left !important;
                     padding-top: 10px;
@@ -252,13 +252,13 @@ a:hover{
                         font-style: italic;
                     }
                  }
-                
+
                 @media screen and (min-width: 769px){
                     .btn-color{
                         float: right;
                     }
                 }
-                    
+
                 .btn-color{
                     color: white;
                     border-color: $color;
@@ -280,8 +280,8 @@ a:hover{
             @include tab-pane-color('tab-pane-color-3', $third-color);
             @include tab-pane-color('tab-pane-color-2', $second-color);
             @include tab-pane-color('tab-pane-color-1', $primary-color);
-            
-        
+
+
             #pricing-modal-tab-4{
                 background: #222;
                 padding-top: 15px;
@@ -293,15 +293,15 @@ a:hover{
                             background: white;
                             max-width: 700px;
                             margin: 0 auto;
-                    
-                            
+
+
                             .tab-pane{
                             }
                 }
-                
-                
+
+
             }
-            
+
         }
 
         .card.hovercard .card-info {
@@ -316,7 +316,7 @@ a:hover{
 }
 
 .section-highlights{
-    
+
     margin-top: 0px;
     text-align: center;
     margin-bottom: 0 !important;
@@ -326,13 +326,13 @@ a:hover{
         text-align: center;
         padding-top: 13px;
         padding-bottom: 40px;
-        
+
         .main-points{
             h2{color:black;}
             h3{font-weight: $weight-light;}
         }
     }
-    
+
     .hi-intro-2{
         @extend .hi-intro;
         margin-bottom: 0;
@@ -343,14 +343,14 @@ a:hover{
         a{
             color: $third-color;
         }
-        
+
         &:after{
             .overlay:after {
             content: '\A';
             position: absolute;
-            width: 100%; 
+            width: 100%;
             height:100%;
-            top:0; 
+            top:0;
             left:0;
             background:rgba(0,0,0,0.5);
             opacity: 1;
@@ -360,22 +360,22 @@ a:hover{
         }
         }
     }
-    
+
      .hi-intro-3{
          position: relative !important;
         @extend .hi-intro;
           padding-top: 40px;
          padding-bottom: 55px;
          margin-bottom: 0px;
-      
-         
+
+
          h3{
              color: white;
         }
-         
+
          .hi-intro-title{
              margin-bottom: 30px;
-             
+
                 }
          span{
              font-style: italic;
@@ -394,7 +394,7 @@ a:hover{
              height: 50px;
          }
     }
-    
+
     .hi-intro-4{
         @extend .hi-intro;
         padding-bottom: 50px;
@@ -410,12 +410,12 @@ a:hover{
             padding-bottom: 3px;
             padding-left: 18px;
             padding-right: 18px;
-            
+
             //outline: 1px solid $primary-color;
             background: transparent;
 
-            color: $primary-color;  
-            
+            color: $primary-color;
+
             font-size: 23px;
             span{
                 font-weight: bold;
@@ -427,50 +427,50 @@ a:hover{
             }
         }
     }
-   
-    
+
+
     .hi-intro-points{
         $border-color: #777;
         $padding: 35px;
         padding-top: 45px;
         padding-bottom: 45px;
-        
+
         .main-points{
             padding-top: 0;
         }
-        
+
         h4{
             font-size:  $font-size-five;
             font-weight: $weight-light;
         }
-        
+
         .main-points-block{
             padding-left: 3%;
             padding-right: 3%;
             span{
                 font-style: italic;
             }
-            
-            
+
+
             &:first-child{
                   border-right: 1px dotted $border-color;
             }
         }
-        
+
         .i-points-border-t{
             border-top: 1px dotted $border-color;
             width: 95%;
             margin: 0 auto;
         }
-        
 
-        
+
+
         .intro-block-1{
             .main-points-block{
                 padding-bottom: $padding !important;
             }
         }
-        
+
         .intro-block-2{
             .main-points-block{
                 padding-top: $padding !important;
@@ -478,7 +478,7 @@ a:hover{
             }
         }
     }
-    
+
     .hi-comp{
 
         padding-bottom: 40px;
@@ -488,14 +488,14 @@ a:hover{
             text-align: center;
             vertical-align: center;
             .main-points-title{
-                color: black !important;            
+                color: black !important;
             }
         }
 
         h4{
             font-weight: $weight-light;
         }
-        
+
         a,img{
             z-index: 0;
             text-align: left;
@@ -505,7 +505,7 @@ a:hover{
             margin: 0 auto;
         }
     }
-    
+
     .hi-success{
         text-align: center;
         padding-bottom: 43px !important;
@@ -546,31 +546,31 @@ a:hover{
         }
     }
 
-   
+
     .highlights-components{
         max-width: $max-width;
         margin: 0 auto;
         text-align: center;
-        
+
         .component-circle{
             width: 120px;
             display: inline-block;
             margin-left: 18px;
             margin-right: 18px;
-            
+
         }
-        
-        
+
+
         .popover{
             width: 550px; /* Max Width of the popover (depending on the container!) */
             max-width: 550px;
             z-index: 5;
-         
+
             ul{
                 padding-left: 20px;
             }
             li{
-              margin-bottom: 5px;  
+              margin-bottom: 5px;
                 &:last-child{
                     margin-bottom: 0px;
                 }
@@ -579,24 +579,24 @@ a:hover{
                 word-wrap: normal;
                 white-space: normal;
             }
-        
+
         }
-        
+
         @media screen and (max-width: 769px){
             .popover{
                 max-width: 100%;
             }
         }
-    
+
         h5{
             overflow: visible;
             white-space: nowrap;
             p{color: #333 !important;}
         //font-size: $font-size-four;
     }
-    } 
-    
-    
+    }
+
+
     .section-highlights-block-2{
         padding-top: 45px ;
         margin-bottom: 65px !important;
@@ -619,13 +619,13 @@ a:hover{
         font-family: $font-fun;
         font-size: $font-size-three;
     }
-    
+
     .main-points{
         .main-points-title{
             //padding-bottom: 0px !important;
         }
     }
-    
+
     .circle-text{
         text-align: center;
         top: 20px;
@@ -635,8 +635,8 @@ a:hover{
         font-weight: bold;
         text-decoration: none;
     }
-    
-    
+
+
     %fa-my{
           margin-left: 12px;
           margin-right: 12px;
@@ -650,27 +650,27 @@ a:hover{
           -webkit-box-shadow: 3px 3px 5px 6px #ccc;
           box-shadow:         0px 0px 0px 5px #333;
     }
-    
-    
-    
 
-    
+
+
+
+
     @mixin border($color) {
         border: 3px dotted  $color;
         @include transparentBackgroundColor(.3, $color);
     }
-    
+
     @mixin fa-my-generator($class, $color){
         .#{$class}{
-            @extend %fa-my; 
+            @extend %fa-my;
             @include border($color);
         }
         .#{$class}:hover{
                @include transparentBackgroundColor(1, $color);
-            
+
         }
     }
-    
+
 @include fa-my-generator(fa-my-1, $primary-color);
 @include fa-my-generator(fa-my-2, $second-color);
 @include fa-my-generator(fa-my-3, $fifth-color);
@@ -679,8 +679,8 @@ a:hover{
 @include fa-my-generator(fa-my-6, $third-color);
 @include fa-my-generator(fa-my-7, $seventh-color);
 
-    
-    
+
+
 }
 
 
@@ -694,13 +694,13 @@ a:hover{
 .section-circles{
     align-content: center;
     margin-bottom: 40px;
-    
+
     h2 {
         padding-bottom: 25px;
         color: black !important;
 
     }
-    
+
     .main-points-header{
         margin-bottom: 20px;
     }
@@ -717,27 +717,27 @@ a:hover{
                 vertical-align: center;
                 color: black !important;
             }
-            
+
         }
-        
+
         .si-message-1{
             margin-bottom: 40px;
         }
-        
+
         #si-message-btn-wrapper-1{
             padding-top: 9px;
             padding-bottom: 70px;
         }
-        
+
         #si-message-btn-wrapper-2{
             padding-top: 78px;
         }
-        
-        
-        
+
+
+
         $btn-color: $third-color;
         $btn-color-2: $primary-color;
-        
+
         %si-message-btn{
             text-align: center;
             color: white;
@@ -752,7 +752,7 @@ a:hover{
             min-height: 100%;
             margin: 0 auto;
             white-space: normal;
-            
+
             h3, h4, h5 p{color: white !important;}
             h3{
                 font-weight: bold;
@@ -776,7 +776,7 @@ a:hover{
                      color: #333 !important;
                  }
             }
-    
+
         }
 
         .si-message-btn-1{
@@ -787,7 +787,7 @@ a:hover{
         .si-message-btn-2{
             @extend %si-message-btn;
             border: $btn-color-2 1.4px solid;
-            @include transparentBackgroundColor(.8, $btn-color-2, !important); 
+            @include transparentBackgroundColor(.8, $btn-color-2, !important);
         }
 
         //For readmore.js
@@ -795,7 +795,7 @@ a:hover{
                 max-height: 89px;
             }
     }
-    
+
     .si-info{
         padding-top: 15px;
         padding-bottom: 40px;
@@ -805,28 +805,28 @@ a:hover{
                 color: black;
                 display: inline;
             }
-            
-            
+
+
             .block-3-title{
                 margin-bottom: 20px;
             }
-            
+
             .read-more{
                 color: $third-color !important;
             }
-            
+
             //For the readmore.js, we must set the max height of each item
             article{
                 max-height: 80px;
             }
-            
+
             .main-points{
                 text-align: left !important;
                 .main-points-header{
                     font-weight: bold;
                 }
             }
-            
+
             span{
                 font-weight: bold;
             }
@@ -863,7 +863,7 @@ a:hover{
         position: absolute;
         top: 80px;
         text-align: center;
-        @include transparentBackgroundColor(.85, white);  
+        @include transparentBackgroundColor(.85, white);
          -webkit-box-shadow: 0px 4px 12px -2px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 4px 12px -2px rgba(0,0,0,0.75);
         box-shadow: 0px 4px 12px -2px rgba(0,0,0,0.75);
@@ -918,7 +918,7 @@ a:hover{
             margin-top: 20px;
         }
     }
-    
+
     .why-testimonials{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -942,7 +942,7 @@ a:hover{
                 .item blockquote {
                     border-left: none;
                     margin: 0;
-                
+
                     & .quote{
                         color: white !important;
                     }
@@ -970,11 +970,11 @@ a:hover{
                     position: absolute;
                     color: $primary-color;
                  }
-            } 
+            }
         }
     }
 
-   
+
 
 }
 
@@ -993,7 +993,7 @@ a:hover{
         color: white !important;
     }
     li{
-        color: $primary-color; 
+        color: $primary-color;
         list-style-type: none !important;
         list-style: none;
         &:first-child{
@@ -1011,7 +1011,7 @@ a:hover{
 			li:last-child {
 				font-size: $font-size-six;
 			}
-		}    
+		}
 }
 
 
@@ -1037,24 +1037,24 @@ a:hover{
             }
         }
     }
-    
+
     .nav-tabs{
         >li >a{ font-size: $font-size-four;}
     }
-    
+
     h1{
         color: #333 !important;
     }
-    
+
     i{
         color: $primary-color !important;
     }
-    
-    .nav-wrapper{  
+
+    .nav-wrapper{
         margin: 0 auto;
         max-width: $max-width;
     }
-    
+
     h2{
         color: #333;
         border-color: $primary-color !important;
@@ -1065,15 +1065,15 @@ a:hover{
         margin-bottom: 15px ;
         h2{margin-bottom: 0px;}
     }
-    
+
     .faq-resources{
         max-height: 550px;
         padding-top: 20px;
-        
+
         p{
             font-size: 11px !important;
         }
- 
+
         //Overwriting from portfolio-2.css
         .sorting-block .sorting-grid li a:hover .sorting-cover {
             background: $primary-color;
@@ -1083,8 +1083,8 @@ a:hover{
         .sorting-block .sorting-grid li a:hover .sorting-cover span {
             color: #fff;
         }
-      
-        
+
+
         span{
             font-size: 15px !important;
         }
@@ -1104,13 +1104,13 @@ a:hover{
             max-width: 1000px;
             margin: 0 auto;
         }
-        
+
         .img-responsive{
             height: 130px;
         }
     }
-    
-            
+
+
    }
 
 .section-benefits{
@@ -1121,40 +1121,41 @@ a:hover{
         }
     }
     margin-bottom: 25px;
+
     .sb-benefits{
         margin-bottom: 0px;
               li{
             font-weight: $weight-light;
         }
     }
-    
+
     .sb-title{
         height: 290px;
         vertical-align: middle;
         display: table-cell;
         vertical-align: middle;
     }
-    .main-points{   
+    .main-points{
         .main-points-block{
             padding-left: 5px;
             padding-right: 5px;
-            
-            
+
+
             h3{
             text-align: center;
             padding-bottom: 0px;
             }
-            
+
             h4 {
-                
+
                 font-style: italic;
             }
-            
+
             .main-points-block-title{
                 text-align: center;
                 padding-bottom: 5px;
             }
-            
+
             ul {
                 list-style: none;
                 list-style-position: outside;
@@ -1163,20 +1164,20 @@ a:hover{
                 zoom:1;
                 *display:inline;
                 padding-left: 50px;
-                
+
                 li {
                     line-height: 30px;
                     font-size: $font-size-four;
                     margin-bottom: 3px;
                 }
                 li:before{
-                    content: '✔';   
+                    content: '✔';
                     margin-left: -1em;
                     margin-right: .200em;
                     color: green;
                 }
             }
-            
+
         }
     }
 }
@@ -1186,14 +1187,14 @@ a:hover{
 .section-slideshow{
     margin: 0 auto;
     max-width: $max-width;
-    
 
-    
+
+
     .cd-slider-wrapper{
         padding-bottom: 0;
         max-height: 800px;
     }
-    
+
     @media (min-width: 992px) {
         .cd-slider-wrapper{
             max-height: 800px;
@@ -1207,33 +1208,33 @@ a:hover{
             max-height: 1200px;
             }
     }
-    
-    
-    
+
+
+
     .cd-slider-navigation{
         z-index: 1;
     }
-    
+
     h2{
         line-height: 1.4;
         margin-bottom: 30px;
         font-size: 3.0rem;
     }
-    
+
     p{
         font-size: 1.6rem;
-        line-height: 1.4; 
+        line-height: 1.4;
         span{
             font-weight: bold;
         }
-        
-    }
-    
 
-    
+    }
+
+
+
     .btn-color{
         @include color_btn($third-color);    }
-    
+
     @media screen and (max-width: 768px){
         h2{
             margin-bottom: 20px;
@@ -1242,7 +1243,7 @@ a:hover{
 }
 
 .section-plans{
-    background: #3E4747 !important; 
+    background: #3E4747 !important;
     h4{color: white !important;}
     .plans-btn-wrapper{
                 margin-top: 32px !important;
@@ -1252,7 +1253,7 @@ a:hover{
          text-align: center;
         padding-top: 20px;
         padding-bottom: 0px !important;
-        
+
         .main-points{
             h2{color: #eee;}
             h3{font-weight: $weight-light;}
@@ -1273,12 +1274,12 @@ a:hover{
             padding-bottom: 3px;
             padding-left: 18px;
             padding-right: 18px;
-            
+
             //outline: 1px solid $primary-color;
             background: transparent;
 
-            color: $primary-color;  
-            
+            color: $primary-color;
+
             font-size: 23px;
             span{
                 font-weight: bold;
@@ -1290,7 +1291,7 @@ a:hover{
             }
         }
     }
-  
+
 
 
     .btn-color{
@@ -1308,19 +1309,19 @@ a:hover{
     .pricing-menus-wrapper{
         padding-bottom: 50px;
     }
-    
+
 
     .popover{
         z-index: 3;
         width: 250px;
-  
+
         li, h5{
             margin-bottom: 0px;
             font-size: 14px !important;
         }
-      
+
     }
-    
+
     .title{
         margin-bottom: 20px;
         text-align: center;
@@ -1338,20 +1339,20 @@ a:hover{
         }
         padding-bottom: 30px !important;
     }
-    
-   
+
+
     .color-top-0, .color-top-1, .color-top-2, .color-top-3, {
         height: 20px;
     }
-    
+
      .color-top-0{
         background: $primary-color;
     }
-    
+
     .color-top-1{
         background: $second-color;
     }
-    
+
     .color-top-2{
         background: $third-color;
     }
@@ -1360,7 +1361,7 @@ a:hover{
         background: $fourth-color;
     }
 
-    
+
     .heading-sm{
         color: black !important;
         margin-bottom: 10px;
@@ -1380,7 +1381,7 @@ a:hover{
                 color: white !important;
             }
         }
-        
+
     }
     .service-block{
         h4{
@@ -1399,7 +1400,7 @@ a:hover{
             }
          }
        }
-        
+
         a, a:visited{
             color: rgb(85, 85, 85);
             text-decoration: none;
@@ -1423,7 +1424,7 @@ a:hover{
             padding-bottom: 10px;
         }
     }
-    
+
     .btn-u{
         font-size: $font-size-four;
         width: 100%;
@@ -1464,7 +1465,7 @@ a:hover{
 
 
       /* GENERATE 3 CLASSES WITH DIFFERENT COLORS FOR THE PURCHASING MODAL */
-        @mixin service-block-color($class, $color){     
+        @mixin service-block-color($class, $color){
             .#{$class}{
                     li {
                         a:hover{
@@ -1504,7 +1505,7 @@ a:hover{
     padding-bottom: 60px !important;
     h1{
      font-size:  1.15em;
-     font-weight: 500;   
+     font-weight: 500;
     }
     p{
         font-weight: 500 ;
@@ -1531,10 +1532,10 @@ a:hover{
     .sb-title{
         margin-bottom: 20px;
         h2{
-            font-weight:  500; 
+            font-weight:  500;
         }
     }
-    
+
     .demo-content{
         h2{
             color: black;
@@ -1544,11 +1545,11 @@ a:hover{
             font-weight: 500 ;
         }
     }
-    
+
     .btn-color{
         @include color_btn($third-color);
     }
-    
+
     .demo-btn-wrapper{
         margin-top: 20px;
     }
@@ -1573,13 +1574,13 @@ a:hover{
 
 
 .section-modal-solutions{
-    
+
     #ADD{
         .col-middle{
             border-right: 1px solid #eee;
             border-left: 1px solid #eee;
         }
-        
+
         #add-header{
             text-align: center !important;
             font-size: $font-size-three;
@@ -1588,19 +1589,19 @@ a:hover{
             text-align: center;
         }
         i{text-align: center;}
-        
-        
+
+
     }
-    
+
     .col-md-9.lg{
         padding-left: 0;
     }
-    
+
     .timeline_width{
         width: 220px !important;
         padding-right: 0;
     }
-    
+
     /* MODAL SETTINGS */
     @media screen and (min-width: 769px){
         .modal-dialog{
@@ -1616,27 +1617,27 @@ a:hover{
         border-top: 0px solid white;
         background: transparent;
         height: 0px;
-        button{        
+        button{
             position: absolute;
             right: 12px;
             bottom: 17px;
         }
-    }       
+    }
     }
 
 
-    
+
     //Generates the title colors for each tab
     @mixin generateTabClassColor($class, $color){
         ##{$class}{
-            
+
                 h3{
                     color: $color !important;
                 }
-            
+
         }
     }
-    
+
     @include generateTabClassColor(PE, $primary-color);
     @include generateTabClassColor(DS, $second-color);
     @include generateTabClassColor(EHR, $fifth-color);
@@ -1658,22 +1659,22 @@ a:hover{
             margin-top: 10px;
             margin-bottom: 10px;
             }
-        
+
         p{
             color: #555;
             text-align: justify;
         }
-        
+
         .tab-content-main-message{
             p{font-style: normal;}
             h3{
                 font-weight: bold;
             }
         }
-        
+
         }
 
-    
+
     /*TIMELINE OVERRIDES */
     .timeline-v1:before {
         top: 0;
@@ -1685,7 +1686,7 @@ a:hover{
         left: 186px;
         margin-left: -1.5px;
     }
-    
+
 
     .timeline-v1{
         padding-top: 0px;
@@ -1701,7 +1702,7 @@ a:hover{
             pointer-events: none !important;
             cursor: default !important;
         }
-        
+
          li {
             margin-bottom: 20px;
             margin-top: 0;
@@ -1710,11 +1711,11 @@ a:hover{
             float: left;
             clear: left;
         }
-        
+
         li.last-item{
             margin-bottom: 0;
         }
-        
+
         li:active{
             i{
                 color:black;
@@ -1749,7 +1750,7 @@ a:hover{
 
         .timeline-body:hover{
             opacity: 0.8; /* css standard */
-            filter: alpha(opacity=80); /* IE */  
+            filter: alpha(opacity=80); /* IE */
         }
 
         .clearfix{
@@ -1757,8 +1758,8 @@ a:hover{
             margin: 1px !important;
         }
     }
-    
-        
+
+
     @media screen and (max-width: 768px) {
         .timeline-v1:before {
             left: 46px;
@@ -1768,10 +1769,10 @@ a:hover{
                 .timeline-body{
                     width: 200px !important;
                 }
-            }    
+            }
         }
     }
-    
+
 
 /* Dot class called with jquery to change timeline dot scolor */
 .dot-color{
@@ -1828,8 +1829,8 @@ a:hover{
 
 .rev_slider_wrapper{
     //Styling the TP-BANNER Slider
-  
-    
+
+
     .tp-tab-desc{
         color: lighten($primary-color, 30%) !important;
     }
@@ -1840,18 +1841,18 @@ a:hover{
     .modal-header, .modal-dialog, .modal-body, .modal-footer{
         max-width: 1000px;
     }
-    
+
     .modal-body{
         padding-left: 10%;
         padding-right: 5%;
     }
-    
+
     .modal-footer{
         text-align: center !important;
         .row{padding-left: 8%;
             padding-right: 8%;}
     }
-    
+
     .modal-header{
         padding-left: 8%;
         padding-right: 8%;
@@ -1860,20 +1861,20 @@ a:hover{
             color: $third-color;
             font-weight: bold;
         }
-        
+
         h5{
             color: black;
             font-style: normals;}
     }
-    
+
     hr{
         margin-top: 10px;
     }
-    
+
     .guarantee-points{
         padding-top: 10px;
     }
-    
+
     .round-wrapper{
         display: block;
         height: 140px;
@@ -1883,7 +1884,7 @@ a:hover{
             line-height: 20px;
         }
     }
-    
+
     .round-tabs{
         width: 70px;
         height: 70px;
@@ -1895,7 +1896,7 @@ a:hover{
         margin-top: 0px;
         margin-right: 10px;
     }
-    
+
     @media screen and (min-width: 992px){
         .no-bottom{
             height: auto !important;
@@ -1906,7 +1907,7 @@ a:hover{
         color: rgb(34, 194, 34);
         border: 2px solid rgb(34, 194, 34);
     }
-    
+
     .modal-footer{
         font-size: $font-size-mini;
         text-align: left;
@@ -1945,7 +1946,7 @@ a:hover{
         font-size: $font-size-five !important;
 
     }
-    
+
     .cd-top-title{
         padding-left: 15px !important;
     }
