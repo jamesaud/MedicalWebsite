@@ -987,10 +987,14 @@ a:hover {
   @media (min-width: 992px) {
     .section-slideshow .cd-slider-wrapper {
       max-height: 800px; } }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 901px) {
     .section-slideshow .cd-slider-wrapper {
-      height: 1400px;
-      max-height: 1400px; } }
+      height: 950px !important;
+      max-height: 950px !important; } }
+  @media screen and (max-width: 600px) {
+    .section-slideshow .cd-slider-wrapper {
+      height: 1400px !important;
+      max-height: 1400px !important; } }
   .section-slideshow .cd-slider-navigation {
     z-index: 1; }
   .section-slideshow h2 {

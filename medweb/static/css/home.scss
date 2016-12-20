@@ -1200,12 +1200,18 @@ a:hover{
         }
     }
 
-
-    @media (max-width: 768px){
+    @media screen and (max-width: 901px){
         //Set height explicityly for the slider sadly.
         .cd-slider-wrapper{
-            height: 1400px;
-            max-height: 1400px;
+            height: 950px !important; 
+            max-height: 950px !important;
+            }
+    }
+    @media screen and (max-width: 600px){
+        //Set height explicityly for the slider sadly.
+        .cd-slider-wrapper{
+            height: 1400px !important;
+            max-height: 1400px !important;
             }
     }
 
