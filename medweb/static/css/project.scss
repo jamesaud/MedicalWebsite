@@ -529,6 +529,13 @@ hr.no-margin{
 
 #modal-contact{
    @include modalSmall(700px);
+   ul{
+       padding-left: 20px ;
+       padding-top: 3px;
+   }
+   li{
+       margin-bottom: 6px;
+   }
 }
 
 #modal-demo{

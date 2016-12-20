@@ -333,6 +333,11 @@ hr.no-margin {
 #modal-contact .contact-message h5 {
   color: #555;
   font-weight: 300; }
+#modal-contact ul {
+  padding-left: 20px;
+  padding-top: 3px; }
+#modal-contact li {
+  margin-bottom: 6px; }
 
 #modal-demo .modal-dialog, #modal-demo .modal-body, #modal-demo .modal-header {
   max-width: 700px; }
