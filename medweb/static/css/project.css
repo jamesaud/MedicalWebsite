@@ -44,11 +44,13 @@ hr {
 
 #cd-nav-text {
   position: absolute;
-  left: 28%;
-  margin-top: 1.4%; }
+  left: 24%;
+  margin-top: 15px; }
   #cd-nav-text h5 {
-    font-size: 12px;
-    color: black !important;
+    text-align: center;
+    font-size: 15.5px;
+    line-height: 20px !important;
+    color: #D43A43 !important;
     line-height: 17px; }
 
 .cd-navbar-wrapper .cd-auto-hide-header {
