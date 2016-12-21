@@ -364,8 +364,8 @@ a:hover{
      .hi-intro-3{
          position: relative !important;
         @extend .hi-intro;
-          padding-top: 40px;
-         padding-bottom: 55px;
+          padding-top: 70px;
+         padding-bottom: 75px;
          margin-bottom: 0px;
       
          
@@ -381,18 +381,55 @@ a:hover{
              font-style: italic;
              font-weight: bold;
          }
+         .tiny-text{
+             margin-left: 6px;
+             text-decoration: underline;
+         }
+         .tooltip{
+               z-index: 1;
+         }
+         .tooltip.top .tooltip-inner{
+             background-color: white;
+             color: #333;
+             }
          button{
              margin-bottom: 5px;
              margin-right: 2px;
          }
+         * { -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; border-radius: 0 !important; }
          input{
              font-size: $font-size-four;
+             position: relative
+         }
+         input[type=email]{
+             z-index: 2;
+         }
+         input[type=checkbox]{
+             z-index: 1;
          }
          input, button{
              border-right: none;
              max-width: 300px;
-             height: 50px;
+             height: 49px;
          }
+         .checkbox .cr{
+             border-right-width: 0px !important;
+             border-color: #ccc;
+             background: white;
+             z-index: 1;
+         }
+         .checkbox{
+             bottom: -19px;
+             right: -4px;
+             display: inline-block;
+             .cr{margin: 0;}
+             i{color: $primary-color;}
+             label{
+                font-size: 38px; 
+            }
+         }
+
+
     }
     
     .hi-intro-4{
@@ -1960,4 +1997,29 @@ a:hover{
         padding-left: 0;
     }
 
+}
+
+//Modals
+#modal-thanks{
+    @include modalSmall(500px);
+
+    h5{
+        margin-top: 9px !important;
+        color: #333 !important;
+    }
+    .modal-body{
+        padding-top: 20px;
+    }
+    .inquire-close-button{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .form-title{
+       // border: none !important;
+        color: $primary-color;
+        padding-bottom: 0px;
+        margin-bottom: 25px;
+    }
+ 
+    
 }

@@ -304,7 +304,7 @@
             style="z-index: 8; white-space: nowrap; font-size: 15px; line-height: 50px; font-weight: 900; color: rgba(0, 155, 239, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 0);border-color:rgba(0, 155, 239, 1.00);border-style:solid;border-width:2px 2px 2px 2px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;letter-spacing:3px;cursor:pointer;">SCHEDULE DEMO <i style="font-size:13px;margin-left:10px;" class="fa-icon-chevron-right"></i> </div>
 	</li>
 	<!-- SLIDE  -->
-    <li data-index="rs-14" data-transition="slideoververtical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/100x50_2aed4-pexels-photo.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Excel In Trump Care" data-param1="Trive In The New Paradigm" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+    <li data-index="rs-14" data-transition="slideoververtical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/100x50_2aed4-pexels-photo.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Excel Even In Trump Care" data-param1="Thrive In The New Paradigm" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 		<!-- MAIN IMAGE -->
         <img src="assets/dummy.png"  alt=""  data-lazyload="{% static 'img-slider/exploration-header/assets/2aed4-pexels-photo.jpg' %}" data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 		<!-- LAYERS -->
@@ -1134,24 +1134,90 @@ guaranteed services. </h4>
 
 
         <hr class='no-bottom'>
-<!--
+
         <div class='hi-intro-3-wrapper' style="background: url({% static 'images/graph1.png' %})">
             <div class='container-fluid hi-intro-3'  >
                 <div class='row'>
 
                     <div class=' col-md-10 col-centered '>
                         <div class='hi-intro-title'>
-                        <h3>We guarantee distinct advantages shown in the <span>Industry Analysis Report</span></h3><h3>Enter a valid email to recieve the exclusive report:</h3>
+                        <h3>1. Find out <span class='em-bold'>why over 600,000 doctors</span> are going to return to private practice 
+                        <span class='tiny-text' data-toggle="tooltip" 
+                             title='"Join The Healthcare Revolt", a specialized report documenting the invevitable shift back to private practice.'>(what's this?)
+                             </span>
+                        </h3>
+                        <h3>2. Optionally check the box to receive the industry monthly report
+                             <span class='tiny-text' data-toggle="tooltip" 
+                             title="Summary of 120 sources every month. Within minutes you know problems &amp; solutions to optimize earnings and care.">(what's this?)
+                             </span>
+                        </h3>
+                        <h3>3. Enter a valid email to recieve the exclusive reports</h3>
                         </div>
                         <form>
-                            <input type="email" class="form-control inline" id="email" placeholder='example@mail.com'><button type="submit" class="btn btn-default btn-primary">Send Report</button>
+                            <span class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                </label>
+                            </span>
+                            <input type="email" class="form-control inline" id="email" placeholder='example@mail.com'><button type="submit" class="btn btn-default btn-primary" href="#" data-toggle="modal" data-target="#modal-thanks" onClick="return false;">Send Report</button>
                         </form>
                     </div>
 
                 </div>
 
             </div>
-        </div>-->
+        </div>
+
+
+        <!-- MODAL THANK YOU -->
+        <div id="modal-thanks" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-thanks" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header container">
+                        <div class='close-button'>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                         <div class='row bg-success'>
+                              <div class='col-md-10 col-centered'>
+                                    <h5>Thanks! Your email is on it's way.</h5>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="modal-body container">
+                                                   
+                         
+                        <div class='bt-form__wrapper'>
+                        <form id='social-form' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+
+                          <div class='row'>
+                                                 <div class='form-title'>
+                                                            <h3>How did you hear about us?</h3>
+                                                    </div>
+                          </div>
+                          
+                        <div class='row'>
+                            <div class="bt-flabels__wrapper checkbox-wrapper col-md-12">
+                                {% for choice in evaluation_form.referral %}
+                                    {{ choice.tag }} {{ choice.choice_label }}
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                          <div class='row'>
+                                <div class='col-md-10 col-centered'>
+                                    <button type="button" class="btn btn-default inquire-close-button" data-dismiss="modal">Close</button>
+                                </div>
+                          </div>
+                       </form>
+                      </div>
+
+                      </div>
+                    </div>
+                  </div>
+        </div>
+
         <!--
         <div class='hi-intro row'>
             <div class=' col-md-10 col-centered '  >
@@ -1501,7 +1567,7 @@ guaranteed services. </h4>
                         <h4>After The Day Ends</h4>
                         <h2>Peace Of Mind For Patients, Doctors &amp; Staff</h2>
                         <p>
-                            Each patient has left your clinic satisfied. Your recommendations increase driving up patient volume.
+                            Each patient has left your clinic satisfied. Your recommendations increase. driving up patient volume.
                         </p>
 
                         <p>

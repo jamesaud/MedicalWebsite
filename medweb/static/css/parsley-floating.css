@@ -12,6 +12,7 @@
   font-size: 15.5px;
   border-radius: 50em; }
 
+/* Custom Modals */
 .required .control-label:before {
   color: red;
   content: "*";

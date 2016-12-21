@@ -70,4 +70,42 @@ $weight-light: 300;
         }
     }
 
+/* Custom Modals */
+@mixin modalSmall($width){
+    .modal-dialog, .modal-body, .modal-header{
+        max-width: $width;
+        }
+        
+    .modal-footer{
+        padding-top: 0;
+    }
+    .modal-body{
+        padding-top: 0px;
+        padding-bottom: 10px;
+        margin-top: 3.5%;
+    }
+    .modal-body, .modal-header{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
 
+    .contact-title{
+        img{
+            margin-top: 15px;
+        }
+        .m-contact-title{
+            padding-top: 10px;
+        }
+        .modal-title{
+            font-size: $font-size-four;
+        }
+    }
+    
+
+    .contact-message{
+        h5{
+            color: #555;
+            font-weight: $weight-light;
+        }
+    }
+}

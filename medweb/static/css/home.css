@@ -13,6 +13,7 @@
   font-size: 15.5px;
   border-radius: 50em; }
 
+/* Custom Modals */
 p {
   font-size: 15.5px; }
 
@@ -458,8 +459,8 @@ a:hover {
       -moz-transition: all 0.5s; }
   .section-highlights .hi-intro-3 {
     position: relative !important;
-    padding-top: 40px;
-    padding-bottom: 55px;
+    padding-top: 70px;
+    padding-bottom: 75px;
     margin-bottom: 0px; }
     .section-highlights .hi-intro-3 h3 {
       color: white; }
@@ -468,15 +469,47 @@ a:hover {
     .section-highlights .hi-intro-3 span {
       font-style: italic;
       font-weight: bold; }
+    .section-highlights .hi-intro-3 .tiny-text {
+      margin-left: 6px;
+      text-decoration: underline; }
+    .section-highlights .hi-intro-3 .tooltip {
+      z-index: 1; }
+    .section-highlights .hi-intro-3 .tooltip.top .tooltip-inner {
+      background-color: white;
+      color: #333; }
     .section-highlights .hi-intro-3 button {
       margin-bottom: 5px;
       margin-right: 2px; }
+    .section-highlights .hi-intro-3 * {
+      -webkit-border-radius: 0 !important;
+      -moz-border-radius: 0 !important;
+      border-radius: 0 !important; }
     .section-highlights .hi-intro-3 input {
-      font-size: 15.5px; }
+      font-size: 15.5px;
+      position: relative; }
+    .section-highlights .hi-intro-3 input[type=email] {
+      z-index: 2; }
+    .section-highlights .hi-intro-3 input[type=checkbox] {
+      z-index: 1; }
     .section-highlights .hi-intro-3 input, .section-highlights .hi-intro-3 button {
       border-right: none;
       max-width: 300px;
-      height: 50px; }
+      height: 49px; }
+    .section-highlights .hi-intro-3 .checkbox .cr {
+      border-right-width: 0px !important;
+      border-color: #ccc;
+      background: white;
+      z-index: 1; }
+    .section-highlights .hi-intro-3 .checkbox {
+      bottom: -19px;
+      right: -4px;
+      display: inline-block; }
+      .section-highlights .hi-intro-3 .checkbox .cr {
+        margin: 0; }
+      .section-highlights .hi-intro-3 .checkbox i {
+        color: #45AEEA; }
+      .section-highlights .hi-intro-3 .checkbox label {
+        font-size: 38px; }
   .section-highlights .hi-intro-4 {
     padding-bottom: 50px; }
     .section-highlights .hi-intro-4 .btn-color-1 {
@@ -1512,5 +1545,38 @@ a:hover {
 #modal-test .cd-left-title {
   margin-top: 0;
   padding-left: 0; }
+
+#modal-thanks .modal-dialog, #modal-thanks .modal-body, #modal-thanks .modal-header {
+  max-width: 500px; }
+#modal-thanks .modal-footer {
+  padding-top: 0; }
+#modal-thanks .modal-body {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin-top: 3.5%; }
+#modal-thanks .modal-body, #modal-thanks .modal-header {
+  padding-left: 3%;
+  padding-right: 3%; }
+#modal-thanks .contact-title img {
+  margin-top: 15px; }
+#modal-thanks .contact-title .m-contact-title {
+  padding-top: 10px; }
+#modal-thanks .contact-title .modal-title {
+  font-size: 15.5px; }
+#modal-thanks .contact-message h5 {
+  color: #555;
+  font-weight: 300; }
+#modal-thanks h5 {
+  margin-top: 9px !important;
+  color: #333 !important; }
+#modal-thanks .modal-body {
+  padding-top: 20px; }
+#modal-thanks .inquire-close-button {
+  width: 100%;
+  margin-top: 50px; }
+#modal-thanks .form-title {
+  color: #45AEEA;
+  padding-bottom: 0px;
+  margin-bottom: 25px; }
 
 /*# sourceMappingURL=home.css.map */
