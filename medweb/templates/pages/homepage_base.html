@@ -145,7 +145,7 @@
             <!--<li><a href="{% url 'invest' %}">Investors</a></li>-->
 
 			<li><a href="#" data-toggle="modal" data-target="#modal-contact">Contact Us</a></li>
-            <li id='nav-call'><a  href="#" onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover"  data-html='true'
+            <li id='nav-call'><a id='nav-evaluation' data-toggle="popover" data-placement="left" data-trigger="hover"  data-html='true'
                                                                          data-content= "<h5>
                                                                             Compare your practice to national &amp; Synergy+ averages.
                                                                             Evaluates Marketing, EHR, RCM,  Integration, Financial Gains, Personnel, Growth, Recruiting and Net Income Optimization.
@@ -768,7 +768,7 @@
                                             <div class='col-md-6 contact-message'>
                                                 <div class='contact-title'>
                                                 <img class='img-responsive' src="{% static 'images/ipad.jpg' %}" alt='ipad'/>
-                                                <h3 class='m-contact-title'>Choose a time and we'll call you to schedule a demo</h3>
+                                                <h3 class='m-contact-title'>Call now for expedited service, or choose a time and we'll call you to schedule a demo</h3>
 
                                                 <h5 class="modal-title" id="gridModalLabel">Use cutting edge EHR &amp; RCM technology with industry leading automation</h5>
 
@@ -1216,6 +1216,14 @@ function smoothScroll(tag, offset){
 }
 
 smoothScroll('.cd-secondary-nav li a');
+</script>
+
+
+<!--- Trigger Modal from call now nav evaluation -->
+<script>
+$('#nav-evaluation').click(function(){
+    $('#modal-contact').modal('show');)
+}
 </script>
 
 

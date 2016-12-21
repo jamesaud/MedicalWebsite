@@ -823,8 +823,8 @@ a:hover{
         }
         .si-message-btn-2{
             @extend %si-message-btn;
-            border: $btn-color-2 1.4px solid;
-            @include transparentBackgroundColor(.8, $btn-color-2, !important); 
+            border: darken($btn-color-2, 8%) 1.4px solid; 
+            @include transparentBackgroundColor(.90, $btn-color-2, !important); 
         }
 
         //For readmore.js
@@ -1875,6 +1875,7 @@ a:hover{
     
     .tp-tab-desc{
         color: lighten($primary-color, 30%) !important;
+        //color: rgb(252, 236, 58) !important;
     }
 }
 
