@@ -460,12 +460,12 @@ a:hover {
   .section-highlights .hi-intro-3 {
     position: relative !important;
     padding-top: 70px;
-    padding-bottom: 75px;
+    padding-bottom: 70px;
     margin-bottom: 0px; }
-    .section-highlights .hi-intro-3 h3 {
+    .section-highlights .hi-intro-3 h2, .section-highlights .hi-intro-3 h3 {
       color: white; }
     .section-highlights .hi-intro-3 .hi-intro-title {
-      margin-bottom: 30px; }
+      margin-bottom: 20px; }
     .section-highlights .hi-intro-3 span {
       font-style: italic;
       font-weight: bold; }
