@@ -12,7 +12,6 @@ django==1.9.8
 django-environ==0.4.0
 
 
-
 # Forms
 django-braces==1.9.0
 django-crispy-forms==1.6.0
@@ -46,3 +45,4 @@ redis>=2.10.0
 # Your custom requirements go here
 django-parsley #==.3
 pyyaml>=3.12
+django-mailchimp-v1.3==1.4.0

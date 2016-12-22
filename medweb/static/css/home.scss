@@ -361,77 +361,7 @@ a:hover{
         }
     }
     
-     .hi-intro-3{
-         position: relative !important;
-        @extend .hi-intro;
-          padding-top: 70px;
-         padding-bottom: 70px;
-         margin-bottom: 0px;
-      
-         
-         h2, h3{
-             color: white;
-        }
-         
-         .hi-intro-title{
-             margin-bottom: 20px;
-             
-                }
-         span{
-             font-style: italic;
-             font-weight: bold;
-         }
-         .tiny-text{
-             margin-left: 6px;
-             text-decoration: underline;
-         }
-         .tooltip{
-               z-index: 1;
-         }
-         .tooltip.top .tooltip-inner{
-             background-color: white;
-             color: #333;
-             }
-         button{
-             margin-bottom: 5px;
-             margin-right: 2px;
-         }
-         * { -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; border-radius: 0 !important; }
-         input{
-             font-size: $font-size-four;
-             position: relative
-         }
-         input[type=email]{
-             z-index: 2;
-         }
-         input[type=checkbox]{
-             z-index: 1;
-         }
-         input, button{
-             border-right: none;
-             max-width: 300px;
-             height: 49px;
-         }
-         .checkbox .cr{
-             border-right-width: 0px !important;
-             border-color: #ccc;
-             background: white;
-             z-index: 1;
-         }
-         .checkbox{
-             bottom: -19px;
-             right: -4px;
-             display: inline-block;
-             .cr{margin: 0;}
-             i{color: $primary-color;}
-             label{
-                font-size: 38px; 
-            }
-         }
-
-
-    }
-    
+   
     .hi-intro-4{
         @extend .hi-intro;
         padding-bottom: 50px;
@@ -742,6 +672,89 @@ a:hover{
         margin-bottom: 20px;
     }
 }
+
+  .hi-intro-3{
+         position: relative !important;
+         text-align: center;
+         padding-top: 13px;
+         padding-bottom: 40px;
+        
+         .main-points{
+            h2{color:black;}
+            h3{font-weight: $weight-light;}
+         }
+         padding-top: 50px;
+         padding-bottom: 50px;
+         margin-bottom: 0px;
+      
+         
+        h3{
+             color: white;
+        }
+        h2{
+            color: white !important;
+            }
+        
+         
+         .hi-intro-title{
+             margin-bottom: 20px;
+             
+                }
+         span{
+             font-style: italic;
+             font-weight: bold;
+         }
+         .tiny-text{
+             margin-left: 6px;
+             text-decoration: underline;
+         }
+         .tooltip{
+               z-index: 1;
+         }
+         .tooltip.top .tooltip-inner{
+             background-color: white;
+             color: #333;
+             }
+         button{
+             margin-bottom: 5px;
+             margin-right: 2px;
+         }
+         * { -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; border-radius: 0 !important; }
+         input{
+             font-size: $font-size-four;
+             position: relative;
+         }
+         input[type=email]{
+             z-index: 2;
+         }
+         input[type=checkbox]{
+             z-index: 1;
+         }
+         input, button{
+             border-right: none;
+             max-width: 300px;
+             height: 50px;
+         }
+         .checkbox .cr{
+             border-right-width: 0px !important;
+             border-color: #ccc;
+             background: white;
+             z-index: 1;
+         }
+         .checkbox{
+             bottom: -18px;
+             right: -4px;
+             display: inline-block;
+             .cr{margin: 0;}
+             i{color: $primary-color;}
+             label{
+                font-size: 38px; 
+            }
+         }
+
+
+    }
+    
 
 .section-insights{
     .si-message{

@@ -374,7 +374,7 @@ hr.no-margin {
   padding-left: 0; }
 
 hr.no-bottom {
-  margin-bottom: 0; }
+  margin-bottom: 0 !important; }
 
 hr.no-top {
   margin-top: 0 !important; }

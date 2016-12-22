@@ -430,13 +430,13 @@ a:hover {
   text-align: center;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important; }
-  .section-highlights .hi-intro, .section-highlights .hi-intro-2, .section-highlights .hi-intro-3, .section-highlights .hi-intro-4 {
+  .section-highlights .hi-intro, .section-highlights .hi-intro-2, .section-highlights .hi-intro-4 {
     text-align: center;
     padding-top: 13px;
     padding-bottom: 40px; }
-    .section-highlights .hi-intro .main-points h2, .section-highlights .hi-intro-2 .main-points h2, .section-highlights .hi-intro-3 .main-points h2, .section-highlights .hi-intro-4 .main-points h2 {
+    .section-highlights .hi-intro .main-points h2, .section-highlights .hi-intro-2 .main-points h2, .section-highlights .hi-intro-4 .main-points h2 {
       color: black; }
-    .section-highlights .hi-intro .main-points h3, .section-highlights .hi-intro-2 .main-points h3, .section-highlights .hi-intro-3 .main-points h3, .section-highlights .hi-intro-4 .main-points h3 {
+    .section-highlights .hi-intro .main-points h3, .section-highlights .hi-intro-2 .main-points h3, .section-highlights .hi-intro-4 .main-points h3 {
       font-weight: 300; }
   .section-highlights .hi-intro-2 {
     margin-bottom: 0;
@@ -457,59 +457,6 @@ a:hover {
       transition: all 0.5s;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s; }
-  .section-highlights .hi-intro-3 {
-    position: relative !important;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    margin-bottom: 0px; }
-    .section-highlights .hi-intro-3 h2, .section-highlights .hi-intro-3 h3 {
-      color: white; }
-    .section-highlights .hi-intro-3 .hi-intro-title {
-      margin-bottom: 20px; }
-    .section-highlights .hi-intro-3 span {
-      font-style: italic;
-      font-weight: bold; }
-    .section-highlights .hi-intro-3 .tiny-text {
-      margin-left: 6px;
-      text-decoration: underline; }
-    .section-highlights .hi-intro-3 .tooltip {
-      z-index: 1; }
-    .section-highlights .hi-intro-3 .tooltip.top .tooltip-inner {
-      background-color: white;
-      color: #333; }
-    .section-highlights .hi-intro-3 button {
-      margin-bottom: 5px;
-      margin-right: 2px; }
-    .section-highlights .hi-intro-3 * {
-      -webkit-border-radius: 0 !important;
-      -moz-border-radius: 0 !important;
-      border-radius: 0 !important; }
-    .section-highlights .hi-intro-3 input {
-      font-size: 15.5px;
-      position: relative; }
-    .section-highlights .hi-intro-3 input[type=email] {
-      z-index: 2; }
-    .section-highlights .hi-intro-3 input[type=checkbox] {
-      z-index: 1; }
-    .section-highlights .hi-intro-3 input, .section-highlights .hi-intro-3 button {
-      border-right: none;
-      max-width: 300px;
-      height: 49px; }
-    .section-highlights .hi-intro-3 .checkbox .cr {
-      border-right-width: 0px !important;
-      border-color: #ccc;
-      background: white;
-      z-index: 1; }
-    .section-highlights .hi-intro-3 .checkbox {
-      bottom: -19px;
-      right: -4px;
-      display: inline-block; }
-      .section-highlights .hi-intro-3 .checkbox .cr {
-        margin: 0; }
-      .section-highlights .hi-intro-3 .checkbox i {
-        color: #45AEEA; }
-      .section-highlights .hi-intro-3 .checkbox label {
-        font-size: 38px; }
   .section-highlights .hi-intro-4 {
     padding-bottom: 50px; }
     .section-highlights .hi-intro-4 .btn-color-1 {
@@ -717,6 +664,69 @@ a:hover {
     color: black !important; }
   .section-circles .main-points-header {
     margin-bottom: 20px; }
+
+.hi-intro-3 {
+  position: relative !important;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 0px; }
+  .hi-intro-3 .main-points h2 {
+    color: black; }
+  .hi-intro-3 .main-points h3 {
+    font-weight: 300; }
+  .hi-intro-3 h3 {
+    color: white; }
+  .hi-intro-3 h2 {
+    color: white !important; }
+  .hi-intro-3 .hi-intro-title {
+    margin-bottom: 20px; }
+  .hi-intro-3 span {
+    font-style: italic;
+    font-weight: bold; }
+  .hi-intro-3 .tiny-text {
+    margin-left: 6px;
+    text-decoration: underline; }
+  .hi-intro-3 .tooltip {
+    z-index: 1; }
+  .hi-intro-3 .tooltip.top .tooltip-inner {
+    background-color: white;
+    color: #333; }
+  .hi-intro-3 button {
+    margin-bottom: 5px;
+    margin-right: 2px; }
+  .hi-intro-3 * {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important; }
+  .hi-intro-3 input {
+    font-size: 15.5px;
+    position: relative; }
+  .hi-intro-3 input[type=email] {
+    z-index: 2; }
+  .hi-intro-3 input[type=checkbox] {
+    z-index: 1; }
+  .hi-intro-3 input, .hi-intro-3 button {
+    border-right: none;
+    max-width: 300px;
+    height: 50px; }
+  .hi-intro-3 .checkbox .cr {
+    border-right-width: 0px !important;
+    border-color: #ccc;
+    background: white;
+    z-index: 1; }
+  .hi-intro-3 .checkbox {
+    bottom: -18px;
+    right: -4px;
+    display: inline-block; }
+    .hi-intro-3 .checkbox .cr {
+      margin: 0; }
+    .hi-intro-3 .checkbox i {
+      color: #45AEEA; }
+    .hi-intro-3 .checkbox label {
+      font-size: 38px; }
 
 .section-insights .si-message {
   text-align: center;
