@@ -665,67 +665,65 @@ a:hover {
   .section-circles .main-points-header {
     margin-bottom: 20px; }
 
-.hi-intro-3 {
+.section-email {
   position: relative !important;
   text-align: center;
-  padding-top: 13px;
-  padding-bottom: 40px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin-bottom: 0px; }
-  .hi-intro-3 .main-points h2 {
+  .section-email .main-points h2 {
     color: black; }
-  .hi-intro-3 .main-points h3 {
+  .section-email .main-points h3 {
     font-weight: 300; }
-  .hi-intro-3 h3 {
+  .section-email h3 {
     color: white; }
-  .hi-intro-3 h2 {
+  .section-email h2 {
     color: white !important; }
-  .hi-intro-3 .hi-intro-title {
+  .section-email .hi-intro-title {
     margin-bottom: 20px; }
-  .hi-intro-3 span {
+  .section-email span {
     font-style: italic;
     font-weight: bold; }
-  .hi-intro-3 .tiny-text {
+  .section-email .tiny-text {
     margin-left: 6px;
     text-decoration: underline; }
-  .hi-intro-3 .tooltip {
+  .section-email .tooltip {
     z-index: 1; }
-  .hi-intro-3 .tooltip.top .tooltip-inner {
+  .section-email .tooltip.top .tooltip-inner {
     background-color: white;
     color: #333; }
-  .hi-intro-3 button {
+  .section-email button {
     margin-bottom: 5px;
     margin-right: 2px; }
-  .hi-intro-3 * {
+  .section-email * {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important; }
-  .hi-intro-3 input {
+  .section-email input {
     font-size: 15.5px;
     position: relative; }
-  .hi-intro-3 input[type=email] {
+  .section-email input[type=email] {
     z-index: 2; }
-  .hi-intro-3 input[type=checkbox] {
+  .section-email input[type=checkbox] {
     z-index: 1; }
-  .hi-intro-3 input, .hi-intro-3 button {
+  .section-email input, .section-email button {
     border-right: none;
     max-width: 300px;
     height: 50px; }
-  .hi-intro-3 .checkbox .cr {
+  .section-email .checkbox .cr {
     border-right-width: 0px !important;
     border-color: #ccc;
     background: white;
     z-index: 1; }
-  .hi-intro-3 .checkbox {
+  .section-email .checkbox {
     bottom: -18px;
     right: -4px;
     display: inline-block; }
-    .hi-intro-3 .checkbox .cr {
+    .section-email .checkbox .cr {
       margin: 0; }
-    .hi-intro-3 .checkbox i {
+    .section-email .checkbox i {
       color: #45AEEA; }
-    .hi-intro-3 .checkbox label {
+    .section-email .checkbox label {
       font-size: 38px; }
 
 .section-insights .si-message {
