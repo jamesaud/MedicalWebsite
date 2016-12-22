@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 
+
+
 body {
   font-family: "Roboto", helvetica, arial, sans-serif;
   font-size: 16px;
@@ -11,8 +13,8 @@ div.table-title {
    display: block;
   margin: auto;
   max-width: 600px;
-  padding:5px;
-  width: 80%;
+  padding: 5px;
+  width: 70%;
 }
 
 .table-title h3 {
@@ -33,12 +35,17 @@ div.table-title {
   border-radius:3px;
   border-collapse: collapse;
   height: 320px;
-  margin: auto;
+  margin: 0 auto;
   max-width: 600px;
   padding:5px;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   animation: float 5s infinite;
+  margin-top: 80px;
+}
+
+thead{
+ // position: fixed;
 }
  
 th {
@@ -46,7 +53,7 @@ th {
   background:#1b1e24;
   border-bottom:4px solid #9ea7af;
   border-right: 1px solid #343a45;
-  font-size:23px;
+  font-size:16px;
   font-weight: 100;
   padding:24px;
   text-align:left;
@@ -73,10 +80,7 @@ tr {
 }
  
 tr:hover td {
-  background:#4E5066;
-  color:#FFFFFF;
-  border-top: 1px solid #22262e;
-  border-bottom: 1px solid #22262e;
+
 }
  
 tr:first-child {
@@ -92,7 +96,6 @@ tr:nth-child(odd) td {
 }
  
 tr:nth-child(odd):hover td {
-  background:#4E5066;
 }
 
 tr:last-child td:first-child {
@@ -109,7 +112,7 @@ td {
   text-align:left;
   vertical-align:middle;
   font-weight:300;
-  font-size:18px;
+  font-size:15px;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
   border-right: 1px solid #C1C3D1;
 }

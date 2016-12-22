@@ -53,8 +53,9 @@ def about(request, context):
 def invest(request, context):
     return render(request, 'pages/invest.html', context=context)
 
-def compare(request):
-    return render(request, 'pages/table.html', context={})
+@pass_contact_form
+def compare(request, context):
+    return render(request, 'pages/table.html', context=context)
 
 def create(request):
     if request.method == 'POST':
