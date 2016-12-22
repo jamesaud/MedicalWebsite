@@ -28,24 +28,32 @@ div.table-title {
 }
 
 
+
 /*** Table Styles **/
 
 .table-fill {
   background: white;
   border-radius:3px;
   border-collapse: collapse;
-  height: 320px;
   margin: 0 auto;
-  max-width: 600px;
   padding:5px;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   animation: float 5s infinite;
   margin-top: 80px;
+  border-collapse: collapse;
+  max-width: 1500px;
+
 }
 
 thead{
- // position: fixed;
+  display: block;
+}
+
+tbody{
+    height: 90vh;
+    display: block;
+    overflow: auto;
 }
  
 th {
@@ -171,3 +179,4 @@ tr{
 
 }
 
+th, td{}
