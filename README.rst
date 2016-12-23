@@ -106,7 +106,9 @@ See detailed `cookiecutter-django Docker documentation`_.
 More help: https://realpython.com/blog/python/development-and-deployment-of-cookiecutter-django-via-docker/
 
 
-
+Mailchimp v3 API
+^^^^^^^^^^^^^^
+https://github.com/charlesthk/python-mailchimp
 
 
 Extra Tutorials
