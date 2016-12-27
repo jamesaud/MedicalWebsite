@@ -1890,13 +1890,17 @@ a:hover{
 
 .rev_slider_wrapper{
     //Styling the TP-BANNER Slider
-  
-    
     .tp-tab-desc{
         color: lighten($primary-color, 30%) !important;
         //color: rgb(252, 236, 58) !important;
     }
 }
+
+// Force max height on the front slideshow
+.rev_slider_wrapper, .rev_slider, .forcefullwidth_wrapper_tp_banner{
+    max-height: 700px !important;
+}
+
 
 
 #modal-guarantee{
