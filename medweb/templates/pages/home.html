@@ -1688,7 +1688,7 @@ guaranteed services. </h4>
 
                         <form id='newsletter-form'  action="{% url 'submit_newsletter' %}" method="POST">
                             {% csrf_token %}
-                            
+
                             <span class="checkbox">
                                 <label>
                                     {{ email_form.newsletter }}
@@ -4087,35 +4087,7 @@ $(document).ready(function(){
         });
     </script>
 
-    <!-- FORM PARLSEY JAVASCRIPT FLOATING TEXT -->
-<script>
-
-//Floating labels for the inquire forms
-floating_label('#inquire-form-0');
-floating_label('#inquire-form-1');
-floating_label('#inquire-form-2');
-floating_label('#inquire-form-3');
-floating_label('#inquire-form-4');
-
-//Floating labels for the contact forms
-floating_label('#contact-form-0');
-floating_label('#contact-form-1');
-floating_label('#contact-form-2');
-floating_label('#contact-form-3');
-floating_label('#contact-form-4');
-</script>
-
 <!-- form on submission, check data parsley validation -->
-<script>
-
-//INQUIRE FORM JQUERY SUBMIT BUTTON LISTENERS
-validate_form_tab('#inquire-form-0', '#inquire-tab-0', '#inquire-tab-1');
-validate_form_tab('#inquire-form-1', '#inquire-tab-1', '#inquire-tab-2');
-validate_form_tab('#inquire-form-2', '#inquire-tab-2', '#inquire-tab-3');
-validate_form_tab('#inquire-form-3', '#inquire-tab-3', '#inquire-tab-4');
-validate_form_tab('#inquire-form-4', '#inquire-tab-4', '#inquire-tab-5');
-
-</script>
 
 <!-- FORM SUBMISSIONS -->
 <script>

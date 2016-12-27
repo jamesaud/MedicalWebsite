@@ -795,7 +795,7 @@
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
-                                                          
+
                                                           <div class='row form-group'>
                                                               <div class="col-md-12 required bt-flabels__wrapper">
                                                                   <div class='control-label'></div>
@@ -1234,12 +1234,12 @@ function post_form(form) {
 
         // handle a successful response
         success : function(data) {
-            //console.log("success");
+            //console.log(data);
         },
 
         // handle a non-successful response
         error : function(xhr,errmsg,err) {
-            console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+           //console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
         }
     });
 };
