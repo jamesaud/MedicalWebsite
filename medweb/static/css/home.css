@@ -709,14 +709,18 @@ a:hover {
   .section-email input, .section-email button {
     border-right: none;
     max-width: 300px;
-    height: 50px; }
+    height: 50px;
+    display: inline-block; }
   .section-email .checkbox .cr {
     border-right-width: 0px !important;
     border-color: #ccc;
     background: white;
-    z-index: 1; }
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    display: inline-block; }
   .section-email .checkbox {
-    bottom: -18px;
+    bottom: -19px;
     right: -4px;
     display: inline-block; }
     .section-email .checkbox .cr {

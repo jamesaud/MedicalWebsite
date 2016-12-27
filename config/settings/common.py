@@ -246,3 +246,22 @@ ADMIN_URL = r'^admin/'
 # Your common stuff: Below this line define 3rd party library settings
 HOME_PASSWORD = env('HOME_PASSWORD', default='synergy651')
 DATA_PARLSEY_PREFIX = 'data-parsley'
+
+# MailChimp
+MAILCHIMP_API_KEY = env('DJANGO_MAILCHIMP_API_KEY', default='')
+MAILCHIMP_LIST_REPORT_ID = env('DJANGO_MAILCHIMP_LIST_REPORT_ID', default='')
+MAILCHIMP_LIST_NEWSLETTER_ID = env('DJANGO_MAILCHIMP_LIST_NEWSLETTER_ID', default='')
+MAILCHIMP_USERNAME = env('DJANGO_MAILCHIMP_API_KEY', default='')
+MAILCHIMP_DATA_CENTER = env('DJANGO_MAILCHIMP_DATA_CENTER', default='')
+
+# Testing Mailchimp on a generic account
+# WARNING: DO not use a mailchimp account with confidential information. Make a 'fake' account.
+# http://www.throwawaymail.com/
+# mailchimp user:      damachiphu@housat.com
+# mailchimp password:  1!Simple
+MAILCHIMP_TEST_API_KEY = env('DJANGO_MAILCHIMP_TEST_API_KEY', default='6931498a180b937428126d28dafa0b0a-us14')
+MAILCHIMP_TEST_LIST_REPORT_ID = env('DJANGO_MAILCHIMP_TEST_LIST_ID', default='ef8960a7b5')
+MAILCHIMP_TEST_LIST_NEWSLETTER_ID = env('DJANGO_MAILCHIMP_TEST_LIST_ID', default='711586eb64')
+MAILCHIMP_TEST_USERNAME = env('DJANGO_MAILCHIMP_TEST_API_KEY', default='damachiphu@housat.com')
+MAILCHIMP_TEST_DATA_CENTER = env('DJANGO_MAILCHIMP_TEST_DATA_CENTER', default='us14')
+

@@ -71,7 +71,7 @@
 
 </style>
 <style></style>
-				<style type="text/css">.news-header .tp-tab-title{color:#fff;  font-size:17px;  font-weight:900;  text-transform:uppercase;  font-family:"Roboto"  margin-bottom:5px;  width:350px;  display:block;  letter-spacing:1px}.news-header .tp-tab-desc{font-size:17px;  font-weight:500;  color:#ffcc00;  line-height:25px;font-family:"Roboto"}</style>
+				<style type="text/css">.news-header .tp-tab-title{color:#fff;  font-size:17px;  font-weight:900;  text-transform:uppercase;  font-family:"Roboto";  margin-bottom:5px;  width:350px;  display:block;  letter-spacing:1px}.news-header .tp-tab-desc{font-size:17px;  font-weight:500;  color:#ffcc00;  line-height:25px;font-family:"Roboto"}</style>
 				
 
         
@@ -1146,7 +1146,7 @@ guaranteed services. </h4>
                         </div>
                          <div class='row bg-success'>
                               <div class='col-md-10 col-centered'>
-                                    <h5>Thanks! Your email is on its way.</h5>
+                                    <h5>Thanks! Your email is on its way. If you don't receive it in a few minutes, be sure to check your promotions or spam.</h5>
                               </div>
                           </div>
                       </div>
@@ -1684,15 +1684,17 @@ guaranteed services. </h4>
                         </h3>
                         <h3>3. Enter a valid email to recieve the exclusive reports</h3>
                         </div>
-                        <form>
+
+                        <form id='newsletter-form'  action="{% url 'submit_newsletter' %}" method="POST">
                             <span class="checkbox">
                                 <label>
-                                    <input type="checkbox" value="">
+                                    {{ email_form.newsletter }}
                                     <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
                                 </label>
                             </span>
-                            <input type="email" class="form-control inline" id="email" placeholder='example@mail.com'><button type="submit" class="btn btn-default btn-primary" href="#" data-toggle="modal" data-target="#modal-thanks" onClick="return false;">Send Report</button>
+                            {{ email_form.email }}<button type="submit" class="btn btn-default btn-primary" href="#" data-toggle="modal" data-target="#modal-thanks">Send Report</button>
                         </form>
+                        
                     </div>
 
                 </div>
@@ -4112,6 +4114,13 @@ validate_form_tab('#inquire-form-4', '#inquire-tab-4', '#inquire-tab-5');
 
 </script>
 
+<!-- FORM SUBMISSIONS -->
+<script>
+
+//Submit newletter form
+submit_form('#newsletter-form');
+
+</script>
 
 
 <!-- Datetime picker javascript -->

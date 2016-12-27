@@ -43,6 +43,6 @@ django-redis==4.4.4
 redis>=2.10.0
 
 # Your custom requirements go here
-django-parsley #==.3
+django-parsley==0.3
 pyyaml>=3.12
-django-mailchimp-v1.3==1.4.0
+#mailchimp # Would like to make this mailchimp but subscribing users don't work

@@ -1221,7 +1221,7 @@ smoothScroll('.cd-secondary-nav li a');
 <script>
 
 
-//send contact form via post
+//send form via ajax as post data to its: action='url/location'
 function post_form(form) {
     var frm = $(form);
     $.ajax({
@@ -1241,12 +1241,14 @@ function post_form(form) {
     });
 };
 
+// Event listener for a form, calling the above function to submit via ajax
 function submit_form(form){
     $(form).on('submit', function(e){
         e.preventDefault()
         post_form(form);
     });
 }
+
 // Submit forms for contact forms
 submit_form('#contact-form-0');
 submit_form('#contact-form-1');
@@ -1258,7 +1260,7 @@ submit_form('#contact-form-4');
 submit_form('#demo-form-0');
 
 
-//CRSF FIX
+//CRSF FIX: https://github.com/realpython/django-form-fun/blob/master/part1/main.js
     $(function() {
     // This function gets cookie with a given name
     function getCookie(name) {

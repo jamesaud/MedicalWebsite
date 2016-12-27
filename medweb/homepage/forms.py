@@ -12,7 +12,6 @@ from medweb.homepage.models import SYSTEM_CHOICES, GROUP_TYPE_CHOICES, NET_INCOM
 from django.utils.translation import ugettext_lazy as _
 
 
-
 @parsleyfy
 class PersonForm(NoColonForm, AutoPlaceholderForm, ModelForm):
     class Meta:
@@ -95,6 +94,12 @@ class EvaluationForm(NoColonForm, AutoPlaceholderForm,  ModelForm):
                    'doctors_recruit': EmptyTextarea(attrs={'placeholder': 'Yes, 2-3 more pediatric doctors and 1 more orthopedic surgeon.'}),
                    }
 
+
+    def clean_referral(self):
+        '''Turn the list into a comma separated string'''
+        return ', '.join(self.cleaned_data['referral'])
+
+
     # Have to update call time attrs in init, can't use widgets (not sure why)
     def __init__(self, *args, **kwargs):
         super(EvaluationForm, self).__init__(*args, **kwargs)
@@ -104,3 +109,7 @@ class EvaluationForm(NoColonForm, AutoPlaceholderForm,  ModelForm):
             'class': 'datetimepicker3',
         })
 
+
+class EmailForm(forms.Form):
+    email = forms.EmailField(required=True, widget=forms.TextInput(attrs={'placeholder': 'example@mail.com', 'class': 'form-control inline'}))
+    newsletter = forms.BooleanField(required=False)

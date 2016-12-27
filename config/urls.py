@@ -20,7 +20,8 @@ urlpatterns = [
     url(r'^about/$', homepage_views.about, name='about'),
     url(r'^create/$', homepage_views.create, name='create'),
     url(r'^invest/$', homepage_views.invest, name='invest'),
-    url(r'^compare/$', homepage_views.compare, name='compare'),
+    url(r'^compare/$', homepage_views.compare, name='compare'),    
+    url(r'^submit_newsletter/$', homepage_views.submit_newsletter, name='submit_newsletter'),
     url(r'^robots.txt/$', TemplateView.as_view(template_name='robots.txt', content_type='text/plain')),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

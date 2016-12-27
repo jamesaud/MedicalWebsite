@@ -728,19 +728,26 @@ a:hover{
          input[type=checkbox]{
              z-index: 1;
          }
+
+         $height: 50px;
          input, button{
              border-right: none;
              max-width: 300px;
-             height: 50px;
+             height: $height;
+             display: inline-block;
+
          }
          .checkbox .cr{
              border-right-width: 0px !important;
              border-color: #ccc;
              background: white;
              z-index: 1;
+             width: $height;
+             height: $height;
+             display: inline-block;
          }
          .checkbox{
-             bottom: -18px;
+             bottom: -19px;
              right: -4px;
              display: inline-block;
              .cr{margin: 0;}
