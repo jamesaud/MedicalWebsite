@@ -38,6 +38,7 @@ class Client:
         :param merge_fields: extra fields for the user
         :return: dict, details of the response
         """
+
         data = {"email_address": email_address,
                 "status": status,
                 "merge_fields": merge_fields,

@@ -75,7 +75,6 @@ def submit_newsletter(request):
 
     if request.method == 'POST':
         email_form = EmailForm(request.POST)
-        print('post')
         if email_form.is_valid():
             c = Client(MAILCHIMP_API_KEY, MAILCHIMP_USERNAME, MAILCHIMP_DATA_CENTER)
             email = email_form.cleaned_data.get('email')
@@ -85,7 +84,6 @@ def submit_newsletter(request):
                 newsletter_response = c.subscribe_user(MAILCHIMP_LIST_NEWSLETTER_ID, email)
                 logger.debug('Subscribed :{0}\nReport Response: {1}\nNewsletter Response: {2}\n\n'\
                              .format(email, report_response, newsletter_response))
-
             response['status'] = 'success'
             response['report_response'] = report_response
             response['newsletter_response'] = newsletter_response

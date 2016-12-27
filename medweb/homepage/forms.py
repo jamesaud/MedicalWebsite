@@ -111,5 +111,8 @@ class EvaluationForm(NoColonForm, AutoPlaceholderForm,  ModelForm):
 
 
 class EmailForm(forms.Form):
-    email = forms.EmailField(required=True, widget=forms.TextInput(attrs={'placeholder': 'example@mail.com', 'class': 'form-control inline'}))
+    """
+    Form for adding a person to the Mailchimp newsletter and Mailchimp industry report lists.
+    """
+    email = forms.EmailField(required=True, widget=forms.EmailInput(attrs={'placeholder': 'example@mail.com', 'class': 'form-control inline'}))
     newsletter = forms.BooleanField(required=False)

@@ -1692,6 +1692,8 @@ guaranteed services. </h4>
                         <h3>3. Enter a valid email to recieve the exclusive reports</h3>
                         </div>
 
+                        <div class='bt-form__wrapper'>
+
                         <form id='newsletter-form'  action="{% url 'submit_newsletter' %}" method="POST">
                             {% csrf_token %}
 
@@ -1702,8 +1704,8 @@ guaranteed services. </h4>
                                 </label>
                             </span>
                             {{ email_form.email }}<button type="submit" class="btn btn-default btn-primary" href="#" data-toggle="modal" data-target="#modal-thanks">Send Report</button>
-                        </form>
-                        
+                        </form> 
+                        </div><!-- /form__wrapper -->
                     </div>
 
                 </div>
@@ -4097,11 +4099,14 @@ $(document).ready(function(){
 
 <!-- FORM SUBMISSIONS -->
 <script>
+//Newsletter Validation
+//parsley_validate('#newsletter-form');
 
 //Submit newletter form
 submit_form('#newsletter-form');
-
 </script>
+
+
 
 
 <!-- Datetime picker javascript -->

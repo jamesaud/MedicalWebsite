@@ -1079,7 +1079,8 @@ $(function() {
 </script>
 
 <script>
-/* Ensure that form 1 is valid before moving to the next form  */
+
+/* Ensure that form 1 is valid before moving to the next form. Only works with multi-tabbed forms.  */
 function validate_form_tab(form_id, tab_id_curr, tab_id_next){
     $(form_id).submit(function(e){
             e.preventDefault();
@@ -1181,7 +1182,6 @@ $('.phone-autodash').keyup(function(){
 <script>
 //Remove active class from all other nav_ids
 function remove_nav_active(nav_id_to_keep){
-
     $('.cd-secondary-nav a').removeClass('active');
     $(nav_id_to_keep).children('a').addClass('active');
 };
@@ -1222,8 +1222,6 @@ smoothScroll('.cd-secondary-nav li a');
 
 
 <script>
-
-
 //send form via ajax as post data to its: action='url/location'
 function post_form(form) {
     var frm = $(form);
@@ -1234,7 +1232,7 @@ function post_form(form) {
 
         // handle a successful response
         success : function(data) {
-            //console.log(data);
+            console.log(data);
         },
 
         // handle a non-successful response
@@ -1250,6 +1248,19 @@ function submit_form(form){
         e.preventDefault()
         post_form(form);
     });
+}
+
+
+/* Validate a parsley form on submission. If it passes, submit the form.  */
+function parsley_validate(form_id){
+        $(form_id).submit(function(e){
+            e.preventDefault();
+            var form = $(form_id);
+            form.parsley().validate();
+            if (form.parsley().isValid()){ // Return the parsley bound form.
+                submit_form(form);
+            };
+        })
 }
 
 // Submit forms for contact forms
