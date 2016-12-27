@@ -1156,6 +1156,7 @@ guaranteed services. </h4>
                          
                         <div class='bt-form__wrapper'>
                         <form id='social-form' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                            {% csrf_token %}
 
                           <div class='row'>
                                                  <div class='form-title'>
@@ -1686,6 +1687,8 @@ guaranteed services. </h4>
                         </div>
 
                         <form id='newsletter-form'  action="{% url 'submit_newsletter' %}" method="POST">
+                            {% csrf_token %}
+                            
                             <span class="checkbox">
                                 <label>
                                     {{ email_form.newsletter }}
