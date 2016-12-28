@@ -28,10 +28,7 @@ a:hover{
  h3{
     font-weight: bold;
     }
-    
- .main-points-block{
-   }
-    
+
     .main-points-header{
         color: black !important;
     }
@@ -294,9 +291,6 @@ a:hover{
                             max-width: 700px;
                             margin: 0 auto;
                     
-                            
-                            .tab-pane{
-                            }
                 }
                 
                 
@@ -498,9 +492,6 @@ a:hover{
 
 
         .main-points{
-            .main-points-title{
-                //padding-bottom: 0px !important;
-            }
             .main-points-block{
                 i {
                     padding-bottom: 15px;
@@ -585,12 +576,6 @@ a:hover{
     #hover-over{
         font-family: $font-fun;
         font-size: $font-size-three;
-    }
-    
-    .main-points{
-        .main-points-title{
-            //padding-bottom: 0px !important;
-        }
     }
     
     .circle-text{
@@ -1576,8 +1561,6 @@ a:hover{
     #hex-3{background: $third-color;}
     #hex-4{
         background-color: $seventh-color;
-        h1{
-           }
         h1:after{
             border-bottom: 0px solid black !important;
         }
@@ -1790,7 +1773,6 @@ a:hover{
             margin:0px;
             text-align: center;
             display: block;
-            vertical-align: middle;
             padding: 10px;
             min-height: 70px;
             font-weight: 500;
