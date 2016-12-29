@@ -184,8 +184,11 @@ tr {
   margin: 0 auto;
   margin-bottom: 0;
   width: 1220px;
-  padding-left: 2px; }
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .alert .close {
+    display: none;
     float: left;
     font-size: 40px;
     color: #fafafa;
@@ -202,10 +205,20 @@ tr {
     font-weight: 300; }
 
 @media screen and (max-width: 1220px) {
+  .alert .close {
+    display: inline; }
+
+  .alert {
+    padding-left: 2px; }
+
   tbody {
     height: 70vh; }
 
   .table-fill {
     margin-top: 0 !important; } }
+.table-background {
+  background: #1b1e24;
+  width: 1220px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=table.css.map */

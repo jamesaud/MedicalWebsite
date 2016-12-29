@@ -10,6 +10,7 @@
     {% block sidebar %}
     {% endblock sidebar %}
 
+<div class='table-background'>
 <div class="alert table-email fade in" role="alert">
 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
@@ -23,7 +24,6 @@
       </td>
    </tr>
 </div>
-
 <table class="table-fill cd-main-content sub-nav-hero">
   <thead class='cd-secondary-nav'>
    <tr>
@@ -392,6 +392,7 @@
    </tr>
   </tbody>
 </table>
+</div>
 
   {{ block.super }} <!-- Include all modals -->
 {% endblock modal %}

@@ -231,9 +231,12 @@ tr{
   margin: 0 auto;
   margin-bottom: 0;
   width: $table-width;
-  padding-left: 2px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   .close{
+    display: none;
     float: left;
     font-size: 40px;
     color: #fafafa;
@@ -245,6 +248,7 @@ tr{
 } 
 
 .table-email{
+  
   h4{
     color: #eee;
     margin-bottom: 15px;
@@ -256,11 +260,21 @@ tr{
 
 //If the table takes up the whole screen.
 @media screen and (max-width: $table-width){
-
+    .alert .close{
+      display: inline;
+    }
+    .alert{
+      padding-left: 2px;
+    }
     tbody{
       height: 70vh;
     }
     .table-fill{
       margin-top: 0 !important;
     }
+}
+.table-background{
+    background:  #1b1e24; 
+    width: $table-width;
+    margin: 0 auto;
 }
