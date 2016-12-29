@@ -18,12 +18,6 @@ GROUP_TYPE_CHOICES = (
     ("Other", "Other"),
 )
 
-GROUP_TYPE_CHOICES = (
-    ("MS", "MS"),
-    ("Solo", "Solo"),
-    ("Other", "Other"),
-)
-
 NET_INCOME_STATUS_CHOICES = (
     ("Decreased", "Decreased"),
     ("Same", "Stayed the Same"),
@@ -37,7 +31,6 @@ REFERRAL_CHOICES = (
     ('Google', "Google"),
     ('Other', "Other"),
 )
-
 
 
 # Phone_Regex is from:
@@ -55,7 +48,7 @@ class Person(models.Model):
     last_name = models.CharField(max_length=255, blank=False, null=False)
     email = models.EmailField(max_length=255, blank=False)
     position = models.CharField(max_length=255)
-    home_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True)  # validators should be a list
+    home_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True)
     office_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True)
     office_phone_extension = models.CharField(max_length=15, blank=True)
     contacted = models.BooleanField(default=False)
@@ -123,3 +116,6 @@ class Evaluation(models.Model):
 
     def __str__(self):
         return 'Evaluation of: ' + str(self.person)
+
+class RandomReferral(models.Model):
+    referral = models.CharField(max_length=255, blank=True)

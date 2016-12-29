@@ -7,7 +7,6 @@ from medweb.homepage.views import *
 from medweb.homepage.models import *
 from medweb.homepage.models import REFERRAL_CHOICES
 from django.test import Client
-from utilities.helpers.model_helpers import get_field_names
 
 # AssertGoodView tests for 200 response, database calls under 50, etc.
 # Read test_plus documentation for more details
@@ -18,7 +17,7 @@ class BaseHomepageTestCase(TestCase):
         self.client = Client()
 
 
-class TestCreate(BaseHomepageTestCase):
+class TestViews(BaseHomepageTestCase):
 
     def test_index_view(self):
         response = self.client.get(reverse('home'))
@@ -68,12 +67,9 @@ class TestCreate(BaseHomepageTestCase):
         url = reverse('submit_newsletter')
         newsletter_post = {'email': test_email, 'newsletter': 'yes'}
 
-        # Test Get Request as error
-        json_response = self.client.get(url)
-        self.assertJSONEqual(
-            str(json_response.content, encoding='utf8'),
-            {'status': 'error'}
-        )
+        # Test Get Request
+        json_response = self.client.get(url).json()
+        self.assertEqual(json_response.get('status'), 'error')
 
         # Test Post response for submitting an email
         json_response = self.client.post(url, newsletter_post).json()
@@ -82,6 +78,26 @@ class TestCreate(BaseHomepageTestCase):
         email_created_or_exists = False
         if json_response.get('newsletter_response').get('list_id') or (json_response.get('newsletter_response').get('status') == 400):
             email_created_or_exists = True
+
         self.assertTrue(email_created_or_exists)
+        self.assertGoodView(submit_newsletter)
 
 
+    def test_submit_referral(self):
+        url = reverse('submit_referral')
+        choices = tuple([tupl[0] for tupl in REFERRAL_CHOICES])
+        post_data = {'referral': choices}
+
+        #Test Get
+        json_response = self.client.get(url).json()
+        self.assertEqual(json_response.get('status'), 'error')
+
+        #Test Post
+        json_response = self.client.post(url, post_data).json()
+        self.assertEqual(json_response.get('status'), 'success') # Should succeed in creating a RandomReferral
+
+        json_response = self.client.post(url, post_data).json()
+        self.assertEqual(json_response.get('status'), 'error')  # Should fail the second time from cookie checking.
+
+        # Test Object creation
+        self.assertEqual(len(RandomReferral.objects.all()), 1) # Should have created only one referral object.

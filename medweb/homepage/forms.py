@@ -4,7 +4,7 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
 from django import forms
 from django.forms import ModelForm
-from medweb.homepage.models import Person, Evaluation
+from medweb.homepage.models import Person, Evaluation, RandomReferral
 from parsley.decorators import parsleyfy
 from utilities.forms import NoColonForm, AutoPlaceholderForm, EmptyChoiceField, EmptyTextarea
 from config.settings.common import DATA_PARLSEY_PREFIX
@@ -31,11 +31,11 @@ class PersonForm(NoColonForm, AutoPlaceholderForm, ModelForm):
 
         parsley_namespace = 'data-parsley'
 
-"""
-Make sure that no fields are required in the model itself, otherwise the dynamic ajax saving fails to work
-"""
 @parsleyfy
 class EvaluationForm(NoColonForm, AutoPlaceholderForm,  ModelForm):
+    """
+    No fields are required in the Evaluation model itself, otherwise the dynamic ajax saving fails to work.
+    """
 
     # "11/25/2016 3:59 PM" is what we will receive
     call_time = forms.DateTimeField(input_formats=['%m/%d/%Y %I:%M %p'], required=False,)
@@ -108,6 +108,19 @@ class EvaluationForm(NoColonForm, AutoPlaceholderForm,  ModelForm):
             'placeholder': 'Best time to call',
             'class': 'datetimepicker3',
         })
+
+class RandomReferralForm(ModelForm):
+    referral = forms.MultipleChoiceField(
+        widget=forms.CheckboxSelectMultiple,
+        choices=REFERRAL_CHOICES,)
+
+    class Meta:
+        model = RandomReferral
+        fields = ('referral',)
+
+    def clean_referral(self):
+        '''Turn the list into a comma separated string'''
+        return ', '.join(self.cleaned_data['referral'])
 
 
 class EmailForm(forms.Form):
