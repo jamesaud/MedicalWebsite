@@ -1,9 +1,28 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@font-face {
+  font-family: Vollkorn, serif;
+  src: url(https://fonts.googleapis.com/css?family=Vollkorn); }
+.__color-button {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 65px;
+  padding-right: 65px;
+  font-size: 15.5px;
+  border-radius: 50em; }
+
+/* Custom Modals */
 body {
   font-family: "Roboto", helvetica, arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-rendering: optimizeLegibility; }
+
+.cd-secondary-nav {
+  background-color: transparent;
+  width: 1220px; }
 
 div.table-title {
   display: block;
@@ -18,8 +37,20 @@ div.table-title {
   font-weight: 400;
   font-style: normal;
   font-family: "Roboto", helvetica, arial, sans-serif;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
   text-transform: uppercase; }
+
+input {
+  display: inline-block;
+  max-width: 300px;
+  border-right: 0px solid black !important; }
+
+input, button {
+  height: 40px !important;
+  line-height: 40px; }
+
+button {
+  position: relative;
+  bottom: 1px; }
 
 /*** Table Styles **/
 .table-fill {
@@ -28,32 +59,31 @@ div.table-title {
   border-collapse: collapse;
   margin: 0 auto;
   padding: 5px;
-  width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   animation: float 5s infinite;
-  margin-top: 80px;
-  border-collapse: collapse;
-  max-width: 1500px; }
-
-thead {
-  display: block; }
-
-tbody {
-  height: 90vh;
-  display: block;
-  overflow: auto; }
+  border-collapse: collapse; }
 
 th {
-  color: #D5DDE5;
-  background: #1b1e24;
-  border-bottom: 4px solid #9ea7af;
+  margin: 0 auto;
+  color: #fafafa;
   border-right: 1px solid #343a45;
   font-size: 16px;
   font-weight: 100;
   padding: 24px;
   text-align: left;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   vertical-align: middle; }
+
+thead {
+  display: block; }
+  thead th {
+    background: #1b1e24;
+    border-bottom: 4px solid #9ea7af; }
+
+tbody {
+  display: block;
+  overflow: auto; }
+  tbody th {
+    background-color: #45aeea; }
 
 th:first-child {
   border-top-left-radius: 3px; }
@@ -67,8 +97,7 @@ tr {
   border-bottom-: 1px solid #C1C3D1;
   color: #666B85;
   font-size: 16px;
-  font-weight: normal;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1); }
+  font-weight: normal; }
 
 tr:first-child {
   border-top: none; }
@@ -92,7 +121,6 @@ td {
   vertical-align: middle;
   font-weight: 300;
   font-size: 15px;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
   border-right: 1px solid #C1C3D1; }
 
 td:last-child {
@@ -126,11 +154,58 @@ td.text-right {
   color: red !important;
   text-align: center; }
 
-tr td {
+.qmark {
+  font-family: arial, Segoe UI Symbol;
+  color: #343a45 !important;
+  text-align: center;
+  font-weight: bold; }
+
+.smark {
+  font-family: arial, Segoe UI Symbol;
+  color: #EFB917 !important;
   text-align: center; }
-tr td:nth-child(1) {
-  text-align: left !important; }
-tr td:nth-child(2) {
-  text-align: left !important; }
+
+tr {
+  /*td:last-child, th:last-child{
+    width: 100%;
+    border-left: 0px solid black;
+    min-width: 0px;
+  }*/ }
+  tr th, tr td {
+    width: 180px;
+    min-width: 180px;
+    text-align: center; }
+  tr td:nth-child(1), tr th:nth-child(1), tr td:nth-child(2), tr th:nth-child(2) {
+    text-align: left !important;
+    width: 250px;
+    min-width: 250px; }
+
+.alert {
+  margin: 0 auto;
+  margin-bottom: 0;
+  width: 1220px;
+  padding-left: 2px; }
+  .alert .close {
+    float: left;
+    font-size: 40px;
+    color: #fafafa;
+    bottom: 15px;
+    position: relative;
+    margin-right: 8px;
+    padding-bottom: 45px; }
+
+.table-email {
+  background: #4a5262 !important; }
+  .table-email h4 {
+    color: #eee;
+    margin-bottom: 15px;
+    font-weight: 300; }
+
+@media screen and (max-width: 1220px) {
+  tbody {
+    height: 70vh; }
+
+  .table-fill {
+    margin-top: 0 !important; } }
 
 /*# sourceMappingURL=table.css.map */

@@ -1963,7 +1963,7 @@ a:hover{
 
 
 
-#modal-test{
+#modal-chart{
     .close-button{
         right: 10px !important;
         top: -20px !important;
@@ -2001,29 +2001,4 @@ a:hover{
         padding-left: 0;
     }
 
-}
-
-//Modals
-#modal-thanks{
-    @include modalSmall(500px);
-
-    h5{
-        margin-top: 9px !important;
-        color: #333 !important;
-    }
-    .modal-body{
-        padding-top: 20px;
-    }
-    .inquire-close-button{
-        width: 100%;
-        margin-top: 50px;
-    }
-    .form-title{
-       // border: none !important;
-        color: $primary-color;
-        padding-bottom: 0px;
-        margin-bottom: 25px;
-    }
- 
-    
 }

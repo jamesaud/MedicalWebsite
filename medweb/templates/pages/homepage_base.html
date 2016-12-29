@@ -169,7 +169,194 @@
             </div>
         {% endblock sidebar %}
 
-    <!-- CONTACT MODAL -->
+
+    <div class='content-main'>
+    {% block modal %}
+
+        {% block modal-demo %}
+            <!-- DEMO MODAL -->
+        <div id="modal-demo" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-demo" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header container">
+                        <div class='close-button'>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+
+                      </div>
+
+                      <div class="modal-body container">
+
+                                    <div class='tab-pane-content tab-content'>
+                                        <div id='demo-tab-0' class='tab-pane in active'>
+
+
+                                            <div class='col-md-6 contact-message'>
+                                                <div class='contact-title'>
+                                                <img class='img-responsive' src="{% static 'images/ipad.jpg' %}" alt='ipad'/>
+                                                <h3 class='m-contact-title'>Choose a time and we'll call you to schedule a demo</h3>
+
+                                                <h5 class="modal-title" id="gridModalLabel">Call 1-800-870-6191 for expedited service. Use cutting edge EHR &amp; RCM technology with industry leading automation.</h5>
+
+                                                </div>
+                                                <hr>
+                                                <h5>
+                                                    You will be set up with a Synergy+ training specialist who will walk you through the EHR/RCM demo and answer any questions.
+                                                </h5>
+                                                <h5>A cloud based system means you can test the real version in your browser, pre-populated with fake patient data.</h5>
+                                                <h5> With a system that takes only 40 minutes to train, you'll be up and practicing in no time!</h5>
+                                            </div>
+                                            <div class='bt-form__wrapper col-md-6'>
+                                                <form id='demo-form-0' class="bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST"  data-parsley-validate data-parsley-errors-messages-disabled  >
+                                                     {% csrf_token %}
+
+                                                    <input type="hidden" name="form_id" value="demo-form">
+
+                                                          <div class='row form-group'>
+                                                              <div class="col-md-12 bt-flabels__wrapper required">
+                                                                  <div class='control-label'></div>
+                                                                  {{ person_form.first_name.label_tag  }}
+                                                                    {{ person_form.first_name }}
+                                                                      <span class="bt-flabels__error-desc">Required</span>
+                                                              </div>
+                                                          </div>
+
+                                                          <div class='row form-group'>
+                                                              <div class="col-md-12 required bt-flabels__wrapper">
+                                                                  <div class='control-label'></div>
+                                                                    {{ person_form.last_name.label_tag  }}
+                                                                    {{ person_form.last_name }}
+                                                                    <span class="bt-flabels__error-desc">Required</span>
+
+                                                                  </div>
+                                                           </div>
+
+
+                                                          <div class='row form-group'>
+                                                            <div class="bt-flabels__wrapper required col-md-12">
+                                                                <div class='control-label'></div>
+                                                               <label for="{{ person_form.position.id_for_label }}">
+                                                                   Title or Position</label>
+                                                                    {{ person_form.position }}
+                                                                <span class="bt-flabels__error-desc">Required</span>
+                                                              </div>
+                                                          </div>
+
+
+                                                          <div class='row form-group'>
+                                                               <div class="bt-flabels__wrapper col-md-12">
+                                                                      {{ person_form.email.label_tag  }}
+                                                                          {{ person_form.email }}
+                                                                     <span class="bt-flabels__error-desc">Required/Invalid Email</span>
+                                                               </div>
+                                                          </div>
+                                                          <div class='row form-group'>
+                                                               <div class="bt-flabels__wrapper col-md-12">
+                                                                      {{ person_form.home_phone.label_tag  }}
+                                                                          {{ person_form.home_phone }}
+                                                                     <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
+                                                                </div>
+                                                          </div>
+
+                                                          <div class='row form-group'>
+
+                                                              <div class='bt-flabels__wrapper required col-md-12'>
+                                                                      <div class='control-label'></div>
+                                                                     {{ evaluation_form.group_name.label_tag  }}
+                                                                     {{ evaluation_form.group_name }}
+                                                                    <span class="bt-flabels__error-desc">Required</span>
+                                                              </div>
+                                                          </div>
+                                                          <div class='row form-group'>
+                                                              <div class='col-md-12'>
+                                                                  <div >
+                                                                      {{ evaluation_form.group_type.label_tag  }}
+                                                                     {{ evaluation_form.group_type }}
+                                                                  </div>
+                                                              </div>
+
+                                                          </div>
+
+
+                                                        <div class='row form-group'>
+
+
+                                                              <div class="bt-flabels__wrapper required col-md-7">
+
+                                                                        <div class='control-label'></div>
+                                                                     {{ person_form.office_phone.label_tag  }}
+                                                                     {{ person_form.office_phone }}
+                                                                      <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
+                                                              </div>
+
+
+                                                              <div class="bt-flabels__wrapper col-md-5">
+                                                                     {{ person_form.office_phone_extension.label_tag  }}
+                                                                     {{ person_form.office_phone_extension }}
+                                                                       </div>
+
+                                                        </div>
+
+                                                        <div class='row form-group'>
+                                                                         <div class='col-md-12 bt-flabels__wrapper'>
+                                                                             <label for="{{ evaluation_form.call_time.id_for_label }}">
+                                                                   Best time to call</label>
+                                                                     {{ evaluation_form.call_time }}
+                                                                     <!--<label>Best time to call</label>
+                                                                            <input type='text' class='datetimepicker3' name="call_time" placeholder="Best time to call" autocomplete="off"/>-->
+                                                                     
+                                                                        </div>
+                                                        </div>
+
+                                                    <div class='row form-group'>
+                                                                          <div class="bt-flabels__wrapper text-area-wrapper col-md-12">
+                                                                              <span class='text-area-title'> {{ evaluation_form.message.label }}</span>
+                                                                              <div class='form-message'>
+                                                                                  {{ evaluation_form.message.label_tag }}
+                                                                                {{ evaluation_form.message }}
+                                                                              </div>
+                                                                            </div>
+                                                            </div>
+
+
+                                                    <div class='row'>
+                                                        <div class='col-md-12'>
+                                                            <button type="submit" class="btn button btn-large btn-default btn-primary contact-btn js-submit">Request Demo</button>
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div id='demo-tab-1' class='tab-pane in inquire-finish'>
+                                            <div class='inquire-title'>
+
+                                                            <h2>Thank you for contacting Synergy+!</h2>
+                                                            <h3> A Synergy+ Representative will be in touch.</h3>
+
+                                                            <h4>To expedite the process, speak with a Synergy+ Representative by calling <strong>1-800-870-6191</strong>.</h4>
+
+
+                                             </div>
+
+                                                    <div class='row'>
+                                                        <div class='col-md-10 col-centered'>
+                                                            <button type="submit" class="btn btn-default inquire-close-button" data-dismiss="modal" >Close</button>
+                                                        </div>
+                                                    </div>
+                                          
+                                        </div>
+
+                                    </div>
+                      </div>
+                      </div>
+                      </div>
+        </div><!-- END DEMO MODAL -->
+   
+        {% endblock modal-demo %}
+
+        {% block modal-contact %}
+            <!-- CONTACT MODAL -->
         <div id="modal-contact" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-contact" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -739,197 +926,59 @@
                     </div>
                   </div>
                 </div>
-
-
-		
-        
-    
-    
-    
-    
     <!-- END CONTACT MODAL -->
-    
-    <!-- DEMO MODAL -->
-        <div id="modal-demo" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-demo" aria-hidden="true">
+        {% endblock modal-contact %}
+
+        {% block modal-thanks %}
+                    <!-- MODAL THANK YOU -->
+        <div id="modal-thanks" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-thanks" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header container">
                         <div class='close-button'>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
-
+                         <div class='row bg-success'>
+                              <div class='col-md-10 col-centered'>
+                                    <h5>Thanks! Your email is on its way. If you don't receive it in a few minutes, be sure to check your promotions or spam.</h5>
+                              </div>
+                          </div>
                       </div>
 
                       <div class="modal-body container">
+                                                   
+                         
+                        <div class='bt-form__wrapper'>
+                        <form id='social-form' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                            {% csrf_token %}
 
-                                    <div class='tab-pane-content tab-content'>
-                                        <div id='demo-tab-0' class='tab-pane in active'>
-
-
-                                            <div class='col-md-6 contact-message'>
-                                                <div class='contact-title'>
-                                                <img class='img-responsive' src="{% static 'images/ipad.jpg' %}" alt='ipad'/>
-                                                <h3 class='m-contact-title'>Choose a time and we'll call you to schedule a demo</h3>
-
-                                                <h5 class="modal-title" id="gridModalLabel">Call 1-800-870-6191 for expedited service. Use cutting edge EHR &amp; RCM technology with industry leading automation.</h5>
-
-                                                </div>
-                                                <hr>
-                                                <h5>
-                                                    You will be set up with a Synergy+ training specialist who will walk you through the EHR/RCM demo and answer any questions.
-                                                </h5>
-                                                <h5>A cloud based system means you can test the real version in your browser, pre-populated with fake patient data.</h5>
-                                                <h5> With a system that takes only 40 minutes to train, you'll be up and practicing in no time!</h5>
-                                            </div>
-                                            <div class='bt-form__wrapper col-md-6'>
-                                                <form id='demo-form-0' class="bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST"  data-parsley-validate data-parsley-errors-messages-disabled  >
-                                                     {% csrf_token %}
-
-                                                    <input type="hidden" name="form_id" value="demo-form">
-
-                                                          <div class='row form-group'>
-                                                              <div class="col-md-12 bt-flabels__wrapper required">
-                                                                  <div class='control-label'></div>
-                                                                  {{ person_form.first_name.label_tag  }}
-                                                                    {{ person_form.first_name }}
-                                                                      <span class="bt-flabels__error-desc">Required</span>
-                                                              </div>
-                                                          </div>
-
-                                                          <div class='row form-group'>
-                                                              <div class="col-md-12 required bt-flabels__wrapper">
-                                                                  <div class='control-label'></div>
-                                                                    {{ person_form.last_name.label_tag  }}
-                                                                    {{ person_form.last_name }}
-                                                                    <span class="bt-flabels__error-desc">Required</span>
-
-                                                                  </div>
-                                                           </div>
-
-
-                                                          <div class='row form-group'>
-                                                            <div class="bt-flabels__wrapper required col-md-12">
-                                                                <div class='control-label'></div>
-                                                               <label for="{{ person_form.position.id_for_label }}">
-                                                                   Title or Position</label>
-                                                                    {{ person_form.position }}
-                                                                <span class="bt-flabels__error-desc">Required</span>
-                                                              </div>
-                                                          </div>
-
-
-                                                          <div class='row form-group'>
-                                                               <div class="bt-flabels__wrapper col-md-12">
-                                                                      {{ person_form.email.label_tag  }}
-                                                                          {{ person_form.email }}
-                                                                     <span class="bt-flabels__error-desc">Required/Invalid Email</span>
-                                                               </div>
-                                                          </div>
-                                                          <div class='row form-group'>
-                                                               <div class="bt-flabels__wrapper col-md-12">
-                                                                      {{ person_form.home_phone.label_tag  }}
-                                                                          {{ person_form.home_phone }}
-                                                                     <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
-                                                                </div>
-                                                          </div>
-
-                                                          <div class='row form-group'>
-
-                                                              <div class='bt-flabels__wrapper required col-md-12'>
-                                                                      <div class='control-label'></div>
-                                                                     {{ evaluation_form.group_name.label_tag  }}
-                                                                     {{ evaluation_form.group_name }}
-                                                                    <span class="bt-flabels__error-desc">Required</span>
-                                                              </div>
-                                                          </div>
-                                                          <div class='row form-group'>
-                                                              <div class='col-md-12'>
-                                                                  <div >
-                                                                      {{ evaluation_form.group_type.label_tag  }}
-                                                                     {{ evaluation_form.group_type }}
-                                                                  </div>
-                                                              </div>
-
-                                                          </div>
-
-
-                                                        <div class='row form-group'>
-
-
-                                                              <div class="bt-flabels__wrapper required col-md-7">
-
-                                                                        <div class='control-label'></div>
-                                                                     {{ person_form.office_phone.label_tag  }}
-                                                                     {{ person_form.office_phone }}
-                                                                      <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
-                                                              </div>
-
-
-                                                              <div class="bt-flabels__wrapper col-md-5">
-                                                                     {{ person_form.office_phone_extension.label_tag  }}
-                                                                     {{ person_form.office_phone_extension }}
-                                                                       </div>
-
-                                                        </div>
-
-                                                        <div class='row form-group'>
-                                                                         <div class='col-md-12 bt-flabels__wrapper'>
-                                                                             <label for="{{ evaluation_form.call_time.id_for_label }}">
-                                                                   Best time to call</label>
-                                                                     {{ evaluation_form.call_time }}
-                                                                     <!--<label>Best time to call</label>
-                                                                            <input type='text' class='datetimepicker3' name="call_time" placeholder="Best time to call" autocomplete="off"/>-->
-                                                                     
-                                                                        </div>
-                                                        </div>
-
-                                                    <div class='row form-group'>
-                                                                          <div class="bt-flabels__wrapper text-area-wrapper col-md-12">
-                                                                              <span class='text-area-title'> {{ evaluation_form.message.label }}</span>
-                                                                              <div class='form-message'>
-                                                                                  {{ evaluation_form.message.label_tag }}
-                                                                                {{ evaluation_form.message }}
-                                                                              </div>
-                                                                            </div>
-                                                            </div>
-
-
-                                                    <div class='row'>
-                                                        <div class='col-md-12'>
-                                                            <button type="submit" class="btn button btn-large btn-default btn-primary contact-btn js-submit">Request Demo</button>
-                                                        </div>
+                          <div class='row'>
+                                                 <div class='form-title'>
+                                                            <h3>How did you hear about us?</h3>
                                                     </div>
+                          </div>
+                          
+                        <div class='row'>
+                            <div class="bt-flabels__wrapper checkbox-wrapper col-md-12">
+                                {% for choice in evaluation_form.referral %}
+                                    {{ choice.tag }} {{ choice.choice_label }}
+                                {% endfor %}
+                            </div>
+                        </div>
 
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div id='demo-tab-1' class='tab-pane in inquire-finish'>
-                                            <div class='inquire-title'>
-
-                                                            <h2>Thank you for contacting Synergy+!</h2>
-                                                            <h3> A Synergy+ Representative will be in touch.</h3>
-
-                                                            <h4>To expedite the process, speak with a Synergy+ Representative by calling <strong>1-800-870-6191</strong>.</h4>
-
-
-                                             </div>
-
-                                                    <div class='row'>
-                                                        <div class='col-md-10 col-centered'>
-                                                            <button type="submit" class="btn btn-default inquire-close-button" data-dismiss="modal" >Close</button>
-                                                        </div>
-                                                    </div>
-                                          
-                                        </div>
-
-                                    </div>
+                          <div class='row'>
+                                <div class='col-md-10 col-centered'>
+                                    <button type="button" class="btn btn-default inquire-close-button" data-dismiss="modal">Close</button>
+                                </div>
+                          </div>
+                       </form>
                       </div>
+
                       </div>
-                      </div>
-        </div><!-- END DEMO MODAL -->
-   
-    <div class='content-main'>
-    {% block modal %}
+                    </div>
+                  </div>
+        </div>
+        {% endblock modal-thanks %}
     {% endblock modal %}
     </div>
     {% block footer %}

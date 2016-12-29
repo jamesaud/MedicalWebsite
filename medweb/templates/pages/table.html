@@ -10,345 +10,225 @@
     {% block sidebar %}
     {% endblock sidebar %}
 
- 
-<table class='table-fill'>
-<thead class=''>
+<div class="alert table-email fade in" role="alert">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+      <tr class='table-email'>
+      <td colspan="6">
+        <h4>      
+          To receive the full comparison chart illustrating differences between top competitors, please enter your email address:
+        </h4>
+        {{ email_form.email }}<button type="submit" class="btn btn-default btn-primary" href="#" data-toggle="modal" data-target="#modal-thanks">Send Chart</button>
+      </td>
+   </tr>
+</div>
 
-</thead>
-<tbody>
-<tr class=''>
+<table class="table-fill cd-main-content sub-nav-hero">
+  <thead class='cd-secondary-nav'>
+   <tr>
       <th>SERVICE FEATURES</th>
       <th>DISTINCT ADVANTAGES</th>
-      <th><strong>Synergy+</strong></th>
-      <th>Kareo</th>
-      <th>Epic</th>
-      <th>Allscripts</th>
-      <th>Pr. Fusion</th>
-      <th>NextGen</th>
-      <th>Cerner</th>
-      <th>Athena</th>
-      <th>Greenway</th>
+      <th><strong>SYNERGY+</strong></th>
+      <th>LEGACY </th>
+      <th>NEW FIRMS</th>
+      <th>YOUR SYSTEM</th>
    </tr>
-<div class=''>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <th colspan="6"> GENERAL SYSTEM AND SERVICE FEATURES</th>
+   </tr>
    <tr>
-      <td>All-inclusive services even solo DRs benefit!</td>
-      <td>Bundled Services save clients 25-40%</td>
+      <td>All-inclusive Services</td>
+      <td>Bundled services save clients 25-40%</td>
       <td class='checkmark'>✔</td>
+      <td class="xmark">X</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
       <td>Net Income Optimization</td>
-      <td>Net Income Gains from25-100%+</td>
+      <td>Net income gains of 25-100%</td>
       <td class='checkmark'>✔</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Saves doctors, staff & patients 25-40% of time</td>
-      <td>Doctor Sees > 25-40% more patients</td>
+      <td>Saves 25-40% Of Time</td>
+      <td>Doctors see 25-40% more patients</td>
       <td class='checkmark'>✔</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Personnel Go Home On Time</td>
+      <td>Saves 1.5 - 2 hours of documenting</td>
+      <td class='checkmark'>✔</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Resource Reallocation</td>
+      <td>Retain valuable staff & optimize space</td>
+      <td class='checkmark'>✔</td>
       <td class='xmark'>X</td>
+      <td class='xmark'>Few</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>No Law Suits, FTC Or Consumer Complaints</td>
+      <td>100% clean and always will be</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>No Violation Of ONC Rules</td>
+      <td>No penalty or decertification</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='checkmark'>✔</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>HR Retention Plan & Physician Recruiting</td>
+      <td>Lowers turnover & increases revenue 10-20%</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Exponential Growth Plan</td>
+      <td>Gain market share</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <th colspan="6"> CLOUD-BASED EHR/RCM AND PRACTICE MANAGEMENT</th>
+   </tr>
+   <tr>
+      <td>Built in Modular & interoperability Communications</td>
+      <td>Easy integration to outside systems</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>Costly</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Price of EHR & RCM (Percent Of Collections)</td>
+      <td>Clients save $18k - $36K per provider per year</td>
+      <td class='checkmark'>3.40%</td>
+      <td class='xmark'>4-11%</td>
+      <td class='xmark'>4-9%</td>
+      <td class='xmark'>4-13%</td>
+   </tr>
+   <tr>
+      <td>Cost Effective For Solo To MS Groups</td>
+      <td>Efficient for small to large practices</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Reduces Appointment Times</td>
+      <td>7-10 minutes less time per patient</td>
+      <td class='checkmark'>✔</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
    </tr>
    <tr>
-      <td>Drs. & Staff go home minutes after the last patient</td>
-      <td>System saves 1.5 - 2 hours of documenting</td>
+      <td>Fully Implemented Dictation</td>
+      <td>Eliminates scribes</td>
       <td class='checkmark'>✔</td>
-      <td>?</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td>PARTIAL</td>
-      <td class='xmark'>X</td>
-      <td>PARTIAL</td>
-      <td class='xmark'>X</td>
-      
+      <td class='smark'>Some</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Resource Re allocation: staff & office space</td>
-      <td>Retain valuable staff and optimize space</td>
+      <td>Automatically Codes, Bills and Collects </td>
+      <td>Optimal billing & eliminates coders</td>
       <td class='checkmark'>✔</td>
-      <td>PARTIAL</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
-      <td>PARTIAL</td>
-      <td class='xmark'>X</td>
-      <td>PARTIAL</td>
-      <td class='xmark'>X</td>
-      
    </tr>
    <tr>
-      <td>NO Million $ law suits, FTC or Consumer Complaints</td>
-      <td>100% clean and we will always be!</td>
+      <td>Cuts Overhead Up To 35%</td>
+      <td>RCM & admin expenses cut 20-35%</td>
       <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
    </tr>
    <tr>
-      <td>HR: Retention Plan & Physician Recruiting</td>
-      <td>Lowers Turnover & Increases Revenue 10-20%</td>
+      <td>Modular Integration, Interfaces & Interoperability</td>
+      <td>Connect equiptment, services & data sources</td>
       <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='xmark'>Costly</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Exponential Growth Plan: gain market share</td>
-      <td>Client Revenue Growth is ongoing</td>
+      <td>Viability & Managerial Stability</td>
+      <td>Profitability ensures long term survival</td>
       <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='smark'>Some</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td> CLOUD-BASED EHR/RCM & PRACTICE MANAGEMENT</td>
-      <td>DISTINCT ADVANTAGES</td>
-      <td><strong>Synergy+</strong></td>
-      <td>Kareo</td>
-      <td>Epic</td>
-      <td>Allscripts</td>
-      <td>Pr. Fusion</td>
-      <td>NextGen</td>
-      <td>Cerner</td>
-      <td>Athena</td>
-      <td>Greenway</td>
-      
-   </tr>
-   <tr>
-      <td>Built-in Modular + interoperability Communications</td>
-      <td>Easy Integration to outside systems</td>
-      <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td>COSTLY</td>
-      <td class='xmark'>X</td>
-      <td>PARTIAL</td>
-      <td>PARTIAL</td>
-      <td>COSTLY</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
-   </tr>
-   <tr>
-      <td>EHR+Built-in RCM full services; % of collections</td>
-      <td>Avg. Client saves $18k per provider per year</td>
-      <td>3.40%</td>
-      <td>4-9%</td>
-      <td>4-9%</td>
-      <td>4-9%</td>
-      <td>4-11%</td>
-      <td>4-9%</td>
-      <td>4-9%</td>
-      <td>4-7%</td>
-      <td>4-9%</td>
-      
-   </tr>
-   <tr>
-      <td>Cost-effective for solo to MS Groups</td>
-      <td>One size fits all</td>
-      <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
-   </tr>
-   <tr>
-      <td>Speed & Efficiency reduces appointment times</td>
-      <td>7-10 minutes less per patient</td>
-      <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
-   </tr>
-   <tr>
-      <td>Auto Codes, bills and collects by dictation & programming</td>
-      <td>Optimizes highest level billing</td>
-      <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
-   </tr>
-   <tr>
-      <td>System cuts overall overhead up to 35%</td>
-      <td>RCM & Admin expenses cut 20-35%</td>
-      <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td>X </td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
-   </tr>
-   <tr>
-      <td>Modular +integration, interfaces & interoperability</td>
-      <td>Connect equip, services & data sources</td>
-      <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
-   </tr>
-   <tr>
-      <td>Viability and Managerial Stability</td>
-      <td>Profitability ensures client's long term survival</td>
-      <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='checkmark'>✔</td>
-      
-   </tr>
-   <tr>
-      <td>Seamless adapts to RCM mandates (ICD-10, VBC, etc.)</td>
+      <td>Seamless Adapts To RCM Mandates (ICD-10, VBC, Etc.)</td>
       <td>Timely transition with no headaches</td>
       <td class='checkmark'>✔</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Built-in auto RCM & Validations, plus auto RX, DX & F/U ordering</td>
-      <td>Enables overall overhead reduction of 25-35%</td>
+      <td>Built In Auto RCM & Validations Plus Auto RX, DX & F/U Ordering</td>
+      <td>Overhead reduction of 25-35%</td>
       <td class='checkmark'>✔</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Implemented in a day & Train each employee in < than an hour!</td>
-      <td>Our system is that user friendly</td>
+      <td>1 Day Installation, 45 Minute Training</td>
+      <td>Easy transition & learning</td>
       <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Labs, Imaging, Charts, work flow, e- prescribe </td>
-      <td>All but E-Proscribe is included</td>
+      <td>Labs, Imaging, Charts, Work Flow, E-Prescribe </td>
+      <td>Everything included except e-prescribe</td>
       <td class='checkmark'>✔</td>
-      <td>PARTIAL</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='smark'>Some</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>We Purchase Accounts Receivables the day of service </td>
-      <td> We optimize Clients Cash-flow</td>
+      <td> Purchase Accounts Receivables Same Day Of Service</td>
+      <td>Optimizes cash flow</td>
       <td class='checkmark'>✔</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='qmark'>?</td>
    </tr>
-   <tr>
-      <td>DATA ANALYSIS, SECURITY  & REGULATIONS</td>
-      <td>DISTINCT ADVANTAGES</td>
-      <td><strong>Synergy+</strong></td>
-      <td>Kareo</td>
-      <td>Epic</td>
-      <td>Allscripts</td>
-      <td>Practice </td>
-      <td>NextGen</td>
-      <td>Cerner</td>
-      <td>Athena</td>
-      <td>Greenway</td>
-      
+<tr>
+      <th colspan="6"> DATA ANALYSIS, SECURITY AND REGULATIONS</th>
    </tr>
    <tr>
       <td>Supports Data Security & Analysis</td>
@@ -356,297 +236,187 @@
       <td class='checkmark'>✔</td>
       <td class='checkmark'>✔</td>
       <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
-      
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>A Decade in the Cloud--Exceeds EHNAC HIPPA Security Standards</td>
-      <td>Risk analysis and mgmt. plan approved by HHS</td>
+      <td>A Decade In The Cloud</td>
+      <td>Exceeds EHNAC HIPPA security standards</td>
       <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='smark'>Some</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
       <td>Strong Certified HIPAA Consultant Network</td>
-      <td>Our Ultra-Secure Network Protects YOU</td>
+      <td>Secure network protects you</td>
       <td class='checkmark'>✔</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      
+      <td class='qmark'>?</td>
+      <td class='qmark'>?</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Exemplary Reputation for System Stability</td>
-      <td>Minimizes slow-downs and down time</td>
+      <td>Exemplary Reputation For System Stability</td>
+      <td>Minimizes slow downs & down time</td>
       <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td class='xmark'>X</td>
-      <td>?</td>
-      <td>?</td>
-      
+      <td class='smark'>Some</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Avail 6/2017 - Integrated Analysis: affordable, efficient & accurate</td>
-      <td>Focused on Optimizing PHM</td>
-      <td class='checkmark'>✔</td>
+      <td>Integrated Analysis Is Affordable, Efficient & Accurate</td>
+      <td>Focused on optimizing PHM</td>
+      <td class='smark'>Avail 6/2017</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+  <tr>
+        <th colspan="6"> PATIENT ENGAGEMENT AND RELATIONSHIP BUILDING</th>
+  </tr>
       
+   <tr>
+      <td>Advanced Web Tools & Online Strategies</td>
+      <td>Adds value to website & portal</td>
+      <td class='checkmark'>✔</td>
+      <td class='smark'>Partial</td>
+      <td class='smark'>Partial</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>PATIENT ENGAGEMENT - RELATIONSHIP BUILDING</td>
-      <td>DISTINCT ADVANTAGES</td>
-      <td><strong>Synergy+</strong></td>
-      <td>Kareo</td>
-      <td>Epic</td>
-      <td>Allscripts</td>
-      <td>Practice </td>
-      <td>NextGen</td>
-      <td>Cerner</td>
-      <td>Athena</td>
-      <td>Greenway</td>
-      
+      <td>Patient Compliance With Relationship Building</td>
+      <td>Healthier patients refer more patients</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Superior Tools and Strategies</td>
-      <td>Adds value to Website and Portal</td>
-      <td class='checkmark'>✔</td>
-      <td>PARTIAL</td>
-      <td>PARTIAL</td>
-      <td>PARTIAL</td>
-      <td>PARTIAL</td>
-      <td>PARTIAL</td>
-      <td>PARTIAL</td>
-      <td>PARTIAL</td>
-      <td>PARTIAL</td>
-      
-   </tr>
-   <tr>
-      <td>Patient compliance through solid relationships</td>
-      <td>Healthier patients, refer more patients!</td>
-      <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
-      
-   </tr>
-   <tr>
-      <td>Guardian plan-all patients covered</td>
+      <td>Aquire Non-Internet Users</td>
       <td>Covers 23% non internet users</td>
       <td class='checkmark'>✔</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td>?</td>
-      <td>?</td>
-      
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Superior Patient Education Resources</td>
+      <td>Patient Education Resources</td>
       <td>Free 'A Wellness Update' subscription</td>
       <td class='checkmark'>✔</td>
-      <td>PARTIAL</td>
-      <td>PARTIAL?</td>
-      <td>PARTIAL?</td>
-      <td>PARTIAL?</td>
-      <td>PARTIAL?</td>
-      <td>PARTIAL?</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='smark'>Partial</td>
+      <td class='smark'>Partial</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Built-in Patient Communications: phone, text, e-mail</td>
-      <td>For  individual & public health initiatives</td>
+      <td>Patient Communications: Phone, Text, Email</td>
+      <td>Optimizes communications</td>
       <td class='checkmark'>✔</td>
       <td class='checkmark'>✔</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      
+      <td class='qmark'>?</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Full offline engagement services</td>
-      <td>No Patients 'Fall Through the Cracks'</td>
+      <td>Full Offline Engagement Services</td>
+      <td>No patients 'fall through the cracks'</td>
       <td class='checkmark'>✔</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Patient Portal, Expedited Apt. Finder, Mobile Apps.</td>
-      <td>Superior engagement = Advanced healthcare</td>
+      <td>Patient Portal, Expedited Apt. Finder, Mobile Apps</td>
+      <td>Superior engagement</td>
       <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
-      <td>PARTIAL</td>
-      <td>PARTIAL</td>
-      <td class='xmark'>X</td>
-      <td>PARTIAL</td>
-      <td class='xmark'>X</td>
-      
+      <td class='smark'>Partial</td>
+      <td class='smark'>Partial</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Marketing consults</td>
-      <td>Optimized patient volume</td>
+      <td>Marketing Consultation</td>
+      <td>Increase patient volume</td>
       <td class='checkmark'>✔</td>
-      <td class='checkmark'>✔</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td class='checkmark'>✔</td>
-      <td>?</td>
-      <td class='checkmark'>✔</td>
-      <td>?</td>
-      
+      <td class='smark'>Partial</td>
+      <td class='smark'>Partial</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Online 'Triage' service - starts June 2017</td>
-      <td>Cost-effective care</td>
-      <td class='checkmark'>✔</td>
+      <td>Online Triage Service</td>
+      <td>Cost effective care</td>
+      <td class='smark'>Avail 6/2017</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='xmark'>Few</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
       <td>Annual Wellness Visit & Chronic Care Management</td>
-      <td>Healthier patients, healthier bottom line</td>
-      <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td>?</td>
-      <td class='checkmark'>✔</td>
-      <td>?</td>
-      <td class='checkmark'>✔</td>
-      <td>?</td>
-      
+      <td>Healthier patients & bottom line</td>
+      <td class='smark'>Avail 6/2017</td>
+      <td class='xmark'>Few</td>
+      <td class='xmark'>Few</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Preventative & affordable Self Care </td>
-      <td>Inspires Patients- Improves outcomes</td>
-      <td class='checkmark'>✔</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td>Preventative Care & Affordable Self Care </td>
+      <td>Inspires patients & improves outcomes</td>
+      <td class='smark'>Avail 6/2017</td>
+      <td class='xmark'>Few</td>
+      <td class='xmark'>Few</td>
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td> POPULATION HEALTH MGMT - Starts June 2017  </td>
-      <td>   #1 investment: Tripling to $38B by 2020</td>
-      <td><strong>Synergy+</strong></td>
-      <td>Kareo</td>
-      <td>Epic</td>
-      <td>Allscripts</td>
-      <td>Practice </td>
-      <td>NextGen</td>
-      <td>Cerner</td>
-      <td>Athena</td>
-      <td>Greenway</td>
-      
+      <th colspan="6"> POPULATION HEALTH MANAGEMENT | #1 INVESTMENT OF $38B BY 2020</th>
+
    </tr>
    <tr>
-      <td>Built-in affordable, scalable PHM services</td>
-      <td>Highly efficiency and high value</td>
-      <td class='checkmark'>✔</td>
+      <td>Affordable, Scalable PHM Services</td>
+      <td>High efficiency & value</td>
+      <td class='smark'>Avail 7/2017</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>Comprehensive Data of all Methods of Treatment</td>
+      <td>Comprehensive Data For Methods Of Treatment</td>
       <td>Enables the options patients demand</td>
-      <td class='checkmark'>✔</td>
+      <td class='smark'>Avail 7/2017</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      
+      <td class='qmark'>?</td>
    </tr>
    <tr>
-      <td>In-house Clinical Experts: evaluate  all known methods </td>
+      <td>In-House Clinical Experts Evaluate Methods</td>
       <td>Superior care reduces chronic disease </td>
-      <td class='checkmark'>✔</td>
+      <td class='smark'>Avail 7/2017</td>
       <td class='xmark'>X</td>
       <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
-      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
    </tr>
-</div>
-</tbody>
+  </tbody>
 </table>
 
-
-
+  {{ block.super }} <!-- Include all modals -->
 {% endblock modal %}
+{% block footer %}
+{% endblock footer %}
+
+{% block javascript %}
+{{ block.super }}
+
+<!-- Prevent the secondary nav bar on mobile from messing stuff up-->
+<script>
+window.setInterval(function(){
+(function($) {
+    var $window = $(window),
+        $thead = $('thead');
+
+    $window.resize(function resize(){
+        if ($window.width() < 1220) {
+            return $thead.removeClass('cd-secondary-nav');
+        }
+        else{
+          return $thead.addClass('cd-secondary-nav');
+        }
+    }).trigger('resize');
+})(jQuery);}, 100);
+
+</script>
+{% endblock javascript %}

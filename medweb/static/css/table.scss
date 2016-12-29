@@ -1,12 +1,22 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
-
-
+@import 'variables';
+$table-width: 1220px;
 
 body {
   font-family: "Roboto", helvetica, arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-rendering: optimizeLegibility;
+}
+
+.content-main{
+    //margin-top: 0px!important;
+}
+
+
+.cd-secondary-nav{
+  background-color: transparent;
+  width: $table-width;
 }
 
 div.table-title {
@@ -23,11 +33,23 @@ div.table-title {
    font-weight: 400;
    font-style:normal;
    font-family: "Roboto", helvetica, arial, sans-serif;
-   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   //text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
    text-transform:uppercase;
 }
 
-
+input{
+  display: inline-block;
+  max-width: 300px;
+  border-right: 0px solid black !important;
+}
+input, button{
+  height: 40px !important;
+  line-height: 40px;
+}
+button{
+  position: relative;
+  bottom: 1px;
+}
 
 /*** Table Styles **/
 
@@ -37,37 +59,44 @@ div.table-title {
   border-collapse: collapse;
   margin: 0 auto;
   padding:5px;
-  width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   animation: float 5s infinite;
-  margin-top: 80px;
   border-collapse: collapse;
-  max-width: 1500px;
+  //width: 100%;
 
 }
 
-thead{
-  display: block;
-}
-
-tbody{
-    height: 90vh;
-    display: block;
-    overflow: auto;
-}
- 
 th {
-  color:#D5DDE5;;
-  background:#1b1e24;
-  border-bottom:4px solid #9ea7af;
+  margin: 0 auto;
+  color:#fafafa;
   border-right: 1px solid #343a45;
   font-size:16px;
   font-weight: 100;
   padding:24px;
   text-align:left;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  //text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   vertical-align:middle;
 }
+
+thead{
+  display: block;
+  th{
+      background:#1b1e24;
+      border-bottom:4px solid #9ea7af;
+  }
+}
+
+tbody{
+    //height: 78vh;
+    display: block;
+    overflow: auto;
+    th{
+       @include transparentBackgroundColor(1.0, $primary-color);
+       //border-bottom: 2px solid #666B85;
+       //border-top: 2px solid #666B85;
+    }
+}
+
 
 th:first-child {
   border-top-left-radius:3px;
@@ -84,7 +113,7 @@ tr {
   color:#666B85;
   font-size:16px;
   font-weight:normal;
-  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+  //text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
 }
  
 tr:hover td {
@@ -121,7 +150,7 @@ td {
   vertical-align:middle;
   font-weight:300;
   font-size:15px;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  //text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
   border-right: 1px solid #C1C3D1;
 }
 
@@ -165,18 +194,73 @@ td.text-right {
     text-align: center;
 }
 
-//td{
-//    text-align: center;
-//}
-tr{
-    td{text-align: center;}
-    td:nth-child(1){
-        text-align: left !important;
-    }
-    td:nth-child(2){
-        text-align: left !important;
-    }
-
+.qmark{
+    font-family: arial, Segoe UI Symbol;
+    color: #343a45 !important;
+    text-align: center;
+    font-weight: bold;
 }
 
-th, td{}
+.smark{
+    font-family: arial, Segoe UI Symbol;
+    color: $second-color !important;
+    text-align: center;
+}
+
+
+tr{
+    th, td{
+      width: 180px;
+      min-width: 180px;
+      text-align: center;
+      }
+    td:nth-child(1), th:nth-child(1),  td:nth-child(2), th:nth-child(2){
+        text-align: left !important;
+        width: 250px;
+        min-width: 250px;
+
+    }
+    /*td:last-child, th:last-child{
+      width: 100%;
+      border-left: 0px solid black;
+      min-width: 0px;
+    }*/
+}
+
+.alert{
+  margin: 0 auto;
+  margin-bottom: 0;
+  width: $table-width;
+  padding-left: 2px;
+
+  .close{
+    float: left;
+    font-size: 40px;
+    color: #fafafa;
+    bottom: 15px;
+    position: relative;
+    margin-right: 8px;
+    padding-bottom: 45px;
+  }
+} 
+
+.table-email{
+  h4{
+    color: #eee;
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+  
+    background: lighten(#343a45, 10%) !important;  
+}
+
+//If the table takes up the whole screen.
+@media screen and (max-width: $table-width){
+
+    tbody{
+      height: 70vh;
+    }
+    .table-fill{
+      margin-top: 0 !important;
+    }
+}

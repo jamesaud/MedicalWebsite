@@ -1,5 +1,4 @@
 import json
-
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
@@ -8,28 +7,21 @@ from medweb.homepage.models import Person
 from config.settings.common import HOME_PASSWORD
 from medweb.homepage.models import Person, Evaluation
 from functools import wraps  # Calling wraps inside a decorator keeps the docstring of the original function
-# Mailchimp imports
-from utilities.mailchimp_wrapper.chimp import Client
-from config.settings.common import MAILCHIMP_API_KEY, MAILCHIMP_LIST_NEWSLETTER_ID, MAILCHIMP_LIST_REPORT_ID, \
-                                   MAILCHIMP_USERNAME, MAILCHIMP_DATA_CENTER
+from medweb.homepage.view_helpers.views_form_helpers import handle_email_form
 
-# import the logging library
-import logging
 
-# Get an instance of a logger
-logger = logging.getLogger(__name__)
-
-"""
-Explanation: A decorator which passes the contact form (Person form + Evaluation form) to a function
-How to use: Give your function a parameter "context", the decorator provides the intial context with the forms.
-Improve: Don't require a context variable, update the context after the fact.
-"""
 def pass_contact_form(view):
+    """
+    Explanation: A decorator which passes the contact form (Person form + Evaluation form) to a function
+    How to use: Give your function a parameter "context", the decorator provides the intial context with the forms.
+    Improve: Don't require a context variable, update the context after the fact.
+    """
     @wraps(view)
     def wrapper(*args, **kwargs):
         context = {'person_form': PersonForm(), 'evaluation_form' : EvaluationForm()}
         return view(context=context, *args, **kwargs,)
     return wrapper
+
 
 @pass_contact_form
 def index(request, context):
@@ -47,7 +39,6 @@ def index(request, context):
             message = "Password Was Incorrect. Please Try Again."
             return render(request, 'pages/homepage_login.html', context={'message': message})
 
-
     return render(request, 'pages/homepage_login.html', context={})
 
 
@@ -55,40 +46,39 @@ def index(request, context):
 def test(request, context):
     return render(request, 'pages/test.html', context=context)
 
+
 @pass_contact_form
 def about(request, context):
     return render(request, 'pages/about.html', context=context)
+
 
 @pass_contact_form
 def invest(request, context):
     return render(request, 'pages/invest.html', context=context)
 
+
 @pass_contact_form
 def compare(request, context):
+    context['email_form'] = EmailForm()
     return render(request, 'pages/table.html', context=context)
+
 
 def submit_newsletter(request):
     """
     Subscribes an email to mailchimp initial email, and optionally to the mailchimp newsletter.
+    :return: JsonResponse, a json response containing the outcome for each form, and the status of the view.
     """
     response = {'status': 'error'}
 
     if request.method == 'POST':
-        email_form = EmailForm(request.POST)
+        email_form, report_response, newsletter_response = handle_email_form(request) # Submits to Mailchimp
         if email_form.is_valid():
-            c = Client(MAILCHIMP_API_KEY, MAILCHIMP_USERNAME, MAILCHIMP_DATA_CENTER)
-            email = email_form.cleaned_data.get('email')
-            report_response = c.subscribe_user(MAILCHIMP_LIST_REPORT_ID, email)
-
-            if request.POST.get('newsletter'):
-                newsletter_response = c.subscribe_user(MAILCHIMP_LIST_NEWSLETTER_ID, email)
-                logger.debug('Subscribed :{0}\nReport Response: {1}\nNewsletter Response: {2}\n\n'\
-                             .format(email, report_response, newsletter_response))
             response['status'] = 'success'
             response['report_response'] = report_response
             response['newsletter_response'] = newsletter_response
 
     return JsonResponse(response)
+
 
 def create(request):
     """

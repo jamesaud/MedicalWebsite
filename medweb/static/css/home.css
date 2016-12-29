@@ -1533,64 +1533,31 @@ a:hover {
   font-size: 11px;
   text-align: left; }
 
-#modal-test .close-button {
+#modal-chart .close-button {
   right: 10px !important;
   top: -20px !important; }
-  #modal-test .close-button button {
+  #modal-chart .close-button button {
     color: white !important;
     font-size: 70px !important; }
-#modal-test .modal-content {
+#modal-chart .modal-content {
   background: transparent; }
-#modal-test .modal-body {
+#modal-chart .modal-body {
   padding: 0; }
-#modal-test ul {
+#modal-chart ul {
   list-style-type: none;
   padding: 0; }
-#modal-test li {
+#modal-chart li {
   font-size: 15.5px; }
-#modal-test #cd-table {
+#modal-chart #cd-table {
   background: white !important; }
-#modal-test h2 {
+#modal-chart h2 {
   margin-bottom: 0 !important;
   padding-bottom: 0;
   font-size: 18px !important; }
-#modal-test .cd-top-title {
+#modal-chart .cd-top-title {
   padding-left: 15px !important; }
-#modal-test .cd-left-title {
+#modal-chart .cd-left-title {
   margin-top: 0;
   padding-left: 0; }
-
-#modal-thanks .modal-dialog, #modal-thanks .modal-body, #modal-thanks .modal-header {
-  max-width: 500px; }
-#modal-thanks .modal-footer {
-  padding-top: 0; }
-#modal-thanks .modal-body {
-  padding-top: 0px;
-  padding-bottom: 10px;
-  margin-top: 3.5%; }
-#modal-thanks .modal-body, #modal-thanks .modal-header {
-  padding-left: 3%;
-  padding-right: 3%; }
-#modal-thanks .contact-title img {
-  margin-top: 15px; }
-#modal-thanks .contact-title .m-contact-title {
-  padding-top: 10px; }
-#modal-thanks .contact-title .modal-title {
-  font-size: 15.5px; }
-#modal-thanks .contact-message h5 {
-  color: #555;
-  font-weight: 300; }
-#modal-thanks h5 {
-  margin-top: 9px !important;
-  color: #333 !important; }
-#modal-thanks .modal-body {
-  padding-top: 20px; }
-#modal-thanks .inquire-close-button {
-  width: 100%;
-  margin-top: 50px; }
-#modal-thanks .form-title {
-  color: #45AEEA;
-  padding-bottom: 0px;
-  margin-bottom: 25px; }
 
 /*# sourceMappingURL=home.css.map */

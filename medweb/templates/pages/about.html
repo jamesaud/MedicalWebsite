@@ -934,8 +934,14 @@ takes a team approach. I am a team player!
     
 </div> <!-- END ONE-PAGE -->
 
+	<!-- Include modal popups for the sidebar -->
+	{% block modal-contact %}
+		{{block.super}}
+	{% endblock modal-contact %}
 
-
+	{% block modal-demo %}
+		{{block.super}}
+	{% endblock modal-demo %}
 
 {% endblock modal %}
 

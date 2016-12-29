@@ -1,15 +1,11 @@
+# Mailchimp imports
+from utilities.mailchimp_wrapper.chimp import Client
 from config.settings.common import MAILCHIMP_API_KEY, MAILCHIMP_LIST_NEWSLETTER_ID, MAILCHIMP_LIST_REPORT_ID, \
                                    MAILCHIMP_USERNAME, MAILCHIMP_DATA_CENTER
 
-# Mailchimp imports
-from utilities.mailchimp_wrapper.chimp import Client
 from medweb.homepage.forms import PersonForm, EvaluationForm, EmailForm
-
-# import the logging library
-import logging
-
-# Get an instance of a logger
-logger = logging.getLogger(__name__)
+import logging # import the logging library
+logger = logging.getLogger(__name__) # Get an instance of a logger
 
 """
 These functions help process forms in views.
