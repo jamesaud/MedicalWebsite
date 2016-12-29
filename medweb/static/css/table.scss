@@ -48,7 +48,7 @@ div.table-title {
   height: 40px !important;
   line-height: 40px;
 }
-.table-email button{
+.table-emaibutton{
   position: relative;
   bottom: 1px;
 }
@@ -262,6 +262,28 @@ tr{
     background: lighten($bg-color, 10%) !important;  
 }
 
+.table-background{
+    background:  #1b1e24; 
+    width: $table-width;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.top-bg{
+  background: #eee;
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  z-index: 0;
+  border-bottom: 1px solid #9ea7af;
+}
+
+.body-wrapper{
+  padding-top: 50px;
+}
+
 //If the table takes up the whole screen.
 @media screen and (max-width: $table-width){
     .alert .close{
@@ -276,20 +298,7 @@ tr{
     .table-fill{
       margin-top: 0 !important;
     }
-}
-.table-background{
-    background:  #1b1e24; 
-    width: $table-width;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-    
-}
-
-.top-bg{
-  background: white;
-  width: 100%;
-  height: 350px;
-  position: absolute;
-  z-index: 0;
+    .body-wrapper{
+      padding-top: 0;
+    }
 }
