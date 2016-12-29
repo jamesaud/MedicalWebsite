@@ -42,16 +42,16 @@ div.table-title {
   font-family: "Roboto", helvetica, arial, sans-serif;
   text-transform: uppercase; }
 
-input {
+.table-email input {
   display: inline-block;
   max-width: 300px;
   border-right: 0px solid black !important; }
 
-input, button {
+.table-email input, button {
   height: 40px !important;
   line-height: 40px; }
 
-button {
+.table-email button {
   position: relative;
   bottom: 1px; }
 
