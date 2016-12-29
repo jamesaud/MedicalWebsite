@@ -20,6 +20,9 @@ body {
   font-weight: 400;
   text-rendering: optimizeLegibility; }
 
+.content-main {
+  background: linear-gradient(0deg, #45aeea 30%, #73c2ef 70%); }
+
 .cd-secondary-nav {
   background-color: transparent;
   width: 1220px; }
@@ -61,7 +64,9 @@ button {
   padding: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   animation: float 5s infinite;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  z-index: 2;
+  position: relative; }
 
 th {
   margin: 0 auto;
@@ -83,7 +88,7 @@ tbody {
   display: block;
   overflow: auto; }
   tbody th {
-    background-color: #45aeea; }
+    background-color: #efb917; }
 
 th:first-child {
   border-top-left-radius: 3px; }
@@ -198,6 +203,8 @@ tr {
     padding-bottom: 45px; }
 
 .table-email {
+  z-index: 1;
+  position: relative;
   background: #4a5262 !important; }
   .table-email h4 {
     color: #eee;
@@ -219,6 +226,15 @@ tr {
 .table-background {
   background: #1b1e24;
   width: 1220px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; }
+
+.top-bg {
+  background: white;
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  z-index: 0; }
 
 /*# sourceMappingURL=table.css.map */
