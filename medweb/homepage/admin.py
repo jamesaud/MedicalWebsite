@@ -28,6 +28,9 @@ class RandomReferralAdmin(admin.ModelAdmin):
     readonly_fields = ('referral', 'created')
     list_display = ['referral', 'created']
 
+    def has_add_permission(self, request):
+        return False
+
 
 admin.site.register(Person, PersonAdmin)
 admin.site.register(RandomReferral, RandomReferralAdmin)
