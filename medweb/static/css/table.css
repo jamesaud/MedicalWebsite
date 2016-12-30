@@ -81,8 +81,7 @@ th {
 thead {
   display: block; }
   thead th {
-    background: #1b1e24;
-    border-bottom: 4px solid #9ea7af; }
+    background: #1b1e24; }
 
 tbody {
   display: block;
