@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, unicode_literals
-
 from django.contrib import admin
 from medweb.homepage.models import Person, Evaluation, RandomReferral
+from django.contrib.admin import AdminSite
+from django.utils.translation import ugettext_lazy as _
 
 
 class EvaluationInline(admin.StackedInline):
@@ -32,5 +33,6 @@ class RandomReferralAdmin(admin.ModelAdmin):
         return False
 
 
+admin.site.site_header = _('Synergy+ administration')
 admin.site.register(Person, PersonAdmin)
 admin.site.register(RandomReferral, RandomReferralAdmin)

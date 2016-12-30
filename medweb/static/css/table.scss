@@ -48,7 +48,7 @@ div.table-title {
   height: 40px !important;
   line-height: 40px;
 }
-.table-emaibutton{
+.table-email button{
   position: relative;
   bottom: 1px;
 }
@@ -67,6 +67,7 @@ div.table-title {
   //width: 100%;
   z-index: 2;
   position: relative;
+  border-bottom: 2px solid black;
 }
 
 th {
@@ -96,6 +97,8 @@ tbody{
     overflow: auto;
     th{
        @include transparentBackgroundColor(1.0, $second-color);
+       color: #333;
+       font-weight: 600;
        //border-bottom: 2px solid #666B85;
        //border-top: 2px solid #666B85;
     }
@@ -152,10 +155,11 @@ td {
   padding:20px;
   text-align:left;
   vertical-align:middle;
-  font-weight:300;
+  font-weight:400;
   font-size:15px;
   //text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
   border-right: 1px solid #C1C3D1;
+
 }
 
 td:last-child {
@@ -283,6 +287,8 @@ tr{
 
 .body-wrapper{
   padding-top: 50px;
+  padding-bottom: 20px;
+
 }
 
 //If the table takes up the whole screen.
@@ -301,5 +307,6 @@ tr{
     }
     .body-wrapper{
       padding-top: 0;
+      padding-bottom: 0;
     }
 }

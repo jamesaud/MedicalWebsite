@@ -13,12 +13,12 @@ def pass_contact_form(view):
     """
     Explanation: A decorator which passes the contact form (Person form & Evaluation form) to a function
     How to use: Give your function a parameter "context", the decorator provides the intial context with the forms.
-    Improve: Don't require a context variable, update the context after the fact.
+    Improve: Don't require a context variable, update the context after the fact. Prevents refactoring the view.
     """
     @wraps(view)
     def wrapper(*args, **kwargs):
         context = {'person_form': PersonForm(), 'evaluation_form' : EvaluationForm()}
-        return view(context=context, *args, **kwargs,)
+        return view(context=context, *args, **kwargs)
     return wrapper
 
 
@@ -84,6 +84,7 @@ def submit_newsletter(request):
 def submit_referral(request):
     """
     Saves the random referral to the database.
+    Improve: Only allow submissions if cookies are enabled to prevent someone from spamming the database.
     :param request: request
     :return: JsonResponse, containing the status of the response.
     """
@@ -95,7 +96,7 @@ def submit_referral(request):
             referral = RandomReferral(**referral_form.cleaned_data)
             referral.save()
             response = {'status': 'success'}
-            request.session['referred'] = True  # We don't want anyone spamming referrals
+            request.session['referred'] = True  # We don't want anyone spamming referrals.
 
     return JsonResponse(response)
 

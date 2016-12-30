@@ -32,3 +32,5 @@ def handle_email_form(request):
     return (email_form, report_response, newsletter_response)
 
 
+def handle_email_chart_form(request):
+    pass
