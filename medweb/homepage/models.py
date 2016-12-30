@@ -119,3 +119,7 @@ class Evaluation(models.Model):
 
 class RandomReferral(models.Model):
     referral = models.CharField(max_length=255, blank=True)
+    created = models.DateTimeField(auto_now_add=True,)
+
+    def __str__(self):
+        return self.referral
