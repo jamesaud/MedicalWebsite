@@ -7,7 +7,7 @@ from config.settings.common import HOME_PASSWORD
 from medweb.homepage.models import Person, Evaluation, RandomReferral
 from functools import wraps  # Calling wraps inside a decorator keeps the docstring of the original function
 from medweb.homepage.view_helpers.views_form_helpers import handle_email_form
-
+from config.settings.common import MAILCHIMP_LIST_REPORT_ID, MAILCHIMP_TEST_LIST_CHART_ID
 
 def pass_contact_form(view):
     """
@@ -72,7 +72,7 @@ def submit_newsletter(request):
     response = {'status': 'error'}
 
     if request.method == 'POST':
-        email_form, report_response, newsletter_response = handle_email_form(request) # Submits to Mailchimp
+        email_form, report_response, newsletter_response = handle_email_form(request, MAILCHIMP_LIST_REPORT_ID) # Submits to Mailchimp
         if email_form.is_valid():
             response['status'] = 'success'
             response['report_response'] = report_response
