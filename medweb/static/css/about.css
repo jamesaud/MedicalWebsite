@@ -111,8 +111,15 @@
   border-top: 3px solid #777;
 }
 
-rev_slider_wrapper {
-  min-height: 600px !important;
+@media screen and (min-height: 769px) {
+  .rev_slider_wrapper {
+    min-height: 600px !important;
+  }
+}
+@media screen and (max-height: 768px) {
+  .rev_slider_wrapper {
+    min-height: 400px !important;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */
