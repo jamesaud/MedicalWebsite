@@ -24,7 +24,10 @@
         <h4>      
           To receive the full comparison chart illustrating differences between top competitors, please enter your email address:
         </h4>
-        {{ email_form.email }}<button type="submit" class="btn btn-default btn-primary" href="#" data-toggle="modal" data-target="#modal-thanks">Send Chart</button>
+          <form id='chart-form'  action="{% url 'submit_chart' %}" method="POST">
+            {% csrf_token %}
+            {{ email_form.email }}<button type="submit" class="btn btn-default btn-primary" href="#" data-toggle="modal" data-target="#modal-thanks">Send Chart</button>
+          </form>
       </td>
    </tr>
 </div>
@@ -385,6 +388,11 @@
 {% endblock footer %}
 {% block javascript %}
 {{ block.super }}
+
+<script>
+  //Submit newletter form
+submit_form('#chart-form');
+</script>
 
 <!-- Prevent the secondary nav bar on mobile from messing stuff up-->
 <script>

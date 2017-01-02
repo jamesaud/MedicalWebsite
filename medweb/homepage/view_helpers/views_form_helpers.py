@@ -15,7 +15,7 @@ c = Client(MAILCHIMP_API_KEY, MAILCHIMP_USERNAME, MAILCHIMP_DATA_CENTER)
 
 def handle_email_form(request, mailchimp_form_id):
     """
-    Submits an email_form to mailchimp using post data.
+    Submits an email_form email to mailchimp using post data.
     :return: (EmailForm, Dict, Dict), the cleaned form and responses for both mailchimp lists.
     """
     email_form = EmailForm(request.POST)
@@ -32,6 +32,7 @@ def handle_email_form(request, mailchimp_form_id):
                      .format(email, report_response, newsletter_response))
 
     return (email_form, report_response, newsletter_response)
+
 
 
 
