@@ -24,9 +24,7 @@
     font-weight: bold;
     }
     
- .main-points-block{
-   }
-    
+
     .main-points-header{
         color: black !important;
     }
@@ -100,13 +98,6 @@ hr{
     }
 }
 
-
-@media only screen and (min-width: 1024px){
-    .cd-secondary-nav{
-        //Change height here?
-    }
-    
-}
 
 //END NAVBAR
 
@@ -353,8 +344,7 @@ hr.no-margin{
 }
 
 .call-now-wrapper{
-    ul{
-    }
+ 
     li{
         float: right;
     }

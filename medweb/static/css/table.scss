@@ -123,10 +123,7 @@ tr {
   //text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
 }
  
-tr:hover td {
 
-}
- 
 tr:first-child {
   border-top:none;
 }
@@ -139,8 +136,6 @@ tr:nth-child(odd) td {
   background:#EBEBEB;
 }
  
-tr:nth-child(odd):hover td {
-}
 
 tr:last-child td:first-child {
   border-bottom-left-radius:3px;
