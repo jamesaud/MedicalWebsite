@@ -25,13 +25,14 @@ Main components
 
 .cd-testimonials-wrapper {
   position: relative;
-  width: 90%;
+  width: 100%;
   max-width: 768px;
   background-color: #39393c;
-  margin: 2em auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 20px 40px 20px;
+  padding: 40px 40px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   z-index: 1; }
   .cd-testimonials-wrapper::after {
     /* quotation mark */
@@ -53,8 +54,11 @@ Main components
     display: none; }
   @media only screen and (min-width: 768px) {
     .cd-testimonials-wrapper {
-      margin: 4em auto;
-      padding: 64px 50px 74px; } }
+      margin: 2em auto;
+      padding: 64px 50px 74px; }
+      .cd-testimonials-wrapper::after {
+        /* quotation mark visible */
+        display: block; } }
   @media only screen and (min-width: 1170px) {
     .cd-testimonials-wrapper::after {
       /* quotation mark visible */

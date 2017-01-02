@@ -706,9 +706,12 @@ a:hover{
          input{
              font-size: $font-size-four;
              position: relative;
+
          }
          input[type=email]{
              z-index: 2;
+             width: 60%;
+             max-width: 300px;
          }
          input[type=checkbox]{
              z-index: 1;
@@ -717,10 +720,20 @@ a:hover{
          $height: 50px;
          input, button{
              border-right: none;
-             max-width: 300px;
              height: $height;
              display: inline-block;
-
+         }
+         @media screen and (max-width: 500px){
+             //input,label,form makes everything fit in one row under 450px
+             input[type=email]{
+                width: 50%;
+             }
+             label{
+             }
+             form{
+                 margin: 0 auto;
+                 text-align: justify;
+             }
          }
          .checkbox .cr{
              border-right-width: 0px !important;
@@ -1427,6 +1440,7 @@ a:hover{
         
     }
     .service-block{
+        max-width: 400px;
         h4{
             color: #444 !important;
         }

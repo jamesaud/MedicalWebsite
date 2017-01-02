@@ -703,14 +703,21 @@ a:hover {
     font-size: 15.5px;
     position: relative; }
   .section-email input[type=email] {
-    z-index: 2; }
+    z-index: 2;
+    width: 60%;
+    max-width: 300px; }
   .section-email input[type=checkbox] {
     z-index: 1; }
   .section-email input, .section-email button {
     border-right: none;
-    max-width: 300px;
     height: 50px;
     display: inline-block; }
+  @media screen and (max-width: 500px) {
+    .section-email input[type=email] {
+      width: 50%; }
+    .section-email form {
+      margin: 0 auto;
+      text-align: justify; } }
   .section-email .checkbox .cr {
     border-right-width: 0px !important;
     border-color: #ccc;
@@ -1163,6 +1170,7 @@ a:hover {
     .section-plans .service-blocks .service-blocks-header h2, .section-plans .service-blocks .service-blocks-header h3, .section-plans .service-blocks .service-blocks-header h4 {
       color: white !important; }
   .section-plans .service-block {
+    max-width: 400px;
     margin: 0 auto;
     margin-bottom: 0px;
     padding-top: 20px;

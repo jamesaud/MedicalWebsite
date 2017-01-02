@@ -10,9 +10,8 @@ logger = logging.getLogger(__name__) # Get an instance of a logger
 """
 These functions help process forms in views.
 """
+
 c = Client(MAILCHIMP_API_KEY, MAILCHIMP_USERNAME, MAILCHIMP_DATA_CENTER)
-
-
 def handle_email_form(request, mailchimp_form_id):
     """
     Submits an email_form email to mailchimp using post data.
