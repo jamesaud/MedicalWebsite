@@ -1477,10 +1477,11 @@ a:hover {
   #click-here {
     display: none; } }
 .rev_slider_wrapper .tp-tab-desc {
-  color: #ceeafa !important; }
+  color: #f9ed00 !important; }
 
 .rev_slider_wrapper, .rev_slider, .forcefullwidth_wrapper_tp_banner {
-  max-height: 700px !important; }
+  max-height: 700px !important;
+  min-height: 600px !important; }
 
 #modal-guarantee .modal-header, #modal-guarantee .modal-dialog, #modal-guarantee .modal-body, #modal-guarantee .modal-footer {
   max-width: 1000px; }
