@@ -658,7 +658,7 @@ jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
             <div class='main-points col-md-12'>
 
                 <h2 class='main-points-title'>From Private Groups to Hospital Clinics, Your Practice Will Thrive</h2>
-                <h3>We provide solutions that the pioneer companies failed to deliver &amp; emerging firms don't offer</h3>
+                <h3>We provide solutions that the legacy companies failed to deliver &amp; emerging firms don't offer</h3>
             </div>
 
         </div>
@@ -1209,7 +1209,7 @@ guaranteed services. </h4>
         <div class='col-md-9 main-points-block col-centered'>
             <div class='main-points-block-title'>
                 <i id='icon-user' class="fa fa-user fa-4x icon" aria-hidden="true"></i>
-                <h3 class='main-points-header'>Group Owners / Hospital Executives</h3>
+                <h3 class='main-points-header'>Group Owners / Executives</h3>
                 <h4 class='col-1'>optimize your income &amp; cash flow while patients get healthier </h4>
             </div>
 
@@ -1243,14 +1243,15 @@ guaranteed services. </h4>
             <div class='main-points-block-title'>
                 <i id='icon-user-md' class="fa fa-user-md fa-4x icon" aria-hidden="true"></i>
                 <h3 class='main-points-header'>Doctors</h3>
-                <h4 class='col-2'>save 8 minutes per patient</h4>
+                <h4 class='col-2'>treat up to 40% more patients</h4>
             </div>
                 
                 <ul>
                     <h5>
-                        <li>See up to 40% more patients</li>
-                    <li>More time for each patient</li>
-                    <li>Optimal Incentive bonuses</li>
+                    <li>More time spent on medicine
+                    </li>
+                    <li>More time for chronic care</li>
+                    <li>Optimal incentive bonuses</li>
                     <li>Doctors go home on time</li>
                     </h5>
                 </ul>
@@ -1273,10 +1274,10 @@ guaranteed services. </h4>
             <div class='col-md-12'>
             <ul>
                 <h5>
-                    <li>Incentive Retention Bonuses</li>
+                    <li>Incentive retention bonuses</li>
                 <li>Increases productivity</li>
                 <li>Staff feel valued</li>
-                <li>Staff goes home on time</li>
+                <li>Staff go home on time</li>
                 </h5>
             </ul>
             </div>
@@ -1363,7 +1364,7 @@ guaranteed services. </h4>
             </li> <!-- .cd-half-block.content -->
 
             <li>
-                <div class="cd-half-block image" style="background-image:  url({% static 'images/doctor.jpg'%});"></div>
+                <div class="cd-half-block image"></div>
 
                 <div class="cd-half-block content">
                     <div>
@@ -1547,7 +1548,7 @@ guaranteed services. </h4>
                             <div>
                                 <h2 class='main-points-title '>Evidence Based Research</h2>
 
-                                <h4 class=''>Research identified the fundamental problems providers face: people are outraged by 20 years of inadequate technology created by legacy pioneer systems</h4>
+                                <h4 class=''>Research identified the fundamental problems providers face: people are outraged by 20 years of inadequate technology created by legacy systems</h4>
                             </div>
                         </div>
                           <div id='si-message-btn-wrapper-2'>
@@ -1830,7 +1831,7 @@ guaranteed services. </h4>
                     <a id='hex-4' class="hexIn selector-4" href=".hex-modal" data-toggle="modal">
                       <h1 class='no-effect'>Synergy+ Services</h1>
                       <h1>Synergy+ Services</h1>
-                      <p class='no-effect'>Learn more about Synergy+</p>
+                      <p class='no-effect'>Accelerate Growth</p>
                       <p>Click to learn more</p>
                     </a>
                   </li>
@@ -2803,9 +2804,10 @@ Check us out at the <a href="{% url 'about' %}" class='col-4' target='_blank'>ab
             <h2>Chart, Auto-Code <span class='color'>&amp;</span> Bill During <span class='color'>the</span> Patient Visit</h2>
             <h5>Work faster and do more, stress free. While the Doctor dictates during the patient visit, auto-coding bills at the optimal level optimizing revenue. Doctors chart during the patient visit and
                 bills are submitted as the patient leaves the room. You are paid the same day of service while we work to collect - no more aging accounts receivables!</h5>
-            <br/>
+            <br/ class='hide-mobile'>
             </div>
-            <div class="col-md-6">
+
+            <div class="col-md-6 hide-mobile">
             <img src="{% static 'images/doctor.jpg' %}" class="img-responsive" alt="" >
             </div>
         </div>
@@ -2822,6 +2824,7 @@ Check us out at the <a href="{% url 'about' %}" class='col-4' target='_blank'>ab
                 </div>
 
                 <div class='col-md-6'>
+                    <br class='show-mobile'>
                     <h2>Seeing <span class='col-1'>is</span> Believing</h2>
                     <h5>
                         The live demo of the EHR &amp; RCM in action clearly demonstrates how doctors can save hours each day. </h5>
@@ -2854,14 +2857,17 @@ Check us out at the <a href="{% url 'about' %}" class='col-4' target='_blank'>ab
         <div class="content">
             <div class='container'>
             <div class="row title">
-                <h1>Plans &amp; Pricing</h1>
-                <h2>You'll always get more for less with Synergy+ Value Based Services</h2>
+                <div class='col-md-8 col-centered'>
+                    <h1>Plans &amp; Pricing</h1>
+                    <h2>You'll always get more for less with Synergy+ Value Based Services </h2>
+                </div>
             </div>
             <div class='service-blocks'>
                 <div class='row title-message'>
                     <div class='col-md-9 col-centered'>
+
                         <div class='col-md-6'>
-                            <h5>Review the following plans, bearing in mind no two practices are the same. As consultants, we are obligated to
+                            <h5>Review the following plans, bearing in mind no two practices are the same. As consultants we are obligated to
                                 disclose the true potential of your practice. 
                                 We take the time to listen and complete a detailed operational &amp; financial evaluation to best inform you. In the end the choice is always yours.
                                 
@@ -2872,7 +2878,9 @@ Check us out at the <a href="{% url 'about' %}" class='col-4' target='_blank'>ab
                         Equitable pricing is based on your current system, # of providers &amp; specialties, # of claims filed, revenue &amp; market.
 
                         </h5>
+
                         </div>
+                        
                     </div>
                 </div>
                 </div>
@@ -2884,6 +2892,7 @@ Check us out at the <a href="{% url 'about' %}" class='col-4' target='_blank'>ab
               
                 <div class='row'>
                     <div class='col-md-12 col-centered'>
+                        
                     <div class="col-md-3 no-padding  col-sm-6">
                             <div class="service-block service-block-default service-block-color-1">
                                 <div class='color-top-0'>  </div>
@@ -2961,7 +2970,7 @@ If you see you patient volume dropping, call us.
 
                                         
  <hr>
-                                            <h3>Evaluation Required</h3>
+                                            <h3>3.8% EHR / RCM Rate</h3>
 
                                         <hr>                                    </div>
                                    <ul class="list-unstyled">
@@ -3239,7 +3248,7 @@ One Time Fee Per EHR user  (based on # of providers, specialty, revenue, &amp; m
                     </div>
                     <div class='col-md-6 main-points service-message'>
                         <div class='main-points-block'>
-                            <h2>Sustainable Support Fee</h2>
+                            <h2>Sustainable &amp; Exponential Support Fee</h2>
                             <h5>
                                You may opt out of our agreement at any time yet all our services are guaranteed to
          add value. Ongoing services are essential for the written guarantee of service outcomes and 
@@ -3257,7 +3266,7 @@ be at no charge, subject to excessive regulatory or unknown private pay changes.
 A proven track record: we were ICD-10 ready at no charge to our clients a full year in advance. <br><br>
 
 D.	Patient Volume Builder &amp; Website Evaluation:  77% of patients find and book appointments online.
-We have 20 years’ expertise at SEO. On an ongoing basis, we evaluate patient volume 
+We have 20 years expertise at SEO. On an ongoing basis, we evaluate patient volume 
 relative to providers to assure optimal patient volume.  <br><br>
 
 E.	Quarterly Check Up: We send a survey and check list to assure you are 

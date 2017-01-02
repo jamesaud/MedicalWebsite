@@ -1136,9 +1136,7 @@ a:hover {
   .section-plans .title {
     margin-bottom: 20px;
     text-align: center; }
-    .section-plans .title h2 {
-      color: white !important; }
-    .section-plans .title h1 {
+    .section-plans .title h1, .section-plans .title h2, .section-plans .title h3, .section-plans .title h4, .section-plans .title h5 {
       color: white !important; }
   .section-plans .title-message {
     padding-bottom: 30px !important; }
@@ -1162,8 +1160,6 @@ a:hover {
     padding-top: 20px;
     padding-bottom: 0px;
     max-width: 1250px; }
-    .section-plans .service-blocks .service-blocks-header h2 {
-      margin-bottom: 10px; }
     .section-plans .service-blocks .service-blocks-header h2, .section-plans .service-blocks .service-blocks-header h3, .section-plans .service-blocks .service-blocks-header h4 {
       color: white !important; }
   .section-plans .service-block {

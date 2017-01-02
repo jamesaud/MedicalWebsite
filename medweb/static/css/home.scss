@@ -1371,18 +1371,17 @@ a:hover{
     .title{
         margin-bottom: 20px;
         text-align: center;
-        h2{
+        h1,h2,h3,h4,h5{
             color: white !important;
         }
-        h1{
-            color: white !important;
-        }
+      
     }
 
     .title-message{
         h5{
             color: white;
         }
+   
         padding-bottom: 30px !important;
     }
     
@@ -1420,9 +1419,7 @@ a:hover{
         padding-bottom: 0px;
         max-width:  $max-width - 50px;
         .service-blocks-header{
-            h2{
-                margin-bottom: 10px;
-            }
+          
             h2, h3, h4{
                 color: white !important;
             }

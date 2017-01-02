@@ -45,7 +45,7 @@ Main components
 	background-color: $color-1;
 	margin: 2em auto;
 	@include font-smoothing;
-	padding: 20px 40px 70px;
+	padding: 20px 40px 20px;
 	z-index: 1;
 
 	&::after {

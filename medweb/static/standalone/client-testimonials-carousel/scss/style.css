@@ -31,7 +31,7 @@ Main components
   margin: 2em auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 20px 40px 70px;
+  padding: 20px 40px 20px;
   z-index: 1; }
   .cd-testimonials-wrapper::after {
     /* quotation mark */

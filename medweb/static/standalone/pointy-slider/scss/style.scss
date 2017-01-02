@@ -62,19 +62,31 @@ Slider
     }
 
 	li:first-of-type .image {
-		background-image: url(../img/img-1.jpg);
+		background-image: url(../../../images/slideshow/1.1.jpeg);
 	}
 
 	li:nth-of-type(2) .image {
-		background-image: url(../img/img-2.jpg);
+		background-image: url(../../../images/slideshow/2.jpeg);
 	}
 
 	li:nth-of-type(3) .image {
-		background-image: url(../img/img-3.jpg);
+		background-image: url(../../../images/slideshow/3.jpeg);
 	}
 
 	li:nth-of-type(4) .image {
-		background-image: url(../img/img-4.jpg);
+		background-image: url(../../../images/slideshow/4.jpeg);
+	}
+
+	li:nth-of-type(5) .image {
+		background-image: url(../../../images/slideshow/5.jpeg);
+	}
+
+	li:nth-of-type(6) .image {
+		background-image: url(../../../images/slideshow/6.jpeg);
+	}
+
+	li:nth-of-type(7) .image {
+		background-image: url(../../../images/slideshow/7.jpeg);
 	}
 
 	.image {
@@ -122,7 +134,7 @@ Slider
 	}
 
 	li:nth-of-type(3) .content {
-		background-color: $second-color;
+		background-color: darken($second-color, 5%);
 		@extend %content-white;
 	}
 
@@ -132,17 +144,17 @@ Slider
 	}
 
 	li:nth-of-type(5) .content {
-		background-color: $fourth-color;
+		background-color: darken($fourth-color, 5%);
 		@extend %content-white;
 	}
 
 	li:nth-of-type(6) .content {
-		background-color: $fifth-color;
+		background-color: darken($fifth-color, 5%);
 		@extend %content-white;
 	}
 
 	li:nth-of-type(7) .content {
-		background-color: $ninth-color;
+		background-color: lighten($ninth-color, 5%);
 		@extend %content-white;
 	}
 	

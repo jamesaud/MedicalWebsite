@@ -64,13 +64,19 @@ Slider
   .cd-slider li:first-of-type .content h2, .cd-slider li:nth-of-type(2) .content h2, .cd-slider li:nth-of-type(3) .content h2, .cd-slider li:nth-of-type(4) .content h2, .cd-slider li:nth-of-type(5) .content h2, .cd-slider li:nth-of-type(6) .content h2, .cd-slider li:nth-of-type(7) .content h2, .cd-slider li:first-of-type .content h5, .cd-slider li:nth-of-type(2) .content h5, .cd-slider li:nth-of-type(3) .content h5, .cd-slider li:nth-of-type(4) .content h5, .cd-slider li:nth-of-type(5) .content h5, .cd-slider li:nth-of-type(6) .content h5, .cd-slider li:nth-of-type(7) .content h5, .cd-slider li:first-of-type .content p, .cd-slider li:nth-of-type(2) .content p, .cd-slider li:nth-of-type(3) .content p, .cd-slider li:nth-of-type(4) .content p, .cd-slider li:nth-of-type(5) .content p, .cd-slider li:nth-of-type(6) .content p, .cd-slider li:nth-of-type(7) .content p {
     color: white; }
   .cd-slider li:first-of-type .image {
-    background-image: url(../img/img-1.jpg); }
+    background-image: url(../../../images/slideshow/1.jpeg); }
   .cd-slider li:nth-of-type(2) .image {
-    background-image: url(../img/img-2.jpg); }
+    background-image: url(../../../images/slideshow/2.jpeg); }
   .cd-slider li:nth-of-type(3) .image {
-    background-image: url(../img/img-3.jpg); }
+    background-image: url(../../../images/slideshow/3.jpeg); }
   .cd-slider li:nth-of-type(4) .image {
-    background-image: url(../img/img-4.jpg); }
+    background-image: url(../../../images/slideshow/4.jpeg); }
+  .cd-slider li:nth-of-type(5) .image {
+    background-image: url(../../../images/slideshow/5.jpeg); }
+  .cd-slider li:nth-of-type(6) .image {
+    background-image: url(../../../images/slideshow/6.jpeg); }
+  .cd-slider li:nth-of-type(7) .image {
+    background-image: url(../../../images/slideshow/7.jpeg); }
   .cd-slider .image {
     background-size: cover; }
   .cd-slider .content {
@@ -101,15 +107,15 @@ Slider
   .cd-slider li:nth-of-type(2) .content {
     background-color: #45AEEA; }
   .cd-slider li:nth-of-type(3) .content {
-    background-color: #EFB917; }
+    background-color: #ddaa0f; }
   .cd-slider li:nth-of-type(4) .content {
     background-color: #D43A43; }
   .cd-slider li:nth-of-type(5) .content {
-    background-color: #72c02c; }
+    background-color: #66ab27; }
   .cd-slider li:nth-of-type(6) .content {
-    background-color: #FF8800; }
+    background-color: #e67a00; }
   .cd-slider li:nth-of-type(7) .content {
-    background-color: #4D0CE8; }
+    background-color: #5a1af3; }
   .cd-slider h2 {
     font-size: 2.2rem;
     margin-bottom: .4em; }
