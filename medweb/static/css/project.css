@@ -606,4 +606,8 @@ div, span, p, h1, h2, h3, h4, h5{
 .radio label input[type="radio"]:disabled + .cr {
   opacity: .5; }
 
+#userlike-tab {
+  background: #45AEEA !important;
+  z-index: 200 !important; }
+
 /*# sourceMappingURL=project.css.map */
