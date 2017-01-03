@@ -686,7 +686,8 @@ a:hover {
     font-weight: bold; }
   .section-email .tiny-text {
     margin-left: 6px;
-    text-decoration: underline; }
+    text-decoration: underline;
+    font-size: 12px; }
   .section-email .tooltip {
     z-index: 1; }
   .section-email .tooltip.top .tooltip-inner {

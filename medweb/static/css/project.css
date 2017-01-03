@@ -234,7 +234,7 @@ hr.no-margin {
   background: #45AEEA !important; }
 
 .tiny-text {
-  font-size: 10px !important; }
+  font-size: 10px; }
 
 .no-wrap {
   overflow: visible;
