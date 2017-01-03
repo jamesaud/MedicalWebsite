@@ -602,7 +602,7 @@ div, span, p, h1, h2, h3, h4, h5{
   background: #45AEEA !important; }
 
 #userlike-tab {
-  z-index: 200 !important; }
+  z-index: 4 !important; }
 
 .cd-navbar-wrapper .cd-auto-hide-header {
   z-index: 210 !important; }
