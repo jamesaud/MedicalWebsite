@@ -55,4 +55,3 @@ class EmptyTextarea(forms.Textarea):
         else:
             kwargs['attrs'] = {'rows': '0', 'cols': '0'}
         super(EmptyTextarea, self).__init__(*args, **kwargs)
-

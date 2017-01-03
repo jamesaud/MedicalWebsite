@@ -4,6 +4,7 @@ from django.contrib import admin
 from medweb.homepage.models import Person, Evaluation, RandomReferral
 from django.contrib.admin import AdminSite
 from django.utils.translation import ugettext_lazy as _
+from parsley.mixins import ParsleyAdminMixin
 
 
 class EvaluationInline(admin.StackedInline):
@@ -11,7 +12,7 @@ class EvaluationInline(admin.StackedInline):
     readonly_fields = ("created", "modified",)
 
 
-class PersonAdmin(admin.ModelAdmin):
+class PersonAdmin(ParsleyAdminMixin, admin.ModelAdmin):
     inlines = (EvaluationInline,)
     readonly_fields = ("created", "modified",)
     list_filter = ["created", "contacted", 'evaluation__call_time', 'evaluation__demo']

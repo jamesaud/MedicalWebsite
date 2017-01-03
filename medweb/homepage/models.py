@@ -32,6 +32,15 @@ REFERRAL_CHOICES = (
     ('Other', "Other"),
 )
 
+REVENUE_CHOICES = (
+    ('1 - $499,999', '1 - 499,999'),
+    ('500,000 - 999,999', '500,000 - 999,999'),
+    ('1,000,000 - 1,999,999', '1,000,000 - 1,999,999'),
+    ('2,000,000 - 4,999,999', '2,000,000 - 4,999,999'),
+    ('5,000,000 - 9,999,999', '5,000,000 - 9,999,999'),
+    ('10,000,000+', '10,000,000+'),
+)
+
 
 # Phone_Regex is from:
 # http://stackoverflow.com/questions/19130942/whats-the-best-way-to-store-phone-number-in-django-models
@@ -48,9 +57,9 @@ class Person(models.Model):
     last_name = models.CharField(max_length=255, blank=False, null=False)
     email = models.EmailField(max_length=255, blank=False)
     position = models.CharField(max_length=255)
-    home_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True)
-    office_phone = models.CharField(validators=[phone_validator], max_length=15)
-    office_phone_extension = models.CharField(max_length=15, blank=True)
+    home_phone = models.CharField(validators=[phone_validator], max_length=12, blank=True)
+    office_phone = models.CharField(validators=[phone_validator], max_length=12)
+    office_phone_extension = models.CharField(max_length=12, blank=True)
     contacted = models.BooleanField(default=False)
     notes = models.TextField(blank=True)
     created = models.DateTimeField(auto_now_add=True,)
@@ -104,7 +113,7 @@ class Evaluation(models.Model):
 
     available_rooms = models.IntegerField(null=True, blank=True)
     doctors_recruit = models.CharField(max_length=2000, blank=True)
-    total_revenue = models.FloatField(null=True, blank=True)
+    total_revenue = models.CharField(max_length=255, choices=REVENUE_CHOICES, null=True, blank=True)
 
     net_income_status = models.CharField(max_length=255, choices=NET_INCOME_STATUS_CHOICES, blank=True)
 
