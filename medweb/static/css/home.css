@@ -1539,6 +1539,9 @@ a:hover {
   font-size: 11px;
   text-align: left; }
 
+.rev_slider_wrapper {
+  z-index: 201 !important; }
+
 #modal-chart .close-button {
   right: 10px !important;
   top: -20px !important; }

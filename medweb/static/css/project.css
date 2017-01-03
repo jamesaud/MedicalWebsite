@@ -54,21 +54,16 @@ hr {
     color: #D43A43 !important;
     line-height: 17px; }
 
-.cd-navbar-wrapper .cd-auto-hide-header {
-  z-index: 10 !important; }
-
 .cd-primary-nav > ul a:hover, .cd-primary-nav > ul a.active {
   text-decoration: none !important;
   color: #45AEEA !important; }
 
-.cd-secondary-nav {
-  z-index: 10 !important; }
-  .cd-secondary-nav li a {
-    font-size: 15.5px;
-    color: white;
-    text-decoration: none; }
-    .cd-secondary-nav li a.active {
-      box-shadow: inset 0 -3px #45AEEA !important; }
+.cd-secondary-nav li a {
+  font-size: 15.5px;
+  color: white;
+  text-decoration: none; }
+  .cd-secondary-nav li a.active {
+    box-shadow: inset 0 -3px #45AEEA !important; }
 
 .show-mobile {
   display: none; }
@@ -160,7 +155,6 @@ hr.no-margin {
   float: left;
   margin-top: 15%;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 500;
   padding-left: 10px;
   padding-top: 10px;
   padding-right: 10px;
@@ -220,7 +214,6 @@ hr.no-margin {
   text-shadow: 3px 3px 3px #ccc; }
 
 #call-now-info {
-  z-index: 500;
   position: absolute; }
 
 .call-now-wrapper li {
@@ -260,8 +253,7 @@ hr.no-margin {
   .modal-fullscreen .close-button {
     right: 8px;
     top: 0px;
-    position: absolute;
-    z-index: 1000; }
+    position: absolute; }
     .modal-fullscreen .close-button .close {
       font-size: 35px !important; }
 
@@ -607,7 +599,24 @@ div, span, p, h1, h2, h3, h4, h5{
   opacity: .5; }
 
 #userlike-tab {
-  background: #45AEEA !important;
+  background: #45AEEA !important; }
+
+#userlike-tab {
   z-index: 200 !important; }
+
+.cd-navbar-wrapper .cd-auto-hide-header {
+  z-index: 210 !important; }
+
+.cd-secondary-nav {
+  z-index: 210 !important; }
+
+.sidebar {
+  z-index: 500; }
+
+#call-now-info {
+  z-index: 500; }
+
+.modal-fullscreen .close-button {
+  z-index: 1000; }
 
 /*# sourceMappingURL=project.css.map */

@@ -73,11 +73,7 @@ hr{
 }
 
 
-.cd-navbar-wrapper{
-    .cd-auto-hide-header{
-        z-index: 10 !important;
-    }
-}
+
 
 .cd-primary-nav > ul a:hover, .cd-primary-nav > ul a.active{
     text-decoration: none !important;
@@ -85,7 +81,6 @@ hr{
 }
 
 .cd-secondary-nav{
-    z-index: 10 !important;
     li{
         a{
             font-size: $font-size-four;
@@ -247,7 +242,6 @@ hr.no-margin{
     float:left;
     margin-top: 15%;
     @include transparentBackgroundColor(.9, #FFFFFF);
-    z-index: 500;
     padding-left: 10px;
     padding-top: 10px;
     padding-right: 10px;
@@ -339,7 +333,6 @@ hr.no-margin{
 
 
 #call-now-info{
-    z-index: 500;
     position: absolute;
 }
 
@@ -396,7 +389,6 @@ hr.no-margin{
         right: 8px;
         top: 0px;
         position: absolute;
-        z-index: 1000;
         //Default boostrap close button class
         .close {
             font-size: 35px !important;
@@ -823,5 +815,28 @@ div, span, p, h1, h2, h3, h4, h5{
 
 #userlike-tab{
     background: $primary-color !important;
+}
+
+// Set z-indexes here
+#userlike-tab{
     z-index: 200 !important;
+}
+
+.cd-navbar-wrapper{
+    .cd-auto-hide-header{
+        z-index: 210 !important;
+    }
+}
+.cd-secondary-nav{
+z-index: 210 !important;} 
+.sidebar{
+        z-index: 500;
+}
+
+#call-now-info{
+        z-index: 500;
+}
+
+.modal-fullscreen .close-button{
+        z-index: 1000;
 }
