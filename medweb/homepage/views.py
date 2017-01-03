@@ -138,7 +138,9 @@ def create(request):
             person = Person(**pform.cleaned_data)     # Unpack cleaned data dictionary into Person
             person.save()
             request.session['person_id'] = person.id  # Set a cookie with the associated person_id
-            response_data = {'status': "success"}
+            response_data = {'status': 'success'}
+        else:
+            response_data['person_form'] = pform.errors
 
         person_id = request.session.get('person_id')  # Must come after cookie is set
         post['person'] = person_id                    # Add the person_id to post data so eform is valid
@@ -157,5 +159,7 @@ def create(request):
 
             evaluation.save()
             response_data = {'status': "success"}
+        else:
+            response_data['evaluation_form'] = eform.errors
 
     return JsonResponse(response_data)

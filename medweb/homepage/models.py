@@ -49,7 +49,7 @@ class Person(models.Model):
     email = models.EmailField(max_length=255, blank=False)
     position = models.CharField(max_length=255)
     home_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True)
-    office_phone = models.CharField(validators=[phone_validator], max_length=15, blank=True)
+    office_phone = models.CharField(validators=[phone_validator], max_length=15)
     office_phone_extension = models.CharField(max_length=15, blank=True)
     contacted = models.BooleanField(default=False)
     notes = models.TextField(blank=True)
@@ -77,12 +77,11 @@ class Evaluation(models.Model):
 
     current_system = models.CharField(max_length=255, choices=SYSTEM_CHOICES, blank=True)
 
-    ehr_support_vendors = models.IntegerField(null=True, blank=True)
     ehr_support_personnel = models.IntegerField(null=True, blank=True)
     ehr_likes = models.CharField(max_length=2000, blank=True)
     ehr_dislikes = models.CharField(max_length=2000, blank=True)
 
-    hr_providers = models.IntegerField(null=True, blank=True)
+    hr_total_staff = models.IntegerField(null=True, blank=True)
     hr_it_staff = models.IntegerField(null=True, blank=True)
     hr_other_staff = models.IntegerField(null=True, blank=True)
 
@@ -90,10 +89,10 @@ class Evaluation(models.Model):
     ehr_providers = models.IntegerField(null=True, blank=True)
     ehr_mas = models.IntegerField(null=True, blank=True)
     ehr_receptionists = models.IntegerField(null=True, blank=True)
-
+    ehr_scribes = models.IntegerField(null=True, blank=True)
+    
     rcm_billers = models.IntegerField(null=True, blank=True)
     rcm_coders = models.IntegerField(null=True, blank=True)
-    rcm_scribes = models.IntegerField(null=True, blank=True)
     rcm_collectors = models.IntegerField(null=True, blank=True)
 
     clearinghouse = models.CharField(max_length=512, blank=True)
@@ -102,7 +101,6 @@ class Evaluation(models.Model):
     percent_ars = models.FloatField(null=True, blank=True)
 
     available_rooms = models.IntegerField(null=True, blank=True)
-    revenue_labs = models.IntegerField(null=True, blank=True)
     doctors_recruit = models.CharField(max_length=2000, blank=True)
     total_revenue = models.FloatField(null=True, blank=True)
 

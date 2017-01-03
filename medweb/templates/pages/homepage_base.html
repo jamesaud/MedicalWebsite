@@ -148,7 +148,7 @@
             <li id='nav-call'><a id='nav-evaluation' data-toggle="popover" data-placement="left" data-trigger="hover"  data-html='true'
                                                                          data-content= "<h5>
                                                                             Call now to see what you stand to gain with a free evaluation:
-                                                                            Evaluates Patient Volume, EHR, RCM,  Integration, Personnel, Financials Growth, Recruiting and Net Income Optimization
+                                                                            Evaluates Patient Volume, EHR, RCM,  Integration, Personnel, Financial Growth, Recruiting and Net Income Optimization
                                                                              </h5>">1-800-870-6191<span class='tiny'>FREE EVALUATION</span><span class='show-mobile'>&nbsp;&nbsp;FREE EVALUATION </span></a></li>
 		</ul>
 	</nav> <!-- .cd-primary-nav -->
@@ -243,7 +243,8 @@
 
 
                                                           <div class='row form-group'>
-                                                               <div class="bt-flabels__wrapper col-md-12">
+                                                               <div class="bt-flabels__wrapper required col-md-12">
+                                                                   <div class='control-label'></div>
                                                                       {{ person_form.email.label_tag  }}
                                                                           {{ person_form.email }}
                                                                      <span class="bt-flabels__error-desc">Required/Invalid Email</span>
@@ -432,7 +433,8 @@
 
 
                                                           <div class='row form-group'>
-                                                                  <div class="bt-flabels__wrapper col-md-12">
+                                                                  <div class="bt-flabels__wrapper required col-md-12">
+                                                                      <div class='control-label'></div>
                                                                       {{ person_form.email.label_tag  }}
                                                                           {{ person_form.email }}
                                                                      <span class="bt-flabels__error-desc">Required/Invalid Email</span>
@@ -581,8 +583,8 @@
                                                           <div class='row form-group'>
                                                                   <div class="bt-flabels__wrapper col-md-6">
                                                                       
-                                                                  {{ evaluation_form.ehr_support_vendors.label_tag  }}
-                                                                     {{ evaluation_form.ehr_support_vendors }}
+                                                                  {{ evaluation_form.ehr_providers.label_tag  }}
+                                                                     {{ evaluation_form.ehr_providers }}
                                                                      <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
@@ -645,36 +647,7 @@
                                                    {% csrf_token %}
                                                     <input type="hidden" name="form_id" value="contact-form-3">
 
-                                                    <div class='form-title'>
-                                                            <h5>Human Resource Evaluation</h5>
-                                                        </div>
-
-                                                          <div class='row'>
-                                                                    <div class="bt-flabels__wrapper required col-md-4">
-                                                                         <div class='control-label'></div>
-                                                                          {{ evaluation_form.hr_providers.label_tag  }}
-                                                                     {{ evaluation_form.hr_providers }}
-                                                                      <span class="bt-flabels__error-desc">Required</span>
-                                                                    </div>
-
-
-
-                                                                    <div class="bt-flabels__wrapper required col-md-4">
-                                                                         <div class='control-label'></div>
-                                                                           {{ evaluation_form.hr_it_staff.label_tag  }}
-                                                                     {{ evaluation_form.hr_it_staff }}
-                                                                     <span class="bt-flabels__error-desc">Required</span>
-                                                                    </div>
-
-
-                                                                    <div class="bt-flabels__wrapper required col-md-4">
-                                                                         <div class='control-label'></div>
-                                                                          {{ evaluation_form.hr_other_staff.label_tag  }}
-                                                                     {{ evaluation_form.hr_other_staff }}
-                                                                      <span class="bt-flabels__error-desc">Required</span>
-                                                                    </div>
-
-                                                          </div>
+                                                   
 
 
                                                     <div class='form-title'>
@@ -682,10 +655,10 @@
                                                     </div>
 
                                                     <div class='row'>
-                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
-                                                                           {{ evaluation_form.ehr_providers.label_tag  }}
-                                                                     {{ evaluation_form.ehr_providers }}
+                                                                           {{ evaluation_form.ehr_scribes.label_tag  }}
+                                                                     {{ evaluation_form.ehr_scribes }}
                                                                      <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
@@ -710,6 +683,37 @@
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
+                                                    </div>
+
+                                                     <div class='form-title'>
+                                                            <h5>Human Resource Evaluation</h5>
+                                                    </div>
+
+                                                          <div class='row'>
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
+                                                                         <div class='control-label'></div>
+                                                                          {{ evaluation_form.hr_total_staff.label_tag  }}
+                                                                     {{ evaluation_form.hr_total_staff }}
+                                                                      <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+
+
+
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
+                                                                         <div class='control-label'></div>
+                                                                           {{ evaluation_form.hr_it_staff.label_tag  }}
+                                                                     {{ evaluation_form.hr_it_staff }}
+                                                                     <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+
+
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
+                                                                         <div class='control-label'></div>
+                                                                          {{ evaluation_form.hr_other_staff.label_tag  }}
+                                                                     {{ evaluation_form.hr_other_staff }}
+                                                                      <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+
                                                           </div>
 
                                                      <div class='form-title'>
@@ -717,28 +721,23 @@
                                                     </div>
 
                                                     <div class='row form-group'>
-                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
                                                                          <div class='control-label'></div>
                                                                            {{ evaluation_form.rcm_billers.label_tag  }}
                                                                      {{ evaluation_form.rcm_billers }}
                                                                      <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
-                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
                                                                          <div class='control-label'></div>
                                                                            {{ evaluation_form.rcm_coders.label_tag  }}
                                                                      {{ evaluation_form.rcm_coders }}
                                                                      <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
-                                                                    <div class="bt-flabels__wrapper required col-md-3">
-                                                                         <div class='control-label'></div>
-                                                                           {{ evaluation_form.rcm_scribes.label_tag  }}
-                                                                     {{ evaluation_form.rcm_scribes }}
-                                                                     <span class="bt-flabels__error-desc">Required</span>
-                                                                    </div>
+                                                                   
 
-                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
                                                                          <div class='control-label'></div>
                                                                            {{ evaluation_form.rcm_collectors.label_tag  }}
                                                                      {{ evaluation_form.rcm_collectors }}
@@ -748,8 +747,7 @@
                                                           </div>
 
                                                         <div class='row form-group'>
-                                                            <div class="bt-flabels__wrapper required col-md-12">
-                                                                  <div class='control-label'></div>
+                                                            <div class="bt-flabels__wrapper col-md-12">
                                                                  {{ evaluation_form.clearinghouse.label_tag  }}
                                                                      {{ evaluation_form.clearinghouse }}
                                                                      <span class="bt-flabels__error-desc">Required</span>
@@ -757,8 +755,7 @@
                                                           </div>
 
                                                         <div class='row form-group'>
-                                                            <div class="bt-flabels__wrapper required col-md-12">
-                                                                  <div class='control-label'></div>
+                                                            <div class="bt-flabels__wrapper col-md-12">
                                                                 {{ evaluation_form.billing_company.label_tag  }}
                                                                      {{ evaluation_form.billing_company }}
                                                                       <span class="bt-flabels__error-desc">Required</span>
@@ -768,13 +765,11 @@
                                                     <div class='row form-statement form-group '>
                                                         <div class='col-md-12'>
                                                             <div class='inline'>It usually takes me</div>
-                                                            <span class='inline bt-flabels__wrapper required'>
-                                                                <div class='inline control-label'></div>
+                                                            <span class='inline bt-flabels__wrapper '>
                                                                      {{ evaluation_form.days_to_collect }}
                                                             </span>
                                                             <div class='inline'>days to collect</div>
-                                                             <span class='inline bt-flabels__wrapper required'>
-                                                            <div class='inline control-label'></div>
+                                                             <span class='inline bt-flabels__wrapper'>
                                                                      {{ evaluation_form.percent_ars }}
                                                              </span>
                                                             % of ARs.
@@ -821,18 +816,17 @@
 
 
                                                       <div class='row form-group'>
-                                                                <div class="bt-flabels__wrapper required col-md-7">
-                                                                     <div class='control-label'></div>
+                                                                
+                                                                <div class="bt-flabels__wrapper required col-md-6">
+                                                                        <div class='control-label'></div>
+                                                                      {{ evaluation_form.total_revenue.label_tag  }}
+                                                                     {{ evaluation_form.total_revenue }}
+                                                                     <span class="bt-flabels__error-desc">Required</span>
+                                                                  </div>
+                                                                  <div class="bt-flabels__wrapper  col-md-6">
                                                                        {{ evaluation_form.available_rooms.label_tag  }}
                                                                      {{ evaluation_form.available_rooms }}
                                                                       <span class="bt-flabels__error-desc">Required</span>
-                                                                </div>
-                                                                <div class="bt-flabels__wrapper required col-md-5">
-                                                                     <div class='control-label'></div>
-
-                                                                       {{ evaluation_form.revenue_labs.label_tag  }}
-                                                                     {{ evaluation_form.revenue_labs }}
-                                                                     <span class="bt-flabels__error-desc">Required</span>
                                                                 </div>
 
                                                       </div>
@@ -846,16 +840,7 @@
                                                             </div>
                                                     </div>
 
-                                                    <div class='row form-group'>
-                                                                <div class="bt-flabels__wrapper required col-md-12">
-                                                                     <div class='control-label'></div>
-                                                                      {{ evaluation_form.total_revenue.label_tag  }}
-                                                                     {{ evaluation_form.total_revenue }}
-                                                                     <span class="bt-flabels__error-desc">Required</span>
-                                                                </div>
-
-                                                      </div>
-
+                                          
                                                      <div class='row form-statement required'>
                                                         <div class='col-md-12'>
                                                             <div class='inline'>My group's net income has &nbsp;</div>

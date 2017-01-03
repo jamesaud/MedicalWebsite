@@ -24,7 +24,7 @@ class PersonForm(NoColonForm, AutoPlaceholderForm, ModelForm):
 
         fields = ('first_name', 'last_name', 'email', 'position', 'home_phone', 'office_phone', 'office_phone_extension')
 
-        widgets = {'position': forms.TextInput(attrs={'placeholder': 'Title or Position'}),
+        widgets = {'position': forms.TextInput(attrs={'placeholder': 'Title or position'}),
                    'office_phone': forms.TextInput(attrs={'class': 'phone-autodash'}),
                    'office_phone_extension': forms.TextInput(attrs={'placeholder': 'ext'}),
                    }
@@ -43,12 +43,12 @@ class EvaluationForm(NoColonForm, AutoPlaceholderForm,  ModelForm):
     current_system = EmptyChoiceField(
         choices=SYSTEM_CHOICES,
         required=False,
-        empty_label = 'Current System',)
+        empty_label = '- Current system -',)
 
     group_type = EmptyChoiceField(
         choices=GROUP_TYPE_CHOICES,
         required=False,
-        empty_label = 'Group Type',)
+        empty_label = '- Organization type -',)
 
     net_income_status = EmptyChoiceField(
         choices=NET_INCOME_STATUS_CHOICES,
@@ -68,20 +68,22 @@ class EvaluationForm(NoColonForm, AutoPlaceholderForm,  ModelForm):
 
         # Also will set placeholders because of AutoPlaceholderForm
         labels = {
-            'ehr_support_vendors': _('# EHR support vendors'),
+            'group_name': _('Organization name'),
+            'group_type': _('Organization type'),
+            'ehr_providers': _('# EHR providers'),
             'ehr_support_personnel': _('# EHR support personnel'),
-            'hr_providers': _('# Providers'),
+            'hr_total_staff': _('# Total staff'),
             'hr_it_staff': _('# IT staff'),
             'hr_other_staff': _('# Other staff'),
             'ehr_admin': _('# Admin'),
-            'ehr_providers': _('# Providers'),
             'ehr_mas': _('# MAs'),
             'ehr_receptionists': _('# Receptionists'),
+            'ehr_scribes': _('# Scribes'),
             'rcm_billers': _('# Billers'),
             'rcm_coders': _('# Coders'),
-            'rcm_scribes': _('# Scribes'),
             'rcm_collectors': _('# Collectors'),
             'doctors_recruit': _('Are you trying to recruit doctors? How many and which specialities?'),
+            'available_rooms': _('# Available rooms'),
             #'monthly_newsletter': _('Yes'), # Couldn't get this to work
 
         }
@@ -89,9 +91,10 @@ class EvaluationForm(NoColonForm, AutoPlaceholderForm,  ModelForm):
         widgets = {'message': EmptyTextarea(attrs={'placeholder':'What would you like to say?'}),
                    'ehr_likes': EmptyTextarea(attrs={'placeholder':'What I like about my current EHR'}),
                    'ehr_dislikes': EmptyTextarea(attrs={'placeholder':'What I dislike about my current EHR'}),
-                   'days_to_collect': forms.TextInput(attrs={'placeholder': '5'}),
-                   'percent_ars': forms.TextInput(attrs={'placeholder': '20'}),
+                   'days_to_collect': forms.NumberInput(attrs={'placeholder': 5}),
+                   'percent_ars': forms.NumberInput(attrs={'placeholder': 20}),
                    'doctors_recruit': EmptyTextarea(attrs={'placeholder': 'Yes, 2-3 more pediatric doctors and 1 more orthopedic surgeon.'}),
+                   'group_name': forms.TextInput(attrs={DATA_PARLSEY_PREFIX+'-required': 'True'}), # Add required to data parsley only
                    }
 
 

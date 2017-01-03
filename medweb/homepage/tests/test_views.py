@@ -28,9 +28,16 @@ class TestViews(BaseHomepageTestCase):
     def test_create_view(self):
         choices = tuple([tupl[0] for tupl in REFERRAL_CHOICES])
         url = reverse('create')
-        person_post = {'first_name':'test', 'last_name': 'test', 'email':'test@test.com', 'position':'test'}
+        person_post = {
+            'first_name': 'test', 
+            'last_name': 'test', 
+            'email': 'test@test.com', 
+            'position': 'test',
+            'office_phone': '888-888-8888',
+            }
         evaluation_post = {
             'message': 'hello',
+            'group_name': 'test',
             'ehr_likes': 'test',
             'referral': choices,
         }
