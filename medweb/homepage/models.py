@@ -69,6 +69,8 @@ class Evaluation(models.Model):
         primary_key=True,
     )
 
+    demo = models.BooleanField(default=False) # Whether they signed up for a demo, or just an evaluation.
+
     group_name = models.CharField(max_length=255, blank=True)
     message = models.CharField(max_length=2000, blank=True)
     call_time = models.DateTimeField(null=True, blank=True)
@@ -90,7 +92,7 @@ class Evaluation(models.Model):
     ehr_mas = models.IntegerField(null=True, blank=True)
     ehr_receptionists = models.IntegerField(null=True, blank=True)
     ehr_scribes = models.IntegerField(null=True, blank=True)
-    
+
     rcm_billers = models.IntegerField(null=True, blank=True)
     rcm_coders = models.IntegerField(null=True, blank=True)
     rcm_collectors = models.IntegerField(null=True, blank=True)

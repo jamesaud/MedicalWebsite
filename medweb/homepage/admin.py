@@ -14,15 +14,21 @@ class EvaluationInline(admin.StackedInline):
 class PersonAdmin(admin.ModelAdmin):
     inlines = (EvaluationInline,)
     readonly_fields = ("created", "modified",)
-    list_filter = ["created", "contacted", 'evaluation__call_time']
+    list_filter = ["created", "contacted", 'evaluation__call_time', 'evaluation__demo']
     search_fields = ['first_name', 'last_name', ]
-    list_display = ['first_name', 'last_name', 'email', 'office_phone', 'position', 'get_call_time']
+    list_display = ['first_name', 'last_name', 'email', 'office_phone', 'position', 'get_call_time', 'demo_status']
 
     def get_call_time(self, obj):
         return obj.evaluation.call_time
 
+    def demo_status(self, obj):
+        return obj.evaluation.demo
+
     get_call_time.short_description = 'Call Time'
     get_call_time.admin_order_field = 'evaluation__call_time'
+
+    demo_status.short_description = 'Demo Status'
+    demo_status.admin_order_field = 'evaluation__demo'
 
 
 class RandomReferralAdmin(admin.ModelAdmin):

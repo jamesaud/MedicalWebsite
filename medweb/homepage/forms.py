@@ -61,6 +61,8 @@ class EvaluationForm(NoColonForm, AutoPlaceholderForm,  ModelForm):
 
     monthly_newsletter = forms.BooleanField(required=False)
 
+    demo = forms.BooleanField(initial=False),  # Only render this as a hidden field!
+
     class Meta:
         model = Evaluation
         exclude = ('person',) # We inject person via ajax

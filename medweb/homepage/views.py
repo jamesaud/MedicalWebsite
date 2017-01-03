@@ -147,6 +147,7 @@ def create(request):
 
         # Update current person OR create new one
         if eform.is_valid() and person_id:
+
             # Remove empty form fields to prevent overwriting existing evaluation object fields
             valid_clean_fields = {key: value for key, value in eform.cleaned_data.items() if value}
 
