@@ -662,27 +662,25 @@ a:hover{
          position: relative !important;
          text-align: center;
          padding-top: 60px;
-         padding-bottom: 60px;
+         padding-bottom: 50px;
          margin-bottom: 0px;
          .main-points{
             h2{color:black;}
             h3{font-weight: $weight-light;}
          }
-      
-      
          
         h3{
              color: white;
         }
+
         h2{
             color: white !important;
             }
         
          
-         .hi-intro-title{
+        .hi-intro-title{
              margin-bottom: 20px;
-             
-                }
+        }
          span{
              font-style: italic;
              font-weight: bold;
@@ -714,9 +712,6 @@ a:hover{
              width: 60%;
              max-width: 300px;
          }
-         input[type=checkbox]{
-             z-index: 1;
-         }
 
          $height: 50px;
          input, button{
@@ -724,38 +719,46 @@ a:hover{
              height: $height;
              display: inline-block;
          }
+
          @media screen and (max-width: 500px){
              //input,label,form makes everything fit in one row under 450px
              input[type=email]{
                 width: 50%;
              }
-  
              form{
                  margin: 0 auto;
                  text-align: justify;
              }
          }
-         .checkbox .cr{
-             border-right-width: 0px !important;
-             border-color: #ccc;
-             background: white;
-             z-index: 1;
-             width: $height;
-             height: $height;
-             display: inline-block;
-         }
+
          .checkbox{
              bottom: -19px;
              right: -4px;
              display: inline-block;
-             .cr{margin: 0;}
-             i{color: $primary-color;}
-             label{
-                font-size: 38px; 
+             .cr{
+                margin: 0;
+                border-right-width: 0px !important;
+                border-color: #ccc;
+                background: white;
+                width: $height;
+                height: $height;
+                display: inline-block;
             }
-         }
-
-
+             .cr-icon{
+                color: $primary-color;
+                z-index: 1; // Overlay on top of the placeholder checkmark 
+             }
+             label{
+                 font-size: 38px;
+                 }
+             .cr-placeholder{
+                position: absolute;
+                right: 9px;
+                top: 9px;
+                font-size: 30px; 
+                color: rgba(#999, .6);
+            }
+        }
     }
     
 

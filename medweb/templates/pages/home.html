@@ -401,7 +401,7 @@
             data-paddingbottom="[0,0,0,0]"
             data-paddingleft="[0,0,0,0]"
 
-            style="z-index: 8; min-width: 606px; max-width: 606px; max-width: 100px; max-width: 100px; white-space: normal; font-size: 20px; line-height: 25px; font-weight: 500; color: rgba(255, 255, 255, 0.85);font-family:Roboto;letter-spacing:2px;">REGARDLESS OF ACA, VBC, OR TRUMP CARE, OUR EHR/RCM INCREASES PRODUCTIVITY 25-40%, CUTS OVERHEAD UP TO 35%. DOCTORS EARN MORE &amp; GO HOME ON TIME. </div>
+            style="z-index: 8; min-width: 606px; max-width: 606px; max-width: 100px; max-width: 100px; white-space: normal; font-size: 20px; line-height: 25px; font-weight: 500; color: rgba(255, 255, 255, 0.85);font-family:Roboto;letter-spacing:2px;">REGARDLESS OF OBAMACARE, VALUE BASED CARE, OR TRUMP CARE, OUR EHR/RCM INCREASES PRODUCTIVITY 25-40%, CUTS OVERHEAD UP TO 35%. DOCTORS EARN MORE &amp; GO HOME ON TIME. </div>
 
 		<!-- LAYER NR. 13 -->
         <a href='' data-toggle="modal" data-target="#modal-contact">
@@ -1617,18 +1617,17 @@ guaranteed services. </h4>
 
                     <div class=' col-md-10 col-centered '>
                         <div class='hi-intro-title'>
-                        <h2>Receive Free Industry Reports Compiled from Thousands of Research Documents</h2>
-                        <h3>1. Find out <span class='em-bold'>why over 600,000 doctors</span> will return to private practice 
-                        <span class='tiny-text' data-toggle="tooltip" 
-                             title='"Join The Healthcare Revolt", a specialized report documenting the invevitable shift back to private practice.'>(read more)
-                             </span>
-                        </h3>
-                        <h3>2. Optionally check the box to receive the industry monthly report
-                             <span class='tiny-text' data-toggle="tooltip" 
-                             title="Summary of 120 sources every month. Within minutes you know problems &amp; solutions to optimize earnings and care.">(read more)
-                             </span>
-                        </h3>
-                        <h3>3. Enter a valid email to recieve the exclusive reports</h3>
+                            <h2>Receive Free Industry Reports Compiled from Thousands of Research Documents</h2>
+                            <h3>1. Enter a valid email to find out <span class='em-bold'>why over 600,000 doctors</span> will return to private practice 
+                            <span class='tiny-text' data-toggle="tooltip" 
+                                title='"Join The Healthcare Revolt", a specialized report documenting the invevitable shift back to private practice.'>(what's this?)
+                                </span>
+                            </h3>
+                            <h3>2. Optionally check the box below to receive the industry monthly report
+                                <span class='tiny-text' data-toggle="tooltip" 
+                                title="Summary of 120 sources every month. Within minutes you know problems &amp; solutions to optimize earnings and care.">(what's this?)
+                                </span>
+                            </h3>
                         </div>
 
                         <div class='bt-form__wrapper'>
@@ -1636,10 +1635,10 @@ guaranteed services. </h4>
                         <form id='newsletter-form'  action="{% url 'submit_newsletter' %}" method="POST">
                             {% csrf_token %}
 
-                            <span class="checkbox">
+                            <span id='newsletter-checkbox' class="checkbox">
                                 <label>
                                     {{ email_form.newsletter }}
-                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span><i class="cr-placeholder glyphicon glyphicon-ok"></i>
                                 </label>
                             </span>
                             {{ email_form.email }}<button type="submit" class="btn btn-default btn-primary" href="#" data-toggle="modal" data-target="#modal-thanks">Send Report</button>
@@ -3924,12 +3923,6 @@ add_nav_waypoint('#trigger-why','#nav-why');
 
 </script>
 
-
-<!-- READ MORE SMOOTH SCROLL -->
-<script>
-//smoothScroll('.read-more-btn');
-</script>
-
 <!-- SELECT THE CORRECT TIMELINE TAB WHEN CLICKING ON THE HEX -->
 <!-- SELECT THE CORRECT PRICING MODAL TAB WHEN CLICKING ON THE 3 PRICING BANNERS -->
  <script>
@@ -3957,43 +3950,14 @@ trigger_handler('#pricing-btn-3', '#pricing-modal-btn-3');
 // Investor Tab Trigger Handlers
 trigger_handler('#nav-investors', '#tab-investors');
 
-
-/* Start modal on third-tab for vertical positioning purposes */
- $('#pricing-modal-btn-3').trigger('click');
-
 </script>
+
+<!-- REMOVE THE PLACEHOLDER CHECKMARK ON CLICK FOR THE NEWSLETTER EMAIL FORM -->
 <script>
-/* When modal closes, reselect the largest vertical modal tab. So when the modal reopens, it is in the correct vert position */
-$('#modal-pricing').on('hidden.bs.modal', function () {
-    $('#pricing-modal-btn-3').trigger('click'); // Trigger modal 3, exponential growth
+$('#newsletter-checkbox').on('click', function(){
+     $(this).find('.cr-placeholder').addClass('hidden-smooth');
 });
 </script>
-
-
-
-<!-- SECTION PRICING POPUP JQUERY CODE -->
-<script>
-/* TRIGGER THE CORRECT TABS WHEN USING NAVIGATION BUTTONS */
-$(document).ready(function() {
-    $(".btn-pref .btn").click(function () {
-        $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
-        // $(".tab").addClass("active"); // instead of this do the below
-        $(this).removeClass("btn-default").addClass("btn-primary");
-    });
-
-    /* When the inquire buttons are selected, hide the navigation text */
-    $(".btn-color").click(function () {
-        $("#pricing-modal-btn-1").removeClass('active');
-        $("#pricing-modal-btn-2").removeClass('active');
-        $("#pricing-modal-btn-3").removeClass('active');
-        $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
-    });
-
-});
-</script>
-
-
-
 
 
 <!-- activate popovers -->
@@ -4001,7 +3965,6 @@ $(document).ready(function() {
 $(document).ready(function(){
     $('[data-toggle="popover"]').popover();
                 });
-
 </script>
 
 
@@ -4116,7 +4079,6 @@ $(".popover-resize").popover(options);
 </script>
 
 <script>
-
 function changeBackgroundColor(start, target, class_to_add){
     $(start).hover(function() {
         //Remove the other class that is there before adding a new one

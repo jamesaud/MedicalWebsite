@@ -624,8 +624,15 @@ hr.no-top{
              font-style: italic;
              font-weight: bold;
         }
+
+.hidden-smooth{
+    opacity: 0;
+    @include transition(opacity .6s);
+}
 /* utility end */
 
+
+// Styling some modal common style.
 .inquire-finish{
     padding-left: 7%;
     padding-right: 7%;
@@ -840,3 +847,4 @@ z-index: 210 !important;}
 .modal-fullscreen .close-button{
         z-index: 1000;
 }
+

@@ -466,6 +466,12 @@ hr.no-top {
   font-style: italic;
   font-weight: bold; }
 
+.hidden-smooth {
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  transition: opacity 0.6s; }
+
 /* utility end */
 .inquire-finish {
   padding-left: 7%;

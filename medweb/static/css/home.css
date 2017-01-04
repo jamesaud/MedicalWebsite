@@ -669,7 +669,7 @@ a:hover {
   position: relative !important;
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   margin-bottom: 0px; }
   .section-email .main-points h2 {
     color: black; }
@@ -707,8 +707,6 @@ a:hover {
     z-index: 2;
     width: 60%;
     max-width: 300px; }
-  .section-email input[type=checkbox] {
-    z-index: 1; }
   .section-email input, .section-email button {
     border-right: none;
     height: 50px;
@@ -719,24 +717,29 @@ a:hover {
     .section-email form {
       margin: 0 auto;
       text-align: justify; } }
-  .section-email .checkbox .cr {
-    border-right-width: 0px !important;
-    border-color: #ccc;
-    background: white;
-    z-index: 1;
-    width: 50px;
-    height: 50px;
-    display: inline-block; }
   .section-email .checkbox {
     bottom: -19px;
     right: -4px;
     display: inline-block; }
     .section-email .checkbox .cr {
-      margin: 0; }
-    .section-email .checkbox i {
-      color: #45AEEA; }
+      margin: 0;
+      border-right-width: 0px !important;
+      border-color: #ccc;
+      background: white;
+      width: 50px;
+      height: 50px;
+      display: inline-block; }
+    .section-email .checkbox .cr-icon {
+      color: #45AEEA;
+      z-index: 1; }
     .section-email .checkbox label {
       font-size: 38px; }
+    .section-email .checkbox .cr-placeholder {
+      position: absolute;
+      right: 9px;
+      top: 9px;
+      font-size: 30px;
+      color: rgba(153, 153, 153, 0.6); }
 
 .section-insights .si-message {
   text-align: center;

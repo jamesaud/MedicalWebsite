@@ -50,13 +50,16 @@ $weight-light: 300;
     padding-left: 65px;
     padding-right: 65px;
     font-size: $font-size-four;
-      border-radius: 50em;
+    border-radius: 50em;
 
 }
 
+// Unecessary, replace all uses with rgba(color, transparency)
 @mixin transparentBackgroundColor($alpha, $color, $important:null) {
   background-color: rgba(red($color), green($color), blue($color), $alpha) $important;
 }
+
+
 
 @mixin color_btn($color){
     @extend .__color-button;
@@ -100,7 +103,6 @@ $weight-light: 300;
             font-size: $font-size-four;
         }
     }
-    
 
     .contact-message{
         h5{
