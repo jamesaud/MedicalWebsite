@@ -19,6 +19,9 @@
   padding-top: 65px;
   padding-bottom: 30px;
 }
+#our-team .headline-center {
+  margin-bottom: 40px;
+}
 #our-team .headline-center h2:after {
   background: #45AEEA !important;
 }
@@ -125,11 +128,6 @@
   .rev_slider_wrapper {
     min-height: 400px !important;
   }
-}
-.rev_slider_wrapper {
-  -webkit-transition: min-height 3s;
-  -moz-transition: min-height 3s;
-  transition: min-height 3s;
 }
 
 /*# sourceMappingURL=about.css.map */

@@ -10,6 +10,7 @@
             & h2:after{
                 background: $primary-color !important;
             }
+            margin-bottom: 40px;
         }
 
         span{margin-bottom: 0;}
@@ -42,8 +43,10 @@
         .team-v6-block{
             margin-bottom: 20px;
         }
+       
     }
 }
+
  
 
 //TIMELINE CUSTOM STYLE
@@ -138,7 +141,4 @@ $color: $primary-color;
     }   
 }
 
-.rev_slider_wrapper{
-    @include transition(min-height 3s);
-}
 
