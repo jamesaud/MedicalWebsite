@@ -679,8 +679,8 @@ a:hover {
     color: white; }
   .section-email h2 {
     color: white !important; }
-  .section-email .hi-intro-title {
-    margin-bottom: 20px; }
+  .section-email .email-intro-title {
+    margin-bottom: 10px; }
   .section-email span {
     font-style: italic;
     font-weight: bold; }
