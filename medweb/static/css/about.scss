@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'bourbon/bourbon';
 
 
 #our-team{
@@ -27,8 +28,9 @@
 
         h5{
             text-align: justify !important;
-            padding-left: 5%;
-            padding-right: 5%;
+            padding-top: 10px;
+            max-width: 275px;
+            margin: 0 auto;
             }
             
     
@@ -36,6 +38,9 @@
         margin-bottom: 40px;
         &:last-child{
             margin-bottom: 0px;
+        }
+        .team-v6-block{
+            margin-bottom: 20px;
         }
     }
 }
@@ -120,6 +125,7 @@ $color: $primary-color;
     }
 }
 
+/* Styling the front page slider */
 @media screen and (min-height: 769px){
     .rev_slider_wrapper{
         min-height: 600px !important;
@@ -131,3 +137,8 @@ $color: $primary-color;
         min-height: 400px !important;
     }   
 }
+
+.rev_slider_wrapper{
+    @include transition(min-height 3s);
+}
+

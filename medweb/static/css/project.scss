@@ -517,12 +517,25 @@ hr.no-margin{
 
 /* Utility css */
 
-
+// Centering
 @media screen and (min-width: 768px){
     .vcenter {
         display: flex;
         align-items: center;
     }
+}
+
+//Centering: centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }
 
 .inline{
