@@ -109,7 +109,7 @@ def submit_referral(request):
 
     if request.method == 'POST':
         referral_form = RandomReferralForm(request.POST)
-        if referral_form.is_valid() and not request.session.get('referred'):
+        if referral_form.is_valid() and not request.session.get('referred'): # Prevent multiple submissions.
             referral = RandomReferral(**referral_form.cleaned_data)
             referral.save()
             response = {'status': 'success'}
