@@ -553,7 +553,8 @@ div, span, p, h1, h2, h3, h4, h5{
 }
 */
 .footer-v1 {
-  width: 100%; }
+  position: relative;
+  z-index: 5; }
 
 .checkbox label:after,
 .radio label:after {
