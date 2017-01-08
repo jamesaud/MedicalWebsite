@@ -6,11 +6,29 @@ from django.utils import timezone
 
 
 SYSTEM_CHOICES = (
-        ('Cerner', 'Cerner'),
-        ('Epic', 'Epic'),
-        ('Allscripts', 'Allscripts'),
-        ('Other', 'Other'),
-    )
+    ('Abraxas', 'Abraxas'),
+    ('AdvancedMD', 'AdvancedMD'),
+    ('Allscripts', 'Allscripts'),
+    ('Aprima', 'Aprima'),
+    ('Athena', 'Athena'),
+    ('Cerner', 'Cerner'),
+    ('CompuGroup', 'CompuGroup'),
+    ('CureMD', 'CureMD'),
+    ('E-MDs', 'E-MDs'),
+    ('Epic', 'Epic'),
+    ('GE Healthcare', 'GE Healthcare'),
+    ('Greenway', 'Greenway'),
+    ('Kareo', 'Kareo'),
+    ('McKesson', 'McKesson'),
+    ('NextGen', 'NextGen'),
+    ('Nextech', 'Nextech'),
+    ('Optum', 'Optum'),
+    ('Other', 'Other'),
+    ('Platinum Systems', 'Platinum Systems'),
+    ('Practice Fusion', 'Practice Fusion'),
+    ('Vitera', 'Vitera'),
+    ('eClinicalWorks', 'eClinicalWorks')
+)
 
 GROUP_TYPE_CHOICES = (
     ("MS", "MS"),

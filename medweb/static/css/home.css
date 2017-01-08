@@ -1207,6 +1207,14 @@ a:hover {
     padding-top: 0px; }
     .section-plans .service-message h1, .section-plans .service-message h2, .section-plans .service-message h3, .section-plans .service-message h4, .section-plans .service-message h5, .section-plans .service-message p {
       color: white !important; }
+    .section-plans .service-message table {
+      padding-top: 0px;
+      margin-bottom: 6px;
+      margin-top: 0px; }
+      .section-plans .service-message table td {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-right: 20px; }
   .section-plans .message-block {
     text-align: left;
     margin-top: 30px;

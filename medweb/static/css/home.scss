@@ -1497,12 +1497,21 @@ a:hover{
         }
     }
     .service-message{
+            padding-top: 0px;
             h1,h2,h3,h4,h5,p{
                 color: white !important;
             }
-
-            padding-top: 0px;
-    }
+            table{
+                td{
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                    padding-right: 20px;
+                }
+                padding-top: 0px;
+                margin-bottom: 6px;
+                margin-top: 0px;
+            }
+    } 
 
     .message-block{
         text-align: left;
