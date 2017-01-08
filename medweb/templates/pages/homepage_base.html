@@ -856,7 +856,7 @@
                                                     <div class='row'>
                                                         <div class="bt-flabels__wrapper checkbox-wrapper col-md-12">
                                                             {% for choice in evaluation_form.referral %}
-                                                                {{ choice.tag }} {{ choice.choice_label }}
+                                                                <div style="display: inline-block">{{ choice.tag }} {{ choice.choice_label }}</div>
                                                             {% endfor %}
                                                         </div>
                                                     </div>
@@ -943,7 +943,7 @@
                             <div class="bt-flabels__wrapper checkbox-wrapper col-md-12">
                                 <!-- Referral Form -->
                                 {% for choice in random_referral_form.referral %}
-                                    {{ choice.tag }} {{ choice.choice_label }}
+                                    <div style="display: inline-block">{{ choice.tag }} {{ choice.choice_label }}</div>
                                 {% endfor %}
                             </div>
                         </div>

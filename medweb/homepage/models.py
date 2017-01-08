@@ -31,8 +31,10 @@ SYSTEM_CHOICES = (
 )
 
 GROUP_TYPE_CHOICES = (
-    ("MS", "MS"),
-    ("Solo", "Solo"),
+    ("Single Specialty", "Single Specialty"),
+    ("Multi Specialty", "Multi Specialty"),
+    ("Hospital Based Clinic", "Hospital Based Clinic"),
+    ("Urgent Care", "Urgent Care"),
     ("Other", "Other"),
 )
 
@@ -47,16 +49,19 @@ REFERRAL_CHOICES = (
     ('Facebook', "Facebook"),
     ('Twitter', "Twitter"),
     ('Google', "Google"),
+    ('Referral', "Referral"),
+    ('Industry Publication', "Industry Publication"),
     ('Other', "Other"),
 )
 
 REVENUE_CHOICES = (
     ('1 - $499,999', '1 - 499,999'),
     ('500,000 - 999,999', '500,000 - 999,999'),
-    ('1,000,000 - 1,999,999', '1,000,000 - 1,999,999'),
-    ('2,000,000 - 4,999,999', '2,000,000 - 4,999,999'),
+    ('1,000,000 - 4,999,999', '1,000,000 - 4,999,999'),
     ('5,000,000 - 9,999,999', '5,000,000 - 9,999,999'),
-    ('10,000,000+', '10,000,000+'),
+    ('10,000,000 - 24,999,999', '10,000,000 - 24,999,999'),
+    ('25,000,000 - 49,999,999', '25,000,000 - 49,999,999'),
+    ('50,000,000+', '50,000,000+'),
 )
 
 
