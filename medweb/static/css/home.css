@@ -1083,11 +1083,11 @@ a:hover {
     padding-top: 20px;
     padding-bottom: 0px !important;
     padding-bottom: 50px; }
-    .section-plans .plans-intro .main-points h2 {
+    .section-plans .plans-intro h2 {
       color: #eee; }
-    .section-plans .plans-intro .main-points h3 {
+    .section-plans .plans-intro h3 {
       font-weight: 300; }
-    .section-plans .plans-intro .main-points h4 {
+    .section-plans .plans-intro h4 {
       color: white !important; }
     .section-plans .plans-intro .btn-color-1 {
       border-color: #EFB917;
@@ -1156,7 +1156,7 @@ a:hover {
   .section-plans .service-blocks {
     padding-top: 20px;
     padding-bottom: 0px;
-    max-width: 1600px; }
+    max-width: 1400px; }
     .section-plans .service-blocks .service-blocks-header h2, .section-plans .service-blocks .service-blocks-header h3, .section-plans .service-blocks .service-blocks-header h4 {
       color: white !important; }
   .section-plans .service-block {
@@ -1241,7 +1241,7 @@ a:hover {
     font-weight: 300; }
   .section-plans .service-block-color-5 h5 {
     color: #45AEEA;
-    font-weight: 300; }
+    font-weight: 400; }
   .section-plans .service-block-color-4 li a:hover {
     color: #72c02c; }
   .section-plans .service-block-color-4 i {
@@ -1258,7 +1258,7 @@ a:hover {
     font-weight: 300; }
   .section-plans .service-block-color-4 h5 {
     color: #72c02c;
-    font-weight: 300; }
+    font-weight: 400; }
   .section-plans .service-block-color-3 li a:hover {
     color: #D43A43; }
   .section-plans .service-block-color-3 i {
@@ -1275,7 +1275,7 @@ a:hover {
     font-weight: 300; }
   .section-plans .service-block-color-3 h5 {
     color: #D43A43;
-    font-weight: 300; }
+    font-weight: 400; }
   .section-plans .service-block-color-2 li a:hover {
     color: #EFB917; }
   .section-plans .service-block-color-2 i {
@@ -1292,7 +1292,7 @@ a:hover {
     font-weight: 300; }
   .section-plans .service-block-color-2 h5 {
     color: #EFB917;
-    font-weight: 300; }
+    font-weight: 400; }
   .section-plans .service-block-color-1 li a:hover {
     color: #FF8800; }
   .section-plans .service-block-color-1 i {
@@ -1309,7 +1309,7 @@ a:hover {
     font-weight: 300; }
   .section-plans .service-block-color-1 h5 {
     color: #FF8800;
-    font-weight: 300; }
+    font-weight: 400; }
 
 .ss-bg-col-1 {
   background-color: rgba(69, 174, 234, 0.15); }
@@ -1627,7 +1627,7 @@ a:hover {
   z-index: 201 !important; }
 
 #modal-chart .close-button {
-  right: 10px !important;
+  right: -25px !important;
   top: -20px !important; }
   #modal-chart .close-button button {
     color: white !important;

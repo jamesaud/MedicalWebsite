@@ -39,7 +39,7 @@ Main components
 
 #cd-table {
 	position: relative;
-	width: 90%;
+	width: 100%;
 	max-width: $L; // breakpoints inside partials > _layout.scss
 	margin: 1em auto;
 	@include font-size(14px);

@@ -1312,17 +1312,17 @@ a:hover{
     }
 
   .plans-intro{
-         text-align: center;
+        text-align: center;
         padding-top: 20px;
         padding-bottom: 0px !important;
         
-        .main-points{
-            h2{color: #eee;}
-            h3{font-weight: $weight-light;}
-            h4{
-                color: white !important;
-            }
+
+        h2{color: #eee;}
+        h3{font-weight: $weight-light;}
+        h4{
+            color: white !important;
         }
+        
         padding-bottom: 50px;
         .btn-color-1{
             @include color_btn($second-color);
@@ -1352,6 +1352,7 @@ a:hover{
                 transition: all .3s;
             }
         }
+
     }
   
 
@@ -1409,7 +1410,7 @@ a:hover{
     .service-blocks {
         padding-top: 20px;
         padding-bottom: 0px;
-        max-width:  1600px;
+        max-width:  1400px;
         .service-blocks-header{
           
             h2, h3, h4{
@@ -1556,9 +1557,9 @@ a:hover{
                     }
                     h5{
                         color: $color;
-                        font-weight: $weight-light;
+                        font-weight: 400;
                     }
-                    }     
+                }     
             }
             @include service-block-color('service-block-color-5', $primary-color);
             @include service-block-color('service-block-color-4', $fourth-color);
@@ -2013,7 +2014,7 @@ a:hover{
 
 #modal-chart{
     .close-button{
-        right: 10px !important;
+        right: -25px !important;
         top: -20px !important;
         button{
             color: white !important;
