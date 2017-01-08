@@ -1307,7 +1307,6 @@ a:hover{
 
 .section-plans{
     background: #3E4747 !important; 
-    h4{color: white !important;}
     .plans-btn-wrapper{
                 margin-top: 32px !important;
     }
@@ -1380,7 +1379,6 @@ a:hover{
   
         li, h5{
             margin-bottom: 0px;
-            font-size: 14px !important;
         }
       
     }
@@ -1401,31 +1399,8 @@ a:hover{
    
         padding-bottom: 30px !important;
     }
-    
-   
-    .color-top-0, .color-top-1, .color-top-2, .color-top-3, {
-        height: 20px;
-    }
-    
-     .color-top-0{
-        background: $primary-color;
-    }
-    
-    .color-top-1{
-        background: $second-color;
-    }
-    
-    .color-top-2{
-        background: $third-color;
-    }
 
-    .color-top-3{
-        background: $fourth-color;
-    }
-
-    
     .heading-sm{
-        color: black !important;
         margin-bottom: 10px;
         font-size: $font-size-three;
     }
@@ -1434,7 +1409,7 @@ a:hover{
     .service-blocks {
         padding-top: 20px;
         padding-bottom: 0px;
-        max-width:  $max-width - 50px;
+        max-width:  1600px;
         .service-blocks-header{
           
             h2, h3, h4{
@@ -1444,15 +1419,23 @@ a:hover{
         
     }
     .service-block{
-        max-width: 400px;
-        h4{
-            color: #444 !important;
-        }
+        max-width: 340px;
         margin: 0 auto;
         margin-bottom: 0px;
         padding-top: 20px;
         width: 100%;
 
+
+       h2{
+           font-size: $font-size-five;
+       }
+       h3, h4{
+           font-size: $font-size-four;
+       }
+       h5, li{
+           font-size: 14px;
+       }
+       
        ul{
            li{
             margin-bottom: 6px;
@@ -1467,10 +1450,19 @@ a:hover{
             text-decoration: none;
         }
 
+
+          .service-block-title{
+            h5{
+                font-style: italic;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
         .service-block-content{
             padding-top: 5px;
-            padding-left: 40px;
-            padding-right: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
     .service-block-default{
@@ -1499,7 +1491,7 @@ a:hover{
     .service-message{
             padding-top: 0px;
             h1,h2,h3,h4,h5,p{
-                color: white !important;
+                color: white;
             }
             table{
                 td{
@@ -1545,13 +1537,34 @@ a:hover{
                             color: $color;
                             }
                         }
-                    }
-            }
 
+                    i{color: darken($color, 5%);}
+
+                    .color-top{
+                        height: 13px;
+                        background: $color;
+                    }
+                    h2{
+                        color: #444;
+                    }
+                    h3{
+                        color: darken($color, 5%);
+                    }
+                    h4{
+                        color: #777;
+                        font-weight: $weight-light;
+                    }
+                    h5{
+                        color: $color;
+                        font-weight: $weight-light;
+                    }
+                    }     
+            }
+            @include service-block-color('service-block-color-5', $primary-color);
             @include service-block-color('service-block-color-4', $fourth-color);
             @include service-block-color('service-block-color-3', $third-color);
             @include service-block-color('service-block-color-2', $second-color);
-            @include service-block-color('service-block-color-1', $primary-color);
+            @include service-block-color('service-block-color-1', $fifth-color);
 
 }
 
@@ -1599,7 +1612,7 @@ a:hover{
 }
 
 
-.section-demo{
+.section-demo{        
     .sb-title{
         margin-bottom: 20px;
         h2{
