@@ -244,7 +244,7 @@ ADMIN_URL = r'^admin/'
 
 
 # Your common stuff: Below this line define 3rd party library settings
-HOME_PASSWORD = env('HOME_PASSWORD', default='synergy651')
+SITE_PASSWORD = env('DJANGO_SITE_PASSWORD', default='')
 DATA_PARLSEY_PREFIX = 'data-parsley'
 
 # MailChimp

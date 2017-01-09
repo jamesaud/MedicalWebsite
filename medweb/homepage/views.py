@@ -3,17 +3,19 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
 from medweb.homepage.forms import PersonForm, EvaluationForm, EmailForm, RandomReferralForm
-from config.settings.common import HOME_PASSWORD
+from config.settings.common import SITE_PASSWORD
 from medweb.homepage.models import Person, Evaluation, RandomReferral
 from functools import wraps  # Calling wraps inside a decorator keeps the docstring of the original function
 from medweb.homepage.view_helpers.views_form_helpers import handle_email_form
 from config.settings.common import MAILCHIMP_LIST_REPORT_ID, MAILCHIMP_LIST_CHART_ID
 
+# Decorator
 def pass_contact_form(view):
     """
     Explanation: A decorator which passes the contact form (Person form & Evaluation form) to a function
     How to use: Give your function a parameter "context", the decorator provides the intial context with the forms.
     Improve: Don't require a context variable, update the context after the fact. Prevents refactoring the view.
+    Improve: Pass the form to the decorator itself, allowing any form to be passed.
     """
     @wraps(view)
     def wrapper(*args, **kwargs):
@@ -21,42 +23,53 @@ def pass_contact_form(view):
         return view(context=context, *args, **kwargs)
     return wrapper
 
+#Decorator
+def password_required(view):
+    @wraps(view)
+    def wrapper(request, *args, **kwargs):
+        if not SITE_PASSWORD or (SITE_PASSWORD == request.session.get('password')): # If site password disabled or in cookies.
+            return view(request, *args, **kwargs) 
+        
+        message=''
+        if request.method == "POST":
+            if request.POST.get('password') == SITE_PASSWORD:
+                request.session['password'] = request.POST.get('password')
+                return view(request, *args, **kwargs)
+            else:
+                message = "Password Was Incorrect. Please Try Again."
 
+        return render(request, 'pages/homepage_login.html', context={'message': message})
+    return wrapper
+
+
+@password_required
 @pass_contact_form
 def index(request, context):
     context['email_form'] = EmailForm()
     context['random_referral_form'] = RandomReferralForm()
 
-    if HOME_PASSWORD == request.session.get('password'):
-        return render(request, 'pages/home.html', context=context)
-
-    elif request.method == "POST":
-        if request.POST.get('password') == HOME_PASSWORD:
-            request.session['password'] = request.POST.get('password')
-            return render(request, 'pages/home.html', context=context)
-
-        else:
-            message = "Password Was Incorrect. Please Try Again."
-            return render(request, 'pages/homepage_login.html', context={'message': message})
-
-    return render(request, 'pages/homepage_login.html', context={})
+    return render(request, 'pages/home.html', context=context)
 
 
+@password_required
 @pass_contact_form
 def test(request, context):
     return render(request, 'pages/test.html', context=context)
 
 
+@password_required
 @pass_contact_form
 def about(request, context):
     return render(request, 'pages/about.html', context=context)
 
 
+@password_required
 @pass_contact_form
 def invest(request, context):
     return render(request, 'pages/invest.html', context=context)
 
 
+@password_required
 @pass_contact_form
 def compare(request, context):
     context['email_form'] = EmailForm()
