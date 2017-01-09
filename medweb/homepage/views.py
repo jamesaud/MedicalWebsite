@@ -127,6 +127,7 @@ def submit_referral(request):
 
     return JsonResponse(response)
 
+
 def create(request):
     """
     Creates a user or/and evaluation.
