@@ -512,18 +512,25 @@ a:hover {
     .section-highlights .hi-intro-points .intro-block-2 .main-points-block {
       padding-top: 35px !important;
       padding-bottom: 15px !important; }
-  .section-highlights .hi-comp {
+  .section-highlights .hi-compare {
     padding-bottom: 40px;
     padding-top: 43px; }
-    .section-highlights .hi-comp .main-points {
-      padding-bottom: 35px !important;
+    .section-highlights .hi-compare .main-points {
+      padding-bottom: 25px !important;
       text-align: center;
       vertical-align: center; }
-      .section-highlights .hi-comp .main-points .main-points-title {
+      .section-highlights .hi-compare .main-points .main-points-title {
+        margin-bottom: 20px;
         color: black !important; }
-    .section-highlights .hi-comp h4 {
-      font-weight: 300; }
-    .section-highlights .hi-comp a, .section-highlights .hi-comp img {
+    .section-highlights .hi-compare h4 {
+      font-weight: 300;
+      line-height: 25px; }
+    .section-highlights .hi-compare h3 {
+      font-weight: 400;
+      color: #222;
+      margin-bottom: 50px;
+      margin-top: 0; }
+    .section-highlights .hi-compare a, .section-highlights .hi-compare img {
       z-index: 0;
       text-align: left;
       max-height: 250px;
@@ -1170,10 +1177,15 @@ a:hover {
     width: 100%; }
     .section-plans .service-block h2 {
       font-size: 18px; }
+    .section-plans .service-block h3 {
+      line-height: 20px; }
     .section-plans .service-block h3, .section-plans .service-block h4 {
       font-size: 15.5px; }
     .section-plans .service-block h5, .section-plans .service-block li {
       font-size: 14px; }
+    .section-plans .service-block hr {
+      margin-top: 17px;
+      margin-bottom: 17px; }
     .section-plans .service-block ul li {
       margin-bottom: 6px; }
       .section-plans .service-block ul li:last-child {
@@ -1181,10 +1193,15 @@ a:hover {
     .section-plans .service-block a, .section-plans .service-block a:visited {
       color: #555555;
       text-decoration: none; }
-    .section-plans .service-block .service-block-title h5 {
-      font-style: italic;
-      padding-left: 10px;
-      padding-right: 10px; }
+    .section-plans .service-block .service-block-title {
+      padding-left: 0px;
+      padding-right: 0px; }
+      .section-plans .service-block .service-block-title h5 {
+        font-style: italic;
+        padding-left: 10px;
+        padding-right: 10px; }
+      .section-plans .service-block .service-block-title span {
+        font-size: 13px; }
     .section-plans .service-block .service-block-content {
       padding-top: 5px;
       padding-left: 10px;
@@ -1204,6 +1221,11 @@ a:hover {
     padding-top: 0px; }
     .section-plans .service-message h1, .section-plans .service-message h2, .section-plans .service-message h3, .section-plans .service-message h4, .section-plans .service-message h5, .section-plans .service-message p {
       color: white; }
+    .section-plans .service-message h2 {
+      border-bottom: 2px solid white;
+      display: inline-block;
+      padding-right: 4px;
+      padding-bottom: 2px; }
     .section-plans .service-message table {
       padding-top: 0px;
       margin-bottom: 6px;
@@ -1221,13 +1243,13 @@ a:hover {
     .section-plans .message-block:last-child {
       margin-bottom: 60px; }
   .section-plans .plans-notice {
-    font-family: "Indie Flower", serif;
     border-top: none;
-    padding-top: 12px;
+    padding-top: 15px;
     text-align: center; }
     .section-plans .plans-notice p {
-      color: white !important;
-      font-size: 18px; }
+      font-family: "Indie Flower", serif;
+      font-size: 20px;
+      color: white !important; }
   .section-plans .service-block-color-5 li a:hover {
     color: #45AEEA; }
   .section-plans .service-block-color-5 i {
@@ -1641,7 +1663,8 @@ a:hover {
   padding: 0; }
 #modal-chart ul {
   list-style-type: none;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 0; }
 #modal-chart li {
   font-size: 15.5px; }
 #modal-chart #cd-table {
@@ -1651,9 +1674,14 @@ a:hover {
   padding-bottom: 0;
   font-size: 18px !important; }
 #modal-chart .cd-top-title {
-  padding-left: 15px !important; }
+  padding-left: 15px !important;
+  margin-top: 0; }
+#modal-chart .cd-top-title-wrapper {
+  padding-top: 5px; }
 #modal-chart .cd-left-title {
   margin-top: 0;
   padding-left: 0; }
+#modal-chart .cd-title {
+  background: #456 !important; }
 
 /*# sourceMappingURL=home.css.map */

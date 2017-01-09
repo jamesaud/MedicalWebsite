@@ -441,21 +441,29 @@ a:hover{
         }
     }
     
-    .hi-comp{
+    .hi-compare{
 
         padding-bottom: 40px;
         padding-top: 43px;
         .main-points{
-            padding-bottom: 35px !important;
+            padding-bottom: 25px !important;
             text-align: center;
             vertical-align: center;
             .main-points-title{
+                margin-bottom: 20px;
                 color: black !important;            
             }
         }
 
         h4{
             font-weight: $weight-light;
+            line-height: 25px;
+        }
+        h3{
+            font-weight: 400;
+            color: #222;
+            margin-bottom: 50px;
+            margin-top: 0;
         }
         
         a,img{
@@ -1431,13 +1439,19 @@ a:hover{
        h2{
            font-size: $font-size-five;
        }
+       h3{
+           line-height: 20px;
+       }
        h3, h4{
            font-size: $font-size-four;
        }
        h5, li{
            font-size: 14px;
        }
-       
+       hr{
+           margin-top: 17px;
+           margin-bottom: 17px;
+       }
        ul{
            li{
             margin-bottom: 6px;
@@ -1454,10 +1468,15 @@ a:hover{
 
 
           .service-block-title{
+              padding-left: 0px;
+              padding-right: 0px;
             h5{
                 font-style: italic;
                 padding-left: 10px;
                 padding-right: 10px;
+            }
+            span{
+                font-size: $font-size-six;
             }
         }
 
@@ -1495,6 +1514,12 @@ a:hover{
             h1,h2,h3,h4,h5,p{
                 color: white;
             }
+            h2{
+                border-bottom: 2px solid white;
+                display: inline-block;
+                padding-right: 4px;
+                padding-bottom: 2px;
+            }
             table{
                 td{
                     padding-top: 4px;
@@ -1520,13 +1545,13 @@ a:hover{
     }
 
     .plans-notice{
-        font-family:  $font-fun;
         border-top: none;
-        padding-top: 12px;
+        padding-top: 15px;
         text-align: center;
         p{
+            font-family:  $font-fun;
+            font-size: 20px;
             color: white !important;
-            font-size: $font-size-five;
         }
     }
 
@@ -2029,6 +2054,7 @@ a:hover{
     ul{
         list-style-type: none;
         padding: 0;
+        margin-bottom: 0;
     }
     li{
         font-size: $font-size-four;
@@ -2045,10 +2071,18 @@ a:hover{
     
     .cd-top-title{
         padding-left: 15px !important;
+        margin-top: 0;
     }
+
+    .cd-top-title-wrapper{padding-top: 5px;}// Fix the offset from setting margin-top to 0 for cd-top-title
+
     .cd-left-title{
         margin-top: 0;
         padding-left: 0;
+    }
+
+    .cd-title{
+        background: #456 !important;
     }
 
 }
