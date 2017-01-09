@@ -1676,7 +1676,9 @@ a:hover {
 #modal-chart h2 {
   margin-bottom: 0 !important;
   padding-bottom: 0;
-  font-size: 18px !important; }
+  font-size: 18px !important;
+  padding-left: 0px;
+  padding-right: 0px; }
 #modal-chart .cd-top-title {
   padding-left: 15px !important;
   margin-top: 0; }
