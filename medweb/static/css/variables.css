@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 @font-face {
   font-family: Vollkorn, serif;
   src: url(https://fonts.googleapis.com/css?family=Vollkorn); }
@@ -10,5 +11,7 @@
   padding-right: 65px;
   font-size: 15.5px;
   border-radius: 50em; }
+
+/* Custom Modals */
 
 /*# sourceMappingURL=variables.css.map */

@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 @font-face {
   font-family: Vollkorn, serif;
   src: url(https://fonts.googleapis.com/css?family=Vollkorn);
@@ -13,9 +14,13 @@
   border-radius: 50em;
 }
 
+/* Custom Modals */
 #our-team {
   padding-top: 65px;
   padding-bottom: 30px;
+}
+#our-team .headline-center {
+  margin-bottom: 40px;
 }
 #our-team .headline-center h2:after {
   background: #45AEEA !important;
@@ -35,14 +40,18 @@
 }
 #our-team h5 {
   text-align: justify !important;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-top: 10px;
+  max-width: 275px;
+  margin: 0 auto;
 }
 #our-team .team-v6 {
   margin-bottom: 40px;
 }
 #our-team .team-v6:last-child {
   margin-bottom: 0px;
+}
+#our-team .team-v6 .team-v6-block {
+  margin-bottom: 20px;
 }
 
 .cd-horizontal-timeline {
@@ -107,6 +116,18 @@
   padding-bottom: 10px;
   border-bottom: 3px solid #777;
   border-top: 3px solid #777;
+}
+
+/* Styling the front page slider */
+@media screen and (min-height: 769px) {
+  .rev_slider_wrapper {
+    min-height: 600px !important;
+  }
+}
+@media screen and (max-height: 768px) {
+  .rev_slider_wrapper {
+    min-height: 400px !important;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */

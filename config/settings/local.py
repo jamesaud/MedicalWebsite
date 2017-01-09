@@ -53,7 +53,7 @@ if os.environ.get('USE_DOCKER') == 'yes':
     ip = socket.gethostbyname(socket.gethostname())
     INTERNAL_IPS += [ip[:-1]+"1"]
     # With docker, the above fix doesn't work with docker-machine
-    INTERNAL_IPS += [env('REMOTE_ADDRESS')]
+    INTERNAL_IPS += [env('REMOTE_ADDRESS', default='1')]
 
 
 DEBUG_TOOLBAR_CONFIG = {

@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import 'variables';
+@import 'bourbon/bourbon';
 
 p {
     font-size: $font-size-four;
@@ -28,10 +29,7 @@ a:hover{
  h3{
     font-weight: bold;
     }
-    
- .main-points-block{
-   }
-    
+
     .main-points-header{
         color: black !important;
     }
@@ -294,9 +292,6 @@ a:hover{
                             max-width: 700px;
                             margin: 0 auto;
                     
-                            
-                            .tab-pane{
-                            }
                 }
                 
                 
@@ -313,7 +308,7 @@ a:hover{
         }
 
     }
-}
+ } 
 
 .section-highlights{
     
@@ -361,40 +356,7 @@ a:hover{
         }
     }
     
-     .hi-intro-3{
-         position: relative !important;
-        @extend .hi-intro;
-          padding-top: 40px;
-         padding-bottom: 55px;
-         margin-bottom: 0px;
-      
-         
-         h3{
-             color: white;
-        }
-         
-         .hi-intro-title{
-             margin-bottom: 30px;
-             
-                }
-         span{
-             font-style: italic;
-             font-weight: bold;
-         }
-         button{
-             margin-bottom: 5px;
-             margin-right: 2px;
-         }
-         input{
-             font-size: $font-size-four;
-         }
-         input, button{
-             border-right: none;
-             max-width: 300px;
-             height: 50px;
-         }
-    }
-    
+   
     .hi-intro-4{
         @extend .hi-intro;
         padding-bottom: 50px;
@@ -479,17 +441,29 @@ a:hover{
         }
     }
     
-    .hi-comp{
+    .hi-compare{
 
         padding-bottom: 40px;
         padding-top: 43px;
         .main-points{
-            padding-bottom: 35px !important;
+            padding-bottom: 25px !important;
             text-align: center;
             vertical-align: center;
             .main-points-title{
+                margin-bottom: 20px;
                 color: black !important;            
             }
+        }
+
+        h4{
+            font-weight: $weight-light;
+            line-height: 25px;
+        }
+        h3{
+            font-weight: 400;
+            color: #222;
+            margin-bottom: 50px;
+            margin-top: 0;
         }
         
         a,img{
@@ -527,9 +501,6 @@ a:hover{
 
 
         .main-points{
-            .main-points-title{
-                //padding-bottom: 0px !important;
-            }
             .main-points-block{
                 i {
                     padding-bottom: 15px;
@@ -561,11 +532,7 @@ a:hover{
             width: 550px; /* Max Width of the popover (depending on the container!) */
             max-width: 550px;
             z-index: 5;
-            p{
-                text-decoration: underline;
-                text-align: center;
-                padding: 0;
-            }
+         
             ul{
                 padding-left: 20px;
             }
@@ -574,6 +541,10 @@ a:hover{
                 &:last-child{
                     margin-bottom: 0px;
                 }
+            }
+            h5{
+                word-wrap: normal;
+                white-space: normal;
             }
         
         }
@@ -614,12 +585,6 @@ a:hover{
     #hover-over{
         font-family: $font-fun;
         font-size: $font-size-three;
-    }
-    
-    .main-points{
-        .main-points-title{
-            //padding-bottom: 0px !important;
-        }
     }
     
     .circle-text{
@@ -701,6 +666,110 @@ a:hover{
         margin-bottom: 20px;
     }
 }
+ 
+  .section-email{
+         position: relative !important;
+         text-align: center;
+         padding-top: 60px;
+         padding-bottom: 50px;
+         margin-bottom: 0px;
+         .main-points{
+            h2{color:black;}
+            h3{font-weight: $weight-light;}
+         }
+         
+        h3{
+             color: white;
+        }
+
+        h2{
+            color: white !important;
+            }
+        
+         
+        .email-intro-title{
+             margin-bottom: 10px;
+        }
+         span{
+             font-style: italic;
+             font-weight: bold;
+         }
+         .tiny-text{
+             margin-left: 6px;
+             text-decoration: underline;
+             font-size: 12px;
+         }
+         .tooltip{
+               z-index: 1;
+         }
+         .tooltip.top .tooltip-inner{
+             background-color: white;
+             color: #333;
+             }
+         button{
+             margin-bottom: 5px;
+             margin-right: 2px;
+         }
+         * { -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; border-radius: 0 !important; }
+         input{
+             font-size: $font-size-four;
+             position: relative;
+
+         }
+         input[type=email]{
+             z-index: 2;
+             width: 60%;
+             max-width: 300px;
+         }
+
+         $height: 50px;
+         input, button{
+             border-right: none;
+             height: $height;
+             display: inline-block;
+         }
+
+         @media screen and (max-width: 500px){
+             //input,label,form makes everything fit in one row under 450px
+             input[type=email]{
+                width: 50%;
+             }
+             form{
+                 margin: 0 auto;
+                 text-align: justify;
+             }
+         }
+
+         .checkbox{
+             bottom: -19px;
+             right: -4px;
+             display: inline-block;
+             .cr{
+                margin: 0;
+                border-right-width: 0px !important;
+                border-color: #ccc;
+                background: white;
+                width: $height;
+                height: $height;
+                display: inline-block;
+            }
+             .cr-icon{
+                color: $primary-color;
+                z-index: 1; // Overlay on top of the placeholder checkmark 
+             }
+             label{
+                 font-size: 38px;
+                 }
+             .cr-placeholder{
+                position: absolute;
+                right: 9px;
+                top: 9px;
+                font-size: 30px; 
+                color: rgba(#999, .6);
+            }
+        }
+    }
+    
 
 .section-insights{
     .si-message{
@@ -782,8 +851,8 @@ a:hover{
         }
         .si-message-btn-2{
             @extend %si-message-btn;
-            border: $btn-color-2 1.4px solid;
-            @include transparentBackgroundColor(.8, $btn-color-2, !important); 
+            border: darken($btn-color-2, 8%) 1.4px solid; 
+            @include transparentBackgroundColor(.90, $btn-color-2, !important); 
         }
 
         //For readmore.js
@@ -900,6 +969,7 @@ a:hover{
         padding-top: 50px;
         padding-bottom: 40px;
         h2{color: black;}
+        h4{font-weight: $weight-light;}
         a{
             color: $third-color;
         }
@@ -971,6 +1041,43 @@ a:hover{
 
    
 
+}
+
+.cd-testimonials-wrapper:after{
+            font-size: 70px !important;
+            line-height: 75px;
+            @include transparentBackgroundColor(.8, $second-color);
+            height: 55px;
+}
+
+
+//In the why-us section
+.cd-testimonials{
+    p{
+        font-size: $font-size-three !important;
+        color: white !important;
+    }
+    li{
+        color: $primary-color; 
+        list-style-type: none !important;
+        list-style: none;
+        &:first-child{
+            color: $second-color;
+        }
+        }
+
+        .cd-author-info {
+            //margin-left: 42px !important;
+			line-height: 1.4;
+
+			li:first-child {
+				font-size: $font-size-four;
+			}
+
+			li:last-child {
+				font-size: $font-size-six;
+			}
+		}    
 }
 
 
@@ -1075,14 +1182,16 @@ a:hover{
 .section-benefits{
     // Prevents awkward resizing and text-wrapping at some widths
     @media screen and (min-width: 1100px){
-        > .container{
-            min-width: 1100px !important;
+         .container{
+            min-width: 1050px !important;
         }
-    
     }
     margin-bottom: 25px;
     .sb-benefits{
         margin-bottom: 0px;
+              li{
+            font-weight: $weight-light;
+        }
     }
     
     .sb-title{
@@ -1110,7 +1219,6 @@ a:hover{
             .main-points-block-title{
                 text-align: center;
                 padding-bottom: 5px;
-                h3{}
             }
             
             ul {
@@ -1120,6 +1228,7 @@ a:hover{
                 display:inline-block;
                 zoom:1;
                 *display:inline;
+                padding-left: 50px;
                 
                 li {
                     line-height: 30px;
@@ -1144,19 +1253,41 @@ a:hover{
     margin: 0 auto;
     max-width: $max-width;
     
-
+    .cd-slider-navigation{min-width: 310px;} // Make sure on mobile the dots are in a single line
     
     .cd-slider-wrapper{
         padding-bottom: 0;
-
+        max-height: 800px;
+        min-height: 600px;
     }
     
     @media (min-width: 992px) {
         .cd-slider-wrapper{
-            max-height: 900px;
+            max-height: 800px;
         }
     }
-    
+
+    @media screen and (max-width: 901px){
+        //Set height explicityly for the slider sadly.
+        .cd-slider-wrapper{
+            height: 950px !important; 
+            max-height: 950px !important;
+            }
+    }
+    @media screen and (max-width: 600px){
+        //Set height explicityly for the slider sadly.
+        .cd-slider-wrapper{
+            height: 1400px !important;
+            max-height: 1400px !important;
+            }
+    }
+    @media screen and (max-width: 400px){
+        //Set height explicityly for the slider sadly.
+        .cd-slider-wrapper{
+            height: 1600px !important;
+            max-height: 1600px !important;
+            }
+    }
     
     .cd-slider-navigation{
         z-index: 1;
@@ -1177,11 +1308,7 @@ a:hover{
         
     }
     
-    .content-white{
-        h2,p{
-            color: white;
-        }
-    }
+
     
     .btn-color{
         @include color_btn($third-color);    }
@@ -1195,23 +1322,22 @@ a:hover{
 
 .section-plans{
     background: #3E4747 !important; 
-    h4{color: white !important;}
     .plans-btn-wrapper{
                 margin-top: 32px !important;
     }
 
   .plans-intro{
-         text-align: center;
+        text-align: center;
         padding-top: 20px;
         padding-bottom: 0px !important;
         
-        .main-points{
-            h2{color: #eee;}
-            h3{font-weight: $weight-light;}
-            h4{
-                color: white !important;
-            }
+
+        h2{color: #eee;}
+        h3{font-weight: $weight-light;}
+        h4{
+            color: white !important;
         }
+        
         padding-bottom: 50px;
         .btn-color-1{
             @include color_btn($second-color);
@@ -1241,6 +1367,7 @@ a:hover{
                 transition: all .3s;
             }
         }
+
     }
   
 
@@ -1265,57 +1392,31 @@ a:hover{
     .popover{
         z-index: 3;
         width: 250px;
+  
         li, h5{
             margin-bottom: 0px;
-            font-size: 14px !important;
         }
-        h5{
-            margin-bottom: 0px !important;
-        }
+      
     }
     
     .title{
         margin-bottom: 20px;
         text-align: center;
-        h2{
+        h1,h2,h3,h4,h5{
             color: white !important;
         }
-        h1{
-            color: white !important;
-        }
+      
     }
 
     .title-message{
         h5{
             color: white;
         }
+   
         padding-bottom: 30px !important;
     }
-    
-   
-    .color-top-0, .color-top-1, .color-top-2, .color-top-3, {
-        height: 20px;
-    }
-    
-     .color-top-0{
-        background: $primary-color;
-    }
-    
-    .color-top-1{
-        background: $second-color;
-    }
-    
-    .color-top-2{
-        background: $third-color;
-    }
 
-    .color-top-3{
-        background: $fourth-color;
-    }
-
-    
     .heading-sm{
-        color: black !important;
         margin-bottom: 10px;
         font-size: $font-size-three;
     }
@@ -1324,11 +1425,9 @@ a:hover{
     .service-blocks {
         padding-top: 20px;
         padding-bottom: 0px;
-        max-width:  $max-width - 50px;
+        max-width:  1400px;
         .service-blocks-header{
-            h2{
-                margin-bottom: 10px;
-            }
+          
             h2, h3, h4{
                 color: white !important;
             }
@@ -1336,14 +1435,29 @@ a:hover{
         
     }
     .service-block{
-        h4{
-            color: #444 !important;
-        }
+        max-width: 340px;
         margin: 0 auto;
         margin-bottom: 0px;
         padding-top: 20px;
         width: 100%;
 
+
+       h2{
+           font-size: $font-size-five;
+       }
+       h3{
+           line-height: 20px;
+       }
+       h3, h4{
+           font-size: $font-size-four;
+       }
+       h5, li{
+           font-size: 14px;
+       }
+       hr{
+           margin-top: 17px;
+           margin-bottom: 17px;
+       }
        ul{
            li{
             margin-bottom: 6px;
@@ -1358,10 +1472,24 @@ a:hover{
             text-decoration: none;
         }
 
+
+          .service-block-title{
+              padding-left: 0px;
+              padding-right: 0px;
+            h5{
+                font-style: italic;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            span{
+                font-size: $font-size-six;
+            }
+        }
+
         .service-block-content{
             padding-top: 5px;
-            padding-left: 40px;
-            padding-right: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
     .service-block-default{
@@ -1388,12 +1516,30 @@ a:hover{
         }
     }
     .service-message{
-            h1,h2,h3,h4,h5,p{
-                color: white !important;
-            }
-
             padding-top: 0px;
-    }
+            h1,h2,h3,h4,h5,p{
+                color: white;
+            }
+            h2{
+                border-bottom: 2px solid white;
+                display: inline-block;
+                padding-right: 4px;
+                padding-bottom: 2px;
+            }
+            table{
+                td{
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                    padding-right: 20px;
+                }
+                padding-top: 0px;
+                margin-bottom: 6px;
+                margin-top: 0px;
+            }
+            span{
+                font-weight: bold;
+            }
+    } 
 
     .message-block{
         text-align: left;
@@ -1405,13 +1551,13 @@ a:hover{
     }
 
     .plans-notice{
-        font-family:  $font-fun;
         border-top: none;
-        padding-top: 12px;
+        padding-top: 15px;
         text-align: center;
         p{
+            font-family:  $font-fun;
+            font-size: 20px;
             color: white !important;
-            font-size: $font-size-five;
         }
     }
 
@@ -1424,13 +1570,34 @@ a:hover{
                             color: $color;
                             }
                         }
-                    }
-            }
 
+                    i{color: darken($color, 5%);}
+
+                    .color-top{
+                        height: 13px;
+                        background: $color;
+                    }
+                    h2{
+                        color: #444;
+                    }
+                    h3{
+                        color: darken($color, 5%);
+                    }
+                    h4{
+                        color: #777;
+                        font-weight: $weight-light;
+                    }
+                    h5{
+                        color: $color;
+                        font-weight: 400;
+                    }
+                }     
+            }
+            @include service-block-color('service-block-color-5', $primary-color);
             @include service-block-color('service-block-color-4', $fourth-color);
             @include service-block-color('service-block-color-3', $third-color);
             @include service-block-color('service-block-color-2', $second-color);
-            @include service-block-color('service-block-color-1', $primary-color);
+            @include service-block-color('service-block-color-1', $fifth-color);
 
 }
 
@@ -1467,8 +1634,6 @@ a:hover{
     #hex-3{background: $third-color;}
     #hex-4{
         background-color: $seventh-color;
-        h1{
-           }
         h1:after{
             border-bottom: 0px solid black !important;
         }
@@ -1480,14 +1645,21 @@ a:hover{
 }
 
 
-.section-demo{
+.section-demo{        
     .sb-title{
         margin-bottom: 20px;
+        h2{
+            font-weight:  500; 
+        }
     }
     
     .demo-content{
         h2{
             color: black;
+        }
+        h5{
+            color: #444 !important;
+            font-weight: 500 ;
         }
     }
     
@@ -1674,7 +1846,6 @@ a:hover{
             margin:0px;
             text-align: center;
             display: block;
-            vertical-align: middle;
             padding: 10px;
             min-height: 70px;
             font-weight: 500;
@@ -1774,16 +1945,17 @@ a:hover{
 
 .rev_slider_wrapper{
     //Styling the TP-BANNER Slider
-    .Newspaper-Subtitle, .tp-tab-title{
-        color: #AEDBF7 !important;
-    }
-    
-    //Change background shading to darker
-    .tp-shape {
-        background-color: rgba(0, 0, 0, 0.4002) !important;
+    .tp-tab-desc{
+        color: rgb(249, 237, 0) !important;
+        //color: rgb(252, 236, 58) !important;
     }
 }
 
+// Force max height on the front slideshow
+.rev_slider_wrapper, .rev_slider, .forcefullwidth_wrapper_tp_banner{
+    max-height: 700px !important; 
+    min-height: 600px !important;
+}
 
 #modal-guarantee{
     .modal-header, .modal-dialog, .modal-body, .modal-footer{
@@ -1863,11 +2035,18 @@ a:hover{
 }
 
 
+// SET Z-INDEXES HERE
+.rev_slider_wrapper{
+        z-index: 201 !important;
+}
 
 
-#modal-test{
+
+
+
+#modal-chart{
     .close-button{
-        right: 10px !important;
+        right: -25px !important;
         top: -20px !important;
         button{
             color: white !important;
@@ -1881,6 +2060,7 @@ a:hover{
     ul{
         list-style-type: none;
         padding: 0;
+        margin-bottom: 0;
     }
     li{
         font-size: $font-size-four;
@@ -1892,15 +2072,25 @@ a:hover{
         margin-bottom: 0 !important;
         padding-bottom: 0;
         font-size: $font-size-five !important;
-
+        padding-left: 0px;
+        padding-right: 0px;
+    
     }
     
     .cd-top-title{
         padding-left: 15px !important;
+        margin-top: 0;
     }
+
+    .cd-top-title-wrapper{padding-top: 5px;}// Fix the offset from setting margin-top to 0 for cd-top-title
+
     .cd-left-title{
         margin-top: 0;
         padding-left: 0;
+    }
+
+    .cd-title{
+        background: #456 !important;
     }
 
 }

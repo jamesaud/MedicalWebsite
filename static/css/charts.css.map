@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "../../app/medweb/static/css/charts.css",
-	"sources": [
-		"../../app/medweb/static/css/charts.scss"
-	],
-	"mappings": "",
-	"names": []
-}

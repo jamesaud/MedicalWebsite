@@ -1,8 +1,5 @@
 version: '2'
 
-volumes:
-  postgres_data_dev: {}
-  postgres_backup_dev: {}
 
 services:
   # DJANGO BUILD SPECIFICATIONS
@@ -13,6 +10,8 @@ services:
       - postgres_backup_dev:/backups
     environment:
       - POSTGRES_USER=medweb
+      - POSTRES_PASSWORD=medweb
+
 
   django:
     build:
@@ -21,12 +20,9 @@ services:
     command: python /app/manage.py runserver_plus 0.0.0.0:8000
     depends_on:
       - postgres
-    environment:
-      - POSTGRES_USER=medweb
-      - USE_DOCKER=yes
-      - REMOTE_ADDRESS=192.168.99.1
-      # REMOTE_ADDRESS  is use django debug toolbar, check
-      # http://stackoverflow.com/questions/10517765/django-debug-toolbar-not-showing-up
+    env_file: .env_test  # For hidden variables like the mailchimp api key
+
+
     volumes:
       - .:/app
     ports:

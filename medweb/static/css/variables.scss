@@ -1,7 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
 $font-primary:    'Open Sans', serif;
+$font-two:        'Lato', sans-serif;
+
 $font-fun:        'Indie Flower', serif;
+
 $font-size-one:  27px;
 $font-size-two:   30px;
 $font-size-three:  24px;
@@ -46,13 +50,16 @@ $weight-light: 300;
     padding-left: 65px;
     padding-right: 65px;
     font-size: $font-size-four;
-      border-radius: 50em;
+    border-radius: 50em;
 
 }
 
+// Unecessary, replace all uses with rgba(color, transparency)
 @mixin transparentBackgroundColor($alpha, $color, $important:null) {
   background-color: rgba(red($color), green($color), blue($color), $alpha) $important;
 }
+
+
 
 @mixin color_btn($color){
     @extend .__color-button;
@@ -66,5 +73,42 @@ $weight-light: 300;
         }
     }
 
+/* Custom Modals */
+@mixin modalSmall($width){
+    .modal-dialog, .modal-body, .modal-header{
+        max-width: $width;
+        }
+        
+    .modal-footer{
+        padding-top: 0;
+    }
+    .modal-body{
+        padding-top: 0px;
+        padding-bottom: 10px;
+        margin-top: 3.5%;
+    }
+    .modal-body, .modal-header{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
 
+    .contact-title{
+        img{
+            margin-top: 15px;
+        }
+        .m-contact-title{
+            padding-top: 10px;
+        }
+        .modal-title{
+            font-size: $font-size-four;
+        }
+    }
+
+    .contact-message{
+        h5{
+            color: #555;
+            font-weight: $weight-light;
+        }
+    }
+}
 

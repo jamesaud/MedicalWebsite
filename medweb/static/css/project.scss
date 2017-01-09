@@ -1,3 +1,4 @@
+@import 'bourbon/bourbon';
 @import 'variables';
 
 .bg-blue {
@@ -23,9 +24,7 @@
     font-weight: bold;
     }
     
- .main-points-block{
-   }
-    
+
     .main-points-header{
         color: black !important;
     }
@@ -59,22 +58,22 @@ hr{
 
 #cd-nav-text{
     position: absolute;
-    left: 28%;
+    left: 24%;
     
-    margin-top: 1.4%;
+    margin-top: 15px;
     h5{
-        font-size: 12px;
-        color: black !important;
+    
+        text-align: center;
+        font-size: $font-size-four;
+        line-height: 20px !important;
+        color: $third-color !important;
         line-height: 17px;
+        
     }
 }
 
 
-.cd-navbar-wrapper{
-    .cd-auto-hide-header{
-        z-index: 10 !important;
-    }
-}
+
 
 .cd-primary-nav > ul a:hover, .cd-primary-nav > ul a.active{
     text-decoration: none !important;
@@ -82,7 +81,6 @@ hr{
 }
 
 .cd-secondary-nav{
-    z-index: 10 !important;
     li{
         a{
             font-size: $font-size-four;
@@ -95,13 +93,6 @@ hr{
     }
 }
 
-
-@media only screen and (min-width: 1024px){
-    .cd-secondary-nav{
-        //Change height here?
-    }
-    
-}
 
 //END NAVBAR
 
@@ -135,6 +126,8 @@ hr{
             }
     }
     .popover{
+        width: 450px;
+        max-width: 450px;
         h5{
         margin: 0;
         padding-top: 0 !important;
@@ -145,7 +138,7 @@ hr{
          width: 100%;
         font-size: 12px !important;
         position: absolute;
-        right: -11px;
+        right: -14px;
         top: 20px;
     }
     
@@ -156,6 +149,14 @@ hr{
         display: none;
     }
 }
+
+#cd-navigation{
+    li{
+        margin-right: 25px;
+        font-family: $font-two;
+    }
+}
+
 
 @media screen and (max-width: 1023px){
         #cd-navigation{
@@ -215,11 +216,11 @@ hr.no-margin{
 
 /* To be below fixed nav bar */
 .content-main { 
-    margin-top: 75px !important; 
+    margin-top: 80px !important; 
 }
 
-@media screen and (max-width: 1025px) {
-    .content-main { margin-top: 65px !important; }
+@media screen and (max-width: 1100px) {
+    .content-main { margin-top: 60px !important; }
 }
 
 
@@ -239,9 +240,8 @@ hr.no-margin{
 .sidebar {
     position: fixed;
     float:left;
-    margin-top: 10%;
+    margin-top: 15%;
     @include transparentBackgroundColor(.9, #FFFFFF);
-    z-index: 500;
     padding-left: 10px;
     padding-top: 10px;
     padding-right: 10px;
@@ -284,9 +284,6 @@ hr.no-margin{
         #sidebar-phone{
             h5{color: $third-color;}
         }
-        #sidebar-contact{}
-        #sidebar-live-chat{}
-        
         
         .sidebar-content{
             display: none;
@@ -320,7 +317,7 @@ hr.no-margin{
 }
 
  .sidebar:hover{
-            width: 150px;
+            width: 170px;
             .sidebar-content{
                 display: inline;
                 top: -2px;
@@ -336,13 +333,11 @@ hr.no-margin{
 
 
 #call-now-info{
-    z-index: 500;
     position: absolute;
 }
 
 .call-now-wrapper{
-    ul{
-    }
+ 
     li{
         float: right;
     }
@@ -358,8 +353,8 @@ hr.no-margin{
 }
 
 .tiny-text{
-            font-size: 10px !important;             
-        }
+        font-size: 10px;             
+    }
             
 .no-wrap{
      overflow: visible;
@@ -394,7 +389,6 @@ hr.no-margin{
         right: 8px;
         top: 0px;
         position: absolute;
-        z-index: 1000;
         //Default boostrap close button class
         .close {
             font-size: 35px !important;
@@ -475,67 +469,61 @@ hr.no-margin{
 
 /* END CUSTOM MODAL STYLE  */
 
-#modal-contact{
-   .modal-dialog{
+//Modals
+#modal-thanks{
+    @include modalSmall(500px);
+
+    h5{
+        margin-top: 9px !important;
+        color: #333 !important;
     }
-    
-   .modal-dialog, .modal-body, .modal-header{
-        max-width: 550px;
-        }
-    
-    .modal-body, .modal-header{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    
-    .modal-footer{
-        padding-top: 0;
+    .modal-header{
+        text-align: left;
     }
     .modal-body{
-        padding-top: 0px;
-        padding-bottom: 10px;
+        padding-top: 20px;
+        text-align: center;
     }
-    
-   .contact-title{
-       text-align: left;
-       margin-bottom: 0px;
-       padding-top: 18px;
-       
-       .m-contact-title{
-            margin-bottom: 10px;
-           color: #333 !important;
-           font-size: 22px;
-            font-weight: 300;
-        }
-        h5{
-            color: #777 !important;
-            font-size: $font-size-four;
-            
-                   font-weight: 300;
-       }
-       .bt-form__wrapper{
-           margin-bottom: 0px;
-           margin-top: 0px;
-       }
+    .inquire-close-button{
+        width: 100%;
+        margin-top: 50px;
     }
-    
-    
-    #textarea-message{
-        min-height: 70px;
+    .form-title{
+       // border: none !important;
+        color: $primary-color;
+        padding-bottom: 0px;
+        margin-bottom: 25px;
     }
-    
-    #contact-tab-15{
-           .inquire-title {
-               h3{
-                   margin-bottom: 30px;
-               }
-            }
-    }
+ 
     
 }
 
+#modal-contact{
+   @include modalSmall(700px);
+   ul{
+       padding-left: 20px ;
+       padding-top: 3px;
+   }
+   li{
+       margin-bottom: 6px;
+   }
+}
 
+#modal-demo{
+    @include modalSmall(700px);
+    
+}
+/* end custom modals */
 
+/* Utility css */
+
+// Centering
+@media screen and (min-width: 768px){
+    .vcenter {
+        display: flex;
+        align-items: center;
+    }
+}
 
 
 .inline{
@@ -548,7 +536,7 @@ hr.no-margin{
 }
 
 hr.no-bottom{
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 hr.no-top{
     margin-top: 0 !important;
@@ -633,11 +621,22 @@ hr.no-top{
     background: $seventh-color;
 }
 
+.em-bold{
+             font-style: italic;
+             font-weight: bold;
+        }
+
+.hidden-smooth{
+    opacity: 0;
+    @include transition(opacity .6s);
+}
+/* utility end */
 
 
-
-
-    .inquire-finish{
+// Styling some modal common style.
+.inquire-finish{
+    padding-left: 7%;
+    padding-right: 7%;
         .inquire-title{
             padding-top: 15%;
         }
@@ -650,11 +649,8 @@ hr.no-top{
 
     .inquire-title{
         text-align: center;
-        padding-top: 20px;
+        padding-top: 0px;
         padding-bottom: 0px;
-        h4{
-            //color: $primary-color;
-        }
         h2{
             color:black;
         }
@@ -662,6 +658,7 @@ hr.no-top{
 
 //Styling forms
     form{
+        
         .form-title{
             border-bottom: 2px solid $primary-color;
             display: inline-block;
@@ -705,8 +702,17 @@ hr.no-top{
 
         .form-button{
         margin-top: 28px;
-    }
+        }
 
+        input, textarea{
+            @include placeholder{
+                font-weight: $weight-light;
+            }
+        }
+
+        .form-message textarea{
+        min-height: 80px;
+    }
 
     .contact-btn{
         font-size: $font-size-four;
@@ -736,14 +742,148 @@ hr.no-top{
 
 
 
-    }
+}
 
 
 
 
-//Use to debug whitespace
+//Use to debug extra whitespace
 /*
 div, span, p, h1, h2, h3, h4, h5{
     border: 1px solid black !important;
 }
 */
+
+//Footer width
+.footer-v1{
+    position: relative;
+    z-index: 5;    
+}
+
+
+//Checkbox code 
+//http://bootsnipp.com/snippets/featured/animated-radios-amp-checkboxes-nojs
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+//End checkbox
+
+#userlike-tab{
+    background: $primary-color !important;
+}
+
+// Set z-indexes here
+#userlike-tab{
+    z-index: 4 !important;
+}
+
+.cd-navbar-wrapper{
+    .cd-auto-hide-header{
+        z-index: 210 !important;
+    }
+}
+.cd-secondary-nav{
+z-index: 210 !important;} 
+.sidebar{
+        z-index: 500;
+}
+
+#call-now-info{
+        z-index: 500;
+}
+
+.modal-fullscreen .close-button{
+        z-index: 1000;
+}
+
+
+
+/* 5 Columns */
+//Extend this class to enable 15 grid.
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}

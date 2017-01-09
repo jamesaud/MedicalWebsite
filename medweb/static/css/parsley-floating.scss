@@ -39,10 +39,14 @@ $error-color: darken($error-bg, 35);
 .bt-form__wrapper {
   margin: 15px auto;
   max-width: 500px;
+
+  .text-area-wrapper .text-area-title{
+  z-index: 2;
+  }
 }
 
 .bt-flabels {
-  input[type='text'], input[type='number'], select, textarea {
+  input[type='text'], input[type='number'], input[type='email'], select, textarea {
     position: relative;
     padding-left: 10px;
     width: 100%;
@@ -59,7 +63,7 @@ $error-color: darken($error-bg, 35);
   }
     
 
-  input[type='text'], input[type='number'], select, textarea{
+  input[type='text'], input[type='number'], input[type='email'], select, textarea{
         height: 41px;
         background: transparent;
         transition: background 0.3s $anim, border-color 0.3s $anim;      
@@ -119,7 +123,7 @@ $error-color: darken($error-bg, 35);
 }
 .bt-flabels__error {
   
-  input[type='text'], input[type='number'], select, textarea {
+  input[type='text'], input[type='number'], input[type='email'], select, textarea {
     background: $error-bg;
     
     &:focus {
@@ -143,7 +147,7 @@ $error-color: darken($error-bg, 35);
     transform: translateY(0);
   }
   
-  input[type='text'], input[type='number'] {
+  input[type='text'], input[type='number'], input[type='email'] {
     padding-top: 9px;
   }
 }

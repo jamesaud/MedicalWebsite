@@ -1,5 +1,6 @@
- {% load staticfiles i18n %}
+{% load staticfiles i18n %}
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -26,7 +27,7 @@
     {% block css %}
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="{%  static 'images/site_icon/favicon.png' %}">
 
         <!-- Web Fonts -->
         <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
@@ -84,6 +85,16 @@
 
     {% block more-css %}{% endblock more-css %}
 
+{% block header-js %}
+
+    	<!-- JS Global Compulsory -->
+        <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery-migrate-1.4.1.min.js' %}"></script>
+
+    <!-- MODERNIZR -->
+    <script type="text/javascript" src="{% static 'standalone/pointy-slider/js/modernizr.js' %}"></script>
+
+{% endblock header-js %}
 
     </head>
 
@@ -111,12 +122,12 @@
 	<div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo1.png' %}" alt="Logo"></a></div>
 
 
-   <div id='cd-nav-text'><!--<h5>Doctors &amp; Staff Save So Much Time, Patient Care Is Optimized <br>Net Income Rises As Non-clinical Issues Become Non-Issues <br>Doctors Practice Medicine Their Way, Patients Get Healthier</h5>-->
-   <h5>
-   This preliminary site is for investors &amp; funding<br>
-   The content is subject to change for sales
+   <div id='cd-nav-text'>
+    <!--<h5>
+   "The Game Changer In<br>IT Health Services"
+   </h5>-->
    </div>
-
+   
 	<nav class="cd-primary-nav">
 
 		<a href="#cd-navigation" class="nav-trigger">
@@ -131,11 +142,14 @@
 		<ul id="cd-navigation">
 			<li><a href="{% url 'home' %}">Home</a></li>
 			<li><a href="{% url 'about' %}">About Us</a></li>
-            <li><a href="{% url 'invest' %}">Investors</a></li>
+            <!--<li><a href="{% url 'invest' %}">Investors</a></li>-->
 
-			<li><a href="#" data-toggle="modal" data-target="#modal-contact">Contact Us</a></li>
-            <li id='nav-call'><a  href="#" onClick="return false;" data-toggle="popover" data-placement="left" data-trigger="hover"  data-html='true'
-                                                                         data-content= "<h5>Receive a practice evaluation with financials, personnel costs, and liability analysis all for free!</h5>">1-800-xxx-xxxx<span class='tiny'>FREE EVALUATION</span><span class='show-mobile'>&nbsp;&nbsp;FREE EVALUATION </span></a></li>
+			<li><a href="#" data-toggle="modal" data-target="#modal-contact">Contact</a></li>
+            <li id='nav-call'><a id='nav-evaluation' data-toggle="popover" data-placement="left" data-trigger="hover"  data-html='true'
+                                                                         data-content= "<h5>
+                                                                            Call now to see what you stand to gain with a free evaluation:
+                                                                            Evaluates Patient Volume, EHR, RCM,  Integration, Personnel, Financial Growth, Recruiting and Net Income Optimization
+                                                                             </h5>">1-800-870-6191<span class='tiny'>FREE EVALUATION</span><span class='show-mobile'>&nbsp;&nbsp;FREE EVALUATION </span></a></li>
 		</ul>
 	</nav> <!-- .cd-primary-nav -->
 </header> <!-- .cd-auto-hide-header -->
@@ -143,15 +157,206 @@
 <!-- ENDTOP NAVBAR -->
         {% endblock navbar %}
 
-        <div class='sidebar'>
+<!-- Sidebar -->
+        {% block sidebar %}
+           <!-- <div class='sidebar'>
 
-            <ul>
-                <li id='sidebar-phone' ><a href='##' onClick="return false;"><i class="fa fa-phone fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>812-360-9245</span></h5></a></li>
-                <li id='sidebar-contact'>  <a href='' data-toggle="modal" data-target="#modal-contact"><i class="fa fa-envelope-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Contact</span></h5></a></li>
-                <li id='sidebar-live-chat' ><a href='##' onClick="return false;"> <i class="fa fa-comments-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Chat (soon)</span></h5></a></li>
-            </ul>
-        </div>
+                <ul>
+                    <li id='sidebar-phone' ><a href='##' onClick="return false;"><i class="fa fa-phone fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>1-800-870-6191</span></h5></a></li>
+                    <li id='sidebar-contact'>  <a href='' data-toggle="modal" data-target="#modal-contact"><i class="fa fa-envelope-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Contact</span></h5></a></li>
+                    <li id='sidebar-demo' ><a href='' data-toggle="modal" data-target="#modal-demo"> <i class="fa fa-comments-o fa-2x " aria-hidden="true" ></i><h5><span class='sidebar-content'>Schedule Demo</span></h5></a></li>
+                </ul>
+            </div>-->
+        {% endblock sidebar %}
 
+
+    <div class='content-main'>
+    {% block modal %}
+
+        {% block modal-demo %}
+            <!-- DEMO MODAL -->
+        <div id="modal-demo" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-demo" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header container">
+                        <div class='close-button'>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+
+                      </div>
+
+                      <div class="modal-body container">
+
+                                    <div class='tab-pane-content tab-content'>
+                                        <div id='demo-tab-0' class='tab-pane in active'>
+
+
+                                            <div class='col-md-6 contact-message'>
+                                                <div class='contact-title'>
+                                                <img class='img-responsive' src="{% static 'images/ipad.jpg' %}" alt='ipad'/>
+                                                <h3 class='m-contact-title'>Choose a time and we'll call you to schedule a demo</h3>
+
+                                                <h5 class="modal-title" id="gridModalLabel">Call 1-800-870-6191 for expedited service. Use cutting edge EHR &amp; RCM technology with industry leading automation.</h5>
+
+                                                </div>
+                                                <hr>
+                                                <h5>
+                                                    You will be set up with a Synergy+ training specialist who will walk you through the EHR/RCM demo and answer any questions.
+                                                </h5>
+                                                <h5>With a system that takes only 40 minutes to train, you'll be up and practicing in no time!</h5>
+                                            </div>
+                                            <div class='bt-form__wrapper col-md-6'>
+                                                <form id='demo-form-0' class="bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST"  data-parsley-validate data-parsley-errors-messages-disabled  >
+                                                     {% csrf_token %}
+
+                                                    <input type="hidden" name="{{ evaluation_form.demo.name }}" value="True" />
+
+                                                          <div class='row form-group'>
+                                                              <div class="col-md-12 bt-flabels__wrapper required">
+                                                                  <div class='control-label'></div>
+                                                                  {{ person_form.first_name.label_tag  }}
+                                                                    {{ person_form.first_name }}
+                                                                      <span class="bt-flabels__error-desc">Required</span>
+                                                              </div>
+                                                          </div>
+
+                                                          <div class='row form-group'>
+                                                              <div class="col-md-12 required bt-flabels__wrapper">
+                                                                  <div class='control-label'></div>
+                                                                    {{ person_form.last_name.label_tag  }}
+                                                                    {{ person_form.last_name }}
+                                                                    <span class="bt-flabels__error-desc">Required</span>
+
+                                                                  </div>
+                                                           </div>
+
+
+                                                          <div class='row form-group'>
+                                                            <div class="bt-flabels__wrapper required col-md-12">
+                                                                <div class='control-label'></div>
+                                                               <label for="{{ person_form.position.id_for_label }}">
+                                                                   Title or Position</label>
+                                                                    {{ person_form.position }}
+                                                                <span class="bt-flabels__error-desc">Required</span>
+                                                              </div>
+                                                          </div>
+
+
+                                                          <div class='row form-group'>
+                                                               <div class="bt-flabels__wrapper required col-md-12">
+                                                                   <div class='control-label'></div>
+                                                                      {{ person_form.email.label_tag  }}
+                                                                          {{ person_form.email }}
+                                                                     <span class="bt-flabels__error-desc">Required/Invalid Email</span>
+                                                               </div>
+                                                          </div>
+                                                          <div class='row form-group'>
+                                                               <div class="bt-flabels__wrapper col-md-12">
+                                                                      {{ person_form.home_phone.label_tag  }}
+                                                                          {{ person_form.home_phone }}
+                                                                     <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
+                                                                </div>
+                                                          </div>
+
+                                                          <div class='row form-group'>
+
+                                                              <div class='bt-flabels__wrapper required col-md-12'>
+                                                                      <div class='control-label'></div>
+                                                                     {{ evaluation_form.group_name.label_tag  }}
+                                                                     {{ evaluation_form.group_name }}
+                                                                    <span class="bt-flabels__error-desc">Required</span>
+                                                              </div>
+                                                          </div>
+                                                          <div class='row form-group'>
+                                                              <div class='col-md-12'>
+                                                                  <div >
+                                                                      {{ evaluation_form.group_type.label_tag  }}
+                                                                     {{ evaluation_form.group_type }}
+                                                                  </div>
+                                                              </div>
+
+                                                          </div>
+
+
+                                                        <div class='row form-group'>
+
+
+                                                              <div class="bt-flabels__wrapper required col-md-7">
+
+                                                                        <div class='control-label'></div>
+                                                                     {{ person_form.office_phone.label_tag  }}
+                                                                     {{ person_form.office_phone }}
+                                                                      <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
+                                                              </div>
+
+
+                                                              <div class="bt-flabels__wrapper col-md-5">
+                                                                     {{ person_form.office_phone_extension.label_tag  }}
+                                                                     {{ person_form.office_phone_extension }}
+                                                                       </div>
+
+                                                        </div>
+
+                                                        <div class='row form-group'>
+                                                                         <div class='col-md-12 bt-flabels__wrapper'>
+                                                                             <label for="{{ evaluation_form.call_time.id_for_label }}">
+                                                                   Best time to call</label>
+                                                                     {{ evaluation_form.call_time }}
+                                                                     <!--<label>Best time to call</label>
+                                                                            <input type='text' class='datetimepicker3' name="call_time" placeholder="Best time to call" autocomplete="off"/>-->
+                                                                     
+                                                                        </div>
+                                                        </div>
+
+                                                    <div class='row form-group'>
+                                                                          <div class="bt-flabels__wrapper text-area-wrapper col-md-12">
+                                                                              <span class='text-area-title'> {{ evaluation_form.message.label }}</span>
+                                                                              <div class='form-message'>
+                                                                                  {{ evaluation_form.message.label_tag }}
+                                                                                {{ evaluation_form.message }}
+                                                                              </div>
+                                                                            </div>
+                                                            </div>
+
+
+                                                    <div class='row'>
+                                                        <div class='col-md-12'>
+                                                            <button type="submit" class="btn button btn-large btn-default btn-primary contact-btn js-submit">Request Demo</button>
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div id='demo-tab-1' class='tab-pane in inquire-finish'>
+                                            <div class='inquire-title'>
+
+                                                            <h2>Thank you for contacting Synergy+!</h2>
+                                                            <h3> A Synergy+ Representative will be in touch.</h3>
+
+                                                            <h4>To expedite the process, speak with a Synergy+ Representative by calling <strong>1-800-870-6191</strong>.</h4>
+
+
+                                             </div>
+
+                                                    <div class='row'>
+                                                        <div class='col-md-10 col-centered'>
+                                                            <button type="submit" class="btn btn-default inquire-close-button" data-dismiss="modal" >Close</button>
+                                                        </div>
+                                                    </div>
+                                          
+                                        </div>
+
+                                    </div>
+                      </div>
+                      </div>
+                      </div>
+        </div><!-- END DEMO MODAL -->
+   
+        {% endblock modal-demo %}
+
+        {% block modal-contact %}
+            <!-- CONTACT MODAL -->
         <div id="modal-contact" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-contact" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -167,85 +372,96 @@
                                     <div class='tab-pane-content tab-content'>
                                         <div id='contact-tab-0' class='tab-pane in active'>
 
+                                            <div class='col-md-6 contact-message'>
+                                                <div class='contact-title'>
+                                                  <img class='img-responsive' src="{% static 'images/evaluation.jpg' %}">
 
-                                            <div class='contact-title'>
+                                                <h3 class='m-contact-title'>Have Questions? Interested in a free full practice evaluation?</h3>
 
-                                              <h3 class='m-contact-title'>Have Questions? Are You Interested in a Demo?</h3>
+                                                <h5 class="modal-title" id="gridModalLabel">Call 1-800-870-6191 for immediate service. Your personal Synergy+ consultant will reply within 48 hours.</h5>
 
-                                              <h5 class="modal-title" id="gridModalLabel">Contact now and receive your <strong><em>Free Full Practice Evaluation!</em></strong><br> Your personal Synergy+ customer specialist will reply within 48 hours.</h5>
+                                                </div>
+                                                <hr>
+                                                <h5>Our extensive free evaluation guarantees a simple to follow customized plan including:</h5>
+                                                <h5><ul>
+                                                    <li>Marketing &amp; Patient Volume</li>
+                                                    <li>Projected P &amp; L</li>
+                                                    <li>Reallocation of Resources</li>
+                                                    <li>HR Retention Plan</li>
+                                                    <li>Development &amp; Growth Potential</li>
+                                                    <li>Recruiting Plan</li>
+                                                    <li>Vendor Analysis of EHR &amp; RCM</li>
+                                                    <li>Net Income Optimization</li>
+                                                </ul></h5>
 
-                                             </div>
-                                            <hr>
 
-                                            <div class='bt-form__wrapper'>
+                                            </div>
+                                            <div class='bt-form__wrapper col-md-6'>
                                                 <form id='contact-form-0' class="bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST"  data-parsley-validate data-parsley-errors-messages-disabled  >
-
                                                      {% csrf_token %}
-                                                    <input type="hidden" name="form_id" value="contact-form-0">
+                                                     
+                                                    <input type="hidden" name="{{ evaluation_form.demo.name }}" value="False" />
 
                                                           <div class='row form-group'>
-                                                              <div class="col-md-6 bt-flabels__wrapper required">
+                                                              <div class="col-md-12 bt-flabels__wrapper required">
                                                                   <div class='control-label'></div>
-                                                                  <label>First Name</label>
-                                                                      <input type="text" name="first_name" placeholder="First Name" data-parsley-required>
+                                                                  {{ person_form.first_name.label_tag  }}
+                                                                    {{ person_form.first_name }}
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
-
-                                                              <div class="col-md-6 required bt-flabels__wrapper">
+                                                          </div>
+                                                          <div class='row form-group'>
+                                                              <div class="col-md-12 required bt-flabels__wrapper">
                                                                   <div class='control-label'></div>
-                                                                  <label>Last Name</label>
-                                                                  <input type="text" name="last_name" placeholder="Last Name" data-parsley-required>
-                                                                  <span class="bt-flabels__error-desc">Required</span>
-                                                              </div>
+                                                                    {{ person_form.last_name.label_tag  }}
+                                                                    {{ person_form.last_name }}
+                                                                    <span class="bt-flabels__error-desc">Required</span>
+
+                                                                  </div>
                                                            </div>
 
 
                                                           <div class='row form-group'>
                                                             <div class="bt-flabels__wrapper required col-md-12">
-                                                                  <div class='control-label'></div>
-                                                                <label>Title or Position</label>
-                                                                <input type="text" name="position" placeholder="Title or Position" data-parsley-required autocomplete="off" >
+                                                                <div class='control-label'></div>
+                                                               <label for="{{ person_form.position.id_for_label }}">
+                                                                   Title or Position</label>
+                                                                    {{ person_form.position }}
                                                                 <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
 
 
                                                           <div class='row form-group'>
-                                                                  <div class="bt-flabels__wrapper required col-md-6">
+                                                                  <div class="bt-flabels__wrapper required col-md-12">
                                                                       <div class='control-label'></div>
-                                                                      <label>Email</label>
-                                                                      <input type="text" name="email" placeholder="Email" data-parsley-required data-parsley-type="email" />
-                                                                      <span class="bt-flabels__error-desc">Required/Invalid Email</span>
+                                                                      {{ person_form.email.label_tag  }}
+                                                                          {{ person_form.email }}
+                                                                     <span class="bt-flabels__error-desc">Required/Invalid Email</span>
                                                                   </div>
-
-                                                                  <div class="bt-flabels__wrapper col-md-6">
-                                                                      <label>Phone (xxx-xxx-xxxx)</label>
-                                                                      <input type="text" name="home_phone" placeholder="Home Phone" autocomplete="off" class='phone-autodash' />
-                                                                      <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
+                                                          </div>
+                                                          <div class='row form-group'>
+                                                                  <div class="bt-flabels__wrapper col-md-12">
+                                                                      {{ person_form.home_phone.label_tag  }}
+                                                                          {{ person_form.home_phone }}
+                                                                     <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
                                                                     </div>
                                                           </div>
 
                                                           <div class='row form-group'>
 
-                                                              <div class='bt-flabels__wrapper required col-md-9'>
+                                                              <div class='bt-flabels__wrapper required col-md-12'>
                                                                       <div class='control-label'></div>
-                                                                      <label>Group Name</label>
-                                                                      <input type="text" name="group_name"  placeholder="Group Name" data-parsley-required>
-                                                                <span class="bt-flabels__error-desc">Required</span>
+                                                                     {{ evaluation_form.group_name.label_tag  }}
+                                                                     {{ evaluation_form.group_name }}
+                                                                    <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
-
-                                                              <div class='col-md-3'>
-                                                                  <div class="required">
-                                                                     <div class='control-label'>
-                                                                      <select required=''>
-                                                                        <option value=''>Group Type</option>
-                                                                        <option value='type2'>Val 2</option>
-                                                                        <option value='type3'>Val 3</option>
-                                                                        <option value='type4'>Val 4</option>
-                                                                        <option value='type5'>Val 5</option>
-                                                                        <option value='type6'>Val 6</option>
-                                                                      </select>
-                                                                     </div>
+                                                          </div>
+                                                          <div class='row form-group'>
+                                                              <div class='col-md-12'>
+                                                                  <div >
+                                                                      {{ evaluation_form.group_type.label_tag  }}
+                                                                     {{ evaluation_form.group_type }}
                                                                   </div>
                                                               </div>
 
@@ -255,34 +471,40 @@
                                                         <div class='row form-group'>
 
 
-                                                              <div class="bt-flabels__wrapper required col-md-9">
+                                                              <div class="bt-flabels__wrapper required col-md-7">
 
                                                                         <div class='control-label'></div>
-                                                                          <label>Office Phone (xxx-xxx-xxxx)</label>
-                                                                          <input type="text" name="office_phone" data-parsley-required placeholder="Office Phone" autocomplete="off" data-parsley-pattern='/(\d{3})\-?(\d{3})\-?(\d{4})/' class='phone-autodash '/>
-                                                                          <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
+                                                                     {{ person_form.office_phone.label_tag  }}
+                                                                     {{ person_form.office_phone }}
+                                                                      <span class="bt-flabels__error-desc">Required/Invalid Phone</span>
                                                               </div>
 
 
-                                                              <div class="bt-flabels__wrapper col-md-3">
-                                                                          <label>Ext</label>
-                                                                          <input type="text" name="ext" placeholder="ext" autocomplete="off"/>
-                                                              </div>
+                                                              <div class="bt-flabels__wrapper col-md-5">
+                                                                     {{ person_form.office_phone_extension.label_tag  }}
+                                                                     {{ person_form.office_phone_extension }}
+                                                                       </div>
 
                                                         </div>
 
                                                         <div class='row form-group'>
                                                                          <div class='col-md-12 bt-flabels__wrapper'>
-                                                                             <label>Best time to call</label>
-                                                                            <input type='text' class='datetimepicker3' name="call_time" placeholder="Best time to call" autocomplete="off"/>
+                                                                             <label for="{{ evaluation_form.call_time.id_for_label }}">
+                                                                   Best time to call</label>
+                                                                     {{ evaluation_form.call_time }}
+                                                                     <!--<label>Best time to call</label>
+                                                                            <input type='text' class='datetimepicker3' name="call_time" placeholder="Best time to call" autocomplete="off"/>-->
+                                                                     
                                                                         </div>
                                                         </div>
 
                                                     <div class='row form-group'>
                                                                           <div class="bt-flabels__wrapper text-area-wrapper col-md-12">
-                                                                              <span class='text-area-title'>MESSAGE:</span>
-                                                                              <textarea id='textarea-message' name="message" placeholder="What would you like to say?"></textarea>
-
+                                                                              <span class='text-area-title'> {{ evaluation_form.message.label }}</span>
+                                                                              <div class='form-message'>
+                                                                                  {{ evaluation_form.message.label_tag }}
+                                                                                {{ evaluation_form.message }}
+                                                                              </div>
                                                                             </div>
                                                             </div>
 
@@ -306,13 +528,14 @@
 
 
                                                             <h4>Please continue to receive your full practice evaluation and free industry analysis report.</h4>
-                                                            <h4>To expedite the process, speak with a Synergy+ Representative by calling <strong>812-360-9245</strong>.</h4>
+                                                            <h4>To expedite the process, speak with a Synergy+ Representative by calling <strong>1-800-870-6191</strong>.</h4>
 
 
                                              </div>
 
                                            <div class='bt-form__wrapper'>
                                                 <form id='contact-form-1' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                    {% csrf_token %}
                                                     <div class='row'>
                                                         <div class='col-md-10 col-centered'>
                                                             <button type="submit" class="btn btn-primary inquire-close-button" >Continue</button>
@@ -338,7 +561,7 @@
 
                                             <div class='bt-form__wrapper'>
                                                 <form id='contact-form-2' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
-
+                                                    {% csrf_token %}
                                                     <input type="hidden" name="form_id" value="contact-form-0">
 
 
@@ -349,16 +572,8 @@
 
                                                            <div class='row form-group'>
                                                               <div class="bt-flabels__wrapper col-md-12 required">
-
-                                                                  <div class='control-label'></div>
-                                                                      <select name=current_system>
-                                                                        <option value=''>Current System</option>
-                                                                        <option value='type2'>Val 2</option>
-                                                                        <option value='type3'>Val 3</option>
-                                                                        <option value='type4'>Val 4</option>
-                                                                        <option value='type5'>Val 5</option>
-                                                                        <option value='type6'>Val 6</option>
-                                                                      </select>
+                                                                    {{ evaluation_form.current_system.label_tag  }}
+                                                                     {{ evaluation_form.current_system }}
 
                                                               </div>
                                                            </div>
@@ -367,31 +582,34 @@
 
                                                           <div class='row form-group'>
                                                                   <div class="bt-flabels__wrapper col-md-6">
-                                                                      <label># EHR support vendors</label>
-                                                                      <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_support_vendors" placeholder="# EHR support vendors" autocomplete="off"/>
-                                                                      <span class="bt-flabels__error-desc">Required</span>
+                                                                      
+                                                                  {{ evaluation_form.ehr_providers.label_tag  }}
+                                                                     {{ evaluation_form.ehr_providers }}
+                                                                     <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
                                                                     <div class="bt-flabels__wrapper col-md-6">
-                                                                      <label># EHR support personnel</label>
-                                                                      <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_support_personnel" placeholder="# EHR support personnel" autocomplete="off"/>
-                                                                      <span class="bt-flabels__error-desc">Required</span>
+                                                                       {{ evaluation_form.ehr_support_personnel.label_tag  }}
+                                                                     {{ evaluation_form.ehr_support_personnel }}
+                                                                     <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
                                                           </div>
 
                                                             <div class='row form-group'>
                                                                           <div class="bt-flabels__wrapper text-area-wrapper col-md-12">
-                                                                              <span class='text-area-title'>EHR LIKES:</span>
-                                                                              <textarea name="ehr_likes" placeholder="Things I like about my current EHR"></textarea>
+                                                                          <span class='text-area-title'> {{ evaluation_form.ehr_likes.label }}</span>
 
+                                                                                {{ evaluation_form.ehr_likes.label_tag  }}
+                                                                               {{ evaluation_form.ehr_likes }}
                                                                             </div>
                                                             </div>
 
                                                             <div class='row form-group'>
                                                                           <div class="bt-flabels__wrapper text-area-wrapper col-md-12">
-                                                                              <span class='text-area-title'>EHR DISLIKES:</span>
-                                                                              <textarea name="ehr_dislikes" placeholder="Things I dislike about my current EHR"></textarea>
-                                                                            </div>
+                                                                              <span class='text-area-title'>   {{ evaluation_form.ehr_dislikes.label  }} </span>
+                                                                              {{ evaluation_form.ehr_dislikes.label_tag  }}
+                                                                     {{ evaluation_form.ehr_dislikes }}
+                                                                      </div>
                                                             </div>
 
 
@@ -426,72 +644,71 @@
 
                                             <div class='bt-form__wrapper'>
                                                 <form id='contact-form-3' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                                                   {% csrf_token %}
                                                     <input type="hidden" name="form_id" value="contact-form-3">
-
-
-                                                    <div class='form-title'>
-                                                            <h5>Human Resource Evaluation</h5>
-                                                        </div>
-
-                                                          <div class='row'>
-                                                                    <div class="bt-flabels__wrapper required col-md-4">
-                                                                         <div class='control-label'></div>
-                                                                          <label># Providers</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="hr_providers" placeholder="# Providers" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
-                                                                    </div>
-
-
-
-                                                                    <div class="bt-flabels__wrapper required col-md-4">
-                                                                         <div class='control-label'></div>
-                                                                          <label># IT Staff</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="hr_it_staff" placeholder="# IT Staff" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
-                                                                    </div>
-
-
-                                                                    <div class="bt-flabels__wrapper required col-md-4">
-                                                                         <div class='control-label'></div>
-                                                                          <label># Other Staff</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="hr_other_staff" placeholder="# Other Staff" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
-                                                                    </div>
-
-                                                          </div>
-
 
                                                     <div class='form-title'>
                                                             <h5>EHR Users</h5>
                                                     </div>
 
                                                     <div class='row'>
-                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
-                                                                          <label># Providers</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_providers" placeholder="# Providers" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                           {{ evaluation_form.ehr_scribes.label_tag  }}
+                                                                     {{ evaluation_form.ehr_scribes }}
+                                                                     <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
-                                                                          <label># MAs</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_mas" placeholder="# MAs" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                           {{ evaluation_form.ehr_mas.label_tag  }}
+                                                                     {{ evaluation_form.ehr_mas }}
+                                                                     <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
-                                                                          <label># Reception</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_receptionists" placeholder="# Receptionists" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                          {{ evaluation_form.ehr_receptionists.label_tag  }}
+                                                                     {{ evaluation_form.ehr_receptionists }}
+                                                                     <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
                                                                     <div class="bt-flabels__wrapper required col-md-3">
                                                                          <div class='control-label'></div>
-                                                                          <label># Admin</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="ehr_admin" placeholder="# Admin" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                          {{ evaluation_form.ehr_admin.label_tag  }}
+                                                                     {{ evaluation_form.ehr_admin }}
+                                                                      <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+
+                                                    </div>
+
+                                                     <div class='form-title'>
+                                                            <h5>Human Resource Evaluation</h5>
+                                                    </div>
+
+                                                          <div class='row'>
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
+                                                                         <div class='control-label'></div>
+                                                                          {{ evaluation_form.hr_total_staff.label_tag  }}
+                                                                     {{ evaluation_form.hr_total_staff }}
+                                                                      <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+
+
+
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
+                                                                         <div class='control-label'></div>
+                                                                           {{ evaluation_form.hr_it_staff.label_tag  }}
+                                                                     {{ evaluation_form.hr_it_staff }}
+                                                                     <span class="bt-flabels__error-desc">Required</span>
+                                                                    </div>
+
+
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
+                                                                         <div class='control-label'></div>
+                                                                          {{ evaluation_form.hr_other_staff.label_tag  }}
+                                                                     {{ evaluation_form.hr_other_staff }}
+                                                                      <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
                                                           </div>
@@ -501,62 +718,57 @@
                                                     </div>
 
                                                     <div class='row form-group'>
-                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
                                                                          <div class='control-label'></div>
-                                                                          <label># Billers</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="rcm_billers" placeholder="# Billers" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                           {{ evaluation_form.rcm_billers.label_tag  }}
+                                                                     {{ evaluation_form.rcm_billers }}
+                                                                     <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
-                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
                                                                          <div class='control-label'></div>
-                                                                          <label># Coders</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="rcm_coders" placeholder="# Coders" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                           {{ evaluation_form.rcm_coders.label_tag  }}
+                                                                     {{ evaluation_form.rcm_coders }}
+                                                                     <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
-                                                                    <div class="bt-flabels__wrapper required col-md-3">
-                                                                         <div class='control-label'></div>
-                                                                          <label># Scribes</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="rcm_scribes" placeholder="# Scribes" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
-                                                                    </div>
+                                                                   
 
-                                                                    <div class="bt-flabels__wrapper required col-md-3">
+                                                                    <div class="bt-flabels__wrapper required col-md-4">
                                                                          <div class='control-label'></div>
-                                                                          <label># Collectors</label>
-                                                                          <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="rcm_collectors" placeholder="# Collectors" autocomplete="off"/>
-                                                                          <span class="bt-flabels__error-desc">Required</span>
+                                                                           {{ evaluation_form.rcm_collectors.label_tag  }}
+                                                                     {{ evaluation_form.rcm_collectors }}
+                                                                      <span class="bt-flabels__error-desc">Required</span>
                                                                     </div>
 
                                                           </div>
 
                                                         <div class='row form-group'>
-                                                            <div class="bt-flabels__wrapper required col-md-12">
-                                                                  <div class='control-label'></div>
-                                                                <label>Clearing House</label>
-                                                                <input type="text" name="clearinghouse" placeholder="Clearinghouse" data-parsley-required autocomplete="off" >
-                                                                <span class="bt-flabels__error-desc">Required</span>
+                                                            <div class="bt-flabels__wrapper col-md-12">
+                                                                 {{ evaluation_form.clearinghouse.label_tag  }}
+                                                                     {{ evaluation_form.clearinghouse }}
+                                                                     <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
 
                                                         <div class='row form-group'>
-                                                            <div class="bt-flabels__wrapper required col-md-12">
-                                                                  <div class='control-label'></div>
-                                                                <label>Billing Company</label>
-                                                                <input type="text" name="billing_company" placeholder="Billing Company" data-parsley-required autocomplete="off" >
-                                                                <span class="bt-flabels__error-desc">Required</span>
+                                                            <div class="bt-flabels__wrapper col-md-12">
+                                                                {{ evaluation_form.billing_company.label_tag  }}
+                                                                     {{ evaluation_form.billing_company }}
+                                                                      <span class="bt-flabels__error-desc">Required</span>
                                                               </div>
                                                           </div>
 
-                                                    <div class='row form-statement form-group required'>
+                                                    <div class='row form-statement form-group '>
                                                         <div class='col-md-12'>
                                                             <div class='inline'>It usually takes me</div>
-                                                            <div class='inline control-label'></div>
-                                                            <input type="number" name="days_to_collect" placeholder="10" data-parsley-required data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off" >
+                                                            <span class='inline bt-flabels__wrapper '>
+                                                                     {{ evaluation_form.days_to_collect }}
+                                                            </span>
                                                             <div class='inline'>days to collect</div>
-                                                            <div class='inline control-label'></div>
-                                                            <input type="number" name="percent_ars" placeholder="20" data-parsley-required data-parsley-type="integer" min="0" data-parsley-min="0" autocomplete="off">
+                                                             <span class='inline bt-flabels__wrapper'>
+                                                                     {{ evaluation_form.percent_ars }}
+                                                             </span>
                                                             % of ARs.
                                                         </div>
 
@@ -591,8 +803,9 @@
 
                                             <div class='bt-form__wrapper'>
                                                 <form id='contact-form-4' class=" bt-flabels js-flabels contact-form" action="{% url 'create' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
-                                                     <input type="hidden" name="form_id" value="contact-form-4">
+                                                    {% csrf_token %}
 
+                                                     <input type="hidden" name="form_id" value="contact-form-4">
 
                                                     <div class='form-title'>
                                                             <h5>Financial Evaluation</h5>
@@ -600,16 +813,16 @@
 
 
                                                       <div class='row form-group'>
-                                                                <div class="bt-flabels__wrapper required col-md-7">
-                                                                     <div class='control-label'></div>
-                                                                      <label># Available Rooms for Doctors</label>
-                                                                      <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="available_rooms" placeholder="# Available Rooms for Doctors" autocomplete="off"/>
-                                                                      <span class="bt-flabels__error-desc">Required</span>
-                                                                </div>
-                                                                <div class="bt-flabels__wrapper required col-md-5">
-                                                                     <div class='control-label'></div>
-                                                                      <label># Revenue Labs</label>
-                                                                      <input type="number" data-parsley-type="integer" min="0" data-parsley-min="0" name="revenue_labs" placeholder="# Revenue Labs" autocomplete="off"/>
+                                                                
+                                                                <div class="bt-flabels__wrapper required col-md-6">
+                                                                        <div class='control-label'></div>
+                                                                      {{ evaluation_form.total_revenue.label_tag  }}
+                                                                     {{ evaluation_form.total_revenue }}
+                                                                     <span class="bt-flabels__error-desc">Required</span>
+                                                                  </div>
+                                                                  <div class="bt-flabels__wrapper  col-md-6">
+                                                                       {{ evaluation_form.available_rooms.label_tag  }}
+                                                                     {{ evaluation_form.available_rooms }}
                                                                       <span class="bt-flabels__error-desc">Required</span>
                                                                 </div>
 
@@ -619,33 +832,19 @@
 
                                                     <div class='row'>
                                                           <div class="bt-flabels__wrapper text-area-wrapper form-group col-md-12">
-                                                              <span class='text-area-title' >Are you trying to recruit doctors? How many and which specialities?</span>
-                                                              <textarea id='form-are-you-trying' name="doctors_recruit" placeholder="Yes, 2-3 more pediactric doctors and 1 more orthopedic surgeon."></textarea>
-
+                                                                          <span class='text-area-title'> {{ evaluation_form.doctors_recruit.label }}</span>
+                                                                     {{ evaluation_form.doctors_recruit }}
                                                             </div>
                                                     </div>
 
-                                                    <div class='row form-group'>
-                                                                <div class="bt-flabels__wrapper required col-md-12">
-                                                                     <div class='control-label'></div>
-                                                                      <label>Total Revenue in 2015</label>
-                                                                      <input type="number"  name="total_revenue" placeholder="Total Revenue in 2015" autocomplete="off"/>
-                                                                      <span class="bt-flabels__error-desc">Required</span>
-                                                                </div>
-
-                                                      </div>
-
+                                          
                                                      <div class='row form-statement required'>
                                                         <div class='col-md-12'>
                                                             <div class='inline'>My group's net income has &nbsp;</div>
                                                             <div class='inline control-label'></div>
 
-                                                          <select name='referral'>
-                                                            <option value='type1'>...</option>
-                                                            <option value='type2'>decreased</option>
-                                                            <option value='type3'>stayed the same</option>
-                                                            <option value='type4'>increased</option>
-                                                          </select>
+                                                          {{ evaluation_form.net_income_status.label_tag  }}
+                                                            {{ evaluation_form.net_income_status }}
                                                                      <div class='inline'>over the last 3 years.</div>
                                                         </div>
                                                     </div>
@@ -656,13 +855,9 @@
 
                                                     <div class='row'>
                                                         <div class="bt-flabels__wrapper checkbox-wrapper col-md-12">
-
-                                                           <input type="checkbox" name='referral' value="">Referral
-                                                            <input type="checkbox" name='referral' value="">LinkedIn
-                                                            <input type="checkbox" name='referral' value="">Facebook
-                                                            <input type="checkbox" name='referral' value="">Twitter
-                                                            <input type="checkbox" name='referral' value="">Google
-                                                            <input type="checkbox" name='referral' value="">Other
+                                                            {% for choice in evaluation_form.referral %}
+                                                                <div style="display: inline-block">{{ choice.tag }} {{ choice.choice_label }}</div>
+                                                            {% endfor %}
                                                         </div>
                                                     </div>
 
@@ -672,7 +867,7 @@
 
                                                     <div class='row form-group'>
                                                         <div class="bt-flabels__wrapper checkbox-wrapper col-md-12">
-                                                           <input type="checkbox" name='monthly_newsletter' value="">Yes
+                                                          {{ evaluation_form.monthly_newsletter }} Yes
                                                         </div>
                                                     </div>
 
@@ -693,7 +888,7 @@
                                                             <h2>Thank you for contacting Synergy+!</h2>
                                                             <h3> A Synergy+ Representative will be in touch.</h3>
                                                             <h3> Your full practice evaluation will be sent to the provided email within 48 hours.</h3>
-                                                            <h3>To expedite the process, speak with a Synergy+ Representative by calling <strong>812-360-9245</strong>.</h3>
+                                                            <h3>To expedite the process, speak with a Synergy+ Representative by calling <strong>1-800-870-6191</strong>.</h3>
                                              </div>
 
                                             <div class='row'>
@@ -712,11 +907,60 @@
                     </div>
                   </div>
                 </div>
+    <!-- END CONTACT MODAL -->
+        {% endblock modal-contact %}
 
+        {% block modal-thanks %}
+                    <!-- MODAL THANK YOU -->
+        <div id="modal-thanks" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-labelledby="modal-thanks" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header container">
+                        <div class='close-button'>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                         <div class='row bg-success'>
+                              <div class='col-md-10 col-centered'>
+                                    <h5>Thanks! Your email is on its way. If you don't receive it in a few minutes, be sure to check your promotions or spam.</h5>
+                              </div>
+                          </div>
+                      </div>
 
-		<!--=== End Header ===-->
-    <div class='content-main'>
-    {% block modal %}
+                      <div class="modal-body container">
+                                                   
+                         
+                        <div class='bt-form__wrapper'>
+                        <form id='referral-form' class=" bt-flabels js-flabels contact-form" action="{% url 'submit_referral' %}" method="POST" data-parsley-validate data-parsley-errors-messages-disabled  action="" >
+                            {% csrf_token %}
+
+                          <div class='row'>
+                                                 <div class='form-title'>
+                                                            <h3>How did you hear about us?</h3>
+                                                    </div>
+                          </div>
+                          
+                        <div class='row'>
+                            <div class="bt-flabels__wrapper checkbox-wrapper col-md-12">
+                                <!-- Referral Form -->
+                                {% for choice in random_referral_form.referral %}
+                                    <div style="display: inline-block">{{ choice.tag }} {{ choice.choice_label }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                          <div class='row'>
+                                <div class='col-md-10 col-centered'>
+                                    <button type="button" class="btn btn-default inquire-close-button" data-dismiss="modal">Close</button>
+                                </div>
+                          </div>
+                       </form>
+                      </div>
+
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        {% endblock modal-thanks %}
     {% endblock modal %}
     </div>
     {% block footer %}
@@ -729,7 +973,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<p class='absolute'>
-								2015 &copy; All Rights Reserved.
+								2017 &copy; All Rights Reserved.
 								<!--<a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>-->
 							</p>
 						</div>
@@ -739,39 +983,23 @@
 							<ul class="footer-socials list-inline">
 								<li>
 									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
-										<i class="fa fa-facebook"></i>
+										<i class="fa fa-2x fa-facebook"></i>
 									</a>
 								</li>
-								<li>
-									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
-										<i class="fa fa-skype"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
-										<i class="fa fa-google-plus"></i>
-									</a>
-								</li>
+							
+								
 								<li>
 									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
-										<i class="fa fa-linkedin"></i>
+										<i class="fa fa-2x fa-linkedin"></i>
 									</a>
 								</li>
-								<li>
-									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
-										<i class="fa fa-pinterest"></i>
-									</a>
-								</li>
+							
 								<li>
 									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
-										<i class="fa fa-twitter"></i>
+										<i class="fa fa-2x fa-twitter"></i>
 									</a>
 								</li>
-								<li>
-									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
-										<i class="fa fa-dribbble"></i>
-									</a>
-								</li>
+						
 							</ul>
 						</div>
 						<!-- End Social Links -->
@@ -785,15 +1013,9 @@
 
 
 
-	<!-- JS Global Compulsory -->
-
-    <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/jquery-migrate-1.4.1.min.js' %}"></script>
+{% block javascript %}
 
     <script type="text/javascript" src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
-
-    <!-- MODERNIZR -->
-    <script type="text/javascript" src="{% static 'standalone/pointy-slider/js/modernizr.js' %}"></script>
 
 	<!-- JS Implementing Plugins -->
 	<script type="text/javascript" src="{% static 'plugins/back-to-top.js' %}"></script>
@@ -810,7 +1032,7 @@
     <script src="{% static 'css/plugins/waypoints4.0/lib/jquery.waypoints.min.js' %}"></script>
 
     <!-- DATA parsley plugin -->
-    <script type="text/javascript" src="{% static 'js/parsley.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bower_components/parsleyjs/dist/parsley.min.js' %}"></script>
 
     <!-- Auto Hiding Navigation -->
     <script type="text/javascript" src="{% static 'standalone/auto-hiding-navigation/js/main.js' %}"></script>
@@ -864,7 +1086,7 @@ $(function() {
     });
     </script>
 
-    <!-- Tooltip -->
+<!-- Tooltip Initialization -->
 <script>
     $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
@@ -872,7 +1094,8 @@ $(function() {
 </script>
 
 <script>
-/* Ensure that form 1 is valid before moving to the next form  */
+
+/* Ensure that form 1 is valid before moving to the next form. Only works with multi-tabbed forms.  */
 function validate_form_tab(form_id, tab_id_curr, tab_id_next){
     $(form_id).submit(function(e){
             e.preventDefault();
@@ -886,13 +1109,15 @@ function validate_form_tab(form_id, tab_id_curr, tab_id_next){
         })
 }
 
-//CONTACT FORM JQUERY SUBMIT BUTTON LISTENERS
-
+//CONTACT FORM JQUERY SUBMIT BUTTON LISTENERS FOR CHANGING TABS
 validate_form_tab('#contact-form-0', '#contact-tab-0', '#contact-tab-1');
 validate_form_tab('#contact-form-1', '#contact-tab-1', '#contact-tab-2');
 validate_form_tab('#contact-form-2', '#contact-tab-2', '#contact-tab-3');
 validate_form_tab('#contact-form-3', '#contact-tab-3', '#contact-tab-4');
 validate_form_tab('#contact-form-4', '#contact-tab-4', '#contact-tab-5');
+
+//DEMO FORM
+validate_form_tab('#demo-form-0', '#demo-tab-0', '#demo-tab-1');
 </script>
 
 
@@ -953,6 +1178,10 @@ floating_label('#contact-form-1');
 floating_label('#contact-form-2');
 floating_label('#contact-form-3');
 floating_label('#contact-form-4');
+
+//For demo form
+floating_label('#demo-form-0');
+
 </script>
 
 <!-- PUT DASHES IN PHONE INPUTS FOR CONTACT FORM-->
@@ -967,7 +1196,6 @@ $('.phone-autodash').keyup(function(){
 <script>
 //Remove active class from all other nav_ids
 function remove_nav_active(nav_id_to_keep){
-
     $('.cd-secondary-nav a').removeClass('active');
     $(nav_id_to_keep).children('a').addClass('active');
 };
@@ -1008,15 +1236,7 @@ smoothScroll('.cd-secondary-nav li a');
 
 
 <script>
-/* Takes a form id and returns the form fields in json */
-function serialize_form(form){
-    var url = $(form).attr("action");
-    var formData = $(form).serializeArray();
-    console.log(formData);
-    return formData;
-}
-
-//send contact form via post
+//send form via ajax as post data to its: action='url/location'
 function post_form(form) {
     var frm = $(form);
     $.ajax({
@@ -1026,16 +1246,17 @@ function post_form(form) {
 
         // handle a successful response
         success : function(data) {
-            console.log("success"); // another sanity check
+            //console.log(data);
         },
 
         // handle a non-successful response
         error : function(xhr,errmsg,err) {
-            console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+           //console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
         }
     });
 };
 
+// Event listener for a form, calling the above function to submit via ajax
 function submit_form(form){
     $(form).on('submit', function(e){
         e.preventDefault()
@@ -1043,15 +1264,37 @@ function submit_form(form){
     });
 }
 
+
+/* Validate a parsley form on submission. If it passes, submit the form.  */
+function parsley_validate(form_id){
+        $(form_id).submit(function(e){
+            e.preventDefault();
+            var form = $(form_id);
+            form.parsley().validate();
+            if (form.parsley().isValid()){ // Return the parsley bound form.
+                submit_form(form);
+            };
+        })
+}
+
+// Submit forms for contact forms
 submit_form('#contact-form-0');
 submit_form('#contact-form-1');
 submit_form('#contact-form-2');
 submit_form('#contact-form-3');
 submit_form('#contact-form-4');
 
+//Submit forms for demo form
+submit_form('#demo-form-0');
 
 
-//CRSF FIX
+//Submit referral form upon closing #modal-thanks  -->
+$('#modal-thanks').on('hidden.bs.modal', function () {
+    post_form("#referral-form");
+});
+
+
+//CRSF FIX: https://github.com/realpython/django-form-fun/blob/master/part1/main.js
     $(function() {
     // This function gets cookie with a given name
     function getCookie(name) {
@@ -1106,12 +1349,14 @@ submit_form('#contact-form-4');
 
 });
 </script>
+{% endblock javascript %}
 
     {% block more-javascript %}{% endblock more-javascript %}
 
 
+<!-- Plugin for chat window -->
 
-
+ <script type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/fb7b8426c6d6dac566c1493b26c08cae8de15f134ee9fb95a4838c584e73e2af.js"></script> 
 </body>
 
 </html>

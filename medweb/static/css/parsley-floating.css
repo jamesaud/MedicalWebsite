@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 @font-face {
   font-family: Vollkorn, serif;
   src: url(https://fonts.googleapis.com/css?family=Vollkorn); }
@@ -11,6 +12,7 @@
   font-size: 15.5px;
   border-radius: 50em; }
 
+/* Custom Modals */
 .required .control-label:before {
   color: red;
   content: "*";
@@ -35,17 +37,19 @@
 .bt-form__wrapper {
   margin: 15px auto;
   max-width: 500px; }
+  .bt-form__wrapper .text-area-wrapper .text-area-title {
+    z-index: 2; }
 
-.bt-flabels input[type='text'], .bt-flabels input[type='number'], .bt-flabels select, .bt-flabels textarea {
+.bt-flabels input[type='text'], .bt-flabels input[type='number'], .bt-flabels input[type='email'], .bt-flabels select, .bt-flabels textarea {
   position: relative;
   padding-left: 10px;
   width: 100%;
   font-size: 15px;
   z-index: 1; }
-  .bt-flabels input[type='text']:focus, .bt-flabels input[type='number']:focus, .bt-flabels select:focus, .bt-flabels textarea:focus {
+  .bt-flabels input[type='text']:focus, .bt-flabels input[type='number']:focus, .bt-flabels input[type='email']:focus, .bt-flabels select:focus, .bt-flabels textarea:focus {
     outline: none;
     background: #f5f8fc; }
-.bt-flabels input[type='text'], .bt-flabels input[type='number'], .bt-flabels select, .bt-flabels textarea {
+.bt-flabels input[type='text'], .bt-flabels input[type='number'], .bt-flabels input[type='email'], .bt-flabels select, .bt-flabels textarea {
   height: 41px;
   background: transparent;
   transition: background 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), border-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -91,9 +95,9 @@
   z-index: 3;
   pointer-events: none; }
 
-.bt-flabels__error input[type='text'], .bt-flabels__error input[type='number'], .bt-flabels__error select, .bt-flabels__error textarea {
+.bt-flabels__error input[type='text'], .bt-flabels__error input[type='number'], .bt-flabels__error input[type='email'], .bt-flabels__error select, .bt-flabels__error textarea {
   background: #feeeee; }
-  .bt-flabels__error input[type='text']:focus, .bt-flabels__error input[type='number']:focus, .bt-flabels__error select:focus, .bt-flabels__error textarea:focus {
+  .bt-flabels__error input[type='text']:focus, .bt-flabels__error input[type='number']:focus, .bt-flabels__error input[type='email']:focus, .bt-flabels__error select:focus, .bt-flabels__error textarea:focus {
     background: #feeeee; }
 .bt-flabels__error .bt-flabels__error-desc {
   opacity: 1;
@@ -105,7 +109,7 @@
 .bt-flabel__float label {
   opacity: 1;
   transform: translateY(0); }
-.bt-flabel__float input[type='text'], .bt-flabel__float input[type='number'] {
+.bt-flabel__float input[type='text'], .bt-flabel__float input[type='number'], .bt-flabel__float input[type='email'] {
   padding-top: 9px; }
 
 .checkbox-wrapper {

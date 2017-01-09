@@ -1,0 +1,415 @@
+{% extends "pages/homepage_base.html" %}
+{% load staticfiles %}
+{% load static %}
+
+{% block more-css %}
+<link rel="stylesheet" href="{% static 'css/table.css' %}"><!-- for the purchase now boxes -->
+{% endblock more-css %}
+{% block modal %}
+
+    {% block sidebar %}
+    {% endblock sidebar %}
+
+<div class='top-bg'></div>
+
+<div class='body-wrapper'>
+<div class='table-background'>
+
+<div class="alert table-email fade in" role="alert">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+      <tr class='table-email'>
+      <td colspan="6">
+        <h4>      
+          To receive the full comparison chart illustrating differences between top IT health vendors, please enter your email address:
+        </h4>
+          <form id='chart-form'  action="{% url 'submit_chart' %}" method="POST">
+            {% csrf_token %}
+            {{ email_form.email }}<button type="submit" class="btn btn-default btn-primary" href="#" data-toggle="modal" data-target="#modal-thanks">Send Chart</button>
+          </form>
+      </td>
+   </tr>
+</div>
+
+<table class="table-fill cd-main-content sub-nav-hero">
+  <thead class='cd-secondary-nav'>
+   <tr>
+      <th>SERVICE FEATURES</th>
+      <th>DISTINCT ADVANTAGES</th>
+      <th><strong>SYNERGY+</strong></th>
+      <th>LEGACY </th>
+      <th>NEW FIRMS</th>
+      <th>YOUR SYSTEM</th>
+   </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <th colspan="6"> GENERAL SYSTEM AND SERVICE FEATURES</th>
+   </tr>
+   <tr>
+      <td>All-inclusive Services</td>
+      <td>Bundled services save clients 25-40%</td>
+      <td class='checkmark'>✔</td>
+      <td class="xmark">X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Net Income Optimization</td>
+      <td>Net income gains of 25-100%</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Increases Productivity</td>
+      <td>Doctors see 25-40% more patients</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Personnel Go Home On Time</td>
+      <td>Saves 1.5 - 2 hours of documenting</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Resource Reallocation</td>
+      <td>Retain valuable staff & optimize space</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>Few</td>
+      <td class='qmark'>?</td>
+   </tr>
+
+   <tr>
+      <td>HR Retention Plan & Physician Recruiting</td>
+      <td>Lowers turnover & increases revenue 10-20%</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Exponential Growth Plan</td>
+      <td>Gain market share</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <th colspan="6"> CLOUD-BASED EHR/RCM AND PRACTICE MANAGEMENT</th>
+   </tr>
+   <tr>
+      <td>Built-In Modular & interoperability Communications</td>
+      <td>Easy integration to outside systems</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>Costly</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>EHR & RCM Costs</td>
+      <td>Clients save $18k - $36K per provider per year</td>
+      <td class='checkmark'>3.40%</td>
+      <td class='xmark'>4-11%</td>
+      <td class='xmark'>4-9%</td>
+      <td class='xmark'>4-13%</td>
+   </tr>
+   <tr>
+      <td>Practice Size</td>
+      <td>Efficient for small to large practices</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Reduces Appointment Times</td>
+      <td>Process takes 10-30% less time</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+   </tr>
+   <tr>
+      <td>Full Dictation Integration</td>
+      <td>No scribes required</td>
+      <td class='checkmark'>✔</td>
+      <td class='smark'>Some</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Fully Automated RCM</td>
+      <td>Automatically codes, bills and collects</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+   </tr>
+   <tr>
+      <td>Overhead Control</td>
+      <td>Enables up to 50% overhead reduction</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+   </tr>
+
+   <tr>
+      <td>Viability &amp; Managerial Stability</td>
+      <td>Increases Profitability</td>
+      <td class='checkmark'>✔</td>
+      <td class='smark'>Some</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Regulatory Adaptation</td>
+      <td>Timely transition with no headaches</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Built-In Auto RCM & Validations Plus Auto RX, DX & F/U Ordering</td>
+      <td>Overhead reduction of 25-35%</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>1 Day Installation, 45 Minute Training</td>
+      <td>Easy transition & learning</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Labs, Imaging, Charts, Work Flow, Customization &amp; Integration </td>
+      <td>Everything included</td>
+      <td class='checkmark'>✔</td>
+      <td class='smark'>Some</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td> Purchase Accounts Receivables Same Day Of Service</td>
+      <td>Optimizes cash flow</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+<tr>
+      <th colspan="6"> DATA ANALYSIS, SECURITY AND REGULATIONS</th>
+   </tr>
+   <tr>
+      <td>Supports Data Security & Analysis</td>
+      <td>Reduces risk management headaches</td>
+      <td class='checkmark'>✔</td>
+      <td class='checkmark'>✔</td>
+      <td class='checkmark'>✔</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>A Decade In The Cloud</td>
+      <td>Exceeds EHNAC HIPPA security standards</td>
+      <td class='checkmark'>✔</td>
+      <td class='smark'>Some</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Strong Certified HIPAA Consultant Network</td>
+      <td>Secure network protects you</td>
+      <td class='checkmark'>✔</td>
+      <td class='qmark'>?</td>
+      <td class='qmark'>?</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Exemplary Reputation For System Stability</td>
+      <td>Minimizes slow downs & down time</td>
+      <td class='checkmark'>✔</td>
+      <td class='smark'>Some</td>
+      <td class='smark'>Some</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Integrated Analysis Is Affordable, Efficient & Accurate</td>
+      <td>Focused on optimizing PHM</td>
+      <td class='smark'>Avail 6/2017</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+  <tr>
+        <th colspan="6"> PATIENT ENGAGEMENT AND RELATIONSHIP BUILDING</th>
+  </tr>
+      
+   <tr>
+      <td>Advanced Web Tools & Online Strategies</td>
+      <td>Adds value to website & portal</td>
+      <td class='checkmark'>✔</td>
+      <td class='smark'>Partial</td>
+      <td class='smark'>Partial</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Patient Compliance With Relationship Building</td>
+      <td>Healthier patients refer more patients</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Acquire Non-Internet Users</td>
+      <td>Increase patient volume</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Patient Education Resources</td>
+      <td>Free 'A Wellness Update' subscription</td>
+      <td class='checkmark'>✔</td>
+      <td class='smark'>Partial</td>
+      <td class='smark'>Partial</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Patient Communications: Phone, Text, Email</td>
+      <td>Optimizes communications</td>
+      <td class='checkmark'>✔</td>
+      <td class='checkmark'>✔</td>
+      <td class='qmark'>?</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Full Offline Engagement Services Support</td>
+      <td>No patients fall through the cracks</td>
+      <td class='checkmark'>✔</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Patient Portal, Expedited Apt. Finder, Mobile Apps</td>
+      <td>Superior engagement</td>
+      <td class='checkmark'>✔</td>
+      <td class='smark'>Partial</td>
+      <td class='smark'>Partial</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Marketing Consultation</td>
+      <td>Increase patient volume</td>
+      <td class='checkmark'>✔</td>
+      <td class='smark'>Partial</td>
+      <td class='smark'>Partial</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Online Triage Service</td>
+      <td>Cost effective care</td>
+      <td class='smark'>Avail 6/2017</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>Few</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Annual Wellness Visit & Chronic Care Management</td>
+      <td>Healthier patients & bottom line</td>
+      <td class='smark'>Avail 6/2017</td>
+      <td class='xmark'>Few</td>
+      <td class='xmark'>Few</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Preventative Care & Affordable Self Care </td>
+      <td>Inspires patients & improves outcomes</td>
+      <td class='smark'>Avail 6/2017</td>
+      <td class='xmark'>Few</td>
+      <td class='xmark'>Few</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <th colspan="6"> POPULATION HEALTH MANAGEMENT | #1 INVESTMENT OF $38B BY 2020</th>
+
+   </tr>
+   <tr>
+      <td>Affordable, Scalable PHM Services</td>
+      <td>High efficiency & value</td>
+      <td class='smark'>Avail 7/2017</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>Comprehensive Data For Methods Of Treatment</td>
+      <td>Enables the options demanded by patients</td>
+      <td class='smark'>Avail 7/2017</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   <tr>
+      <td>In-House Clinical Experts Evaluate Methods</td>
+      <td>Superior care reduces chronic disease </td>
+      <td class='smark'>Avail 7/2017</td>
+      <td class='xmark'>X</td>
+      <td class='xmark'>X</td>
+      <td class='qmark'>?</td>
+   </tr>
+   
+  </tbody>
+</table>
+</div>
+</div>
+
+  {{ block.super }} <!-- Include all modals -->
+{% endblock modal %}
+{% block footer %}
+{% endblock footer %}
+{% block javascript %}
+{{ block.super }}
+
+<script>
+  //Submit newletter form
+submit_form('#chart-form');
+</script>
+
+<!-- Prevent the secondary nav bar on mobile from messing stuff up-->
+<script>
+window.setInterval(function(){
+(function($) {
+    var $window = $(window),
+        $thead = $('thead');
+
+    $window.resize(function resize(){
+        if ($window.width() < 1220) {
+            return $thead.removeClass('cd-secondary-nav');
+        }
+        else{
+          return $thead.addClass('cd-secondary-nav');
+        }
+    }).trigger('resize');
+})(jQuery);}, 100);
+
+</script>
+{% endblock javascript %}
