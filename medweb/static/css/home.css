@@ -1037,9 +1037,12 @@ a:hover {
 .section-slideshow {
   margin: 0 auto;
   max-width: 1300px; }
+  .section-slideshow .cd-slider-navigation {
+    min-width: 310px; }
   .section-slideshow .cd-slider-wrapper {
     padding-bottom: 0;
-    max-height: 800px; }
+    max-height: 800px;
+    min-height: 600px; }
   @media (min-width: 992px) {
     .section-slideshow .cd-slider-wrapper {
       max-height: 800px; } }

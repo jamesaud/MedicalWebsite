@@ -272,7 +272,6 @@ Slider Navigation
 	z-index: 3;
 	@include center(x);
 	bottom: 0px;
-
 	
 	li {
 		display: inline-block;
@@ -285,8 +284,8 @@ Slider Navigation
 
 	a {
 		display: block;
-		height: 15px;
-		width: 15px;
+		height: 25px;
+		width: 25px;
 		border-radius: 50%;
 		color: transparent;
 		/* image replacement */

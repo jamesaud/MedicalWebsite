@@ -1245,11 +1245,12 @@ a:hover{
     margin: 0 auto;
     max-width: $max-width;
     
-
+    .cd-slider-navigation{min-width: 310px;} // Make sure on mobile the dots are in a single line
     
     .cd-slider-wrapper{
         padding-bottom: 0;
         max-height: 800px;
+        min-height: 600px;
     }
     
     @media (min-width: 992px) {
