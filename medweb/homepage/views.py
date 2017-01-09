@@ -77,7 +77,6 @@ def submit_newsletter(request):
             response['status'] = 'success'
             response['report_response'] = report_response
             response['newsletter_response'] = newsletter_response
-
     return JsonResponse(response)
 
 
@@ -87,14 +86,12 @@ def submit_chart(request):
     :return: JsonResponse, a json response containing the outcome for each form, and the status of the view.
     """
     response = {'status': 'error'}
-
     if request.method == 'POST':
-        email_form, report_response, newsletter_response = handle_email_form(request, MAILCHIMP_LIST_CHART_ID)
+        email_form, chart_response, newsletter_response = handle_email_form(request, MAILCHIMP_LIST_CHART_ID)
         if email_form.is_valid():
             response['status'] = 'success'
-            response['report_response'] = report_response
+            response['chart_response'] = chart_response
             response['newsletter_response'] = newsletter_response
-
     return JsonResponse(response)
 
 
