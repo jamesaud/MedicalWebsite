@@ -438,6 +438,20 @@ a:hover {
       color: black; }
     .section-highlights .hi-intro .main-points h3, .section-highlights .hi-intro-2 .main-points h3, .section-highlights .hi-intro-4 .main-points h3 {
       font-weight: 300; }
+      .section-highlights .hi-intro .main-points h3 span, .section-highlights .hi-intro-2 .main-points h3 span, .section-highlights .hi-intro-4 .main-points h3 span {
+        font-weight: bold;
+        color: #D43A43 !important; }
+    .section-highlights .hi-intro ul, .section-highlights .hi-intro-2 ul, .section-highlights .hi-intro-4 ul {
+      margin-top: 20px;
+      margin-bottom: 25px;
+      list-style-type: none !important;
+      list-style: none;
+      font-weight: 300;
+      font-size: 15.5px; }
+      .section-highlights .hi-intro ul li:before, .section-highlights .hi-intro-2 ul li:before, .section-highlights .hi-intro-4 ul li:before {
+        color: green;
+        margin-right: 10px;
+        content: '✔'; }
   .section-highlights .hi-intro-2 {
     margin-bottom: 0;
     margin-top: 30px; }
@@ -536,7 +550,8 @@ a:hover {
       max-height: 250px;
       max-width: auto;
       position: relative;
-      margin: 0 auto; }
+      margin: 0 auto;
+      color: #45AEEA !important; }
   .section-highlights .hi-success {
     text-align: center;
     padding-bottom: 43px !important;
