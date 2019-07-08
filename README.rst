@@ -1,6 +1,11 @@
 Medical Website
 ==============================
 
+Live Preview of the Site:
+
+http://104.236.125.205/
+
+
 INSTRUCTIONS TO SET UP AND VIEW LOCALLY (Must have docker and docker-compose installed):
 
 > git clone https://github.com/jamesaud/MedicalWebsite
